@@ -1,0 +1,533 @@
+﻿{
+    "version":  "1.0.1",
+    "files":  [
+                  {
+                      "sha256":  "5747592cab54852825f9e25a8d8515c6b0a4ae5c6945a73f8ee65de2801774d2",
+                      "path":  "PZLauncher.exe"
+                  },
+                  {
+                      "sha256":  "6db0ed2affbcb6d8353c6fb1af34666bce8318c0172675ef64d3df39bc447ce3",
+                      "path":  "GameLauncher/mods/XPRanks/icon.png"
+                  },
+                  {
+                      "sha256":  "f6edc584de09d52c7b0a1870665fa5e35d09f1909c10ed05184ff5a4d030b812",
+                      "path":  "GameLauncher/mods/XPRanks/mod.info"
+                  },
+                  {
+                      "sha256":  "ead59211e99950efb8825016d83b7505279704549d19ce13a1e707cc26168e4b",
+                      "path":  "GameLauncher/mods/XPRanks/poster.png"
+                  },
+                  {
+                      "sha256":  "6db0ed2affbcb6d8353c6fb1af34666bce8318c0172675ef64d3df39bc447ce3",
+                      "path":  "GameLauncher/mods/XPRanks/42/icon.png"
+                  },
+                  {
+                      "sha256":  "f6edc584de09d52c7b0a1870665fa5e35d09f1909c10ed05184ff5a4d030b812",
+                      "path":  "GameLauncher/mods/XPRanks/42/mod.info"
+                  },
+                  {
+                      "sha256":  "ead59211e99950efb8825016d83b7505279704549d19ce13a1e707cc26168e4b",
+                      "path":  "GameLauncher/mods/XPRanks/42/poster.png"
+                  },
+                  {
+                      "sha256":  "eaba1548af6bf41c4394fd0ea43d213df1a3898a132b8a52319b931ccc83e449",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/ObNoxPatchNotes.lua"
+                  },
+                  {
+                      "sha256":  "b141af6fdd5e2ff63a4b5e9752b3ae274e2443d36277a1be0040d118a4084d94",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/ObNoxToast.lua"
+                  },
+                  {
+                      "sha256":  "ada5b964e791f51db7b19bcfeda31806c239892ae040edcd2c49bb4a19d16ccc",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_ClientSync.lua"
+                  },
+                  {
+                      "sha256":  "8dbab77d71cc557cd90cacd5b30066cfc32bc1a274a78c2487e61943ce17cd94",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_KillXpHook.lua"
+                  },
+                  {
+                      "sha256":  "321834498564c63325ad82e093852f712963571454ae1c5af462c5ba70c836b3",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_ModOptions.lua"
+                  },
+                  {
+                      "sha256":  "e4f34b940b4d8148656e3be79bd76fe0c933e93c31c7e4eb3fffb806372bb9c9",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_PatchNotesRegister.lua"
+                  },
+                  {
+                      "sha256":  "05685931b2f8b110f6681d0ad514d79e84c294a26d681e4cf9bc551cf688c755",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_RankHud.lua"
+                  },
+                  {
+                      "sha256":  "4db3d86eb688672c25ac1d8975d7e66943db552a61873c98e43e7bbac6eeb0f9",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_RewardBoxContextMenu.lua"
+                  },
+                  {
+                      "sha256":  "2063d4dae128474d5b2c47f0166529f6696305f4000c14602bc2cb5aa8dfc960",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_RewardBoxNameRefresh.lua"
+                  },
+                  {
+                      "sha256":  "b2ac84c68677b1de549ae33522e63a365030f6c1ec1b51d6938e6b9c20a44470",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_TickerFeed.lua"
+                  },
+                  {
+                      "sha256":  "69109eabe37346963839c6d664c7174616772ac448017e8b85b997695df4c4b5",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_AdminMenu.lua"
+                  },
+                  {
+                      "sha256":  "8b46fb00ca0bd07138da58ba2c9641d239c95973245ec25fd0e4705724b71c09",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_BackupPicker.lua"
+                  },
+                  {
+                      "sha256":  "bc0355c6fd1a137d9601e6fb063d0c4cf194a9af4c30d666be8cff8bc35e116a",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_Leaderboard.lua"
+                  },
+                  {
+                      "sha256":  "83571a47e7f92725ea33b5d32c58d49a394592f04c9b7a1351db47497771c0a1",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_LeaderboardExclude.lua"
+                  },
+                  {
+                      "sha256":  "b3838597110e204485c2c5cb98a6c4a4f6dea548acbe4bb144d2bd7a45fbf3b0",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_MultiValueDialog.lua"
+                  },
+                  {
+                      "sha256":  "a115d7c64974465024522f7600007594266570430d0294200ae802a81ef039e4",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_PlayerPicker.lua"
+                  },
+                  {
+                      "sha256":  "c8ca8336d3da32fd8e7b04ab2d8d14079deb352f2ce031bfd6d1b2ea635ba9d7",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_RewardAdmin.lua"
+                  },
+                  {
+                      "sha256":  "a880f369ff33576e8cced52af08337c136aec59c0f8a3c9090375e02a5bd4501",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_RewardItemPicker.lua"
+                  },
+                  {
+                      "sha256":  "46d4a707b9368b6c29951fd966d2811d5bf435bc47abc76c375c8c3e9ecfb705",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_RewardReveal.lua"
+                  },
+                  {
+                      "sha256":  "77f9abd295150f001cb4f0ed968673f9d8c3b3aeb7dc8369d57c2015bafe5428",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_Scale.lua"
+                  },
+                  {
+                      "sha256":  "5e6bf9ad446c6b99aca9e55afff10751a2766a09fd373cab2a21060cf03a130a",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_Settings.lua"
+                  },
+                  {
+                      "sha256":  "486db7264beb3977e535eca69ef6784c7621bcac8b6d07d9e66fce7500b0c5fb",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_Sidebar.lua"
+                  },
+                  {
+                      "sha256":  "c47603b6889f90f4a4e690f1255db8955b16a31be1af0b1a45c82c67464b1510",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_Theme.lua"
+                  },
+                  {
+                      "sha256":  "fe47a1824c2e46a5d982a312ec00a59ccf9d0f2a457a25cdf61fa8a28ea6617b",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_TiersDialog.lua"
+                  },
+                  {
+                      "sha256":  "50faf9d2fd7e83a92c0cf7068a9dd67983ef45f61ebaca17aecb0bfcb1c90a5a",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/client/XPR_UI_ValueDialog.lua"
+                  },
+                  {
+                      "sha256":  "e3337cd032c79dc3a295e2af1acfa3a5413bf5267c01b6c16942c240b642495f",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_ActivityXpGuard.lua"
+                  },
+                  {
+                      "sha256":  "89907a0302c52ad5f26c67d6860f8a35365f5aedeb8371f31eddc6e2f52ae20e",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_AdminAccess.lua"
+                  },
+                  {
+                      "sha256":  "f0db3aa32a3343b5b59119c9cb6dacaabac06949f56f7617a950942691a4c611",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_Backup.lua"
+                  },
+                  {
+                      "sha256":  "d98ed3c0147b3f2e0f9c8f4d4e844c1048ddae789578f4bcab1023be55fde1d7",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_KillXpHook.lua"
+                  },
+                  {
+                      "sha256":  "f107d73a1d872726775a2fbd19fbb970464e9173f834ada0fc9e1192cacd083e",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_Leaderboard.lua"
+                  },
+                  {
+                      "sha256":  "d60aa360c703e9175b358f7d57027af78cf6aebb9405f0d0851c0786a231a8a3",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_PvpKillXpHook.lua"
+                  },
+                  {
+                      "sha256":  "8d65fe68104d46e05ed2958d8d0a760083a560d7728401206ffa0848062099c1",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_RankData.lua"
+                  },
+                  {
+                      "sha256":  "2f2a6b50bc280834ac5869be2af51d4563d157df4b796f8dbe29cbcad931d50a",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_RewardBoxServer.lua"
+                  },
+                  {
+                      "sha256":  "a818745d6380528e42202608e128e0255b7a2a14ca60c17533ec54e9f71b2f30",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_RewardConfigStore.lua"
+                  },
+                  {
+                      "sha256":  "e3aa527148106bbfdd6febf0c5aee10a5633d991f83a8fd108a4317b869c4ccc",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_SettingsStore.lua"
+                  },
+                  {
+                      "sha256":  "527e5dcf425dd8b75c0cd1fd3bc3872456146a5ae8c64cb776aca588ceccd1ce",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_TimeSurvivedHook.lua"
+                  },
+                  {
+                      "sha256":  "3dc6545a708314cb9cd9d95d9b2e0ede1d231fef837941e8b9c310932297dcc6",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_TravelHook.lua"
+                  },
+                  {
+                      "sha256":  "ea1406014c3d00bf91538b13eab7f8d5bc5ca72a024699a9a3d23efd3d3a1251",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/server/XPR_XpQueue.lua"
+                  },
+                  {
+                      "sha256":  "243cd4fa0a0cf28eb2f2694a257755acf99148d84926fb5b4337c0254c3cd50d",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_AddXpHook.lua"
+                  },
+                  {
+                      "sha256":  "262215d9f35e52aa2af669cf62ea5c35ec4f2ae3f5e9d9f1adcbdb0b58be87d7",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_API.lua"
+                  },
+                  {
+                      "sha256":  "cc7e1ce61809d8fdd9dc7609717324353740ec069761b3aeda6ea845b531e813",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_Categories.lua"
+                  },
+                  {
+                      "sha256":  "95144709e776f2c040df564628306561c31294ce90feabf5fab353fd76b27366",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_Config.lua"
+                  },
+                  {
+                      "sha256":  "efa93b7e60089c1897169718e4dec4d65cca92c3a4ef643f0e380713f5f34924",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_Env.lua"
+                  },
+                  {
+                      "sha256":  "2b9f7dbca11f2490b758a73afffb3c67f45ad8e8b13393c69371c9f0ff2b0538",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_Identity.lua"
+                  },
+                  {
+                      "sha256":  "c502afae3b63fdb407c1db666bcd13e126dd05bc4c7084dbd9e49f68fcf7b921",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_PatchNotes.lua"
+                  },
+                  {
+                      "sha256":  "bb78b053b49a9a6ade4132c9c9de401c847d67bc5da3ae3ca3fd677d2546eb50",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RankCurve.lua"
+                  },
+                  {
+                      "sha256":  "7f81c3ead9f88047677d0fa453c38e76cf5b86d5eba96db81be2df4d8b47a1a9",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RecordedMediaGuard.lua"
+                  },
+                  {
+                      "sha256":  "bea385de4c76d289e903c057524e3c320d8a9073083646f78ae007402514bc50",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RewardBox.lua"
+                  },
+                  {
+                      "sha256":  "c5cc85f79522899bdeb4a71e2ba022b7ca1be5493ab1b3adc983cb1c52816e7c",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RewardCategoryResolver.lua"
+                  },
+                  {
+                      "sha256":  "02fe2b3fdad9e94db534e10f3b71f672e7db6d10080888a80634496165e58468",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RewardConfig.lua"
+                  },
+                  {
+                      "sha256":  "ca7890a4114b7728952527deb4b5e577ba50b00b2da693c2c60710e888e54ea5",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/lua/shared/XPR_RewardItems.lua"
+                  },
+                  {
+                      "sha256":  "b0f663211703f020f1374f39d37b88ad0d41448918d8859648167dd386b4679c",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/scripts/XPR_items.txt"
+                  },
+                  {
+                      "sha256":  "874de96b0a3d5d979f7bf251fc3320533faebbd1d81d19cfbb77352dbc53b05d",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/scripts/XPR_sounds.txt"
+                  },
+                  {
+                      "sha256":  "0cc41014df7b955e62c57a1fcbaef915a415d8deefb4990c88d000ddb729234e",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/sounds/xpr_rank.ogg"
+                  },
+                  {
+                      "sha256":  "bc8a2fbd3cac13b2610a1b0fb1d1304aec096acae2019abd256e08d1773cd733",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/sounds/xpr_reward.ogg"
+                  },
+                  {
+                      "sha256":  "7135680fdbd934ecd7bd433628f642512668773f76da01f2d63a3250e7abfb2d",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/sounds/xpr_ticker.ogg"
+                  },
+                  {
+                      "sha256":  "90b0c2248fd80ece9a367b0c8d74ae255b1422e992aa42981da8fe2729c2b745",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_dcs_toast_frame.png"
+                  },
+                  {
+                      "sha256":  "69b9083957fb9f3c4fc7b799fbd1c5c0fd7944b4be8f4923fb415f2685eb1150",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_alert.png"
+                  },
+                  {
+                      "sha256":  "f1848abef2feb66228e483e412afae8a7d0c45d70e504fca68d9fbbcb7209b87",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_bug.png"
+                  },
+                  {
+                      "sha256":  "f766ef1d048da674658d8e8bf65c6907b78d586977f5feca9c538902060252cf",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_closed.png"
+                  },
+                  {
+                      "sha256":  "664179e1dc48ac200108b43e76073b434f2c3a3a6d21c3f5a143080b6220f833",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_discord.png"
+                  },
+                  {
+                      "sha256":  "1884bdcc156fd148f4e5c5f1859f298a5b24918a48da0fcdda1c2d64b7c7d2d7",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_docs.png"
+                  },
+                  {
+                      "sha256":  "ead8c54c07c8dc57628dc720a6cd907605f2b6e91babf7c166a9ab31e043ab3f",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_kofi.png"
+                  },
+                  {
+                      "sha256":  "fad7e962156cafa3afff8d0ea3cc5a5e66fbdcd8e50ea7c115217b7dd5dce818",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_like.png"
+                  },
+                  {
+                      "sha256":  "3dc6827d3fe2e56300aa8ca161c19d38745941b00d642db65742664f6a0da4db",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_logo.png"
+                  },
+                  {
+                      "sha256":  "bd67e1d408076d9a229f1802b8d378cb4e426cad5e6035af7afa2c6e519e0558",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_open.png"
+                  },
+                  {
+                      "sha256":  "0f2215df738248e9ef60a8a0b71dccbee3d6f9a1d06a73e1f9e80110d9f0d1bf",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_opt_in.png"
+                  },
+                  {
+                      "sha256":  "6ddb5a1a0b370d17a72cc6c8af3580cf236e9dd130d376a1bf788f6ef37e32dc",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_opt_out.png"
+                  },
+                  {
+                      "sha256":  "69e25fd0a96026a616d4428579fc5e8c56e90da610a46622bacbd3126354b15d",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_opt_update.png"
+                  },
+                  {
+                      "sha256":  "0a85c8a57e319ab7b74270b70452da33860e453404c1cf779f3ff89fc2ec22d8",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_scroll_left.png"
+                  },
+                  {
+                      "sha256":  "16d2d096290b67b87b5e107f456edbba3bd577bd74c3415189dd03f6118bb0a5",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_scroll_right.png"
+                  },
+                  {
+                      "sha256":  "8ccf07c33febf86ce5c3de878a530e2d94cc3b3328646da56a7d72bd04f176e2",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_patchnotes_steam.png"
+                  },
+                  {
+                      "sha256":  "bcfbc857bbdc4c282890219bee487f949f1e488fb4d2693861076ea6c07bc679",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_toast_bg.png"
+                  },
+                  {
+                      "sha256":  "35c283825dd23ec69f06950ff8b78242b2c23472a6750062196fdbe1fbc47011",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_toast_glyph_complete.png"
+                  },
+                  {
+                      "sha256":  "2389602f84be2321530800b2fcecee7f4874be41ff198538bfb7ea7dc2b4001d",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_toast_glyph_debug.png"
+                  },
+                  {
+                      "sha256":  "211270aa3ac3e02c5bc4c36069964383affd25a814fac8d6d352bd565229f4fe",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_toast_glyph_new.png"
+                  },
+                  {
+                      "sha256":  "4f35f9a02a232b2f5867b1753af2fa01b8597fe4b86364e89bf8ee75c9ffaf47",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_toast_glyph_reward.png"
+                  },
+                  {
+                      "sha256":  "8af4fe8cc9940046f1bb32016b99a4765ec7add126694c276269affaff5f55fa",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_xpr_feed_xp.png"
+                  },
+                  {
+                      "sha256":  "de474bdc87ed0af1ffeae78fa0b919c1bba28bf6c859a6be44c90971042cbfa9",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/obnox_xpr_tick.png"
+                  },
+                  {
+                      "sha256":  "e2c3ce5b4be7c9d077df40b62054c436d2514d6b7b8ef3d0f4ca54273c42e0a7",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/TrophyBronze.png"
+                  },
+                  {
+                      "sha256":  "1f57a909370626defb0a62e580c952bf3e16f88fb1ef706fe7d1538d666f55c3",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/TrophyGold.png"
+                  },
+                  {
+                      "sha256":  "398929c2d602211518ecd479245d5f14f672c2f88ab7d103cfe03cd5979166f6",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/TrophySilver.png"
+                  },
+                  {
+                      "sha256":  "02ea434c3452470de7fc851b85cb5a3576dd5c371520e8b4516dd3f3928cf1bf",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_fade_cell.png"
+                  },
+                  {
+                      "sha256":  "a40029a2b0c1be58216530cc683d3029dc261fa08deed5cc13c1600e73d96abf",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_icon_off.png"
+                  },
+                  {
+                      "sha256":  "6db0ed2affbcb6d8353c6fb1af34666bce8318c0172675ef64d3df39bc447ce3",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_icon_on.png"
+                  },
+                  {
+                      "sha256":  "91c12624b5287f0ddaa1d6ee15c15d0f4fe72a002cfb627984ec970d3a08dbe5",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_ldr_shield.png"
+                  },
+                  {
+                      "sha256":  "5d6e30d8637c7b3371cbdcbe2dd93fd4b7d074c79084d6f4bd0148bd69fe8701",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_0.png"
+                  },
+                  {
+                      "sha256":  "9c45b33dce7a74b028947e212fc84df144029bb6645b2dfbc595ebf23f6c96a1",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_1.png"
+                  },
+                  {
+                      "sha256":  "34b132ac956d359c11b477bd452d042db6782641fe4961b3f6abc6acefc6f919",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_2.png"
+                  },
+                  {
+                      "sha256":  "80f742dd2b1111bff5f92bfac9b1415c0f0f37662579fecc779fb46e10f81d69",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_3.png"
+                  },
+                  {
+                      "sha256":  "17f2917956a2135cb20d0d8495b6642451214fddb3819580516e11bf7f01129c",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_4.png"
+                  },
+                  {
+                      "sha256":  "eb153f64dfff09ebfd5ba63e121200eac5ce307a8c762818872a6b420a8ca6ab",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_5.png"
+                  },
+                  {
+                      "sha256":  "cbfbb743a75b980f2b4c350ca7ee0f6ca8df28d1b28fa6f14be32057fe2acdaf",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_6.png"
+                  },
+                  {
+                      "sha256":  "a5fa2f75efb4eb6745164823845a685d00ce8852096a19aa8ba6ce5e8388cc40",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_7.png"
+                  },
+                  {
+                      "sha256":  "d3d45b349e2e20f214337ab14a99f67792e1214ed498110d08a0f69b669515e3",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_8.png"
+                  },
+                  {
+                      "sha256":  "eaa414d8427e5e8f0f45fdbe4259b809db9cc0da34559f38bf55762c74eab675",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_num_9.png"
+                  },
+                  {
+                      "sha256":  "64b40f673bc04f013608dff7de61280499efca8a79e4ca8123167636331ac3fa",
+                      "path":  "GameLauncher/mods/XPRanks/42/media/textures/xpr_rank_shield.png"
+                  },
+                  {
+                      "sha256":  "7078fbdbe48fda4ed2c24175f982dc9b931a591ab2c9ecaf2e9cbc5d335a1a2f",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/AR/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "873c7cb50abb9e38d6d091c77338becfee9d4c9bb2d0c69a083726a1fae3cf99",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/CA/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "6d27a262e0c0854602f5238778929e45a5088cfbd8cc0235e8d1ed5e92936444",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/CH/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "88d4c865c004029a18859ae13e0c5c1ee3cbc5e4fbe61c4fdd636a241ded9acb",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/CN/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "60030d30e869f0e284bfb033f51d7f55192f5dcd8b7ecb148e94785717b91984",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/CS/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "6276dc6e4d1e733a10d25aa65f34bfc517107f42e355796dbc94df913c57f7bc",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/DA/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "d1a1c01d06fc89e572230278255004680d4488e419dce3241444389ba4a93f9b",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/DE/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "4c3c81ca1ba632cd7d1ee0e13f412f825ae7cf2298743dc22b425ba7feaf1f3b",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/EN/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "b5548490c5592814baa75ca98c0f4b7bff612acdec11877cbd03c56dafa834f0",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/ES/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "2fd9c6e41e72dcf8519f7ef575acd63bfc9d3f2a29d18f9a6fed1aba6325ba88",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/ES_CL/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "481442f687900c8a2041ff91e7ad32cd2daa81ef81de8733ce4910212e290dad",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/ES_MX/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "2bc4eb70075de68ca73f7cb8da07abac13e5da9b5161e87208365f62968d08e8",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/FI/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "839df715b29dd7739316131c74e6eb3c65f8d32fd5aff5e6b806d4092d5a12bf",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/FR/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "5635051df7a8423402ba23ca7c59100b2556b890efa8ea555cf330db0145e27c",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/HU/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "1a754e55021f0a2410372922e9c9c82d384b00b8e3d723ec5da14dc62115d1ca",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/ID/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "9fde6a69812e24a4c70587bb8fa8fe99993c214741c64660dee13edee59e0ea8",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/IT/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "540d0166a57e9f47b4bdde8d57fe758ec392cd7717d3f01176905fc7c45c6912",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/JP/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "cd07069750f47e9ade5e5e7b95e1c046a482505c8b5a4ab28803e3f1818bc547",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/KO/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "6f9b041a673ee860494c3b6bba3132767a38b53c71ef091427581924fe402016",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/NL/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "f02f5b8fc6b27712efae135ae78710549cf4abe01c2a37e8115d9d2375ebb099",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/NO/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "14aa79bade834e08816c4ceeba3414ff5f771f26aaeae3ec08d4961fb518362f",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/PL/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "8c11c9405c3367f827ad2da604962e99d4d77277acded8101b2671d6ee284492",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/PT/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "9046400e30aed3071e24fdf904b78bd7fba6552a206894050f367d6a78f9c71d",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/PTBR/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "52b13cdea36816b0d5973fd73d0f2e14733ce2ad1b06458d79ece35424dd4ec8",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/RO/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "5b3cf05854800245ceb84613b1ee8a5678f728013318bc42e9e3cbc967604406",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/RU/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "07479f8812ca9839bd1a100020a444929a73cfb489879ee0d1ee63fd7e1d2a4d",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/TH/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "c437d0ce19623d322299b8abfb5230f3f2ca8390a2b6014cd416ab08f4cc2a84",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/TR/IG_UI.json"
+                  },
+                  {
+                      "sha256":  "ca80ce7f21d1ae228a63b62574db761fef6278f0bbc85d946df67c8279af294d",
+                      "path":  "GameLauncher/mods/XPRanks/common/media/lua/shared/Translate/UA/IG_UI.json"
+                  }
+              ]
+}
