@@ -1,0 +1,8 @@
+name=[B42] XP Ranks [SP/MP]
+id=[B42]XPRanks
+description=Rank progression system fed by every skill XP granting action in the game, independent of Trait and Skill Book Multipliers. Includes Rank Up Rewards Boxes and a Leaderboard.
+poster=poster.png
+author=ObnoxiouslyNoxious
+icon=icon.png
+versionMin=42.19.0
+modversion=1.0.6

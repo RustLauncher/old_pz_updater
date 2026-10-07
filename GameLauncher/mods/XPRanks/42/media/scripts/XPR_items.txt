@@ -1,0 +1,52 @@
+module XPRanks
+{
+	item XPR_RewardBox1
+	{
+		DisplayCategory  = Memento,
+		DisplayName      = Reward Box,
+		ItemType         = base:normal,
+		Icon             = Present1,
+		WorldStaticModel = Present1,
+		Weight           = 1.0,
+	}
+
+	item XPR_RewardBox2
+	{
+		DisplayCategory  = Memento,
+		DisplayName      = Reward Box,
+		ItemType         = base:normal,
+		Icon             = Present2,
+		WorldStaticModel = Present2,
+		Weight           = 1.0,
+	}
+
+	item XPR_RewardBox3
+	{
+		DisplayCategory  = Memento,
+		DisplayName      = Reward Box,
+		ItemType         = base:normal,
+		Icon             = Present3,
+		WorldStaticModel = Present3,
+		Weight           = 1.0,
+	}
+
+	item XPR_RewardBox4
+	{
+		DisplayCategory  = Memento,
+		DisplayName      = Reward Box,
+		ItemType         = base:normal,
+		Icon             = Present4,
+		WorldStaticModel = Present4,
+		Weight           = 1.0,
+	}
+
+	item XPR_RewardBox5
+	{
+		DisplayCategory  = Memento,
+		DisplayName      = Reward Box,
+		ItemType         = base:normal,
+		Icon             = Present5,
+		WorldStaticModel = Present5,
+		Weight           = 1.0,
+	}
+}
