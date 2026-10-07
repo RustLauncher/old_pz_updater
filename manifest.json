@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "1.0.1",
+    "version":  "1.0.2",
     "files":  [
                   {
-                      "sha256":  "5747592cab54852825f9e25a8d8515c6b0a4ae5c6945a73f8ee65de2801774d2",
+                      "sha256":  "8b58b1ce210b5a929ad561eca20df1a0c7e4eb63e8287aa16829f77643b25148",
                       "path":  "PZLauncher.exe"
                   },
                   {
