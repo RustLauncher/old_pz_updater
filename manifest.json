@@ -1,9 +1,9 @@
 ﻿{
-    "version":  "1.0.6",
+    "version":  "1.0.7",
     "files":  [
                   {
                       "path":  "PZLauncher.exe",
-                      "sha256":  "d27b85a501c3d364be1a7435313211fb56b2c9e15f87220941d0db96d48dff41"
+                      "sha256":  "b8eff66e6effb0473198387988f821cf5d7490bf79f49c9ce158d89dbcb0e59f"
                   },
                   {
                       "path":  "GameLauncher/mods/BetterSorting/LICENSE",
