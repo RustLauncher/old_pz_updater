@@ -1,2 +1,3 @@
-GameLauncher/
+GameLauncher/*
 !GameLauncher/mods/
+!GameLauncher/mods/**
