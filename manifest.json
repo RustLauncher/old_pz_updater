@@ -1,13 +1,9 @@
 ﻿{
-    "version":  "1.0.3",
+    "version":  "1.0.5",
     "files":  [
                   {
                       "path":  "PZLauncher.exe",
-                      "sha256":  "8b58b1ce210b5a929ad561eca20df1a0c7e4eb63e8287aa16829f77643b25148"
-                  },
-                  {
-                      "path":  "GameLauncher/mods/BetterSorting/.gitattributes",
-                      "sha256":  "12065537b4ab1878653157daf2f33f84b4ea3e6586876201768d3948b056d3f0"
+                      "sha256":  "d1ee5bbe764b8263aab8c279922e8f1113ee4c8f5ec000ee83388edda40cc518"
                   },
                   {
                       "path":  "GameLauncher/mods/BetterSorting/LICENSE",
@@ -28,10 +24,6 @@
                   {
                       "path":  "GameLauncher/mods/BetterSorting/README.md",
                       "sha256":  "cd10f13a15424b6f967e93a7206e795a78921ed724a17ac62d2a8c49c6413d4c"
-                  },
-                  {
-                      "path":  "GameLauncher/mods/BetterSorting/42/.gitattributes",
-                      "sha256":  "12065537b4ab1878653157daf2f33f84b4ea3e6586876201768d3948b056d3f0"
                   },
                   {
                       "path":  "GameLauncher/mods/BetterSorting/42/LICENSE",
