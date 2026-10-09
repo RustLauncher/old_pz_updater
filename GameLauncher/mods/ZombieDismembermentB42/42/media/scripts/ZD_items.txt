@@ -1,0 +1,170 @@
+module ZombieDismemberment
+{
+    imports { Base }
+
+    item ZD_ForeArm_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left forearm stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_ForeArm_L,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = UpperArms;LowerArms,
+    }
+
+    item ZD_ForeArm_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right forearm stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_ForeArm_R,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = UpperArms;LowerArms,
+    }
+
+    item ZD_UpperArm_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left upper-arm stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_UpperArm_L,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = UpperArms;UpperBody,
+    }
+
+    item ZD_UpperArm_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right upper-arm stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_UpperArm_R,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = UpperArms;UpperBody,
+    }
+
+    item ZD_Leg_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left leg ZD stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_Leg_L,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = Groin;UpperLegs;LowerLegs,
+    }
+
+    item ZD_Leg_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right leg ZD stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_Leg_R,
+        BodyLocation = TorsoExtra,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = Groin;UpperLegs;LowerLegs,
+    }
+
+    item ZD_Corpse_ForeArm_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left forearm stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_ForeArm_L,
+        BodyLocation = ForeArm_Left,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+
+    item ZD_Corpse_ForeArm_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right forearm stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_ForeArm_R,
+        BodyLocation = ForeArm_Right,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+
+    item ZD_Corpse_UpperArm_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left upper-arm stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_UpperArm_L,
+        BodyLocation = ForeArm_Left,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+
+    item ZD_Corpse_UpperArm_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right upper-arm stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_UpperArm_R,
+        BodyLocation = ForeArm_Right,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+
+    item ZD_Corpse_Leg_L
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie left leg ZD stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_Leg_L,
+        BodyLocation = Calf_Left,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+
+    item ZD_Corpse_Leg_R
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie right leg ZD stump corpse visual,
+        hidden = true,
+        ClothingItem = ZD_Leg_R,
+        BodyLocation = Calf_Right,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+    item ZD_Head
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie decapitation neck stump (visual),
+        DisplayCategory = ZD,
+        hidden = true,
+        ClothingItem = ZD_Head,
+        BodyLocation = ZombieDismemberment:HeadCarrier,
+        Weight = 0,
+        CanHaveHoles = false,
+        BloodLocation = Head;Neck;UpperBody,
+    }
+    item ZD_Corpse_Head
+    {
+        ItemType = base:Clothing,
+        DisplayName = Zombie decapitation corpse visual,
+        hidden = true,
+        ClothingItem = ZD_Head,
+        BodyLocation = ZombieDismemberment:HeadCarrier,
+        Weight = 0,
+        CanHaveHoles = false,
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>ZombieDismemberment\ZD_BelowKnee_L_Male</m_MaleModel>
+    <m_FemaleModel>ZombieDismemberment\ZD_BelowKnee_L_Female</m_FemaleModel>
+    <m_GUID>54b8ad89-dda6-4dbc-91e9-c0fbf975942e</m_GUID>
+    <m_Static>false</m_Static>
+    <m_AllowRandomHue>false</m_AllowRandomHue>
+    <m_AllowRandomTint>false</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <m_MasksFolder>none</m_MasksFolder>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin01_l1</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin01_l2</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin01_l3</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin02_l1</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin02_l2</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin02_l3</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin03_l1</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin03_l2</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin03_l3</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin04_l1</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin04_l2</textureChoices>
+    <textureChoices>ZombieDismemberment\Zombie\Leg\z_skin04_l3</textureChoices>
+    <m_Masks>7</m_Masks>
+    <m_Masks>8</m_Masks>
+</clothingItem>
