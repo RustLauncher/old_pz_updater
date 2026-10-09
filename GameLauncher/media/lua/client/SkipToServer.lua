@@ -24,6 +24,16 @@ local function ensureServerInFavorites()
     addServerToAccountList(s)
 end
 
+local function removeNewServerItem(mp)
+    local items = mp.accountList and mp.accountList.items
+    if not items then return end
+    for i = #items, 1, -1 do
+        if items[i] and items[i].item and items[i].item.type == "new_server" then
+            table.remove(items, i)
+        end
+    end
+end
+
 local function patchMultiplayerUI(mp)
     if patchDone then return end
     patchDone = true
@@ -42,18 +52,11 @@ local function patchMultiplayerUI(mp)
         end
     end
 
-    local origRefresh = mp.refreshList
-    if origRefresh then
-        mp.refreshList = function(self)
+    if MultiplayerUI and MultiplayerUI.refreshList then
+        local origRefresh = MultiplayerUI.refreshList
+        MultiplayerUI.refreshList = function(self)
             origRefresh(self)
-            local items = self.accountList and self.accountList.items
-            if items then
-                for i = #items, 1, -1 do
-                    if items[i] and items[i].item and items[i].item.type == "new_server" then
-                        table.remove(items, i)
-                    end
-                end
-            end
+            removeNewServerItem(self)
         end
     end
 end
@@ -69,6 +72,7 @@ local function trySkip()
     ms.bottomPanel:setVisible(false)
     ms.multiplayer:setVisible(true)
     ms.multiplayer:requestServerList()
+    removeNewServerItem(ms.multiplayer)
     skipDone = true
 end
 
