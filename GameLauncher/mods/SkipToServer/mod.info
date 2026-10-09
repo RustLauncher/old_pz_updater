@@ -1,0 +1,6 @@
+name=Skip To Server
+id=SkipToServer
+description=Salta el menu principal y abre la lista de servidores con el servidor ya agregado.
+poster=poster.png
+author=LatamRust
+modversion=1.0.0
