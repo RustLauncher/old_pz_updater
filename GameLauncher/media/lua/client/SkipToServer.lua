@@ -6,33 +6,43 @@ local skipDone = false
 local serverAdded = false
 local patchDone = false
 local menuPatchDone = false
+local addRetries = 0
 
 local function isServerInFavorites()
     if not getServerList then return false end
-    local servers = getServerList()
-    if not servers then return false end
-    for _, s in ipairs(servers) do
-        if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
-            return true
+    local ok, servers = pcall(getServerList)
+    if not ok or not servers then return false end
+    local ok2, result = pcall(function()
+        for _, s in ipairs(servers) do
+            if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
+                return true
+            end
         end
-    end
-    return false
+        return false
+    end)
+    return ok2 and result
 end
 
-local function ensureServerInFavorites()
-    if serverAdded then return end
-    if not getServerList or not Server or not addServerToAccountList then return end
+local function tryAddServer()
+    if serverAdded then return true end
     if isServerInFavorites() then
         serverAdded = true
-        return
+        return true
     end
-    local s = Server.new()
-    s:setName(SERVER_NAME)
-    s:setIp(SERVER_IP)
-    s:setPort(SERVER_PORT)
-    s:setServerPassword("")
-    addServerToAccountList(s)
-    serverAdded = true
+    if not Server or not addServerToAccountList then return false end
+    local ok = pcall(function()
+        local s = Server.new()
+        s:setName(SERVER_NAME)
+        s:setIp(SERVER_IP)
+        s:setPort(SERVER_PORT)
+        s:setServerPassword("")
+        addServerToAccountList(s)
+    end)
+    if ok and isServerInFavorites() then
+        serverAdded = true
+        return true
+    end
+    return false
 end
 
 local function removeNewServerItem(mp)
@@ -102,7 +112,7 @@ local function trySkip()
     local ms = MainScreen.instance
     if not ms.multiplayer or not ms.bottomPanel then return end
 
-    pcall(ensureServerInFavorites)
+    tryAddServer()
     patchMultiplayerUI(ms.multiplayer)
     patchMainMenu()
     ms.bottomPanel:setVisible(false)
@@ -112,21 +122,32 @@ local function trySkip()
     skipDone = true
 end
 
-local function retryAddServer()
-    if serverAdded then return end
-    pcall(ensureServerInFavorites)
-    if serverAdded and MainScreen and MainScreen.instance and MainScreen.instance.multiplayer then
-        MainScreen.instance.multiplayer:refreshList()
-    end
-end
-
 local function onTick()
     if not skipDone then
         pcall(trySkip)
         return
     end
-    pcall(retryAddServer)
-    if serverAdded and menuPatchDone then
+
+    if not serverAdded then
+        addRetries = addRetries + 1
+        pcall(tryAddServer)
+        if serverAdded then
+            local ms = MainScreen and MainScreen.instance
+            if ms and ms.multiplayer then
+                pcall(function()
+                    ms.multiplayer:refreshList()
+                    removeNewServerItem(ms.multiplayer)
+                end)
+            end
+        end
+        if addRetries > 300 then
+            Events.OnFETick.Remove(onTick)
+        end
+        return
+    end
+
+    pcall(patchMainMenu)
+    if menuPatchDone then
         Events.OnFETick.Remove(onTick)
     end
 end
