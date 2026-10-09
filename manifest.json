@@ -1,9 +1,13 @@
 ﻿{
-    "version":  "1.0.20",
+    "version":  "1.0.21",
     "files":  [
                   {
                       "path":  "PZLauncher.exe",
                       "sha256":  "ea12a22cb5e4aeb4af62e7a10a764eac375e33f3119d927790583cb4651e8e91"
+                  },
+                  {
+                      "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
+                      "sha256":  "0c14b7ef4c3248ecc0c086afeabedd3d450dc2acecda0a670e8a06d5018628a8"
                   },
                   {
                       "path":  "GameLauncher/mods/BetterSorting/LICENSE",
@@ -1384,14 +1388,6 @@
                   {
                       "path":  "GameLauncher/mods/MoreBuilds/42/media/texturepacks/morebuilds.pack",
                       "sha256":  "3059221036117744380e8c55359e08e5f9e0055e4e9dceaa1763edaacdf50d34"
-                  },
-                  {
-                      "path":  "GameLauncher/mods/SkipToServer/mod.info",
-                      "sha256":  "cd9324e1e3b2d4b6463f3ed8ce41017c9c8b55b36fd4989820c9795e0b5143ff"
-                  },
-                  {
-                      "path":  "GameLauncher/mods/SkipToServer/media/lua/client/SkipToServer.lua",
-                      "sha256":  "0c14b7ef4c3248ecc0c086afeabedd3d450dc2acecda0a670e8a06d5018628a8"
                   },
                   {
                       "path":  "GameLauncher/mods/XPRanks/icon.png",
