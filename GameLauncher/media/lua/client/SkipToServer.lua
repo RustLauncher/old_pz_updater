@@ -5,14 +5,16 @@ local SERVER_PORT = 16261
 local skipDone = false
 
 local function ensureServerInFavorites()
+    if not getServerList then return end
     local servers = getServerList()
-    if not servers then return end
-    for i = 0, servers:size() - 1 do
-        local s = servers:get(i)
-        if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
-            return
+    if servers then
+        for _, s in ipairs(servers) do
+            if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
+                return
+            end
         end
     end
+    if not Server or not addServerToAccountList then return end
     local s = Server.new()
     s:setName(SERVER_NAME)
     s:setIp(SERVER_IP)
@@ -27,13 +29,11 @@ local function trySkip()
     local ms = MainScreen.instance
     if not ms.multiplayer or not ms.bottomPanel then return end
 
+    ensureServerInFavorites()
+    ms.bottomPanel:setVisible(false)
+    ms.multiplayer:setVisible(true)
+    ms.multiplayer:requestServerList()
     skipDone = true
-    local ok, err = pcall(function()
-        ensureServerInFavorites()
-        ms.bottomPanel:setVisible(false)
-        ms.multiplayer:setVisible(true)
-        ms.multiplayer:requestServerList()
-    end)
 end
 
 local function onTick()
