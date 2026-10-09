@@ -4,6 +4,17 @@ local SERVER_PORT = 16261
 
 local skipDone = false
 local patchDone = false
+local menuPatchDone = false
+
+local HIDE_ITEMS = {
+    TUTORIAL = true,
+    SOLO = true,
+    COOP = true,
+    MODS = true,
+    CREDITS = true,
+    LOAD = true,
+    LATESTSAVE = true,
+}
 
 local function ensureServerInFavorites()
     if not getServerList then return end
@@ -61,6 +72,25 @@ local function patchMultiplayerUI(mp)
     end
 end
 
+local function patchMainMenu()
+    if menuPatchDone then return end
+    if not MainScreen or not MainScreen.instance then return end
+    local ms = MainScreen.instance
+    if not ms.bottomPanel then return end
+    menuPatchDone = true
+
+    local children = ms.bottomPanel:getChildren()
+    if not children then return end
+
+    for i = 0, children:size() - 1 do
+        local child = children:get(i)
+        if child and child.internal and HIDE_ITEMS[child.internal] then
+            child:setVisible(false)
+            child:setHeight(0)
+        end
+    end
+end
+
 local function trySkip()
     if skipDone then return end
     if not MainScreen or not MainScreen.instance then return end
@@ -69,6 +99,7 @@ local function trySkip()
 
     ensureServerInFavorites()
     patchMultiplayerUI(ms.multiplayer)
+    patchMainMenu()
     ms.bottomPanel:setVisible(false)
     ms.multiplayer:setVisible(true)
     ms.multiplayer:requestServerList()
@@ -78,6 +109,7 @@ end
 
 local function onTick()
     if skipDone then
+        pcall(patchMainMenu)
         Events.OnFETick.Remove(onTick)
         return
     end
