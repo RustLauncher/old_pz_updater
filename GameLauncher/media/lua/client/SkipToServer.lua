@@ -79,14 +79,19 @@ local function patchMainMenu()
     if not ms.bottomPanel then return end
     menuPatchDone = true
 
-    local children = ms.bottomPanel:getChildren()
-    if not children then return end
-
-    for i = 0, children:size() - 1 do
-        local child = children:get(i)
-        if child and child.internal and HIDE_ITEMS[child.internal] then
-            child:setVisible(false)
-            child:setHeight(0)
+    local items = {
+        ms.tutorialOption,
+        ms.survivalOption,
+        ms.onlineCoopOption,
+        ms.modsOption,
+        ms.creditOption,
+        ms.loadOption,
+        ms.latestSaveOption,
+        ms.workshopOption,
+    }
+    for _, item in ipairs(items) do
+        if item then
+            item:setVisible(false)
         end
     end
 end
