@@ -3,36 +3,36 @@ local SERVER_IP   = "104.234.119.85"
 local SERVER_PORT = 16261
 
 local skipDone = false
+local serverAdded = false
 local patchDone = false
 local menuPatchDone = false
 
-local HIDE_ITEMS = {
-    TUTORIAL = true,
-    SOLO = true,
-    COOP = true,
-    MODS = true,
-    CREDITS = true,
-    LOAD = true,
-    LATESTSAVE = true,
-}
-
-local function ensureServerInFavorites()
-    if not getServerList then return end
+local function isServerInFavorites()
+    if not getServerList then return false end
     local servers = getServerList()
-    if servers then
-        for _, s in ipairs(servers) do
-            if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
-                return
-            end
+    if not servers then return false end
+    for _, s in ipairs(servers) do
+        if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
+            return true
         end
     end
-    if not Server or not addServerToAccountList then return end
+    return false
+end
+
+local function ensureServerInFavorites()
+    if serverAdded then return end
+    if not getServerList or not Server or not addServerToAccountList then return end
+    if isServerInFavorites() then
+        serverAdded = true
+        return
+    end
     local s = Server.new()
     s:setName(SERVER_NAME)
     s:setIp(SERVER_IP)
     s:setPort(SERVER_PORT)
     s:setServerPassword("")
     addServerToAccountList(s)
+    serverAdded = true
 end
 
 local function removeNewServerItem(mp)
@@ -102,7 +102,7 @@ local function trySkip()
     local ms = MainScreen.instance
     if not ms.multiplayer or not ms.bottomPanel then return end
 
-    ensureServerInFavorites()
+    pcall(ensureServerInFavorites)
     patchMultiplayerUI(ms.multiplayer)
     patchMainMenu()
     ms.bottomPanel:setVisible(false)
@@ -112,13 +112,23 @@ local function trySkip()
     skipDone = true
 end
 
+local function retryAddServer()
+    if serverAdded then return end
+    pcall(ensureServerInFavorites)
+    if serverAdded and MainScreen and MainScreen.instance and MainScreen.instance.multiplayer then
+        MainScreen.instance.multiplayer:refreshList()
+    end
+end
+
 local function onTick()
-    if skipDone then
-        pcall(patchMainMenu)
-        Events.OnFETick.Remove(onTick)
+    if not skipDone then
+        pcall(trySkip)
         return
     end
-    pcall(trySkip)
+    pcall(retryAddServer)
+    if serverAdded and menuPatchDone then
+        Events.OnFETick.Remove(onTick)
+    end
 end
 
 Events.OnFETick.Add(onTick)
