@@ -2,14 +2,15 @@ local SERVER_NAME = "LatamRust PZ"
 local SERVER_IP   = "104.234.119.85"
 local SERVER_PORT = 16261
 
+local skipDone = false
+
 local function ensureServerInFavorites()
-    local servers = getServerList()
-    if servers then
-        for i = 0, servers:size() - 1 do
-            local s = servers:get(i)
-            if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
-                return
-            end
+    local ok, servers = pcall(getServerList)
+    if not ok or not servers then return end
+    for i = 0, servers:size() - 1 do
+        local s = servers:get(i)
+        if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
+            return
         end
     end
     local s = Server.new()
@@ -20,23 +21,25 @@ local function ensureServerInFavorites()
     addServerToAccountList(s)
 end
 
-local function skipToMultiplayer()
+local function trySkip()
+    if skipDone then return end
+    if not MainScreen or not MainScreen.instance then return end
     local ms = MainScreen.instance
-    if not ms or not ms.multiplayer then return end
+    if not ms.multiplayer or not ms.bottomPanel then return end
 
-    ensureServerInFavorites()
-
+    skipDone = true
+    pcall(ensureServerInFavorites)
     ms.bottomPanel:setVisible(false)
     ms.multiplayer:setVisible(true)
     ms.multiplayer:requestServerList()
 end
 
-local skipDone = false
-
-local function onMainMenuEnter()
-    if skipDone then return end
-    skipDone = true
-    skipToMultiplayer()
+local function onTick()
+    if skipDone then
+        Events.OnFETick.Remove(onTick)
+        return
+    end
+    trySkip()
 end
 
-Events.OnMainMenuEnter.Add(onMainMenuEnter)
+Events.OnFETick.Add(onTick)
