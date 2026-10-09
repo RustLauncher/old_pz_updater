@@ -3,6 +3,7 @@ local SERVER_IP   = "104.234.119.85"
 local SERVER_PORT = 16261
 
 local skipDone = false
+local patchDone = false
 
 local function ensureServerInFavorites()
     if not getServerList then return end
@@ -23,6 +24,40 @@ local function ensureServerInFavorites()
     addServerToAccountList(s)
 end
 
+local function patchMultiplayerUI(mp)
+    if patchDone then return end
+    patchDone = true
+
+    local tabs = mp.tabs
+    if tabs and tabs.viewList then
+        local toRemove = nil
+        for _, view in ipairs(tabs.viewList) do
+            if view.view == mp.leftInternetPanel then
+                toRemove = view.view
+                break
+            end
+        end
+        if toRemove then
+            tabs:removeView(toRemove)
+        end
+    end
+
+    local origRefresh = mp.refreshList
+    if origRefresh then
+        mp.refreshList = function(self)
+            origRefresh(self)
+            local items = self.accountList and self.accountList.items
+            if items then
+                for i = #items, 1, -1 do
+                    if items[i] and items[i].item and items[i].item.type == "new_server" then
+                        table.remove(items, i)
+                    end
+                end
+            end
+        end
+    end
+end
+
 local function trySkip()
     if skipDone then return end
     if not MainScreen or not MainScreen.instance then return end
@@ -30,6 +65,7 @@ local function trySkip()
     if not ms.multiplayer or not ms.bottomPanel then return end
 
     ensureServerInFavorites()
+    patchMultiplayerUI(ms.multiplayer)
     ms.bottomPanel:setVisible(false)
     ms.multiplayer:setVisible(true)
     ms.multiplayer:requestServerList()
