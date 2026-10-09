@@ -1,4 +1,4 @@
-local SERVER_NAME = "LatamRust PZ"
+local SERVER_NAME = "Old School PZ"
 local SERVER_IP   = "104.234.119.85"
 local SERVER_PORT = 16261
 
