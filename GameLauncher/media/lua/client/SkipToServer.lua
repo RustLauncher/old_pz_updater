@@ -5,8 +5,8 @@ local SERVER_PORT = 16261
 local skipDone = false
 
 local function ensureServerInFavorites()
-    local ok, servers = pcall(getServerList)
-    if not ok or not servers then return end
+    local servers = getServerList()
+    if not servers then return end
     for i = 0, servers:size() - 1 do
         local s = servers:get(i)
         if s:getIp() == SERVER_IP and s:getPort() == SERVER_PORT then
@@ -28,10 +28,12 @@ local function trySkip()
     if not ms.multiplayer or not ms.bottomPanel then return end
 
     skipDone = true
-    pcall(ensureServerInFavorites)
-    ms.bottomPanel:setVisible(false)
-    ms.multiplayer:setVisible(true)
-    ms.multiplayer:requestServerList()
+    local ok, err = pcall(function()
+        ensureServerInFavorites()
+        ms.bottomPanel:setVisible(false)
+        ms.multiplayer:setVisible(true)
+        ms.multiplayer:requestServerList()
+    end)
 end
 
 local function onTick()
@@ -39,7 +41,7 @@ local function onTick()
         Events.OnFETick.Remove(onTick)
         return
     end
-    trySkip()
+    pcall(trySkip)
 end
 
 Events.OnFETick.Add(onTick)
