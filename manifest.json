@@ -2794,491 +2794,491 @@
                       "sha256":  "c10cf7fe9a7fd83f24e929d970d71cb7867a5df6026cfd4040bf64adf628cd56"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/mod.info",
+                      "path":  "GameLauncher/mods/FittedSheets/42/mod.info",
                       "sha256":  "d312c95bd6593451884fea33af72d1420ae8cf294636a9cebb2b2b716fc7352a"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/poster.png",
+                      "path":  "GameLauncher/mods/FittedSheets/42/poster.png",
                       "sha256":  "4df5ddc861ebc549b5cb55ab4ba248aa95a0e3b17cf0819a2c73c2cc7599f8ae"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/fittedsheets.tiles",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/fittedsheets.tiles",
                       "sha256":  "bc0bcf62171dbd461e9a4933351a872c464462897cf55d37a44a50c466cb522f"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/lua/server/FittedSheets/FT_Server.lua",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/lua/server/FittedSheets/FT_Server.lua",
                       "sha256":  "095ad454b43c9d28234ec0729c540faccdeb28aebba75145bbf7e8a63b5febb5"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_AddSheet.lua",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_AddSheet.lua",
                       "sha256":  "2d08b6749f752bda018ae744f0ff2f802b8b51b9e046fb96f4afe20673ee8b8c"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_Core.lua",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_Core.lua",
                       "sha256":  "5aec1cfd3951a99a87e946e8b790e4892cb4421269880b09927119139977c9c3"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_Overlays.lua",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_Overlays.lua",
                       "sha256":  "e8b25991d8b15295f9c9e9450fab0e4956f49ac1147a628d33d453842bf74b46"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_WindowMap.lua",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/lua/shared/FittedSheets/FT_WindowMap.lua",
                       "sha256":  "9a883c4df7de244fd038c1494b58e124a3d4a993d2ad5d503fbdf946d74360b0"
                   },
                   {
-                      "path":  "mods/FittedSheets/42/media/texturepacks/FittedSheets.pack",
+                      "path":  "GameLauncher/mods/FittedSheets/42/media/texturepacks/FittedSheets.pack",
                       "sha256":  "d46d3e34aee9e8b67451ca89521b13bbb26a75b24aa35bf4f9f65b222fa724c7"
                   },
                   {
-                      "path":  "mods/FittedSheets/common/ChangeLog.txt",
+                      "path":  "GameLauncher/mods/FittedSheets/common/ChangeLog.txt",
                       "sha256":  "b47f6de297ebe4cbe7ef89ed985fb4648bb23de2e854f1ef6fbe1a719e0e5c50"
                   },
                   {
-                      "path":  "mods/FittedSheets/common/media/tileDepthTextureAssignments.txt",
+                      "path":  "GameLauncher/mods/FittedSheets/common/media/tileDepthTextureAssignments.txt",
                       "sha256":  "ef34c921a5c5754c71835d3b85e2f1df3568c2954a239f3f4bf6cef07bc805d0"
                   },
                   {
-                      "path":  "mods/FittedSheets/common/media/tileGeometry.txt",
+                      "path":  "GameLauncher/mods/FittedSheets/common/media/tileGeometry.txt",
                       "sha256":  "475f574737d73cd24bc11a091cc08db3b9c2dc01f996546e16b063ce221b82f9"
                   },
                   {
-                      "path":  "mods/FittedSheets/common/media/depthmaps/DEPTH_fittedsheets_01.png",
+                      "path":  "GameLauncher/mods/FittedSheets/common/media/depthmaps/DEPTH_fittedsheets_01.png",
                       "sha256":  "d2be517cea267fdc37d563a8f6b2d756b74eec4e69776e9cce97763b5d76296d"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/mod.info",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/mod.info",
                       "sha256":  "dce694c9a08ee513c0cffa03a23510728c4e7419e35e12fcf5dd9fca55967714"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/poster.png",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/poster.png",
                       "sha256":  "b2a5e05e00559e24846f55f37af3dd73f78f0109dad1e19957289c2f6141ed95"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/fittedbarricades.tiles",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/fittedbarricades.tiles",
                       "sha256":  "fd815c2831e8688c4148debf164801b856c5b7b187e621feb830eba0744cbbe1"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/client/FittedBarricades/FB_Client.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/client/FittedBarricades/FB_Client.lua",
                       "sha256":  "2a9cf9de26bc78fa6b2d87509aa957f7e41b6449d273a3e0def39865a803e790"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/client/FittedBarricades/FB_Menu.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/client/FittedBarricades/FB_Menu.lua",
                       "sha256":  "fae98cc6550174d1311b20dbb7122c4d839995dece27526da4dd0310b818af3c"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/server/FittedBarricades/FB_Build.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/server/FittedBarricades/FB_Build.lua",
                       "sha256":  "8018bc0f423464d894477f4c557f644e4e9729ea7dd93697e55483d11b6846f3"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Core.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Core.lua",
                       "sha256":  "7047af9b77dcb5863d34ed5dae8df88d7d0789261687f6b58229cd047676f058"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Map.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Map.lua",
                       "sha256":  "036d139e9e81abf4d9d5ef276821a7ae8263c88c2a9ef9b5bacd8227a29af361"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Overlays.lua",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/lua/shared/FittedBarricades/FB_Overlays.lua",
                       "sha256":  "b073f3347471d8159c9f18cc1710ab4e1742ec148dfca6cc0386a1518c87ad37"
                   },
                   {
-                      "path":  "mods/FittedBarricades/42/media/texturepacks/FittedBarricades.pack",
+                      "path":  "GameLauncher/mods/FittedBarricades/42/media/texturepacks/FittedBarricades.pack",
                       "sha256":  "428c9d8c880ddc9b82ca8193b41f9e69924a2be272c0908f7ab4ef36d9d6f974"
                   },
                   {
-                      "path":  "mods/FittedBarricades/common/ChangeLog.txt",
+                      "path":  "GameLauncher/mods/FittedBarricades/common/ChangeLog.txt",
                       "sha256":  "44cd0d628a049bf9299152f9669bc2410268297ddaeff8095b09d8b2f234484c"
                   },
                   {
-                      "path":  "mods/FittedBarricades/common/media/tileDepthTextureAssignments.txt",
+                      "path":  "GameLauncher/mods/FittedBarricades/common/media/tileDepthTextureAssignments.txt",
                       "sha256":  "ad62a8cf19166bfb92109405467a9118243740200fb115d7d5e35b104ed8bb82"
                   },
                   {
-                      "path":  "mods/FittedBarricades/common/media/tileGeometry.txt",
+                      "path":  "GameLauncher/mods/FittedBarricades/common/media/tileGeometry.txt",
                       "sha256":  "108473b99d05b6e107e971d941d1d92bbefb2060c4aca59322b82ddfb9bcae1a"
                   },
                   {
-                      "path":  "mods/FittedBarricades/common/media/depthmaps/DEPTH_fittedbarricades_01.png",
+                      "path":  "GameLauncher/mods/FittedBarricades/common/media/depthmaps/DEPTH_fittedbarricades_01.png",
                       "sha256":  "cce2e62ae2361b2dac4f73c6f9da01c35667c17500e3a098b1f09181441e2530"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/icon.png",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/icon.png",
                       "sha256":  "9f4e13496a85e20a64dceb1c4ed1e0262979440b32949b8974e8e007e068b6a8"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/mod.info",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/mod.info",
                       "sha256":  "5c4d9f36eea421e59cd38936d18f7930e06cf360827a2f481d8e266df7a73354"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/poster.png",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/poster.png",
                       "sha256":  "1ca4263d8280af1657be4abebe415b10213fd7e3d51837d1e4752c9cb4ef4335"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/media/actiongroups/hearthealthmeter.keep",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/media/actiongroups/hearthealthmeter.keep",
                       "sha256":  "f9f7526537fb31eeb44e293467595abe2ae3602473711e30fa04384dc8dfdb17"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/media/AnimSets/hearthealthmeter.keep",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/media/AnimSets/hearthealthmeter.keep",
                       "sha256":  "f9f7526537fb31eeb44e293467595abe2ae3602473711e30fa04384dc8dfdb17"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/42/media/lua/client/HeartHealthMeter.lua",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/42/media/lua/client/HeartHealthMeter.lua",
                       "sha256":  "835f46db43eb95c979f8da3dd8c7a597c746e428e7c98c4a50a54a8159733cc2"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/common/media/actiongroups/hearthealthmeter.keep",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/common/media/actiongroups/hearthealthmeter.keep",
                       "sha256":  "f9f7526537fb31eeb44e293467595abe2ae3602473711e30fa04384dc8dfdb17"
                   },
                   {
-                      "path":  "mods/HeartHealthMeter/common/media/AnimSets/hearthealthmeter.keep",
+                      "path":  "GameLauncher/mods/HeartHealthMeter/common/media/AnimSets/hearthealthmeter.keep",
                       "sha256":  "f9f7526537fb31eeb44e293467595abe2ae3602473711e30fa04384dc8dfdb17"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/mod.info",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/mod.info",
                       "sha256":  "f334d8652447a1705c8eebf0482318c2dc7281efa13fcf451e3a9f7d50e837d8"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/poster.png",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/poster.png",
                       "sha256":  "d13ebe0160d09fad156162b04a6ce36231bf48dacd57567e97490f3cef78ae0b"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/sandbox-options.txt",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/sandbox-options.txt",
                       "sha256":  "f06bdac7691ca09f7e9a949156357fc5c1d72ca3d6d24606ed08a4697d4355ba"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/usefulpallets.tiles",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/usefulpallets.tiles",
                       "sha256":  "ebceea22129493009cc842c98b99f59e18db92d80596b0166958eb3f8cdda0fe"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/client/UsefulPallets/ContextMenu.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/client/UsefulPallets/ContextMenu.lua",
                       "sha256":  "d30fad6a86288b85c33d3910738bf0e6bb7074fd8b89b9a1c163a75b345ac548"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/client/UsefulPallets/CraftingUI.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/client/UsefulPallets/CraftingUI.lua",
                       "sha256":  "fa621786d54c7a6f4ba2ea3f28de136e1f46f743c4dfe23512ca5cc96ad9cc1b"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/client/UsefulPallets/SandboxUI.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/client/UsefulPallets/SandboxUI.lua",
                       "sha256":  "cc9888cd73a75224fa94363aedc2175f923d42b825716e22c204bccc97d7d428"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/DE/ContextMenu.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/DE/ContextMenu.json",
                       "sha256":  "d363f217af20332eda1a8ee927bdceeeac9985260f65976cb3e0ce88e309178b"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/DE/Moveables.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/DE/Moveables.json",
                       "sha256":  "eabaab477439e2022501be21cc82f4a73f0e498d21b62396a14822ba7f4d7f87"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/DE/Recipes.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/DE/Recipes.json",
                       "sha256":  "cc00c359869cfc1da2a1a52c74b21671486b54e8f6a557be3e2fcec94a9a7d66"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/DE/Sandbox.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/DE/Sandbox.json",
                       "sha256":  "61800e7be26861c952c321dd0a6a2de6d457b6014971e88b9ca1515cbeb0f176"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/EN/ContextMenu.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/EN/ContextMenu.json",
                       "sha256":  "b73cd199405a82dcdddd34575a72ddfbb723ba7293ab22fdd42079aaebbbecd0"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/EN/Moveables.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/EN/Moveables.json",
                       "sha256":  "30b7317c9b30d82f60500dc88bd71197dd6d381a4f54bfc62b5792c0034ca055"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/EN/Recipes.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/EN/Recipes.json",
                       "sha256":  "46e38e0bd4116b4e12b473124401f845042405b32f778ee1b9cddb117a0e1c49"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/Translate/EN/Sandbox.json",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/Translate/EN/Sandbox.json",
                       "sha256":  "8f6910985341af36d2802d401ac18dbc4f866f4d70005b68544687a5793b43be"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Compatibility.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Compatibility.lua",
                       "sha256":  "5b54601c9fdbafb7e1f343c1b29fcb6e253c183d8f098eb78e249e66b6aeb8e9"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Config.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Config.lua",
                       "sha256":  "dcea975b2dbc810dfcdf59b3c8fe4c1ffc8b1713bd0eeb19f126ff591d577abf"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/CraftAction.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/CraftAction.lua",
                       "sha256":  "bd5eb1d955ae4a8808e567644fd4a6592e345fe45c89462138293e785a6b3907"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Crafting.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Crafting.lua",
                       "sha256":  "9c7ad598121b882f62eead5d91ffaea93a1ad034c8a64fba7c4a2237d7dbe21a"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/RecipeActions.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/RecipeActions.lua",
                       "sha256":  "477b8948b6e1299d028763cee27dd30eb5b7bc7797ec2363b75d28ad0a996e06"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Recipes.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Recipes.lua",
                       "sha256":  "a5e5f98a9bbffb06aae2f1d8085513884962dffa939cf135134d34b5efd32a64"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Sources.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/Sources.lua",
                       "sha256":  "41fb4d65fdbcc82b4da4cdf7ae4a25cb3ffe294873ea284cb9c7e7d10c90e6b8"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/StackAction.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/StackAction.lua",
                       "sha256":  "e8378d41f02e2e1c8695031aef4dab9029f7b7a7c69f141ae0d824763341dde1"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/lua/shared/UsefulPallets/TransferAction.lua",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/lua/shared/UsefulPallets/TransferAction.lua",
                       "sha256":  "2f0de360143fa732969c9109f92728abf0d83ebed844326284e27c80a334390e"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/scripts/usefulpallets_recipes.txt",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/scripts/usefulpallets_recipes.txt",
                       "sha256":  "1bf3f9a9d6ec05c38d732df108f0e1cbe63e0a579b6ddaf67fde14f710d4aeb3"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/texturepacks/UsefulPallets.pack",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/texturepacks/UsefulPallets.pack",
                       "sha256":  "cabe6f6a5e79e0bc8a9e78973b1a512146d3895cdbbc9bcf703dce93f6683680"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/textures/Item_UsefulPallets_MilitaryPallet.png",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/textures/Item_UsefulPallets_MilitaryPallet.png",
                       "sha256":  "53c87a37b31305f40e15e600538a43ebab21b21cd7e82e4762cdde44df635d03"
                   },
                   {
-                      "path":  "mods/UsefulPallets/42/media/textures/Item_UsefulPallets_Pallet.png",
+                      "path":  "GameLauncher/mods/UsefulPallets/42/media/textures/Item_UsefulPallets_Pallet.png",
                       "sha256":  "5d129a84fe945c252f53e686e72d8bba03db33efe5135e21095041f9e8c8021d"
                   },
                   {
-                      "path":  "mods/UsefulPallets/common/.gitkeep",
+                      "path":  "GameLauncher/mods/UsefulPallets/common/.gitkeep",
                       "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
                   },
                   {
-                      "path":  "mods/KI5TrailersKeyless/common/mod.info",
+                      "path":  "GameLauncher/mods/KI5TrailersKeyless/common/mod.info",
                       "sha256":  "055df5559604664a0aa2777b5558b791b2c0e6d342d02be18c9305533c3b1abb"
                   },
                   {
-                      "path":  "mods/KI5TrailersKeyless/common/preview.png",
+                      "path":  "GameLauncher/mods/KI5TrailersKeyless/common/preview.png",
                       "sha256":  "82bb3129f9ac154bc96d41a9cd8ff42b654d4242f778595ed41286aa2cbb7186"
                   },
                   {
-                      "path":  "mods/KI5TrailersKeyless/common/media/scripts/vehicles/zzz_ki5_traileroverride.txt",
+                      "path":  "GameLauncher/mods/KI5TrailersKeyless/common/media/scripts/vehicles/zzz_ki5_traileroverride.txt",
                       "sha256":  "8b85fc53c5b97b0dfc526c8be37889c24eefad98b25134a6083457c0778ed3f4"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/mod.info",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/mod.info",
                       "sha256":  "371f9f48d645f775cf855db520abb4a5bd0dc4167dc48f13ea9d6ff5ce6fac0a"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/poster.png",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/poster.png",
                       "sha256":  "49f68eed0c6ba5bae0931bfc48a6c2c3e3dcd8f0be1e0c9a72d39fef9feb1915"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/media/sandbox-options.txt",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/media/sandbox-options.txt",
                       "sha256":  "9849d63b4f787ea2ab5e94f45679510b64e0ee08622f481351909cb252ba5882"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/media/lua/shared/SkillBooksGiveXp.lua",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/media/lua/shared/SkillBooksGiveXp.lua",
                       "sha256":  "5f10861d68b5283f95eaa8bb475f45dfcf808dc6105b8bb0014997820cb62440"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/media/lua/shared/Translate/AR/Sandbox.json",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/media/lua/shared/Translate/AR/Sandbox.json",
                       "sha256":  "b7fb231ded6cbd7eeee3887cf3aaa1481cc04fdc189daba4846d92795b250d1b"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/media/lua/shared/Translate/EN/Sandbox.json",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/media/lua/shared/Translate/EN/Sandbox.json",
                       "sha256":  "11c45852b6e351207bc7b6f55abe74f2322058707afb6be8b7d74220d7504046"
                   },
                   {
-                      "path":  "mods/SkillBooksGiveXP/42/media/lua/shared/Translate/ES/Sandbox.json",
+                      "path":  "GameLauncher/mods/SkillBooksGiveXP/42/media/lua/shared/Translate/ES/Sandbox.json",
                       "sha256":  "a889d307491512801235c5a7cfba01e60cbb8c01b450d0a44d454d7a9b3a97bc"
                   },
                   {
-                      "path":  "mods/UsableSafe/logo.png",
+                      "path":  "GameLauncher/mods/UsableSafe/logo.png",
                       "sha256":  "566b951608ea1fbc0d8144d57c52dcd57ffaa84ef2c084e858a72ea569afc094"
                   },
                   {
-                      "path":  "mods/UsableSafe/mod.info",
+                      "path":  "GameLauncher/mods/UsableSafe/mod.info",
                       "sha256":  "81b973efe12829384cc9ada4f79313b3b0c56ef73369a0794965f43154b27a30"
                   },
                   {
-                      "path":  "mods/UsableSafe/poster.png",
+                      "path":  "GameLauncher/mods/UsableSafe/poster.png",
                       "sha256":  "1627b4658352bcc88cce2478e71f2a48c72ce2d26a0490ce636e039d1e7865c8"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/logo.png",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/logo.png",
                       "sha256":  "566b951608ea1fbc0d8144d57c52dcd57ffaa84ef2c084e858a72ea569afc094"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/mod.info",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/mod.info",
                       "sha256":  "8c4810e8272063ca7b1a0f68a317db4c7951b4bf7303675d48a0889d5c059aba"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/poster.png",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/poster.png",
                       "sha256":  "1627b4658352bcc88cce2478e71f2a48c72ce2d26a0490ce636e039d1e7865c8"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/media/lua/client/UsableSafe_Client.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/media/lua/client/UsableSafe_Client.lua",
                       "sha256":  "b7cec7882197550fbeef1f1c5fb413cf515c81be5b7f7c2de5ac7a91efedabbe"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/media/lua/shared/UsableSafe_Shared.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/media/lua/shared/UsableSafe_Shared.lua",
                       "sha256":  "7fc61a516df1f97f2487a772e864a4c0f4bb9b9083118d93aef4d0943a0de26b"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/media/lua/shared/Translate/EN/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/media/lua/shared/Translate/EN/IG_UI.json",
                       "sha256":  "df40e82f2f1e452a015aaa2e2e6525ac13caa161864eaea64e4d476b89b0941f"
                   },
                   {
-                      "path":  "mods/UsableSafe/42.20/media/lua/shared/Translate/RU/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/42.20/media/lua/shared/Translate/RU/IG_UI.json",
                       "sha256":  "5fde1ffdb1c5c4377541b9d85923f970c63bc27a6882173d0f40e038b4288a0f"
                   },
                   {
-                      "path":  "mods/UsableSafe/common/media/lua/client/UsableSafe_Client.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/common/media/lua/client/UsableSafe_Client.lua",
                       "sha256":  "b7cec7882197550fbeef1f1c5fb413cf515c81be5b7f7c2de5ac7a91efedabbe"
                   },
                   {
-                      "path":  "mods/UsableSafe/common/media/lua/shared/UsableSafe_Shared.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/common/media/lua/shared/UsableSafe_Shared.lua",
                       "sha256":  "7fc61a516df1f97f2487a772e864a4c0f4bb9b9083118d93aef4d0943a0de26b"
                   },
                   {
-                      "path":  "mods/UsableSafe/common/media/lua/shared/Translate/EN/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/common/media/lua/shared/Translate/EN/IG_UI.json",
                       "sha256":  "df40e82f2f1e452a015aaa2e2e6525ac13caa161864eaea64e4d476b89b0941f"
                   },
                   {
-                      "path":  "mods/UsableSafe/common/media/lua/shared/Translate/RU/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/common/media/lua/shared/Translate/RU/IG_UI.json",
                       "sha256":  "5fde1ffdb1c5c4377541b9d85923f970c63bc27a6882173d0f40e038b4288a0f"
                   },
                   {
-                      "path":  "mods/UsableSafe/media/lua/client/UsableSafe_Client.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/media/lua/client/UsableSafe_Client.lua",
                       "sha256":  "b7cec7882197550fbeef1f1c5fb413cf515c81be5b7f7c2de5ac7a91efedabbe"
                   },
                   {
-                      "path":  "mods/UsableSafe/media/lua/shared/UsableSafe_Shared.lua",
+                      "path":  "GameLauncher/mods/UsableSafe/media/lua/shared/UsableSafe_Shared.lua",
                       "sha256":  "7fc61a516df1f97f2487a772e864a4c0f4bb9b9083118d93aef4d0943a0de26b"
                   },
                   {
-                      "path":  "mods/UsableSafe/media/lua/shared/Translate/EN/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/media/lua/shared/Translate/EN/IG_UI.json",
                       "sha256":  "df40e82f2f1e452a015aaa2e2e6525ac13caa161864eaea64e4d476b89b0941f"
                   },
                   {
-                      "path":  "mods/UsableSafe/media/lua/shared/Translate/RU/IG_UI.json",
+                      "path":  "GameLauncher/mods/UsableSafe/media/lua/shared/Translate/RU/IG_UI.json",
                       "sha256":  "5fde1ffdb1c5c4377541b9d85923f970c63bc27a6882173d0f40e038b4288a0f"
                   },
                   {
-                      "path":  "mods/item_condition/42/icon.png",
+                      "path":  "GameLauncher/mods/item_condition/42/icon.png",
                       "sha256":  "00889f99eb772c1be98a125755975cce82438fb2d725c7a1728eb234c3f85080"
                   },
                   {
-                      "path":  "mods/item_condition/42/mod.info",
+                      "path":  "GameLauncher/mods/item_condition/42/mod.info",
                       "sha256":  "39a096a96e63418e7630693b7b16ad51e739527954b1f80713b797fc33b67539"
                   },
                   {
-                      "path":  "mods/item_condition/42/poster.png",
+                      "path":  "GameLauncher/mods/item_condition/42/poster.png",
                       "sha256":  "fea6462323bd24fdccb0624e6f95a0bc6302da67369104bae4070069e87bbc35"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/Config.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/Config.lua",
                       "sha256":  "0b02eb0f1c719d47a878ddce0b8d6148dd9ed19e0dd78e0f6ac91edc121f7397"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/Hooks.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/Hooks.lua",
                       "sha256":  "e424b62acf30c046828cad554f3777a9ae6af04e5da3ea25de65a95df83c381f"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/ItemCondition.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/ItemCondition.lua",
                       "sha256":  "d467aa58575d5eb2988bb3e4a8cac831cf44c0061cf0650350fe2153339c489c"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/ModOptions.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/ModOptions.lua",
                       "sha256":  "e72f901265614110d8c096fa5d014a77b80a315065d9b0db03f6cf69e5649b0f"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/UI.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/UI.lua",
                       "sha256":  "1a16755429e4d4c6ecab6acf07bb8bf97f43725a8a6c7d92e0eef7c949e96a71"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/client/ItemCondition/Util.lua",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/client/ItemCondition/Util.lua",
                       "sha256":  "0d00da5e4c359d37157c2b9ebbcf031f5a9935fd93d835379e3ea2242c379e17"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/lua/shared/Translate/EN/UI.json",
+                      "path":  "GameLauncher/mods/item_condition/42/media/lua/shared/Translate/EN/UI.json",
                       "sha256":  "3aa50f7484c18e99fdb9c38c7d8a6c4ebe0288307e7da37a016ac4b09d2b0ddf"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_1.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_1.png",
                       "sha256":  "e32b5683a4607e474608c2040d166087d4bda30e642b271ddc988063e427cb69"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_10.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_10.png",
                       "sha256":  "cdc2e6e8cceaac20bd71aad8d8b2157316fa5bb69f7949af6276ebd26a3598d3"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_2.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_2.png",
                       "sha256":  "d39e228aa43c9ef799dbacee22568606bfc6799e9b7192fe9b7bca1920fd4ea8"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_3.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_3.png",
                       "sha256":  "0358d45d39164723f29b51cd22669e869559278700cae580aaded955dcc11427"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_4.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_4.png",
                       "sha256":  "7a9893a14d8706d31f65a648b4016bf80db1d60228ad68a3160639ad443ccffe"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_5.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_5.png",
                       "sha256":  "fdf50641694f14c7c68134ca758d46a609615b95775106fb7eb31557a23bf544"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_6.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_6.png",
                       "sha256":  "63239372f2d39052d9329a3d95432b89995b5a8a2ef8080bed8cba94c1e7b591"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_7.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_7.png",
                       "sha256":  "e8e95d651e2fe0f370783c1aae51d0453720bf8c2f2d9c7a47ff03eb501bb4cf"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_8.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_8.png",
                       "sha256":  "311eb74cbaacd3c6b15564808174c74d9d37a93af8fc41a810a0cef7c2d22a39"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_h_9.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_h_9.png",
                       "sha256":  "6f5d23892ff2058973cfd5f86eb495b3a2dc79a701cd6ee3947c6248ef565f49"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_1.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_1.png",
                       "sha256":  "9952874d9f4e35db21ec41c8e2e5b7cc5162313fcdfb6cdcd913626b99404b78"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_10.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_10.png",
                       "sha256":  "cdc2e6e8cceaac20bd71aad8d8b2157316fa5bb69f7949af6276ebd26a3598d3"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_2.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_2.png",
                       "sha256":  "56c58ca7393c12bbca83d2a97dde75c29e3d9ca531bd85ad499aa77d39feacac"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_3.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_3.png",
                       "sha256":  "9686abdcc334c6f8e7af674f9b4446e5cce95ce844cc50770ec96f8ba5cb0e9d"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_4.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_4.png",
                       "sha256":  "84000dd3674406371014c267cbf1ca67727ad91e1cb0ccb64daba7199b5d4c24"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_5.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_5.png",
                       "sha256":  "bfdf6939d431def6b6b922cc8e09a190b68caac7c03ecafc28db99c81504c152"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_6.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_6.png",
                       "sha256":  "a928c8bbc5fafafe823a36240942310ad809518eed7b03558970afcf40cb7bd2"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_7.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_7.png",
                       "sha256":  "cf0da5dbe0378107dc775df976c7fbc3e6f4cc45f265516a8bb4ad82ce6103f7"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_8.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_8.png",
                       "sha256":  "53594f5b76d4e447972194df7d21f69716106820a5c8d26fea64413640d712aa"
                   },
                   {
-                      "path":  "mods/item_condition/42/media/ui/qdx/item_condition/circle_v_9.png",
+                      "path":  "GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_9.png",
                       "sha256":  "5a0a2c5372ea78c7824e5fccc99354df5ad2a6495bbb92f7a981bd29e6e166c6"
                   }
               ]
