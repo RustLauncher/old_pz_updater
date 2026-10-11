@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.37",
+    "version":  "1.0.38",
     "files":  [
                   {
                       "path":  "PZLauncher.exe",
@@ -7,7 +7,7 @@
                   },
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
-                      "sha256":  "9ede0de0aa57dba1cd1e2005a8b106022312fd36dc3e246b8f8ea6f63a65349d"
+                      "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8"
                   },
                   {
                       "path":  "GameLauncher/mods/BetterSorting/42/LICENSE",

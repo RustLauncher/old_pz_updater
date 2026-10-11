@@ -6,7 +6,9 @@ local skipDone = false
 local patchDone = false
 local menuPatchDone = false
 local serverConfirmed = false
+local connectingToServer = false
 local tickCount = 0
+local onTick
 
 local function patchTabs(mp)
     if patchDone then return end
@@ -72,6 +74,7 @@ end
 
 local function trySkip()
     if skipDone then return end
+    if connectingToServer then return end
     if not MainScreen or not MainScreen.instance then return end
     local ms = MainScreen.instance
     if not ms.multiplayer or not ms.bottomPanel then return end
@@ -113,8 +116,33 @@ local function tryEnsureServer()
     end
 end
 
-local function onTick()
+local function onConnected()
+    connectingToServer = true
+    if MainScreen and MainScreen.instance and MainScreen.instance.multiplayer then
+        MainScreen.instance.multiplayer:setVisible(false)
+    end
+    Events.OnFETick.Remove(onTick)
+end
+
+local function onDisconnect()
+    connectingToServer = false
+    skipDone = false
+    patchDone = false
+    menuPatchDone = false
+    tickCount = 0
+    Events.OnFETick.Add(onTick)
+end
+
+onTick = function()
     tickCount = tickCount + 1
+
+    if connectingToServer then
+        if MainScreen and MainScreen.instance and MainScreen.instance.multiplayer then
+            MainScreen.instance.multiplayer:setVisible(false)
+        end
+        Events.OnFETick.Remove(onTick)
+        return
+    end
 
     if not skipDone then
         pcall(trySkip)
@@ -134,3 +162,5 @@ local function onTick()
 end
 
 Events.OnFETick.Add(onTick)
+Events.OnConnected.Add(onConnected)
+Events.OnDisconnect.Add(onDisconnect)
