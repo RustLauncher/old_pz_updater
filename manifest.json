@@ -1,9 +1,9 @@
 {
-    "version":  "1.0.39",
+    "version":  "1.0.40",
     "files":  [
                   {
                       "path":  "PZLauncher.exe",
-                      "sha256":  "77406cd9937559f7aa4d48dcfc8375ffeb72e48042387d1cfa3b7d3bf4f990d1"
+                      "sha256":  "07f4a9eb98886145bbd1e5ac7509b0716b538a937e92be104c8b1953356d3c7e"
                   },
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
