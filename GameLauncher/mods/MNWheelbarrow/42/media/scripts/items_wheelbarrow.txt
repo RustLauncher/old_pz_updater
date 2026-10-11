@@ -1,0 +1,124 @@
+module MNWheelbarrow
+{
+    imports { Base }
+
+    /*
+     * O carrinho de mao.
+     *
+     * Duas mecanicas nao sao definidas aqui, e sim em Lua (WB_Weight.lua),
+     * porque o engine nao consegue expressa-las em script:
+     *
+     *   Capacity      - o valor real vem de SandboxVars via setCapacity(),
+     *                   que aceita qualquer numero em runtime.
+     *   WeightReduction - o engine aplica UMA porcentagem sobre o peso total
+     *                   do conteudo. Como o carrinho so deve aliviar itens
+     *                   pesados, a porcentagem equivalente e recalculada a
+     *                   cada mudanca de conteudo via setWeightReduction().
+     *
+     * Os valores abaixo sao so o ponto de partida antes do Lua assumir.
+     *
+     * Icone, modelo de chao e modelo de mao saem todos do mesmo .fbx, gerados
+     * por assets/tools_render_icon.py e assets/tools_build_models.py.
+     */
+    item Wheelbarrow
+    {
+        DisplayCategory = Container,
+        ItemType = base:container,
+
+        /* Peso baixo por realismo: um carrinho de mao vazio e leve.
+
+           E ele SIM entra na conta da capacidade, ao contrario do que esta linha
+           afirmou por um tempo: o teto real e o orcamento de peso da square, 50, e
+           o carrinho gasta parte dele so por estar la. WB_Weight.floorCeiling
+           subtrai este numero -- lendo daqui, do script, e nao de uma copia. Mudar
+           3.0 muda o teto, e e assim que deve ser. */
+        Weight = 3.0,
+
+        /* O icone e RENDERIZADO DO PROPRIO MODELO, por
+           assets/tools_render_icon.py, e nao desenhado a mao. Isso importa: um
+           icone desenhado separado envelhece mal, porque a cada ajuste de malha
+           ou textura ele passa a mostrar um carrinho que nao existe mais. Aqui
+           os dois saem da mesma fonte.
+
+           O nome do arquivo obedece a convencao do jogo -- Icon = Wheelbarrow
+           procura textures/Item_Wheelbarrow.png. */
+        Icon = Wheelbarrow,
+        WorldStaticModel = MNWheelbarrow_Ground,
+
+        /* Aparece nas maos com mesh ESTATICO, sem rigging.
+           StaticModel + AnimMask e a tecnica que o mod Carry Visible Items usa
+           para o tanque de oxigenio e o extintor. A alternativa,
+           ReplaceInPrimaryHand, exigiria mesh com skin preso ao osso -- que e
+           trabalho de Blender que eu nao consigo produzir.
+
+           holdingbag deixa os bracos para baixo ao lado do corpo, que e a pose
+           mais parecida com segurar os cabos de um carrinho entre as poses que
+           o jogo oferece (as outras sao tocha e guarda-chuva). */
+        StaticModel = MNWheelbarrow_Hand,
+
+        /* Mascara PROPRIA, e ela e o que finalmente poe os DOIS bracos na pose.
+           Ver 42/media/AnimSets/player/maskingright/mnwb_holdingcart.xml.
+
+           Eu tinha concluido que isso era impossivel -- "mascara e por mao,
+           entao nunca da pose de dois bracos" -- e gastei uma rodada tentando
+           somar primaryAnimMask com secondaryAnimMask, sem efeito. A conclusao
+           estava errada: por mao e o SLOT que declara a mascara; o alcance dela
+           e definido pelos ossos que ela lista, e ali cabe o corpo inteiro.
+
+           A mascara nossa acrescenta o lado esquerdo aos ossos da holdingbagright
+           vanilla. Um slot so, dois bracos.
+
+           secondaryAnimMask sai junto: com a mascara certa embaixo ele so teria
+           chance de brigar pelo braco esquerdo. */
+        primaryAnimMask = mnwb_holdingcart,
+
+        /* 38, o mesmo teto que o Lua escreve, e nao os 47 de antes.
+
+           Este valor vale na janela entre o item existir e a primeira varredura de
+           WB_Weight -- curta, mas real. 47 era 50 menos o carrinho, sem a margem do
+           item que entra: nessa janela o compartimento anunciava folga que o chao
+           recusava, que e a mesma mentira de barra que o resto deste mod persegue.
+           O numero do jogador continua sendo a sandbox option; este e so o ponto de
+           partida, e ponto de partida nao deve ser o maior de todos. */
+        Capacity = 38,
+        WeightReduction = 0,
+        CanHaveHoles = false,
+
+        RunSpeedModifier = 0.80,
+
+        /* RequiresEquippedBothHands: TERCEIRO campo que eu havia removido por
+           diagnostico errado, e o terceiro a voltar depois de testado isolado.
+           Ele equipa sem problema nenhum.
+
+           O que ele entrega e a UI: ISInventoryPaneContextMenu marca force2Hands
+           quando isRequiresEquippedBothHands() e verdadeiro e troca "equipar na
+           primaria" / "equipar na secundaria" por uma unica opcao "Equip Two
+           Hands", com traducao pronta em todos os idiomas do jogo.
+
+           A causa real de o item nao equipar era o WB_Hands, que o desequipava no
+           mesmo frame. Enquanto isso estava quebrado eu culpei tres campos
+           diferentes -- secondaryAnimMask, RequiresEquippedBothHands e o modelo --
+           porque comparava o item real com variantes que o WB_Hands nao tocava.
+           Nenhum dos tres tinha culpa.
+
+           O WB_Hands continua necessario: e ele que impede uma arma na mao livre
+           e conserta estados que deixavam o personagem invisivel. */
+        RequiresEquippedBothHands = TRUE,
+
+        AcceptItemFunction = MNWheelbarrow.AcceptItem,
+        Tooltip = Tooltip_item_MNWheelbarrow,
+
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+
+        /* base:heavyitem foi TESTADA e nao entregou: o gerador usa essa tag e e
+           carregado com dois bracos, mas no carrinho a animacao continuou de um
+           braco so. Removida em vez de mantida "por garantia" -- ela nao serve ao
+           que eu a adicionei, e semanticamente contradiz o item (o carrinho pesa
+           3.0 justamente para maximizar a capacidade, entao pesado ele nao e) e
+           toca exatamente os caminhos de carregar-item-pesado que ja deixaram o
+           personagem invisivel neste projeto. */
+        Tags = MNWheelbarrow:mnwbHauler,
+    }
+}

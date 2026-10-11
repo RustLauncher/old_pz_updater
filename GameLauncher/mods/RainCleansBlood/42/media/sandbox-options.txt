@@ -1,0 +1,89 @@
+VERSION = 1,
+
+option RainCleansBlood.TilesPerMinuteNearPlayer
+{
+    type = integer,
+    min = 10,
+    max = 2000,
+    default = 300,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_TilesPerMinute,
+}
+
+option RainCleansBlood.WeatherThreshold
+{
+    type = double,
+    min = 0.05,
+    max = 0.95,
+    default = 0.25,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_WeatherThreshold,
+}
+
+option RainCleansBlood.AlsoCleanAsh
+{
+    type = boolean,
+    default = true,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlsoCleanAsh,
+}
+
+option RainCleansBlood.AlsoCleanDroppings
+{
+    type = boolean,
+    default = true,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlsoCleanDroppings,
+}
+
+option RainCleansBlood.AlsoCleanInside
+{
+    type = boolean,
+    default = false,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlsoCleanInside,
+}
+
+option RainCleansBlood.AlsoCleanVehicles
+{
+    type = boolean,
+    default = true,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlsoCleanVehicles,
+}
+
+option RainCleansBlood.VehicleCleanSpeed
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.1,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_VehicleCleanSpeed,
+}
+
+option RainCleansBlood.AlsoCleanClothes
+{
+    type = boolean,
+    default = true,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlsoCleanClothes,
+}
+
+option RainCleansBlood.ClothesCleanSpeed
+{
+    type = double,
+    min = 1.0,
+    max = 10.0,
+    default = 1.0,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_ClothesCleanSpeed,
+}
+
+option RainCleansBlood.AlwaysClean
+{
+    type = boolean,
+    default = false,
+    page = RainCleansBlood,
+    translation = RainCleansBlood_AlwaysClean,
+}

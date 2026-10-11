@@ -1,0 +1,4 @@
+{
+    "name": "LG Podłączenie do wodociągu",
+    "description": "Dodaje opcję \"Podłącz ... do magistrali wodociągowej\" dla umywalek, wanien, pryszniców, toalet i pralek, które postawisz w środku. Podłączony sprzęt liczy się jako własny sprzęt budynku: ta sama woda bez końca, ten sam dzień odcięcia, ta sama woda, która potem zostaje w rurach. Budynki, które mapa opisuje jako bez bieżącej wody, zostają suche. Warto to mieć tylko wtedy, gdy postawisz swój sprzęt przed odcięciem wody. Gra jednoosobowa, hostowana wieloosobowa i dedykowany serwer."
+}

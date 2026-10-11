@@ -1,0 +1,4 @@
+{
+    "name": "LG An die Wasserversorgung anschließen",
+    "description": "Fügt eine Option \"... an die Hauptleitung anschließen\" für Waschbecken, Badewannen, Duschen, Toiletten und Waschmaschinen hinzu, die du drinnen aufstellst. Ein angeschlossenes Gerät zählt als gebäudeeigenes: dieselbe endlose Versorgung, derselbe Abschalttag, dasselbe Restwasser in den Leitungen danach. Gebäude, die die Karte als ohne fließendes Wasser führt, bleiben trocken. Lohnt sich nur, wenn du deine Geräte vor der Wasserabschaltung aufstellst. Einzelspieler, gehosteter Mehrspieler und dedizierter Server."
+}

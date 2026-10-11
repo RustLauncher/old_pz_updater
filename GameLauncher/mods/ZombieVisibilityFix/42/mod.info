@@ -1,0 +1,6 @@
+name=Zombie Visibility Fix
+id=ZombieVisibilityFix
+author=wget
+description=fixes up zombie visibility so that the player's vision cone is no longer misleading
+poster=poster.png
+icon=icon.png

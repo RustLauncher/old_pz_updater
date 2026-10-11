@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Déšť smývá krev",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Dlaždic za minutu",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Kolik náhodných dlaždic se vyčistí za herní minutu.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Práh intenzity počasí",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Jak intenzivní musí být déšť nebo sníh, aby začal smývat krev. Vyšší = potřeba silnějšího počasí.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Čistit popel",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Čistí také popel zanechaný spálenými mrtvolami.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Čistit zvířecí trus",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Čistí také zvířecí trus (hnůj) zanechaný na zemi.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Čistit uvnitř",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Čistí také krev uvnitř budov.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Čistit vozidla",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Postupně čistí také krev z vozidel.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Rychlost čištění vozidel",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Kolik krve se z vozidel odstraní za minutu.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Čistit oblečení",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Postupně čistí také krev a špínu z nošeného oblečení hráčů.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Rychlost čištění oblečení",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Kolik krve a špíny se z oblečení odstraní za minutu.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Vždy čistit",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Čistí vždy bez ohledu na počasí."
+}

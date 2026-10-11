@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "Was soll auf diesen Behälter? (maximal %1 Zeichen)",
+    "IGUI_LPBCS_InkLabel": "Geschrieben mit",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "Du brauchst einen Kugelschreiber oder Bleistift, um darauf zu schreiben.",
+    "IGUI_LPBCS_NeedBrush": "Du brauchst einen Pinsel, um einen Namen darauf zu malen.",
+    "IGUI_LPBCS_NeedPaint": "Du brauchst eine Farbdose, um einen Namen darauf zu malen.",
+
+    "IGUI_LPBCS_Disabled": "Das Beschriften von Behältern ist auf diesem Server deaktiviert.",
+    "IGUI_LPBCS_NoContainer": "Dieser Behälter ist nicht mehr da.",
+    "IGUI_LPBCS_TooFar": "Du bist zu weit von diesem Behälter entfernt.",
+    "IGUI_LPBCS_NoWay": "Dieser Behälter ist nicht erreichbar.",
+    "IGUI_LPBCS_NotYourSafehouse": "Dieser Behälter befindet sich in einem Versteck, dem du nicht angehörst.",
+    "IGUI_LPBCS_WriteFailed": "Der Name konnte nicht geschrieben werden.",
+    "IGUI_LPBCS_MoveFailed": "Das Schild konnte nicht verschoben werden.",
+    "IGUI_LPBCS_BadRequest": "Diese Anfrage war ungültig und wurde ignoriert.",
+    "IGUI_LPBCS_TooQuick": "Warte einen Moment, bevor du es erneut versuchst.",
+    "IGUI_LPBCS_VersionSkew": "Auf diesem Server läuft eine ältere Version dieses Mods."
+}

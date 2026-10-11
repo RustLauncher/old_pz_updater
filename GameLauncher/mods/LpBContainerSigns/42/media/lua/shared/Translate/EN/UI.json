@@ -1,0 +1,15 @@
+{
+    "UI_LPBCS_OptionsTitle": "LpB Container Signs",
+
+    "UI_LPBCS_Opt_Enabled": "Show signs on containers",
+    "UI_LPBCS_Opt_Enabled_tooltip": "Draw the name written on a crate or cabinet in the world. Turning this off hides every sign for you only; the names themselves are untouched.",
+
+    "UI_LPBCS_Opt_Radius": "Display radius (tiles)",
+    "UI_LPBCS_Opt_Radius_tooltip": "How far a sign stays readable. Signs fade out over the last two tiles instead of blinking away. Lower this in a dense base.",
+
+    "UI_LPBCS_Opt_Opacity": "Sign opacity (percent)",
+    "UI_LPBCS_Opt_Opacity_tooltip": "How solid the signs are drawn.",
+
+    "UI_LPBCS_Opt_HideWhenLoot": "Hide while the loot window is open",
+    "UI_LPBCS_Opt_HideWhenLoot_tooltip": "Clears the signs off the screen while you are actually rummaging through a container, when you no longer need them."
+}

@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Kiša čisti krv",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Pločica u minuti",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Koliko nasumičnih pločica se čisti po minuti u igri.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Prag intenziteta vremena",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Koliko jak mora biti kiša ili snijeg da počne spirati krv. Više = potrebno jače vrijeme.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Očisti pepeo",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Čisti i pepeo koji ostaju iza spaljenih leševa.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Očisti životinjski izmet",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Čisti i životinjski izmet (gnoj) ostavljen na tlu.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Očisti unutra",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Čisti i krv unutar zgrada.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Očisti vozila",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Postupno čisti i krv s vozila.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Brzina čišćenja vozila",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Koliko krvi se uklanja s vozila u minuti.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Očisti odjeću",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Postupno čisti i krv i prljavštinu s nošene odjeće igrača.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Brzina čišćenja odjeće",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Koliko krvi i prljavštine se uklanja s odjeće u minuti.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Uvijek čisti",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Uvijek čisti bez obzira na vrijeme."
+}

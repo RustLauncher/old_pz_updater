@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Ploaia curăță sângele",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Plăci pe minut",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Câte plăci aleatorii sunt curățate pe minut de joc.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Pragul intensității vremii",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Cât de puternică trebuie să fie ploaia sau zăpada pentru a spăla sângele. Mai mare = vreme mai puternică necesară.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Curăță cenușa",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Curăță și cenușa lăsată de cadavrele arse.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Curăță excrementele animalelor",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Curăță și excrementele animalelor (bălegar) lăsate pe jos.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Curăță înăuntru",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Curăță și sângele din interiorul clădirilor.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Curăță vehiculele",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Curăță treptat și sângele de pe vehicule.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Viteza de curățare a vehiculelor",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Cât sânge este eliminat de pe vehicule pe minut.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Curăță hainele",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Curăță treptat și sângele și murdăria de pe hainele purtate de jucători.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Viteza de curățare a hainelor",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Cât sânge și murdărie este eliminat de pe haine pe minut.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Curăță mereu",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Curăță mereu, indiferent de vreme."
+}

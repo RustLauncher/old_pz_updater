@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Behälterschilder",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- BESCHRIFTUNG -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- SCHILDSTILE -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DEBUG -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Beschriftung von Behältern erlauben",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Hauptschalter. Deaktiviert kann niemand einen Namen schreiben oder löschen, bereits angebrachte Schilder bleiben jedoch an ihrem Platz und lesbar.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Nur Kisten",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "Schilder werden nur an Kisten angebracht -- den Lagerbehältern, aus denen eine Basis besteht. Deaktiviert kann jeder Behälter in der Welt ein Schild tragen: Schränke, Kühlschränke, Spinde, Theken. Die Einstellung betrifft Anzeige und Beschriftung, daher werden beim Aktivieren Schilder von allem entfernt, was keine Kiste ist.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Stift oder Pinsel erforderlich",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Zum Schreiben wird ein als Schreibwerkzeug markierter Gegenstand benötigt (Kugelschreiber, Bleistift, Farbstifte), zum Malen ein Pinsel und eine Farbdose. Deaktiviert kann jeder mit bloßen Händen schreiben.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Eine Nutzung des Werkzeugs verbrauchen",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Gilt nur für Werkzeuge, die tatsächlich Verbrauch haben: Eine Farbdose verliert eine Nutzung, ein Stift nicht -- genau wie im Basisspiel beim Beschriften einer Karte.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Nur Mitglieder des Verstecks",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Innerhalb eines Verstecks dürfen nur dessen Mitglieder einen Behälter beschriften oder den Namen löschen. Admins sind ausgenommen, damit mutwillig angebrachte Schilder entfernt werden können. Außerhalb von Verstecken ändert diese Einstellung nichts.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Maximale Namenslänge",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Wie viele Zeichen ein Schild tragen darf. Auf 28 begrenzt, entsprechend der Grenze des Basisspiels beim Umbenennen eines Behälters.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Festgenagelte Tafel erlauben",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Eine Holzleiste, die an der Vorderseite des Behälters festgenagelt ist.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Angeklebten Zettel erlauben",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Ein Blatt Papier, das an der Vorderseite des Behälters befestigt ist.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Direktes Aufmalen erlauben",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "Der Name wird direkt auf den Behälter gemalt, im Farbton der verwendeten Farbe. Für diesen Stil wird ein Pinsel benötigt.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Debug-Protokollierung",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Schreibt auf jedem Client in console.txt und auf dem Server in server-console.txt, was der Mod tut: eine Zeile pro Aktion und empfangener Anfrage. Standardmäßig deaktiviert, und besser deaktiviert lassen -- auf einem stark frequentierten Server kommt viel zusammen. Zur Fehlermeldung aktivieren. Die Einstellung wird live gelesen, sodass das Protokollieren sofort beginnt, wenn sie während des Spiels aktiviert wird. Die Startdiagnosen (welche Dateien geladen werden und welche Version sie verwenden, Sprite-Atlas nicht verfügbar, Zeichenaufruf abgelehnt) werden jedoch nur einmal pro Sitzung ausgegeben und erfordern, dass die Option vor Sitzungsbeginn aktiviert ist."
+}

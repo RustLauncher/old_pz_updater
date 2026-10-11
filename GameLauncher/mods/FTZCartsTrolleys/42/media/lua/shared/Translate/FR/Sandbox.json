@@ -1,0 +1,13 @@
+{
+    "Sandbox_FTZCarts": "FTZ Carts & Trolleys",
+    "Sandbox_FTZCarts_WorldSpawnChance": "Chariots au sol : chance par pièce (%)",
+    "Sandbox_FTZCarts_WorldSpawnChance_tooltip": "Chance qu'une pièce de supermarché ou d'entrepôt contienne des chariots posés au sol, tirée une seule fois par pièce. 0 = jamais.",
+    "Sandbox_FTZCarts_WorldSpawnMax": "Chariots au sol : maximum par pièce",
+    "Sandbox_FTZCarts_WorldSpawnMax_tooltip": "Nombre maximum de chariots posés au sol dans une même pièce (le nombre réel est tiré entre 1 et ce maximum).",
+    "Sandbox_FTZCarts_LootRate": "Chariots dans les conteneurs (%)",
+    "Sandbox_FTZCarts_LootRate_tooltip": "Fréquence des chariots dans le butin des conteneurs (quincailleries, Gigamart, caisses d'outils...). 100 = comme le mod d'origine, 0 = jamais, 500 = cinq fois plus.",
+    "Sandbox_FTZCarts_CartCapacity": "Capacité du chariot de supermarché",
+    "Sandbox_FTZCarts_CartCapacity_tooltip": "Poids que peut contenir un chariot de supermarché (37 par défaut).",
+    "Sandbox_FTZCarts_TrolleyCapacity": "Capacité du chariot à plateau",
+    "Sandbox_FTZCarts_TrolleyCapacity_tooltip": "Poids que peut contenir un chariot à plateau d'entrepôt (50 par défaut)."
+}

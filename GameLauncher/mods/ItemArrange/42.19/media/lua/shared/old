@@ -1,0 +1,1639 @@
+--[[
+
+IA = IA or {}
+
+IA.surfaceProfile = {
+    counterE = {[1] = {xmin = 0.15, xmax = 0.65, ymin = 0.15, ymax = 1.00}},
+    counterW = {[1] = {xmin = 0.50, xmax = 1.00, ymin = 0.15, ymax = 1.00}},
+    counterS = {[1] = {xmin = 0.15, xmax = 1.00, ymin = 0.15, ymax = 0.65}},
+    counterN = {[1] = {xmin = 0.15, xmax = 1.00, ymin = 0.50, ymax = 1.00}},
+
+    ovenE = {[1] = {xmin = 0.25, xmax = 0.75, ymin = 0.20, ymax = 1.00}},
+    ovenW = {[1] = {xmin = 0.45, xmax = 0.90, ymin = 0.20, ymax = 1.00}},
+    ovenS = {[1] = {xmin = 0.20, xmax = 1.00, ymin = 0.25, ymax = 0.75}},
+    ovenN = {[1] = {xmin = 0.20, xmax = 1.00, ymin = 0.45, ymax = 0.90}},
+
+    stoveE = {[1] = {xmin = 0.15, xmax = 0.55, ymin = 0.20, ymax = 0.95}},
+    stoveW = {[1] = {xmin = 0.55, xmax = 0.85, ymin = 0.20, ymax = 0.95}},
+    stoveS = {[1] = {xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.55}},
+    stoveN = {[1] = {xmin = 0.20, xmax = 0.95, ymin = 0.55, ymax = 0.85}},
+
+    washerE = {[1] = {xmin = 0.20, xmax = 0.85, ymin = 0.20, ymax = 0.90}},
+    washerW = {[1] = {xmin = 0.35, xmax = 1.00, ymin = 0.25, ymax = 1.00}},
+    washerS = {[1] = {xmin = 0.20, xmax = 0.90, ymin = 0.25, ymax = 0.85}},
+    washerN = {[1] = {xmin = 0.25, xmax = 1.00, ymin = 0.35, ymax = 1.00}},
+
+    fridgeE = {[1] = {xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95}},
+    fridgeW = {[1] = {xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95}},
+    fridgeS = {[1] = {xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55}},
+    fridgeN = {[1] = {xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95}},
+
+    box = {[1] = {xmin = 0.15, xmax = 0.90, ymin = 0.15, ymax = 0.90}},
+
+    tableW = {[1] = {xmin = 0.30, xmax = 1.00, ymin = 0.20, ymax = 0.95}},
+    tableE = {[1] = {xmin = 0.10, xmax = 0.85, ymin = 0.20, ymax = 0.95}},
+    tableS = {[1] = {xmin = 0.20, xmax = 0.95, ymin = 0.20, ymax = 0.95}},
+    tableN = {[1] = {xmin = 0.20, xmax = 0.95, ymin = 0.30, ymax = 0.95}},
+
+    bedW = {[1] = {xmin = 0.30, xmax = 1.00, ymin = 0.30, ymax = 0.90}},
+    bedE = {[1] = {xmin = 0.20, xmax = 0.90, ymin = 0.20, ymax = 0.90}},
+    bedS = {[1] = {xmin = 0.30, xmax = 0.85, ymin = 0.20, ymax = 0.90}},
+    bedN = {[1] = {xmin = 0.30, xmax = 0.95, ymin = 0.30, ymax = 1.00}},
+
+    smallTable = {[1] = {xmin = 0.27, xmax = 0.80, ymin = 0.27, ymax = 0.80}},
+
+    -- multiple surfaces
+    bookshelfE = {
+        [1] = {zmin = 0.05, zmax = 0.25, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+        [2] = {zmin = 0.32, zmax = 0.55, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+        [3] = {zmin = 0.59, zmax = 0.76, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+        [4] = {zmin = 0.83, zmax = 1.00, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+    },
+    bookshelfW = {
+        [1] = {zmin = 0.05, zmax = 0.25, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+        [2] = {zmin = 0.32, zmax = 0.55, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+        [3] = {zmin = 0.59, zmax = 0.76, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+        [4] = {zmin = 0.83, zmax = 1.00, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+    },
+    bookshelfS = {
+        [1] = {zmin = 0.05, zmax = 0.25, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+        [2] = {zmin = 0.32, zmax = 0.55, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+        [3] = {zmin = 0.59, zmax = 0.76, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+        [4] = {zmin = 0.83, zmax = 1.00, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+   
+    },
+    bookshelfN = {
+        [1] = {zmin = 0.05, zmax = 0.25, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+        [2] = {zmin = 0.32, zmax = 0.55, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+        [3] = {zmin = 0.59, zmax = 0.76, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+        [4] = {zmin = 0.83, zmax = 1.00, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+    },
+
+    smallBookshelfE = {
+        [1] = {zmin = 0.06, zmax = 0.14, xmin = 0.19, xmax = 0.55, ymin = 0.28, ymax = 0.90},
+        [2] = {zmin = 0.19, zmax = 0.27, xmin = 0.19, xmax = 0.55, ymin = 0.28, ymax = 0.90},
+        [3] = {zmin = 0.34, zmax = 1.00, xmin = 0.19, xmax = 0.55, ymin = 0.28, ymax = 0.90},
+    },
+    smallBookshelfW = {
+        [1] = {zmin = 0.06, zmax = 0.14, xmin = 0.63, xmax = 0.95, ymin = 0.24, ymax = 0.90},
+        [2] = {zmin = 0.19, zmax = 0.27, xmin = 0.63, xmax = 0.95, ymin = 0.24, ymax = 0.90},
+        [3] = {zmin = 0.34, zmax = 1.00, xmin = 0.63, xmax = 0.95, ymin = 0.24, ymax = 0.90},
+    },
+    smallBookshelfS = {
+        [1] = {zmin = 0.06, zmax = 0.14, xmin = 0.27, xmax = 0.90, ymin = 0.25, ymax = 0.55},
+        [2] = {zmin = 0.19, zmax = 0.27, xmin = 0.27, xmax = 0.90, ymin = 0.25, ymax = 0.55},
+        [3] = {zmin = 0.34, zmax = 1.00, xmin = 0.27, xmax = 0.90, ymin = 0.25, ymax = 0.55},
+    },
+    smallBookshelfN = {
+        [1] = {zmin = 0.06, zmax = 0.14, xmin = 0.20, xmax = 0.90, ymin = 0.64, ymax = 0.95},
+        [2] = {zmin = 0.19, zmax = 0.27, xmin = 0.20, xmax = 0.90, ymin = 0.64, ymax = 0.95},
+        [3] = {zmin = 0.34, zmax = 1.00, xmin = 0.20, xmax = 0.90, ymin = 0.64, ymax = 0.95},
+    },
+    metalShelfNS = {
+        [1] = {zmin = 0.04, zmax = 0.35, xmin = 0.10, xmax = 0.90, ymin = 0.25, ymax = 0.85},
+        [2] = {zmin = 0.36, zmax = 0.65, xmin = 0.10, xmax = 0.90, ymin = 0.25, ymax = 0.85},
+        [3] = {zmin = 0.67, zmax = 1.00, xmin = 0.10, xmax = 0.90, ymin = 0.25, ymax = 0.85},
+    },
+    metalShelfWE = {
+        [1] = {zmin = 0.04, zmax = 0.35, xmin = 0.25, xmax = 0.90, ymin = 0.25, ymax = 0.95},
+        [2] = {zmin = 0.36, zmax = 0.65, xmin = 0.25, xmax = 0.90, ymin = 0.25, ymax = 0.95},
+        [3] = {zmin = 0.67, zmax = 1.00, xmin = 0.25, xmax = 0.90, ymin = 0.25, ymax = 0.95},
+    },
+    smallMetalShelfS = {
+        [1] = {zmin = 0.36, zmax = 0.60, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+        [2] = {zmin = 0.64, zmax = 1.00, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+        [3] = {zmin = 0.0, zmax = 0.32, xmin = 0.15, xmax = 0.95, ymin = 0.18, ymax = 0.55},
+    },
+    smallMetalShelfN = {
+        [1] = {zmin = 0.39, zmax = 0.64, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+        [2] = {zmin = 0.68, zmax = 1.00, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+        [3] = {zmin = 0.0, zmax = 0.32, xmin = 0.15, xmax = 0.95, ymin = 0.62, ymax = 0.95},
+    },
+    smallMetalShelfW = {
+        [1] = {zmin = 0.39, zmax = 0.64, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+        [2] = {zmin = 0.68, zmax = 1.00, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+        [3] = {zmin = 0.0, zmax = 0.32, xmin = 0.60, xmax = 0.95, ymin = 0.15, ymax = 0.95},
+    },
+    smallMetalShelfE = {
+        [1] = {zmin = 0.36, zmax = 0.60, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+        [2] = {zmin = 0.64, zmax = 1.00, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+        [3] = {zmin = 0.0, zmax = 0.32, xmin = 0.18, xmax = 0.55, ymin = 0.15, ymax = 0.95},
+    },
+
+    shopShelfS = {
+        [1] = {zmin = 0.57, zmax = 0.63, xmin = 0.12, xmax = 1.00, ymin = 0.20, ymax = 0.60},
+        [2] = {zmin = 0.43, zmax = 0.49, xmin = 0.12, xmax = 1.00, ymin = 0.20, ymax = 0.60},
+        [3] = {zmin = 0.30, zmax = 0.36, xmin = 0.12, xmax = 1.00, ymin = 0.20, ymax = 0.60},
+        [4] = {zmin = 0.08, zmax = 0.28, xmin = 0.12, xmax = 1.00, ymin = 0.20, ymax = 0.60},
+        [5] = {zmin = 0.69, zmax = 1.00, xmin = 0.12, xmax = 1.00, ymin = 0.19, ymax = 0.60},
+    },
+
+    shopShelfE = {
+        [1] = {zmin = 0.57, zmax = 0.63, xmin = 0.18, xmax = 0.60, ymin = 0.10, ymax = 0.90},
+        [2] = {zmin = 0.43, zmax = 0.49, xmin = 0.18, xmax = 0.60, ymin = 0.10, ymax = 0.90},
+        [3] = {zmin = 0.30, zmax = 0.36, xmin = 0.18, xmax = 0.60, ymin = 0.10, ymax = 0.90},
+        [4] = {zmin = 0.08, zmax = 0.28, xmin = 0.18, xmax = 0.60, ymin = 0.10, ymax = 0.90},
+        [5] = {zmin = 0.69, zmax = 1.00, xmin = 0.18, xmax = 0.60, ymin = 0.10, ymax = 0.90},
+    },
+
+    shopShelfN = {
+        [1] = {zmin = 0.57, zmax = 0.63, xmin = 0.12, xmax = 1.00, ymin = 0.47, ymax = 0.95},
+        [2] = {zmin = 0.43, zmax = 0.49, xmin = 0.12, xmax = 1.00, ymin = 0.47, ymax = 0.95},
+        [3] = {zmin = 0.30, zmax = 0.36, xmin = 0.12, xmax = 1.00, ymin = 0.47, ymax = 0.95},
+        [4] = {zmin = 0.08, zmax = 0.28, xmin = 0.12, xmax = 1.00, ymin = 0.47, ymax = 0.95},
+        [5] = {zmin = 0.69, zmax = 1.00, xmin = 0.12, xmax = 1.00, ymin = 0.47, ymax = 0.95},
+    },
+
+    shopShelfW = {
+        [1] = {zmin = 0.57, zmax = 0.63, xmin = 0.47, xmax = 0.95, ymin = 0.10, ymax = 0.90},
+        [2] = {zmin = 0.43, zmax = 0.49, xmin = 0.47, xmax = 0.95, ymin = 0.10, ymax = 0.90},
+        [3] = {zmin = 0.30, zmax = 0.36, xmin = 0.47, xmax = 0.95, ymin = 0.10, ymax = 0.90},
+        [4] = {zmin = 0.08, zmax = 0.28, xmin = 0.47, xmax = 0.95, ymin = 0.10, ymax = 0.90},
+        [5] = {zmin = 0.69, zmax = 1.00, xmin = 0.47, xmax = 0.95, ymin = 0.10, ymax = 0.90},
+    },
+
+    vhsShelfBigS = {
+        [1] = {zmin = 0.49, zmax = 0.64, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+        [4] = {zmin = 0.69, zmax = 1.00, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+    },
+
+    vhsShelfBigE = {
+        [1] = {zmin = 0.49, zmax = 0.64, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+        [4] = {zmin = 0.69, zmax = 1.00, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+    },
+
+    vhsShelfBigN = {
+        [1] = {zmin = 0.49, zmax = 0.64, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+        [4] = {zmin = 0.69, zmax = 1.00, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+    },
+
+    vhsShelfBigW  = {
+        [1] = {zmin = 0.49, zmax = 0.64, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+        [4] = {zmin = 0.69, zmax = 1.00, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+    },
+
+    vhsShelfSmallS = {
+        [1] = {zmin = 0.49, zmax = 1.00, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.95, ymin = 0.25, ymax = 0.45},
+    },
+
+    vhsShelfSmallE = {
+        [1] = {zmin = 0.49, zmax = 1.00, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.45, ymin = 0.20, ymax = 0.95},
+    },
+
+    vhsShelfSmallN = {
+        [1] = {zmin = 0.49, zmax = 1.00, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.20, xmax = 0.95, ymin = 0.70, ymax = 0.90},
+    },
+
+    vhsShelfSmallW  = {
+        [1] = {zmin = 0.49, zmax = 1.00, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+        [2] = {zmin = 0.29, zmax = 0.44, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+        [3] = {zmin = 0.10, zmax = 0.25, xmin = 0.60, xmax = 0.90, ymin = 0.20, ymax = 0.95},
+    },
+}
+
+
+IA.surfaces = {
+    ["appliances_cooking_01_0"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_1"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_2"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_3"] = IA.surfaceProfile.ovenN,
+    ["appliances_cooking_01_4"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_5"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_6"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_7"] = IA.surfaceProfile.ovenN,
+    ["appliances_cooking_01_8"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_9"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_10"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_11"] = IA.surfaceProfile.ovenN,
+    ["appliances_cooking_01_12"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_13"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_14"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_15"] = IA.surfaceProfile.ovenN,
+    ["appliances_cooking_01_16"] = IA.surfaceProfile.stoveE,
+    ["appliances_cooking_01_17"] = IA.surfaceProfile.stoveS,
+    ["appliances_cooking_01_18"] = IA.surfaceProfile.stoveN,
+    ["appliances_cooking_01_19"] = IA.surfaceProfile.stoveW,
+    ["appliances_cooking_01_20"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_21"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_22"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_23"] = IA.surfaceProfile.ovenN,
+    ["appliances_cooking_01_64"] = IA.surfaceProfile.ovenE,
+    ["appliances_cooking_01_65"] = IA.surfaceProfile.ovenS,
+    ["appliances_cooking_01_66"] = IA.surfaceProfile.ovenW,
+    ["appliances_cooking_01_67"] = IA.surfaceProfile.ovenN,
+
+    ["appliances_laundry_01_0"] = IA.surfaceProfile.washerS,
+    ["appliances_laundry_01_1"] = IA.surfaceProfile.washerE,
+    ["appliances_laundry_01_2"] = IA.surfaceProfile.washerN,
+    ["appliances_laundry_01_3"] = IA.surfaceProfile.washerW,
+
+    ["appliances_refrigeration_01_0"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_1"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_2"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_3"] = IA.surfaceProfile.fridgeW,
+    ["appliances_refrigeration_01_4"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_5"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_6"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_7"] = IA.surfaceProfile.fridgeW,
+    ["appliances_refrigeration_01_8"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_9"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_10"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_11"] = IA.surfaceProfile.fridgeW,
+    ["appliances_refrigeration_01_12"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_13"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_14"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_15"] = IA.surfaceProfile.fridgeW,
+
+    ["appliances_refrigeration_01_22"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_23"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_36"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_37"] = IA.surfaceProfile.fridgeW,
+
+    ["appliances_refrigeration_01_28"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_29"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_30"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_31"] = IA.surfaceProfile.fridgeW,
+
+    ["appliances_refrigeration_01_32"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_33"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_34"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_35"] = IA.surfaceProfile.fridgeW,
+
+    ["appliances_refrigeration_01_40"] = IA.surfaceProfile.fridgeS,
+    ["appliances_refrigeration_01_41"] = IA.surfaceProfile.fridgeE,
+    ["appliances_refrigeration_01_42"] = IA.surfaceProfile.fridgeN,
+    ["appliances_refrigeration_01_43"] = IA.surfaceProfile.fridgeW,
+
+    ["carpentry_01_16"] = IA.surfaceProfile.box,
+    ["carpentry_01_19"] = IA.surfaceProfile.box,
+    ["carpentry_01_24"] = IA.surfaceProfile.tableW,
+    ["carpentry_01_25"] = IA.surfaceProfile.tableE,
+    ["carpentry_01_26"] = IA.surfaceProfile.tableS,
+    ["carpentry_01_27"] = IA.surfaceProfile.tableN,
+    ["carpentry_01_28"] = IA.surfaceProfile.tableW,
+    ["carpentry_01_29"] = IA.surfaceProfile.tableE,
+    ["carpentry_01_30"] = IA.surfaceProfile.tableS,
+    ["carpentry_01_31"] = IA.surfaceProfile.tableN,
+    ["carpentry_01_32"] = IA.surfaceProfile.tableW,
+    ["carpentry_01_33"] = IA.surfaceProfile.tableE,
+    ["carpentry_01_34"] = IA.surfaceProfile.tableS,
+    ["carpentry_01_35"] = IA.surfaceProfile.tableN,
+
+    ["carpentry_01_60"] = IA.surfaceProfile.box,
+    ["carpentry_01_61"] = IA.surfaceProfile.box,
+    ["carpentry_01_62"] = IA.surfaceProfile.box,
+
+    ["carpentry_02_0"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_1"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_2"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_3"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_4"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_5"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_6"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_7"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_8"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_9"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_10"] = IA.surfaceProfile.smallTable,
+    ["carpentry_02_11"] = IA.surfaceProfile.smallTable,
+
+    ["carpentry_02_16"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_17"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_18"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_19"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_20"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_21"] = IA.surfaceProfile.counterS,
+    ["carpentry_02_22"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_23"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_24"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_25"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_26"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_27"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_28"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_29"] = IA.surfaceProfile.counterS,
+    ["carpentry_02_30"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_31"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_32"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_33"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_34"] = IA.surfaceProfile.counterN,
+    ["carpentry_02_35"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_36"] = IA.surfaceProfile.counterE,
+    ["carpentry_02_37"] = IA.surfaceProfile.counterS,
+    ["carpentry_02_38"] = IA.surfaceProfile.counterW,
+    ["carpentry_02_39"] = IA.surfaceProfile.counterW,
+
+    ["carpentry_02_64"] = IA.surfaceProfile.fridgeS,
+    ["carpentry_02_65"] = IA.surfaceProfile.fridgeE,
+    ["carpentry_02_66"] = IA.surfaceProfile.fridgeW,
+    ["carpentry_02_67"] = IA.surfaceProfile.fridgeN,
+
+    ["carpentry_02_104"] = IA.surfaceProfile.box,
+
+    ["crafted_01_68"] = IA.surfaceProfile.tableS,
+    ["crafted_01_69"] = IA.surfaceProfile.tableN,
+    ["crafted_01_70"] = IA.surfaceProfile.tableW,
+    ["crafted_01_71"] = IA.surfaceProfile.tableE,
+
+    ["fixtures_counters_01_0"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_1"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_2"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_3"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_4"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_5"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_6"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_7"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_8"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_9"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_10"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_11"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_12"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_13"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_14"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_15"] = IA.surfaceProfile.counterW,
+
+    ["fixtures_counters_01_32"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_33"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_34"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_35"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_36"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_37"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_38"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_39"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_40"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_41"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_42"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_43"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_44"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_45"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_46"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_47"] = IA.surfaceProfile.counterW,
+
+    ["fixtures_counters_01_48"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_49"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_50"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_51"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_52"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_53"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_54"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_55"] = IA.surfaceProfile.counterW,
+
+    ["fixtures_counters_01_56"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_57"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_58"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_59"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_60"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_61"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_62"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_63"] = IA.surfaceProfile.counterW,
+
+    ["fixtures_counters_01_64"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_65"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_66"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_67"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_68"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_69"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_70"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_71"] = IA.surfaceProfile.counterW,
+
+    ["fixtures_counters_01_72"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_73"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_74"] = IA.surfaceProfile.counterN,
+    ["fixtures_counters_01_75"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_76"] = IA.surfaceProfile.counterE,
+    ["fixtures_counters_01_77"] = IA.surfaceProfile.counterS,
+    ["fixtures_counters_01_78"] = IA.surfaceProfile.counterW,
+    ["fixtures_counters_01_79"] = IA.surfaceProfile.counterW,
+
+    ["furniture_bedding_01_0"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_1"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_2"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_3"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_4"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_5"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_6"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_7"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_8"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_9"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_10"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_11"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_12"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_13"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_14"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_15"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_16"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_17"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_18"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_19"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_20"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_21"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_22"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_23"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_24"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_25"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_26"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_27"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_28"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_29"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_30"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_31"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_32"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_33"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_34"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_35"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_36"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_37"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_38"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_39"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_40"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_41"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_42"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_43"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_44"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_45"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_46"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_47"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_48"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_49"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_50"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_51"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_52"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_53"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_54"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_55"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_60"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_61"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_62"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_63"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_64"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_65"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_66"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_67"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_68"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_69"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_70"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_71"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_72"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_73"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_74"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_75"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_76"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_77"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_78"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_79"] = IA.surfaceProfile.bedE,
+
+    ["furniture_bedding_01_80"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_81"] = IA.surfaceProfile.bedE,
+    ["furniture_bedding_01_82"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_83"] = IA.surfaceProfile.bedE,
+
+    ["furniture_bedding_01_84"] = IA.surfaceProfile.bedS,
+    ["furniture_bedding_01_85"] = IA.surfaceProfile.bedN,
+    ["furniture_bedding_01_86"] = IA.surfaceProfile.bedW,
+    ["furniture_bedding_01_87"] = IA.surfaceProfile.bedE,
+
+    ["furniture_shelving_01_40"] = IA.surfaceProfile.bookshelfS,
+    ["furniture_shelving_01_41"] = IA.surfaceProfile.bookshelfE,
+    ["furniture_shelving_01_42"] = IA.surfaceProfile.bookshelfW,
+    ["furniture_shelving_01_43"] = IA.surfaceProfile.bookshelfN,
+
+    ["furniture_shelving_01_44"] = IA.surfaceProfile.fridgeS,
+    ["furniture_shelving_01_45"] = IA.surfaceProfile.fridgeE,
+    ["furniture_shelving_01_46"] = IA.surfaceProfile.fridgeW,
+    ["furniture_shelving_01_47"] = IA.surfaceProfile.fridgeN,
+
+    ["furniture_storage_02_0"] = IA.surfaceProfile.fridgeS,
+    ["furniture_storage_02_1"] = IA.surfaceProfile.fridgeE,
+    ["furniture_storage_02_2"] = IA.surfaceProfile.fridgeN,
+    ["furniture_storage_02_3"] = IA.surfaceProfile.fridgeW,
+
+    ["furniture_storage_02_8"] = IA.surfaceProfile.fridgeS,
+    ["furniture_storage_02_9"] = IA.surfaceProfile.fridgeE,
+    ["furniture_storage_02_10"] = IA.surfaceProfile.fridgeN,
+    ["furniture_storage_02_11"] = IA.surfaceProfile.fridgeW,
+    
+    ["furniture_storage_02_16"] = IA.surfaceProfile.box,
+    ["furniture_storage_02_17"] = IA.surfaceProfile.box,
+    ["furniture_storage_02_18"] = IA.surfaceProfile.box,
+    ["furniture_storage_02_19"] = IA.surfaceProfile.box,
+
+    ["furniture_storage_01_40"] = IA.surfaceProfile.fridgeW,
+    ["furniture_storage_01_41"] = IA.surfaceProfile.fridgeN,
+    ["furniture_storage_01_42"] = IA.surfaceProfile.fridgeE,
+    ["furniture_storage_01_43"] = IA.surfaceProfile.fridgeS,
+    ["furniture_storage_01_44"] = IA.surfaceProfile.fridgeW,
+    ["furniture_storage_01_45"] = IA.surfaceProfile.fridgeN,
+    ["furniture_storage_01_46"] = IA.surfaceProfile.fridgeE,
+    ["furniture_storage_01_47"] = IA.surfaceProfile.fridgeS,
+
+    ["furniture_storage_01_52"] = IA.surfaceProfile.smallTable,
+    ["furniture_storage_01_53"] = IA.surfaceProfile.smallTable,
+    ["furniture_storage_01_54"] = IA.surfaceProfile.smallTable,
+    ["furniture_storage_01_55"] = IA.surfaceProfile.smallTable,
+    ["furniture_storage_01_64"] = IA.surfaceProfile.fridgeW,
+    ["furniture_storage_01_65"] = IA.surfaceProfile.fridgeN,
+    ["furniture_storage_01_66"] = IA.surfaceProfile.fridgeE,
+    ["furniture_storage_01_67"] = IA.surfaceProfile.fridgeS,
+
+    ["furniture_tables_high_01_0"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_1"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_2"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_3"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_8"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_9"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_10"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_11"] = IA.surfaceProfile.tableE,
+
+    ["furniture_tables_high_01_15"] = IA.surfaceProfile.box,
+    ["furniture_tables_high_01_16"] = IA.surfaceProfile.box,
+
+    ["furniture_tables_high_01_17"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_18"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_19"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_20"] = IA.surfaceProfile.tableE,
+
+    ["furniture_tables_high_01_24"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_25"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_26"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_27"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_28"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_29"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_30"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_31"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_32"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_33"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_34"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_35"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_36"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_37"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_38"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_39"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_40"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_41"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_42"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_43"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_44"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_45"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_46"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_47"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_48"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_49"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_50"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_51"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_52"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_53"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_54"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_55"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_56"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_57"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_58"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_59"] = IA.surfaceProfile.tableN,
+    ["furniture_tables_high_01_60"] = IA.surfaceProfile.tableW,
+    ["furniture_tables_high_01_61"] = IA.surfaceProfile.tableE,
+    ["furniture_tables_high_01_62"] = IA.surfaceProfile.tableS,
+    ["furniture_tables_high_01_63"] = IA.surfaceProfile.tableN,
+    ["location_business_machinery_01_16"] = IA.surfaceProfile.tableW,
+    ["location_business_machinery_01_17"] = IA.surfaceProfile.tableE,
+    ["location_business_machinery_01_18"] = IA.surfaceProfile.tableS,
+    ["location_business_machinery_01_19"] = IA.surfaceProfile.tableN,
+    ["location_business_machinery_01_20"] = IA.surfaceProfile.tableW,
+    ["location_business_machinery_01_21"] = IA.surfaceProfile.tableE,
+    ["location_business_machinery_01_22"] = IA.surfaceProfile.tableS,
+    ["location_business_machinery_01_23"] = IA.surfaceProfile.tableN,
+    ["location_business_machinery_01_32"] = IA.surfaceProfile.counterS, -- fixme
+    ["location_business_machinery_01_33"] = IA.surfaceProfile.counterE, -- fixme
+    ["location_business_machinery_01_34"] = IA.surfaceProfile.counterN, -- fixme
+    ["location_business_machinery_01_35"] = IA.surfaceProfile.counterW, -- fixme
+
+    ["location_business_office_generic_01_0"] = IA.surfaceProfile.tableE,
+    ["location_business_office_generic_01_1"] = IA.surfaceProfile.tableE,
+    ["location_business_office_generic_01_2"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_3"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_4"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_5"] = IA.surfaceProfile.tableS,
+    ["location_business_office_generic_01_6"] = IA.surfaceProfile.tableS,
+    ["location_business_office_generic_01_8"] = IA.surfaceProfile.tableN,
+    ["location_business_office_generic_01_9"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_10"] = IA.surfaceProfile.tableN,
+    ["location_business_office_generic_01_11"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_12"] = IA.surfaceProfile.box,
+    ["location_business_office_generic_01_13"] = IA.surfaceProfile.tableW,
+    ["location_business_office_generic_01_14"] = IA.surfaceProfile.tableW,
+    ["location_business_office_generic_01_40"] = IA.surfaceProfile.tableE,
+    ["location_business_office_generic_01_41"] = IA.surfaceProfile.tableE,
+    ["location_business_office_generic_01_42"] = IA.surfaceProfile.tableS,
+    ["location_business_office_generic_01_43"] = IA.surfaceProfile.tableS,
+    ["location_business_office_generic_01_44"] = IA.surfaceProfile.tableN,
+    ["location_business_office_generic_01_45"] = IA.surfaceProfile.tableN,
+    ["location_business_office_generic_01_46"] = IA.surfaceProfile.tableW,
+    ["location_business_office_generic_01_47"] = IA.surfaceProfile.tableW,
+
+    ["location_military_generic_01_0"] = IA.surfaceProfile.box,
+    ["location_military_generic_01_1"] = IA.surfaceProfile.box,
+    ["location_military_generic_01_8"] = IA.surfaceProfile.box,
+    ["location_military_generic_01_9"] = IA.surfaceProfile.box,
+    ["location_military_generic_01_22"] = IA.surfaceProfile.fridgeS,
+    ["location_military_generic_01_23"] = IA.surfaceProfile.fridgeE,
+    ["location_military_generic_01_30"] = IA.surfaceProfile.fridgeN,
+    ["location_military_generic_01_31"] = IA.surfaceProfile.fridgeW,
+
+    ["furniture_shelving_01_28"] = IA.surfaceProfile.smallMetalShelfS,
+    ["furniture_shelving_01_29"] = IA.surfaceProfile.smallMetalShelfE,
+    ["furniture_shelving_01_30"] = IA.surfaceProfile.smallMetalShelfW,
+    ["furniture_shelving_01_31"] = IA.surfaceProfile.smallMetalShelfN,
+
+
+    ["location_shop_generic_01_72"] = IA.surfaceProfile.shopShelfS,
+    ["location_shop_generic_01_73"] = IA.surfaceProfile.shopShelfS,
+    ["location_shop_generic_01_74"] = IA.surfaceProfile.shopShelfE,
+    ["location_shop_generic_01_75"] = IA.surfaceProfile.shopShelfE,
+    ["location_shop_generic_01_76"] = IA.surfaceProfile.shopShelfN,
+    ["location_shop_generic_01_77"] = IA.surfaceProfile.shopShelfN,
+    ["location_shop_generic_01_78"] = IA.surfaceProfile.shopShelfW,
+    ["location_shop_generic_01_79"] = IA.surfaceProfile.shopShelfW,
+
+    -- bookselves
+    ["furniture_tables_low_01_20"] = {
+        xmin = 0.20,
+        xmax = 0.95,
+        ymin = 0.30,
+        ymax = 0.90,
+    },
+    ["furniture_tables_high_01_4"] = {
+        xmin = 0.20,
+        xmax = 0.95,
+        ymin = 0.35,
+        ymax = 0.65,
+    },
+    ["furniture_tables_high_01_5"] = {
+        xmin = 0.35,
+        xmax = 0.65,
+        ymin = 0.20,
+        ymax = 0.95,
+    },
+    ["fixtures_ovenS_01_53"] = {
+        xmin = 0.15,
+        xmax = 0.85,
+        ymin = 0.15,
+        ymax = 0.85,
+    },
+
+    -- small bookshelves
+    ["furniture_shelving_01_19"] = IA.surfaceProfile.smallBookshelfS,
+    ["furniture_shelving_01_23"] = IA.surfaceProfile.smallBookshelfE,
+    ["furniture_shelving_01_51"] = IA.surfaceProfile.smallBookshelfN,
+    ["furniture_shelving_01_55"] = IA.surfaceProfile.smallBookshelfW,
+
+    -- metalshelves
+    ["furniture_shelving_01_24"] = IA.surfaceProfile.metalShelfWE,
+    ["furniture_shelving_01_25"] = IA.surfaceProfile.metalShelfWE,
+    ["furniture_shelving_01_26"] = IA.surfaceProfile.metalShelfNS,
+    ["furniture_shelving_01_27"] = IA.surfaceProfile.metalShelfNS,
+
+    -- vhs shelves
+    ["location_entertainment_theatre_01_120"] = IA.surfaceProfile.vhsShelfBigS,
+    ["location_entertainment_theatre_01_121"] = IA.surfaceProfile.vhsShelfBigS,
+    ["location_entertainment_theatre_01_122"] = IA.surfaceProfile.vhsShelfBigE,
+    ["location_entertainment_theatre_01_123"] = IA.surfaceProfile.vhsShelfBigE,
+    ["location_entertainment_theatre_01_124"] = IA.surfaceProfile.vhsShelfBigN,
+    ["location_entertainment_theatre_01_125"] = IA.surfaceProfile.vhsShelfBigN,
+    ["location_entertainment_theatre_01_126"] = IA.surfaceProfile.vhsShelfBigW,
+    ["location_entertainment_theatre_01_127"] = IA.surfaceProfile.vhsShelfBigW,
+    ["location_entertainment_theatre_01_128"] = IA.surfaceProfile.vhsShelfSmallS,
+    ["location_entertainment_theatre_01_129"] = IA.surfaceProfile.vhsShelfSmallS,
+    ["location_entertainment_theatre_01_130"] = IA.surfaceProfile.vhsShelfSmallE,
+    ["location_entertainment_theatre_01_131"] = IA.surfaceProfile.vhsShelfSmallE,
+    ["location_entertainment_theatre_01_132"] = IA.surfaceProfile.vhsShelfSmallN,
+    ["location_entertainment_theatre_01_133"] = IA.surfaceProfile.vhsShelfSmallN,
+    ["location_entertainment_theatre_01_134"] = IA.surfaceProfile.vhsShelfSmallW,
+    ["location_entertainment_theatre_01_135"] = IA.surfaceProfile.vhsShelfSmallW,
+
+}
+
+IA.arrangables = {
+    ["Base.VHS_Retail"] = {
+        dx = 0.06,
+        dy = 0.18,
+        dz = 0.10,
+        mz = 0.05,
+        fy = 90,
+        fz = 180,
+        qz = 1,
+    },
+    ["Base.ShotgunShellsBox"] = {
+        dx = 0.14,
+        dy = 0.08,
+        dz = 0.03,
+    },
+    ["Base.Bullets357Box"] = {
+        dx = 0.20,
+        dy = 0.10,
+        dz = 0.02,
+        qz = 6
+    },
+    ["Base.Bullets357Carton"] = {
+        dx = 0.3,
+        dy = 0.27,
+        dz = 0.06,
+        qz = 8
+    },
+    ["Base.TunaTin_Box"] = {
+        dx = 0.21,
+        dy = 0.25,
+        dz = 0.05,
+        qz = 5,
+    },
+    ["Base.CannedSardines_Box"] = {
+        dx = 0.21,
+        dy = 0.25,
+        dz = 0.05,
+        qz = 5,
+    },
+    ["Base.TinnedBeans"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedCarrots2"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedChili"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedCorn"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedCornedBeef"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.Dogfood"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedMilk"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedFruitBeverage"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedFruitCocktail"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedMushroomSoup"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedPeaches"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedPeas"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedPineapple"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedPotato2"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedBolognese"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedTomato2"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.TinnedSoup"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.CannedEggplant"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.06,
+        fz = 270
+    },
+    ["Base.JamFruit"] = {
+        dx = 0.12,
+        dy = 0.12,
+        dz = 0.06,
+        fz = 270
+    },
+    ["Base.CannedSardines"] = {
+        dx = 0.1,
+        dy = 0.15,
+        dz = 0.015,
+        fz = 270
+    },
+    ["Base.TunaTin"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        fz = 270
+    },
+    ["Base.BeerBottle"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.1,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.BeerImported"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.1,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.BeerEmpty"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.1,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.BeerCan"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.05,
+        fz = 270
+    },
+    ["Base.BeerPack"] = {
+        dx = 0.27,
+        dy = 0.2,
+        dz = 0.05,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.BeerCanPack"] = {
+        dx = 0.2,
+        dy = 0.28,
+        dz = 0.05,
+        qz = 3,
+        fz = 270
+    },
+    ["Base.JuiceCranberry"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.MilkBottle"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceGrape"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceTomato"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceOrange"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceFruitpunch"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceLemon"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.015,
+        qz = 1,
+        fz = 180
+    },
+    ["Base.JuiceBox"] = {
+        dx = 0.1,
+        dy = 0.05,
+        dz = 0.04,
+        fz = 270
+    },
+    ["Base.JuiceBoxApple"] = {
+        dx = 0.1,
+        dy = 0.05,
+        dz = 0.04,
+        fz = 270
+    },
+    ["Base.JuiceBoxOrange"] = {
+        dx = 0.1,
+        dy = 0.05,
+        dz = 0.04,
+        fz = 270
+    },
+    ["Base.JuiceBoxFruitpunch"] = {
+        dx = 0.1,
+        dy = 0.05,
+        dz = 0.04,
+        fz = 270
+    },
+    ["Base.WaterBottle"] = {
+        dx = 0.12,
+        dy = 0.12,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Wine"] = {
+        dx = 0.12,
+        dy = 0.12,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Wine2"] = {
+        dx = 0.12,
+        dy = 0.12,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.WineRed_Boxed"] = {
+        dx = 0.3,
+        dy = 0.3,
+        dz = 0.11,
+        qz = 2,
+        fz = 0
+    },
+    ["Base.WineWhite_Boxed"] = {
+        dx = 0.3,
+        dy = 0.3,
+        dz = 0.11,
+        qz = 2,
+        fz = 0
+    },
+    ["Base.WineAged"] = {
+        dx = 0.12,
+        dy = 0.12,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.WineScrewtop"] = {
+        dx = 0.10,
+        dy = 0.10,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Champagne"] = {
+        dx = 0.09,
+        dy = 0.09,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Vodka"] = {
+        dx = 0.10,
+        dy = 0.10,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Gin"] = {
+        dx = 0.10,
+        dy = 0.10,
+        dz = 0.04,
+        qz = 1,
+        fz = 270
+    },
+    ["Base.Whiskey"] = {
+        dx = 0.14,
+        dy = 0.07,
+        dz = 0.04,
+        qz = 1,
+        fz = 0
+    },
+    ["Base.NailsCarton"] = {
+        dx = 0.3,
+        dy = 0.3,
+        dz = 0.11,
+        qz = 2,
+        fz = 0
+    },
+    ["Base.ScrewsCarton"] = {
+        dx = 0.3,
+        dy = 0.3,
+        dz = 0.11,
+        qz = 2,
+        fz = 0
+    },
+    ["Base.Garbagebag_box"] = {
+        dx = 0.32,
+        dy = 0.17,
+        dz = 0.08,
+        qz = 3,
+        fz = 180
+    },
+    ["Base.Bag_AmmoBox"] = {
+        dx = 0.3,
+        dy = 0.12,
+        dz = 0.08,
+        qz = 3,
+        fz = 90
+    },
+    ["Base.AdhesiveBandageBox"] = {
+        dx = 0.20,
+        dy = 0.20,
+        dz = 0.04,
+        qz = 4,
+    },
+    ["Base.AntibioticsBox"] = {
+        dx = 0.28,
+        dy = 0.25,
+        dz = 0.03,
+        qz = 4,
+    },
+    ["Base.AdhesiveTapeBox"] = {
+        dx = 0.21,
+        dy = 0.25,
+        dz = 0.05,
+        qz = 4,
+    },
+    ["Base.CandleBox"] = {
+        dx = 0.21,
+        dy = 0.19,
+        dz = 0.03,
+        qz = 6,
+    },
+
+    ["Base.BoxOfJars"] = {
+        dx = 0.4,
+        dy = 0.28,
+        dz = 0.07,
+        fz = 90,
+        qz = 4,
+    },
+    ["Base.ProduceBox_ExtraLarge"] = {
+        dx = 0.45,
+        dy = 0.37,
+        dz = 0.12,
+        qz = 3,
+    },
+    ["Base.ProduceBox_Large"] = {
+        dx = 0.32,
+        dy = 0.32,
+        dz = 0.12,
+        fz = 90,
+        qz = 3,
+    },
+    ["Base.ProduceBox_Medium"] = {
+        dx = 0.31,
+        dy = 0.28,
+        dz = 0.07,
+        qz = 3,
+    },
+    ["Base.ProduceBox_Small"] = {
+        dx = 0.25,
+        dy = 0.23,
+        dz = 0.05,
+        fz = 90,
+        qz = 4,
+    },
+    ["Base.ProduceBox_ExtraSmall"] = {
+        dx = 0.22,
+        dy = 0.20,
+        dz = 0.03,
+        qz = 6,
+    },
+    ["Base.Parcel_ExtraLarge"] = {
+        dx = 0.45,
+        dy = 0.37,
+        dz = 0.12,
+        qz = 3,
+    },
+    ["Base.Parcel_Large"] = {
+        dx = 0.32,
+        dy = 0.32,
+        dz = 0.12,
+        fz = 90,
+        qz = 3,
+    },
+    ["Base.Parcel_Medium"] = {
+        dx = 0.31,
+        dy = 0.28,
+        dz = 0.07,
+        qz = 3,
+    },
+    ["Base.Parcel_Small"] = {
+        dx = 0.25,
+        dy = 0.23,
+        dz = 0.05,
+        fz = 90,
+        qz = 4,
+    },
+    ["Base.Parcel_ExtraSmall"] = {
+        dx = 0.22,
+        dy = 0.20,
+        dz = 0.03,
+        qz = 6,
+    },
+    ["Base.Oxygen_Tank"] = {
+        dx = 0.18,
+        dy = 0.18,
+        dz = 0.20,
+        fx = 0,
+        fy = 270,
+        fz = 90,
+        mz = 0.08,
+        qz = 1,
+    },
+    ["Base.PropaneTank"] = {
+        dx = 0.23,
+        dy = 0.23,
+        dz = 0.20,
+        qz = 1,
+    },
+    ["Base.Extinguisher"] = {
+        dx = 0.25,
+        dy = 0.25,
+        dz = 0.20,
+        qz = 1,
+        fz = 270,
+    },
+    ["Base.NormalTire1"] = {
+        dx = 0.60,
+        dy = 0.60,
+        dz = 0.08,
+        qz = 4,
+    },
+    ["Base.Briefcase"] = {
+        dx = 0.1,
+        dy = 0.4,
+        dz = 0.11,
+        fx = 90,
+        fy = 90,
+        fz = 180,
+        mz = 0.07,
+        qz = 1,
+    },
+    ["Base.Suitcase"] = {
+        dx = 0.15,
+        dy = 0.5,
+        dz = 0.11,
+        fx = 90,
+        fy = 90,
+        fz = 180,
+        mz = 0.07,
+        qz = 1,
+    },
+    ["Base.Bag_ProtectiveCase"] = {
+        dx = 0.15,
+        dy = 0.5,
+        dz = 0.11,
+        fx = 0,
+        fy = 90,
+        fz = 180,
+        mz = 0.09,
+        qz = 1,
+    },
+    ["Base.Bag_RifleCase"] = {
+        dx = 0.11,
+        dy = 1,
+        dz = 0.11,
+        fx = 0,
+        fy = 90,
+        fz = 0  ,
+        mz = 0.08,
+        qz = 1,
+    },
+    ["Base.CigarBox"] = {
+        dx = 0.12,
+        dy = 0.21,
+        dz = 0.02,
+        qz = 6,
+    },
+    ["Base.Fertilizer"] = {
+        dx = 0.28,
+        dy = 0.44,
+        dz = 0.04,
+        fz = 270,
+        qz = 5,
+    },
+    ["Base.SlugRepellent"] = {
+        dx = 0.15,
+        dy = 0.09,
+        dz = 0.09,
+        qz = 2,
+    },
+    ["Base.InsectRepellent"] = {
+        dx = 0.09,
+        dy = 0.09,
+        dz = 0.06,
+        qz = 1,
+    },
+    ["Base.PlasterPowder"] = {
+        dx = 0.37,
+        dy = 0.54,
+        dz = 0.05,
+        fz = 270,
+        qz = 5,
+    },
+    ["Base.SeasoningSalt"] = {
+        dx = 0.1,
+        dy = 0.1,
+        dz = 0.07,
+        qz = 1,
+        fz = 153
+    },
+    ["Base.DriedBlackBeans"] = {
+        dx = 0.4,
+        dy = 0.24,
+        dz = 0.01,
+        qz = 12,
+    },
+    ["Base.Sugar"] = {
+        dx = 0.18,
+        dy = 0.12,
+        dz = 0.1,
+        fz = 8,
+        qz = 2,
+    },
+    ["Base.SugarBrown"] = {
+        dx = 0.16,
+        dy = 0.10,
+        dz = 0.08,
+        fz = 8,
+        qz = 2,
+    },
+    ["Base.CarBattery1"] = {
+        dx = 0.32,
+        dy = 0.21,
+        dz = 0.09,
+        fz = 90,
+        qz = 2,
+    },
+    ["Base.Crisps"] = {
+        dx = 0.21,
+        dy = 0.06,
+        dz = 0.17,
+        mz = 0.06,
+        fx = 270,
+        fz = 270,
+        qz = 1,
+    },
+    ["Base.Cereal"] = {
+        dx = 0.3,
+        dy = 0.12,
+        dz = 0.15,
+        qz = 3,
+    },
+    ["Base.ScoutCookies"] = {
+        dx = 0.17,
+        dy = 0.07,
+        dz = 0.08,
+        fz = 90,
+        qz = 2,
+    },
+    ["Base.PetrolCan"] = {
+        dx = 0.17,
+        dy = 0.3,
+        dz = 0.08,
+        qz = 1,
+    },
+    ["Base.JerryCan"] = {
+        dx = 0.17,
+        dy = 0.3,
+        dz = 0.17,
+        fz = 180,
+        qz = 1,
+    },
+    ["Base.CigarettePack"] = {
+        dx = 0.09,
+        dy = 0.14,
+        dz = 0.015,
+        fz = 270,
+        qz = 8,
+    },
+    ["Base.CigaretteCarton"] = {
+        dx = 0.13,
+        dy = 0.3,
+        dz = 0.03,
+        qz = 5,
+    },
+    ["Base.CocoaPowder"] = {
+        dx = 0.13,
+        dy = 0.13,
+        dz = 0.075,
+        qz = 2,
+        fz = 315,
+    },
+    ["Base.Coffee2"] = {
+        dx = 0.13,
+        dy = 0.12,
+        dz = 0.1,
+        qz = 1,
+        fz = 180,
+    },
+    ["Base.WaterDispenserBottle"] = {
+        dx = 0.32,
+        dy = 0.32,
+        dz = 0.18,
+        qz = 1,
+    },
+    ["Base.EggCarton"] = {
+        dx = 0.42,
+        dy = 0.15,
+        dz = 0.03,
+        qz = 5,
+    },
+    ["Base.BarleyBagSeed"] = {
+        dx = 0.12,
+        dy = 0.17,
+        dz = 0.005,
+        fz = 270,
+        qz = 20,
+    },
+    ["Base.ClayBrick"] = {
+        dx = 0.33,
+        dy = 0.16,
+        dz = 0.05,
+        qz = 11,
+    },
+    ["Base.PaintBlack"] = {
+        dx = 0.18,
+        dy = 0.18,
+        dz = 0.07,
+        fz = 230,
+        qz = 4,
+    },
+    ["Base.ElectronicsScrap"] = {
+        dx = 0.14,
+        dy = 0.07,
+        dz = 0.05,
+        fz = 0,
+        qz = 4,
+    },
+}
+
+IA.arrangables["Base.JamMarmalade"] = IA.arrangables["Base.JamFruit"]
+
+IA.arrangables["Base.NormalTire2"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.NormalTire3"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.OldTire1"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.OldTire2"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.OldTire3"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.ModernTire1"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.ModernTire2"] = IA.arrangables["Base.NormalTire1"]
+IA.arrangables["Base.ModernTire3"] = IA.arrangables["Base.NormalTire1"]
+
+IA.arrangables["Base.PaintBlue"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintBrown"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintCyan"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintGrey"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintGreen"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintLightBlue"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintLightBrown"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintOrange"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintPink"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintPurple"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintRed"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintTurquoise"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintWhite"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintYellow"] = IA.arrangables["Base.PaintBlack"]
+IA.arrangables["Base.PaintbucketEmpty"] = IA.arrangables["Base.PaintBlack"]
+
+IA.arrangables["Base.BarleyBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.BasilBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.BellPepperBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.BlackSageBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.BroadleafPlantainBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.BroccoliBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CabbageBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CarrotBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CauliflowerBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ChamomileBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ChivesBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CilantroBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ComfreyBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CommonMallowBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CornBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.CucumberBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.FlaxBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.GarlicBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.GreenpeasBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.HabaneroBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.HempBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.HopsBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.JalapenoBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.KaleBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.LavenderBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.LeekBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.LemonGrassBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.LettuceBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.MarigoldBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.MintBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.OnionBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.OreganoBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ParsleyBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.PoppyBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.PotatoBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.PumpkinBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.RedRadishBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.RoseBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.RosemaryBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.RyeBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SageBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SoybeansBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SpinachBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.StrewberrieBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SugarBeetBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SunflowerBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.SweetPotatoBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ThymeBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.TobaccoBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.TomatoBagSeed2"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.TurnipBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.WatermelonBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.WheatBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.WildGarlicBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+IA.arrangables["Base.ZucchiniBagSeed"] = IA.arrangables["Base.BarleyBagSeed"]
+
+IA.arrangables["Base.Crisps2"] = IA.arrangables["Base.Crisps"]
+IA.arrangables["Base.Crisps3"] = IA.arrangables["Base.Crisps"]
+IA.arrangables["Base.Crisps4"] = IA.arrangables["Base.Crisps"]
+IA.arrangables["Base.Crisps5"] = IA.arrangables["Base.Crisps"]
+
+IA.arrangables["Base.CarBattery2"] = IA.arrangables["Base.CarBattery1"]
+IA.arrangables["Base.CarBattery3"] = IA.arrangables["Base.CarBattery1"]
+
+IA.arrangables["Base.DriedChickpeas"] = IA.arrangables["Base.DriedBlackBeans"]
+IA.arrangables["Base.DriedKidneyBeans"] = IA.arrangables["Base.DriedBlackBeans"]
+IA.arrangables["Base.DriedLentils"] = IA.arrangables["Base.DriedBlackBeans"]
+IA.arrangables["Base.DriedSplitPeas"] = IA.arrangables["Base.DriedBlackBeans"]
+IA.arrangables["Base.DriedWhiteBeans"] = IA.arrangables["Base.DriedBlackBeans"]
+
+IA.arrangables["Base.Seasoning_Basil"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Chives"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Cilantro"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Oregano"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Parsley"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Rosemary"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Sage"] = IA.arrangables["Base.SeasoningSalt"]
+IA.arrangables["Base.Seasoning_Thyme"] = IA.arrangables["Base.SeasoningSalt"]
+
+
+IA.arrangables["Base.CigarBox_Gaming"] = IA.arrangables["Base.CigarBox"]
+IA.arrangables["Base.CigarBox_Kids"] = IA.arrangables["Base.CigarBox"]
+IA.arrangables["Base.CigarBox_Keepsakes"] = IA.arrangables["Base.CigarBox"]
+
+IA.arrangables["Base.Bullets38Box"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.Bullets44Box"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.Bullets45Box"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.Bullets9mmBox"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.3030Box"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.556Box"] = IA.arrangables["Base.Bullets357Box"]
+IA.arrangables["Base.308Box"] = IA.arrangables["Base.Bullets357Box"]
+
+IA.arrangables["Base.Pop"] = IA.arrangables["Base.CannedCarrots2"]
+IA.arrangables["Base.Pop2"] = IA.arrangables["Base.CannedCarrots2"]
+IA.arrangables["Base.Pop3"] = IA.arrangables["Base.CannedCarrots2"]
+IA.arrangables["Base.SodaCan"] = IA.arrangables["Base.CannedCarrots2"]
+IA.arrangables["Base.EmptyJar"] = IA.arrangables["Base.CannedCarrots2"]
+
+IA.arrangables["Base.CannedBellPepper"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedBroccoli"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedCarrots"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedCabbage"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedLeek"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedPotato"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedRedRadish"] = IA.arrangables["Base.CannedEggplant"]
+IA.arrangables["Base.CannedTomato"] = IA.arrangables["Base.CannedEggplant"]
+
+IA.arrangables["Base.3030Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Bullets38Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Bullets44Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Bullets45Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.ShotgunShellsCarton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.556Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.308Carton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Bullets9mmCarton"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.TinnedBeans_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedCarrots_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedChili_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedCorn_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedCornedBeef_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Dogfood_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedMilk_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedFruitBeverage_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedFruitCocktail_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedMushroomSoup_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedPeaches_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedPeas_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedPineapple_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedPotato_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedBolognese_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.CannedTomato_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.TinnedSoup_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.Macandcheese_Box"] = IA.arrangables["Base.Bullets357Carton"]
+IA.arrangables["Base.DuctTapeBox"] = IA.arrangables["Base.Bullets357Carton"]
+
+IA.arrangables["Base.ColdpackBox"] = IA.arrangables["Base.AntibioticsBox"]
+
+IA.arrangables["Base.BatteryBox"] = IA.arrangables["Base.AdhesiveTapeBox"]
+
+IA.arrangables["Base.BandageBox"] = IA.arrangables["Base.AdhesiveBandageBox"]
+IA.arrangables["Base.CottonBallsBox"] = IA.arrangables["Base.AdhesiveBandageBox"]
+IA.arrangables["Base.TongueDepressorBox"] = IA.arrangables["Base.AdhesiveBandageBox"]
+
+IA.arrangables["Base.Bag_AmmoBox_ShotgunShells"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_38"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_44"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_45"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_Hunting"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_Mixed"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_308"] = IA.arrangables["Base.Bag_AmmoBox"]
+IA.arrangables["Base.Bag_AmmoBox_9mm"] = IA.arrangables["Base.Bag_AmmoBox"]
+
+IA.arrangables["Base.Briefcase_Money"] = IA.arrangables["Base.Briefcase"]
+
+IA.arrangables["Base.Bag_ProtectiveCase_Tools"] = IA.arrangables["Base.Bag_ProtectiveCase"]
+
+IA.arrangables["Base.ShotgunCase1"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.ShotgunCase2"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.RifleCase1"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.RifleCase2"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.RifleCase3"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.RifleCase4"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_ShotgunCase_Police"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_RifleCase_Police"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_RifleCase_Police2"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_RifleCase_Police3"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_RifleCase_Green"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_RifleCase_Green2"] = IA.arrangables["Base.Bag_RifleCase"]
+IA.arrangables["Base.Bag_ShotgunCase_Green"] = IA.arrangables["Base.Bag_RifleCase"]
+]]

@@ -1,0 +1,4 @@
+{
+    "name": "LG Hubungkan ke Saluran Air Kota",
+    "description": "Menambahkan opsi \"Hubungkan ... ke pipa induk\" untuk wastafel, bak mandi, pancuran, kloset dan mesin cuci yang kamu pasang di dalam ruangan. Barang yang tersambung terhitung milik bangunan itu sendiri: pasokan tanpa habis yang sama, hari pemutusan yang sama, sisa air di pipa yang sama sesudahnya. Bangunan yang ditandai peta tanpa air mengalir tetap kering. Baru berguna kalau kamu memasang barangmu sebelum airnya diputus. Pemain tunggal, multipemain yang dihosting dan server khusus."
+}

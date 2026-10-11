@@ -1,0 +1,186 @@
+module Base
+{
+    /*
+     * Modelo do carrinho quando largado no chao.
+     *
+     * POR QUE module Base E NAO module MNWheelbarrow:
+     * todos os modelos do jogo base vivem em `module Base` -- models_items.txt
+     * inteiro e Base -- e nenhum item vanilla referencia modelo qualificado por
+     * modulo. Definir o modelo num modulo proprio e referencia-lo pelo nome nu
+     * e um caminho sem nenhum precedente no jogo, e o modelo simplesmente nao
+     * aparecia no mundo, sem erro no log. O nome carrega o prefixo MNWheelbarrow
+     * para nao colidir com outro mod dentro do namespace compartilhado.
+     *
+     * O mesh original tinha 4 texturas PBR de 4096x4096 embutidas (21.7 MB).
+     * O PZ so usa mapa difuso, entao o payload embutido foi removido; a
+     * geometria ficou identica (2240 vertices, mesmos 393 nos).
+     *
+     * SCALE: comparar so a bounding box do mesh NAO funciona. O tamanho final e
+     *
+     *     bbox do mesh  x  Lcl Scaling do no Model  x  scale deste script
+     *
+     * e o Lcl Scaling difere brutalmente entre os arquivos:
+     *
+     *     Log vanilla   bbox 30.932  x  Lcl 0.02778  x  0.4  =  0.3437
+     *     este mesh     bbox  1.900  x  Lcl 100.0            <- 100x embutido
+     *
+     * O vanilla embute a conversao de unidade no Lcl Scaling (91.44/2.54 = 36,
+     * e 1/36 = 0.02778). Este arquivo veio de uma ferramenta em centimetros com
+     * a unidade nao aplicada, entao carrega 100x. Ignorar isso me fez calcular
+     * scale = 6.5, que renderizou o carrinho 3593x grande demais -- ocupando
+     * varios quarteiroes.
+     *
+     * 0.00525 e o valor calibrado em tela, em cinco passadas: 0.0025 ficou tres
+     * vezes pequeno demais, 0.0075 ficou 20% grande demais, 0.006 ainda pedia
+     * mais 5%, e depois que a animacao de dois bracos entrou o carrinho ficou
+     * grande outra vez -- com os dois bracos na pose, o encaixe nas maos passou a
+     * ser visivel e o excesso apareceu. Dai 0.0057 -> 0.00553 -> 0.00525 -> 0.00499.
+     * Dobrar o numero dobra o tamanho renderizado.
+     *
+     * OS DOIS MODELOS COMPARTILHAM ESTE VALOR de proposito: o de chao e o de mao
+     * sao o mesmo objeto e precisam ter o mesmo tamanho. Mudar um so faria o
+     * carrinho encolher ou crescer ao ser pego.
+     *
+     * SOMBRA: este modelo carrega um quad deitado no plano do chao, com uma
+     * mancha escura que desvanece nas bordas. Ele existe porque o engine NAO tem
+     * sombra para item -- shadowExtents e shadowOffset so existem em script de
+     * veiculo, e das 568 chaves de TilePropertyKey nenhuma trata sombra. No PZ,
+     * objeto do mundo que tem sombra tem ela pintada no sprite; como o carrinho
+     * renderiza por modelo 3D, o equivalente e geometria.
+     *
+     * Depende de o shader respeitar alpha, e ele respeita: medido nas texturas
+     * do jogo base, ChristmasTree_Branch.png vai de alpha 0 a 255 com milhares
+     * de pixels intermediarios.
+     *
+     * A TEXTURA CONTINUA 512x512, e esse numero e medido. Personagem e veiculos
+     * sumiam da tela quando o modelo de mao usava textura com alpha, e eu culpei
+     * o canal alpha. Um teste controlado de quatro variantes -- mesma malha, so a
+     * textura mudando -- mostrou que a culpa era do TAMANHO:
+     *
+     *     512x512  RGBA opaco        funciona
+     *     512x512  RGBA translucido  funciona
+     *    1024x512  RGBA translucido  QUEBRA
+     *
+     * Entao a mancha e reservada DENTRO dos 512: os UVs do carrinho encolhem
+     * para 78% e a sombra ocupa a faixa direita. Procurar espaco livre no atlas
+     * foi tentado e nao existe -- 72.5% ocupado, maior retangulo vazio de 4x116
+     * texels. Encolher custa 20% da resolucao horizontal, imperceptivel num
+     * objeto que renderiza pequeno.
+     *
+     * TEXTURA SEPARADA, e isso nao e organizacao -- e isolamento, aprendido a
+     * duras penas. Na primeira versao os dois modelos dividiam a textura com
+     * alpha, e em jogo o PERSONAGEM E OS VEICULOS sumiram da tela. Os dois sao
+     * desenhados pelo mesmo passe de modelo 3D, e o modelo de mao faz parte do
+     * personagem: uma textura que aquele passe nao digere derruba o passe
+     * inteiro, nao so o carrinho. O cenario, que e sprite, continuava aparecendo
+     * -- foi esse recorte que apontou a causa. A alpha agora existe SO aqui.
+     *
+     * O modelo de MAO tem sombra propria, num plano DIFERENTE: depois da pose a
+     * malha esta no espaco do osso, onde +Z aponta para baixo, entao la o chao e
+     * um plano de Z constante e o quad varia em X e Y -- aqui a vertical e Y.
+     * Copiar o quad de um para o outro o deixaria de pe ao lado do personagem.
+     *
+     * Ela chegou a ser revertida quando personagem e veiculos sumiam da tela e eu
+     * atribui a falha ao canal alpha. O teste controlado mostrou que era o
+     * tamanho da textura, e com 512x512 ela e segura.
+     *
+     * ALTURA: o mesh foi deslocado 0.380 no eixo Y (ver
+     * assets/tools_fbx_shift.py) para a base ficar em Y = 0 em vez de a origem
+     * ficar no centro. Os modelos vanilla sao centrados -- medi o Log e o
+     * ToolBox_Ground e ambos tem a origem a 50% da altura -- e o engine assenta
+     * a origem no chao, entao todo modelo afunda metade da propria altura. Num
+     * tronco deitado isso e imperceptivel; num carrinho alto o resultado era
+     * metade dele enterrada.
+     */
+    model MNWheelbarrow_Ground
+    {
+        mesh = WorldItems/Wheelbarrow,
+        texture = WorldItems/Wheelbarrow_Ground,
+        scale = 0.00499,
+    }
+
+    /*
+     * Modelo do carrinho TOMBADO.
+     *
+     * A malha e a do chao SEM o quad de sombra, e a razao e que sombra assada na
+     * geometria inclina junto com o objeto: no carrinho deitado ela virava uma
+     * mancha de contato de pe no ar. Recalcular nao e opcao -- e um quad, nao um
+     * efeito.
+     *
+     * A troca acontece em runtime, por InventoryItem.setWorldStaticModel: de pe
+     * o carrinho usa MNWheelbarrow_Ground, tombado usa este. Assim a sombra nao
+     * se perde no estado comum e nao atrapalha no estado temporario.
+     *
+     * Compartilha a textura do modelo de chao; a faixa da sombra fica sem uso.
+     */
+    model MNWheelbarrow_Tipped
+    {
+        mesh = WorldItems/Wheelbarrow_Tipped,
+        texture = WorldItems/Wheelbarrow_Ground,
+        scale = 0.00499,
+    }
+
+    /*
+     * Modelo do carrinho SEGURADO NAS MAOS.
+     *
+     * A transformacao esta ASSADA NA MALHA. Os dois modelos sao gerados por
+     *
+     *     python assets/tools_build_models.py
+     *
+     * a partir de assets/source/, que e a fonte imutavel. Antes disso o modelo de
+     * mao era derivado do de CHAO e o de chao era editado no lugar: cada geracao
+     * partia do resultado da anterior, entao rodar a mesma ferramenta duas vezes
+     * produzia coisas diferentes.
+     *
+     * POR QUE ASSADA, E NAO NO BLOCO attachment:
+     * o jogo tem um mecanismo declarativo -- `attachment Bip01_Prop2 { offset,
+     * rotate }` -- usado por 1154 modelos vanilla, inclusive pelo livro oco, que
+     * e o unico container do jogo base a aparecer na mao via StaticModel, ou
+     * seja exatamente o nosso caso. Ele NAO funciona aqui: oito variantes que
+     * diferiam so no rotate renderizaram identicas em jogo. O engine ignora
+     * attachment neste caminho. E tambem por isso que o mod Carry Visible Items
+     * assa tudo na malha e da aos arquivos o sufixo _Hand.
+     *
+     * Consequencia pratica, para quem for mexer: mudar a pose exige regerar o
+     * .fbx e reiniciar o jogo. Nao ha ajuste em runtime, e foi por isso que a
+     * calibracao usou um grid de poses pre-assadas navegavel por tecla em jogo --
+     * assets/tools_gen_pose_grid.py ainda gera esse grid, e o WB_PoseLab.lua que
+     * o percorria foi removido junto com as 90 malhas descartaveis quando a pose
+     * convergiu. Recriar e um comando.
+     *
+     * DE ONDE VEM CADA NUMERO. Nenhum foi chutado:
+     *
+     *   giro 270 0 0   duas poses do grid diferiam so no sinal de Z: uma ficou
+     *                  de pe e a outra de cabeca para baixo. O eixo de cima da
+     *                  malha aponta para -Z, logo 270 e o giro que o poe em pe.
+     *   Z = 0.56       +Z e para BAIXO. A pose que pendurava 0.76 abaixo da mao
+     *                  encostava no chao, o que mede a altura da mao; 0.56 e o
+     *                  refino em tela a partir dai.
+     *   Y = 0.90       frente/tras, o eixo do comprimento nesta rotacao. Tira o
+     *                  carrinho de dentro do personagem.
+     *   X = 0.36       lateral, medido num grid de oito valores de 0.16 a 0.51.
+     *                  0.31 era o encaixe com a animacao de UM braco; com os
+     *                  dois bracos o personagem ficou descentrado, e eu tentei
+     *                  corrigir a olho com 0.26 -- para o lado ERRADO. O grid
+     *                  cercou o valor atual dos dois lados justamente para nao
+     *                  repetir esse erro, e a resposta foi 0.36.
+     *
+     * A TRINCA CONVERGIU, e nao e so o melhor de uma amostra. Cada valor foi o
+     * melhor em DUAS passadas com intervalos de lados opostos:
+     *
+     *     Y = 0.90   melhor em [0.70 .. 0.90] e tambem em [0.90 .. 1.35]
+     *     Z = 0.56   melhor em [0.56 .. 0.72] e tambem em [0.32 .. 0.56]
+     *     X = 0.31   interior numa varredura de doze valores, 0.23 a 0.45
+     *
+     * Ganhar nos dois sentidos e o que distingue otimo de fim de intervalo -- as
+     * duas passadas anteriores pararam em borda, o que nao prova nada. O erro
+     * residual esta limitado ao passo de cada eixo: 0.15 em Y, 0.08 em Z, 0.02
+     * em X.
+     */
+    model MNWheelbarrow_Hand
+    {
+        mesh = WorldItems/Wheelbarrow_Hand,
+        texture = WorldItems/Wheelbarrow_Hand,
+        scale = 0.00499,
+    }
+}

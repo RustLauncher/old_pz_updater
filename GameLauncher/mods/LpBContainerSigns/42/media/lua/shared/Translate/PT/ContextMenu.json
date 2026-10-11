@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Escrever um nome aqui",
+    "ContextMenu_LPBCS_Rewrite": "Placa: «%1»",
+    "ContextMenu_LPBCS_Erase": "Apagar o nome",
+
+    "ContextMenu_LPBCS_StackTop": "em cima",
+    "ContextMenu_LPBCS_StackMiddle": "no meio",
+    "ContextMenu_LPBCS_StackBottom": "em baixo",
+
+    "ContextMenu_LPBCS_StylePlank": "Numa tábua pregada",
+    "ContextMenu_LPBCS_StylePaper": "Num papel colado",
+    "ContextMenu_LPBCS_StylePainted": "Pintado diretamente",
+
+    "ContextMenu_LPBCS_Side": "Posição",
+    "ContextMenu_LPBCS_SideAuto": "Automático",
+    "ContextMenu_LPBCS_SideLeft": "À esquerda",
+    "ContextMenu_LPBCS_SideRight": "À direita"
+}

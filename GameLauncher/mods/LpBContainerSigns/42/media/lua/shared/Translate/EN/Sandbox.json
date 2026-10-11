@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Container Signs",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- WRITING -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- SIGN STYLES -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DEBUG -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Allow writing on containers",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Master switch. Disabled, nobody can write or erase a name, but signs already written stay in place and stay readable.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Crates only",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "Signs go on crates and nothing else -- the storage a base is built out of. Disabled, any container in the world can carry one: wardrobes, fridges, lockers, counters. This governs the display as well as the writing, so turning it on also takes the signs off everything that is not a crate.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Require a pen or a paintbrush",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Writing needs an item tagged as a writing implement (pen, pencil, coloured pens), and painting needs a paintbrush plus a can of paint. Disabled, anyone can write bare-handed.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Spend a use of the tool",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Only bites on tools that actually run out: a can of paint loses a use, a pen does not, exactly as vanilla treats a pen used to annotate a map.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Safehouse members only",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Inside a safehouse, only its members may write on or erase a container. Admins are exempt so a griefed sign can be cleaned up. Outside safehouses this changes nothing.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Maximum name length",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "How many characters a sign may carry. Capped at 28, the same limit vanilla puts on renaming a container.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Allow the nailed board",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "A slat of wood nailed to the front of the container.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Allow the taped note",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "A sheet of paper stuck to the front of the container.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Allow painting straight on",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "The name painted onto the container itself, in the colour of the paint used. This is the style that needs a paintbrush.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Debug logging",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Writes what the mod is doing to console.txt on each client and to server-console.txt on the server: one line per action and per request received. Off by default, and worth leaving off -- a busy server produces a lot of it. Turn it on to report a bug. The switch is read live, so ticking it mid-game starts the logging at once, but the startup diagnostics (which files are loaded and what version they speak, sprite atlas unavailable, draw call refused) are said once per session and need it on before the session starts."
+}

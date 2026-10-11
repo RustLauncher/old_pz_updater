@@ -1,0 +1,4 @@
+{
+    "name": "LG Allaccia alla rete idrica",
+    "description": "Aggiunge un'opzione \"Allaccia ... alla condotta principale\" per lavandini, vasche, docce, water e lavatrici che monti al chiuso. Un sanitario allacciato conta come uno di quelli dell'edificio: stessa acqua senza fine, stesso giorno di chiusura, stessa acqua che resta nei tubi dopo. Gli edifici che la mappa segna senza acqua corrente restano asciutti. Conviene solo se monti i tuoi sanitari prima che chiudano l'acqua. Giocatore singolo, multigiocatore ospitato e server dedicato."
+}

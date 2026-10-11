@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "A slat of wood nailed to the front. Reads from across the room.",
+    "Tooltip_LPBCS_StylePaper": "A sheet stuck to the front. Quick and unfussy.",
+    "Tooltip_LPBCS_StylePainted": "Painted onto the wood itself, in the colour of the can you use. Needs a paintbrush and paint.",
+
+    "Tooltip_LPBCS_Side": "Which face of the container the sign hangs on.",
+    "Tooltip_LPBCS_SideAuto": "Leaves the choice to the mod: the right-hand face, unless a wall or a crate blocks it — the sign then moves round on its own.",
+    "Tooltip_LPBCS_SideLeft": "Nails the sign to the left-hand face and leaves it there, even if the right one clears.",
+    "Tooltip_LPBCS_SideRight": "Nails the sign to the right-hand face and leaves it there, even if something comes to stand against it."
+}

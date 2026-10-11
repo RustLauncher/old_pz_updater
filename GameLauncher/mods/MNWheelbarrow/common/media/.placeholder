@@ -1,0 +1,3 @@
+O jogo exige que a pasta common/ exista, senao o mod nao e detectado.
+Assets pesados (modelos 3D, texturas) vao aqui para nao serem duplicados
+entre pastas de versao.

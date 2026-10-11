@@ -1,0 +1,107 @@
+VERSION = 1,
+
+option LpBContainerSignsDividerRules
+{
+    type = boolean,
+    default = false,
+    page = LpBContainerSigns,
+    translation = LpBContainerSignsDividerRules,
+}
+
+option LpBContainerSigns.WritingEnabled
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_WritingEnabled,
+}
+
+option LpBContainerSigns.CratesOnly
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_CratesOnly,
+}
+
+option LpBContainerSigns.RequireWritingTool
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_RequireWritingTool,
+}
+
+option LpBContainerSigns.ConsumeToolUse
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_ConsumeToolUse,
+}
+
+option LpBContainerSigns.RestrictToSafehouse
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_RestrictToSafehouse,
+}
+
+option LpBContainerSigns.MaxLabelLength
+{
+    type = integer,
+    default = 24,
+    min = 4,
+    max = 28,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_MaxLabelLength,
+}
+
+option LpBContainerSignsDividerStyles
+{
+    type = boolean,
+    default = false,
+    page = LpBContainerSigns,
+    translation = LpBContainerSignsDividerStyles,
+}
+
+option LpBContainerSigns.AllowPlankSign
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_AllowPlankSign,
+}
+
+option LpBContainerSigns.AllowPaperSign
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_AllowPaperSign,
+}
+
+option LpBContainerSigns.AllowPaintedSign
+{
+    type = boolean,
+    default = true,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_AllowPaintedSign,
+}
+
+option LpBContainerSignsDividerDebug
+{
+    type = boolean,
+    default = false,
+    page = LpBContainerSigns,
+    translation = LpBContainerSignsDividerDebug,
+}
+
+option LpBContainerSigns.DebugLogging
+{
+    type = boolean,
+    default = false,
+    page = LpBContainerSigns,
+    translation = LpBContainerSigns_DebugLogging,
+}

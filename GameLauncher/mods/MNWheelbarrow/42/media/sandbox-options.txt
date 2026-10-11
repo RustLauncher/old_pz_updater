@@ -1,0 +1,78 @@
+VERSION = 1,
+
+/*
+ * Fonte UNICA de verdade para balanceamento.
+ *
+ * Nenhum destes numeros pode ser repetido em WB_Const.lua ou em qualquer
+ * outro lugar do codigo. Se um valor e ajustavel pelo jogador, ele mora aqui
+ * e so aqui.
+ *
+ * Em multiplayer o servidor e a autoridade: o admin define no servertest.ini
+ * e vale para todos os jogadores.
+ */
+
+option MNWheelbarrow.EnableWorldSpawn
+{type = boolean, default = true, page = MNWheelbarrow, translation = MNWBEnableWorldSpawn,}
+
+option MNWheelbarrow.SpawnChance
+{type = double, min = 0, max = 100, default = 3.0, page = MNWheelbarrow, translation = MNWBSpawnChance,}
+
+option MNWheelbarrow.EnableCrafting
+{type = boolean, default = true, page = MNWheelbarrow, translation = MNWBEnableCrafting,}
+
+/* O TETO E 38, MEDIDO, e nao 600.
+
+   Este bloco dizia "o maximo NAO e mais 50" com min 20, max 600, default 200, e
+   os tres numeros eram ficcao: WB_Weight.applyCapacity corta o desejado em
+   floorCeiling() -- 50 do orcamento de peso da square, menos o carrinho, menos a
+   margem de um tronco -- e escreve 38. Ou seja o jogo vinha rodando em 38 desde
+   que o corte entrou; 200 nunca chegou ao engine, e todo valor de 39 a 600 era o
+   mesmo 38 com outro nome no menu.
+
+   O teto nao e escolha nossa. Vem de ItemContainer.hasRoomFor: para container com
+   objeto de mundo o engine soma getTotalWeightOfItemsOnFloor() e recusa acima de
+   50.0, e TODA carga acontece com o carrinho no chao porque toda acao estaciona
+   ele. Ver o cabecalho de WB_Weight.lua para a medicao.
+
+   O default e o proprio teto porque e o que ja valia na pratica: mudar de 200 para
+   38 aqui nao muda uma partida, so para de mentir. A option continua servindo para
+   BAIXO, que e o ajuste que existe de verdade.
+
+   assets/tools_check_sandbox.py confere este max contra as constantes do Lua e o
+   Weight do script -- os quatro numeros nao podem divergir em silencio. */
+option MNWheelbarrow.Capacity
+{type = integer, min = 20, max = 38, default = 38, page = MNWheelbarrow, translation = MNWBCapacity,}
+
+/* Max 38 pelo mesmo teto, e aqui a razao e outra: carga leve NAO e reacondicionada
+   (ver WB_Repack), entao o peso real dela e o que conta contra a capacidade. Um teto
+   de carga leve acima da capacidade do compartimento nunca chega a morder. */
+option MNWheelbarrow.LightCapacity
+{type = integer, min = 0, max = 38, default = 20, page = MNWheelbarrow, translation = MNWBLightCapacity,}
+
+option MNWheelbarrow.HeavyThreshold
+{type = double, min = 0.5, max = 50, default = 8.0, page = MNWheelbarrow, translation = MNWBHeavyThreshold,}
+
+option MNWheelbarrow.HeavyReduction
+{type = integer, min = 0, max = 100, default = 95, page = MNWheelbarrow, translation = MNWBHeavyReduction,}
+
+
+option MNWheelbarrow.ActionDuration
+{type = integer, min = 10, max = 300, default = 80, page = MNWheelbarrow, translation = MNWBActionDuration,}
+
+option MNWheelbarrow.SpillOnCancel
+{type = boolean, default = true, page = MNWheelbarrow, translation = MNWBSpillOnCancel,}
+
+/* NAO existe option para o bloqueio de armas, e a ausencia e decidida.
+
+   BlockWeapons existiu e prometia mais do que entregava: desligada, a arma pedida
+   na mao PRIMARIA -- que e onde um clique no inventario a poe -- era sobrescrita
+   pelo carrinho e o jogador ficava com a mao vazia sem aviso. Ver o cabecalho de
+   WB_Hands.lua para o que consertar exigiria e por que nao valia o risco.
+
+   O carrinho ocupa as duas maos, ponto. Uma option a menos e uma mecanica a menos
+   para quebrar. */
+option MNWheelbarrow.BlockRunning
+{type = boolean, default = true, page = MNWheelbarrow, translation = MNWBBlockRunning,}
+
+option MNWheelbarrow.AllowCorpses
+{type = boolean, default = true, page = MNWheelbarrow, translation = MNWBAllowCorpses,}

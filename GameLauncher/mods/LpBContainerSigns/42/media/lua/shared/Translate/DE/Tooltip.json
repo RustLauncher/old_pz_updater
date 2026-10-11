@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Eine Holzleiste, die an der Vorderseite festgenagelt ist. Aus dem ganzen Raum lesbar.",
+    "Tooltip_LPBCS_StylePaper": "Ein Blatt, das an der Vorderseite befestigt ist. Schnell und schlicht.",
+    "Tooltip_LPBCS_StylePainted": "Direkt auf das Holz gemalt, in der Farbe der verwendeten Farbdose. Benötigt Pinsel und Farbe.",
+
+    "Tooltip_LPBCS_Side": "An welcher Seite des Behälters das Schild angebracht ist.",
+    "Tooltip_LPBCS_SideAuto": "Überlässt die Wahl dem Mod: die rechte Seite, sofern keine Wand oder Kiste sie blockiert – dann wechselt das Schild automatisch die Seite.",
+    "Tooltip_LPBCS_SideLeft": "Nagelt das Schild an die linke Seite und lässt es dort, selbst wenn die rechte Seite frei wird.",
+    "Tooltip_LPBCS_SideRight": "Nagelt das Schild an die rechte Seite und lässt es dort, selbst wenn etwas davor gestellt wird."
+}

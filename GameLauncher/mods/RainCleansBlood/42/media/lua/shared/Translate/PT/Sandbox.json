@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "A chuva limpa o sangue",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Blocos por minuto",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Quantos blocos aleatórios são limpos por minuto no jogo.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Limite de intensidade do tempo",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Quão forte deve ser a chuva ou neve para começar a lavar o sangue. Maior = precisa de tempo mais forte.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Limpar cinzas",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Também limpa as cinzas deixadas por cadáveres queimados.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Limpar fezes de animais",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Também limpa as fezes de animais (esterco) deixadas no chão.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Limpar interior",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Também limpa o sangue dentro dos edifícios.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Limpar veículos",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Também limpa gradualmente o sangue dos veículos.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Velocidade de limpeza dos veículos",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Quanto sangue é removido dos veículos por minuto.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Limpar roupas",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Também limpa gradualmente o sangue e a sujeira das roupas usadas pelos jogadores.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Velocidade de limpeza das roupas",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Quanto sangue e sujeira são removidos das roupas por minuto.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Sempre limpar",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Sempre limpa independentemente do tempo."
+}

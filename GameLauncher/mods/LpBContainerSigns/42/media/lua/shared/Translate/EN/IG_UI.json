@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "What goes on this container? (%1 characters at most)",
+    "IGUI_LPBCS_InkLabel": "Written with",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "You need a pen or a pencil to write on this.",
+    "IGUI_LPBCS_NeedBrush": "You need a paintbrush to paint a name on this.",
+    "IGUI_LPBCS_NeedPaint": "You need a can of paint to paint a name on this.",
+
+    "IGUI_LPBCS_Disabled": "Writing on containers is disabled on this server.",
+    "IGUI_LPBCS_NoContainer": "That container is no longer there.",
+    "IGUI_LPBCS_TooFar": "You are too far from that container.",
+    "IGUI_LPBCS_NoWay": "There is no way to get to that container.",
+    "IGUI_LPBCS_NotYourSafehouse": "This container is inside a safehouse you do not belong to.",
+    "IGUI_LPBCS_WriteFailed": "The name could not be written.",
+    "IGUI_LPBCS_MoveFailed": "The sign could not be moved.",
+    "IGUI_LPBCS_BadRequest": "That request made no sense and was ignored.",
+    "IGUI_LPBCS_TooQuick": "Give it a moment before asking again.",
+    "IGUI_LPBCS_VersionSkew": "This server is running an older version of this mod."
+}

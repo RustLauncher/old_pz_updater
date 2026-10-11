@@ -1,0 +1,9 @@
+name=Simple Moodle Indicators
+id=SimpleMoodleIndicators
+description=Custom moodle backgrounds with transparency and level indicators for improved readability. Requires 'Moodles in lua'
+poster=poster.png
+icon=icon.png
+author=Dreamweave
+require=\moodlesinlua
+versionMin=42.0.0
+modversion=2.0

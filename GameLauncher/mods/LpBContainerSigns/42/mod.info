@@ -1,0 +1,7 @@
+name=LpB Container Signs
+id=LpBContainerSigns
+author=LpB
+modversion=1.3.2
+versionMin=42.0.0
+description=Writes a container's name onto the container itself. Take a pen or a paintbrush, name a crate, and the name stays there in the world on a small sign, readable across the room instead of only in the loot window title.
+poster=poster.png

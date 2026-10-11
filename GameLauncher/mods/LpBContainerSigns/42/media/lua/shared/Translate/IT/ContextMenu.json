@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Scrivi un nome qui",
+    "ContextMenu_LPBCS_Rewrite": "Cartello: «%1»",
+    "ContextMenu_LPBCS_Erase": "Cancella il nome",
+
+    "ContextMenu_LPBCS_StackTop": "in alto",
+    "ContextMenu_LPBCS_StackMiddle": "al centro",
+    "ContextMenu_LPBCS_StackBottom": "in basso",
+
+    "ContextMenu_LPBCS_StylePlank": "Su una tavola inchiodata",
+    "ContextMenu_LPBCS_StylePaper": "Su un foglio attaccato",
+    "ContextMenu_LPBCS_StylePainted": "Dipinto direttamente",
+
+    "ContextMenu_LPBCS_Side": "Posizione",
+    "ContextMenu_LPBCS_SideAuto": "Automatico",
+    "ContextMenu_LPBCS_SideLeft": "A sinistra",
+    "ContextMenu_LPBCS_SideRight": "A destra"
+}

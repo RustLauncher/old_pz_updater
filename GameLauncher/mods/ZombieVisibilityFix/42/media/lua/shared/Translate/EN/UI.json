@@ -1,0 +1,38 @@
+{
+	"UI_ZomVisFix_ModName": "Zombie Visibility Fix",
+
+	"UI_ZomVisFix_Options_Title": "zombie visibility fix",
+
+	"UI_ZomVisFix_Options_Enable_Name": "enabled",
+	"UI_ZomVisFix_Options_Enable_Desc": "turns the mod on or off (default: true)",
+
+	"UI_ZomVisFix_Options_AimingOnly_Name": "active only while aiming",
+	"UI_ZomVisFix_Options_AimingOnly_Desc": "mod will reveal zombies only while you're in combat stance (default: false)",
+
+	"UI_ZomVisFix_Options_ZombieVision_Name": "affect zombie vision",
+	"UI_ZomVisFix_Options_ZombieVision_Desc": "let zombies revealed by this mod also detect the player (default: true)",
+
+	"UI_ZomVisFix_Options_StairOVision_Name": "stair-o-vision",
+	"UI_ZomVisFix_Options_StairOVision_Desc": "reveal zombies that are at the top of the stairs you're climbing (default: true)",
+
+	"UI_ZomVisFix_Options_RaytracerFunc_Name": "raytrace function",
+	"UI_ZomVisFix_Options_RaytracerFunc_Item_SubTile": "sub-tile precision",
+	"UI_ZomVisFix_Options_RaytracerFunc_Item_TileBased": "tile-based",
+	"UI_ZomVisFix_Options_RaytracerFunc_Item_Both": "both",
+	"UI_ZomVisFix_Options_RaytracerFunc_Desc": "sub-tile precision = uses exact player and zombie positions\ntile-based = built-in java raytracer (used by the game for weapon targeting), this still reveals more than vanilla does\nboth = zombies revealed by tile-based raytracer have 100%% opacity, zombies revealed by sub-tile raytracer use \"zombie opacity\" setting below",
+
+	"UI_ZomVisFix_Options_ZombieOpacity_Name": "zombie opacity",
+	"UI_ZomVisFix_Options_ZombieOpacity_Desc": "opacity of zombies revealed by this mod (this will not affect any other zombie)\nif using the \"both\" raytracer setting, this value is ignored for zombies revealed by the tile-based raytracer",
+
+	"UI_ZomVisFix_Options_ZombieOpacityStairs_Name": "zombie opacity (stair-o-vision)",
+	"UI_ZomVisFix_Options_ZombieOpacityStairs_Desc": "opacity of zombies revealed by stair-o-vision",
+
+	"UI_ZomVisFix_Options_ZombieProcessingLimit_Name": "zombie processing limit",
+	"UI_ZomVisFix_Options_ZombieProcessingLimit_Desc": "limit how many zombies this mod is allowed to process per tick (0 = no limit)",
+
+	"UI_ZomVisFix_Options_ZombieDistanceLimit_Name": "zombie distance limit",
+	"UI_ZomVisFix_Options_ZombieDistanceLimit_Desc": "mod will process zombies only within this tile radius from the player (0 = use view distance)",
+
+	"UI_ZomVisFix_Options_ToggleKey_Name": "toggle key",
+	"UI_ZomVisFix_Options_ToggleKey_Desc": "lets you press a key to toggle the \"enabled\" setting on or off"
+}

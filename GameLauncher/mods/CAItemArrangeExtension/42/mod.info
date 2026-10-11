@@ -1,0 +1,11 @@
+name=Item Arrange Extension
+author=Kechna
+id=CAItemArrangeExtension
+description=Lets Item Arrange arrange every item that uses a model it already supports, including modded items.
+modversion=1.8.0
+poster=poster.png
+icon=
+tags=Misc;QoL;Build 42
+versionMin=42.0.0
+versionMax=
+require=ItemArrange

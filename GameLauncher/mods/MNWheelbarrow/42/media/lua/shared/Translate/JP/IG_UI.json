@@ -1,0 +1,5 @@
+{
+    "IGUI_MNWB_PickingUp": "持ち上げ中",
+    "IGUI_MNWB_PuttingDown": "下ろし中",
+    "IGUI_MNWB_Refuse": "手押し車を持っている間はできません"
+}

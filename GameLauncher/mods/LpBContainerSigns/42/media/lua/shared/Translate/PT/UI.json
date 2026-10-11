@@ -1,0 +1,15 @@
+{
+    "UI_LPBCS_OptionsTitle": "LpB Placas de contentores",
+
+    "UI_LPBCS_Opt_Enabled": "Mostrar placas nos contentores",
+    "UI_LPBCS_Opt_Enabled_tooltip": "Mostra no mundo o nome escrito numa caixa ou armário. Ao desativar, as placas ficam ocultas apenas para si; os nomes permanecem inalterados.",
+
+    "UI_LPBCS_Opt_Radius": "Raio de visualização (quadrados)",
+    "UI_LPBCS_Opt_Radius_tooltip": "Até que distância uma placa permanece legível. As placas desaparecem gradualmente nos dois últimos quadrados em vez de desaparecerem de repente. Reduza este valor numa base densa.",
+
+    "UI_LPBCS_Opt_Opacity": "Opacidade da placa (percentagem)",
+    "UI_LPBCS_Opt_Opacity_tooltip": "Quão opacas são as placas apresentadas.",
+
+    "UI_LPBCS_Opt_HideWhenLoot": "Ocultar enquanto a janela de saque estiver aberta",
+    "UI_LPBCS_Opt_HideWhenLoot_tooltip": "Remove as placas do ecrã enquanto está a vasculhar um contentor, quando já não precisa delas."
+}

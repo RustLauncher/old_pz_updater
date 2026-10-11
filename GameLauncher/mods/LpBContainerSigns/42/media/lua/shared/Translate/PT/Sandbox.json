@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Placas de contentores",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- ESCRITA -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- ESTILOS DE PLACA -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DEPURAÇÃO -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Permitir escrever em contentores",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Interruptor geral. Desativado, ninguém pode escrever ou apagar um nome, mas as placas já colocadas permanecem no lugar e continuam legíveis.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Apenas caixas",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "As placas são colocadas apenas em caixas, o armazenamento com que se constrói uma base. Desativado, qualquer contentor no mundo pode ter uma: armários, frigoríficos, cacifos, balcões. Isto controla tanto a apresentação como a escrita, por isso ativar esta opção também remove as placas de tudo o que não seja uma caixa.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Exigir uma caneta ou uma trincha",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Para escrever é necessário um objeto marcado como instrumento de escrita (caneta, lápis, canetas coloridas), e para pintar é necessária uma trincha e uma lata de tinta. Desativado, qualquer pessoa pode escrever com as mãos.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Consumir uma utilização da ferramenta",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Só afeta ferramentas que realmente se gastam: uma lata de tinta perde uma utilização, uma caneta não, tal como no jogo base ao usar uma caneta para fazer anotações num mapa.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Apenas membros do asilo",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Dentro de um asilo, apenas os seus membros podem escrever num contentor ou apagar o seu nome. Os administradores estão isentos para poderem remover placas colocadas de forma maliciosa. Fora dos asilos, isto não altera nada.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Comprimento máximo do nome",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Quantos caracteres uma placa pode conter. Limitado a 28, o mesmo limite aplicado pelo jogo base ao renomear um contentor.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Permitir a tábua pregada",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Uma ripa de madeira pregada na parte da frente do contentor.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Permitir o papel colado",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Uma folha de papel colada na parte da frente do contentor.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Permitir pintar diretamente",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "O nome pintado diretamente no próprio contentor, na cor da tinta utilizada. Este estilo requer uma trincha.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Registo de depuração",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Regista o que o mod está a fazer em console.txt em cada cliente e em server-console.txt no servidor: uma linha por ação e por pedido recebido. Desativado por defeito, e é melhor deixá-lo assim -- um servidor movimentado produz muito registo. Ative-o para reportar um erro. A opção é lida em tempo real, por isso ativá-la durante o jogo inicia o registo imediatamente, mas os diagnósticos de arranque (quais os ficheiros carregados e que versão indicam, atlas de sprites indisponível, chamada de desenho recusada) são apresentados uma vez por sessão e exigem que esteja ativa antes do início da sessão."
+}

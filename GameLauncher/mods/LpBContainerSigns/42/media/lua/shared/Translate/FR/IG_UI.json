@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "Qu'est-ce qu'on écrit dessus ? (%1 caractères au plus)",
+    "IGUI_LPBCS_InkLabel": "Écrit avec",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "Il vous faut un stylo ou un crayon pour écrire dessus.",
+    "IGUI_LPBCS_NeedBrush": "Il vous faut un pinceau pour peindre un nom dessus.",
+    "IGUI_LPBCS_NeedPaint": "Il vous faut un pot de peinture pour peindre un nom dessus.",
+
+    "IGUI_LPBCS_Disabled": "Écrire sur les conteneurs est désactivé sur ce serveur.",
+    "IGUI_LPBCS_NoContainer": "Ce conteneur n'est plus là.",
+    "IGUI_LPBCS_TooFar": "Vous êtes trop loin de ce conteneur.",
+    "IGUI_LPBCS_NoWay": "Impossible d'atteindre ce conteneur.",
+    "IGUI_LPBCS_NotYourSafehouse": "Ce conteneur se trouve dans un abri auquel vous n'appartenez pas.",
+    "IGUI_LPBCS_WriteFailed": "Le nom n'a pas pu être écrit.",
+    "IGUI_LPBCS_MoveFailed": "L'écriteau n'a pas pu être déplacé.",
+    "IGUI_LPBCS_BadRequest": "Cette demande n'avait pas de sens, elle a été ignorée.",
+    "IGUI_LPBCS_TooQuick": "Laissez-lui un instant avant de redemander.",
+    "IGUI_LPBCS_VersionSkew": "Ce serveur fait tourner une version plus ancienne de ce mod."
+}

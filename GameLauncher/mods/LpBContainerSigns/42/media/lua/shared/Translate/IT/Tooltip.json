@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Una tavoletta di legno inchiodata sulla parte anteriore. Leggibile dall'altra parte della stanza.",
+    "Tooltip_LPBCS_StylePaper": "Un foglio attaccato sulla parte anteriore. Rapido e semplice.",
+    "Tooltip_LPBCS_StylePainted": "Dipinto direttamente sul legno, nel colore del barattolo usato. Richiede un pennello e della vernice.",
+
+    "Tooltip_LPBCS_Side": "Su quale lato del contenitore è appeso il cartello.",
+    "Tooltip_LPBCS_SideAuto": "Lascia la scelta alla mod: il lato destro, a meno che una parete o una cassa non lo blocchi; in tal caso il cartello cambia lato automaticamente.",
+    "Tooltip_LPBCS_SideLeft": "Inchioda il cartello sul lato sinistro e lo lascia lì, anche se quello destro torna libero.",
+    "Tooltip_LPBCS_SideRight": "Inchioda il cartello sul lato destro e lo lascia lì, anche se qualcosa viene appoggiato contro di esso."
+}

@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Дъждът измива кръвта",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Плочки в минута",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Колко произволни плочки се почистват за игрова минута.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Праг на интензивността на времето",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Колко силен трябва да бъде дъждът или снегът, за да се измие кръвта. По-висок = нужно по-силно време.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Почисти пепелта",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Почиства и пепелта от изгорени трупове.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Почисти животинските изпражнения",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Почиства и животинските изпражнения (тор), оставени на земята.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Почисти вътре",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Почиства и кръвта вътре в сградите.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Почисти превозните средства",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Постепенно почиства и кръвта от превозните средства.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Скорост на почистване на превозните средства",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Колко кръв се премахва от превозните средства в минута.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Почисти дрехите",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Постепенно почиства и кръвта и мръсотията от носените от играчите дрехи.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Скорост на почистване на дрехите",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Колко кръв и мръсотия се премахват от дрехите в минута.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Винаги почиства",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Винаги почиства, независимо от времето."
+}

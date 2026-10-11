@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "La lluvia limpia la sangre",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Casillas por minuto",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Cuántas casillas aleatorias se limpian por minuto en el juego.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Umbral de intensidad del clima",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Qué tan fuerte debe ser la lluvia o la nieve para que empiece a lavar la sangre. Mayor = se necesita un clima más intenso.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Limpiar ceniza",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "También limpia la ceniza dejada por los cadáveres quemados.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Limpiar excrementos de animales",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "También limpia los excrementos de animales (estiércol) dejados en el suelo.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Limpiar interior",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "También limpia la sangre dentro de los edificios.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Limpiar vehículos",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "También limpia gradualmente la sangre de los vehículos.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Velocidad de limpieza de vehículos",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Cuánta sangre se elimina de los vehículos por minuto.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Limpiar ropa",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "También limpia gradualmente la sangre y la suciedad de la ropa que llevan los jugadores.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Velocidad de limpieza de ropa",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Cuánta sangre y suciedad se elimina de la ropa por minuto.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Limpiar siempre",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Siempre limpia independientemente del clima."
+}

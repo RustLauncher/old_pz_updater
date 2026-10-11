@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Дождь смывает кровь",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Тайлов в минуту",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Сколько случайных тайлов очищается за игровую минуту.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Порог интенсивности осадков",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Насколько сильным должен быть дождь или снег, чтобы смыть кровь. Выше = нужны более сильные осадки.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Очищать пепел",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Также очищает пепел от сожжённых трупов.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Очищать помёт животных",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Также очищает помёт животных (навоз), оставленный на земле.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Очищать внутри",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Также очищает кровь внутри зданий.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Очищать транспорт",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Также постепенно очищает кровь с транспортных средств.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Скорость очистки транспорта",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Сколько крови удаляется с транспорта в минуту.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Очищать одежду",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Также постепенно очищает кровь и грязь с надетой одежды игроков.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Скорость очистки одежды",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Сколько крови и грязи удаляется с одежды в минуту.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Всегда очищать",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Всегда очищает вне зависимости от погоды."
+}

@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Write a name on this",
+    "ContextMenu_LPBCS_Rewrite": "Sign: \"%1\"",
+    "ContextMenu_LPBCS_Erase": "Scrape the name off",
+
+    "ContextMenu_LPBCS_StackTop": "on top",
+    "ContextMenu_LPBCS_StackMiddle": "in the middle",
+    "ContextMenu_LPBCS_StackBottom": "at the bottom",
+
+    "ContextMenu_LPBCS_StylePlank": "On a nailed board",
+    "ContextMenu_LPBCS_StylePaper": "On a taped note",
+    "ContextMenu_LPBCS_StylePainted": "Painted straight on",
+
+    "ContextMenu_LPBCS_Side": "Position",
+    "ContextMenu_LPBCS_SideAuto": "Auto",
+    "ContextMenu_LPBCS_SideLeft": "On the left",
+    "ContextMenu_LPBCS_SideRight": "On the right"
+}
