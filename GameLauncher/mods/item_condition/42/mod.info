@@ -1,0 +1,9 @@
+name=[B42 Stable] Item Condition
+id=item_condition
+description=Displays the condition or remaining contents of supported items in the hotbar and equipped-item UI.
+poster=poster.png
+icon=icon.png
+pzversion=42
+modversion=0.0.1
+versionMin=42.0.0
+author=Qudix

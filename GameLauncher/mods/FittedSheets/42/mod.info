@@ -1,0 +1,10 @@
+name=Fitted Sheets
+id=FittedSheets
+description=Makes the sheet fit the window it's hanging on. Vanilla uses the same small bedsheet on every window, so on tall windows, church windows and storefront glass most of the pane stays bare. With this mod the sheet is cut to the size of the glass and covers the whole pane. Doors keep the vanilla sheet. Sheets already hanging on big windows are refitted automatically.
+poster=poster.png
+icon=poster.png
+modversion=1.0.4
+versionMin=42.20.0
+author=ragone
+pack=FittedSheets
+tiledef=fittedsheets 742

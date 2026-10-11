@@ -1,0 +1,44 @@
+module Base
+{
+    craftRecipe UP_MakePallet
+    {
+        icon = UsefulPallets_Pallet,
+        timedAction = Making,
+        time = 100,
+        Tags = InHandCraft;CanBeDoneFromFloor;Carpentry,
+        category = Carpentry,
+        SkillRequired = Woodwork:2,
+        OnCreate = UsefulPalletsRecipes.construction,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 2 [Base.Plank] flags[Prop2],
+            item 2 [Base.Nails],
+        }
+        outputs
+        {
+            item 1 Base.Moveable,
+        }
+    }
+
+    craftRecipe UP_MakeMilitaryPallet
+    {
+        icon = UsefulPallets_MilitaryPallet,
+        timedAction = Making,
+        time = 100,
+        Tags = InHandCraft;CanBeDoneFromFloor;Carpentry,
+        category = Carpentry,
+        SkillRequired = Woodwork:4,
+        OnCreate = UsefulPalletsRecipes.military,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 3 [Base.Plank] flags[Prop2],
+            item 3 [Base.Nails],
+        }
+        outputs
+        {
+            item 1 Base.Moveable,
+        }
+    }
+}

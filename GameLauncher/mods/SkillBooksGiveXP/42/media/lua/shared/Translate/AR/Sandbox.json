@@ -1,0 +1,9 @@
+{
+    "Sandbox_SkillBooksGiveXP" : "Skill Books Give XP",
+    "Sandbox_SkillBooksGiveXP_SkillBlacklist" : "Lista negra de skills",
+    "Sandbox_SkillBooksGiveXP_SkillBlacklist_tooltip" : "Escribe todos los skills para prevenir que los libros den experiencia",
+    "Sandbox_SkillBooksGiveXP_BookVolumeLimit" : "Maximo volumen de libro que otorga XP",
+    "Sandbox_SkillBooksGiveXP_BookVolumeLimit_tooltip" : "Previene que los volumenes de libros del limite o mas altos den experiencia",
+    "Sandbox_SkillBooksGiveXP_LimitToFirstLevel" : "Limitar a 1 nivel",
+    "Sandbox_SkillBooksGiveXP_LimitToFirstLevel_tooltip" : "Si está activado, los libros otorgarán experiencia para el primer nivel al leerlos, en lugar de los dos niveles."
+}

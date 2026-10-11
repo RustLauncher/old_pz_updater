@@ -1,0 +1,10 @@
+name=Patch KI55 Trailers! - no locked trunk doors
+id=KI5trailersNotLocked
+require=KI5trailers
+poster=preview.png
+icon=icon.png
+description=This mod, changes the spawn behavior of KI55 trailers to have no locked trunk doors.
+author=Beathoven
+category=vehicle
+versionMin=42.19
+loadmodafter=KI5trailers

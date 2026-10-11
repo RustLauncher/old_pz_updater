@@ -1,0 +1,100 @@
+module Base
+{
+
+vehicle TrailerKI5cargoLarge
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}
+
+vehicle TrailerKI5cargoMedium
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}	
+
+vehicle TrailerKI5cargoSmall
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}	
+
+vehicle TrailerKI5livestock
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}	
+
+vehicle TrailerKI5utilityLarge
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}
+	vehicle TrailerKI5utilityMedium
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}
+vehicle TrailerKI5utilitySmall
+	{
+		part TrunkDoor
+		{
+			lua
+			{
+				create = Vehicles.Create.TrunkDoorOpen,
+								init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,	
+			}
+		}
+	}
+
+}

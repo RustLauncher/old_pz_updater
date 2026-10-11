@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option SkillBooksGiveXP.SkillBlacklist {
+    type = string,
+    default = Aiming;Reloading;LongBlade;Maintenance,
+    page = SkillBooksGiveXP,
+    translation = SkillBooksGiveXP_SkillBlacklist,
+}
+
+option SkillBooksGiveXP.BookVolumeLimit {
+    type = integer,
+    default = 5,	
+    min = 1,
+    max = 5,
+    page = SkillBooksGiveXP,
+    translation = SkillBooksGiveXP_BookVolumeLimit,
+}
+
+
+option SkillBooksGiveXP.LimitToFirstLevel {
+    type = boolean,
+    default = false,
+    page = SkillBooksGiveXP,
+    translation = SkillBooksGiveXP_LimitToFirstLevel,
+}

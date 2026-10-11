@@ -1,0 +1,9 @@
+{
+    "Sandbox_SkillBooksGiveXP" : "Skill Books Give XP",
+    "Sandbox_SkillBooksGiveXP_SkillBlacklist" : "Skill Blacklist",
+    "Sandbox_SkillBooksGiveXP_SkillBlacklist_tooltip" : "Write all skills that you want to prevent the skillbook giving xp.",
+    "Sandbox_SkillBooksGiveXP_BookVolumeLimit" : "Max Book Volume that awards XP",
+    "Sandbox_SkillBooksGiveXP_BookVolumeLimit_tooltip" : "Prevents books over the limit to award XP. 5 = All volumes work. 1-4 = Set up the limit",
+    "Sandbox_SkillBooksGiveXP_LimitToFirstLevel" : "Limit to 1 level",
+    "Sandbox_SkillBooksGiveXP_LimitToFirstLevel_tooltip" : "With this enabled, books will award just the first level when read, instead of the two levels."
+}
