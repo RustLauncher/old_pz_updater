@@ -1,0 +1,8 @@
+{
+    "CraftHandmadeSackFromCloth": "Fabricar saco hecho a mano con tela",
+    "CraftHandmadeSackFromSandbag": "Fabricar saco hecho a mano con saco de arena",
+    "CraftHuntingBackpack": "Fabricar mochila de caza",
+    "CraftAssaultBackpack": "Fabricar mochila de asalto",
+    "AttachSleepingBagToAssaultBackpack": "Fijar saco de dormir enrollado a la mochila de asalto",
+    "DetachSleepingBagFromAssaultBackpack": "Retirar saco de dormir de la mochila de asalto"
+}

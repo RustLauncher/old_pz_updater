@@ -1,0 +1,2015 @@
+/*
+    Fletcher items: bows (Simple, Longbow, Recurve, Compound; urban: PVC, Board, Hockey Stick, Taped Recurve) and arrows (five types).
+
+    Arrow types: each arrow is its own AmmoType (media/registries.lua). A bow's script AmmoType is
+    only the default: client/Fletcher/Bow.lua points the empty bow at the arrow to nock next
+    (preferred, else best carried) with setAmmoType, so vanilla reload / unload take that arrow.
+    Bow and arrow numbers in the scripts are fallbacks; the live stats come from F.BOW_DEFS /
+    F.ARROW_DEFS (shared/Fletcher/Gear.lua) and the Archery level.
+
+    The bow is built on the game's ranged-weapon system for now (aiming, firing, ammo, hit chance,
+    multiplayer sync come with it); our animations replace the rifle ones (AnimSets, condition
+    FletcherBow), and the real server-side projectile replaces the hit resolution in phase 2.
+    The bow you see is not the hand model (WeaponSprite = an invisible mesh): it's a worn piece
+    skinned to the prop bones (BowVisualRest / BowVisualDraw), kept on by client/Fletcher/Bow.lua.
+*/
+module Fletcher
+{
+    imports { Base }
+
+    /* The bow's (invisible) hand model. A ranged weapon only counts as ready to fire when its hand
+       model has a "muzzle" attachment (IsoGameCharacter.isRangedWeaponReady): shots start there. */
+    model FletcherEmpty
+    {
+        mesh = Weapons/FletcherEmpty,
+        texture = FletcherBow,
+
+        attachment muzzle
+        {
+            offset = 0.0 0.1 0.0,
+            rotate = -90.0 0.0 180.0,
+        }
+    }
+
+    /* bows slung on the back (0.6.1, GENERATED meshes: bows.py BACK_BOW): the WeaponSprite while attached */
+    model FletcherBow_Back
+    {
+        mesh = WorldItems/FletcherBow_Back,
+        texture = FletcherBow,
+        scale = 1.0,
+    }
+
+    model FletcherBow_BackBag
+    {
+        mesh = WorldItems/FletcherBow_BackBag,
+        texture = FletcherBow,
+        scale = 1.0,
+    }
+
+    model FletcherLongbow_Back
+    {
+        mesh = WorldItems/FletcherLongbow_Back,
+        texture = FletcherLongbow,
+        scale = 1.0,
+    }
+
+    model FletcherLongbow_BackBag
+    {
+        mesh = WorldItems/FletcherLongbow_BackBag,
+        texture = FletcherLongbow,
+        scale = 1.0,
+    }
+
+    model FletcherRecurve_Back
+    {
+        mesh = WorldItems/FletcherRecurve_Back,
+        texture = FletcherRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherRecurve_BackBag
+    {
+        mesh = WorldItems/FletcherRecurve_BackBag,
+        texture = FletcherRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherCompound_Back
+    {
+        mesh = WorldItems/FletcherCompound_Back,
+        texture = FletcherCompound,
+        scale = 1.0,
+    }
+
+    model FletcherCompound_BackBag
+    {
+        mesh = WorldItems/FletcherCompound_BackBag,
+        texture = FletcherCompound,
+        scale = 1.0,
+    }
+
+    model FletcherPVCBow_Ground
+    {
+        mesh = WorldItems/FletcherPVCBow_Ground,
+        texture = FletcherPVCBow,
+        scale = 1.0,
+    }
+
+    model FletcherPVCBow_Back
+    {
+        mesh = WorldItems/FletcherPVCBow_Back,
+        texture = FletcherPVCBow,
+        scale = 1.0,
+    }
+
+    model FletcherPVCBow_BackBag
+    {
+        mesh = WorldItems/FletcherPVCBow_BackBag,
+        texture = FletcherPVCBow,
+        scale = 1.0,
+    }
+
+    model FletcherBoardBow_Ground
+    {
+        mesh = WorldItems/FletcherBoardBow_Ground,
+        texture = FletcherBoardBow,
+        scale = 1.0,
+    }
+
+    model FletcherBoardBow_Back
+    {
+        mesh = WorldItems/FletcherBoardBow_Back,
+        texture = FletcherBoardBow,
+        scale = 1.0,
+    }
+
+    model FletcherBoardBow_BackBag
+    {
+        mesh = WorldItems/FletcherBoardBow_BackBag,
+        texture = FletcherBoardBow,
+        scale = 1.0,
+    }
+
+    model FletcherHockeyBow_Ground
+    {
+        mesh = WorldItems/FletcherHockeyBow_Ground,
+        texture = FletcherHockeyBow,
+        scale = 1.0,
+    }
+
+    model FletcherHockeyBow_Back
+    {
+        mesh = WorldItems/FletcherHockeyBow_Back,
+        texture = FletcherHockeyBow,
+        scale = 1.0,
+    }
+
+    model FletcherHockeyBow_BackBag
+    {
+        mesh = WorldItems/FletcherHockeyBow_BackBag,
+        texture = FletcherHockeyBow,
+        scale = 1.0,
+    }
+
+    model FletcherTapedRecurve_Ground
+    {
+        mesh = WorldItems/FletcherTapedRecurve_Ground,
+        texture = FletcherTapedRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherTapedRecurve_Back
+    {
+        mesh = WorldItems/FletcherTapedRecurve_Back,
+        texture = FletcherTapedRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherTapedRecurve_BackBag
+    {
+        mesh = WorldItems/FletcherTapedRecurve_BackBag,
+        texture = FletcherTapedRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherBow_Ground
+    {
+        mesh = WorldItems/FletcherBow_Ground,
+        texture = FletcherBow,
+        scale = 1.0,
+    }
+
+    model FletcherLongbow_Ground
+    {
+        mesh = WorldItems/FletcherLongbow_Ground,
+        texture = FletcherLongbow,
+        scale = 1.0,
+    }
+
+    model FletcherRecurve_Ground
+    {
+        mesh = WorldItems/FletcherRecurve_Ground,
+        texture = FletcherRecurve,
+        scale = 1.0,
+    }
+
+    model FletcherCompound_Ground
+    {
+        mesh = WorldItems/FletcherCompound_Ground,
+        texture = FletcherCompound,
+        scale = 1.0,
+    }
+
+    /* arrows and bolts on the ground (animation/scripts/bow_models.py via gear_visuals.py) */
+    model FletcherBolt_WoodenBolt_Ground
+    {
+        mesh = WorldItems/FletcherBolt_WoodenBolt_Ground,
+        texture = FletcherBolt_WoodenBolt,
+        scale = 1.0,
+    }
+
+    model FletcherBolt_IronBolt_Ground
+    {
+        mesh = WorldItems/FletcherBolt_IronBolt_Ground,
+        texture = FletcherBolt_IronBolt,
+        scale = 1.0,
+    }
+
+    model FletcherBolt_BroadheadBolt_Ground
+    {
+        mesh = WorldItems/FletcherBolt_BroadheadBolt_Ground,
+        texture = FletcherBolt_BroadheadBolt,
+        scale = 1.0,
+    }
+
+    model FletcherBolt_AluminumBolt_Ground
+    {
+        mesh = WorldItems/FletcherBolt_AluminumBolt_Ground,
+        texture = FletcherBolt_AluminumBolt,
+        scale = 1.0,
+    }
+
+    /* The streak drawn behind an arrow in flight (client/Fletcher/Flight.lua; animation/scripts/flight_streak.py) */
+    model FletcherFlightStreak
+    {
+        mesh = WorldItems/FletcherFlightStreak,
+        texture = FletcherFlightStreak,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_WoodenArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_WoodenArrow_Ground,
+        texture = FletcherNocked_WoodenArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_StoneArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_StoneArrow_Ground,
+        texture = FletcherNocked_StoneArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_BoneArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_BoneArrow_Ground,
+        texture = FletcherNocked_BoneArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_NailArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_NailArrow_Ground,
+        texture = FletcherNocked_NailArrow,
+        scale = 1.0,
+    }
+
+    model FletcherTarget_Ground
+    {
+        mesh = WorldItems/FletcherTarget_Ground,
+        texture = FletcherTarget,
+        scale = 0.7,
+    }
+
+    model FletcherArrow_FireArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_FireArrow_Ground,
+        texture = FletcherNocked_FireArrow,
+        scale = 1.0,
+    }
+
+    model FletcherFlightTrail
+    {
+        mesh = WorldItems/FletcherFlightTrail,
+        texture = FletcherFlightTrail,
+        scale = 1.0,
+    }
+
+    model FletcherFlightTrailFire
+    {
+        mesh = WorldItems/FletcherFlightTrail,
+        texture = FletcherFlightTrailFire,
+        scale = 1.0,
+    }
+
+    model FletcherFlightStreakFire
+    {
+        mesh = WorldItems/FletcherFlightStreak,
+        texture = FletcherFlightStreakFire,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_NoiseArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_NoiseArrow_Ground,
+        texture = FletcherNocked_NoiseArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_FishingArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_FishingArrow_Ground,
+        texture = FletcherNocked_FishingArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_BroadheadArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_BroadheadArrow_Ground,
+        texture = FletcherNocked_BroadheadArrow,
+        scale = 1.0,
+    }
+
+    model FletcherArrow_CarbonArrow_Ground
+    {
+        mesh = WorldItems/FletcherArrow_CarbonArrow_Ground,
+        texture = FletcherNocked_CarbonArrow,
+        scale = 1.0,
+    }
+
+    model FletcherQuiver_Ground
+    {
+        mesh = WorldItems/FletcherQuiver_Ground,
+        texture = FletcherQuiver,
+        scale = 1.0,
+    }
+
+    model FletcherBackQuiver_Ground
+    {
+        mesh = WorldItems/FletcherBackQuiver_Ground,
+        texture = FletcherBackQuiver,
+        scale = 1.0,
+    }
+
+    item SimpleBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.2,
+        Icon = FletcherBow,
+        WorldStaticModel = Fletcher.FletcherBow_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 40,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 45,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 18.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 0.9,
+        MaxDamage = 1.6,
+        CriticalChance = 20.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 30,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 8.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 15,
+        ConditionLowerChanceOneIn = 40,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item PVCBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 0.9,
+        Icon = FletcherPVCBow,
+        WorldStaticModel = Fletcher.FletcherPVCBow_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 40,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 35,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 16.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 0.75,
+        MaxDamage = 1.35,
+        CriticalChance = 8.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 35,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 8.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 20,
+        ConditionLowerChanceOneIn = 50,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item BoardBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.5,
+        Icon = FletcherBoardBow,
+        WorldStaticModel = Fletcher.FletcherBoardBow_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 55,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 35,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 18.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 1.0,
+        MaxDamage = 1.7,
+        CriticalChance = 10.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 35,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 8.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 12,
+        ConditionLowerChanceOneIn = 35,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item HockeyBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.8,
+        Icon = FletcherHockeyBow,
+        WorldStaticModel = Fletcher.FletcherHockeyBow_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 45,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 33,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 20.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 1.15,
+        MaxDamage = 2.0,
+        CriticalChance = 12.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 35,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 8.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 18,
+        ConditionLowerChanceOneIn = 45,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item TapedRecurveBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.25,
+        Icon = FletcherTapedRecurve,
+        WorldStaticModel = Fletcher.FletcherTapedRecurve_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 44,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 38,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 21.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 1.15,
+        MaxDamage = 2.0,
+        CriticalChance = 14.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 30,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 8.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 20,
+        ConditionLowerChanceOneIn = 45,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item WoodenArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = FletcherArrow,
+        WorldStaticModel = Fletcher.FletcherArrow_WoodenArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_WoodenArrow_Ground,
+    }
+
+    item Longbow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.4,
+        Icon = FletcherLongbow,
+        WorldStaticModel = Fletcher.FletcherLongbow_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 60,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 35,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 24.0,
+        MinSightRange = 2,
+        MaxSightRange = 12.0,
+        MinDamage = 1.3,
+        MaxDamage = 2.3,
+        CriticalChance = 12.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 40,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 10.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 20,
+        ConditionLowerChanceOneIn = 45,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 7,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item RecurveBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.1,
+        Icon = FletcherRecurve,
+        WorldStaticModel = Fletcher.FletcherRecurve_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 40,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 40,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 22.0,
+        MinSightRange = 2,
+        MaxSightRange = 11.0,
+        MinDamage = 1.2,
+        MaxDamage = 2.1,
+        CriticalChance = 15.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 30,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 9.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 25,
+        ConditionLowerChanceOneIn = 55,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item CompoundBow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 1.9,
+        Icon = FletcherCompound,
+        WorldStaticModel = Fletcher.FletcherCompound_Ground,
+        WeaponSprite = Fletcher.FletcherEmpty,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:arrow_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 35,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 50,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 26.0,
+        MinSightRange = 2,
+        MaxSightRange = 13.0,
+        MinDamage = 1.5,
+        MaxDamage = 2.5,
+        CriticalChance = 18.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.0,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.2,
+        RecoilDelay = 10,
+        Reloadtime = 30,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 11.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 40,
+        ConditionLowerChanceOneIn = 80,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 5,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    /* Arrows: one AmmoType each (registries.lua). WoodenArrow keeps its id (saves already have it);
+       it is the fire-hardened arrow. */
+    item StoneArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = FletcherArrowStone,
+        WorldStaticModel = Fletcher.FletcherArrow_StoneArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_StoneArrow_Ground,
+    }
+
+    /* bone-tipped: carved from butchering bones (Carving), between stone and nail */
+    item BoneArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = FletcherArrowBone,
+        WorldStaticModel = Fletcher.FletcherArrow_BoneArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_BoneArrow_Ground,
+    }
+
+    /* The noisemaker: a tin can with nails rattling in it, lashed to a blunt arrow. Wherever it ends
+       up it makes a racket that draws zombies (shared/Fletcher/Shots.lua F.arrowNoise): a lure. */
+    /* The archery target: a straw bale with a painted face. Put it down and shoot at it: arrows
+       stick in it (they don't break or wear) and give practice XP up to Archery F.TARGET_MAX_LEVEL
+       (shared/Fletcher/Projectile.lua, Shots.lua). */
+    item ArcheryTarget
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = FletcherTarget,
+        WorldStaticModel = Fletcher.FletcherTarget_Ground,
+        Tooltip = Tooltip_Fletcher_ArcheryTarget,
+    }
+
+    /* A fire arrow: a fuel-soaked rag behind the point. Lit on release if a lighter or matches are
+       carried (one use); a lit one sets what it hits alight, or starts a fire where it lands, and
+       burns away (shared/Fletcher/Projectile.lua, Shots.lua). Unlit, it is a weak plain arrow. */
+    item FireArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.07,
+        Icon = FletcherArrowFire,
+        WorldStaticModel = Fletcher.FletcherArrow_FireArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_FireArrow_Ground,
+        Tooltip = Tooltip_Fletcher_FireArrow,
+    }
+
+    item NoiseArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.09,
+        Icon = FletcherArrowNoise,
+        WorldStaticModel = Fletcher.FletcherArrow_NoiseArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_NoiseArrow_Ground,
+        Tooltip = Tooltip_Fletcher_NoiseArrow,
+    }
+
+    /* 0.7: bowfishing (shared/Fletcher/Bowfishing.lua). On its line: shot into water it's reeled back,
+       with a fish if it struck one. On land, a weak plain arrow. */
+    item FishingArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FletcherArrowFishing,
+        WorldStaticModel = Fletcher.FletcherArrow_FishingArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_FishingArrow_Ground,
+        Tooltip = Tooltip_Fletcher_FishingArrow,
+    }
+
+    item NailArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = FletcherArrowNail,
+        WorldStaticModel = Fletcher.FletcherArrow_NailArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_NailArrow_Ground,
+    }
+
+    item BroadheadArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.06,
+        Icon = FletcherArrowBroadhead,
+        WorldStaticModel = Fletcher.FletcherArrow_BroadheadArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_BroadheadArrow_Ground,
+    }
+
+    item CarbonArrow
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.03,
+        Icon = FletcherArrowCarbon,
+        WorldStaticModel = Fletcher.FletcherArrow_CarbonArrow_Ground,
+        StaticModel = Fletcher.FletcherArrow_CarbonArrow_Ground,
+    }
+
+    /* Found in gun / hunting stores; opens into 6 Carbon Arrows (FL_OpenCarbonArrows) */
+    item CarbonArrowBox
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.25,
+        Icon = FletcherArrowBox,
+        WorldStaticModel = Fletcher.FL_CarbonArrowBox_Ground,
+    }
+
+    item HandCrossbow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 2.2,
+        Icon = FletcherHandCrossbow,
+        WorldStaticModel = Fletcher.FletcherHandCrossbow_Ground,
+        WeaponSprite = Fletcher.FletcherHandCrossbow,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:bolt_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 30,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 45,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 20.0,
+        MinSightRange = 2,
+        MaxSightRange = 10.0,
+        MinDamage = 1.2,
+        MaxDamage = 2.0,
+        CriticalChance = 12.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.5,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.3,
+        RecoilDelay = 12,
+        Reloadtime = 60,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 12.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 18,
+        ConditionLowerChanceOneIn = 40,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item LeverCrossbow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 3.0,
+        Icon = FletcherLeverCrossbow,
+        WorldStaticModel = Fletcher.FletcherLeverCrossbow_Ground,
+        WeaponSprite = Fletcher.FletcherLeverCrossbow,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:bolt_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 30,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 50,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 24.0,
+        MinSightRange = 2,
+        MaxSightRange = 12.0,
+        MinDamage = 1.6,
+        MaxDamage = 2.6,
+        CriticalChance = 15.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.5,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.3,
+        RecoilDelay = 12,
+        Reloadtime = 75,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 14.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 25,
+        ConditionLowerChanceOneIn = 50,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 7,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    item CrankCrossbow
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        Weight = 3.6,
+        Icon = FletcherCrankCrossbow,
+        WorldStaticModel = Fletcher.FletcherCrankCrossbow_Ground,
+        WeaponSprite = Fletcher.FletcherCrankCrossbow,
+        AttachmentType = Rifle,
+        AmmoType = fletcher:bolt_wood,
+        MaxAmmo = 1,
+        FireMode = Single,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = false,
+        Ranged = true,
+        IsAimedFirearm = true,
+        SubCategory = Firearm,
+        SwingAnim = Rifle,
+        IdleAnim = Idle_Weapon2,
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = true,
+        RequiresEquippedBothHands = true,
+        Aimingtime = 30,
+        AimingPerkCritModifier = 0,
+        AimingPerkHitChanceModifier = 0,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 0,
+        HitChance = 55,
+        MinAngle = 0.95,
+        MinRange = 0.61,
+        MaxRange = 28.0,
+        MinSightRange = 2,
+        MaxSightRange = 14.0,
+        MinDamage = 2.0,
+        MaxDamage = 3.2,
+        CriticalChance = 18.0,
+        CritDmgMultiplier = 3.0,
+        KnockBackOnNoDeath = false,
+        KnockdownMod = 1.5,
+        MaxHitcount = 1,
+        Projectilecount = 1,
+        PiercingBullets = false,
+        PushBackMod = 0.3,
+        RecoilDelay = 12,
+        Reloadtime = 110,
+        MinimumSwingtime = 0.5,
+        Swingtime = 0.5,
+        SwingAmountBeforeImpact = 0.0,
+        StopPower = 16.0,
+        ToHitModifier = 1.0,
+        JamGunChance = 0,
+        ConditionMax = 40,
+        ConditionLowerChanceOneIn = 80,
+        DoorDamage = 1,
+        UseEndurance = false,
+        SplatBloodOnNoDeath = false,
+        SplatNumber = 1,
+        SwingSound = SmokeBombThrow,
+        SoundRadius = 6,
+        SoundVolume = 10,
+        SoundGain = 0.5,
+        NPCSoundBoost = 1.0,
+    }
+
+    /* Crossbow bolts (registries.lua: their own AmmoTypes, the bolt family) */
+    item WoodenBolt
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.03,
+        Icon = FletcherBoltWood,
+        WorldStaticModel = Fletcher.FletcherBolt_WoodenBolt_Ground,
+        StaticModel = Fletcher.FletcherBolt_WoodenBolt_Ground,
+    }
+
+    item IronBolt
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = FletcherBoltIron,
+        WorldStaticModel = Fletcher.FletcherBolt_IronBolt_Ground,
+        StaticModel = Fletcher.FletcherBolt_IronBolt_Ground,
+    }
+
+    item BroadheadBolt
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = FletcherBoltBroadhead,
+        WorldStaticModel = Fletcher.FletcherBolt_BroadheadBolt_Ground,
+        StaticModel = Fletcher.FletcherBolt_BroadheadBolt_Ground,
+    }
+
+    item AluminumBolt
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.03,
+        Icon = FletcherBoltAluminum,
+        WorldStaticModel = Fletcher.FletcherBolt_AluminumBolt_Ground,
+        StaticModel = Fletcher.FletcherBolt_AluminumBolt_Ground,
+    }
+
+    /* Found in gun / hunting stores; opens into 6 Aluminum Bolts */
+    item AluminumBoltBox
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.25,
+        Icon = FletcherBoltBox,
+        WorldStaticModel = Fletcher.FL_AluminumBoltBox_Ground,
+    }
+
+    /* Never spawned. Only item scripts' AmmoType get bullet-tracer settings (Item.resolveItemTypes ->
+       IsoBulletTracerEffects.load), and a ranged attack that misses draws a tracer for the bow's
+       CURRENT ammo type: with no settings the game throws (NullPointerException in
+       IsoBulletTracerEffects.createEffect) and the client drops out of the game. The bows' scripts
+       only name fletcher:arrow_wood (crossbows: fletcher:bolt_wood), so every other type is named
+       here. */
+    /* Internal: the streak behind an arrow in flight, only ever a temporary world item */
+    item FlightStreak
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        WorldStaticModel = Fletcher.FletcherFlightStreak,
+    }
+
+    /* Internal: the ViewPoint flight pool's arrow (client/Fletcher/Viewpoint.lua): a local, display-only
+       world item, parked under the floor; its model is set to the arrow being shot */
+    item FlightArrow
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        WorldStaticModel = Fletcher.FletcherArrow_StoneArrow_Ground,
+    }
+
+    item FlightTrail
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        WorldStaticModel = Fletcher.FletcherFlightTrail,
+    }
+
+    item FlightTrailFire
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        WorldStaticModel = Fletcher.FletcherFlightTrailFire,
+    }
+
+    item FlightStreakFire
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowFire,
+        WorldStaticModel = Fletcher.FletcherFlightStreakFire,
+    }
+
+    item TracerKeyStone
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowStone,
+        AmmoType = fletcher:arrow_stone,
+    }
+
+    item TracerKeyBone
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowBone,
+        AmmoType = fletcher:arrow_bone,
+    }
+
+    item TracerKeyFire
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowFire,
+        AmmoType = fletcher:arrow_fire,
+    }
+
+    item TracerKeyNoise
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowNoise,
+        AmmoType = fletcher:arrow_noise,
+    }
+
+    item TracerKeyFishing
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowFishing,
+        AmmoType = fletcher:arrow_fishing,
+    }
+
+    item TracerKeyNail
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowNail,
+        AmmoType = fletcher:arrow_nail,
+    }
+
+    item TracerKeyBroadhead
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowBroadhead,
+        AmmoType = fletcher:arrow_broadhead,
+    }
+
+    item TracerKeyCarbon
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherArrowCarbon,
+        AmmoType = fletcher:arrow_carbon,
+    }
+
+    item TracerKeyIron
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherBoltIron,
+        AmmoType = fletcher:bolt_iron,
+    }
+
+    item TracerKeyBroadheadBolt
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherBoltBroadhead,
+        AmmoType = fletcher:bolt_broadhead,
+    }
+
+    item TracerKeyAluminum
+    {
+        hidden = true,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = FletcherBoltAluminum,
+        AmmoType = fletcher:bolt_aluminum,
+    }
+
+    /* The bow's visuals: worn, skinned to Bip01_Prop2 (bow hand) and, when drawing, Bip01_Prop1 (nock).
+       Added and removed by Lua; not meant to be handled by the player. */
+    item BowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherBowRest,
+    }
+
+    item BowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherBowDraw,
+    }
+
+    item LongbowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherLongbow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherLongbowRest,
+    }
+
+    item LongbowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherLongbow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherLongbowDraw,
+    }
+
+    item PVCBowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherPVCBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherPVCBowRest,
+    }
+
+    item PVCBowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherPVCBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherPVCBowDraw,
+    }
+
+    item BoardBowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBoardBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherBoardBowRest,
+    }
+
+    item BoardBowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBoardBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherBoardBowDraw,
+    }
+
+    item HockeyBowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherHockeyBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherHockeyBowRest,
+    }
+
+    item HockeyBowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherHockeyBow,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherHockeyBowDraw,
+    }
+
+    item TapedRecurveBowVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherTapedRecurve,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherTapedRecurveRest,
+    }
+
+    item TapedRecurveBowVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherTapedRecurve,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherTapedRecurveDraw,
+    }
+
+    item RecurveVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherRecurve,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherRecurveRest,
+    }
+
+    item RecurveVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherRecurve,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherRecurveDraw,
+    }
+
+    item CompoundVisualRest
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherCompound,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherCompoundRest,
+    }
+
+    item CompoundVisualDraw
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherCompound,
+        BodyLocation = fletcher:bow,
+        ClothingItem = FletcherCompoundDraw,
+    }
+
+    /* The nocked / carried arrow: worn while a bow holds or is taking an arrow (client/Fletcher/Bow.lua),
+       skinned to Bip01_Prop1 (the nock in every bow clip). */
+    item ArrowVisual
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherArrowNocked,
+    }
+
+    /* the same, one look per arrow type (animation/scripts/gear_visuals.py): Bow.lua wears the one
+       matching the nocked / nocking arrow (ArrowVisual above is the fallback) */
+    item ArrowVisual_WoodenArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_WoodenArrow,
+    }
+
+    item ArrowVisual_StoneArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_StoneArrow,
+    }
+
+    item ArrowVisual_BoneArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_BoneArrow,
+    }
+
+    item ArrowVisual_FireArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_FireArrow,
+    }
+
+    /* the fire arrow burning on the string (0.6.1: FireLight.lua), one per flicker frame */
+    item ArrowVisual_FireArrowLit1
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrowFire,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_FireArrowLit1,
+    }
+
+    item ArrowVisual_FireArrowLit2
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrowFire,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_FireArrowLit2,
+    }
+
+    item ArrowVisual_FireArrowLit3
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrowFire,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_FireArrowLit3,
+    }
+
+    item ArrowVisual_NoiseArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_NoiseArrow,
+    }
+
+    item ArrowVisual_FishingArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_FishingArrow,
+    }
+
+    item ArrowVisual_NailArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_NailArrow,
+    }
+
+    item ArrowVisual_BroadheadArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_BroadheadArrow,
+    }
+
+    item ArrowVisual_CarbonArrow
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherArrow,
+        BodyLocation = fletcher:arrow,
+        ClothingItem = FletcherNocked_CarbonArrow,
+    }
+
+    /* Hip quiver: a worn container on the right hip that takes only arrows and bolts
+       (AcceptItemFunction in shared/Fletcher/Quiver.lua). Nocking / cocking from a worn quiver is a
+       little faster (F.reloadFactor). Skinned to the pelvis where the nock clip's hand reaches. */
+    item HipQuiver
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        Weight = 0.4,
+        Icon = FletcherQuiver,
+        BodyLocation = fletcher:quiver,
+        CanBeEquipped = fletcher:quiver,
+        ClothingItem = FletcherQuiver,
+        WorldStaticModel = Fletcher.FletcherQuiver_Ground,
+        Capacity = 3,
+        WeightReduction = 70,
+        CanHaveHoles = false,
+        OpenSound = OpenLeatherBag,
+        CloseSound = CloseLeatherBag,
+        PutInSound = StoreItemLeatherBag,
+        EquipSound = EquipFannyPack,
+        AcceptItemFunction = AcceptItemFunction.FletcherQuiver,
+        Tooltip = Tooltip_Fletcher_HipQuiver,
+    }
+
+    /* 0.7: the Back Quiver, worn across the back at its own body location (so the Hip Quiver, a
+       backpack and a bow in the Back slot can all be worn with it). Holds two and a half times the
+       hip quiver; nocking from it is a little faster than from a bag, slower than from the hip
+       (F.BACK_QUIVER_SPEED). Its own clothing item is an invisible speck (multiplayer needs one to
+       sync it as worn); the look is a hidden look item worn with it, on the back or, over a worn
+       pack, set out onto the pack (Bow.lua F.syncBackQuiverLook). */
+    item BackQuiver
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        Weight = 0.8,
+        Icon = FletcherBackQuiver,
+        BodyLocation = fletcher:backquiver,
+        CanBeEquipped = fletcher:backquiver,
+        ClothingItem = FletcherBackQuiverHidden,
+        WorldStaticModel = Fletcher.FletcherBackQuiver_Ground,
+        Capacity = 8,
+        WeightReduction = 70,
+        CanHaveHoles = false,
+        OpenSound = OpenLeatherBag,
+        CloseSound = CloseLeatherBag,
+        PutInSound = StoreItemLeatherBag,
+        EquipSound = EquipFannyPack,
+        AcceptItemFunction = AcceptItemFunction.FletcherQuiver,
+        Tooltip = Tooltip_Fletcher_BackQuiver,
+    }
+
+    item BackQuiverLook
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBackQuiver,
+        BodyLocation = fletcher:backquiverlook,
+        ClothingItem = FletcherBackQuiver,
+    }
+
+    item BackQuiverLookBag
+    {
+        hidden = true,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 0.0,
+        Icon = FletcherBackQuiver,
+        BodyLocation = fletcher:backquiverlook,
+        ClothingItem = FletcherBackQuiverBag,
+    }
+
+
+    /* Crafting components (recipes in Fletcher_Recipes.txt) */
+    item BowStave
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.8,
+        Icon = FletcherStave,
+        WorldStaticModel = Fletcher.FL_BowStave_Ground,
+        Tooltip = Tooltip_Fletcher_GreenStave,
+    }
+
+    /* seasoned on a drying rack (Seasoning.lua): bows made from it are Seasoned */
+    item BowStaveSeasoned
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.75,
+        Icon = FletcherStaveSeasoned,
+        WorldStaticModel = Fletcher.FL_BowStaveSeasoned_Ground,
+        Tooltip = Tooltip_Fletcher_SeasonedStave,
+    }
+
+    item Bowstring
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FletcherBowstring,
+        WorldStaticModel = Fletcher.FL_Bowstring_Ground,
+    }
+
+    item ArrowShaft
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FletcherShaft,
+        WorldStaticModel = Fletcher.FL_ArrowShaft_Ground,
+    }
+
+    item Fletching
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.005,
+        Icon = FletcherFletching,
+        WorldStaticModel = Fletcher.FL_Fletching_Ground,
+        Tags = fletcher:fletching,
+    }
+
+    item PlasticVanes
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.005,
+        Icon = FletcherPlasticVanes,
+        WorldStaticModel = Fletcher.FL_PlasticVanes_Ground,
+        Tags = fletcher:fletching,
+        Tooltip = Tooltip_Fletcher_PlasticVanes,
+    }
+
+    item TapeVanes
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.005,
+        Icon = FletcherTapeVanes,
+        WorldStaticModel = Fletcher.FL_TapeVanes_Ground,
+        Tags = fletcher:fletching,
+        Tooltip = Tooltip_Fletcher_TapeVanes,
+    }
+
+    item ArrowheadStone
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.01,
+        Icon = FletcherHeadStone,
+        WorldStaticModel = Fletcher.FL_ArrowheadStone_Ground,
+    }
+
+    item ArrowheadBone
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.01,
+        Icon = FletcherHeadBone,
+        WorldStaticModel = Fletcher.FL_ArrowheadBone_Ground,
+    }
+
+    /* hide glue (hunting materials): a raw hide boiled down in a pot of water. The pot cooks on any
+       stove or campfire like food (IsCookable -> ReplaceOnCooked), then pours off as vanilla Glue. */
+    item HideGluePot
+    {
+        DisplayCategory = Cooking,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = FletcherGluePot,
+        CantEat = true,
+        IsCookable = true,
+        MinutesToCook = 60,
+        MinutesToBurn = 240,
+        ReplaceOnCooked = Fletcher.HideGluePotCooked,
+        CookingSound = BoilingFood,
+        HungerChange = 0,
+        StaticModel = CookingPotPasta_Ground,
+        WorldStaticModel = Fletcher.FL_HideGluePot_Ground,
+        Tags = base:hasmetal,
+        Tooltip = Tooltip_Fletcher_HideGluePot,
+    }
+
+    item HideGluePotCooked
+    {
+        DisplayCategory = Cooking,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = FletcherGluePotCooked,
+        CantEat = true,
+        HungerChange = 0,
+        StaticModel = CookingPotPasta_Ground,
+        WorldStaticModel = Fletcher.FL_HideGluePotCooked_Ground,
+        Tags = base:hasmetal,
+        Tooltip = Tooltip_Fletcher_HideGluePotCooked,
+    }
+
+    item ArrowheadNail
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.01,
+        Icon = FletcherHeadNail,
+        WorldStaticModel = Fletcher.FL_ArrowheadNail_Ground,
+    }
+
+    item LongbowStave
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.1,
+        Icon = FletcherLongbowStave,
+        WorldStaticModel = Fletcher.FL_LongbowStave_Ground,
+        Tooltip = Tooltip_Fletcher_GreenStave,
+    }
+
+    /* seasoned on a drying rack (Seasoning.lua): bows made from it are Seasoned */
+    item LongbowStaveSeasoned
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = FletcherLongbowStaveSeasoned,
+        WorldStaticModel = Fletcher.FL_LongbowStaveSeasoned_Ground,
+        Tooltip = Tooltip_Fletcher_SeasonedStave,
+    }
+
+    item BoardBowStave
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = FletcherBoardStave,
+        WorldStaticModel = Fletcher.FL_BoardBowStave_Ground,
+        Tooltip = Tooltip_Fletcher_BoardBowStave,
+    }
+
+    item RecurveLimbs
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.9,
+        Icon = FletcherRecurveLimbs,
+        WorldStaticModel = Fletcher.FL_RecurveLimbs_Ground,
+    }
+
+    item TapedRecurveLimbs
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.95,
+        Icon = FletcherTapedRecurveLimbs,
+        WorldStaticModel = Fletcher.FL_TapedRecurveLimbs_Ground,
+    }
+
+    item ArrowheadBroadhead
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FletcherHeadBroadhead,
+        WorldStaticModel = Fletcher.FL_ArrowheadBroadhead_Ground,
+    }
+
+    item CrossbowStock
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.2,
+        Icon = FletcherCrossbowStock,
+        WorldStaticModel = Fletcher.FL_CrossbowStock_Ground,
+    }
+
+    item SteelProd
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = FletcherSteelProd,
+        WorldStaticModel = Fletcher.FL_SteelProd_Ground,
+    }
+
+    /* A goat's-foot lever: the Lever Crossbow can't be cocked without one in the inventory */
+    item CockingLever
+    {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.8,
+        Icon = FletcherCockingLever,
+        WorldStaticModel = Fletcher.FL_CockingLever_Ground,
+    }
+
+}

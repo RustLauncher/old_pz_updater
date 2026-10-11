@@ -1,0 +1,21 @@
+{
+    "Tooltip_Fletcher_HipQuiver": "Worn on the right hip. Holds only arrows and bolts; nocking or cocking from it is faster.",
+    "Tooltip_Fletcher_NoiseArrow": "A rattling can on a blunt arrow. Wherever it lands it makes a racket for a few seconds that draws zombies within about 18 tiles: shoot it away from you to pull a crowd off your path. Barely hurts.",
+    "Tooltip_Fletcher_FireArrow": "A fuel-soaked rag behind the point. Carry a lighter or matches and it is lit as you loose it: it sets alight whatever it hits, or starts a fire where it lands, and burns away. Fires spread: mind the grass and your own walls.",
+    "Tooltip_Fletcher_DamagedArrow": "Bent shaft, torn fletching: it won't fly true. Re-fletch it with one Fletching to shoot it again.",
+    "Tooltip_Fletcher_DamagedBolt": "Its vanes are torn: re-fletch it with one Fletching to shoot it again.",
+    "Tooltip_Fletcher_ArcheryTarget": "A straw bale with a painted face. Put it down and shoot at it: arrows stick in the straw without breaking, and you learn from every hit until Archery 3.",
+    "Tooltip_Fletcher_HideGluePot": "Cook it on a stove or campfire for about an hour, then pour off the glue.",
+    "Tooltip_Fletcher_HideGluePotCooked": "Pour it off to get a tube of glue and your pot back.",
+    "Tooltip_Fletcher_GreenStave": "Green wood. Lay it on a Stave Rack to season it (a bow stave takes 3 days, a longbow stave 5): a bow from seasoned wood hits harder, reaches farther and wears slower.",
+    "Tooltip_Fletcher_SeasonedStave": "Seasoned on a stave rack: a bow made from it hits harder, reaches farther and wears slower.",
+    "Tooltip_Fletcher_BenchDesc": "A fletcher's workbench with a jig and a vise: fletch arrows and bolts five at a time, faster, as matched sets that fly truer and break less.",
+    "Tooltip_Fletcher_Jig": "Holds an arrow shaft while its fletching sets, so every vane sits the same. Part of a Fletcher's Bench.",
+    "Tooltip_Fletcher_Matched": "One of a matched set made at a Fletcher's Bench: strays less and breaks less than an ordinary arrow.",
+    "Tooltip_Fletcher_RackDesc": "A bowyer's drying rack. Lay green bow and longbow staves on its pegs to season them: 3 days for a bow stave, 5 for a longbow stave. Seasoned wood makes a stronger bow.",
+    "Tooltip_Fletcher_BackQuiver": "Worn across the back, with a bow on your back or a backpack if you like. Holds only arrows and bolts, and many more than the hip quiver. Arrows come from the hip quiver first; nocking from the back quiver is a little faster than from a bag.",
+    "Tooltip_Fletcher_FishingArrow": "A barbed arrow on a fishing line. Aim at fishable water and watch for fish breaking the surface: shoot one as it rises and reel it in. Missed shots are reeled back. Choose it from the reload menu.",
+    "Tooltip_Fletcher_PlasticVanes": "Fletching cut from plastic. Arrows fletched with it last longer and break less, but stray a little more than feathered ones.",
+    "Tooltip_Fletcher_TapeVanes": "Folded tape fletching: quick and needs no tools, but arrows fletched with it stray more and wear out fast. Not good enough for a matched set.",
+    "Tooltip_Fletcher_BoardBowStave": "A bow-length strip sawn from a plank. Lumber is already dry: string it as it is."
+}

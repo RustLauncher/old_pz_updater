@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "탄약 서랍",
+    "IGUI_TunaWR_Piece_armory": "무기고 캐비닛",
+    "IGUI_TunaWR_Piece_cabinet": "총기 캐비닛",
+    "IGUI_TunaWR_Piece_fieldrack": "무기고 소총 거치대",
+    "IGUI_TunaWR_Piece_handguncase": "권총 진열장",
+    "IGUI_TunaWR_Piece_pegboard": "소총 벽걸이 거치대",
+    "IGUI_TunaWR_Store_HANDGUN": "우클릭하여 장착 중이거나 부착된 권총을 보관합니다.",
+    "IGUI_TunaWR_Store_LONG_GUN": "우클릭하여 장착 중이거나 부착된 장총을 보관합니다."
+}

@@ -1,0 +1,82 @@
+module Base
+{
+    model MaleBody
+    {
+        attachment rifle_sling2
+        {
+            offset = 0.0200 0.1000 0.1040,
+            rotate = -170.0000 -80.0000 -83.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_katana2
+        {
+            offset = -0.0100 0.1100 0.1600,
+            rotate = 91.0000 180.0000 175.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_axe
+        {
+            offset = -0.0100 0.1100 0.1600,
+            rotate = 91.0000 180.0000 175.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_sling4
+        {
+            offset = -0.035 -0.058 0.111,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_katana
+        {
+            offset = -0.035 -0.058 0.111,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_axeX
+        {
+            offset = -0.035 -0.058 0.111,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+    }
+
+    model FemaleBody
+    {
+        attachment rifle_sling2
+        {
+            offset = 0.0200 0.1000 0.1040,
+            rotate = -170.0000 -80.0000 -83.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_katana2
+        {
+            offset = -0.0100 0.1100 0.1600,
+            rotate = 91.0000 180.0000 175.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_axe
+        {
+            offset = -0.0100 0.1100 0.1600,
+            rotate = 91.0000 180.0000 175.0000,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_sling4
+        {
+            offset = -0.003 -0.058 0.11,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_katana
+        {
+            offset = -0.003 -0.058 0.11,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+        attachment rifle_axeX
+        {
+            offset = -0.003 -0.058 0.11,
+            rotate = 113.0 -5.0 -173.0,
+            bone = Bip01_BackPack,
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Sandbox_ReBandaged": "ReBandaged",
+    "Sandbox_AutoPick": "Auto-Pick Best Bandage",
+    "Sandbox_AutoPick_tooltip": "<GREEN> ENABLED - mod picks the best available bandage and offers it in the context menu. <BR> <RED> DISABLED - mod shows a submenu with all available bandages for manual selection.",
+    "Sandbox_AutoDisinfect": "Auto-Disinfect Wounds",
+    "Sandbox_AutoDisinfect_tooltip": "<GREEN> ENABLED - mod disinfects wounds using the best available disinfectant before replacing a bandage. <BR> <RED> DISABLED - mod does not disinfect wounds before replacing a bandage.",
+    "Sandbox_AutoSearch": "Auto-Search Containers",
+    "Sandbox_AutoSearch_tooltip": "<GREEN> ENABLED - mod searches for bandages in all containers (inventory, backpacks, nearby items, etc.). <BR> <RED> DISABLED - mod searches for bandages in the inventory only.",
+    "Sandbox_AutoTranslate": "Auto-Translate Actions",
+    "Sandbox_AutoTranslate_tooltip": "<GREEN> ENABLED - mod tries to translate context menu actions to your local language using in-game translations. <BR> <RED> DISABLED - mod uses the translations that come in a package. <BR> <ORANGE> Note: might not work the best for all languages.",
+    "Sandbox_OnlyDirty": "Only Dirty Bandages",
+    "Sandbox_OnlyDirty_tooltip": "<GREEN> ENABLED - mod shows the context menu actions for dirty bandaged body parts only. <BR> <RED> DISABLED - mod shows the context menu actions for all bandaged body parts.",
+    "Sandbox_SpecifyPick": "Specify Best Bandage",
+    "Sandbox_SpecifyPick_tooltip": "<GREEN> ENABLED - mod specifies the best bandage in the context menu (e.g. «Replace Bandage (Rag)»). <BR> <RED> DISABLED - mod does not specify the best bandage in the context menu (e.g. «Replace Bandage»). <BR> <ORANGE> Note: works only if «Auto-Pick Best Bandage» is ENABLED."
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Backpacks\M_Handmade_Sack.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Backpacks\F_Handmade_Sack.fbx</m_FemaleModel>
+    <m_GUID>46914e21-17c5-49d5-bd71-ae12f1fce842</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Handmade_Sack</textureChoices>
+</clothingItem>

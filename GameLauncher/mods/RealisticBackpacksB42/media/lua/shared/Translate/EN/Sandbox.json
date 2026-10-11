@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "Realistic Backpacks",
+    "Sandbox_RB_HandmadeCapacity": "Handmade Sack capacity",
+    "Sandbox_RB_HandmadeWeightReduction": "Handmade Sack weight reduction",
+    "Sandbox_RB_HandmadeWeight": "Handmade Sack weight",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "Handmade Sack run speed modifier",
+    "Sandbox_RB_HuntingCapacity": "Hunting Backpack capacity",
+    "Sandbox_RB_HuntingWeightReduction": "Hunting Backpack weight reduction",
+    "Sandbox_RB_HuntingWeight": "Hunting Backpack weight",
+    "Sandbox_RB_HuntingRunSpeedModifier": "Hunting Backpack run speed modifier",
+    "Sandbox_RB_AssaultCapacity": "Assault Backpack capacity",
+    "Sandbox_RB_AssaultWeightReduction": "Assault Backpack weight reduction",
+    "Sandbox_RB_AssaultWeight": "Assault Backpack weight",
+    "Sandbox_RB_AssaultRunSpeedModifier": "Assault Backpack run speed modifier",
+    "Sandbox_RB_SleepingBagCapacity": "Sleeping Bag Backpack capacity",
+    "Sandbox_RB_SleepingBagWeightReduction": "Sleeping Bag Backpack weight reduction",
+    "Sandbox_RB_SleepingBagWeight": "Sleeping Bag Backpack weight",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "Sleeping Bag Backpack run speed modifier"
+}

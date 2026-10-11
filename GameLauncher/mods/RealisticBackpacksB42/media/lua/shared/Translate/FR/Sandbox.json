@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "Sacs à dos réalistes",
+    "Sandbox_RB_HandmadeCapacity": "Capacité du sac fait main",
+    "Sandbox_RB_HandmadeWeightReduction": "Réduction du poids du sac fait main",
+    "Sandbox_RB_HandmadeWeight": "Poids du sac fait main",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "Vitesse de course avec le sac fait main",
+    "Sandbox_RB_HuntingCapacity": "Capacité du sac à dos de chasse",
+    "Sandbox_RB_HuntingWeightReduction": "Réduction du poids du sac à dos de chasse",
+    "Sandbox_RB_HuntingWeight": "Poids du sac à dos de chasse",
+    "Sandbox_RB_HuntingRunSpeedModifier": "Vitesse de course avec le sac à dos de chasse",
+    "Sandbox_RB_AssaultCapacity": "Capacité du sac à dos d'assaut",
+    "Sandbox_RB_AssaultWeightReduction": "Réduction du poids du sac à dos d'assaut",
+    "Sandbox_RB_AssaultWeight": "Poids du sac à dos d'assaut",
+    "Sandbox_RB_AssaultRunSpeedModifier": "Vitesse de course avec le sac à dos d'assaut",
+    "Sandbox_RB_SleepingBagCapacity": "Capacité du sac à dos avec sac de couchage",
+    "Sandbox_RB_SleepingBagWeightReduction": "Réduction du poids du sac à dos avec sac de couchage",
+    "Sandbox_RB_SleepingBagWeight": "Poids du sac à dos avec sac de couchage",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "Vitesse de course avec le sac à dos et sac de couchage"
+}

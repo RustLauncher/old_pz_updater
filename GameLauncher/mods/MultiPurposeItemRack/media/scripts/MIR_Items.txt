@@ -1,0 +1,123 @@
+module MultiPurposeItemRack
+{
+    item RackSection
+    {
+        DisplayName = Multi purpose item rack,
+        DisplayCategory = Furniture,
+        ItemType = base:normal,
+        Weight = 3.5,
+        Icon = Plank,
+        WorldStaticModel = MIR_RackCarrierHidden_V3,
+        Tags = base:haswood,
+    }
+
+    item BoardRenderHelperV4
+    {
+        DisplayName = Multi purpose item rack display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V4_Render,
+    }
+
+    item BoardRenderHelperV5
+    {
+        DisplayName = Multi purpose item rack display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V5_Render,
+    }
+
+    item BoardRenderHelperV6
+    {
+        DisplayName = Multi purpose item rack display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V6_Render,
+    }
+
+    item BoardRenderHelperV7
+    {
+        DisplayName = Multi purpose item rack display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V7_Render,
+    }
+
+    item BoardRenderHelperV8
+    {
+        DisplayName = Multi purpose item rack display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V8_Render,
+    }
+
+    item BoardRenderHelperV9TrimNegative
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V9_TrimNegative_Render,
+    }
+
+    item BoardRenderHelperV9TrimPositive
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V9_TrimPositive_Render,
+    }
+
+    item BoardRenderHelperV9TrimBoth
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V9_TrimBoth_Render,
+    }
+
+    item BoardRenderHelperV10TrimNegative
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V10_TrimNegative_Render,
+    }
+
+    item BoardRenderHelperV10TrimPositive
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V10_TrimPositive_Render,
+    }
+
+    item BoardRenderHelperV10TrimBoth
+    {
+        DisplayName = Multi purpose item rack corner display helper,
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0.0,
+        Icon = Plank,
+        WorldStaticModel = MIR_PegboardRack_V10_TrimBoth_Render,
+    }
+}

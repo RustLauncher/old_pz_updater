@@ -1,0 +1,161 @@
+VERSION = 1,
+
+option RB.HandmadeCapacity
+{
+    page = RB,
+    translation = RB_HandmadeCapacity,
+    type = double,
+    min = 1,
+    max = 10000,
+    default = 20,
+}
+
+option RB.HandmadeWeightReduction
+{
+    page = RB,
+    translation = RB_HandmadeWeightReduction,
+    type = double,
+    min = 0,
+    max = 99,
+    default = 70,
+}
+
+option RB.HandmadeWeight
+{
+    page = RB,
+    translation = RB_HandmadeWeight,
+    type = double,
+    min = 0.1,
+    max = 10,
+    default = 0.5,
+}
+
+option RB.HandmadeRunSpeedModifier
+{
+    page = RB,
+    translation = RB_HandmadeRunSpeedModifier,
+    type = double,
+    min = 0.50,
+    max = 1.00,
+    default = 0.95,
+}
+
+option RB.HuntingCapacity
+{
+    page = RB,
+    translation = RB_HuntingCapacity,
+    type = double,
+    min = 1,
+    max = 10000,
+    default = 30,
+}
+
+option RB.HuntingWeightReduction
+{
+    page = RB,
+    translation = RB_HuntingWeightReduction,
+    type = double,
+    min = 0,
+    max = 99,
+    default = 80,
+}
+
+option RB.HuntingWeight
+{
+    page = RB,
+    translation = RB_HuntingWeight,
+    type = double,
+    min = 0.1,
+    max = 10,
+    default = 1.5,
+}
+
+option RB.HuntingRunSpeedModifier
+{
+    page = RB,
+    translation = RB_HuntingRunSpeedModifier,
+    type = double,
+    min = 0.50,
+    max = 1.00,
+    default = 0.92,
+}
+
+option RB.AssaultCapacity
+{
+    page = RB,
+    translation = RB_AssaultCapacity,
+    type = double,
+    min = 1,
+    max = 10000,
+    default = 45,
+}
+
+option RB.AssaultWeightReduction
+{
+    page = RB,
+    translation = RB_AssaultWeightReduction,
+    type = double,
+    min = 0,
+    max = 99,
+    default = 85,
+}
+
+option RB.AssaultWeight
+{
+    page = RB,
+    translation = RB_AssaultWeight,
+    type = double,
+    min = 0.1,
+    max = 10,
+    default = 2.0,
+}
+
+option RB.AssaultRunSpeedModifier
+{
+    page = RB,
+    translation = RB_AssaultRunSpeedModifier,
+    type = double,
+    min = 0.50,
+    max = 1.00,
+    default = 0.88,
+}
+
+option RB.SleepingBagCapacity
+{
+    page = RB,
+    translation = RB_SleepingBagCapacity,
+    type = double,
+    min = 1,
+    max = 10000,
+    default = 45,
+}
+
+option RB.SleepingBagWeightReduction
+{
+    page = RB,
+    translation = RB_SleepingBagWeightReduction,
+    type = double,
+    min = 0,
+    max = 99,
+    default = 85,
+}
+
+option RB.SleepingBagWeight
+{
+    page = RB,
+    translation = RB_SleepingBagWeight,
+    type = double,
+    min = 0.1,
+    max = 10,
+    default = 2.1,
+}
+
+option RB.SleepingBagRunSpeedModifier
+{
+    page = RB,
+    translation = RB_SleepingBagRunSpeedModifier,
+    type = double,
+    min = 0.50,
+    max = 1.00,
+    default = 0.88,
+}

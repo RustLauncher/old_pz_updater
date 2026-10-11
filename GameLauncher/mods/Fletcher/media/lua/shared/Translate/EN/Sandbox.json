@@ -1,0 +1,17 @@
+{
+    "Sandbox_Fletcher": "Fletcher",
+    "Sandbox_Fletcher_TrueProjectiles": "Arrows Fly",
+    "Sandbox_Fletcher_TrueProjectiles_tooltip": "Arrows and bolts fly as real projectiles: they drop over distance, stop at walls and trees, and hit whatever they reach first, with headshots by height. Off: every shot hits or misses at once like a gun.",
+    "Sandbox_Fletcher_ArcheryXP": "Archery XP Multiplier",
+    "Sandbox_Fletcher_ArcheryXP_tooltip": "Archery's own XP multiplier, used when the global XP multiplier is turned off (per-skill multipliers), like every vanilla skill's.",
+    "Sandbox_Fletcher_ArrowSpread": "Arrow Spread",
+    "Sandbox_Fletcher_ArrowSpread_tooltip": "How far flying arrows and bolts stray from where you aim. 1 is the default. Lower is more precise (0.5 halves the spread), higher is wilder (2 doubles it). The aiming reticle follows it. Archery level, steady aim, moving and moodles still apply on top.",
+    "Sandbox_Fletcher_StealthShots": "Stealth Shots",
+    "Sandbox_Fletcher_StealthShots_tooltip": "Arrows and bolts loosed while sneaking at a zombie that hasn't noticed you hit 20 percent harder and are more likely to be critical hits (more with the Sneaking skill). Flying arrows only.",
+    "Sandbox_Fletcher_LightFireArrowsByHand": "Light Fire Arrows By Hand",
+    "Sandbox_Fletcher_LightFireArrowsByHand_tooltip": "A nocked fire arrow's rag has to be lit before you shoot: hold R (RB on a controller) and choose Light Arrow, with a lighter or matches. It burns for about 25 seconds; if you don't shoot in time, the rag burns away and a plain arrow is left. Off: fire arrows light themselves on release if you carry a lighter or matches.",
+    "Sandbox_Fletcher_HunterZombieBows": "Hunter Zombies with Bows (percent)",
+    "Sandbox_Fletcher_HunterZombieBows_tooltip": "Percent of hunter zombies that carry a bow or crossbow on their back. Rangers and survivalists sometimes do too. 0 turns it off.",
+    "Sandbox_Fletcher_BowLoot": "Bow and Crossbow Loot",
+    "Sandbox_Fletcher_BowLoot_tooltip": "How often bows, crossbows and boxes of arrows or bolts turn up in the world: 1 is normal, 0 none (craft everything yourself), up to 4. Hunter zombies with bows have their own setting."
+}

@@ -1,0 +1,85 @@
+/*
+    Fletcher repairs (vanilla fixing: right-click > Repair; each repair restores less than the last).
+    A bow's condition is mostly its string: the wooden bows (Simple, Longbow, Recurve) take a fresh
+    Bowstring when worn or damaged. The Compound Bow can't be made, only found, so it's kept going
+    here: parts from another compound bow, a new string, or tape over the damage. Archery is the
+    skill that makes repairs better. Crossbows the same way: a new string (gated like building them),
+    and the found Crank Crossbow also from another one or with tape.
+*/
+module Fletcher
+{
+    imports { Base }
+
+    fixing Fix Simple Bow
+    {
+        Require = Fletcher.SimpleBow,
+        Fixer = Fletcher.Bowstring; Archery=1,
+    }
+
+    fixing Fix Longbow
+    {
+        Require = Fletcher.Longbow,
+        Fixer = Fletcher.Bowstring; Archery=3,
+    }
+
+    fixing Fix PVC Bow
+    {
+        Require = Fletcher.PVCBow,
+        Fixer = Fletcher.Bowstring; Archery=1,
+        Fixer = Base.DuctTape=2; Archery=1,
+    }
+
+    fixing Fix Board Bow
+    {
+        Require = Fletcher.BoardBow,
+        Fixer = Fletcher.Bowstring; Archery=1,
+    }
+
+    fixing Fix Hockey Stick Bow
+    {
+        Require = Fletcher.HockeyBow,
+        Fixer = Fletcher.Bowstring; Archery=2,
+        Fixer = Base.DuctTape=2; Archery=2,
+    }
+
+    fixing Fix Taped Recurve
+    {
+        Require = Fletcher.TapedRecurveBow,
+        Fixer = Fletcher.Bowstring; Archery=3,
+        Fixer = Base.DuctTape=3; Archery=3,
+    }
+
+    fixing Fix Recurve Bow
+    {
+        Require = Fletcher.RecurveBow,
+        Fixer = Fletcher.Bowstring; Archery=5,
+    }
+
+    fixing Fix Compound Bow
+    {
+        Require = Fletcher.CompoundBow,
+        Fixer = Fletcher.CompoundBow; Archery=3,
+        Fixer = Fletcher.Bowstring; Archery=4,
+        Fixer = Base.DuctTape=2; Archery=2,
+    }
+
+    fixing Fix Hand Crossbow
+    {
+        Require = Fletcher.HandCrossbow,
+        Fixer = Fletcher.Bowstring; Archery=2,
+    }
+
+    fixing Fix Lever Crossbow
+    {
+        Require = Fletcher.LeverCrossbow,
+        Fixer = Fletcher.Bowstring; Archery=4,
+    }
+
+    fixing Fix Crank Crossbow
+    {
+        Require = Fletcher.CrankCrossbow,
+        Fixer = Fletcher.CrankCrossbow; Archery=3,
+        Fixer = Fletcher.Bowstring; Archery=4,
+        Fixer = Base.DuctTape=2; Archery=2,
+    }
+}

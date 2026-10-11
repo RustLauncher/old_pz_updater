@@ -1,0 +1,97 @@
+module Base
+{
+    item SheetRopeSling
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        DisplayName = Sheet Rope Weapon Sling,
+        Icon = SheetRope,
+        BodyLocation = base:bellybutton,
+        CanBeEquipped = base:bellybutton,
+        CanHaveHoles = false,
+        Cosmetic = true,
+        ClothingItem = BellyButton_RingGold,
+        Weight = 0.03,
+        AttachmentsProvided = Sling;Back2,
+        Tooltip = Tooltip_WeaponSling,
+    }
+
+    item LeatherSling
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        DisplayName = Leather Weapon Sling,
+        Icon = Belt,
+        BodyLocation = base:bellybutton,
+        CanBeEquipped = base:bellybutton,
+        CanHaveHoles = false,
+        Cosmetic = true,
+        ClothingItem = BellyButton_RingGold,
+        Weight = 0.03,
+        AttachmentsProvided = Sling;Back2,
+        Tooltip = Tooltip_WeaponSling,
+    }
+
+    craftRecipe CraftSheetRopeSling
+    {
+        category = Tailoring,
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.SheetRope;Base.Sheet] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.SheetRopeSling,
+        }
+    }
+
+    craftRecipe CraftLeatherSling
+    {
+        category = Tailoring,
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.LeatherStrips] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.LeatherSling,
+        }
+    }
+
+    craftRecipe DismantleSheetRopeSling
+    {
+        category = Tailoring,
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.SheetRopeSling] mode:destroy,
+        }
+        outputs
+        {
+            item 2 Base.RippedSheets,
+        }
+    }
+
+    craftRecipe DismantleLeatherSling
+    {
+        category = Tailoring,
+        time = 30,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.LeatherSling] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.LeatherStrips,
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Sandbox_ReBandaged": "ReBandaged",
+    "Sandbox_AutoPick": "Automatische selectie van het beste verband",
+    "Sandbox_AutoPick_tooltip": "<GREEN> INGESCHAKELD - de mod kiest het beste beschikbare verband en biedt dit aan in het contextmenu. <BR> <RED> UIT - de mod toont een submenu met alle beschikbare verbanden om handmatig te selecteren.",
+    "Sandbox_AutoDisinfect": "Automatisch ontsmetten van wonden",
+    "Sandbox_AutoDisinfect_tooltip": "<GREEN> INGESCHAKELD - de mod ontsmetten wonden met het beste beschikbare ontsmettingsmiddel voordat een verband wordt vervangen. <BR> <RED> UITGESCHAKELD - de mod ontsmetten wonden niet voordat een verband wordt vervangen.",
+    "Sandbox_AutoSearch": "Automatisch zoeken in containers",
+    "Sandbox_AutoTranslate": "Automatische vertaling",
+    "Sandbox_AutoTranslate_tooltip": "<GREEN> AAN - de mod probeert de acties in het contextmenu te vertalen naar je lokale taal, met behulp van in-game vertalingen. <BR> <RED> UIT - de mod gebruikt de meegeleverde vertalingen. <BR> <ORANGE> Opmerking: werkt mogelijk niet voor alle talen even goed.",
+    "Sandbox_AutoSearch_tooltip": "<GREEN> INGESCHAKELD - de mod zoekt verband in alle containers (inventaris, rugzakken, voorwerpen in de buurt, enz.). <BR> <RED> UITGESCHAKELD - de mod zoekt alleen verband in de inventaris.",
+    "Sandbox_OnlyDirty": "Alleen vuile verbanden",
+    "Sandbox_OnlyDirty_tooltip": "<GREEN> AAN - de mod toont contextmenu-acties alleen voor vuile, verbonden lichaamsdelen. <BR> <RED> UIT - de mod toont de contextmenu-opties voor alle verbonden lichaamsdelen.",
+    "Sandbox_SpecifyPick": "Het beste verband aangeven",
+    "Sandbox_SpecifyPick_tooltip": "<GREEN> AAN - de mod geeft het beste beschikbare verband aan in het contextmenu (bijvoorbeeld ‘Verband vervangen (Lap)’). <BR> <RED> UIT - de mod geeft niet het beste verband aan in het contextmenu (bijvoorbeeld ‘Verband vervangen’). <BR> <ORANGE> Opmerking: werkt alleen als ‘Automatische selectie van het beste verband’ is ingeschakeld."
+}

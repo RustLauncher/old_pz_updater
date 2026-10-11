@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "Realistische Rucksäcke",
+    "Sandbox_RB_HandmadeCapacity": "Kapazität des handgemachten Sacks",
+    "Sandbox_RB_HandmadeWeightReduction": "Gewichtsreduktion des handgemachten Sacks",
+    "Sandbox_RB_HandmadeWeight": "Gewicht des handgemachten Sacks",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "Laufgeschwindigkeit mit handgemachtem Sack",
+    "Sandbox_RB_HuntingCapacity": "Kapazität des Jagdrucksacks",
+    "Sandbox_RB_HuntingWeightReduction": "Gewichtsreduktion des Jagdrucksacks",
+    "Sandbox_RB_HuntingWeight": "Gewicht des Jagdrucksacks",
+    "Sandbox_RB_HuntingRunSpeedModifier": "Laufgeschwindigkeit mit Jagdrucksack",
+    "Sandbox_RB_AssaultCapacity": "Kapazität des Sturmrucksacks",
+    "Sandbox_RB_AssaultWeightReduction": "Gewichtsreduktion des Sturmrucksacks",
+    "Sandbox_RB_AssaultWeight": "Gewicht des Sturmrucksacks",
+    "Sandbox_RB_AssaultRunSpeedModifier": "Laufgeschwindigkeit mit Sturmrucksack",
+    "Sandbox_RB_SleepingBagCapacity": "Kapazität des Sturmrucksacks mit Schlafsack",
+    "Sandbox_RB_SleepingBagWeightReduction": "Gewichtsreduktion des Sturmrucksacks mit Schlafsack",
+    "Sandbox_RB_SleepingBagWeight": "Gewicht des Sturmrucksacks mit Schlafsack",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "Laufgeschwindigkeit mit Schlafsackrucksack"
+}

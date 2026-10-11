@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Backpacks\Hunting_Backpack_RHand.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Backpacks\Hunting_Backpack_RHand.fbx</m_FemaleModel>
+    <m_GUID>61ba2fec-8670-432b-a848-83c826d87daa</m_GUID>
+    <m_Static>false</m_Static>
+    <m_AllowRandomHue>false</m_AllowRandomHue>
+    <m_AllowRandomTint>false</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <textureChoices>Hunting_Backpack_Green_Patch</textureChoices>
+</clothingItem>

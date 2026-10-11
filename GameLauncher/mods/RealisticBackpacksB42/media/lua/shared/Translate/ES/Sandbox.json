@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "Mochilas realistas",
+    "Sandbox_RB_HandmadeCapacity": "Capacidad del saco hecho a mano",
+    "Sandbox_RB_HandmadeWeightReduction": "Reducción de peso del saco hecho a mano",
+    "Sandbox_RB_HandmadeWeight": "Peso del saco hecho a mano",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "Velocidad al correr con el saco hecho a mano",
+    "Sandbox_RB_HuntingCapacity": "Capacidad de la mochila de caza",
+    "Sandbox_RB_HuntingWeightReduction": "Reducción de peso de la mochila de caza",
+    "Sandbox_RB_HuntingWeight": "Peso de la mochila de caza",
+    "Sandbox_RB_HuntingRunSpeedModifier": "Velocidad al correr con la mochila de caza",
+    "Sandbox_RB_AssaultCapacity": "Capacidad de la mochila de asalto",
+    "Sandbox_RB_AssaultWeightReduction": "Reducción de peso de la mochila de asalto",
+    "Sandbox_RB_AssaultWeight": "Peso de la mochila de asalto",
+    "Sandbox_RB_AssaultRunSpeedModifier": "Velocidad al correr con la mochila de asalto",
+    "Sandbox_RB_SleepingBagCapacity": "Capacidad de la mochila con saco de dormir",
+    "Sandbox_RB_SleepingBagWeightReduction": "Reducción de peso de la mochila con saco de dormir",
+    "Sandbox_RB_SleepingBagWeight": "Peso de la mochila con saco de dormir",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "Velocidad al correr con la mochila y saco de dormir"
+}

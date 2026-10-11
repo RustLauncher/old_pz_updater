@@ -1,0 +1,22 @@
+module Tuna_WeaponRack
+{
+    /* exists because the .tiles already names CustomItem = Tuna_WeaponRack.Armory; a dangling one makes pickup produce nothing */
+    item Armory
+    {
+        DisplayCategory = Furniture,
+        DisplayName = Armory Cabinet,
+        /* MUST equal the tiles' PickUpWeight / 10: a CustomItem takes its weight from HERE, not the tile */
+        Weight = 25.0,
+        ItemType = base:moveable,
+        /* the S anchor; no Icon on purpose, the inventory icon is built from this world sprite */
+        WorldObjectSprite = tuna_weaponrack_01_12,
+
+        /* declaring ANY component makes hasComponents() true, which is what skips the engine's CustomItem rebuild - the client sweep installs the entity script instead */
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_Armory,
+            uiEnabled = true,
+        }
+    }
+}

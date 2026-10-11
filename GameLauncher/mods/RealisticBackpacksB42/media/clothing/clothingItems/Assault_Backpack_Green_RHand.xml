@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Backpacks\Assault_Backpack_RHand.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Backpacks\Assault_Backpack_RHand.fbx</m_FemaleModel>
+    <m_GUID>ace6680b-e8ca-4542-803a-9773ad14e1d2</m_GUID>
+    <m_Static>false</m_Static>
+    <m_AllowRandomHue>false</m_AllowRandomHue>
+    <m_AllowRandomTint>false</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <textureChoices>Assault_Backpack_Green</textureChoices>
+</clothingItem>

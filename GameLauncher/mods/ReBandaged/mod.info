@@ -1,0 +1,9 @@
+author=SilentSalo
+description=First-aid automation for those who are too lazy to even bleed out properly.
+icon=icon.png
+id=ReBandaged
+loadModAfter=MiniHealthPanel
+modversion=2.0.0
+name=ReBandaged
+poster=poster.png
+versionMin=42.20

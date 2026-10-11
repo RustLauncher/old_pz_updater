@@ -1,0 +1,41 @@
+VERSION = 1,
+option Fletcher.TrueProjectiles {
+    page = Fletcher, translation = Fletcher_TrueProjectiles,
+    type = boolean, default = true,
+}
+/* Stealth shots (Projectile.lua F.isStealthShot): sneaking, at a zombie that hasn't noticed you. */
+option Fletcher.StealthShots {
+    page = Fletcher, translation = Fletcher_StealthShots,
+    type = boolean, default = true,
+}
+/* Scales every flying shot's spread (Projectile.lua F.shotSpread), and with it the aim ring. */
+option Fletcher.ArrowSpread {
+    page = Fletcher, translation = Fletcher_ArrowSpread,
+    type = double, min = 0.25, max = 3.0, default = 1.0,
+}
+/* The game's AddXP reads "MultiplierConfig.<perk>" when the global XP multiplier is off (per-skill
+   multipliers): without this, every Archery XP award threw a NullPointerException. Same range and
+   default as vanilla's per-skill options. */
+option MultiplierConfig.Archery {
+    page = Fletcher, translation = Fletcher_ArcheryXP,
+    type = double, min = 0.0, max = 1000.0, default = 1.0,
+}
+/* Fire arrows lit by hand (0.6.1, FireLight.lua): "Light Arrow" in the reload radial lights the rag on
+   the string, which then burns for a while. Off: lit on release from a lighter or matches carried. */
+option Fletcher.LightFireArrowsByHand {
+    page = Fletcher, translation = Fletcher_LightFireArrowsByHand,
+    type = boolean, default = true,
+}
+
+/* 0.7: percent of Hunter zombies with a bow or crossbow on their back (shared/Fletcher/ZombieGear.lua) */
+option Fletcher.HunterZombieBows {
+    page = Fletcher, translation = Fletcher_HunterZombieBows,
+    type = integer, min = 0, max = 100, default = 10,
+}
+
+/* urban crafting (docs/urban_crafting.md): how often bows, crossbows and boxed arrows / bolts are found in
+   the world (server/Fletcher/Distributions.lua F.BOW_LOOT); 0 = never: craft everything */
+option Fletcher.BowLoot {
+    page = Fletcher, translation = Fletcher_BowLoot,
+    type = double, min = 0.0, max = 4.0, default = 1.0,
+}

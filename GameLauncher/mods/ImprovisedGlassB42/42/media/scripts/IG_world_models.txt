@@ -1,0 +1,49 @@
+module ImprovisedGlass
+{
+    imports
+    {
+        Base
+    }
+
+    model RoastingPanWithGlassShards
+    {
+        Mesh = WorldItems/IGRoastingPan,
+        Texture = WorldItems/IGPanWithGlassShards,
+        Scale = 0.3,
+    }
+
+    model RoastingPanWithGlassPane
+    {
+        Mesh = WorldItems/IGRoastingPan,
+        Texture = WorldItems/IGPanWithGlassPane,
+        Scale = 0.3,
+    }
+
+    model GlassPane
+    {
+        Mesh = WorldItems/IGGlassPane,
+        Texture = WorldItems/IGGlassPane,
+        Scale = 0.6,
+    }
+
+    model MagazineGlass
+    {
+        Mesh = WorldItems/IGMagazine,
+        Texture = WorldItems/IGMagazineGlass,
+        Scale = 0.4,
+    }
+
+    model MagazineWindow
+    {
+        Mesh = WorldItems/IGMagazine,
+        Texture = WorldItems/IGMagazineWindow,
+        Scale = 0.4,
+    }
+
+    model MagazineCar
+    {
+        Mesh = WorldItems/IGMagazine,
+        Texture = WorldItems/IGMagazineCar,
+        Scale = 0.4,
+    }
+}

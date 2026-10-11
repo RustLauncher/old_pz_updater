@@ -1,0 +1,79 @@
+/*
+    Fletcher: Archery skill books, Vol. 1-5 (two levels each, like vanilla's). Reading one raises the
+    Archery XP multiplier for its levels: SkillBook["Archery"] in server/Fletcher/SkillBook.lua.
+    Vanilla's tinted generic book (no art of our own): a forest-green cover.
+*/
+module Fletcher
+{
+    imports { Base }
+
+    item BookArchery1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = FletcherBook1,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Archery,
+        StaticModel = Fletcher.FL_BookArcheryOpen_Ground,
+        WorldStaticModel = Fletcher.FL_BookArchery1_Ground,
+    }
+
+    item BookArchery2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = FletcherBook2,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Archery,
+        StaticModel = Fletcher.FL_BookArcheryOpen_Ground,
+        WorldStaticModel = Fletcher.FL_BookArchery2_Ground,
+    }
+
+    item BookArchery3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = FletcherBook3,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Archery,
+        StaticModel = Fletcher.FL_BookArcheryOpen_Ground,
+        WorldStaticModel = Fletcher.FL_BookArchery3_Ground,
+    }
+
+    item BookArchery4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = FletcherBook4,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Archery,
+        StaticModel = Fletcher.FL_BookArcheryOpen_Ground,
+        WorldStaticModel = Fletcher.FL_BookArchery4_Ground,
+    }
+
+    item BookArchery5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = FletcherBook5,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Archery,
+        StaticModel = Fletcher.FL_BookArcheryOpen_Ground,
+        WorldStaticModel = Fletcher.FL_BookArchery5_Ground,
+    }
+}

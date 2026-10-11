@@ -1,0 +1,25 @@
+/*
+    Fletcher: the Archery skill (B42 custom perk), shown with Aiming and Reloading (parent Firearm).
+    For bows it replaces Aiming: the bow's AimingPerk* modifiers are 0, and Archery sets the equipped
+    bow's draw time, hit chance, crit chance and nocking time (shared/Fletcher/Skill.lua). It also
+    lowers arrow breakage and gates the bow and arrow recipes.
+    Read before item and recipe scripts, so recipes can use SkillRequired = Archery:N.
+*/
+VERSION = 1,
+
+perk Archery
+{
+    parent = Firearm,
+    translation = Archery,
+    passive = false,
+    xp1 = 50,
+    xp2 = 100,
+    xp3 = 200,
+    xp4 = 400,
+    xp5 = 700,
+    xp6 = 1000,
+    xp7 = 1400,
+    xp8 = 1800,
+    xp9 = 2300,
+    xp10 = 3000,
+}

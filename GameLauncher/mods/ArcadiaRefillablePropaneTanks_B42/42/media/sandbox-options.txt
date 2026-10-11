@@ -1,0 +1,105 @@
+VERSION = 1,
+
+option ArcadiaRefillablePropaneTanks.Capacity
+{
+    type = integer,
+    min = 100,
+    max = 100000,
+    default = 2000,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_Capacity,
+}
+
+option ArcadiaRefillablePropaneTanks.InfinitePropane
+{
+    type = boolean,
+    default = false,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_InfinitePropane,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableFossoilDepots
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableFossoilDepots,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableGas2GoDepots
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableGas2GoDepots,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableSmallPropaneTankDepots
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableSmallPropaneTankDepots,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableLanternBottles
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableLanternBottles,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableWorkshopContainers
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableWorkshopContainers,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableCompatiblePropaneItems
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableCompatiblePropaneItems,
+}
+
+option ArcadiaRefillablePropaneTanks.EnableFilibusterPropaneTruck
+{
+    type = boolean,
+    default = true,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_EnableFilibusterPropaneTruck,
+}
+
+option ArcadiaRefillablePropaneTanks.InitialFillMin
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 1.0,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_InitialFillMin,
+}
+
+option ArcadiaRefillablePropaneTanks.InitialFillMax
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 1.0,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_InitialFillMax,
+}
+
+option ArcadiaRefillablePropaneTanks.InitialEmptyChance
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ArcadiaRefillablePropaneTanks,
+    translation = ArcadiaRefillablePropaneTanks_InitialEmptyChance,
+}

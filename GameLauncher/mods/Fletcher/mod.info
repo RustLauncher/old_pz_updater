@@ -1,0 +1,10 @@
+name=Fletcher: Archery Overhaul
+id=Fletcher
+author=Fletcher team
+description=Bows, crossbows, arrows and bolts for Build 42: real flying arrows that stick, smash glass, arc at range and cripple with leg shots; fire and noisemaker arrows, bowhunting, archery targets and crossbow tripwire traps; four bows and three crossbows, a dedicated Archery skill with books, magazines and tapes, motion-captured animations with bending limbs, full crafting, and multiplayer support.
+poster=poster.png
+icon=icon.png
+modversion=0.9.0
+versionMin=42.20
+pack=Fletcher
+tiledef=fletcher 1871

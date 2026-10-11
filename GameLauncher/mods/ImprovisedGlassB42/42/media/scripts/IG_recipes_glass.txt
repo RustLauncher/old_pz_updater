@@ -1,0 +1,65 @@
+module Base
+{
+    craftRecipe IGPrepareGlassShards
+    {
+        time = 150,
+        category = Glassmaking,
+        tags = InHandCraft,
+        SkillRequired = Glassmaking:1,
+        xpAward = Glassmaking:10,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 4 [Base.BrokenGlass],
+            item 1 [Base.RoastingPan],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.PanWithGlassShards,
+        }
+    }
+
+    craftRecipe IGUnprepareGlassShards
+    {
+        time = 50,
+        category = Glassmaking,
+        tags = InHandCraft,
+        SkillRequired = Glassmaking:1,
+        xpAward = Glassmaking:5,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [ImprovisedGlass.PanWithGlassShards],
+        }
+        outputs
+        {
+            item 4 Base.BrokenGlass,
+            item 1 Base.RoastingPan,
+        }
+    }
+
+    craftRecipe IGRemoveGlassPane
+    {
+        time = 50,
+        category = Glassmaking,
+        tags = InHandCraft,
+        SkillRequired = Glassmaking:2,
+        xpAward = Glassmaking:15,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [ImprovisedGlass.PanWithGlassPane],
+        }
+        outputs
+        {
+            item 1 Base.GlassPanel,
+            item 1 Base.RoastingPan,
+        }
+    }
+}

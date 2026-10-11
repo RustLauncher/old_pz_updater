@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "弹药抽屉",
+    "IGUI_TunaWR_Piece_armory": "军械柜",
+    "IGUI_TunaWR_Piece_cabinet": "枪柜",
+    "IGUI_TunaWR_Piece_fieldrack": "军械步枪架",
+    "IGUI_TunaWR_Piece_handguncase": "手枪展示柜",
+    "IGUI_TunaWR_Piece_pegboard": "步枪壁挂架",
+    "IGUI_TunaWR_Store_HANDGUN": "右键点击以收纳已装备或已附加的手枪。",
+    "IGUI_TunaWR_Store_LONG_GUN": "右键点击以收纳已装备或已附加的长枪。"
+}
