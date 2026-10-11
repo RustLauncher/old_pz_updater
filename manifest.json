@@ -1,9 +1,9 @@
 {
-    "version":  "1.0.42",
+    "version":  "1.0.43",
     "files":  [
                   {
                       "sha256":  "40428ba6976a76e7abe84b0fc4780355b764b39b1b0b9d21c2f0c517f01def1e",
-                      "path":  "GameLauncher/PZLauncher.exe"
+                      "path":  "PZLauncher.exe"
                   },
                   {
                       "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8",
