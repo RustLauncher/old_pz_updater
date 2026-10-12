@@ -1,10 +1,6 @@
-{
-    "version":  "1.0.45",
+﻿{
+    "version":  "1.0.46",
     "files":  [
-                  {
-                      "sha256":  "130ed30ba2c36637f27373ecb52a66c0a3a1e27f13da92fd59c2c9c42af201ee",
-                      "path":  "PZLauncher.exe"
-                  },
                   {
                       "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8",
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua"
@@ -12328,6 +12324,10 @@
                   {
                       "sha256":  "1188db1c1c7325baa53649df0f2cd1cb99e39f56e1b663756dc6f8b5c8fa6b01",
                       "path":  "GameLauncher/mods/moodlesinlua/mod.info"
+                  },
+                  {
+                      "sha256":  "a285ff6cbdb34a13909e3f37b05489d79eeaea20ec2ae6d833badabeb05725d0",
+                      "path":  "PZLauncher.exe"
                   }
               ]
 }
