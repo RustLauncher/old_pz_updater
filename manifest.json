@@ -1,5 +1,5 @@
 ﻿{
-    "version":  "1.0.46",
+    "version":  "1.0.47",
     "files":  [
                   {
                       "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8",
@@ -12326,7 +12326,7 @@
                       "path":  "GameLauncher/mods/moodlesinlua/mod.info"
                   },
                   {
-                      "sha256":  "a285ff6cbdb34a13909e3f37b05489d79eeaea20ec2ae6d833badabeb05725d0",
+                      "sha256":  "67b00d19f2cacdaa71b2741094fcd33eeddc1d9ebf548bc083fb4eaed236aeba",
                       "path":  "PZLauncher.exe"
                   }
               ]
