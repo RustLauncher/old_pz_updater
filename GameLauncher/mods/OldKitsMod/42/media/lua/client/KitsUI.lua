@@ -1035,10 +1035,13 @@ function KitsUI:render()
 
             if st then
                 local stText = st.text or "LISTO"
-                local stw = getTextManager():MeasureStringX(UIFont.Small, stText)
-                local pillPad = 8
-                local pillW = stw + pillPad * 2
-                local pillH = 18
+                local stFont = UIFont.NewSmall
+                local stw = getTextManager():MeasureStringX(stFont, stText)
+                local sth = getTextManager():MeasureStringY(stFont, stText)
+                local pillPadX = 8
+                local pillPadY = 4
+                local pillW = stw + pillPadX * 2
+                local pillH = sth + pillPadY * 2
                 local pillX = cx + cw - pillW - 8
                 local pillY = cy + 7
 
@@ -1054,8 +1057,8 @@ function KitsUI:render()
 
                 self:drawRect(pillX, pillY, pillW, pillH, bgColor.a,
                     bgColor.r, bgColor.g, bgColor.b)
-                self:drawText(stText, pillX + pillPad, pillY + 2,
-                    txColor.r, txColor.g, txColor.b, txColor.a, UIFont.Small)
+                self:drawText(stText, pillX + pillPadX, pillY + pillPadY,
+                    txColor.r, txColor.g, txColor.b, txColor.a, stFont)
             end
 
             local sepY2 = cy + 43
@@ -1092,16 +1095,19 @@ function KitsUI:render()
 
                 if item.count > 1 then
                     local cs = tostring(item.count)
-                    local csw = getTextManager():MeasureStringX(UIFont.Small, cs)
-                    local badgePad = 4
-                    local badgeW = csw + badgePad * 2
-                    local badgeH = 14
+                    local badgeFont = UIFont.NewSmall
+                    local csw = getTextManager():MeasureStringX(badgeFont, cs)
+                    local csh = getTextManager():MeasureStringY(badgeFont, cs)
+                    local badgePadX = 3
+                    local badgePadY = 2
+                    local badgeW = csw + badgePadX * 2
+                    local badgeH = csh + badgePadY * 2
                     local badgeX = ix + ICON_SIZE - badgeW
                     local badgeY = iy + ICON_SIZE - badgeH
                     self:drawRect(badgeX, badgeY, badgeW, badgeH, 0.95,
                         C_COUNT_BG.r, C_COUNT_BG.g, C_COUNT_BG.b)
-                    self:drawText(cs, badgeX + badgePad, badgeY + 1,
-                        1, 1, 1, 1, UIFont.Small)
+                    self:drawText(cs, badgeX + badgePadX, badgeY + badgePadY,
+                        1, 1, 1, 1, badgeFont)
                 end
 
                 local mx = self:getMouseX()
