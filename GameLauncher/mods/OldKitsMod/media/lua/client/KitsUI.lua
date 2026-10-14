@@ -9,6 +9,7 @@ require "ISUI/ISButton"
 require "ISUI/ISLabel"
 require "ISUI/ISTextEntryBox"
 require "shared/KitsConfig"
+require "client/KitsClient"
 
 KitsUI = ISPanel:derive("KitsUI")
 KitsUI.instance = nil
