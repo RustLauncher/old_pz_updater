@@ -17,21 +17,6 @@ function KitsClient.CheckAdmin()
     sendClientCommand("Kits", "checkAdmin", {})
 end
 
-function KitsClient.AdminAddGroup(targetName, group)
-    sendClientCommand("Kits", "adminAddGroup", { targetName = targetName, group = group })
-end
-
-function KitsClient.AdminRemoveGroup(targetName, group)
-    sendClientCommand("Kits", "adminRemoveGroup", { targetName = targetName, group = group })
-end
-
-function KitsClient.AdminListGroups(targetName)
-    sendClientCommand("Kits", "adminListGroups", { targetName = targetName })
-end
-
-function KitsClient.AdminListPlayers()
-    sendClientCommand("Kits", "adminListPlayers", {})
-end
 
 function KitsClient.HasPermission(kitId)
     if KitsClient.Permissions[kitId] == nil then

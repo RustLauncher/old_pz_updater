@@ -251,86 +251,35 @@ function KitsUI:buildAdminPanel()
     self:addChild(self.adminPanel)
 
     local y = PAD
-    local adminTitle = ISLabel:new(PAD, y, 22, "Gestion de Permisos",
+    local adminTitle = ISLabel:new(PAD, y, 22, "Info de Kits",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Medium, true)
     self.adminPanel:addChild(adminTitle)
     y = y + 28
 
-    local plLabel = ISLabel:new(PAD, y, 18, "Jugador:",
-        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
-    self.adminPanel:addChild(plLabel)
-    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 65, y - 2, 170, 20)
-    self.adminPlayerEntry:initialise()
-    self.adminPlayerEntry:instantiate()
-    self.adminPanel:addChild(self.adminPlayerEntry)
-
-    local listBtn = ISButton:new(PAD + 245, y - 2, 90, 20, "Ver Online", self, KitsUI.onAdminListPlayers)
-    listBtn:initialise()
-    listBtn:instantiate()
-    listBtn.backgroundColor = C_CARD
-    listBtn.borderColor = C_BORDER
-    listBtn.textColor = C_TEXT
-    self.adminPanel:addChild(listBtn)
-    y = y + 28
-
-    local grLabel = ISLabel:new(PAD, y, 18, "Grupo:",
-        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
-    self.adminPanel:addChild(grLabel)
-    self.adminGroupEntry = ISTextEntryBox:new("", PAD + 65, y - 2, 170, 20)
-    self.adminGroupEntry:initialise()
-    self.adminGroupEntry:instantiate()
-    self.adminPanel:addChild(self.adminGroupEntry)
-    y = y + 32
-
-    local bw = 110
-    local bh = 24
-    local bg = 6
-
-    local addBtn = ISButton:new(PAD, y, bw, bh, "Dar Grupo", self, KitsUI.onAdminAddGroup)
-    addBtn:initialise()
-    addBtn:instantiate()
-    addBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
-    addBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    addBtn.textColor = C_TEXT
-    self.adminPanel:addChild(addBtn)
-
-    local removeBtn = ISButton:new(PAD + bw + bg, y, bw, bh, "Quitar Grupo", self, KitsUI.onAdminRemoveGroup)
-    removeBtn:initialise()
-    removeBtn:instantiate()
-    removeBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.9 }
-    removeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    removeBtn.textColor = C_TEXT
-    self.adminPanel:addChild(removeBtn)
-
-    local infoBtn = ISButton:new(PAD + (bw + bg) * 2, y, bw, bh, "Ver Grupos", self, KitsUI.onAdminListGroups)
-    infoBtn:initialise()
-    infoBtn:instantiate()
-    infoBtn.backgroundColor = C_CARD
-    infoBtn.borderColor = C_BORDER
-    infoBtn.textColor = C_TEXT
-    self.adminPanel:addChild(infoBtn)
-    y = y + 34
-
-    local refLabel = ISLabel:new(PAD, y, 18, "Grupos disponibles:",
+    local noteLabel = ISLabel:new(PAD, y, 18, "Los permisos se gestionan con los roles del servidor.",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(refLabel)
-    y = y + 18
+    self.adminPanel:addChild(noteLabel)
+    y = y + 24
 
-    local groups = {}
-    for _, kit in ipairs(KitsConfig.Kits) do
-        local p = kit.permission or "all"
-        if p ~= "all" and p ~= "admin" then
-            local found = false
-            for _, g in ipairs(groups) do
-                if g == p then found = true end
-            end
-            if not found then table.insert(groups, p) end
-        end
-    end
-    local groupsText = #groups > 0 and table.concat(groups, ", ") or "(solo 'all' y 'admin')"
-    local groupsListLabel = ISLabel:new(PAD, y, 18, groupsText,
+    local refLabel = ISLabel:new(PAD, y, 18, "Roles requeridos por kit:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
-    self.adminPanel:addChild(groupsListLabel)
+    self.adminPanel:addChild(refLabel)
+    y = y + 20
+
+    for _, kit in ipairs(KitsConfig.Kits) do
+        local perm = kit.permission or "all"
+        local line = kit.name .. "  ->  " .. perm:upper()
+        local kc = kitColor(kit.id)
+        local lineLabel = ISLabel:new(PAD + 10, y, 18, line,
+            kc.r, kc.g, kc.b, kc.a, UIFont.Small, true)
+        self.adminPanel:addChild(lineLabel)
+        y = y + 18
+    end
+
+    y = y + 10
+    local hierLabel = ISLabel:new(PAD, y, 18, "Jerarquia: admin > moderator > gm > ultimate > vip > all",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.adminPanel:addChild(hierLabel)
 end
 
 function KitsUI:onClaimKit(button)
@@ -351,29 +300,6 @@ function KitsUI:onToggleAdmin()
     end
 end
 
-function KitsUI:onAdminAddGroup()
-    local pn = self.adminPlayerEntry:getText()
-    local gr = self.adminGroupEntry:getText()
-    if pn == "" or gr == "" then return end
-    KitsClient.AdminAddGroup(pn, gr)
-end
-
-function KitsUI:onAdminRemoveGroup()
-    local pn = self.adminPlayerEntry:getText()
-    local gr = self.adminGroupEntry:getText()
-    if pn == "" or gr == "" then return end
-    KitsClient.AdminRemoveGroup(pn, gr)
-end
-
-function KitsUI:onAdminListGroups()
-    local pn = self.adminPlayerEntry:getText()
-    if pn == "" then return end
-    KitsClient.AdminListGroups(pn)
-end
-
-function KitsUI:onAdminListPlayers()
-    KitsClient.AdminListPlayers()
-end
 
 function KitsUI:updateAdminButton()
     if self.adminBtn then

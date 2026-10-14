@@ -68,89 +68,6 @@ local function sendMsg(player, msg)
     sendServerCommand(player, "Kits", "error", { msg = msg })
 end
 
-local function handleAdminAddGroup(player, args)
-    if not KitsPermissions.IsAdmin(player) then
-        sendMsg(player, "No tienes permisos de admin.")
-        return
-    end
-    local targetName = args.targetName
-    local group = args.group
-    if not targetName or not group then
-        sendMsg(player, "Faltan parametros.")
-        return
-    end
-    local target = KitsPermissions.FindPlayerByName(targetName)
-    if not target then
-        sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
-        return
-    end
-    local added = KitsPermissions.AddGroup(target, group)
-    if added then
-        sendMsg(player, "Grupo '" .. group .. "' dado a " .. targetName)
-        sendPermissions(target)
-    else
-        sendMsg(player, targetName .. " ya tiene el grupo '" .. group .. "'")
-    end
-end
-
-local function handleAdminRemoveGroup(player, args)
-    if not KitsPermissions.IsAdmin(player) then
-        sendMsg(player, "No tienes permisos de admin.")
-        return
-    end
-    local targetName = args.targetName
-    local group = args.group
-    if not targetName or not group then
-        sendMsg(player, "Faltan parametros.")
-        return
-    end
-    local target = KitsPermissions.FindPlayerByName(targetName)
-    if not target then
-        sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
-        return
-    end
-    local removed = KitsPermissions.RemoveGroup(target, group)
-    if removed then
-        sendMsg(player, "Grupo '" .. group .. "' quitado de " .. targetName)
-        sendPermissions(target)
-    else
-        sendMsg(player, targetName .. " no tiene el grupo '" .. group .. "'")
-    end
-end
-
-local function handleAdminListGroups(player, args)
-    if not KitsPermissions.IsAdmin(player) then
-        sendMsg(player, "No tienes permisos de admin.")
-        return
-    end
-    local targetName = args.targetName
-    if not targetName then
-        sendMsg(player, "Faltan parametros.")
-        return
-    end
-    local target = KitsPermissions.FindPlayerByName(targetName)
-    if not target then
-        sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
-        return
-    end
-    local groups = KitsPermissions.GetPlayerGroups(target)
-    local groupStr = #groups > 0 and table.concat(groups, ", ") or "(ninguno)"
-    sendMsg(player, targetName .. " grupos: " .. groupStr)
-end
-
-local function handleAdminListPlayers(player, args)
-    if not KitsPermissions.IsAdmin(player) then
-        sendMsg(player, "No tienes permisos de admin.")
-        return
-    end
-    local names = {}
-    local players = getOnlinePlayers()
-    for i = 0, players:size() - 1 do
-        table.insert(names, players:get(i):getUsername())
-    end
-    sendMsg(player, "Online: " .. table.concat(names, ", "))
-end
-
 local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
@@ -187,18 +104,6 @@ local function onClientCommand(module, command, player, args)
     elseif command == "requestCooldowns" then
         sendAllCooldowns(player)
         sendPermissions(player)
-
-    elseif command == "adminAddGroup" then
-        handleAdminAddGroup(player, args)
-
-    elseif command == "adminRemoveGroup" then
-        handleAdminRemoveGroup(player, args)
-
-    elseif command == "adminListGroups" then
-        handleAdminListGroups(player, args)
-
-    elseif command == "adminListPlayers" then
-        handleAdminListPlayers(player, args)
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
