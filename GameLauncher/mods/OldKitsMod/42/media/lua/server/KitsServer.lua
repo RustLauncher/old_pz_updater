@@ -4,6 +4,21 @@ require "KitsPermissions"
 KitsServer = KitsServer or {}
 
 local KITS_OVERRIDES_KEY = "KitsOverrides"
+local KITS_KNOWN_PLAYERS_KEY = "KitsKnownPlayers"
+
+local ELEVATED_ROLES = {
+    admin = true, moderator = true, gm = true, observer = true,
+    priority = true, ultimate = true, vip = true,
+}
+
+local function registerKnownPlayer(player)
+    local data = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
+    local name = player:getUsername()
+    if not data[name] then
+        data[name] = tostring(os.time())
+        ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+    end
+end
 
 local function getPlayerCooldowns(player)
     local modData = player:getModData()
@@ -71,6 +86,25 @@ end
 
 local function sendTempRolesList(player)
     local roles = KitsPermissions.GetAllTempRoles()
+    local tempNames = {}
+    for _, r in ipairs(roles) do
+        tempNames[r.playerName] = true
+    end
+    local onlinePlayers = getOnlinePlayers()
+    for i = 0, onlinePlayers:size() - 1 do
+        local p = onlinePlayers:get(i)
+        local roleName = p:getRole():getName():lower()
+        if roleName and roleName ~= "" and roleName ~= "none" and ELEVATED_ROLES[roleName] then
+            if not tempNames[p:getUsername()] then
+                table.insert(roles, {
+                    playerName = p:getUsername(),
+                    role = roleName,
+                    daysLeft = -1,
+                    isNative = true,
+                })
+            end
+        end
+    end
     sendServerCommand(player, "Kits", "tempRolesList", { roles = roles })
 end
 
@@ -131,8 +165,37 @@ local function broadcastKitsUpdate()
     end
 end
 
+local function sendAllPlayersList(player)
+    local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
+    local onlinePlayers = getOnlinePlayers()
+    local onlineSet = {}
+    for i = 0, onlinePlayers:size() - 1 do
+        local p = onlinePlayers:get(i)
+        local pName = p:getUsername()
+        onlineSet[pName] = true
+        if not known[pName] then
+            known[pName] = tostring(os.time())
+        end
+    end
+    ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+    local list = {}
+    for name, _ in pairs(known) do
+        table.insert(list, {
+            name = name,
+            online = onlineSet[name] and true or false,
+        })
+    end
+    table.sort(list, function(a, b)
+        if a.online ~= b.online then return a.online end
+        return a.name:lower() < b.name:lower()
+    end)
+    sendServerCommand(player, "Kits", "allPlayersList", { players = list })
+end
+
 local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
+
+    registerKnownPlayer(player)
 
     if command == "requestKit" then
         local kitId = args.kitId
@@ -237,6 +300,13 @@ local function onClientCommand(module, command, player, args)
             table.insert(names, players:get(i):getUsername())
         end
         sendServerCommand(player, "Kits", "onlineList", { players = names })
+
+    elseif command == "adminListAllPlayers" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        sendAllPlayersList(player)
 
     elseif command == "adminGetKits" then
         if not KitsPermissions.IsAdmin(player) then

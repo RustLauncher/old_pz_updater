@@ -9,7 +9,7 @@ require "KitsClient"
 KitsUI = ISPanel:derive("KitsUI")
 KitsUI.instance = nil
 
-local PANEL_W = 440
+local PANEL_W = 460
 local PANEL_H = 500
 local HEADER_H = 36
 local PAD = 10
@@ -19,8 +19,8 @@ local ICON_GAP = 4
 local ACCENT_BAR_W = 3
 local BTN_W = 100
 local BTN_H = 24
-local EDIT_ITEM_H = 24
-local EDIT_ICON = 20
+local EDIT_ITEM_H = 26
+local EDIT_ICON = 22
 
 local C_BG        = { r = 0.06, g = 0.06, b = 0.08, a = 0.98 }
 local C_HEADER    = { r = 0.08, g = 0.08, b = 0.10, a = 1 }
@@ -129,6 +129,7 @@ function KitsUI:new(x, y)
     o.editPermission = "all"
     o.itemSearchCache = nil
     o.lastSearchText = ""
+    o.lastPlayerSearchText = ""
     return o
 end
 
@@ -285,7 +286,7 @@ function KitsUI:buildAdminPanel()
 end
 
 function KitsUI:buildRolesSubPanel()
-    local subY = 28
+    local subY = 30
     self.rolesSubPanel = ISPanel:new(0, subY, PANEL_W, self.adminPanel:getHeight() - subY)
     self.rolesSubPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self.adminPanel:addChild(self.rolesSubPanel)
@@ -294,34 +295,41 @@ function KitsUI:buildRolesSubPanel()
     local adminTitle = ISLabel:new(PAD, y, 22, "Roles Temporales",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Medium, true)
     self.rolesSubPanel:addChild(adminTitle)
-    y = y + 28
+    y = y + 30
 
-    local plTitle = ISLabel:new(PAD, y, 16, "Jugadores online:",
+    local searchLabel = ISLabel:new(PAD, y + 2, 16, "Buscar jugador:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.rolesSubPanel:addChild(plTitle)
+    self.rolesSubPanel:addChild(searchLabel)
     y = y + 18
 
-    self.playerListBox = ISScrollingListBox:new(PAD, y, PANEL_W - PAD * 2, 110)
+    self.playerSearchEntry = ISTextEntryBox:new("", PAD, y, PANEL_W - PAD * 2, 22)
+    self.playerSearchEntry:initialise()
+    self.playerSearchEntry:instantiate()
+    self.rolesSubPanel:addChild(self.playerSearchEntry)
+    y = y + 26
+
+    self.playerListBox = ISScrollingListBox:new(PAD, y, PANEL_W - PAD * 2, 120)
     self.playerListBox:initialise()
     self.playerListBox:instantiate()
-    self.playerListBox.itemheight = 22
+    self.playerListBox.itemheight = 24
     self.playerListBox.font = UIFont.Small
     self.playerListBox.backgroundColor = { r = 0.08, g = 0.08, b = 0.10, a = 1 }
     self.playerListBox.borderColor = C_BORDER
     self.playerListBox.drawBorder = true
+    self.playerListBox.doDrawItem = self.doDrawPlayerItem
     self.rolesSubPanel:addChild(self.playerListBox)
-    y = y + 114
+    y = y + 126
 
     local rolLabel = ISLabel:new(PAD, y + 2, 18, "Rol:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.rolesSubPanel:addChild(rolLabel)
 
-    local rolBtnW = 80
+    local rolBtnW = 90
     local rolBtnGap = 4
     local rolX = PAD + 40
     self.adminSelectedRole = "vip"
 
-    self.roleBtnVip = ISButton:new(rolX, y, rolBtnW, 20, "VIP", self, KitsUI.onSelectRoleVip)
+    self.roleBtnVip = ISButton:new(rolX, y, rolBtnW, 22, "VIP", self, KitsUI.onSelectRoleVip)
     self.roleBtnVip:initialise()
     self.roleBtnVip:instantiate()
     self.roleBtnVip.backgroundColor = { r = 0.20, g = 0.55, b = 0.20, a = 0.9 }
@@ -329,23 +337,23 @@ function KitsUI:buildRolesSubPanel()
     self.roleBtnVip.textColor = C_TEXT
     self.rolesSubPanel:addChild(self.roleBtnVip)
 
-    self.roleBtnUlt = ISButton:new(rolX + rolBtnW + rolBtnGap, y, rolBtnW, 20, "ULTIMATE", self, KitsUI.onSelectRoleUlt)
+    self.roleBtnUlt = ISButton:new(rolX + rolBtnW + rolBtnGap, y, rolBtnW, 22, "ULTIMATE", self, KitsUI.onSelectRoleUlt)
     self.roleBtnUlt:initialise()
     self.roleBtnUlt:instantiate()
     self.roleBtnUlt.backgroundColor = C_CARD
     self.roleBtnUlt.borderColor = C_BORDER
     self.roleBtnUlt.textColor = C_TEXT
     self.rolesSubPanel:addChild(self.roleBtnUlt)
-    y = y + 26
+    y = y + 28
 
     local dayLabel = ISLabel:new(PAD, y + 2, 18, "Dias:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.rolesSubPanel:addChild(dayLabel)
-    self.adminDaysEntry = ISTextEntryBox:new("30", PAD + 40, y, 60, 20)
+    self.adminDaysEntry = ISTextEntryBox:new("30", PAD + 40, y, 60, 22)
     self.adminDaysEntry:initialise()
     self.adminDaysEntry:instantiate()
     self.rolesSubPanel:addChild(self.adminDaysEntry)
-    y = y + 30
+    y = y + 32
 
     local bw = 120
     local bg = 8
@@ -364,48 +372,79 @@ function KitsUI:buildRolesSubPanel()
     removeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     removeBtn.textColor = C_TEXT
     self.rolesSubPanel:addChild(removeBtn)
+    y = y + 36
 
-    local refreshBtn = ISButton:new(PAD + (bw + bg) * 2, y, 80, BTN_H, "REFRESCAR", self, KitsUI.onAdminRefresh)
-    refreshBtn:initialise()
-    refreshBtn:instantiate()
-    refreshBtn.backgroundColor = C_CARD
-    refreshBtn.borderColor = C_BORDER
-    refreshBtn.textColor = C_TEXT
-    self.rolesSubPanel:addChild(refreshBtn)
-    y = y + 34
-
-    y = y + 6
+    self:drawHSeparator(self.rolesSubPanel, y)
+    y = y + 8
 
     local listTitle = ISLabel:new(PAD, y, 18, "Roles activos:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.rolesSubPanel:addChild(listTitle)
-    y = y + 20
+    y = y + 22
 
     self.tempRolesListY = y
     self.tempRolesLabels = {}
 end
 
+function KitsUI:drawHSeparator(panel, y)
+    local sep = ISPanel:new(PAD, y, PANEL_W - PAD * 2, 1)
+    sep.backgroundColor = { r = C_BORDER.r, g = C_BORDER.g, b = C_BORDER.b, a = 0.3 }
+    sep.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    panel:addChild(sep)
+end
+
+function KitsUI.doDrawPlayerItem(self2, y, item, alt)
+    if self2.selected == item.index then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.4, C_BTN.r, C_BTN.g, C_BTN.b)
+    elseif alt then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.05, 1, 1, 1)
+    end
+    local data = item.item
+    if data and data.online then
+        self2:drawRect(6, y + 8, 8, 8, 1, C_GREEN.r, C_GREEN.g, C_GREEN.b)
+    else
+        self2:drawRect(6, y + 8, 8, 8, 0.4, C_RED_DK.r, C_RED_DK.g, C_RED_DK.b)
+    end
+    self2:drawText(item.text, 20, y + 4, C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
+    return y + self2.itemheight
+end
+
+function KitsUI.doDrawSearchItem(self2, y, item, alt)
+    if self2.selected == item.index then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.4, C_BTN.r, C_BTN.g, C_BTN.b)
+    elseif alt then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.05, 1, 1, 1)
+    end
+    local data = item.item
+    local textX = 8
+    if data and data.tex then
+        self2:drawTextureScaled(data.tex, 4, y + 2, 20, 20, 1, 1, 1, 1)
+        textX = 28
+    end
+    self2:drawText(item.text, textX, y + 4, C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
+    return y + self2.itemheight
+end
+
 function KitsUI:buildKitEditorPanel()
-    local subY = 28
+    local subY = 30
     self.kitsEditorPanel = ISPanel:new(0, subY, PANEL_W, self.adminPanel:getHeight() - subY)
     self.kitsEditorPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self.kitsEditorPanel:setVisible(false)
     self.adminPanel:addChild(self.kitsEditorPanel)
 
     local y = 4
-    local selBtnW = 60
-    local selBtnGap = 1
+    local selBtnW = 90
+    local selBtnGap = 2
     local bx = PAD
     self.kitSelectorBtns = {}
     local kitsPerRow = 4
     for i, kit in ipairs(KitsConfig.Kits) do
         if i == kitsPerRow + 1 then
-            y = y + 22
+            y = y + 24
             bx = PAD
         end
         local label = kit.id:upper()
-        if #label > 7 then label = label:sub(1, 7) end
-        local btn = ISButton:new(bx, y, selBtnW, 20, label, self, KitsUI.onSelectKitForEdit)
+        local btn = ISButton:new(bx, y, selBtnW, 22, label, self, KitsUI.onSelectKitForEdit)
         btn:initialise()
         btn:instantiate()
         btn.internal = kit.id
@@ -416,35 +455,35 @@ function KitsUI:buildKitEditorPanel()
         self.kitSelectorBtns[kit.id] = btn
         bx = bx + selBtnW + selBtnGap
     end
-    y = y + 26
+    y = y + 30
 
-    local lblW = 60
-    local entryW = PANEL_W - PAD * 2 - lblW - 4
+    local lblW = 75
+    local entryW = PANEL_W - PAD * 2 - lblW - 6
 
-    local nameLabel = ISLabel:new(PAD, y + 2, 18, "Nombre:",
+    local nameLabel = ISLabel:new(PAD, y + 3, 18, "Nombre:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.kitsEditorPanel:addChild(nameLabel)
-    self.editNameEntry = ISTextEntryBox:new("", PAD + lblW, y, entryW, 20)
+    self.editNameEntry = ISTextEntryBox:new("", PAD + lblW, y, entryW, 22)
     self.editNameEntry:initialise()
     self.editNameEntry:instantiate()
     self.kitsEditorPanel:addChild(self.editNameEntry)
-    y = y + 24
+    y = y + 28
 
-    local cdLabel = ISLabel:new(PAD, y + 2, 18, "CD(min):",
+    local cdLabel = ISLabel:new(PAD, y + 3, 18, "CD(min):",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.kitsEditorPanel:addChild(cdLabel)
-    self.editCooldownEntry = ISTextEntryBox:new("", PAD + lblW, y, 70, 20)
+    self.editCooldownEntry = ISTextEntryBox:new("", PAD + lblW, y, 70, 22)
     self.editCooldownEntry:initialise()
     self.editCooldownEntry:instantiate()
     self.kitsEditorPanel:addChild(self.editCooldownEntry)
 
-    local permX = PAD + lblW + 78
-    local permBtnW = 50
-    local permGap = 2
+    local permX = PAD + lblW + 80
+    local permBtnW = 55
+    local permGap = 3
 
     self.editPermBtns = {}
 
-    local permAll = ISButton:new(permX, y, permBtnW, 20, "ALL", self, KitsUI.onEditPermAll)
+    local permAll = ISButton:new(permX, y, permBtnW, 22, "ALL", self, KitsUI.onEditPermAll)
     permAll:initialise()
     permAll:instantiate()
     permAll.backgroundColor = C_CARD
@@ -453,7 +492,7 @@ function KitsUI:buildKitEditorPanel()
     self.kitsEditorPanel:addChild(permAll)
     self.editPermBtns["all"] = permAll
 
-    local permVip = ISButton:new(permX + permBtnW + permGap, y, permBtnW, 20, "VIP", self, KitsUI.onEditPermVip)
+    local permVip = ISButton:new(permX + permBtnW + permGap, y, permBtnW, 22, "VIP", self, KitsUI.onEditPermVip)
     permVip:initialise()
     permVip:instantiate()
     permVip.backgroundColor = C_CARD
@@ -462,7 +501,7 @@ function KitsUI:buildKitEditorPanel()
     self.kitsEditorPanel:addChild(permVip)
     self.editPermBtns["vip"] = permVip
 
-    local permUlt = ISButton:new(permX + (permBtnW + permGap) * 2, y, 60, 20, "ULTIM.", self, KitsUI.onEditPermUlt)
+    local permUlt = ISButton:new(permX + (permBtnW + permGap) * 2, y, 65, 22, "ULTIM.", self, KitsUI.onEditPermUlt)
     permUlt:initialise()
     permUlt:instantiate()
     permUlt.backgroundColor = C_CARD
@@ -471,58 +510,63 @@ function KitsUI:buildKitEditorPanel()
     self.kitsEditorPanel:addChild(permUlt)
     self.editPermBtns["ultimate"] = permUlt
 
-    y = y + 28
+    y = y + 32
 
     local itemsTitle = ISLabel:new(PAD, y, 18, "Items del kit:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.kitsEditorPanel:addChild(itemsTitle)
-    y = y + 20
+    y = y + 22
 
     self.editItemsStartY = y
-    self.editItemsAreaH = 180
+    self.editItemsAreaH = 190
 
-    local searchY = y + self.editItemsAreaH
+    local searchY = y + self.editItemsAreaH + 4
+
+    self:drawHSeparator(self.kitsEditorPanel, searchY - 6)
+
     local searchTitle = ISLabel:new(PAD, searchY, 18, "Buscar item:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.kitsEditorPanel:addChild(searchTitle)
-    searchY = searchY + 18
+    searchY = searchY + 20
 
-    self.itemSearchEntry = ISTextEntryBox:new("", PAD, searchY, PANEL_W - PAD * 2, 20)
+    self.itemSearchEntry = ISTextEntryBox:new("", PAD, searchY, PANEL_W - PAD * 2, 22)
     self.itemSearchEntry:initialise()
     self.itemSearchEntry:instantiate()
     self.kitsEditorPanel:addChild(self.itemSearchEntry)
-    searchY = searchY + 22
+    searchY = searchY + 26
 
-    self.itemSearchList = ISScrollingListBox:new(PAD, searchY, PANEL_W - PAD * 2, 90)
+    self.itemSearchList = ISScrollingListBox:new(PAD, searchY, PANEL_W - PAD * 2, 110)
     self.itemSearchList:initialise()
     self.itemSearchList:instantiate()
-    self.itemSearchList.itemheight = 22
+    self.itemSearchList.itemheight = 24
     self.itemSearchList.font = UIFont.Small
     self.itemSearchList.backgroundColor = { r = 0.08, g = 0.08, b = 0.10, a = 1 }
     self.itemSearchList.borderColor = C_BORDER
     self.itemSearchList.drawBorder = true
+    self.itemSearchList.doDrawItem = self.doDrawSearchItem
     self.kitsEditorPanel:addChild(self.itemSearchList)
-    searchY = searchY + 94
+    searchY = searchY + 116
 
-    local cntLabel = ISLabel:new(PAD, searchY + 2, 18, "Cantidad:",
+    local cntLabel = ISLabel:new(PAD, searchY + 3, 18, "Cantidad:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.kitsEditorPanel:addChild(cntLabel)
 
-    self.editNewItemCount = ISTextEntryBox:new("1", PAD + 64, searchY, 40, 20)
+    self.editNewItemCount = ISTextEntryBox:new("1", PAD + 72, searchY, 50, 22)
     self.editNewItemCount:initialise()
     self.editNewItemCount:instantiate()
     self.kitsEditorPanel:addChild(self.editNewItemCount)
 
-    self.editAddItemBtn = ISButton:new(PAD + 112, searchY, 90, 20, "AGREGAR", self, KitsUI.onAddEditItem)
+    self.editAddItemBtn = ISButton:new(PAD + 130, searchY, 100, 22, "AGREGAR", self, KitsUI.onAddEditItem)
     self.editAddItemBtn:initialise()
     self.editAddItemBtn:instantiate()
     self.editAddItemBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
+    self.editAddItemBtn.backgroundColorMouseOver = { r = 0.20, g = 0.65, b = 0.20, a = 1 }
     self.editAddItemBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     self.editAddItemBtn.textColor = C_TEXT
     self.kitsEditorPanel:addChild(self.editAddItemBtn)
-    searchY = searchY + 30
+    searchY = searchY + 32
 
-    self.editSaveBtn = ISButton:new(PAD, searchY, 120, BTN_H, "GUARDAR", self, KitsUI.onSaveEditKit)
+    self.editSaveBtn = ISButton:new(PAD, searchY, 140, BTN_H, "GUARDAR", self, KitsUI.onSaveEditKit)
     self.editSaveBtn:initialise()
     self.editSaveBtn:instantiate()
     self.editSaveBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
@@ -541,7 +585,7 @@ function KitsUI:onAdminTabRoles()
     self.adminTabKitsBtn.backgroundColor = C_CARD
     self.adminTabKitsBtn.borderColor = C_BORDER
     KitsClient.AdminListTempRoles()
-    KitsClient.AdminListOnline()
+    KitsClient.AdminListAllPlayers()
 end
 
 function KitsUI:onAdminTabKits()
@@ -632,7 +676,7 @@ function KitsUI:rebuildEditItemsList()
             type = item.type,
         })
 
-        local xBtn = ISButton:new(PANEL_W - 45, y + 2, 28, 18, "X", self, KitsUI.onRemoveEditItem)
+        local xBtn = ISButton:new(PANEL_W - 50, y + 3, 30, 20, "X", self, KitsUI.onRemoveEditItem)
         xBtn:initialise()
         xBtn:instantiate()
         xBtn.internal = idx
@@ -707,9 +751,13 @@ function KitsUI:populateItemSearch(searchText)
     local lower = searchText:lower()
     local count = 0
     for _, item in ipairs(self.itemSearchCache) do
-        if count >= 15 then break end
+        if count >= 20 then break end
         if item.name:lower():find(lower, 1, true) or item.type:lower():find(lower, 1, true) then
-            self.itemSearchList:addItem(item.name .. "  [" .. item.type .. "]", item)
+            self.itemSearchList:addItem(item.name .. "  [" .. item.type .. "]", {
+                type = item.type,
+                name = item.name,
+                tex = getItemTexture(item.type),
+            })
             count = count + 1
         end
     end
@@ -719,7 +767,25 @@ function KitsUI:getSelectedPlayerName()
     if not self.playerListBox then return nil end
     local sel = self.playerListBox.selected
     if not sel or sel < 1 or sel > #self.playerListBox.items then return nil end
-    return self.playerListBox.items[sel].item
+    return self.playerListBox.items[sel].item.name
+end
+
+function KitsUI:filterPlayerList(searchText)
+    if not self.playerListBox then return end
+    self.playerListBox:clear()
+    local lower = searchText and searchText:lower() or ""
+    local players = KitsClient.AllPlayers
+    if not players or #players == 0 then
+        players = {}
+        for _, name in ipairs(KitsClient.OnlinePlayers or {}) do
+            table.insert(players, { name = name, online = true })
+        end
+    end
+    for _, pl in ipairs(players) do
+        if lower == "" or pl.name:lower():find(lower, 1, true) then
+            self.playerListBox:addItem(pl.name, pl)
+        end
+    end
 end
 
 function KitsUI:onSelectRoleVip()
@@ -754,11 +820,7 @@ end
 
 function KitsUI:onAdminRefresh()
     KitsClient.AdminListTempRoles()
-    KitsClient.AdminListOnline()
-end
-
-function KitsUI:onAdminListOnline()
-    KitsClient.AdminListOnline()
+    KitsClient.AdminListAllPlayers()
 end
 
 function KitsUI:updateTempRolesList()
@@ -781,25 +843,35 @@ function KitsUI:updateTempRolesList()
                 rolColor = C_GREEN
             elseif entry.role == "ultimate" then
                 rolColor = C_BTN
+            elseif entry.role == "admin" or entry.role == "moderator" then
+                rolColor = C_ADMIN
             end
-            local line = entry.playerName .. "  -  " .. entry.role:upper() .. "  (" .. entry.daysLeft .. "d)"
+            local suffix = ""
+            local daysLeft = tonumber(entry.daysLeft)
+            if daysLeft and daysLeft >= 0 then
+                suffix = "(" .. entry.daysLeft .. "d)"
+            else
+                suffix = "(servidor)"
+            end
+            local line = entry.playerName .. "  -  " .. entry.role:upper() .. "  " .. suffix
             local lbl = ISLabel:new(PAD + 10, y, 18, line,
                 rolColor.r, rolColor.g, rolColor.b, rolColor.a, UIFont.Small, true)
             self.rolesSubPanel:addChild(lbl)
             table.insert(self.tempRolesLabels, lbl)
-            y = y + 18
+            y = y + 20
         end
     end
 end
 
 function KitsUI:updateOnlineList()
     local players = KitsClient.OnlinePlayers or {}
-    if self.playerListBox then
-        self.playerListBox:clear()
-        for _, name in ipairs(players) do
-            self.playerListBox:addItem(name, name)
-        end
+    if #KitsClient.AllPlayers == 0 then
+        self:filterPlayerList(self.lastPlayerSearchText)
     end
+end
+
+function KitsUI:updatePlayerList()
+    self:filterPlayerList(self.lastPlayerSearchText)
 end
 
 function KitsUI:onClaimKit(button)
@@ -816,7 +888,7 @@ function KitsUI:onToggleAdmin()
     if self.showingAdmin then
         self.adminBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
         KitsClient.AdminListTempRoles()
-        KitsClient.AdminListOnline()
+        KitsClient.AdminListAllPlayers()
     else
         self.adminBtn.backgroundColor = { r = C_ADMIN.r, g = C_ADMIN.g, b = C_ADMIN.b, a = 0.55 }
     end
@@ -897,6 +969,14 @@ function KitsUI:update()
             self:populateItemSearch(txt)
         end
     end
+
+    if self.showingAdmin and self.adminActiveTab == "roles" and self.playerSearchEntry then
+        local txt = self.playerSearchEntry:getText()
+        if txt ~= self.lastPlayerSearchText then
+            self.lastPlayerSearchText = txt
+            self:filterPlayerList(txt)
+        end
+    end
 end
 
 function KitsUI:prerender()
@@ -914,26 +994,26 @@ function KitsUI:render()
     if self.showingAdmin then
         if self.adminActiveTab == "kits" and self.editingKitId then
             local items = self.editItemDisplayData or {}
-            local panelY = HEADER_H + 28
+            local panelY = HEADER_H + 30
             local startY = self.editItemsStartY or 0
             for idx, item in ipairs(items) do
                 local iy = panelY + startY + (idx - 1) * EDIT_ITEM_H
-                local ix = PAD + 4
+                local ix = PAD + 6
 
-                self:drawRect(ix - 2, iy, PANEL_W - PAD * 2 - 40, EDIT_ITEM_H - 2,
+                self:drawRect(ix - 4, iy, PANEL_W - PAD * 2 - 48, EDIT_ITEM_H - 2,
                     0.6, C_CARD.r, C_CARD.g, C_CARD.b)
 
                 if item.tex then
-                    self:drawTextureScaled(item.tex, ix, iy + 1, EDIT_ICON, EDIT_ICON, 1, 1, 1, 1)
+                    self:drawTextureScaled(item.tex, ix, iy + 2, EDIT_ICON, EDIT_ICON, 1, 1, 1, 1)
                 else
                     local letter = item.name:sub(1, 1)
                     local lw = getTextManager():MeasureStringX(UIFont.Small, letter)
-                    self:drawText(letter, ix + (EDIT_ICON - lw) / 2, iy + 3,
+                    self:drawText(letter, ix + (EDIT_ICON - lw) / 2, iy + 4,
                         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.6, UIFont.Small)
                 end
 
                 local label = item.name .. "  x" .. tostring(item.count)
-                self:drawText(label, ix + EDIT_ICON + 6, iy + 3,
+                self:drawText(label, ix + EDIT_ICON + 8, iy + 4,
                     C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
             end
         end
@@ -986,10 +1066,6 @@ function KitsUI:render()
             local slotsPerRow = math.floor(itemAreaW / (ICON_SIZE + ICON_GAP))
             if slotsPerRow < 1 then slotsPerRow = 1 end
 
-            local totalSlotsW = #items * (ICON_SIZE + ICON_GAP) - ICON_GAP
-            if totalSlotsW > itemAreaW then
-                totalSlotsW = slotsPerRow * (ICON_SIZE + ICON_GAP) - ICON_GAP
-            end
             local startX = cx + ACCENT_BAR_W + 8
             local slotY = cy + 46
             local col = 0
@@ -1016,15 +1092,16 @@ function KitsUI:render()
 
                 if item.count > 1 then
                     local cs = tostring(item.count)
-                    local csw = getTextManager():MeasureStringX(UIFont.NewSmall, cs)
-                    local badgeW = csw + 4
-                    local badgeH = 11
-                    local badgeX = ix + ICON_SIZE - badgeW - 1
-                    local badgeY = iy + ICON_SIZE - badgeH - 1
-                    self:drawRect(badgeX, badgeY, badgeW, badgeH, 0.92,
+                    local csw = getTextManager():MeasureStringX(UIFont.Small, cs)
+                    local badgePad = 4
+                    local badgeW = csw + badgePad * 2
+                    local badgeH = 14
+                    local badgeX = ix + ICON_SIZE - badgeW
+                    local badgeY = iy + ICON_SIZE - badgeH
+                    self:drawRect(badgeX, badgeY, badgeW, badgeH, 0.95,
                         C_COUNT_BG.r, C_COUNT_BG.g, C_COUNT_BG.b)
-                    self:drawText(cs, badgeX + 2, badgeY - 1,
-                        1, 1, 1, 1, UIFont.NewSmall)
+                    self:drawText(cs, badgeX + badgePad, badgeY + 1,
+                        1, 1, 1, 1, UIFont.Small)
                 end
 
                 local mx = self:getMouseX()

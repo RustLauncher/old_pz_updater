@@ -6,6 +6,7 @@ KitsClient.Permissions = {}
 KitsClient.IsAdmin = false
 KitsClient.TempRoles = {}
 KitsClient.OnlinePlayers = {}
+KitsClient.AllPlayers = {}
 
 function KitsClient.RequestKit(kitId)
     sendClientCommand("Kits", "requestKit", { kitId = kitId })
@@ -44,6 +45,10 @@ end
 
 function KitsClient.AdminListOnline()
     sendClientCommand("Kits", "adminListOnline", {})
+end
+
+function KitsClient.AdminListAllPlayers()
+    sendClientCommand("Kits", "adminListAllPlayers", {})
 end
 
 function KitsClient.AdminGetKits()
@@ -122,6 +127,12 @@ local function onServerCommand(module, command, args)
         KitsClient.OnlinePlayers = args.players or {}
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateOnlineList()
+        end
+
+    elseif command == "allPlayersList" then
+        KitsClient.AllPlayers = args.players or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updatePlayerList()
         end
 
     elseif command == "kitsList" then
