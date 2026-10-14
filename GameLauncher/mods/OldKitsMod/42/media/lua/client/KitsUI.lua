@@ -8,52 +8,61 @@ require "KitsClient"
 KitsUI = ISPanel:derive("KitsUI")
 KitsUI.instance = nil
 
-local PANEL_W = 520
+local PANEL_W = 460
 local PANEL_H = 500
-local HEADER_H = 38
-local PAD = 10
-local CARD_PAD = 8
-local ICON_SIZE = 36
-local ICON_GAP = 4
+local HEADER_H = 42
+local PAD = 12
+local CARD_PAD = 6
+local ICON_SIZE = 40
+local ICON_GAP = 6
 
-local COLOR_BG         = { r = 0.08, g = 0.08, b = 0.10, a = 0.95 }
-local COLOR_HEADER     = { r = 0.12, g = 0.11, b = 0.14, a = 1 }
-local COLOR_CARD       = { r = 0.13, g = 0.13, b = 0.16, a = 1 }
-local COLOR_CARD_LOCK  = { r = 0.10, g = 0.09, b = 0.11, a = 1 }
-local COLOR_BORDER     = { r = 0.25, g = 0.24, b = 0.28, a = 1 }
-local COLOR_ACCENT     = { r = 0.95, g = 0.60, b = 0.12, a = 1 }
-local COLOR_ACCENT_DIM = { r = 0.55, g = 0.38, b = 0.18, a = 1 }
-local COLOR_TEXT       = { r = 0.92, g = 0.90, b = 0.88, a = 1 }
-local COLOR_TEXT_SEC   = { r = 0.60, g = 0.58, b = 0.56, a = 1 }
-local COLOR_READY      = { r = 0.30, g = 0.82, b = 0.40, a = 1 }
-local COLOR_COOLDOWN   = { r = 0.95, g = 0.35, b = 0.25, a = 1 }
-local COLOR_LOCKED     = { r = 0.60, g = 0.22, b = 0.22, a = 1 }
-local COLOR_BTN        = { r = 0.90, g = 0.56, b = 0.10, a = 1 }
-local COLOR_BTN_HOVER  = { r = 1.00, g = 0.65, b = 0.18, a = 1 }
-local COLOR_BTN_DIS    = { r = 0.22, g = 0.22, b = 0.25, a = 1 }
-local COLOR_ICON_BG    = { r = 0.18, g = 0.17, b = 0.20, a = 1 }
-local COLOR_ADMIN      = { r = 0.22, g = 0.52, b = 0.88, a = 0.9 }
-local COLOR_SEPARATOR  = { r = 0.20, g = 0.19, b = 0.23, a = 1 }
+local C_BG        = { r = 0.07, g = 0.07, b = 0.09, a = 0.97 }
+local C_HEADER    = { r = 0.10, g = 0.10, b = 0.12, a = 1 }
+local C_CARD      = { r = 0.12, g = 0.12, b = 0.15, a = 1 }
+local C_CARD_LOCK = { r = 0.09, g = 0.09, b = 0.11, a = 1 }
+local C_BORDER    = { r = 0.22, g = 0.21, b = 0.25, a = 1 }
+local C_ACCENT    = { r = 0.95, g = 0.58, b = 0.08, a = 1 }
+local C_ACCENT_DK = { r = 0.50, g = 0.33, b = 0.10, a = 1 }
+local C_TEXT      = { r = 0.93, g = 0.91, b = 0.89, a = 1 }
+local C_TEXT2     = { r = 0.55, g = 0.53, b = 0.50, a = 1 }
+local C_GREEN     = { r = 0.20, g = 0.80, b = 0.35, a = 1 }
+local C_RED       = { r = 0.95, g = 0.30, b = 0.20, a = 1 }
+local C_RED_DK    = { r = 0.55, g = 0.18, b = 0.15, a = 1 }
+local C_BTN       = { r = 0.88, g = 0.54, b = 0.08, a = 1 }
+local C_BTN_HI    = { r = 1.00, g = 0.65, b = 0.15, a = 1 }
+local C_BTN_OFF   = { r = 0.20, g = 0.20, b = 0.22, a = 1 }
+local C_SLOT      = { r = 0.16, g = 0.15, b = 0.18, a = 1 }
+local C_SLOT_BD   = { r = 0.28, g = 0.27, b = 0.30, a = 0.5 }
+local C_ADMIN     = { r = 0.25, g = 0.55, b = 0.90, a = 0.85 }
+local C_SEP       = { r = 0.18, g = 0.17, b = 0.20, a = 1 }
 
 local function getItemTexture(itemType)
     local si = ScriptManager.instance:getItem(itemType)
-    if si then
-        local texName = si:getIcon()
-        if texName then
-            local tex = getTexture("Item_" .. texName)
-            if tex then return tex end
-            tex = getTexture(texName)
+    if not si then return nil end
+    local texName = si:getIcon()
+    if texName and texName ~= "" then
+        local tex = getTexture("Item_" .. texName)
+        if tex then return tex end
+        tex = getTexture(texName)
+        if tex then return tex end
+    end
+    local ift = si:getIconsForTexture()
+    if ift then
+        local first = ift:get(0)
+        if first then
+            local tex = getTexture("Item_" .. first)
             if tex then return tex end
         end
     end
+    local shortName = itemType:gsub("Base%.", "")
+    local tex = getTexture("Item_" .. shortName)
+    if tex then return tex end
     return nil
 end
 
 local function getItemDisplayName(itemType)
     local si = ScriptManager.instance:getItem(itemType)
-    if si then
-        return si:getDisplayName()
-    end
+    if si then return si:getDisplayName() end
     return itemType:gsub("Base%.", "")
 end
 
@@ -61,15 +70,14 @@ function KitsUI:new(x, y)
     local o = ISPanel:new(x, y, PANEL_W, PANEL_H)
     setmetatable(o, self)
     self.__index = self
-    o.backgroundColor = COLOR_BG
-    o.borderColor = COLOR_BORDER
+    o.backgroundColor = C_BG
+    o.borderColor = C_BORDER
     o.moveWithMouse = true
     o.kitButtons = {}
     o.kitCooldownLabels = {}
     o.kitCards = {}
     o.kitNameLabels = {}
     o.kitItemData = {}
-    o.kitCardHeights = {}
     o.showingAdmin = false
     return o
 end
@@ -77,22 +85,22 @@ end
 function KitsUI:createChildren()
     ISPanel.createChildren(self)
 
-    self.closeBtn = ISButton:new(PANEL_W - 34, 6, 26, 26, "X", self, KitsUI.onClose)
+    self.closeBtn = ISButton:new(PANEL_W - 36, 8, 26, 26, "X", self, KitsUI.onClose)
     self.closeBtn:initialise()
     self.closeBtn:instantiate()
     self.closeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     self.closeBtn.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
-    self.closeBtn.backgroundColorMouseOver = { r = 0.6, g = 0.15, b = 0.15, a = 0.8 }
-    self.closeBtn.textColor = { r = 0.7, g = 0.7, b = 0.7, a = 1 }
+    self.closeBtn.backgroundColorMouseOver = { r = 0.65, g = 0.12, b = 0.12, a = 0.9 }
+    self.closeBtn.textColor = { r = 0.65, g = 0.63, b = 0.60, a = 1 }
     self:addChild(self.closeBtn)
 
-    self.adminBtn = ISButton:new(PAD, 8, 65, 22, "ADMIN", self, KitsUI.onToggleAdmin)
+    self.adminBtn = ISButton:new(PAD, 10, 60, 22, "ADMIN", self, KitsUI.onToggleAdmin)
     self.adminBtn:initialise()
     self.adminBtn:instantiate()
     self.adminBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    self.adminBtn.backgroundColor = { r = COLOR_ADMIN.r, g = COLOR_ADMIN.g, b = COLOR_ADMIN.b, a = 0.7 }
-    self.adminBtn.backgroundColorMouseOver = { r = COLOR_ADMIN.r, g = COLOR_ADMIN.g, b = COLOR_ADMIN.b, a = 1 }
-    self.adminBtn.textColor = COLOR_TEXT
+    self.adminBtn.backgroundColor = { r = C_ADMIN.r, g = C_ADMIN.g, b = C_ADMIN.b, a = 0.65 }
+    self.adminBtn.backgroundColorMouseOver = { r = C_ADMIN.r, g = C_ADMIN.g, b = C_ADMIN.b, a = 1 }
+    self.adminBtn.textColor = C_TEXT
     self.adminBtn:setVisible(false)
     self:addChild(self.adminBtn)
 
@@ -102,20 +110,20 @@ function KitsUI:createChildren()
 end
 
 function KitsUI:buildKitsPanel()
-    self.kitsPanel = ISPanel:new(0, HEADER_H + 2, PANEL_W, PANEL_H - HEADER_H - 2)
+    self.kitsPanel = ISPanel:new(0, HEADER_H, PANEL_W, PANEL_H - HEADER_H)
     self.kitsPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self:addChild(self.kitsPanel)
 
-    local yOff = CARD_PAD
+    local yOff = CARD_PAD + 2
     for i, kit in ipairs(KitsConfig.Kits) do
         local cardH = self:createKitCard(kit, yOff, i)
         yOff = yOff + cardH + CARD_PAD
     end
 
-    local totalH = HEADER_H + 2 + yOff + PAD
+    local totalH = HEADER_H + yOff + PAD
     if totalH > PANEL_H then
         self:setHeight(totalH)
-        self.kitsPanel:setHeight(totalH - HEADER_H - 2)
+        self.kitsPanel:setHeight(totalH - HEADER_H)
     end
 end
 
@@ -124,20 +132,19 @@ function KitsUI:createKitCard(kit, yOff, index)
     local cardW = PANEL_W - PAD * 2
 
     local itemCount = #kit.items
-    local iconsPerRow = math.floor((cardW - 24) / (ICON_SIZE + ICON_GAP))
-    local iconRows = math.ceil(itemCount / iconsPerRow)
-    local cardH = 44 + iconRows * (ICON_SIZE + ICON_GAP) + 8 + 36
+    local slotsPerRow = math.floor((cardW - 20) / (ICON_SIZE + ICON_GAP))
+    local iconRows = math.ceil(itemCount / slotsPerRow)
+    local cardH = 46 + iconRows * (ICON_SIZE + ICON_GAP + 2) + 40
 
     local card = ISPanel:new(cardX, yOff, cardW, cardH)
-    card.backgroundColor = COLOR_CARD
-    card.borderColor = COLOR_BORDER
+    card.backgroundColor = C_CARD
+    card.borderColor = C_BORDER
     self.kitsPanel:addChild(card)
     self.kitCards[kit.id] = card
-    self.kitCardHeights[kit.id] = cardH
 
     local nameLabel = ISLabel:new(
-        12, 10, 20, kit.name,
-        COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b, COLOR_ACCENT.a,
+        14, 8, 22, kit.name,
+        C_ACCENT.r, C_ACCENT.g, C_ACCENT.b, C_ACCENT.a,
         UIFont.Medium, true
     )
     card:addChild(nameLabel)
@@ -147,21 +154,20 @@ function KitsUI:createKitCard(kit, yOff, index)
     if kit.permission and kit.permission ~= "all" then
         permText = kit.permission:upper()
     end
-    local cdText = tostring(kit.cooldown) .. " min"
+    local infoText = tostring(kit.cooldown) .. "min"
     if permText ~= "" then
-        cdText = cdText .. "  |  " .. permText
+        infoText = infoText .. " | " .. permText
     end
-
-    local cdLabel = ISLabel:new(
-        12, 28, 14, cdText,
-        COLOR_TEXT_SEC.r, COLOR_TEXT_SEC.g, COLOR_TEXT_SEC.b, COLOR_TEXT_SEC.a,
+    local infoLabel = ISLabel:new(
+        14, 28, 14, infoText,
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a,
         UIFont.Small, true
     )
-    card:addChild(cdLabel)
+    card:addChild(infoLabel)
 
     local statusLabel = ISLabel:new(
-        cardW - 110, 10, 20, "LISTO",
-        COLOR_READY.r, COLOR_READY.g, COLOR_READY.b, COLOR_READY.a,
+        cardW - 100, 8, 22, "LISTO",
+        C_GREEN.r, C_GREEN.g, C_GREEN.b, C_GREEN.a,
         UIFont.Medium, true
     )
     card:addChild(statusLabel)
@@ -169,19 +175,17 @@ function KitsUI:createKitCard(kit, yOff, index)
 
     local itemData = {}
     for _, entry in ipairs(kit.items) do
-        local tex = getItemTexture(entry.type)
-        local displayName = getItemDisplayName(entry.type)
         table.insert(itemData, {
-            tex = tex,
-            name = displayName,
+            tex = getItemTexture(entry.type),
+            name = getItemDisplayName(entry.type),
             count = entry.count,
             type = entry.type,
         })
     end
     self.kitItemData[kit.id] = itemData
 
-    local btnW = 130
-    local btnH = 30
+    local btnW = 120
+    local btnH = 28
     local btn = ISButton:new(
         cardW - btnW - 10, cardH - btnH - 8, btnW, btnH,
         "RECLAMAR", self, KitsUI.onClaimKit
@@ -189,11 +193,10 @@ function KitsUI:createKitCard(kit, yOff, index)
     btn:initialise()
     btn:instantiate()
     btn.internal = kit.id
-    btn.backgroundColor = { r = COLOR_BTN.r, g = COLOR_BTN.g, b = COLOR_BTN.b, a = 1 }
-    btn.backgroundColorMouseOver = { r = COLOR_BTN_HOVER.r, g = COLOR_BTN_HOVER.g, b = COLOR_BTN_HOVER.b, a = 1 }
+    btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
+    btn.backgroundColorMouseOver = { r = C_BTN_HI.r, g = C_BTN_HI.g, b = C_BTN_HI.b, a = 1 }
     btn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
-    btn.font = UIFont.Medium
     card:addChild(btn)
     self.kitButtons[kit.id] = btn
 
@@ -201,8 +204,8 @@ function KitsUI:createKitCard(kit, yOff, index)
 end
 
 function KitsUI:buildAdminPanel()
-    local panelY = HEADER_H + 2
-    local panelH = self:getHeight() - HEADER_H - 2
+    local panelY = HEADER_H
+    local panelH = self:getHeight() - HEADER_H
     self.adminPanel = ISPanel:new(0, panelY, PANEL_W, panelH)
     self.adminPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self.adminPanel:setVisible(false)
@@ -210,67 +213,67 @@ function KitsUI:buildAdminPanel()
 
     local y = PAD
     local adminTitle = ISLabel:new(PAD, y, 22, "Gestion de Permisos",
-        COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b, COLOR_ACCENT.a, UIFont.Medium, true)
+        C_ACCENT.r, C_ACCENT.g, C_ACCENT.b, C_ACCENT.a, UIFont.Medium, true)
     self.adminPanel:addChild(adminTitle)
     y = y + 30
 
     local plLabel = ISLabel:new(PAD, y, 18, "Jugador:",
-        COLOR_TEXT.r, COLOR_TEXT.g, COLOR_TEXT.b, COLOR_TEXT.a, UIFont.Small, true)
+        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.adminPanel:addChild(plLabel)
-    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 200, 22)
+    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 180, 22)
     self.adminPlayerEntry:initialise()
     self.adminPlayerEntry:instantiate()
     self.adminPanel:addChild(self.adminPlayerEntry)
 
-    local listBtn = ISButton:new(PAD + 280, y - 2, 110, 22, "Ver Online", self, KitsUI.onAdminListPlayers)
+    local listBtn = ISButton:new(PAD + 260, y - 2, 100, 22, "Ver Online", self, KitsUI.onAdminListPlayers)
     listBtn:initialise()
     listBtn:instantiate()
-    listBtn.backgroundColor = COLOR_CARD
-    listBtn.borderColor = COLOR_BORDER
-    listBtn.textColor = COLOR_TEXT
+    listBtn.backgroundColor = C_CARD
+    listBtn.borderColor = C_BORDER
+    listBtn.textColor = C_TEXT
     self.adminPanel:addChild(listBtn)
     y = y + 32
 
     local grLabel = ISLabel:new(PAD, y, 18, "Grupo:",
-        COLOR_TEXT.r, COLOR_TEXT.g, COLOR_TEXT.b, COLOR_TEXT.a, UIFont.Small, true)
+        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.adminPanel:addChild(grLabel)
-    self.adminGroupEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 200, 22)
+    self.adminGroupEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 180, 22)
     self.adminGroupEntry:initialise()
     self.adminGroupEntry:instantiate()
     self.adminPanel:addChild(self.adminGroupEntry)
     y = y + 36
 
-    local btnW = 150
-    local btnH = 28
-    local btnGap = 8
+    local bw = 130
+    local bh = 26
+    local bg = 8
 
-    local addBtn = ISButton:new(PAD, y, btnW, btnH, "Dar Grupo", self, KitsUI.onAdminAddGroup)
+    local addBtn = ISButton:new(PAD, y, bw, bh, "Dar Grupo", self, KitsUI.onAdminAddGroup)
     addBtn:initialise()
     addBtn:instantiate()
     addBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
     addBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    addBtn.textColor = COLOR_TEXT
+    addBtn.textColor = C_TEXT
     self.adminPanel:addChild(addBtn)
 
-    local removeBtn = ISButton:new(PAD + btnW + btnGap, y, btnW, btnH, "Quitar Grupo", self, KitsUI.onAdminRemoveGroup)
+    local removeBtn = ISButton:new(PAD + bw + bg, y, bw, bh, "Quitar Grupo", self, KitsUI.onAdminRemoveGroup)
     removeBtn:initialise()
     removeBtn:instantiate()
     removeBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.9 }
     removeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    removeBtn.textColor = COLOR_TEXT
+    removeBtn.textColor = C_TEXT
     self.adminPanel:addChild(removeBtn)
 
-    local infoBtn = ISButton:new(PAD + (btnW + btnGap) * 2, y, btnW, btnH, "Ver Grupos", self, KitsUI.onAdminListGroups)
+    local infoBtn = ISButton:new(PAD + (bw + bg) * 2, y, bw, bh, "Ver Grupos", self, KitsUI.onAdminListGroups)
     infoBtn:initialise()
     infoBtn:instantiate()
-    infoBtn.backgroundColor = COLOR_CARD
-    infoBtn.borderColor = COLOR_BORDER
-    infoBtn.textColor = COLOR_TEXT
+    infoBtn.backgroundColor = C_CARD
+    infoBtn.borderColor = C_BORDER
+    infoBtn.textColor = C_TEXT
     self.adminPanel:addChild(infoBtn)
-    y = y + 40
+    y = y + 38
 
     local refLabel = ISLabel:new(PAD, y, 18, "Grupos disponibles:",
-        COLOR_TEXT_SEC.r, COLOR_TEXT_SEC.g, COLOR_TEXT_SEC.b, COLOR_TEXT_SEC.a, UIFont.Small, true)
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.adminPanel:addChild(refLabel)
     y = y + 20
 
@@ -287,7 +290,7 @@ function KitsUI:buildAdminPanel()
     end
     local groupsText = #groups > 0 and table.concat(groups, ", ") or "(solo 'all' y 'admin')"
     local groupsListLabel = ISLabel:new(PAD, y, 18, groupsText,
-        COLOR_TEXT.r, COLOR_TEXT.g, COLOR_TEXT.b, COLOR_TEXT.a, UIFont.Small, true)
+        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.adminPanel:addChild(groupsListLabel)
 end
 
@@ -303,30 +306,30 @@ function KitsUI:onToggleAdmin()
     self.kitsPanel:setVisible(not self.showingAdmin)
     self.adminPanel:setVisible(self.showingAdmin)
     if self.showingAdmin then
-        self.adminBtn.backgroundColor = { r = COLOR_ACCENT.r, g = COLOR_ACCENT.g, b = COLOR_ACCENT.b, a = 0.9 }
+        self.adminBtn.backgroundColor = { r = C_ACCENT.r, g = C_ACCENT.g, b = C_ACCENT.b, a = 0.9 }
     else
-        self.adminBtn.backgroundColor = { r = COLOR_ADMIN.r, g = COLOR_ADMIN.g, b = COLOR_ADMIN.b, a = 0.7 }
+        self.adminBtn.backgroundColor = { r = C_ADMIN.r, g = C_ADMIN.g, b = C_ADMIN.b, a = 0.65 }
     end
 end
 
 function KitsUI:onAdminAddGroup()
-    local playerName = self.adminPlayerEntry:getText()
-    local group = self.adminGroupEntry:getText()
-    if playerName == "" or group == "" then return end
-    KitsClient.AdminAddGroup(playerName, group)
+    local pn = self.adminPlayerEntry:getText()
+    local gr = self.adminGroupEntry:getText()
+    if pn == "" or gr == "" then return end
+    KitsClient.AdminAddGroup(pn, gr)
 end
 
 function KitsUI:onAdminRemoveGroup()
-    local playerName = self.adminPlayerEntry:getText()
-    local group = self.adminGroupEntry:getText()
-    if playerName == "" or group == "" then return end
-    KitsClient.AdminRemoveGroup(playerName, group)
+    local pn = self.adminPlayerEntry:getText()
+    local gr = self.adminGroupEntry:getText()
+    if pn == "" or gr == "" then return end
+    KitsClient.AdminRemoveGroup(pn, gr)
 end
 
 function KitsUI:onAdminListGroups()
-    local playerName = self.adminPlayerEntry:getText()
-    if playerName == "" then return end
-    KitsClient.AdminListGroups(playerName)
+    local pn = self.adminPlayerEntry:getText()
+    if pn == "" then return end
+    KitsClient.AdminListGroups(pn)
 end
 
 function KitsUI:onAdminListPlayers()
@@ -346,34 +349,33 @@ function KitsUI:updateCooldowns()
         local card = self.kitCards[kit.id]
         local nameLabel = self.kitNameLabels[kit.id]
         if label and btn then
-            local hasPermission = KitsClient.HasPermission(kit.id)
-
-            if not hasPermission then
+            local hasPerm = KitsClient.HasPermission(kit.id)
+            if not hasPerm then
                 label.name = "BLOQUEADO"
-                label:setColor(COLOR_LOCKED.r, COLOR_LOCKED.g, COLOR_LOCKED.b, COLOR_LOCKED.a)
+                label:setColor(C_RED_DK.r, C_RED_DK.g, C_RED_DK.b, C_RED_DK.a)
                 btn:setEnable(false)
-                btn.backgroundColor = { r = COLOR_BTN_DIS.r, g = COLOR_BTN_DIS.g, b = COLOR_BTN_DIS.b, a = 1 }
-                btn.textColor = { r = 0.45, g = 0.45, b = 0.48, a = 1 }
-                if card then card.backgroundColor = COLOR_CARD_LOCK end
-                if nameLabel then nameLabel:setColor(COLOR_ACCENT_DIM.r, COLOR_ACCENT_DIM.g, COLOR_ACCENT_DIM.b, COLOR_ACCENT_DIM.a) end
+                btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
+                btn.textColor = { r = 0.40, g = 0.40, b = 0.42, a = 1 }
+                if card then card.backgroundColor = C_CARD_LOCK end
+                if nameLabel then nameLabel:setColor(C_ACCENT_DK.r, C_ACCENT_DK.g, C_ACCENT_DK.b, C_ACCENT_DK.a) end
             else
-                if card then card.backgroundColor = COLOR_CARD end
-                if nameLabel then nameLabel:setColor(COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b, COLOR_ACCENT.a) end
+                if card then card.backgroundColor = C_CARD end
+                if nameLabel then nameLabel:setColor(C_ACCENT.r, C_ACCENT.g, C_ACCENT.b, C_ACCENT.a) end
                 local remainMs = KitsClient.Cooldowns[kit.id] or 0
                 if remainMs > 0 then
                     local secs = math.ceil(remainMs / 1000)
                     local mins = math.floor(secs / 60)
                     local s = secs % 60
                     label.name = string.format("%02d:%02d", mins, s)
-                    label:setColor(COLOR_COOLDOWN.r, COLOR_COOLDOWN.g, COLOR_COOLDOWN.b, COLOR_COOLDOWN.a)
+                    label:setColor(C_RED.r, C_RED.g, C_RED.b, C_RED.a)
                     btn:setEnable(false)
-                    btn.backgroundColor = { r = COLOR_BTN_DIS.r, g = COLOR_BTN_DIS.g, b = COLOR_BTN_DIS.b, a = 1 }
-                    btn.textColor = { r = 0.45, g = 0.45, b = 0.48, a = 1 }
+                    btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
+                    btn.textColor = { r = 0.40, g = 0.40, b = 0.42, a = 1 }
                 else
                     label.name = "LISTO"
-                    label:setColor(COLOR_READY.r, COLOR_READY.g, COLOR_READY.b, COLOR_READY.a)
+                    label:setColor(C_GREEN.r, C_GREEN.g, C_GREEN.b, C_GREEN.a)
                     btn:setEnable(true)
-                    btn.backgroundColor = { r = COLOR_BTN.r, g = COLOR_BTN.g, b = COLOR_BTN.b, a = 1 }
+                    btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
                     btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
                 end
             end
@@ -399,16 +401,16 @@ end
 
 function KitsUI:prerender()
     ISPanel.prerender(self)
-    self:drawRect(0, 0, PANEL_W, HEADER_H, 1, COLOR_HEADER.r, COLOR_HEADER.g, COLOR_HEADER.b)
-    self:drawRect(0, HEADER_H - 2, PANEL_W, 2, 1, COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b)
-    local titleW = getTextManager():MeasureStringX(UIFont.Medium, "KITS")
-    local titleX = (PANEL_W - titleW) / 2
-    self:drawText("KITS", titleX, 10, COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b, 1, UIFont.Medium)
+    self:drawRect(0, 0, PANEL_W, HEADER_H, 1, C_HEADER.r, C_HEADER.g, C_HEADER.b)
+    self:drawRect(0, HEADER_H - 3, PANEL_W, 3, 1, C_ACCENT.r, C_ACCENT.g, C_ACCENT.b)
+    self:drawRect(0, HEADER_H, PANEL_W, 1, 0.15, 0, 0, 0)
+    local title = "KITS"
+    local tw = getTextManager():MeasureStringX(UIFont.Medium, title)
+    self:drawText(title, (PANEL_W - tw) / 2, 11, C_ACCENT.r, C_ACCENT.g, C_ACCENT.b, 1, UIFont.Medium)
 end
 
 function KitsUI:render()
     ISPanel.render(self)
-
     if self.showingAdmin then return end
 
     for _, kit in ipairs(KitsConfig.Kits) do
@@ -416,57 +418,70 @@ function KitsUI:render()
         local items = self.kitItemData[kit.id]
         if card and items and card:isVisible() then
             local cx = card:getX()
-            local cy = card:getY() + HEADER_H + 2
+            local cy = card:getY() + HEADER_H
 
-            local sepY = cy + 42
-            self:drawRect(cx + 10, sepY, card:getWidth() - 20, 1,
-                0.5, COLOR_SEPARATOR.r, COLOR_SEPARATOR.g, COLOR_SEPARATOR.b)
+            local sepY = cy + 44
+            self:drawRect(cx + 12, sepY, card:getWidth() - 24, 1,
+                0.4, C_SEP.r, C_SEP.g, C_SEP.b)
 
-            local iconStartY = sepY + 6
-            local iconStartX = cx + 12
-            local maxIconsPerRow = math.floor((card:getWidth() - 24) / (ICON_SIZE + ICON_GAP))
+            local slotY = sepY + 6
+            local slotX = cx + 10
+            local slotsPerRow = math.floor((card:getWidth() - 20) / (ICON_SIZE + ICON_GAP))
             local col = 0
             local row = 0
 
-            for idx, item in ipairs(items) do
-                local ix = iconStartX + col * (ICON_SIZE + ICON_GAP)
-                local iy = iconStartY + row * (ICON_SIZE + ICON_GAP)
+            for _, item in ipairs(items) do
+                local ix = slotX + col * (ICON_SIZE + ICON_GAP)
+                local iy = slotY + row * (ICON_SIZE + ICON_GAP + 2)
 
                 self:drawRect(ix, iy, ICON_SIZE, ICON_SIZE,
-                    1, COLOR_ICON_BG.r, COLOR_ICON_BG.g, COLOR_ICON_BG.b)
+                    1, C_SLOT.r, C_SLOT.g, C_SLOT.b)
                 self:drawRectBorder(ix, iy, ICON_SIZE, ICON_SIZE,
-                    0.3, COLOR_BORDER.r, COLOR_BORDER.g, COLOR_BORDER.b)
+                    C_SLOT_BD.a, C_SLOT_BD.r, C_SLOT_BD.g, C_SLOT_BD.b)
 
                 if item.tex then
-                    self:drawTextureScaled(item.tex, ix + 2, iy + 2, ICON_SIZE - 4, ICON_SIZE - 4, 1, 1, 1, 1)
+                    self:drawTextureScaled(item.tex, ix + 2, iy + 2,
+                        ICON_SIZE - 4, ICON_SIZE - 4, 1, 1, 1, 1)
+                else
+                    local ch = item.name:sub(1, 1)
+                    local chw = getTextManager():MeasureStringX(UIFont.Small, ch)
+                    self:drawText(ch, ix + (ICON_SIZE - chw) / 2, iy + 12,
+                        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.7, UIFont.Small)
                 end
 
                 if item.count > 1 then
-                    local countStr = tostring(item.count)
-                    local tw = getTextManager():MeasureStringX(UIFont.Small, countStr)
-                    local tx = ix + ICON_SIZE - tw - 2
-                    local ty = iy + ICON_SIZE - 14
-                    self:drawRect(tx - 2, ty, tw + 4, 14, 0.75, 0, 0, 0)
-                    self:drawText(countStr, tx, ty, 1, 1, 1, 0.95, UIFont.Small)
+                    local cs = tostring(item.count)
+                    local cw = getTextManager():MeasureStringX(UIFont.Small, cs)
+                    local cx2 = ix + ICON_SIZE - cw - 1
+                    local cy2 = iy + ICON_SIZE - 13
+                    self:drawRect(cx2 - 2, cy2 - 1, cw + 4, 14, 0.80, 0, 0, 0)
+                    self:drawText(cs, cx2, cy2,
+                        C_ACCENT.r, C_ACCENT.g, C_ACCENT.b, 1, UIFont.Small)
                 end
 
                 local mx = self:getMouseX()
                 local my = self:getMouseY()
                 if mx >= ix and mx <= ix + ICON_SIZE and my >= iy and my <= iy + ICON_SIZE then
-                    local tooltip = item.name
+                    local tt = item.name
                     if item.count > 1 then
-                        tooltip = item.name .. " x" .. tostring(item.count)
+                        tt = item.name .. " x" .. tostring(item.count)
                     end
-                    local ttw = getTextManager():MeasureStringX(UIFont.Small, tooltip) + 10
+                    local ttw = getTextManager():MeasureStringX(UIFont.Small, tt)
                     local ttx = ix
-                    local tty = iy - 18
-                    self:drawRect(ttx - 2, tty - 2, ttw + 4, 18, 0.9, 0.05, 0.05, 0.07)
-                    self:drawRectBorder(ttx - 2, tty - 2, ttw + 4, 18, 0.6, COLOR_ACCENT.r, COLOR_ACCENT.g, COLOR_ACCENT.b)
-                    self:drawText(tooltip, ttx + 3, tty, COLOR_TEXT.r, COLOR_TEXT.g, COLOR_TEXT.b, 1, UIFont.Small)
+                    local tty = iy - 20
+                    if ttx + ttw + 12 > self:getWidth() then
+                        ttx = self:getWidth() - ttw - 14
+                    end
+                    self:drawRect(ttx - 4, tty - 2, ttw + 8, 18,
+                        0.95, 0.08, 0.08, 0.10)
+                    self:drawRectBorder(ttx - 4, tty - 2, ttw + 8, 18,
+                        0.7, C_ACCENT.r, C_ACCENT.g, C_ACCENT.b)
+                    self:drawText(tt, ttx, tty,
+                        C_TEXT.r, C_TEXT.g, C_TEXT.b, 1, UIFont.Small)
                 end
 
                 col = col + 1
-                if col >= maxIconsPerRow then
+                if col >= slotsPerRow then
                     col = 0
                     row = row + 1
                 end
@@ -480,17 +495,12 @@ function KitsUI.Toggle()
         KitsUI.instance:onClose()
         return
     end
-
     local sw = getCore():getScreenWidth()
     local sh = getCore():getScreenHeight()
-    local x = (sw - PANEL_W) / 2
-    local y = (sh - PANEL_H) / 2
-
-    local ui = KitsUI:new(x, y)
+    local ui = KitsUI:new((sw - PANEL_W) / 2, (sh - PANEL_H) / 2)
     ui:initialise()
     ui:addToUIManager()
     ui:setVisible(true)
     KitsUI.instance = ui
-
     KitsClient.RequestCooldowns()
 end
