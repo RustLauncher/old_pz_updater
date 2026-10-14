@@ -11,28 +11,24 @@ local function getPlayerCooldowns(player)
     return modData.KitsCooldowns
 end
 
-local function getRealTimeMs()
-    return Calendar.getInstance():getTimeInMillis()
-end
-
 local function getCooldownRemaining(player, kitId, cooldownMinutes)
     local cooldowns = getPlayerCooldowns(player)
     local lastUsed = cooldowns[kitId]
     if not lastUsed then
         return 0
     end
-    local now = getRealTimeMs()
-    local cooldownMs = cooldownMinutes * 60 * 1000
+    local now = os.time()
+    local cooldownSecs = cooldownMinutes * 60
     local elapsed = now - lastUsed
-    if elapsed >= cooldownMs then
+    if elapsed >= cooldownSecs then
         return 0
     end
-    return cooldownMs - elapsed
+    return (cooldownSecs - elapsed) * 1000
 end
 
 local function setCooldown(player, kitId)
     local cooldowns = getPlayerCooldowns(player)
-    cooldowns[kitId] = getRealTimeMs()
+    cooldowns[kitId] = os.time()
 end
 
 local function giveKit(player, kit)
