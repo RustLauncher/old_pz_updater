@@ -177,7 +177,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     if slotsPerRow < 1 then slotsPerRow = 1 end
     local iconRows = math.ceil(itemCount / slotsPerRow)
 
-    local titleRow = 38
+    local titleRow = 44
     local itemSection = iconRows * (ICON_SIZE + ICON_GAP) + 2
     local btnRow = BTN_H + 8
     local cardH = titleRow + itemSection + btnRow
@@ -200,7 +200,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     end
 
     local nameLabel = ISLabel:new(
-        ACCENT_BAR_W + 10, 5, 18, kit.name,
+        ACCENT_BAR_W + 10, 3, 18, kit.name,
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a,
         UIFont.Medium, true
     )
@@ -208,7 +208,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     self.kitNameLabels[kit.id] = nameLabel
 
     local subLabel = ISLabel:new(
-        ACCENT_BAR_W + 10, 20, 12, subText,
+        ACCENT_BAR_W + 10, 25, 12, subText,
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a,
         UIFont.Small, true
     )
@@ -495,7 +495,7 @@ function KitsUI:render()
                     txColor.r, txColor.g, txColor.b, txColor.a, UIFont.Small)
             end
 
-            local sepY2 = cy + 37
+            local sepY2 = cy + 43
             self:drawRect(cx + ACCENT_BAR_W + 8, sepY2, cw - ACCENT_BAR_W - 16, 1,
                 0.12, kc.r, kc.g, kc.b)
 
@@ -508,7 +508,7 @@ function KitsUI:render()
                 totalSlotsW = slotsPerRow * (ICON_SIZE + ICON_GAP) - ICON_GAP
             end
             local startX = cx + ACCENT_BAR_W + 8
-            local slotY = cy + 40
+            local slotY = cy + 46
             local col = 0
             local row = 0
 

@@ -16,6 +16,10 @@ KitsPermissions = KitsPermissions or {}
 
 local MODDATA_KEY = "KitsPlayerGroups"
 
+local GROUP_HIERARCHY = {
+    ultimate = { "vip" },
+}
+
 local function getGroupsData()
     local data = ModData.getOrCreate(MODDATA_KEY)
     return data
@@ -84,7 +88,19 @@ function KitsPermissions.CanUseKit(player, kit)
     if perm == "admin" then
         return false
     end
-    return KitsPermissions.HasGroup(player, perm)
+    if KitsPermissions.HasGroup(player, perm) then
+        return true
+    end
+    local groups = KitsPermissions.GetPlayerGroups(player)
+    for _, g in ipairs(groups) do
+        local includes = GROUP_HIERARCHY[g]
+        if includes then
+            for _, inc in ipairs(includes) do
+                if inc == perm then return true end
+            end
+        end
+    end
+    return false
 end
 
 function KitsPermissions.GetPlayerPermissionsMap(player)
@@ -96,7 +112,21 @@ function KitsPermissions.GetPlayerPermissionsMap(player)
         elseif kit.permission == "admin" then
             result[kit.id] = false
         else
-            result[kit.id] = KitsPermissions.HasGroup(player, kit.permission)
+            if KitsPermissions.HasGroup(player, kit.permission) then
+                result[kit.id] = true
+            else
+                local granted = false
+                local groups = KitsPermissions.GetPlayerGroups(player)
+                for _, g in ipairs(groups) do
+                    local includes = GROUP_HIERARCHY[g]
+                    if includes then
+                        for _, inc in ipairs(includes) do
+                            if inc == kit.permission then granted = true end
+                        end
+                    end
+                end
+                result[kit.id] = granted
+            end
         end
     end
     return result
