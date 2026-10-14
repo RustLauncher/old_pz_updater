@@ -14,14 +14,25 @@ local ROLE_LEVEL = {
     banned    = 0,
 }
 
+local function getPlayerRoleName(player)
+    local role = player:getRole()
+    if role then
+        local name = role:getName()
+        if name and name ~= "" then
+            return name:lower()
+        end
+    end
+    return "user"
+end
+
 local function getRoleLevel(roleName)
     if not roleName or roleName == "" then return 10 end
     return ROLE_LEVEL[roleName:lower()] or 10
 end
 
 function KitsPermissions.IsAdmin(player)
-    local level = player:getAccessLevel()
-    return level == "admin" or level == "moderator"
+    local roleName = getPlayerRoleName(player)
+    return roleName == "admin" or roleName == "moderator"
 end
 
 function KitsPermissions.CanUseKit(player, kit)
@@ -29,16 +40,16 @@ function KitsPermissions.CanUseKit(player, kit)
     if perm == "all" then
         return true
     end
-    local playerRole = player:getAccessLevel()
-    local playerLevel = getRoleLevel(playerRole)
+    local roleName = getPlayerRoleName(player)
+    local playerLevel = getRoleLevel(roleName)
     local requiredLevel = ROLE_LEVEL[perm] or 0
     return playerLevel >= requiredLevel
 end
 
 function KitsPermissions.GetPlayerPermissionsMap(player)
     local result = {}
-    local playerRole = player:getAccessLevel()
-    local playerLevel = getRoleLevel(playerRole)
+    local roleName = getPlayerRoleName(player)
+    local playerLevel = getRoleLevel(roleName)
     for _, kit in ipairs(KitsConfig.Kits) do
         local perm = kit.permission or "all"
         if perm == "all" then

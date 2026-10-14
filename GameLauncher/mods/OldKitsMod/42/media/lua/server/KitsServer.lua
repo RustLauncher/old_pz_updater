@@ -40,14 +40,14 @@ local function giveKit(player, kit)
     local given = {}
     for _, entry in ipairs(kit.items) do
         for i = 1, entry.count do
-            local item = InventoryItemFactory.CreateItem(entry.type)
+            local item = inv:AddItem(entry.type)
             if item then
-                inv:AddItem(item)
                 table.insert(given, entry.type)
             end
         end
     end
     inv:setDrawDirty(true)
+    player:getInventory():setDrawDirty(true)
     return given
 end
 
