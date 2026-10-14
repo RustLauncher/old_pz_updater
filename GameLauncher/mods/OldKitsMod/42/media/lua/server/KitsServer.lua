@@ -3,6 +3,8 @@ require "KitsPermissions"
 
 KitsServer = KitsServer or {}
 
+local KITS_OVERRIDES_KEY = "KitsOverrides"
+
 local function getPlayerCooldowns(player)
     local modData = player:getModData()
     if not modData.KitsCooldowns then
@@ -72,6 +74,63 @@ local function sendTempRolesList(player)
     sendServerCommand(player, "Kits", "tempRolesList", { roles = roles })
 end
 
+local function loadKitOverrides()
+    local data = ModData.getOrCreate(KITS_OVERRIDES_KEY)
+    for _, defKit in ipairs(KitsConfig.DefaultKits) do
+        local ov = data[defKit.id]
+        if ov then
+            local kit = KitsConfig.GetKitById(defKit.id)
+            if kit then
+                if ov.name and ov.name ~= "" then kit.name = ov.name end
+                if ov.cooldown then kit.cooldown = tonumber(ov.cooldown) or kit.cooldown end
+                if ov.permission and ov.permission ~= "" then kit.permission = ov.permission end
+                if ov.icon and ov.icon ~= "" then kit.icon = ov.icon end
+                if ov.items and ov.items ~= "" then
+                    kit.items = KitsConfig.DeserializeItems(ov.items)
+                end
+            end
+        end
+    end
+end
+
+local function saveKitOverride(kitId)
+    local data = ModData.getOrCreate(KITS_OVERRIDES_KEY)
+    local kit = KitsConfig.GetKitById(kitId)
+    if not kit then return end
+    data[kitId] = {
+        name = kit.name,
+        cooldown = tostring(kit.cooldown),
+        permission = kit.permission,
+        icon = kit.icon,
+        items = KitsConfig.SerializeItems(kit.items),
+    }
+    ModData.transmit(KITS_OVERRIDES_KEY)
+end
+
+local function sendKitsToPlayer(player)
+    local kitsList = {}
+    for _, kit in ipairs(KitsConfig.Kits) do
+        table.insert(kitsList, {
+            id = kit.id,
+            name = kit.name,
+            icon = kit.icon,
+            cooldown = tostring(kit.cooldown),
+            permission = kit.permission,
+            items = KitsConfig.SerializeItems(kit.items),
+        })
+    end
+    sendServerCommand(player, "Kits", "kitsList", { kits = kitsList })
+end
+
+local function broadcastKitsUpdate()
+    local players = getOnlinePlayers()
+    for i = 0, players:size() - 1 do
+        local p = players:get(i)
+        sendKitsToPlayer(p)
+        sendPermissions(p)
+    end
+end
+
 local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
@@ -108,6 +167,7 @@ local function onClientCommand(module, command, player, args)
     elseif command == "requestCooldowns" then
         sendAllCooldowns(player)
         sendPermissions(player)
+        sendKitsToPlayer(player)
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
@@ -177,7 +237,45 @@ local function onClientCommand(module, command, player, args)
             table.insert(names, players:get(i):getUsername())
         end
         sendServerCommand(player, "Kits", "onlineList", { players = names })
+
+    elseif command == "adminGetKits" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        sendKitsToPlayer(player)
+
+    elseif command == "adminSaveKit" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        local kitId = args.kitId
+        local kit = KitsConfig.GetKitById(kitId)
+        if not kit then
+            sendMsg(player, "Kit '" .. tostring(kitId) .. "' no encontrado.")
+            return
+        end
+        if args.name and args.name ~= "" then kit.name = args.name end
+        if args.cooldown then
+            local cd = tonumber(args.cooldown)
+            if cd and cd > 0 then kit.cooldown = cd end
+        end
+        if args.permission and args.permission ~= "" then kit.permission = args.permission end
+        if args.icon and args.icon ~= "" then kit.icon = args.icon end
+        if args.items then
+            kit.items = KitsConfig.DeserializeItems(args.items)
+        end
+        saveKitOverride(kitId)
+        broadcastKitsUpdate()
+        sendMsg(player, "Kit '" .. kit.name .. "' guardado.")
     end
 end
 
 Events.OnClientCommand.Add(onClientCommand)
+
+local function onServerStarted()
+    loadKitOverrides()
+end
+
+Events.OnServerStarted.Add(onServerStarted)

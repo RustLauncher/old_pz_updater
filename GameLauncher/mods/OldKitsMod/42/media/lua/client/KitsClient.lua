@@ -46,6 +46,21 @@ function KitsClient.AdminListOnline()
     sendClientCommand("Kits", "adminListOnline", {})
 end
 
+function KitsClient.AdminGetKits()
+    sendClientCommand("Kits", "adminGetKits", {})
+end
+
+function KitsClient.AdminSaveKit(kitId, name, icon, cooldown, permission, itemsStr)
+    sendClientCommand("Kits", "adminSaveKit", {
+        kitId = kitId,
+        name = name,
+        icon = icon,
+        cooldown = tostring(cooldown),
+        permission = permission,
+        items = itemsStr,
+    })
+end
+
 local function refreshInventoryUI()
     local player = getPlayer()
     if not player then return end
@@ -107,6 +122,23 @@ local function onServerCommand(module, command, args)
         KitsClient.OnlinePlayers = args.players or {}
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateOnlineList()
+        end
+
+    elseif command == "kitsList" then
+        local kits = args.kits or {}
+        KitsConfig.Kits = {}
+        for _, kd in ipairs(kits) do
+            table.insert(KitsConfig.Kits, {
+                id = kd.id,
+                name = kd.name,
+                icon = kd.icon,
+                cooldown = tonumber(kd.cooldown) or 360,
+                permission = kd.permission or "all",
+                items = KitsConfig.DeserializeItems(kd.items),
+            })
+        end
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:rebuildKitsPanel()
         end
 
     elseif command == "error" then

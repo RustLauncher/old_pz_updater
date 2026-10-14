@@ -1,6 +1,6 @@
 KitsConfig = KitsConfig or {}
 
-KitsConfig.Kits = {
+KitsConfig.DefaultKits = {
     {
         id         = "basic",
         name       = "Supervivencia",
@@ -108,6 +108,27 @@ KitsConfig.Kits = {
     },
 }
 
+local function deepCopyKits(src)
+    local result = {}
+    for _, kit in ipairs(src) do
+        local copy = {
+            id = kit.id,
+            name = kit.name,
+            icon = kit.icon,
+            cooldown = kit.cooldown,
+            permission = kit.permission,
+            items = {},
+        }
+        for _, item in ipairs(kit.items) do
+            table.insert(copy.items, { type = item.type, count = item.count })
+        end
+        table.insert(result, copy)
+    end
+    return result
+end
+
+KitsConfig.Kits = deepCopyKits(KitsConfig.DefaultKits)
+
 function KitsConfig.GetKitById(kitId)
     for _, kit in ipairs(KitsConfig.Kits) do
         if kit.id == kitId then
@@ -115,4 +136,24 @@ function KitsConfig.GetKitById(kitId)
         end
     end
     return nil
+end
+
+function KitsConfig.SerializeItems(items)
+    local parts = {}
+    for _, item in ipairs(items) do
+        table.insert(parts, item.type .. ":" .. tostring(item.count))
+    end
+    return table.concat(parts, ",")
+end
+
+function KitsConfig.DeserializeItems(str)
+    if not str or str == "" then return {} end
+    local items = {}
+    for part in str:gmatch("[^,]+") do
+        local t, c = part:match("^(.+):(%d+)$")
+        if t and c then
+            table.insert(items, { type = t, count = tonumber(c) })
+        end
+    end
+    return items
 end

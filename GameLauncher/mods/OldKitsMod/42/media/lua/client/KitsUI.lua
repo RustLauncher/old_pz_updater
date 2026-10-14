@@ -118,6 +118,12 @@ function KitsUI:new(x, y)
     o.kitItemData = {}
     o.kitStatus = {}
     o.showingAdmin = false
+    o.adminActiveTab = "roles"
+    o.editingKitId = nil
+    o.editKitItems = {}
+    o.editItemWidgets = {}
+    o.kitSelectorBtns = {}
+    o.editPermission = "all"
     return o
 end
 
@@ -250,10 +256,39 @@ function KitsUI:buildAdminPanel()
     self.adminPanel:setVisible(false)
     self:addChild(self.adminPanel)
 
+    local tabW = 65
+    local tabY = 4
+    self.adminTabRolesBtn = ISButton:new(PAD, tabY, tabW, 20, "ROLES", self, KitsUI.onAdminTabRoles)
+    self.adminTabRolesBtn:initialise()
+    self.adminTabRolesBtn:instantiate()
+    self.adminTabRolesBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
+    self.adminTabRolesBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.adminTabRolesBtn.textColor = C_TEXT
+    self.adminPanel:addChild(self.adminTabRolesBtn)
+
+    self.adminTabKitsBtn = ISButton:new(PAD + tabW + 4, tabY, tabW, 20, "KITS", self, KitsUI.onAdminTabKits)
+    self.adminTabKitsBtn:initialise()
+    self.adminTabKitsBtn:instantiate()
+    self.adminTabKitsBtn.backgroundColor = C_CARD
+    self.adminTabKitsBtn.borderColor = C_BORDER
+    self.adminTabKitsBtn.textColor = C_TEXT
+    self.adminPanel:addChild(self.adminTabKitsBtn)
+
+    self.adminActiveTab = "roles"
+    self:buildRolesSubPanel()
+    self:buildKitEditorPanel()
+end
+
+function KitsUI:buildRolesSubPanel()
+    local subY = 28
+    self.rolesSubPanel = ISPanel:new(0, subY, PANEL_W, self.adminPanel:getHeight() - subY)
+    self.rolesSubPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.adminPanel:addChild(self.rolesSubPanel)
+
     local y = PAD
     local adminTitle = ISLabel:new(PAD, y, 22, "Roles Temporales",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Medium, true)
-    self.adminPanel:addChild(adminTitle)
+    self.rolesSubPanel:addChild(adminTitle)
 
     local onlineBtn = ISButton:new(PANEL_W - 110, y, 90, 20, "Ver Online", self, KitsUI.onAdminListOnline)
     onlineBtn:initialise()
@@ -261,21 +296,21 @@ function KitsUI:buildAdminPanel()
     onlineBtn.backgroundColor = C_CARD
     onlineBtn.borderColor = C_BORDER
     onlineBtn.textColor = C_TEXT
-    self.adminPanel:addChild(onlineBtn)
+    self.rolesSubPanel:addChild(onlineBtn)
     y = y + 28
 
     local plLabel = ISLabel:new(PAD, y + 2, 18, "Jugador:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(plLabel)
+    self.rolesSubPanel:addChild(plLabel)
     self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 60, y, 200, 20)
     self.adminPlayerEntry:initialise()
     self.adminPlayerEntry:instantiate()
-    self.adminPanel:addChild(self.adminPlayerEntry)
+    self.rolesSubPanel:addChild(self.adminPlayerEntry)
     y = y + 26
 
     local rolLabel = ISLabel:new(PAD, y + 2, 18, "Rol:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(rolLabel)
+    self.rolesSubPanel:addChild(rolLabel)
 
     local rolBtnW = 80
     local rolBtnGap = 4
@@ -288,7 +323,7 @@ function KitsUI:buildAdminPanel()
     self.roleBtnVip.backgroundColor = { r = 0.20, g = 0.55, b = 0.20, a = 0.9 }
     self.roleBtnVip.borderColor = { r = 0.40, g = 0.80, b = 0.40, a = 0.8 }
     self.roleBtnVip.textColor = C_TEXT
-    self.adminPanel:addChild(self.roleBtnVip)
+    self.rolesSubPanel:addChild(self.roleBtnVip)
 
     self.roleBtnUlt = ISButton:new(rolX + rolBtnW + rolBtnGap, y, rolBtnW, 20, "ULTIMATE", self, KitsUI.onSelectRoleUlt)
     self.roleBtnUlt:initialise()
@@ -296,16 +331,16 @@ function KitsUI:buildAdminPanel()
     self.roleBtnUlt.backgroundColor = C_CARD
     self.roleBtnUlt.borderColor = C_BORDER
     self.roleBtnUlt.textColor = C_TEXT
-    self.adminPanel:addChild(self.roleBtnUlt)
+    self.rolesSubPanel:addChild(self.roleBtnUlt)
     y = y + 26
 
     local dayLabel = ISLabel:new(PAD, y + 2, 18, "Dias:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(dayLabel)
+    self.rolesSubPanel:addChild(dayLabel)
     self.adminDaysEntry = ISTextEntryBox:new("30", PAD + 60, y, 60, 20)
     self.adminDaysEntry:initialise()
     self.adminDaysEntry:instantiate()
-    self.adminPanel:addChild(self.adminDaysEntry)
+    self.rolesSubPanel:addChild(self.adminDaysEntry)
     y = y + 30
 
     local bw = 120
@@ -316,7 +351,7 @@ function KitsUI:buildAdminPanel()
     giveBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
     giveBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     giveBtn.textColor = C_TEXT
-    self.adminPanel:addChild(giveBtn)
+    self.rolesSubPanel:addChild(giveBtn)
 
     local removeBtn = ISButton:new(PAD + bw + bg, y, bw, BTN_H, "QUITAR ROL", self, KitsUI.onAdminRemoveRole)
     removeBtn:initialise()
@@ -324,7 +359,7 @@ function KitsUI:buildAdminPanel()
     removeBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.9 }
     removeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     removeBtn.textColor = C_TEXT
-    self.adminPanel:addChild(removeBtn)
+    self.rolesSubPanel:addChild(removeBtn)
 
     local refreshBtn = ISButton:new(PAD + (bw + bg) * 2, y, 80, BTN_H, "REFRESCAR", self, KitsUI.onAdminRefresh)
     refreshBtn:initialise()
@@ -332,19 +367,283 @@ function KitsUI:buildAdminPanel()
     refreshBtn.backgroundColor = C_CARD
     refreshBtn.borderColor = C_BORDER
     refreshBtn.textColor = C_TEXT
-    self.adminPanel:addChild(refreshBtn)
+    self.rolesSubPanel:addChild(refreshBtn)
     y = y + 34
 
-    local sepY = y
     y = y + 6
 
     local listTitle = ISLabel:new(PAD, y, 18, "Roles activos:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
-    self.adminPanel:addChild(listTitle)
+    self.rolesSubPanel:addChild(listTitle)
     y = y + 20
 
     self.tempRolesListY = y
     self.tempRolesLabels = {}
+end
+
+function KitsUI:buildKitEditorPanel()
+    local subY = 28
+    self.kitsEditorPanel = ISPanel:new(0, subY, PANEL_W, self.adminPanel:getHeight() - subY)
+    self.kitsEditorPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.kitsEditorPanel:setVisible(false)
+    self.adminPanel:addChild(self.kitsEditorPanel)
+
+    local y = 4
+    local selBtnW = 60
+    local selBtnGap = 1
+    local bx = PAD
+    self.kitSelectorBtns = {}
+    local kitsPerRow = 4
+    for i, kit in ipairs(KitsConfig.Kits) do
+        if i == kitsPerRow + 1 then
+            y = y + 22
+            bx = PAD
+        end
+        local label = kit.id:upper()
+        if #label > 7 then label = label:sub(1, 7) end
+        local btn = ISButton:new(bx, y, selBtnW, 20, label, self, KitsUI.onSelectKitForEdit)
+        btn:initialise()
+        btn:instantiate()
+        btn.internal = kit.id
+        btn.backgroundColor = C_CARD
+        btn.borderColor = C_BORDER
+        btn.textColor = C_TEXT
+        self.kitsEditorPanel:addChild(btn)
+        self.kitSelectorBtns[kit.id] = btn
+        bx = bx + selBtnW + selBtnGap
+    end
+    y = y + 26
+
+    local lblW = 60
+    local entryW = PANEL_W - PAD * 2 - lblW - 4
+
+    local nameLabel = ISLabel:new(PAD, y + 2, 18, "Nombre:",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.kitsEditorPanel:addChild(nameLabel)
+    self.editNameEntry = ISTextEntryBox:new("", PAD + lblW, y, entryW, 20)
+    self.editNameEntry:initialise()
+    self.editNameEntry:instantiate()
+    self.kitsEditorPanel:addChild(self.editNameEntry)
+    y = y + 24
+
+    local cdLabel = ISLabel:new(PAD, y + 2, 18, "CD(min):",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.kitsEditorPanel:addChild(cdLabel)
+    self.editCooldownEntry = ISTextEntryBox:new("", PAD + lblW, y, 70, 20)
+    self.editCooldownEntry:initialise()
+    self.editCooldownEntry:instantiate()
+    self.kitsEditorPanel:addChild(self.editCooldownEntry)
+
+    local permX = PAD + lblW + 78
+    local permBtnW = 50
+    local permGap = 2
+
+    self.editPermBtns = {}
+
+    local permAll = ISButton:new(permX, y, permBtnW, 20, "ALL", self, KitsUI.onEditPermAll)
+    permAll:initialise()
+    permAll:instantiate()
+    permAll.backgroundColor = C_CARD
+    permAll.borderColor = C_BORDER
+    permAll.textColor = C_TEXT
+    self.kitsEditorPanel:addChild(permAll)
+    self.editPermBtns["all"] = permAll
+
+    local permVip = ISButton:new(permX + permBtnW + permGap, y, permBtnW, 20, "VIP", self, KitsUI.onEditPermVip)
+    permVip:initialise()
+    permVip:instantiate()
+    permVip.backgroundColor = C_CARD
+    permVip.borderColor = C_BORDER
+    permVip.textColor = C_TEXT
+    self.kitsEditorPanel:addChild(permVip)
+    self.editPermBtns["vip"] = permVip
+
+    local permUlt = ISButton:new(permX + (permBtnW + permGap) * 2, y, 60, 20, "ULTIM.", self, KitsUI.onEditPermUlt)
+    permUlt:initialise()
+    permUlt:instantiate()
+    permUlt.backgroundColor = C_CARD
+    permUlt.borderColor = C_BORDER
+    permUlt.textColor = C_TEXT
+    self.kitsEditorPanel:addChild(permUlt)
+    self.editPermBtns["ultimate"] = permUlt
+
+    y = y + 28
+
+    local itemsTitle = ISLabel:new(PAD, y, 18, "Items:",
+        C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
+    self.kitsEditorPanel:addChild(itemsTitle)
+    y = y + 18
+
+    self.editItemsStartY = y
+
+    local addY = y + 210
+    self.editNewItemType = ISTextEntryBox:new("Base.", PAD, addY, 200, 20)
+    self.editNewItemType:initialise()
+    self.editNewItemType:instantiate()
+    self.kitsEditorPanel:addChild(self.editNewItemType)
+
+    local xLbl = ISLabel:new(PAD + 204, addY + 2, 18, "x",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.kitsEditorPanel:addChild(xLbl)
+
+    self.editNewItemCount = ISTextEntryBox:new("1", PAD + 216, addY, 40, 20)
+    self.editNewItemCount:initialise()
+    self.editNewItemCount:instantiate()
+    self.kitsEditorPanel:addChild(self.editNewItemCount)
+
+    self.editAddItemBtn = ISButton:new(PAD + 262, addY, 30, 20, "+", self, KitsUI.onAddEditItem)
+    self.editAddItemBtn:initialise()
+    self.editAddItemBtn:instantiate()
+    self.editAddItemBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
+    self.editAddItemBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.editAddItemBtn.textColor = C_TEXT
+    self.kitsEditorPanel:addChild(self.editAddItemBtn)
+
+    self.editSaveBtn = ISButton:new(PAD, addY + 28, 120, BTN_H, "GUARDAR", self, KitsUI.onSaveEditKit)
+    self.editSaveBtn:initialise()
+    self.editSaveBtn:instantiate()
+    self.editSaveBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
+    self.editSaveBtn.backgroundColorMouseOver = { r = C_BTN_HI.r, g = C_BTN_HI.g, b = C_BTN_HI.b, a = 1 }
+    self.editSaveBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.editSaveBtn.textColor = { r = 1, g = 1, b = 1, a = 1 }
+    self.kitsEditorPanel:addChild(self.editSaveBtn)
+end
+
+function KitsUI:onAdminTabRoles()
+    self.adminActiveTab = "roles"
+    self.rolesSubPanel:setVisible(true)
+    self.kitsEditorPanel:setVisible(false)
+    self.adminTabRolesBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
+    self.adminTabRolesBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.adminTabKitsBtn.backgroundColor = C_CARD
+    self.adminTabKitsBtn.borderColor = C_BORDER
+    KitsClient.AdminListTempRoles()
+end
+
+function KitsUI:onAdminTabKits()
+    self.adminActiveTab = "kits"
+    self.rolesSubPanel:setVisible(false)
+    self.kitsEditorPanel:setVisible(true)
+    self.adminTabKitsBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
+    self.adminTabKitsBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.adminTabRolesBtn.backgroundColor = C_CARD
+    self.adminTabRolesBtn.borderColor = C_BORDER
+    KitsClient.AdminGetKits()
+end
+
+function KitsUI:onSelectKitForEdit(button)
+    local kitId = button.internal
+    self:loadKitIntoEditor(kitId)
+end
+
+function KitsUI:loadKitIntoEditor(kitId)
+    self.editingKitId = kitId
+    local kit = KitsConfig.GetKitById(kitId)
+    if not kit then return end
+
+    for id, btn in pairs(self.kitSelectorBtns) do
+        if id == kitId then
+            btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
+            btn.borderColor = { r = C_BTN_HI.r, g = C_BTN_HI.g, b = C_BTN_HI.b, a = 0.8 }
+        else
+            btn.backgroundColor = C_CARD
+            btn.borderColor = C_BORDER
+        end
+    end
+
+    self.editNameEntry:setText(kit.name)
+    self.editCooldownEntry:setText(tostring(kit.cooldown))
+
+    self.editPermission = kit.permission or "all"
+    self:updateEditPermButtons()
+
+    self.editKitItems = {}
+    for _, item in ipairs(kit.items) do
+        table.insert(self.editKitItems, { type = item.type, count = item.count })
+    end
+
+    self:rebuildEditItemsList()
+end
+
+function KitsUI:updateEditPermButtons()
+    for perm, btn in pairs(self.editPermBtns) do
+        if perm == self.editPermission then
+            btn.backgroundColor = { r = 0.20, g = 0.55, b = 0.20, a = 0.9 }
+            btn.borderColor = { r = 0.40, g = 0.80, b = 0.40, a = 0.8 }
+        else
+            btn.backgroundColor = C_CARD
+            btn.borderColor = C_BORDER
+        end
+    end
+end
+
+function KitsUI:onEditPermAll()
+    self.editPermission = "all"
+    self:updateEditPermButtons()
+end
+
+function KitsUI:onEditPermVip()
+    self.editPermission = "vip"
+    self:updateEditPermButtons()
+end
+
+function KitsUI:onEditPermUlt()
+    self.editPermission = "ultimate"
+    self:updateEditPermButtons()
+end
+
+function KitsUI:rebuildEditItemsList()
+    for _, w in ipairs(self.editItemWidgets) do
+        self.kitsEditorPanel:removeChild(w)
+    end
+    self.editItemWidgets = {}
+
+    local y = self.editItemsStartY
+    for idx, item in ipairs(self.editKitItems) do
+        local line = item.type .. " x" .. tostring(item.count)
+        local lbl = ISLabel:new(PAD + 10, y, 16, line,
+            C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
+        self.kitsEditorPanel:addChild(lbl)
+        table.insert(self.editItemWidgets, lbl)
+
+        local xBtn = ISButton:new(PANEL_W - 50, y, 24, 16, "X", self, KitsUI.onRemoveEditItem)
+        xBtn:initialise()
+        xBtn:instantiate()
+        xBtn.internal = idx
+        xBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.6 }
+        xBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+        xBtn.textColor = C_TEXT
+        self.kitsEditorPanel:addChild(xBtn)
+        table.insert(self.editItemWidgets, xBtn)
+
+        y = y + 18
+    end
+end
+
+function KitsUI:onAddEditItem()
+    local itemType = self.editNewItemType:getText()
+    local count = tonumber(self.editNewItemCount:getText())
+    if not itemType or itemType == "" or not count or count < 1 then return end
+    table.insert(self.editKitItems, { type = itemType, count = count })
+    self.editNewItemType:setText("Base.")
+    self.editNewItemCount:setText("1")
+    self:rebuildEditItemsList()
+end
+
+function KitsUI:onRemoveEditItem(button)
+    local idx = button.internal
+    if not idx or not self.editKitItems[idx] then return end
+    table.remove(self.editKitItems, idx)
+    self:rebuildEditItemsList()
+end
+
+function KitsUI:onSaveEditKit()
+    if not self.editingKitId then return end
+    local name = self.editNameEntry:getText()
+    local cooldown = tonumber(self.editCooldownEntry:getText())
+    if not name or name == "" or not cooldown or cooldown < 1 then return end
+    local itemsStr = KitsConfig.SerializeItems(self.editKitItems)
+    KitsClient.AdminSaveKit(self.editingKitId, name, "", cooldown, self.editPermission, itemsStr)
 end
 
 function KitsUI:onSelectRoleVip()
@@ -386,7 +685,7 @@ end
 
 function KitsUI:updateTempRolesList()
     for _, lbl in ipairs(self.tempRolesLabels) do
-        self.adminPanel:removeChild(lbl)
+        self.rolesSubPanel:removeChild(lbl)
     end
     self.tempRolesLabels = {}
 
@@ -395,7 +694,7 @@ function KitsUI:updateTempRolesList()
     if #roles == 0 then
         local lbl = ISLabel:new(PAD + 10, y, 18, "(ninguno)",
             C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-        self.adminPanel:addChild(lbl)
+        self.rolesSubPanel:addChild(lbl)
         table.insert(self.tempRolesLabels, lbl)
     else
         for _, entry in ipairs(roles) do
@@ -408,7 +707,7 @@ function KitsUI:updateTempRolesList()
             local line = entry.playerName .. "  -  " .. entry.role:upper() .. "  (" .. entry.daysLeft .. "d)"
             local lbl = ISLabel:new(PAD + 10, y, 18, line,
                 rolColor.r, rolColor.g, rolColor.b, rolColor.a, UIFont.Small, true)
-            self.adminPanel:addChild(lbl)
+            self.rolesSubPanel:addChild(lbl)
             table.insert(self.tempRolesLabels, lbl)
             y = y + 18
         end
@@ -437,11 +736,11 @@ function KitsUI:onToggleAdmin()
     self.adminPanel:setVisible(self.showingAdmin)
     if self.showingAdmin then
         self.adminBtn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 0.9 }
+        KitsClient.AdminListTempRoles()
     else
         self.adminBtn.backgroundColor = { r = C_ADMIN.r, g = C_ADMIN.g, b = C_ADMIN.b, a = 0.55 }
     end
 end
-
 
 function KitsUI:updateAdminButton()
     if self.adminBtn then
@@ -643,6 +942,25 @@ function KitsUI:render()
                 end
             end
         end
+    end
+end
+
+function KitsUI:rebuildKitsPanel()
+    if self.kitsPanel then
+        self:removeChild(self.kitsPanel)
+    end
+    self.kitButtons = {}
+    self.kitCards = {}
+    self.kitNameLabels = {}
+    self.kitItemData = {}
+    self.kitStatus = {}
+    self:buildKitsPanel()
+    if self.showingAdmin then
+        self.kitsPanel:setVisible(false)
+    end
+    self:updateCooldowns()
+    if self.editingKitId then
+        self:loadKitIntoEditor(self.editingKitId)
     end
 end
 
