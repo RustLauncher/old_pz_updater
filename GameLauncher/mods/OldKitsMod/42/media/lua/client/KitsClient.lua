@@ -3,7 +3,7 @@
     Maneja la comunicacion cliente -> servidor y las respuestas.
 ]]
 
-require "shared/KitsConfig"
+require "KitsConfig"
 
 KitsClient = KitsClient or {}
 KitsClient.Cooldowns = {}

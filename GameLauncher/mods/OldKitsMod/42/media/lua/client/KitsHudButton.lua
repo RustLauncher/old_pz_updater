@@ -1,6 +1,6 @@
 require "ISUI/ISPanel"
 require "ISUI/ISButton"
-require "client/KitsUI"
+require "KitsUI"
 
 KitsHudButton = ISPanel:derive("KitsHudButton")
 KitsHudButton.instance = nil

@@ -8,8 +8,8 @@ require "ISUI/ISPanel"
 require "ISUI/ISButton"
 require "ISUI/ISLabel"
 require "ISUI/ISTextEntryBox"
-require "shared/KitsConfig"
-require "client/KitsClient"
+require "KitsConfig"
+require "KitsClient"
 
 KitsUI = ISPanel:derive("KitsUI")
 KitsUI.instance = nil
@@ -368,38 +368,36 @@ function KitsUI:updateCooldowns()
         local btn = self.kitButtons[kit.id]
         local card = self.kitCards[kit.id]
         local nameLabel = self.kitNameLabels[kit.id]
-        if not label or not btn then goto continue end
+        if label and btn then
+            local hasPermission = KitsClient.HasPermission(kit.id)
 
-        local hasPermission = KitsClient.HasPermission(kit.id)
-
-        if not hasPermission then
-            label.name = "SIN ACCESO"
-            label:setColor(COLOR_LOCKED.r, COLOR_LOCKED.g, COLOR_LOCKED.b, COLOR_LOCKED.a)
-            btn:setEnable(false)
-            btn.backgroundColor = { r = COLOR_BTN_DIS.r, g = COLOR_BTN_DIS.g, b = COLOR_BTN_DIS.b, a = COLOR_BTN_DIS.a }
-            if card then card.backgroundColor = COLOR_CARD_LOCK end
-            if nameLabel then nameLabel:setColor(COLOR_TITLE_LOCK.r, COLOR_TITLE_LOCK.g, COLOR_TITLE_LOCK.b, COLOR_TITLE_LOCK.a) end
-        else
-            if card then card.backgroundColor = COLOR_CARD end
-            if nameLabel then nameLabel:setColor(COLOR_TITLE.r, COLOR_TITLE.g, COLOR_TITLE.b, COLOR_TITLE.a) end
-            local remainMs = KitsClient.Cooldowns[kit.id] or 0
-            if remainMs > 0 then
-                local secs = math.ceil(remainMs / 1000)
-                local mins = math.floor(secs / 60)
-                local s = secs % 60
-                label.name = string.format("%02d:%02d", mins, s)
-                label:setColor(COLOR_COOLDOWN.r, COLOR_COOLDOWN.g, COLOR_COOLDOWN.b, COLOR_COOLDOWN.a)
+            if not hasPermission then
+                label.name = "SIN ACCESO"
+                label:setColor(COLOR_LOCKED.r, COLOR_LOCKED.g, COLOR_LOCKED.b, COLOR_LOCKED.a)
                 btn:setEnable(false)
                 btn.backgroundColor = { r = COLOR_BTN_DIS.r, g = COLOR_BTN_DIS.g, b = COLOR_BTN_DIS.b, a = COLOR_BTN_DIS.a }
+                if card then card.backgroundColor = COLOR_CARD_LOCK end
+                if nameLabel then nameLabel:setColor(COLOR_TITLE_LOCK.r, COLOR_TITLE_LOCK.g, COLOR_TITLE_LOCK.b, COLOR_TITLE_LOCK.a) end
             else
-                label.name = "LISTO"
-                label:setColor(COLOR_READY.r, COLOR_READY.g, COLOR_READY.b, COLOR_READY.a)
-                btn:setEnable(true)
-                btn.backgroundColor = { r = COLOR_BTN.r, g = COLOR_BTN.g, b = COLOR_BTN.b, a = COLOR_BTN.a }
+                if card then card.backgroundColor = COLOR_CARD end
+                if nameLabel then nameLabel:setColor(COLOR_TITLE.r, COLOR_TITLE.g, COLOR_TITLE.b, COLOR_TITLE.a) end
+                local remainMs = KitsClient.Cooldowns[kit.id] or 0
+                if remainMs > 0 then
+                    local secs = math.ceil(remainMs / 1000)
+                    local mins = math.floor(secs / 60)
+                    local s = secs % 60
+                    label.name = string.format("%02d:%02d", mins, s)
+                    label:setColor(COLOR_COOLDOWN.r, COLOR_COOLDOWN.g, COLOR_COOLDOWN.b, COLOR_COOLDOWN.a)
+                    btn:setEnable(false)
+                    btn.backgroundColor = { r = COLOR_BTN_DIS.r, g = COLOR_BTN_DIS.g, b = COLOR_BTN_DIS.b, a = COLOR_BTN_DIS.a }
+                else
+                    label.name = "LISTO"
+                    label:setColor(COLOR_READY.r, COLOR_READY.g, COLOR_READY.b, COLOR_READY.a)
+                    btn:setEnable(true)
+                    btn.backgroundColor = { r = COLOR_BTN.r, g = COLOR_BTN.g, b = COLOR_BTN.b, a = COLOR_BTN.a }
+                end
             end
         end
-
-        ::continue::
     end
 end
 

@@ -4,8 +4,8 @@
     Tambien maneja los comandos de administracion de permisos.
 ]]
 
-require "shared/KitsConfig"
-require "server/KitsPermissions"
+require "KitsConfig"
+require "KitsPermissions"
 
 KitsServer = KitsServer or {}
 

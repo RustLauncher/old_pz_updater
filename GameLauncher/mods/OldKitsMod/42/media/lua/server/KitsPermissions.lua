@@ -10,7 +10,7 @@
     gestionados desde KitsServer.lua.
 ]]
 
-require "shared/KitsConfig"
+require "KitsConfig"
 
 KitsPermissions = KitsPermissions or {}
 
