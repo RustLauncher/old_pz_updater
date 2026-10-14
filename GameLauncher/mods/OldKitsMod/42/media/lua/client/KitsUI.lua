@@ -459,14 +459,15 @@ function KitsUI:render()
 
                 if item.count > 1 then
                     local cs = tostring(item.count)
-                    local csw = getTextManager():MeasureStringX(UIFont.Small, cs)
+                    local csw = getTextManager():MeasureStringX(UIFont.NewSmall, cs)
                     local badgeW = csw + 4
-                    local badgeX = ix + ICON_SIZE - badgeW
-                    local badgeY = iy + ICON_SIZE - 12
-                    self:drawRect(badgeX, badgeY, badgeW, 12, 0.92,
+                    local badgeH = 11
+                    local badgeX = ix + ICON_SIZE - badgeW - 1
+                    local badgeY = iy + ICON_SIZE - badgeH - 1
+                    self:drawRect(badgeX, badgeY, badgeW, badgeH, 0.92,
                         C_COUNT_BG.r, C_COUNT_BG.g, C_COUNT_BG.b)
-                    self:drawText(cs, badgeX + 2, badgeY,
-                        1, 1, 1, 1, UIFont.Small)
+                    self:drawText(cs, badgeX + 2, badgeY - 1,
+                        1, 1, 1, 1, UIFont.NewSmall)
                 end
 
                 local mx = self:getMouseX()
