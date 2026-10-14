@@ -41,14 +41,37 @@ local C_ADMIN     = { r = 0.30, g = 0.55, b = 0.90, a = 0.85 }
 local C_COUNT_BG  = { r = 0.90, g = 0.55, b = 0.10, a = 0.95 }
 
 local KIT_COLORS = {
-    starter     = { r = 0.95, g = 0.58, b = 0.08, a = 1 },
-    combate     = { r = 0.90, g = 0.25, b = 0.20, a = 1 },
+    basic       = { r = 0.95, g = 0.58, b = 0.08, a = 1 },
     medico      = { r = 0.20, g = 0.75, b = 0.40, a = 1 },
-    constructor = { r = 0.30, g = 0.55, b = 0.90, a = 1 },
+    combate     = { r = 0.90, g = 0.25, b = 0.20, a = 1 },
+    ropa        = { r = 0.60, g = 0.45, b = 0.75, a = 1 },
+    armas       = { r = 0.85, g = 0.20, b = 0.15, a = 1 },
+    equipo      = { r = 0.30, g = 0.55, b = 0.90, a = 1 },
+    generador   = { r = 0.80, g = 0.70, b = 0.15, a = 1 },
 }
 
 local function kitColor(kitId)
-    return KIT_COLORS[kitId] or KIT_COLORS.starter
+    return KIT_COLORS[kitId] or KIT_COLORS.basic
+end
+
+local function formatCooldown(minutes)
+    if minutes >= 1440 then
+        local days = math.floor(minutes / 1440)
+        local rem = minutes % 1440
+        if rem > 0 then
+            return tostring(days) .. "d " .. tostring(math.floor(rem / 60)) .. "h"
+        end
+        return tostring(days) .. "d"
+    end
+    if minutes >= 60 then
+        local h = math.floor(minutes / 60)
+        local m = minutes % 60
+        if m > 0 then
+            return tostring(h) .. "h " .. tostring(m) .. "m"
+        end
+        return tostring(h) .. "h"
+    end
+    return tostring(minutes) .. "m"
 end
 
 local function getItemTexture(itemType)
@@ -89,11 +112,11 @@ function KitsUI:new(x, y)
     o.borderColor = { r = 0.12, g = 0.12, b = 0.14, a = 0.8 }
     o.moveWithMouse = true
     o.kitButtons = {}
-    o.kitCooldownLabels = {}
     o.kitCards = {}
     o.kitNameLabels = {}
     o.kitItemData = {}
     o.kitIconTex = {}
+    o.kitStatus = {}
     o.showingAdmin = false
     return o
 end
@@ -166,6 +189,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     self.kitCards[kit.id] = card
 
     self.kitIconTex[kit.id] = getItemTexture(kit.icon)
+    self.kitStatus[kit.id] = { text = "LISTO", state = "ready" }
 
     local nameX = ACCENT_BAR_W + KIT_ICON_SZ + 16
     local nameLabel = ISLabel:new(
@@ -180,7 +204,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     if kit.permission and kit.permission ~= "all" then
         permText = kit.permission:upper()
     end
-    local cdText = tostring(kit.cooldown) .. " min"
+    local cdText = formatCooldown(kit.cooldown)
     if permText ~= "" then
         cdText = cdText .. "  |  " .. permText
     end
@@ -190,14 +214,6 @@ function KitsUI:createKitCard(kit, yOff, index)
         UIFont.Small, true
     )
     card:addChild(infoLabel)
-
-    local statusLabel = ISLabel:new(
-        cardW - 90, 14, 22, "LISTO",
-        C_GREEN.r, C_GREEN.g, C_GREEN.b, C_GREEN.a,
-        UIFont.Small, true
-    )
-    card:addChild(statusLabel)
-    self.kitCooldownLabels[kit.id] = statusLabel
 
     local itemData = {}
     for _, entry in ipairs(kit.items) do
@@ -370,15 +386,15 @@ end
 
 function KitsUI:updateCooldowns()
     for _, kit in ipairs(KitsConfig.Kits) do
-        local label = self.kitCooldownLabels[kit.id]
+        local st = self.kitStatus[kit.id]
         local btn = self.kitButtons[kit.id]
         local card = self.kitCards[kit.id]
         local nameLabel = self.kitNameLabels[kit.id]
-        if label and btn then
+        if st and btn then
             local hasPerm = KitsClient.HasPermission(kit.id)
             if not hasPerm then
-                label.name = "BLOQUEADO"
-                label:setColor(C_RED_DK.r, C_RED_DK.g, C_RED_DK.b, C_RED_DK.a)
+                st.text = "BLOQUEADO"
+                st.state = "locked"
                 btn:setEnable(false)
                 btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
                 btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
@@ -392,14 +408,20 @@ function KitsUI:updateCooldowns()
                     local secs = math.ceil(remainMs / 1000)
                     local mins = math.floor(secs / 60)
                     local s = secs % 60
-                    label.name = string.format("%02d:%02d", mins, s)
-                    label:setColor(C_RED.r, C_RED.g, C_RED.b, C_RED.a)
+                    if mins >= 60 then
+                        local h = math.floor(mins / 60)
+                        local m = mins % 60
+                        st.text = string.format("%dh %02dm", h, m)
+                    else
+                        st.text = string.format("%02d:%02d", mins, s)
+                    end
+                    st.state = "cooldown"
                     btn:setEnable(false)
                     btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
                     btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
                 else
-                    label.name = "LISTO"
-                    label:setColor(C_GREEN.r, C_GREEN.g, C_GREEN.b, C_GREEN.a)
+                    st.text = "LISTO"
+                    st.state = "ready"
                     btn:setEnable(true)
                     btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
                     btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
@@ -436,7 +458,7 @@ function KitsUI:prerender()
     self:drawText(title, (PANEL_W - tw) / 2, 14,
         C_TEXT.r, C_TEXT.g, C_TEXT.b, 0.9, UIFont.Medium)
 
-    local sub = "v1.0.55"
+    local sub = "v1.0.56"
     local sw2 = getTextManager():MeasureStringX(UIFont.Small, sub)
     self:drawText(sub, (PANEL_W - sw2) / 2, 32,
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.5, UIFont.Small)
@@ -449,6 +471,7 @@ function KitsUI:render()
     for _, kit in ipairs(KitsConfig.Kits) do
         local card = self.kitCards[kit.id]
         local items = self.kitItemData[kit.id]
+        local st = self.kitStatus[kit.id]
         if card and items and card:isVisible() then
             local cx = card:getX()
             local cy = card:getY() + HEADER_H
@@ -474,29 +497,30 @@ function KitsUI:render()
                     KIT_ICON_SZ - 8, KIT_ICON_SZ - 8, 1, 1, 1, 1)
             end
 
-            local statusLabel = self.kitCooldownLabels[kit.id]
-            if statusLabel then
-                local stText = statusLabel.name or ""
+            if st then
+                local stText = st.text or "LISTO"
                 local stw = getTextManager():MeasureStringX(UIFont.Small, stText)
-                local pillW = stw + 16
+                local pillPad = 10
+                local pillW = stw + pillPad * 2
+                local pillH = 20
                 local pillX = cx + cw - pillW - 12
-                local pillY = cy + 16
-                local pillH = 22
+                local pillY = cy + 18
+                local textY = pillY + 3
 
-                local hasPerm = KitsClient.HasPermission(kit.id)
-                if not hasPerm then
-                    self:drawRect(pillX, pillY, pillW, pillH, 1,
-                        C_LOCK_BG.r, C_LOCK_BG.g, C_LOCK_BG.b)
-                else
-                    local remainMs = KitsClient.Cooldowns[kit.id] or 0
-                    if remainMs > 0 then
-                        self:drawRect(pillX, pillY, pillW, pillH, 1,
-                            C_RED_BG.r, C_RED_BG.g, C_RED_BG.b)
-                    else
-                        self:drawRect(pillX, pillY, pillW, pillH, 1,
-                            C_GREEN_BG.r, C_GREEN_BG.g, C_GREEN_BG.b)
-                    end
+                local bgColor = C_GREEN_BG
+                local txColor = C_GREEN
+                if st.state == "locked" then
+                    bgColor = C_LOCK_BG
+                    txColor = C_RED_DK
+                elseif st.state == "cooldown" then
+                    bgColor = C_RED_BG
+                    txColor = C_RED
                 end
+
+                self:drawRect(pillX, pillY, pillW, pillH, bgColor.a,
+                    bgColor.r, bgColor.g, bgColor.b)
+                self:drawText(stText, pillX + pillPad, textY,
+                    txColor.r, txColor.g, txColor.b, txColor.a, UIFont.Small)
             end
 
             local sepY = cy + 57
