@@ -1,5 +1,5 @@
 ﻿{
-    "version":  "1.0.47",
+    "version":  "1.0.48",
     "files":  [
                   {
                       "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8",
@@ -8724,6 +8724,34 @@
                   {
                       "sha256":  "7fbd993150dae3d046d14f137bf659b52d08f888abf8802de7c97202801f850f",
                       "path":  "GameLauncher/mods/MultiPurposeItemRack/mod.info"
+                  },
+                  {
+                      "sha256":  "8f1c7f3a1fcf752d20e09b8ee3cfa881643c534d528db07efdcf8b77a3b1aae3",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/client/KitsClient.lua"
+                  },
+                  {
+                      "sha256":  "a577a7edca524478c4577fb712d9533ef3f19f05b518401def862b7bdd37dcd0",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/client/KitsKeybind.lua"
+                  },
+                  {
+                      "sha256":  "85af64058e18a119260309c5291326af16af9ec823b97e2f6e6542466b11d264",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/client/KitsUI.lua"
+                  },
+                  {
+                      "sha256":  "1e001598e2c876f8802b9e35a24b362a1a6ec26e8710761a9ab9be20a4df3e09",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/server/KitsPermissions.lua"
+                  },
+                  {
+                      "sha256":  "aa12bc22b0bfff5b395be303cac930740d6ac737c5537eb6a11e1cf941d71c53",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/server/KitsServer.lua"
+                  },
+                  {
+                      "sha256":  "55345048d1eff83550c50cd3ead4acd6afd45552a9518caaf526ada18c497e52",
+                      "path":  "GameLauncher/mods/OldKitsMod/media/lua/shared/KitsConfig.lua"
+                  },
+                  {
+                      "sha256":  "1e106b77cc6c148ba4f808182791d95caf71a4c549a3048b4a70cdd602a349b8",
+                      "path":  "GameLauncher/mods/OldKitsMod/mod.info"
                   },
                   {
                       "sha256":  "d64b0cfe73267d0440d4bd2872ac397caea6a4d34897b6963c32dfcf998ae85c",

@@ -1,0 +1,4 @@
+name=Kits
+id=Kits
+description=Sistema de kits estilo Rust con interfaz grafica y cooldowns. Compatible con multijugador.
+poster=poster.png
