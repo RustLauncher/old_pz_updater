@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.58",
+    "version":  "1.0.59",
     "files":  [
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
@@ -10923,12 +10923,12 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsUI.lua",
-                      "sha256":  "68d47a968d595510f3028117842d2622f9d5e9cce6eb855a96e6a580145238d4",
+                      "sha256":  "36fdc3d886b8de47e7fa083b1104b609a810f5cca4ff809ece11e2abb3ffe48a",
                       "size":  16160
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsPermissions.lua",
-                      "sha256":  "a1d0138efaaf84ef380eaf4785c2bcf48ae6c426569eee25e1a0b2445c0a24e7",
+                      "sha256":  "cd24b66d26ef62311923b2f82c00fa2209bf151ccaad26e397d712b533d5b5d8",
                       "size":  3083
                   },
                   {
