@@ -251,35 +251,177 @@ function KitsUI:buildAdminPanel()
     self:addChild(self.adminPanel)
 
     local y = PAD
-    local adminTitle = ISLabel:new(PAD, y, 22, "Info de Kits",
+    local adminTitle = ISLabel:new(PAD, y, 22, "Roles Temporales",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Medium, true)
     self.adminPanel:addChild(adminTitle)
+
+    local onlineBtn = ISButton:new(PANEL_W - 110, y, 90, 20, "Ver Online", self, KitsUI.onAdminListOnline)
+    onlineBtn:initialise()
+    onlineBtn:instantiate()
+    onlineBtn.backgroundColor = C_CARD
+    onlineBtn.borderColor = C_BORDER
+    onlineBtn.textColor = C_TEXT
+    self.adminPanel:addChild(onlineBtn)
     y = y + 28
 
-    local noteLabel = ISLabel:new(PAD, y, 18, "Los permisos se gestionan con los roles del servidor.",
+    local plLabel = ISLabel:new(PAD, y + 2, 18, "Jugador:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(noteLabel)
-    y = y + 24
+    self.adminPanel:addChild(plLabel)
+    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 60, y, 200, 20)
+    self.adminPlayerEntry:initialise()
+    self.adminPlayerEntry:instantiate()
+    self.adminPanel:addChild(self.adminPlayerEntry)
+    y = y + 26
 
-    local refLabel = ISLabel:new(PAD, y, 18, "Roles requeridos por kit:",
+    local rolLabel = ISLabel:new(PAD, y + 2, 18, "Rol:",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.adminPanel:addChild(rolLabel)
+
+    local rolBtnW = 80
+    local rolBtnGap = 4
+    local rolX = PAD + 60
+    self.adminSelectedRole = "vip"
+
+    self.roleBtnVip = ISButton:new(rolX, y, rolBtnW, 20, "VIP", self, KitsUI.onSelectRoleVip)
+    self.roleBtnVip:initialise()
+    self.roleBtnVip:instantiate()
+    self.roleBtnVip.backgroundColor = { r = 0.20, g = 0.55, b = 0.20, a = 0.9 }
+    self.roleBtnVip.borderColor = { r = 0.40, g = 0.80, b = 0.40, a = 0.8 }
+    self.roleBtnVip.textColor = C_TEXT
+    self.adminPanel:addChild(self.roleBtnVip)
+
+    self.roleBtnUlt = ISButton:new(rolX + rolBtnW + rolBtnGap, y, rolBtnW, 20, "ULTIMATE", self, KitsUI.onSelectRoleUlt)
+    self.roleBtnUlt:initialise()
+    self.roleBtnUlt:instantiate()
+    self.roleBtnUlt.backgroundColor = C_CARD
+    self.roleBtnUlt.borderColor = C_BORDER
+    self.roleBtnUlt.textColor = C_TEXT
+    self.adminPanel:addChild(self.roleBtnUlt)
+    y = y + 26
+
+    local dayLabel = ISLabel:new(PAD, y + 2, 18, "Dias:",
+        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+    self.adminPanel:addChild(dayLabel)
+    self.adminDaysEntry = ISTextEntryBox:new("30", PAD + 60, y, 60, 20)
+    self.adminDaysEntry:initialise()
+    self.adminDaysEntry:instantiate()
+    self.adminPanel:addChild(self.adminDaysEntry)
+    y = y + 30
+
+    local bw = 120
+    local bg = 8
+    local giveBtn = ISButton:new(PAD, y, bw, BTN_H, "DAR ROL", self, KitsUI.onAdminGiveRole)
+    giveBtn:initialise()
+    giveBtn:instantiate()
+    giveBtn.backgroundColor = { r = 0.15, g = 0.55, b = 0.15, a = 0.9 }
+    giveBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    giveBtn.textColor = C_TEXT
+    self.adminPanel:addChild(giveBtn)
+
+    local removeBtn = ISButton:new(PAD + bw + bg, y, bw, BTN_H, "QUITAR ROL", self, KitsUI.onAdminRemoveRole)
+    removeBtn:initialise()
+    removeBtn:instantiate()
+    removeBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.9 }
+    removeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    removeBtn.textColor = C_TEXT
+    self.adminPanel:addChild(removeBtn)
+
+    local refreshBtn = ISButton:new(PAD + (bw + bg) * 2, y, 80, BTN_H, "REFRESCAR", self, KitsUI.onAdminRefresh)
+    refreshBtn:initialise()
+    refreshBtn:instantiate()
+    refreshBtn.backgroundColor = C_CARD
+    refreshBtn.borderColor = C_BORDER
+    refreshBtn.textColor = C_TEXT
+    self.adminPanel:addChild(refreshBtn)
+    y = y + 34
+
+    local sepY = y
+    y = y + 6
+
+    local listTitle = ISLabel:new(PAD, y, 18, "Roles activos:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
-    self.adminPanel:addChild(refLabel)
+    self.adminPanel:addChild(listTitle)
     y = y + 20
 
-    for _, kit in ipairs(KitsConfig.Kits) do
-        local perm = kit.permission or "all"
-        local line = kit.name .. "  ->  " .. perm:upper()
-        local kc = kitColor(kit.id)
-        local lineLabel = ISLabel:new(PAD + 10, y, 18, line,
-            kc.r, kc.g, kc.b, kc.a, UIFont.Small, true)
-        self.adminPanel:addChild(lineLabel)
-        y = y + 18
-    end
+    self.tempRolesListY = y
+    self.tempRolesLabels = {}
+end
 
-    y = y + 10
-    local hierLabel = ISLabel:new(PAD, y, 18, "Jerarquia: admin > moderator > gm > ultimate > vip > all",
-        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
-    self.adminPanel:addChild(hierLabel)
+function KitsUI:onSelectRoleVip()
+    self.adminSelectedRole = "vip"
+    self.roleBtnVip.backgroundColor = { r = 0.20, g = 0.55, b = 0.20, a = 0.9 }
+    self.roleBtnVip.borderColor = { r = 0.40, g = 0.80, b = 0.40, a = 0.8 }
+    self.roleBtnUlt.backgroundColor = C_CARD
+    self.roleBtnUlt.borderColor = C_BORDER
+end
+
+function KitsUI:onSelectRoleUlt()
+    self.adminSelectedRole = "ultimate"
+    self.roleBtnUlt.backgroundColor = { r = 0.55, g = 0.35, b = 0.10, a = 0.9 }
+    self.roleBtnUlt.borderColor = { r = 0.90, g = 0.55, b = 0.10, a = 0.8 }
+    self.roleBtnVip.backgroundColor = C_CARD
+    self.roleBtnVip.borderColor = C_BORDER
+end
+
+function KitsUI:onAdminGiveRole()
+    local pn = self.adminPlayerEntry:getText()
+    local days = tonumber(self.adminDaysEntry:getText())
+    if pn == "" or not days or days <= 0 then return end
+    KitsClient.AdminSetTempRole(pn, self.adminSelectedRole, days)
+end
+
+function KitsUI:onAdminRemoveRole()
+    local pn = self.adminPlayerEntry:getText()
+    if pn == "" then return end
+    KitsClient.AdminRemoveTempRole(pn)
+end
+
+function KitsUI:onAdminRefresh()
+    KitsClient.AdminListTempRoles()
+end
+
+function KitsUI:onAdminListOnline()
+    KitsClient.AdminListOnline()
+end
+
+function KitsUI:updateTempRolesList()
+    for _, lbl in ipairs(self.tempRolesLabels) do
+        self.adminPanel:removeChild(lbl)
+    end
+    self.tempRolesLabels = {}
+
+    local y = self.tempRolesListY or 200
+    local roles = KitsClient.TempRoles or {}
+    if #roles == 0 then
+        local lbl = ISLabel:new(PAD + 10, y, 18, "(ninguno)",
+            C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
+        self.adminPanel:addChild(lbl)
+        table.insert(self.tempRolesLabels, lbl)
+    else
+        for _, entry in ipairs(roles) do
+            local rolColor = C_TEXT
+            if entry.role == "vip" then
+                rolColor = C_GREEN
+            elseif entry.role == "ultimate" then
+                rolColor = C_BTN
+            end
+            local line = entry.playerName .. "  -  " .. entry.role:upper() .. "  (" .. entry.daysLeft .. "d)"
+            local lbl = ISLabel:new(PAD + 10, y, 18, line,
+                rolColor.r, rolColor.g, rolColor.b, rolColor.a, UIFont.Small, true)
+            self.adminPanel:addChild(lbl)
+            table.insert(self.tempRolesLabels, lbl)
+            y = y + 18
+        end
+    end
+end
+
+function KitsUI:updateOnlineList()
+    local players = KitsClient.OnlinePlayers or {}
+    local msg = "Online: " .. table.concat(players, ", ")
+    local player = getPlayer()
+    if player then
+        player:Say(msg)
+    end
 end
 
 function KitsUI:onClaimKit(button)

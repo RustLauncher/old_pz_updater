@@ -4,6 +4,8 @@ KitsClient = KitsClient or {}
 KitsClient.Cooldowns = {}
 KitsClient.Permissions = {}
 KitsClient.IsAdmin = false
+KitsClient.TempRoles = {}
+KitsClient.OnlinePlayers = {}
 
 function KitsClient.RequestKit(kitId)
     sendClientCommand("Kits", "requestKit", { kitId = kitId })
@@ -17,12 +19,31 @@ function KitsClient.CheckAdmin()
     sendClientCommand("Kits", "checkAdmin", {})
 end
 
-
 function KitsClient.HasPermission(kitId)
     if KitsClient.Permissions[kitId] == nil then
         return true
     end
     return KitsClient.Permissions[kitId]
+end
+
+function KitsClient.AdminSetTempRole(targetName, roleName, days)
+    sendClientCommand("Kits", "adminSetTempRole", {
+        targetName = targetName,
+        roleName = roleName,
+        days = days,
+    })
+end
+
+function KitsClient.AdminRemoveTempRole(targetName)
+    sendClientCommand("Kits", "adminRemoveTempRole", { targetName = targetName })
+end
+
+function KitsClient.AdminListTempRoles()
+    sendClientCommand("Kits", "adminListTempRoles", {})
+end
+
+function KitsClient.AdminListOnline()
+    sendClientCommand("Kits", "adminListOnline", {})
 end
 
 local function refreshInventoryUI()
@@ -74,6 +95,18 @@ local function onServerCommand(module, command, args)
         refreshInventoryUI()
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateCooldowns()
+        end
+
+    elseif command == "tempRolesList" then
+        KitsClient.TempRoles = args.roles or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateTempRolesList()
+        end
+
+    elseif command == "onlineList" then
+        KitsClient.OnlinePlayers = args.players or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateOnlineList()
         end
 
     elseif command == "error" then

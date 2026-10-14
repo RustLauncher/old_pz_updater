@@ -67,6 +67,11 @@ local function sendMsg(player, msg)
     sendServerCommand(player, "Kits", "error", { msg = msg })
 end
 
+local function sendTempRolesList(player)
+    local roles = KitsPermissions.GetAllTempRoles()
+    sendServerCommand(player, "Kits", "tempRolesList", { roles = roles })
+end
+
 local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
@@ -107,6 +112,71 @@ local function onClientCommand(module, command, player, args)
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
         sendServerCommand(player, "Kits", "adminStatus", { isAdmin = isAdmin })
+
+    elseif command == "adminSetTempRole" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        local targetName = args.targetName
+        local roleName = args.roleName
+        local days = tonumber(args.days)
+        if not targetName or not roleName or not days or days <= 0 then
+            sendMsg(player, "Parametros invalidos.")
+            return
+        end
+        local target = KitsPermissions.FindPlayerByName(targetName)
+        if not target then
+            sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
+            return
+        end
+        KitsPermissions.SetTempRole(target, roleName, days)
+        sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
+        sendPermissions(target)
+        sendTempRolesList(player)
+
+    elseif command == "adminRemoveTempRole" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        local targetName = args.targetName
+        if not targetName then
+            sendMsg(player, "Falta el nombre del jugador.")
+            return
+        end
+        local target = KitsPermissions.FindPlayerByName(targetName)
+        if not target then
+            sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
+            return
+        end
+        local removed = KitsPermissions.RemoveTempRole(target)
+        if removed then
+            sendMsg(player, "Rol temporal quitado de " .. targetName)
+            sendPermissions(target)
+        else
+            sendMsg(player, targetName .. " no tiene rol temporal.")
+        end
+        sendTempRolesList(player)
+
+    elseif command == "adminListTempRoles" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        sendTempRolesList(player)
+
+    elseif command == "adminListOnline" then
+        if not KitsPermissions.IsAdmin(player) then
+            sendMsg(player, "No tienes permisos de admin.")
+            return
+        end
+        local names = {}
+        local players = getOnlinePlayers()
+        for i = 0, players:size() - 1 do
+            table.insert(names, players:get(i):getUsername())
+        end
+        sendServerCommand(player, "Kits", "onlineList", { players = names })
     end
 end
 
