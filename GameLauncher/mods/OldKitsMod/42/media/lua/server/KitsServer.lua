@@ -42,12 +42,11 @@ local function giveKit(player, kit)
         for i = 1, entry.count do
             local item = inv:AddItem(entry.type)
             if item then
+                sendAddItemToContainer(inv, item)
                 table.insert(given, entry.type)
             end
         end
     end
-    inv:setDrawDirty(true)
-    player:getInventory():setDrawDirty(true)
     return given
 end
 
