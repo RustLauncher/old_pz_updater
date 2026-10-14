@@ -30,8 +30,8 @@ KitsConfig.Kits = {
             { type = "Base.Nails",           count = 20 },
             { type = "Base.Plank",           count = 5 },
             { type = "Base.Bandage",         count = 3 },
-            { type = "Base.WaterBottleFull", count = 1 },
-            { type = "Base.CannedBeans",     count = 2 },
+            { type = "Base.WaterBottle",     count = 1 },
+            { type = "Base.TunaTin",         count = 2 },
         },
     },
     {
