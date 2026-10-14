@@ -1,9 +1,3 @@
---[[
-    KitsServer.lua - Build 42 compatible
-    Toda la logica de validacion, cooldowns, permisos y entrega de items.
-    Tambien maneja los comandos de administracion de permisos.
-]]
-
 require "KitsConfig"
 require "KitsPermissions"
 
@@ -43,11 +37,18 @@ end
 
 local function giveKit(player, kit)
     local inv = player:getInventory()
+    local given = {}
     for _, entry in ipairs(kit.items) do
         for i = 1, entry.count do
-            inv:AddItem(entry.type)
+            local item = InventoryItemFactory.CreateItem(entry.type)
+            if item then
+                inv:AddItem(item)
+                table.insert(given, entry.type)
+            end
         end
     end
+    inv:setDrawDirty(true)
+    return given
 end
 
 local function sendAllCooldowns(player)
@@ -174,9 +175,13 @@ local function onClientCommand(module, command, player, args)
             return
         end
 
-        giveKit(player, kit)
+        local given = giveKit(player, kit)
         setCooldown(player, kitId)
-        sendServerCommand(player, "Kits", "kitGiven", { kitId = kitId, name = kit.name })
+        sendServerCommand(player, "Kits", "kitGiven", {
+            kitId = kitId,
+            name = kit.name,
+            count = #given,
+        })
         sendAllCooldowns(player)
 
     elseif command == "requestCooldowns" then

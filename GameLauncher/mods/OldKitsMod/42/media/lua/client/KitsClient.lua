@@ -1,8 +1,3 @@
---[[
-    KitsClient.lua - Build 42 compatible
-    Maneja la comunicacion cliente -> servidor y las respuestas.
-]]
-
 require "KitsConfig"
 
 KitsClient = KitsClient or {}
@@ -45,6 +40,26 @@ function KitsClient.HasPermission(kitId)
     return KitsClient.Permissions[kitId]
 end
 
+local function refreshInventoryUI()
+    local player = getPlayer()
+    if not player then return end
+    local inv = player:getInventory()
+    if inv then
+        inv:setDrawDirty(true)
+    end
+    if ISInventoryPage and ISInventoryPage.dirtySlice ~= nil then
+        ISInventoryPage.dirtySlice = true
+    end
+    local pInv = getPlayerInventory(0)
+    if pInv then
+        pInv:refreshBackpacks()
+    end
+    local pLoot = getPlayerLoot(0)
+    if pLoot then
+        pLoot:refreshBackpacks()
+    end
+end
+
 local function onServerCommand(module, command, args)
     if module ~= "Kits" then return end
 
@@ -71,6 +86,7 @@ local function onServerCommand(module, command, args)
         if player then
             player:Say("Kit '" .. tostring(args.name) .. "' recibido!")
         end
+        refreshInventoryUI()
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateCooldowns()
         end

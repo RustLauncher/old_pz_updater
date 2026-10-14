@@ -2,41 +2,42 @@ require "ISUI/ISPanel"
 require "ISUI/ISButton"
 require "ISUI/ISLabel"
 require "ISUI/ISTextEntryBox"
+require "ISUI/ISScrollingListBox"
 require "KitsConfig"
 require "KitsClient"
 
 KitsUI = ISPanel:derive("KitsUI")
 KitsUI.instance = nil
 
-local PANEL_W = 520
-local PANEL_H = 540
-local HEADER_H = 50
-local PAD = 14
-local CARD_GAP = 10
-local ICON_SIZE = 36
-local ICON_GAP = 5
-local ACCENT_BAR_W = 4
-local KIT_ICON_SZ = 44
+local PANEL_W = 440
+local PANEL_H = 500
+local HEADER_H = 36
+local PAD = 10
+local CARD_GAP = 6
+local ICON_SIZE = 32
+local ICON_GAP = 4
+local ACCENT_BAR_W = 3
+local BTN_W = 100
+local BTN_H = 24
 
 local C_BG        = { r = 0.06, g = 0.06, b = 0.08, a = 0.98 }
 local C_HEADER    = { r = 0.08, g = 0.08, b = 0.10, a = 1 }
-local C_HEADER_LN = { r = 0.14, g = 0.13, b = 0.16, a = 1 }
 local C_CARD      = { r = 0.10, g = 0.10, b = 0.13, a = 1 }
 local C_CARD_LOCK = { r = 0.08, g = 0.08, b = 0.10, a = 0.8 }
-local C_BORDER    = { r = 0.18, g = 0.17, b = 0.20, a = 0.6 }
+local C_BORDER    = { r = 0.18, g = 0.17, b = 0.20, a = 0.5 }
 local C_TEXT      = { r = 0.92, g = 0.90, b = 0.88, a = 1 }
 local C_TEXT2     = { r = 0.50, g = 0.48, b = 0.46, a = 1 }
 local C_GREEN     = { r = 0.25, g = 0.85, b = 0.45, a = 1 }
-local C_GREEN_BG  = { r = 0.12, g = 0.28, b = 0.15, a = 0.9 }
+local C_GREEN_BG  = { r = 0.10, g = 0.22, b = 0.12, a = 0.9 }
 local C_RED       = { r = 0.95, g = 0.30, b = 0.25, a = 1 }
-local C_RED_BG    = { r = 0.30, g = 0.10, b = 0.10, a = 0.9 }
+local C_RED_BG    = { r = 0.25, g = 0.08, b = 0.08, a = 0.9 }
 local C_RED_DK    = { r = 0.50, g = 0.20, b = 0.18, a = 1 }
-local C_LOCK_BG   = { r = 0.20, g = 0.12, b = 0.12, a = 0.9 }
+local C_LOCK_BG   = { r = 0.18, g = 0.10, b = 0.10, a = 0.9 }
 local C_BTN       = { r = 0.90, g = 0.55, b = 0.10, a = 1 }
 local C_BTN_HI    = { r = 1.00, g = 0.68, b = 0.18, a = 1 }
 local C_BTN_OFF   = { r = 0.16, g = 0.16, b = 0.18, a = 1 }
 local C_SLOT      = { r = 0.14, g = 0.14, b = 0.17, a = 1 }
-local C_SLOT_BD   = { r = 0.22, g = 0.21, b = 0.24, a = 0.4 }
+local C_SLOT_BD   = { r = 0.22, g = 0.21, b = 0.24, a = 0.3 }
 local C_ADMIN     = { r = 0.30, g = 0.55, b = 0.90, a = 0.85 }
 local C_COUNT_BG  = { r = 0.90, g = 0.55, b = 0.10, a = 0.95 }
 
@@ -109,13 +110,12 @@ function KitsUI:new(x, y)
     setmetatable(o, self)
     self.__index = self
     o.backgroundColor = C_BG
-    o.borderColor = { r = 0.12, g = 0.12, b = 0.14, a = 0.8 }
+    o.borderColor = { r = 0.10, g = 0.10, b = 0.12, a = 0.8 }
     o.moveWithMouse = true
     o.kitButtons = {}
     o.kitCards = {}
     o.kitNameLabels = {}
     o.kitItemData = {}
-    o.kitIconTex = {}
     o.kitStatus = {}
     o.showingAdmin = false
     return o
@@ -124,7 +124,7 @@ end
 function KitsUI:createChildren()
     ISPanel.createChildren(self)
 
-    self.closeBtn = ISButton:new(PANEL_W - 42, 10, 30, 30, "X", self, KitsUI.onClose)
+    self.closeBtn = ISButton:new(PANEL_W - 32, 6, 24, 24, "X", self, KitsUI.onClose)
     self.closeBtn:initialise()
     self.closeBtn:instantiate()
     self.closeBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
@@ -133,7 +133,7 @@ function KitsUI:createChildren()
     self.closeBtn.textColor = { r = 0.55, g = 0.53, b = 0.50, a = 1 }
     self:addChild(self.closeBtn)
 
-    self.adminBtn = ISButton:new(PAD, 13, 65, 24, "ADMIN", self, KitsUI.onToggleAdmin)
+    self.adminBtn = ISButton:new(PAD, 8, 55, 20, "ADMIN", self, KitsUI.onToggleAdmin)
     self.adminBtn:initialise()
     self.adminBtn:instantiate()
     self.adminBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
@@ -153,7 +153,7 @@ function KitsUI:buildKitsPanel()
     self.kitsPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self:addChild(self.kitsPanel)
 
-    local yOff = 8
+    local yOff = 4
     for i, kit in ipairs(KitsConfig.Kits) do
         local cardH = self:createKitCard(kit, yOff, i)
         yOff = yOff + cardH + CARD_GAP
@@ -172,15 +172,15 @@ function KitsUI:createKitCard(kit, yOff, index)
     local contentW = cardW - ACCENT_BAR_W
 
     local itemCount = #kit.items
-    local itemAreaW = contentW - 30
+    local itemAreaW = contentW - 20
     local slotsPerRow = math.floor(itemAreaW / (ICON_SIZE + ICON_GAP))
     if slotsPerRow < 1 then slotsPerRow = 1 end
     local iconRows = math.ceil(itemCount / slotsPerRow)
 
-    local headerSection = 58
-    local itemSection = iconRows * (ICON_SIZE + ICON_GAP) + 4
-    local btnSection = 42
-    local cardH = headerSection + itemSection + btnSection
+    local titleRow = 28
+    local itemSection = iconRows * (ICON_SIZE + ICON_GAP) + 2
+    local btnRow = BTN_H + 8
+    local cardH = titleRow + itemSection + btnRow
 
     local card = ISPanel:new(cardX, yOff, cardW, cardH)
     card.backgroundColor = C_CARD
@@ -188,32 +188,31 @@ function KitsUI:createKitCard(kit, yOff, index)
     self.kitsPanel:addChild(card)
     self.kitCards[kit.id] = card
 
-    self.kitIconTex[kit.id] = getItemTexture(kit.icon)
     self.kitStatus[kit.id] = { text = "LISTO", state = "ready" }
 
-    local nameX = ACCENT_BAR_W + KIT_ICON_SZ + 16
+    local permText = ""
+    if kit.permission and kit.permission ~= "all" then
+        permText = kit.permission:upper()
+    end
+    local subText = formatCooldown(kit.cooldown)
+    if permText ~= "" then
+        subText = subText .. " | " .. permText
+    end
+
     local nameLabel = ISLabel:new(
-        nameX, 10, 22, kit.name,
+        ACCENT_BAR_W + 10, 5, 18, kit.name,
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a,
         UIFont.Medium, true
     )
     card:addChild(nameLabel)
     self.kitNameLabels[kit.id] = nameLabel
 
-    local permText = ""
-    if kit.permission and kit.permission ~= "all" then
-        permText = kit.permission:upper()
-    end
-    local cdText = formatCooldown(kit.cooldown)
-    if permText ~= "" then
-        cdText = cdText .. "  |  " .. permText
-    end
-    local infoLabel = ISLabel:new(
-        nameX, 32, 14, cdText,
+    local subLabel = ISLabel:new(
+        ACCENT_BAR_W + 10, 20, 12, subText,
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a,
         UIFont.Small, true
     )
-    card:addChild(infoLabel)
+    card:addChild(subLabel)
 
     local itemData = {}
     for _, entry in ipairs(kit.items) do
@@ -226,10 +225,8 @@ function KitsUI:createKitCard(kit, yOff, index)
     end
     self.kitItemData[kit.id] = itemData
 
-    local btnW = 130
-    local btnH = 32
     local btn = ISButton:new(
-        cardW - btnW - 12, cardH - btnH - 8, btnW, btnH,
+        cardW - BTN_W - 8, cardH - BTN_H - 5, BTN_W, BTN_H,
         "RECLAMAR", self, KitsUI.onClaimKit
     )
     btn:initialise()
@@ -257,37 +254,37 @@ function KitsUI:buildAdminPanel()
     local adminTitle = ISLabel:new(PAD, y, 22, "Gestion de Permisos",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Medium, true)
     self.adminPanel:addChild(adminTitle)
-    y = y + 30
+    y = y + 28
 
     local plLabel = ISLabel:new(PAD, y, 18, "Jugador:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.adminPanel:addChild(plLabel)
-    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 180, 22)
+    self.adminPlayerEntry = ISTextEntryBox:new("", PAD + 65, y - 2, 170, 20)
     self.adminPlayerEntry:initialise()
     self.adminPlayerEntry:instantiate()
     self.adminPanel:addChild(self.adminPlayerEntry)
 
-    local listBtn = ISButton:new(PAD + 260, y - 2, 100, 22, "Ver Online", self, KitsUI.onAdminListPlayers)
+    local listBtn = ISButton:new(PAD + 245, y - 2, 90, 20, "Ver Online", self, KitsUI.onAdminListPlayers)
     listBtn:initialise()
     listBtn:instantiate()
     listBtn.backgroundColor = C_CARD
     listBtn.borderColor = C_BORDER
     listBtn.textColor = C_TEXT
     self.adminPanel:addChild(listBtn)
-    y = y + 32
+    y = y + 28
 
     local grLabel = ISLabel:new(PAD, y, 18, "Grupo:",
         C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small, true)
     self.adminPanel:addChild(grLabel)
-    self.adminGroupEntry = ISTextEntryBox:new("", PAD + 70, y - 2, 180, 22)
+    self.adminGroupEntry = ISTextEntryBox:new("", PAD + 65, y - 2, 170, 20)
     self.adminGroupEntry:initialise()
     self.adminGroupEntry:instantiate()
     self.adminPanel:addChild(self.adminGroupEntry)
-    y = y + 36
+    y = y + 32
 
-    local bw = 130
-    local bh = 26
-    local bg = 8
+    local bw = 110
+    local bh = 24
+    local bg = 6
 
     local addBtn = ISButton:new(PAD, y, bw, bh, "Dar Grupo", self, KitsUI.onAdminAddGroup)
     addBtn:initialise()
@@ -312,12 +309,12 @@ function KitsUI:buildAdminPanel()
     infoBtn.borderColor = C_BORDER
     infoBtn.textColor = C_TEXT
     self.adminPanel:addChild(infoBtn)
-    y = y + 38
+    y = y + 34
 
     local refLabel = ISLabel:new(PAD, y, 18, "Grupos disponibles:",
         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a, UIFont.Small, true)
     self.adminPanel:addChild(refLabel)
-    y = y + 20
+    y = y + 18
 
     local groups = {}
     for _, kit in ipairs(KitsConfig.Kits) do
@@ -449,19 +446,11 @@ end
 
 function KitsUI:prerender()
     ISPanel.prerender(self)
-
     self:drawRect(0, 0, PANEL_W, HEADER_H, 1, C_HEADER.r, C_HEADER.g, C_HEADER.b)
-    self:drawRect(0, HEADER_H - 1, PANEL_W, 1, 0.3, C_HEADER_LN.r, C_HEADER_LN.g, C_HEADER_LN.b)
-
     local title = "KITS"
     local tw = getTextManager():MeasureStringX(UIFont.Medium, title)
-    self:drawText(title, (PANEL_W - tw) / 2, 14,
+    self:drawText(title, (PANEL_W - tw) / 2, 9,
         C_TEXT.r, C_TEXT.g, C_TEXT.b, 0.9, UIFont.Medium)
-
-    local sub = "v1.0.56"
-    local sw2 = getTextManager():MeasureStringX(UIFont.Small, sub)
-    self:drawText(sub, (PANEL_W - sw2) / 2, 32,
-        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.5, UIFont.Small)
 end
 
 function KitsUI:render()
@@ -481,31 +470,14 @@ function KitsUI:render()
 
             self:drawRect(cx, cy, ACCENT_BAR_W, ch, 1, kc.r, kc.g, kc.b)
 
-            self:drawRect(cx + ACCENT_BAR_W, cy, cw - ACCENT_BAR_W, 56,
-                0.12, kc.r, kc.g, kc.b)
-
-            local iconX = cx + ACCENT_BAR_W + 8
-            local iconY = cy + 7
-            self:drawRect(iconX, iconY, KIT_ICON_SZ, KIT_ICON_SZ,
-                0.6, 0.06, 0.06, 0.08)
-            self:drawRectBorder(iconX, iconY, KIT_ICON_SZ, KIT_ICON_SZ,
-                0.3, kc.r, kc.g, kc.b)
-
-            local kitTex = self.kitIconTex[kit.id]
-            if kitTex then
-                self:drawTextureScaled(kitTex, iconX + 4, iconY + 4,
-                    KIT_ICON_SZ - 8, KIT_ICON_SZ - 8, 1, 1, 1, 1)
-            end
-
             if st then
                 local stText = st.text or "LISTO"
                 local stw = getTextManager():MeasureStringX(UIFont.Small, stText)
-                local pillPad = 10
+                local pillPad = 8
                 local pillW = stw + pillPad * 2
-                local pillH = 20
-                local pillX = cx + cw - pillW - 12
-                local pillY = cy + 18
-                local textY = pillY + 3
+                local pillH = 18
+                local pillX = cx + cw - pillW - 8
+                local pillY = cy + 7
 
                 local bgColor = C_GREEN_BG
                 local txColor = C_GREEN
@@ -519,21 +491,20 @@ function KitsUI:render()
 
                 self:drawRect(pillX, pillY, pillW, pillH, bgColor.a,
                     bgColor.r, bgColor.g, bgColor.b)
-                self:drawText(stText, pillX + pillPad, textY,
+                self:drawText(stText, pillX + pillPad, pillY + 2,
                     txColor.r, txColor.g, txColor.b, txColor.a, UIFont.Small)
             end
 
-            local sepY = cy + 57
-            self:drawRect(cx + ACCENT_BAR_W + 10, sepY, cw - ACCENT_BAR_W - 20, 1,
-                0.15, kc.r, kc.g, kc.b)
-
-            local itemAreaW = cw - ACCENT_BAR_W - 30
+            local itemAreaW = cw - ACCENT_BAR_W - 16
             local slotsPerRow = math.floor(itemAreaW / (ICON_SIZE + ICON_GAP))
             if slotsPerRow < 1 then slotsPerRow = 1 end
 
-            local totalSlotsW = slotsPerRow * (ICON_SIZE + ICON_GAP) - ICON_GAP
-            local startX = cx + ACCENT_BAR_W + math.floor((cw - ACCENT_BAR_W - totalSlotsW) / 2)
-            local slotY = sepY + 8
+            local totalSlotsW = #items * (ICON_SIZE + ICON_GAP) - ICON_GAP
+            if totalSlotsW > itemAreaW then
+                totalSlotsW = slotsPerRow * (ICON_SIZE + ICON_GAP) - ICON_GAP
+            end
+            local startX = cx + ACCENT_BAR_W + 8
+            local slotY = cy + 30
             local col = 0
             local row = 0
 
@@ -552,19 +523,19 @@ function KitsUI:render()
                 else
                     local letter = item.name:sub(1, 1)
                     local lw = getTextManager():MeasureStringX(UIFont.Small, letter)
-                    self:drawText(letter, ix + (ICON_SIZE - lw) / 2, iy + 10,
+                    self:drawText(letter, ix + (ICON_SIZE - lw) / 2, iy + 8,
                         C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.6, UIFont.Small)
                 end
 
                 if item.count > 1 then
                     local cs = tostring(item.count)
                     local csw = getTextManager():MeasureStringX(UIFont.Small, cs)
-                    local badgeW = csw + 6
+                    local badgeW = csw + 4
                     local badgeX = ix + ICON_SIZE - badgeW
-                    local badgeY = iy + ICON_SIZE - 13
-                    self:drawRect(badgeX, badgeY, badgeW, 13, 0.92,
+                    local badgeY = iy + ICON_SIZE - 12
+                    self:drawRect(badgeX, badgeY, badgeW, 12, 0.92,
                         C_COUNT_BG.r, C_COUNT_BG.g, C_COUNT_BG.b)
-                    self:drawText(cs, badgeX + 3, badgeY,
+                    self:drawText(cs, badgeX + 2, badgeY,
                         1, 1, 1, 1, UIFont.Small)
                 end
 
@@ -572,7 +543,7 @@ function KitsUI:render()
                 local my = self:getMouseY()
                 if mx >= ix and mx <= ix + ICON_SIZE and my >= iy and my <= iy + ICON_SIZE then
                     self:drawRectBorder(ix - 1, iy - 1, ICON_SIZE + 2, ICON_SIZE + 2,
-                        0.8, kc.r, kc.g, kc.b)
+                        0.7, kc.r, kc.g, kc.b)
 
                     local tt = item.name
                     if item.count > 1 then
@@ -580,14 +551,14 @@ function KitsUI:render()
                     end
                     local ttw = getTextManager():MeasureStringX(UIFont.Small, tt)
                     local ttx = ix
-                    local tty = iy - 20
-                    if ttx + ttw + 12 > self:getWidth() then
-                        ttx = self:getWidth() - ttw - 14
+                    local tty = iy - 18
+                    if ttx + ttw + 10 > self:getWidth() then
+                        ttx = self:getWidth() - ttw - 12
                     end
-                    self:drawRect(ttx - 5, tty - 3, ttw + 10, 20,
+                    self:drawRect(ttx - 4, tty - 2, ttw + 8, 18,
                         0.95, 0.06, 0.06, 0.08)
-                    self:drawRectBorder(ttx - 5, tty - 3, ttw + 10, 20,
-                        0.5, kc.r, kc.g, kc.b)
+                    self:drawRectBorder(ttx - 4, tty - 2, ttw + 8, 18,
+                        0.4, kc.r, kc.g, kc.b)
                     self:drawText(tt, ttx, tty,
                         C_TEXT.r, C_TEXT.g, C_TEXT.b, 1, UIFont.Small)
                 end
@@ -598,10 +569,6 @@ function KitsUI:render()
                     row = row + 1
                 end
             end
-
-            local countText = tostring(#items) .. " items"
-            self:drawText(countText, cx + ACCENT_BAR_W + 14, cy + ch - 34,
-                C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.6, UIFont.Small)
         end
     end
 end
