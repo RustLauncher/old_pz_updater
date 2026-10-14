@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.66",
+    "version":  "1.0.67",
     "files":  [
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
@@ -10908,7 +10908,7 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsClient.lua",
-                      "sha256":  "2998f136d58099305f6452e8ed3a6155896c00bbfe9e75fa6871914f4f54c8b8",
+                      "sha256":  "0f15460cca33d4cd3c2ec650795ca7493cdc33000cfc4968044a557e580b0923",
                       "size":  2365
                   },
                   {
@@ -10923,17 +10923,17 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsUI.lua",
-                      "sha256":  "9c8383cb2c66c5f59b72f2cf3d0c9f3956aa75506ef8df72b794a55dd2f3b270",
+                      "sha256":  "6f0e36edbca5e02ad9f6de41b0893fe80bbd09d18d22d1a0e3c3698c896c275b",
                       "size":  16160
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsPermissions.lua",
-                      "sha256":  "14a00e125c87f49162606f40aa4b25d60a6de92cfb86d6d7bf37bdbdabdcd4b2",
+                      "sha256":  "64f19934dfa6ea4c298ae153615a09ec38e56470ae9f6ebdab7932463aef0d6c",
                       "size":  3083
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsServer.lua",
-                      "sha256":  "5996766de9d874a4aaed0f22d5b723b204fff86e36043ab4605bc9000e9ed1b3",
+                      "sha256":  "b366be63364a34094e0a350bf55428eeabcc4fc5a6c1bfad1f5ba564a0f07278",
                       "size":  6316
                   },
                   {
