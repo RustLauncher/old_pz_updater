@@ -17,6 +17,10 @@ local function getCooldownRemaining(player, kitId, cooldownMinutes)
     if not lastUsed then
         return 0
     end
+    if lastUsed > 4000000000 then
+        cooldowns[kitId] = nil
+        return 0
+    end
     local now = os.time()
     local cooldownSecs = cooldownMinutes * 60
     local elapsed = now - lastUsed
