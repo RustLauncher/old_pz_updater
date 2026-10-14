@@ -177,7 +177,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     if slotsPerRow < 1 then slotsPerRow = 1 end
     local iconRows = math.ceil(itemCount / slotsPerRow)
 
-    local titleRow = 28
+    local titleRow = 38
     local itemSection = iconRows * (ICON_SIZE + ICON_GAP) + 2
     local btnRow = BTN_H + 8
     local cardH = titleRow + itemSection + btnRow
@@ -495,6 +495,10 @@ function KitsUI:render()
                     txColor.r, txColor.g, txColor.b, txColor.a, UIFont.Small)
             end
 
+            local sepY2 = cy + 37
+            self:drawRect(cx + ACCENT_BAR_W + 8, sepY2, cw - ACCENT_BAR_W - 16, 1,
+                0.12, kc.r, kc.g, kc.b)
+
             local itemAreaW = cw - ACCENT_BAR_W - 16
             local slotsPerRow = math.floor(itemAreaW / (ICON_SIZE + ICON_GAP))
             if slotsPerRow < 1 then slotsPerRow = 1 end
@@ -504,7 +508,7 @@ function KitsUI:render()
                 totalSlotsW = slotsPerRow * (ICON_SIZE + ICON_GAP) - ICON_GAP
             end
             local startX = cx + ACCENT_BAR_W + 8
-            local slotY = cy + 30
+            local slotY = cy + 40
             local col = 0
             local row = 0
 
