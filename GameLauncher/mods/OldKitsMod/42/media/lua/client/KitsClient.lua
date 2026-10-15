@@ -213,10 +213,10 @@ local function renderRoleTags()
             local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ())
             local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ())
             local tag = "[" .. role:upper() .. "]"
-            local font = UIFont.Small
+            local font = UIFont.Medium
             local tw = getTextManager():MeasureStringX(font, tag)
             local tx = sx - tw / 2
-            local ty = sy - 110
+            local ty = sy - 190
             local c = ROLE_TAG_COLORS[role:lower()] or { r = 0.8, g = 0.8, b = 0.8 }
             getTextManager():DrawString(font, tx, ty, tag, c.r, c.g, c.b, 1.0)
         end
