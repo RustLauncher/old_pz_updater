@@ -141,13 +141,13 @@ function KitsPermissions.GetPlayerPermissionsMap(player)
     for _, kit in ipairs(KitsConfig.Kits) do
         local perm = kit.permission or "all"
         if perm == "all" then
-            result[kit.id] = 1
+            result[kit.id] = "yes"
         else
             local requiredLevel = ROLE_LEVEL[perm] or 0
             if playerLevel >= requiredLevel then
-                result[kit.id] = 1
+                result[kit.id] = "yes"
             else
-                result[kit.id] = 0
+                result[kit.id] = "no"
             end
         end
     end

@@ -25,7 +25,7 @@ function KitsClient.HasPermission(kitId)
     if v == nil then
         return false
     end
-    return v == 1 or v == true
+    return v == "yes"
 end
 
 function KitsClient.AdminSetTempRole(targetName, roleName, days)
