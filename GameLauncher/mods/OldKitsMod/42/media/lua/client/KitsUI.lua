@@ -108,6 +108,24 @@ local function getItemDisplayName(itemType)
     return itemType:gsub("Base%.", "")
 end
 
+local roleColorCache = nil
+local function getRoleColor(roleName)
+    if not roleColorCache then
+        roleColorCache = {}
+        local roles = getRoles()
+        if roles then
+            for i = 0, roles:size() - 1 do
+                local role = roles:get(i)
+                local c = role:getColor()
+                roleColorCache[role:getName():lower()] = {
+                    r = c:getR(), g = c:getG(), b = c:getB(), a = 1,
+                }
+            end
+        end
+    end
+    return roleColorCache[roleName:lower()] or C_TEXT2
+end
+
 function KitsUI:new(x, y)
     local o = ISPanel:new(x, y, PANEL_W, PANEL_H)
     setmetatable(o, self)
@@ -842,14 +860,7 @@ function KitsUI:updateTempRolesList()
         table.insert(self.tempRolesLabels, lbl)
     else
         for _, entry in ipairs(roles) do
-            local rolColor = C_TEXT
-            if entry.role == "vip" then
-                rolColor = C_GREEN
-            elseif entry.role == "ultimate" then
-                rolColor = C_BTN
-            elseif entry.role == "admin" or entry.role == "moderator" then
-                rolColor = C_ADMIN
-            end
+            local rolColor = getRoleColor(entry.role)
             local suffix = ""
             local daysLeft = tonumber(entry.daysLeft)
             if daysLeft and daysLeft >= 0 then
@@ -1030,14 +1041,7 @@ function KitsUI:render()
         local barY = HEADER_H + 4
         local barX = PAD
         local barW = PANEL_W - PAD * 2
-        local roleColor = C_TEXT2
-        if role == "admin" or role == "moderator" then
-            roleColor = C_ADMIN
-        elseif role == "ultimate" then
-            roleColor = { r = 0.90, g = 0.55, b = 0.10, a = 1 }
-        elseif role == "vip" then
-            roleColor = C_GREEN
-        end
+        local roleColor = getRoleColor(role)
         self:drawRect(barX, barY, barW, ROLE_BAR_H, 0.7, C_CARD.r, C_CARD.g, C_CARD.b)
         local roleFont = UIFont.Small
         local roleLabel = "Rol: " .. roleUpper
