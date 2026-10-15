@@ -206,19 +206,18 @@ local function renderRoleTags()
     if not onlineRoles then return end
     local players = getOnlinePlayers()
     if not players then return end
+    local zoom = getCore():getZoom(0)
     for i = 0, players:size() - 1 do
         local p = players:get(i)
         local role = onlineRoles[p:getUsername()]
         if role then
-            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ())
-            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ())
             local tag = "[" .. role:upper() .. "]"
             local font = UIFont.Medium
+            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ() + 3.5)
+            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ() + 3.5)
             local tw = getTextManager():MeasureStringX(font, tag)
-            local tx = sx - tw / 2
-            local ty = sy - 190
             local c = ROLE_TAG_COLORS[role:lower()] or { r = 0.8, g = 0.8, b = 0.8 }
-            getTextManager():DrawString(font, tx, ty, tag, c.r, c.g, c.b, 1.0)
+            getTextManager():DrawString(font, sx - tw / 2, sy, tag, c.r, c.g, c.b, 1.0)
         end
     end
 end
