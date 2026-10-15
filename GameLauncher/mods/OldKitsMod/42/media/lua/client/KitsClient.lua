@@ -176,14 +176,6 @@ local function onServerCommand(module, command, args)
             end
         end
 
-    elseif command == "execSetRole" then
-        local targetName = args.targetName
-        local roleName = args.roleName or ""
-        if targetName then
-            if roleName == "" then roleName = "none" end
-            networkUserAction("SetRole", targetName, roleName)
-        end
-
     elseif command == "error" then
         local player = getPlayer()
         if player then

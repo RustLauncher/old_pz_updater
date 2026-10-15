@@ -6,11 +6,6 @@ KitsServer = KitsServer or {}
 local KITS_OVERRIDES_KEY = "KitsOverrides"
 local KITS_KNOWN_PLAYERS_KEY = "KitsKnownPlayers"
 
-local ELEVATED_ROLES = {
-    admin = true, moderator = true, gm = true, observer = true,
-    priority = true, ultimate = true, vip = true,
-}
-
 local function registerKnownPlayer(player)
     local data = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
     local name = player:getUsername()
@@ -115,31 +110,6 @@ end
 
 local function sendTempRolesList(player)
     local roles = KitsPermissions.GetAllTempRoles()
-    local listed = {}
-    for _, r in ipairs(roles) do
-        listed[r.playerName] = true
-    end
-    local onlinePlayers = getOnlinePlayers()
-    for i = 0, onlinePlayers:size() - 1 do
-        local p = onlinePlayers:get(i)
-        local pName = p:getUsername()
-        if not listed[pName] then
-            local roleObj = p:getRole()
-            local roleName = ""
-            if roleObj then
-                local rn = roleObj:getName()
-                if rn then roleName = rn:lower() end
-            end
-            if roleName ~= "" and roleName ~= "none" and ELEVATED_ROLES[roleName] then
-                table.insert(roles, {
-                    playerName = pName,
-                    role = roleName,
-                    daysLeft = -1,
-                    isNative = true,
-                })
-            end
-        end
-    end
     sendServerCommand(player, "Kits", "tempRolesList", { roles = roles })
 end
 
@@ -285,7 +255,6 @@ local function onClientCommand(module, command, player, args)
             return
         end
         KitsPermissions.SetTempRole(targetName, roleName, days)
-        KitsPermissions.BroadcastExecSetRole(targetName, roleName)
         local target = KitsPermissions.FindPlayerByName(targetName)
         if target then
             sendPermissions(target)
@@ -306,7 +275,6 @@ local function onClientCommand(module, command, player, args)
         end
         local removed = KitsPermissions.RemoveTempRole(targetName)
         if removed then
-            KitsPermissions.BroadcastExecSetRole(targetName, "")
             local target = KitsPermissions.FindPlayerByName(targetName)
             if target then
                 sendPermissions(target)
@@ -382,8 +350,7 @@ Events.OnClientCommand.Add(onClientCommand)
 
 local function onServerStarted()
     loadKitOverrides()
-    KitsPermissions.CleanCorruptEntries()
-    KitsPermissions.ReapplyAllTempRoles()
+    KitsPermissions.LoadRoles()
     KitsPermissions.CheckExpiredRoles()
 end
 
