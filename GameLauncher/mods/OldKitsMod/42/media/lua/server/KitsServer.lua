@@ -394,6 +394,7 @@ Events.OnClientCommand.Add(onClientCommand)
 
 local function onServerStarted()
     loadKitOverrides()
+    KitsPermissions.CleanCorruptEntries()
 end
 
 Events.OnServerStarted.Add(onServerStarted)

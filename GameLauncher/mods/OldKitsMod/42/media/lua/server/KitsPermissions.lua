@@ -71,27 +71,32 @@ function KitsPermissions.ApplyPendingRole(player)
     local data = getTempRolesData()
     local username = player:getUsername()
     local entry = data[username]
-    if entry and entry.pending then
-        if not entry.role or not entry.expires then
-            data[username] = nil
-            ModData.transmit(TEMP_ROLES_KEY)
-            return
-        end
-        local now = os.time()
-        if entry.expires > now then
-            player:setAccessLevel(entry.role)
-            local key = getPlayerKey(player)
-            if key ~= username then
-                data[key] = entry
-                data[username] = nil
-            end
-            entry.pending = nil
-            ModData.transmit(TEMP_ROLES_KEY)
-        else
-            data[username] = nil
-            ModData.transmit(TEMP_ROLES_KEY)
-        end
+    if not entry then return end
+    if type(entry) ~= "table" or not entry.pending or not entry.role or not entry.expires then
+        return
     end
+    local now = os.time()
+    if type(entry.expires) ~= "number" or entry.expires <= now then
+        data[username] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        return
+    end
+    local ok, err = pcall(function()
+        player:setAccessLevel(tostring(entry.role))
+    end)
+    if not ok then
+        print("[KitsPerms] setAccessLevel failed for " .. username .. ": " .. tostring(err))
+        data[username] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        return
+    end
+    local key = getPlayerKey(player)
+    if key ~= username then
+        data[key] = entry
+        data[username] = nil
+    end
+    entry.pending = nil
+    ModData.transmit(TEMP_ROLES_KEY)
 end
 
 function KitsPermissions.RemoveTempRole(player)
@@ -226,4 +231,21 @@ function KitsPermissions.ClearAllTempRoles()
         data[key] = nil
     end
     ModData.transmit(TEMP_ROLES_KEY)
+end
+
+function KitsPermissions.CleanCorruptEntries()
+    local data = getTempRolesData()
+    local toRemove = {}
+    for key, entry in pairs(data) do
+        if type(entry) ~= "table" or not entry.role or not entry.expires or type(entry.expires) ~= "number" then
+            table.insert(toRemove, key)
+        end
+    end
+    for _, key in ipairs(toRemove) do
+        print("[KitsPerms] Removing corrupt entry: " .. tostring(key))
+        data[key] = nil
+    end
+    if #toRemove > 0 then
+        ModData.transmit(TEMP_ROLES_KEY)
+    end
 end
