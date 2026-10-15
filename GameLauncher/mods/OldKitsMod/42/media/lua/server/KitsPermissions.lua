@@ -21,11 +21,7 @@ local function getTempRolesData()
 end
 
 local function getPlayerKey(player)
-    local steamId = player:getSteamID()
-    if not steamId or steamId == "" then
-        steamId = player:getUsername()
-    end
-    return tostring(steamId)
+    return player:getUsername()
 end
 
 local function getPlayerRoleName(player)
@@ -47,12 +43,7 @@ end
 function KitsPermissions.GetTempRole(player)
     local data = getTempRolesData()
     local key = getPlayerKey(player)
-    local steamId = player:getSteamID()
-    print("[KitsPerms] GetTempRole: username=" .. player:getUsername() .. " steamId=" .. tostring(steamId) .. " key=" .. tostring(key))
     local entry = data[key]
-    if entry then
-        print("[KitsPerms]   found temp role: " .. tostring(entry.role) .. " for " .. tostring(entry.playerName))
-    end
     if not entry then return nil end
     local now = os.time()
     if entry.expires <= now then
@@ -143,21 +134,16 @@ end
 function KitsPermissions.GetPlayerPermissionsMap(player)
     local result = {}
     local playerLevel = KitsPermissions.GetEffectiveLevel(player)
-    local roleName = player:getRole() and player:getRole():getName() or "nil"
-    print("[KitsPerms] Player=" .. player:getUsername() .. " role=" .. tostring(roleName) .. " effectiveLevel=" .. tostring(playerLevel))
     for _, kit in ipairs(KitsConfig.Kits) do
         local perm = kit.permission or "all"
         if perm == "all" then
             result[kit.id] = "yes"
-            print("[KitsPerms]   kit=" .. kit.id .. " perm=all -> yes")
         else
             local requiredLevel = ROLE_LEVEL[perm] or 0
             if playerLevel >= requiredLevel then
                 result[kit.id] = "yes"
-                print("[KitsPerms]   kit=" .. kit.id .. " perm=" .. perm .. " req=" .. requiredLevel .. " -> yes")
             else
                 result[kit.id] = "no"
-                print("[KitsPerms]   kit=" .. kit.id .. " perm=" .. perm .. " req=" .. requiredLevel .. " -> no")
             end
         end
     end
@@ -173,4 +159,12 @@ function KitsPermissions.FindPlayerByName(name)
         end
     end
     return nil
+end
+
+function KitsPermissions.ClearAllTempRoles()
+    local data = getTempRolesData()
+    for key, _ in pairs(data) do
+        data[key] = nil
+    end
+    ModData.transmit(TEMP_ROLES_KEY)
 end

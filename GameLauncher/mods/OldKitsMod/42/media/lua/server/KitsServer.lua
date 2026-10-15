@@ -346,6 +346,7 @@ Events.OnClientCommand.Add(onClientCommand)
 
 local function onServerStarted()
     loadKitOverrides()
+    KitsPermissions.ClearAllTempRoles()
 end
 
 Events.OnServerStarted.Add(onServerStarted)
