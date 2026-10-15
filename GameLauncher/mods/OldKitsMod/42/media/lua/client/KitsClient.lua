@@ -159,6 +159,17 @@ local function onServerCommand(module, command, args)
     elseif command == "playerRoleInfo" then
         KitsClient.PlayerRole = args.role or "user"
         KitsClient.PlayerRoleDaysLeft = tonumber(args.daysLeft) or -1
+        local player = getPlayer()
+        if player then
+            local role = KitsClient.PlayerRole
+            local username = player:getUsername()
+            if role ~= "user" and role ~= "admin" then
+                player:setDisplayName("[" .. role:upper() .. "] " .. username)
+            else
+                player:setDisplayName(username)
+            end
+            sendPlayerStatsChange(player)
+        end
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateRoleBar()
         end

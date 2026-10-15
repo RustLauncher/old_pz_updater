@@ -114,7 +114,7 @@ local DEFAULT_ROLE_COLORS = {
     gm        = { r = 0.80, g = 0.50, b = 1.00, a = 1 },
     observer  = { r = 0.60, g = 0.60, b = 0.60, a = 1 },
     priority  = { r = 1.00, g = 0.85, b = 0.20, a = 1 },
-    ultimate  = { r = 1.00, g = 0.40, b = 0.70, a = 1 },
+    ultimate  = { r = 0.90, g = 0.15, b = 0.35, a = 1 },
     vip       = { r = 1.00, g = 0.85, b = 0.20, a = 1 },
     user      = { r = 0.50, g = 0.48, b = 0.46, a = 1 },
     banned    = { r = 0.40, g = 0.10, b = 0.10, a = 1 },
@@ -891,7 +891,7 @@ function KitsUI:updateTempRolesList()
                 if k == "vip" then
                     cr, cg, cb = 1.00, 0.85, 0.20
                 elseif k == "ultimate" then
-                    cr, cg, cb = 1.00, 0.40, 0.70
+                    cr, cg, cb = 0.90, 0.15, 0.35
                 elseif k == "priority" then
                     cr, cg, cb = 1.00, 0.85, 0.20
                 elseif k == "gm" then
