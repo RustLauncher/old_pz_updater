@@ -173,7 +173,7 @@ function KitsUI:buildKitsPanel()
     self.kitsPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self:addChild(self.kitsPanel)
 
-    local yOff = 4 + ROLE_BAR_H + 2
+    local yOff = 4 + ROLE_BAR_H + 8
     for i, kit in ipairs(KitsConfig.Kits) do
         local cardH = self:createKitCard(kit, yOff, i)
         yOff = yOff + cardH + CARD_GAP
@@ -412,11 +412,11 @@ function KitsUI.doDrawPlayerItem(self2, y, item, alt)
     end
     local data = item.item
     if data and data.online then
-        self2:drawRect(6, y + 8, 8, 8, 1, C_GREEN.r, C_GREEN.g, C_GREEN.b)
+        self2:drawRect(8, y + 9, 6, 6, 1, C_GREEN.r, C_GREEN.g, C_GREEN.b)
     else
-        self2:drawRect(6, y + 8, 8, 8, 0.4, C_RED_DK.r, C_RED_DK.g, C_RED_DK.b)
+        self2:drawRect(8, y + 9, 6, 6, 0.4, C_RED_DK.r, C_RED_DK.g, C_RED_DK.b)
     end
-    self2:drawText(item.text, 20, y + 4, C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
+    self2:drawText(item.text, 20, y + 3, C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
     return y + self2.itemheight
 end
 
