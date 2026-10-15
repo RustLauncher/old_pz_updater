@@ -14,16 +14,12 @@ local ELEVATED_ROLES = {
 local function registerKnownPlayer(player)
     local data = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
     local name = player:getUsername()
-    local role = player:getRole() and player:getRole():getName() or ""
-    if role then role = role:lower() end
-    if not data[name] or type(data[name]) == "string" then
-        data[name] = { joined = tostring(os.time()), role = role }
+    if not data[name] then
+        data[name] = tostring(os.time())
         ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
-    else
-        if data[name].role ~= role then
-            data[name].role = role
-            ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
-        end
+    elseif type(data[name]) == "table" then
+        data[name] = data[name].joined or tostring(os.time())
+        ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
     end
 end
 
@@ -118,41 +114,23 @@ end
 
 local function sendTempRolesList(player)
     local roles = KitsPermissions.GetAllTempRoles()
-    local tempNames = {}
+    local listed = {}
     for _, r in ipairs(roles) do
-        tempNames[r.playerName] = true
+        listed[r.playerName] = true
     end
     local onlinePlayers = getOnlinePlayers()
     for i = 0, onlinePlayers:size() - 1 do
         local p = onlinePlayers:get(i)
-        local roleName = p:getRole():getName():lower()
-        if roleName and roleName ~= "" and roleName ~= "none" and ELEVATED_ROLES[roleName] then
-            if not tempNames[p:getUsername()] then
+        local pName = p:getUsername()
+        if not listed[pName] then
+            local roleName = p:getRole():getName():lower()
+            if roleName and roleName ~= "" and roleName ~= "none" and ELEVATED_ROLES[roleName] then
                 table.insert(roles, {
-                    playerName = p:getUsername(),
+                    playerName = pName,
                     role = roleName,
                     daysLeft = -1,
                     isNative = true,
                 })
-                tempNames[p:getUsername()] = true
-            end
-        end
-    end
-    local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
-    for name, info in pairs(known) do
-        if not tempNames[name] then
-            local role = nil
-            if type(info) == "table" and info.role then
-                role = info.role
-            end
-            if role and role ~= "" and role ~= "none" and role ~= "user" and ELEVATED_ROLES[role] then
-                table.insert(roles, {
-                    playerName = name,
-                    role = role,
-                    daysLeft = -1,
-                    isNative = true,
-                })
-                tempNames[name] = true
             end
         end
     end
@@ -222,19 +200,12 @@ local function sendAllPlayersList(player)
     local onlineSet = {}
     for i = 0, onlinePlayers:size() - 1 do
         local p = onlinePlayers:get(i)
-        local pName = p:getUsername()
-        onlineSet[pName] = true
-        local role = p:getRole() and p:getRole():getName() or ""
-        if role then role = role:lower() end
-        if not known[pName] then
-            known[pName] = { joined = tostring(os.time()), role = role }
-        elseif type(known[pName]) == "string" then
-            known[pName] = { joined = known[pName], role = role }
-        else
-            known[pName].role = role
+        onlineSet[p:getUsername()] = true
+        if not known[p:getUsername()] then
+            known[p:getUsername()] = tostring(os.time())
+            ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
         end
     end
-    ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
     local list = {}
     for name, _ in pairs(known) do
         table.insert(list, {
@@ -316,11 +287,6 @@ local function onClientCommand(module, command, player, args)
         else
             KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
             sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = roleName })
-            local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
-            if known[targetName] and type(known[targetName]) == "table" then
-                known[targetName].role = roleName:lower()
-                ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
-            end
             sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         end
         sendTempRolesList(player)
@@ -348,11 +314,6 @@ local function onClientCommand(module, command, player, args)
             local removed = KitsPermissions.RemoveTempRoleOffline(targetName)
             if removed then
                 sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = "user" })
-                local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
-                if known[targetName] and type(known[targetName]) == "table" then
-                    known[targetName].role = "user"
-                    ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
-                end
                 sendMsg(player, "Rol temporal quitado de " .. targetName)
             else
                 sendMsg(player, targetName .. " no tiene rol temporal.")
