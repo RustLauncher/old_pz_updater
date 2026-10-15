@@ -84,9 +84,13 @@ local function sendPermissions(player)
 end
 
 local function sendPlayerRoleInfo(player)
-    local roleName = player:getRole() and player:getRole():getName() or ""
-    if roleName then roleName = roleName:lower() end
-    if not roleName or roleName == "" or roleName == "none" then roleName = "user" end
+    local roleObj = player:getRole()
+    local roleName = ""
+    if roleObj then
+        roleName = roleObj:getName() or ""
+    end
+    roleName = roleName:lower()
+    if roleName == "" or roleName == "none" then roleName = "user" end
     local data = ModData.getOrCreate("KitsTempRoles")
     local key = player:getSteamID()
     if not key or key == "" or key == "0" then key = player:getUsername() end
@@ -102,6 +106,11 @@ local function sendPlayerRoleInfo(player)
             daysLeft = tostring(math.ceil(remaining / 86400))
         end
     end
+    local accessLevel = player:getAccessLevel() or ""
+    if accessLevel ~= "" and accessLevel:lower() ~= "none" then
+        roleName = accessLevel:lower()
+    end
+    print("[KitsServer] roleInfo for " .. player:getUsername() .. ": role=" .. roleName .. " accessLevel=" .. accessLevel .. " daysLeft=" .. daysLeft .. " key=" .. key .. " entryFound=" .. tostring(entry ~= nil))
     sendServerCommand(player, "Kits", "playerRoleInfo", {
         role = roleName,
         daysLeft = daysLeft,
