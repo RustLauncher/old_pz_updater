@@ -131,8 +131,6 @@ function KitsUI:new(x, y)
     o.adminActiveTab = "roles"
     o.editingKitId = nil
     o.editKitItems = {}
-    o.editItemWidgets = {}
-    o.editItemDisplayData = {}
     o.kitSelectorBtns = {}
     o.editPermission = "all"
     o.itemSearchCache = nil
@@ -421,6 +419,25 @@ function KitsUI.doDrawPlayerItem(self2, y, item, alt)
     return y + self2.itemheight
 end
 
+function KitsUI.doDrawEditItem(self2, y, item, alt)
+    if self2.selected == item.index then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.4, C_BTN.r, C_BTN.g, C_BTN.b)
+    elseif alt then
+        self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.05, 1, 1, 1)
+    end
+    local data = item.item
+    if data then
+        local ix = 6
+        if data.tex then
+            self2:drawTextureScaled(data.tex, ix, y + 2, EDIT_ICON, EDIT_ICON, 1, 1, 1, 1)
+        end
+        local label = data.name .. "  x" .. tostring(data.count)
+        self2:drawText(label, ix + EDIT_ICON + 8, y + 4,
+            C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
+    end
+    return y + self2.itemheight
+end
+
 function KitsUI.doDrawSearchItem(self2, y, item, alt)
     if self2.selected == item.index then
         self2:drawRect(0, y, self2:getWidth(), self2.itemheight, 0.4, C_BTN.r, C_BTN.g, C_BTN.b)
@@ -529,10 +546,18 @@ function KitsUI:buildKitEditorPanel()
     self.kitsEditorPanel:addChild(itemsTitle)
     y = y + 22
 
-    self.editItemsStartY = y
-    self.editItemsAreaH = 190
+    self.editItemsList = ISScrollingListBox:new(PAD, y, PANEL_W - PAD * 2, 190)
+    self.editItemsList:initialise()
+    self.editItemsList:instantiate()
+    self.editItemsList.itemheight = EDIT_ITEM_H
+    self.editItemsList.font = UIFont.Small
+    self.editItemsList.backgroundColor = { r = 0.08, g = 0.08, b = 0.10, a = 1 }
+    self.editItemsList.borderColor = C_BORDER
+    self.editItemsList.drawBorder = true
+    self.editItemsList.doDrawItem = self.doDrawEditItem
+    self.kitsEditorPanel:addChild(self.editItemsList)
 
-    local searchY = y + self.editItemsAreaH + 4
+    local searchY = y + 196
 
     self:drawHSeparator(self.kitsEditorPanel, searchY - 6)
 
@@ -576,6 +601,15 @@ function KitsUI:buildKitEditorPanel()
     self.editAddItemBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
     self.editAddItemBtn.textColor = C_TEXT
     self.kitsEditorPanel:addChild(self.editAddItemBtn)
+
+    self.editRemoveItemBtn = ISButton:new(PAD + 236, searchY, 100, 22, "QUITAR", self, KitsUI.onRemoveEditItem)
+    self.editRemoveItemBtn:initialise()
+    self.editRemoveItemBtn:instantiate()
+    self.editRemoveItemBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.9 }
+    self.editRemoveItemBtn.backgroundColorMouseOver = { r = 0.75, g = 0.20, b = 0.20, a = 1 }
+    self.editRemoveItemBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    self.editRemoveItemBtn.textColor = C_TEXT
+    self.kitsEditorPanel:addChild(self.editRemoveItemBtn)
     searchY = searchY + 32
 
     self.editSaveBtn = ISButton:new(PAD, searchY, 140, BTN_H, "GUARDAR", self, KitsUI.onSaveEditKit)
@@ -673,33 +707,17 @@ function KitsUI:onEditPermUlt()
 end
 
 function KitsUI:rebuildEditItemsList()
-    for _, w in ipairs(self.editItemWidgets) do
-        self.kitsEditorPanel:removeChild(w)
-    end
-    self.editItemWidgets = {}
-    self.editItemDisplayData = {}
-
-    local y = self.editItemsStartY
+    if not self.editItemsList then return end
+    self.editItemsList:clear()
     for idx, item in ipairs(self.editKitItems) do
-        table.insert(self.editItemDisplayData, {
+        local data = {
             tex = getItemTexture(item.type),
             name = getItemDisplayName(item.type),
             count = item.count,
             type = item.type,
-        })
-
-        local xBtn = ISButton:new(PANEL_W - 50, y + 3, 30, 20, "X", self, KitsUI.onRemoveEditItem)
-        xBtn:initialise()
-        xBtn:instantiate()
-        xBtn.internal = idx
-        xBtn.backgroundColor = { r = 0.55, g = 0.15, b = 0.15, a = 0.6 }
-        xBtn.backgroundColorMouseOver = { r = 0.75, g = 0.20, b = 0.20, a = 0.9 }
-        xBtn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-        xBtn.textColor = C_TEXT
-        self.kitsEditorPanel:addChild(xBtn)
-        table.insert(self.editItemWidgets, xBtn)
-
-        y = y + EDIT_ITEM_H
+            idx = idx,
+        }
+        self.editItemsList:addItem(data.name, data)
     end
 end
 
@@ -719,10 +737,11 @@ function KitsUI:onAddEditItem()
     self:rebuildEditItemsList()
 end
 
-function KitsUI:onRemoveEditItem(button)
-    local idx = button.internal
-    if not idx or not self.editKitItems[idx] then return end
-    table.remove(self.editKitItems, idx)
+function KitsUI:onRemoveEditItem()
+    if not self.editItemsList then return end
+    local sel = self.editItemsList.selected
+    if not sel or sel < 1 or sel > #self.editItemsList.items then return end
+    table.remove(self.editKitItems, sel)
     self:rebuildEditItemsList()
 end
 
@@ -997,31 +1016,6 @@ function KitsUI:render()
     ISPanel.render(self)
 
     if self.showingAdmin then
-        if self.adminActiveTab == "kits" and self.editingKitId then
-            local items = self.editItemDisplayData or {}
-            local panelY = HEADER_H + 30
-            local startY = self.editItemsStartY or 0
-            for idx, item in ipairs(items) do
-                local iy = panelY + startY + (idx - 1) * EDIT_ITEM_H
-                local ix = PAD + 6
-
-                self:drawRect(ix - 4, iy, PANEL_W - PAD * 2 - 48, EDIT_ITEM_H - 2,
-                    0.6, C_CARD.r, C_CARD.g, C_CARD.b)
-
-                if item.tex then
-                    self:drawTextureScaled(item.tex, ix, iy + 2, EDIT_ICON, EDIT_ICON, 1, 1, 1, 1)
-                else
-                    local letter = item.name:sub(1, 1)
-                    local lw = getTextManager():MeasureStringX(UIFont.Small, letter)
-                    self:drawText(letter, ix + (EDIT_ICON - lw) / 2, iy + 4,
-                        C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, 0.6, UIFont.Small)
-                end
-
-                local label = item.name .. "  x" .. tostring(item.count)
-                self:drawText(label, ix + EDIT_ICON + 8, iy + 4,
-                    C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a, UIFont.Small)
-            end
-        end
         return
     end
 
