@@ -138,16 +138,21 @@ end
 function KitsPermissions.GetPlayerPermissionsMap(player)
     local result = {}
     local playerLevel = KitsPermissions.GetEffectiveLevel(player)
+    local roleName = player:getRole() and player:getRole():getName() or "nil"
+    print("[KitsPerms] Player=" .. player:getUsername() .. " role=" .. tostring(roleName) .. " effectiveLevel=" .. tostring(playerLevel))
     for _, kit in ipairs(KitsConfig.Kits) do
         local perm = kit.permission or "all"
         if perm == "all" then
             result[kit.id] = "yes"
+            print("[KitsPerms]   kit=" .. kit.id .. " perm=all -> yes")
         else
             local requiredLevel = ROLE_LEVEL[perm] or 0
             if playerLevel >= requiredLevel then
                 result[kit.id] = "yes"
+                print("[KitsPerms]   kit=" .. kit.id .. " perm=" .. perm .. " req=" .. requiredLevel .. " -> yes")
             else
                 result[kit.id] = "no"
+                print("[KitsPerms]   kit=" .. kit.id .. " perm=" .. perm .. " req=" .. requiredLevel .. " -> no")
             end
         end
     end
