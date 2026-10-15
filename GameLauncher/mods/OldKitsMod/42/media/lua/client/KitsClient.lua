@@ -213,8 +213,8 @@ local function renderRoleTags()
         if role then
             local tag = "[" .. role:upper() .. "]"
             local font = UIFont.Medium
-            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ() + 3.5)
-            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ() + 3.5)
+            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ() + 1.8)
+            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ() + 1.8)
             local tw = getTextManager():MeasureStringX(font, tag)
             local c = ROLE_TAG_COLORS[role:lower()] or { r = 0.8, g = 0.8, b = 0.8 }
             getTextManager():DrawString(font, sx - tw / 2, sy, tag, c.r, c.g, c.b, 1.0)
@@ -223,3 +223,9 @@ local function renderRoleTags()
 end
 
 Events.OnPostUIDraw.Add(renderRoleTags)
+
+local function onGameStart()
+    sendClientCommand("Kits", "requestCooldowns", {})
+end
+
+Events.OnGameStart.Add(onGameStart)

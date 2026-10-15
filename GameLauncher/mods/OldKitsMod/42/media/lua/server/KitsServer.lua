@@ -376,6 +376,7 @@ Events.OnServerStarted.Add(onServerStarted)
 
 local function onEveryOneMinute()
     KitsPermissions.CheckExpiredRoles()
+    broadcastOnlineRoles()
 end
 
 Events.EveryOneMinute.Add(onEveryOneMinute)
