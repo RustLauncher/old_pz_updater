@@ -84,19 +84,26 @@ local function sendPermissions(player)
 end
 
 local function sendPlayerRoleInfo(player)
-    local roleObj = player:getRole()
-    local roleName = "user"
-    if roleObj then
-        local rn = roleObj:getName()
-        if rn and rn ~= "" and rn:lower() ~= "none" then
-            roleName = rn:lower()
-        end
-    end
     local username = player:getUsername()
     local tempInfo = KitsPermissions.GetTempRoleInfo(username)
+    local roleName = "user"
     local daysLeft = "-1"
     if tempInfo then
-        daysLeft = tostring(tempInfo.daysLeft)
+        if tempInfo.expired then
+            roleName = "user"
+            daysLeft = "0"
+        else
+            roleName = tempInfo.role
+            daysLeft = tostring(tempInfo.daysLeft)
+        end
+    else
+        local roleObj = player:getRole()
+        if roleObj then
+            local rn = roleObj:getName()
+            if rn and rn ~= "" and rn:lower() ~= "none" then
+                roleName = rn:lower()
+            end
+        end
     end
     sendServerCommand(player, "Kits", "playerRoleInfo", {
         role = roleName,
