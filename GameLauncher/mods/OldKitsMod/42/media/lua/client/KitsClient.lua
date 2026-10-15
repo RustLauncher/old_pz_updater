@@ -9,6 +9,7 @@ KitsClient.OnlinePlayers = {}
 KitsClient.AllPlayers = {}
 KitsClient.PlayerRole = "user"
 KitsClient.PlayerRoleDaysLeft = -1
+KitsClient.RoleColors = {}
 
 function KitsClient.RequestKit(kitId)
     sendClientCommand("Kits", "requestKit", { kitId = kitId })
@@ -160,6 +161,19 @@ local function onServerCommand(module, command, args)
         KitsClient.PlayerRoleDaysLeft = tonumber(args.daysLeft) or -1
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateRoleBar()
+        end
+
+    elseif command == "roleColors" then
+        KitsClient.RoleColors = {}
+        if args then
+            for name, cStr in pairs(args) do
+                local r, g, b = cStr:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+                if r then
+                    KitsClient.RoleColors[name:lower()] = {
+                        r = tonumber(r), g = tonumber(g), b = tonumber(b), a = 1,
+                    }
+                end
+            end
         end
 
     elseif command == "error" then

@@ -108,22 +108,11 @@ local function getItemDisplayName(itemType)
     return itemType:gsub("Base%.", "")
 end
 
-local roleColorCache = nil
 local function getRoleColor(roleName)
-    if not roleColorCache then
-        roleColorCache = {}
-        local roles = getRoles()
-        if roles then
-            for i = 0, roles:size() - 1 do
-                local role = roles:get(i)
-                local c = role:getColor()
-                roleColorCache[role:getName():lower()] = {
-                    r = c:getR(), g = c:getG(), b = c:getB(), a = 1,
-                }
-            end
-        end
-    end
-    return roleColorCache[roleName:lower()] or C_TEXT2
+    local colors = KitsClient.RoleColors or {}
+    local c = colors[roleName:lower()]
+    if c then return c end
+    return C_TEXT2
 end
 
 function KitsUI:new(x, y)

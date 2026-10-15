@@ -96,6 +96,19 @@ local function sendPlayerRoleInfo(player)
     })
 end
 
+local function sendRoleColors(player)
+    local colors = {}
+    local roles = getRoles()
+    if roles then
+        for i = 0, roles:size() - 1 do
+            local role = roles:get(i)
+            local c = role:getColor()
+            colors[role:getName():lower()] = string.format("%.2f,%.2f,%.2f", c:getR(), c:getG(), c:getB())
+        end
+    end
+    sendServerCommand(player, "Kits", "roleColors", colors)
+end
+
 local function sendMsg(player, msg)
     sendServerCommand(player, "Kits", "error", { msg = msg })
 end
@@ -253,6 +266,7 @@ local function onClientCommand(module, command, player, args)
         sendPermissions(player)
         sendPlayerRoleInfo(player)
         sendKitsToPlayer(player)
+        sendRoleColors(player)
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
