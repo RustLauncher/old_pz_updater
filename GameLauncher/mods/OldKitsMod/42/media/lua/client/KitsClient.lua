@@ -162,13 +162,6 @@ local function onServerCommand(module, command, args)
             KitsUI.instance:updateRoleBar()
         end
 
-    elseif command == "execSetRole" then
-        local targetName = args.targetName
-        local roleName = args.roleName
-        if targetName and roleName then
-            networkUserAction("SetRole", targetName, roleName)
-        end
-
     elseif command == "error" then
         local player = getPlayer()
         if player then

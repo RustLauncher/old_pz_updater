@@ -36,6 +36,14 @@ local function getRoleLevel(roleName)
     return ROLE_LEVEL[roleName:lower()] or 10
 end
 
+local function applyServerRole(username, roleName)
+    local pzRole = roleName:lower()
+    if pzRole == "user" or pzRole == "none" or pzRole == "" then
+        pzRole = ""
+    end
+    setDefaultRoleFor(username, pzRole)
+end
+
 function KitsPermissions.SetTempRole(targetName, roleName, days)
     local data = getTempRolesData()
     data[targetName] = {
@@ -44,6 +52,7 @@ function KitsPermissions.SetTempRole(targetName, roleName, days)
         playerName = targetName,
     }
     ModData.transmit(TEMP_ROLES_KEY)
+    applyServerRole(targetName, roleName)
 end
 
 function KitsPermissions.RemoveTempRole(targetName)
@@ -51,6 +60,7 @@ function KitsPermissions.RemoveTempRole(targetName)
     if data[targetName] then
         data[targetName] = nil
         ModData.transmit(TEMP_ROLES_KEY)
+        applyServerRole(targetName, "")
         return true
     end
     return false
@@ -145,6 +155,34 @@ function KitsPermissions.FindPlayerByName(name)
     return nil
 end
 
+function KitsPermissions.CheckExpiredRoles()
+    local data = getTempRolesData()
+    local now = os.time()
+    local changed = false
+    for key, entry in pairs(data) do
+        if type(entry) == "table" and entry.role then
+            local expires = tonumber(entry.expires)
+            if expires and expires <= now then
+                applyServerRole(entry.playerName or key, "")
+                data[key] = nil
+                changed = true
+                local target = KitsPermissions.FindPlayerByName(entry.playerName or key)
+                if target then
+                    sendServerCommand(target, "Kits", "playerRoleInfo", {
+                        role = "user",
+                        daysLeft = "0",
+                    })
+                    local perms = KitsPermissions.GetPlayerPermissionsMap(target)
+                    sendServerCommand(target, "Kits", "permissionsUpdate", perms)
+                end
+            end
+        end
+    end
+    if changed then
+        ModData.transmit(TEMP_ROLES_KEY)
+    end
+end
+
 function KitsPermissions.CleanCorruptEntries()
     local data = getTempRolesData()
     local toRemove = {}
@@ -158,5 +196,18 @@ function KitsPermissions.CleanCorruptEntries()
     end
     if #toRemove > 0 then
         ModData.transmit(TEMP_ROLES_KEY)
+    end
+end
+
+function KitsPermissions.ReapplyAllTempRoles()
+    local data = getTempRolesData()
+    local now = os.time()
+    for key, entry in pairs(data) do
+        if type(entry) == "table" and entry.role then
+            local expires = tonumber(entry.expires)
+            if expires and expires > now then
+                applyServerRole(entry.playerName or key, entry.role)
+            end
+        end
     end
 end

@@ -271,7 +271,6 @@ local function onClientCommand(module, command, player, args)
             return
         end
         KitsPermissions.SetTempRole(targetName, roleName, days)
-        sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = roleName })
         local target = KitsPermissions.FindPlayerByName(targetName)
         if target then
             sendPermissions(target)
@@ -292,7 +291,6 @@ local function onClientCommand(module, command, player, args)
         end
         local removed = KitsPermissions.RemoveTempRole(targetName)
         if removed then
-            sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = "user" })
             local target = KitsPermissions.FindPlayerByName(targetName)
             if target then
                 sendPermissions(target)
@@ -369,6 +367,14 @@ Events.OnClientCommand.Add(onClientCommand)
 local function onServerStarted()
     loadKitOverrides()
     KitsPermissions.CleanCorruptEntries()
+    KitsPermissions.ReapplyAllTempRoles()
+    KitsPermissions.CheckExpiredRoles()
 end
 
 Events.OnServerStarted.Add(onServerStarted)
+
+local function onEveryOneMinute()
+    KitsPermissions.CheckExpiredRoles()
+end
+
+Events.EveryOneMinute.Add(onEveryOneMinute)
