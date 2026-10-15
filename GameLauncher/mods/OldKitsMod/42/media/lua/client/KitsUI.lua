@@ -884,7 +884,27 @@ function KitsUI:updateTempRolesList()
         table.insert(self.tempRolesLabels, lbl)
     else
         for _, entry in ipairs(roles) do
-            local rolColor = getRoleColor(entry.role)
+            local rn = entry.role
+            local cr, cg, cb = C_TEXT2.r, C_TEXT2.g, C_TEXT2.b
+            if rn then
+                local k = rn:lower()
+                if k == "vip" then
+                    cr, cg, cb = 1.00, 0.85, 0.20
+                elseif k == "ultimate" then
+                    cr, cg, cb = 1.00, 0.40, 0.70
+                elseif k == "priority" then
+                    cr, cg, cb = 1.00, 0.85, 0.20
+                elseif k == "gm" then
+                    cr, cg, cb = 0.80, 0.50, 1.00
+                elseif k == "admin" then
+                    cr, cg, cb = 1.00, 0.30, 0.30
+                elseif k == "moderator" then
+                    cr, cg, cb = 0.30, 0.60, 1.00
+                else
+                    local rc = getRoleColor(k)
+                    cr, cg, cb = rc.r, rc.g, rc.b
+                end
+            end
             local suffix = ""
             local daysLeft = tonumber(entry.daysLeft)
             if daysLeft and daysLeft >= 0 then
@@ -892,9 +912,9 @@ function KitsUI:updateTempRolesList()
             else
                 suffix = "(servidor)"
             end
-            local line = entry.playerName .. "  -  " .. entry.role:upper() .. "  " .. suffix
+            local line = entry.playerName .. "  -  " .. rn:upper() .. "  " .. suffix
             local lbl = ISLabel:new(PAD + 10, y, 18, line,
-                rolColor.r, rolColor.g, rolColor.b, rolColor.a, UIFont.Small, true)
+                cr, cg, cb, 1, UIFont.Small, true)
             self.rolesSubPanel:addChild(lbl)
             table.insert(self.tempRolesLabels, lbl)
             y = y + 20
