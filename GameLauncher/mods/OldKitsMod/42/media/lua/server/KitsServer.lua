@@ -14,9 +14,16 @@ local ELEVATED_ROLES = {
 local function registerKnownPlayer(player)
     local data = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
     local name = player:getUsername()
-    if not data[name] then
-        data[name] = tostring(os.time())
+    local role = player:getRole() and player:getRole():getName() or ""
+    if role then role = role:lower() end
+    if not data[name] or type(data[name]) == "string" then
+        data[name] = { joined = tostring(os.time()), role = role }
         ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+    else
+        if data[name].role ~= role then
+            data[name].role = role
+            ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+        end
     end
 end
 
@@ -102,6 +109,20 @@ local function sendTempRolesList(player)
                     daysLeft = -1,
                     isNative = true,
                 })
+                tempNames[p:getUsername()] = true
+            end
+        end
+    end
+    local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
+    for name, info in pairs(known) do
+        if type(info) == "table" and info.role and info.role ~= "" and info.role ~= "none" and info.role ~= "user" and ELEVATED_ROLES[info.role] then
+            if not tempNames[name] then
+                table.insert(roles, {
+                    playerName = name,
+                    role = info.role,
+                    daysLeft = -1,
+                    isNative = true,
+                })
             end
         end
     end
@@ -173,8 +194,14 @@ local function sendAllPlayersList(player)
         local p = onlinePlayers:get(i)
         local pName = p:getUsername()
         onlineSet[pName] = true
+        local role = p:getRole() and p:getRole():getName() or ""
+        if role then role = role:lower() end
         if not known[pName] then
-            known[pName] = tostring(os.time())
+            known[pName] = { joined = tostring(os.time()), role = role }
+        elseif type(known[pName]) == "string" then
+            known[pName] = { joined = known[pName], role = role }
+        else
+            known[pName].role = role
         end
     end
     ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
@@ -196,6 +223,7 @@ local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
     registerKnownPlayer(player)
+    KitsPermissions.ApplyPendingRole(player)
     KitsPermissions.CheckExpiredRoles(player)
 
     if command == "requestKit" then
@@ -250,13 +278,14 @@ local function onClientCommand(module, command, player, args)
             return
         end
         local target = KitsPermissions.FindPlayerByName(targetName)
-        if not target then
-            sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
-            return
+        if target then
+            KitsPermissions.SetTempRole(target, roleName, days)
+            sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
+            sendPermissions(target)
+        else
+            KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
+            sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias (se aplicara cuando conecte).")
         end
-        KitsPermissions.SetTempRole(target, roleName, days)
-        sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
-        sendPermissions(target)
         sendTempRolesList(player)
 
     elseif command == "adminRemoveTempRole" then
@@ -270,16 +299,21 @@ local function onClientCommand(module, command, player, args)
             return
         end
         local target = KitsPermissions.FindPlayerByName(targetName)
-        if not target then
-            sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
-            return
-        end
-        local removed = KitsPermissions.RemoveTempRole(target)
-        if removed then
-            sendMsg(player, "Rol temporal quitado de " .. targetName)
-            sendPermissions(target)
+        if target then
+            local removed = KitsPermissions.RemoveTempRole(target)
+            if removed then
+                sendMsg(player, "Rol temporal quitado de " .. targetName)
+                sendPermissions(target)
+            else
+                sendMsg(player, targetName .. " no tiene rol temporal.")
+            end
         else
-            sendMsg(player, targetName .. " no tiene rol temporal.")
+            local removed = KitsPermissions.RemoveTempRoleOffline(targetName)
+            if removed then
+                sendMsg(player, "Rol temporal quitado de " .. targetName .. " (se aplicara cuando conecte).")
+            else
+                sendMsg(player, targetName .. " no tiene rol temporal.")
+            end
         end
         sendTempRolesList(player)
 

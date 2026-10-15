@@ -56,6 +56,39 @@ function KitsPermissions.SetTempRole(player, roleName, days)
     player:setAccessLevel(roleName)
 end
 
+function KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
+    local data = getTempRolesData()
+    data[targetName] = {
+        role = roleName:lower(),
+        expires = os.time() + (days * 86400),
+        playerName = targetName,
+        pending = true,
+    }
+    ModData.transmit(TEMP_ROLES_KEY)
+end
+
+function KitsPermissions.ApplyPendingRole(player)
+    local data = getTempRolesData()
+    local username = player:getUsername()
+    local entry = data[username]
+    if entry and entry.pending then
+        local now = os.time()
+        if entry.expires > now then
+            player:setAccessLevel(entry.role)
+            local key = getPlayerKey(player)
+            if key ~= username then
+                data[key] = entry
+                data[username] = nil
+            end
+            entry.pending = nil
+            ModData.transmit(TEMP_ROLES_KEY)
+        else
+            data[username] = nil
+            ModData.transmit(TEMP_ROLES_KEY)
+        end
+    end
+end
+
 function KitsPermissions.RemoveTempRole(player)
     local data = getTempRolesData()
     local key = getPlayerKey(player)
@@ -64,6 +97,23 @@ function KitsPermissions.RemoveTempRole(player)
         ModData.transmit(TEMP_ROLES_KEY)
         player:setAccessLevel("user")
         return true
+    end
+    return false
+end
+
+function KitsPermissions.RemoveTempRoleOffline(targetName)
+    local data = getTempRolesData()
+    if data[targetName] then
+        data[targetName] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        return true
+    end
+    for key, entry in pairs(data) do
+        if entry.playerName == targetName then
+            data[key] = nil
+            ModData.transmit(TEMP_ROLES_KEY)
+            return true
+        end
     end
     return false
 end
