@@ -32,7 +32,7 @@ local function getPlayerRoleName(player)
     local role = player:getRole()
     if role then
         local name = role:getName()
-        if name and name ~= "" then
+        if name and name ~= "" and name:lower() ~= "none" then
             return name:lower()
         end
     end
@@ -44,20 +44,6 @@ local function getRoleLevel(roleName)
     return ROLE_LEVEL[roleName:lower()] or 10
 end
 
-function KitsPermissions.GetTempRole(player)
-    local data = getTempRolesData()
-    local key = getPlayerKey(player)
-    local entry = data[key]
-    if not entry then return nil end
-    local now = os.time()
-    if entry.expires <= now then
-        data[key] = nil
-        ModData.transmit(TEMP_ROLES_KEY)
-        return nil
-    end
-    return entry
-end
-
 function KitsPermissions.SetTempRole(player, roleName, days)
     local data = getTempRolesData()
     local key = getPlayerKey(player)
@@ -67,6 +53,7 @@ function KitsPermissions.SetTempRole(player, roleName, days)
         playerName = player:getUsername(),
     }
     ModData.transmit(TEMP_ROLES_KEY)
+    player:setAccessLevel(roleName)
 end
 
 function KitsPermissions.RemoveTempRole(player)
@@ -75,9 +62,23 @@ function KitsPermissions.RemoveTempRole(player)
     if data[key] then
         data[key] = nil
         ModData.transmit(TEMP_ROLES_KEY)
+        player:setAccessLevel("user")
         return true
     end
     return false
+end
+
+function KitsPermissions.CheckExpiredRoles(player)
+    local data = getTempRolesData()
+    local key = getPlayerKey(player)
+    local entry = data[key]
+    if not entry then return end
+    local now = os.time()
+    if entry.expires <= now then
+        data[key] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        player:setAccessLevel("user")
+    end
 end
 
 function KitsPermissions.GetAllTempRoles()
@@ -107,17 +108,9 @@ function KitsPermissions.GetAllTempRoles()
     return result
 end
 
-function KitsPermissions.GetEffectiveLevel(player)
+function KitsPermissions.GetPlayerLevel(player)
     local serverRole = getPlayerRoleName(player)
-    local serverLevel = getRoleLevel(serverRole)
-    local tempEntry = KitsPermissions.GetTempRole(player)
-    if tempEntry then
-        local tempLevel = getRoleLevel(tempEntry.role)
-        if tempLevel > serverLevel then
-            return tempLevel
-        end
-    end
-    return serverLevel
+    return getRoleLevel(serverRole)
 end
 
 function KitsPermissions.IsAdmin(player)
@@ -130,14 +123,14 @@ function KitsPermissions.CanUseKit(player, kit)
     if perm == "all" then
         return true
     end
-    local playerLevel = KitsPermissions.GetEffectiveLevel(player)
+    local playerLevel = KitsPermissions.GetPlayerLevel(player)
     local requiredLevel = ROLE_LEVEL[perm] or 0
     return playerLevel >= requiredLevel
 end
 
 function KitsPermissions.GetPlayerPermissionsMap(player)
     local result = {}
-    local playerLevel = KitsPermissions.GetEffectiveLevel(player)
+    local playerLevel = KitsPermissions.GetPlayerLevel(player)
     for _, kit in ipairs(KitsConfig.Kits) do
         local perm = kit.permission or "all"
         if perm == "all" then

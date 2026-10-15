@@ -196,6 +196,7 @@ local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
     registerKnownPlayer(player)
+    KitsPermissions.CheckExpiredRoles(player)
 
     if command == "requestKit" then
         local kitId = args.kitId
