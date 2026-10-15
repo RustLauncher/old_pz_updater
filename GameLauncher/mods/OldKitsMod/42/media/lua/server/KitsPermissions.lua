@@ -120,12 +120,32 @@ function KitsPermissions.CheckExpiredRoles(player)
         return
     end
     if expires <= os.time() then
-        data[username] = nil
-        ModData.transmit(TEMP_ROLES_KEY)
         local admin = findAnyAdmin()
         if admin then
+            data[username] = nil
+            ModData.transmit(TEMP_ROLES_KEY)
             sendExecSetRole(admin, username, "user")
         end
+    end
+end
+
+function KitsPermissions.SweepExpiredRoles(adminPlayer)
+    local data = getTempRolesData()
+    local now = os.time()
+    local swept = false
+    for key, entry in pairs(data) do
+        if type(entry) == "table" then
+            local expires = tonumber(entry.expires)
+            if expires and expires <= now then
+                local targetName = entry.playerName or key
+                sendExecSetRole(adminPlayer, targetName, "user")
+                data[key] = nil
+                swept = true
+            end
+        end
+    end
+    if swept then
+        ModData.transmit(TEMP_ROLES_KEY)
     end
 end
 

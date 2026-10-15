@@ -265,6 +265,9 @@ local function onClientCommand(module, command, player, args)
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
+        if isAdmin then
+            KitsPermissions.SweepExpiredRoles(player)
+        end
         sendServerCommand(player, "Kits", "adminStatus", { isAdmin = isAdmin })
 
     elseif command == "adminSetTempRole" then
