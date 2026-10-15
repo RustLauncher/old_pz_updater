@@ -84,14 +84,7 @@ local function sendPermissions(player)
 end
 
 local function sendPlayerRoleInfo(player)
-    local roleObj = player:getRole()
-    local roleName = "user"
-    if roleObj then
-        local rn = roleObj:getName()
-        if rn and rn ~= "" and rn:lower() ~= "none" then
-            roleName = rn:lower()
-        end
-    end
+    local roleName = KitsPermissions.GetEffectiveRole(player)
     local tempInfo = KitsPermissions.GetTempRoleInfo(player:getUsername())
     local daysLeft = "-1"
     if tempInfo then
@@ -224,8 +217,6 @@ local function onClientCommand(module, command, player, args)
     if module ~= "Kits" then return end
 
     registerKnownPlayer(player)
-    KitsPermissions.ApplyPendingRole(player)
-    KitsPermissions.CheckExpiredRoles(player)
 
     if command == "requestKit" then
         local kitId = args.kitId
@@ -279,14 +270,12 @@ local function onClientCommand(module, command, player, args)
             sendMsg(player, "Parametros invalidos.")
             return
         end
+        KitsPermissions.SetTempRole(targetName, roleName, days)
+        sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = roleName })
         local target = KitsPermissions.FindPlayerByName(targetName)
         if target then
-            KitsPermissions.SetTempRole(target, roleName, days)
             sendPermissions(target)
             sendPlayerRoleInfo(target)
-        else
-            KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
-            sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = roleName })
         end
         sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         sendTempRolesList(player)
@@ -301,24 +290,17 @@ local function onClientCommand(module, command, player, args)
             sendMsg(player, "Falta el nombre del jugador.")
             return
         end
-        local target = KitsPermissions.FindPlayerByName(targetName)
-        if target then
-            local removed = KitsPermissions.RemoveTempRole(target)
-            if removed then
-                sendMsg(player, "Rol temporal quitado de " .. targetName)
+        local removed = KitsPermissions.RemoveTempRole(targetName)
+        if removed then
+            sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = "user" })
+            local target = KitsPermissions.FindPlayerByName(targetName)
+            if target then
                 sendPermissions(target)
                 sendPlayerRoleInfo(target)
-            else
-                sendMsg(player, targetName .. " no tiene rol temporal.")
             end
+            sendMsg(player, "Rol temporal quitado de " .. targetName)
         else
-            local removed = KitsPermissions.RemoveTempRoleOffline(targetName)
-            if removed then
-                sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = "user" })
-                sendMsg(player, "Rol temporal quitado de " .. targetName)
-            else
-                sendMsg(player, targetName .. " no tiene rol temporal.")
-            end
+            sendMsg(player, targetName .. " no tiene rol temporal.")
         end
         sendTempRolesList(player)
 
