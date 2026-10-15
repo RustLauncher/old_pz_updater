@@ -42,6 +42,7 @@ local C_SLOT      = { r = 0.14, g = 0.14, b = 0.17, a = 1 }
 local C_SLOT_BD   = { r = 0.22, g = 0.21, b = 0.24, a = 0.3 }
 local C_ADMIN     = { r = 0.30, g = 0.55, b = 0.90, a = 0.85 }
 local C_COUNT_BG  = { r = 0.90, g = 0.55, b = 0.10, a = 0.95 }
+local ROLE_BAR_H  = 22
 
 local KIT_COLORS = {
     basic       = { r = 0.95, g = 0.58, b = 0.08, a = 1 },
@@ -165,7 +166,7 @@ function KitsUI:buildKitsPanel()
     self.kitsPanel.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
     self:addChild(self.kitsPanel)
 
-    local yOff = 4
+    local yOff = 4 + ROLE_BAR_H + 2
     for i, kit in ipairs(KitsConfig.Kits) do
         local cardH = self:createKitCard(kit, yOff, i)
         yOff = yOff + cardH + CARD_GAP
@@ -176,6 +177,9 @@ function KitsUI:buildKitsPanel()
         self:setHeight(totalH)
         self.kitsPanel:setHeight(totalH - HEADER_H)
     end
+end
+
+function KitsUI:updateRoleBar()
 end
 
 function KitsUI:createKitCard(kit, yOff, index)
@@ -1018,6 +1022,33 @@ function KitsUI:render()
             end
         end
         return
+    end
+
+    do
+        local role = KitsClient.PlayerRole or "user"
+        local roleUpper = role:upper()
+        local barY = HEADER_H + 4
+        local barX = PAD
+        local barW = PANEL_W - PAD * 2
+        local roleColor = C_TEXT2
+        if role == "admin" or role == "moderator" then
+            roleColor = C_ADMIN
+        elseif role == "ultimate" then
+            roleColor = { r = 0.90, g = 0.55, b = 0.10, a = 1 }
+        elseif role == "vip" then
+            roleColor = C_GREEN
+        end
+        self:drawRect(barX, barY, barW, ROLE_BAR_H, 0.7, C_CARD.r, C_CARD.g, C_CARD.b)
+        local roleFont = UIFont.Small
+        local roleLabel = "Rol: " .. roleUpper
+        local daysLeft = KitsClient.PlayerRoleDaysLeft
+        if daysLeft > 0 then
+            roleLabel = roleLabel .. "  (" .. tostring(daysLeft) .. "d restantes)"
+        elseif role ~= "user" and daysLeft == -1 then
+            roleLabel = roleLabel .. "  (permanente)"
+        end
+        self:drawText(roleLabel, barX + 8, barY + 3,
+            roleColor.r, roleColor.g, roleColor.b, roleColor.a, roleFont)
     end
 
     for _, kit in ipairs(KitsConfig.Kits) do

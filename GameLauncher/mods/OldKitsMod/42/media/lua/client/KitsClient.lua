@@ -7,6 +7,8 @@ KitsClient.IsAdmin = false
 KitsClient.TempRoles = {}
 KitsClient.OnlinePlayers = {}
 KitsClient.AllPlayers = {}
+KitsClient.PlayerRole = "user"
+KitsClient.PlayerRoleDaysLeft = -1
 
 function KitsClient.RequestKit(kitId)
     sendClientCommand("Kits", "requestKit", { kitId = kitId })
@@ -151,6 +153,13 @@ local function onServerCommand(module, command, args)
         end
         if KitsUI and KitsUI.instance then
             KitsUI.instance:rebuildKitsPanel()
+        end
+
+    elseif command == "playerRoleInfo" then
+        KitsClient.PlayerRole = args.role or "user"
+        KitsClient.PlayerRoleDaysLeft = tonumber(args.daysLeft) or -1
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateRoleBar()
         end
 
     elseif command == "execSetRole" then

@@ -87,6 +87,31 @@ local function sendPermissions(player)
     sendServerCommand(player, "Kits", "permissionsUpdate", perms)
 end
 
+local function sendPlayerRoleInfo(player)
+    local roleName = player:getRole() and player:getRole():getName() or ""
+    if roleName then roleName = roleName:lower() end
+    if not roleName or roleName == "" or roleName == "none" then roleName = "user" end
+    local data = ModData.getOrCreate("KitsTempRoles")
+    local key = player:getSteamID()
+    if not key or key == "" or key == "0" then key = player:getUsername() end
+    key = tostring(key)
+    local entry = data[key]
+    if not entry then
+        entry = data[player:getUsername()]
+    end
+    local daysLeft = "-1"
+    if entry and entry.expires then
+        local remaining = entry.expires - os.time()
+        if remaining > 0 then
+            daysLeft = tostring(math.ceil(remaining / 86400))
+        end
+    end
+    sendServerCommand(player, "Kits", "playerRoleInfo", {
+        role = roleName,
+        daysLeft = daysLeft,
+    })
+end
+
 local function sendMsg(player, msg)
     sendServerCommand(player, "Kits", "error", { msg = msg })
 end
@@ -264,6 +289,7 @@ local function onClientCommand(module, command, player, args)
     elseif command == "requestCooldowns" then
         sendAllCooldowns(player)
         sendPermissions(player)
+        sendPlayerRoleInfo(player)
         sendKitsToPlayer(player)
 
     elseif command == "checkAdmin" then
