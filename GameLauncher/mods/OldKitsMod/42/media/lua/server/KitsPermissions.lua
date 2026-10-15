@@ -21,6 +21,10 @@ local function getTempRolesData()
 end
 
 local function getPlayerKey(player)
+    local id = player:getSteamID()
+    if id and id ~= "" and id ~= "0" then
+        return tostring(id)
+    end
     return player:getUsername()
 end
 
