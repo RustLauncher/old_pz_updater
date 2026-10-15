@@ -185,6 +185,7 @@ function KitsPermissions.CheckExpiredRoles()
         for _, exp in ipairs(expired) do
             local target = KitsPermissions.FindPlayerByName(exp.playerName)
             if target then
+                target:setDisplayName(target:getUsername())
                 sendServerCommand(target, "Kits", "playerRoleInfo", {
                     role = "user",
                     daysLeft = "0",

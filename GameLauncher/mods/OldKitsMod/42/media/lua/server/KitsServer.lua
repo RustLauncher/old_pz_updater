@@ -78,6 +78,15 @@ local function sendPermissions(player)
     sendServerCommand(player, "Kits", "permissionsUpdate", perms)
 end
 
+local function applyDisplayName(player, roleName)
+    local username = player:getUsername()
+    if roleName ~= "user" and roleName ~= "admin" then
+        player:setDisplayName("[" .. roleName:upper() .. "] " .. username)
+    else
+        player:setDisplayName(username)
+    end
+end
+
 local function sendPlayerRoleInfo(player)
     local roleName = KitsPermissions.GetEffectiveRole(player)
     local tempInfo = KitsPermissions.GetTempRoleInfo(player:getUsername())
@@ -85,6 +94,7 @@ local function sendPlayerRoleInfo(player)
     if tempInfo then
         daysLeft = tostring(tempInfo.daysLeft)
     end
+    applyDisplayName(player, roleName)
     sendServerCommand(player, "Kits", "playerRoleInfo", {
         role = roleName,
         daysLeft = daysLeft,
