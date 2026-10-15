@@ -199,6 +199,15 @@ local ROLE_TAG_COLORS = {
     admin     = { r = 1.00, g = 0.30, b = 0.30 },
 }
 
+local function drawOutlinedText(font, x, y, text, r, g, b)
+    local tm = getTextManager()
+    tm:DrawString(font, x - 1, y - 1, text, 0, 0, 0, 1.0)
+    tm:DrawString(font, x + 1, y - 1, text, 0, 0, 0, 1.0)
+    tm:DrawString(font, x - 1, y + 1, text, 0, 0, 0, 1.0)
+    tm:DrawString(font, x + 1, y + 1, text, 0, 0, 0, 1.0)
+    tm:DrawString(font, x, y, text, r, g, b, 1.0)
+end
+
 local function renderRoleTags()
     local me = getPlayer()
     if not me then return end
@@ -206,18 +215,17 @@ local function renderRoleTags()
     if not onlineRoles then return end
     local players = getOnlinePlayers()
     if not players then return end
-    local zoom = getCore():getZoom(0)
     for i = 0, players:size() - 1 do
         local p = players:get(i)
         local role = onlineRoles[p:getUsername()]
         if role then
             local tag = "[" .. role:upper() .. "]"
-            local font = UIFont.Medium
-            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ() + 1.8)
-            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ() + 1.8)
+            local font = UIFont.Small
+            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ() + 0.9)
+            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ() + 0.9)
             local tw = getTextManager():MeasureStringX(font, tag)
             local c = ROLE_TAG_COLORS[role:lower()] or { r = 0.8, g = 0.8, b = 0.8 }
-            getTextManager():DrawString(font, sx - tw / 2, sy, tag, c.r, c.g, c.b, 1.0)
+            drawOutlinedText(font, sx - tw / 2, sy, tag, c.r, c.g, c.b)
         end
     end
 end
