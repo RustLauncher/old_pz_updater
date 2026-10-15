@@ -120,17 +120,6 @@ local function sendTempRolesList(player)
             if type(info) == "table" and info.role then
                 role = info.role
             end
-            if not role or role == "" or role == "user" or role == "none" then
-                pcall(function()
-                    local dbUser = ServerWorldDatabase.instance:getUser(name)
-                    if dbUser then
-                        local dbRole = dbUser:getAccessLevel()
-                        if dbRole and dbRole ~= "" then
-                            role = dbRole:lower()
-                        end
-                    end
-                end)
-            end
             if role and role ~= "" and role ~= "none" and role ~= "user" and ELEVATED_ROLES[role] then
                 table.insert(roles, {
                     playerName = name,
@@ -300,7 +289,13 @@ local function onClientCommand(module, command, player, args)
             sendPermissions(target)
         else
             KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
-            sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias (se aplicara cuando conecte).")
+            sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = roleName })
+            local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
+            if known[targetName] and type(known[targetName]) == "table" then
+                known[targetName].role = roleName:lower()
+                ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+            end
+            sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         end
         sendTempRolesList(player)
 
@@ -326,7 +321,13 @@ local function onClientCommand(module, command, player, args)
         else
             local removed = KitsPermissions.RemoveTempRoleOffline(targetName)
             if removed then
-                sendMsg(player, "Rol temporal quitado de " .. targetName .. " (se aplicara cuando conecte).")
+                sendServerCommand(player, "Kits", "execSetRole", { targetName = targetName, roleName = "user" })
+                local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
+                if known[targetName] and type(known[targetName]) == "table" then
+                    known[targetName].role = "user"
+                    ModData.transmit(KITS_KNOWN_PLAYERS_KEY)
+                end
+                sendMsg(player, "Rol temporal quitado de " .. targetName)
             else
                 sendMsg(player, targetName .. " no tiene rol temporal.")
             end
