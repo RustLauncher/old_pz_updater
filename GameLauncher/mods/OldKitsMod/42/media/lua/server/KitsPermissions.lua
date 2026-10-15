@@ -72,6 +72,11 @@ function KitsPermissions.ApplyPendingRole(player)
     local username = player:getUsername()
     local entry = data[username]
     if entry and entry.pending then
+        if not entry.role or not entry.expires then
+            data[username] = nil
+            ModData.transmit(TEMP_ROLES_KEY)
+            return
+        end
         local now = os.time()
         if entry.expires > now then
             player:setAccessLevel(entry.role)
@@ -125,6 +130,11 @@ function KitsPermissions.CheckExpiredRoles(player)
     local key = getPlayerKey(player)
     local entry = data[key]
     if not entry then return end
+    if not entry.expires or not entry.role then
+        data[key] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        return
+    end
     local now = os.time()
     if entry.expires <= now then
         data[key] = nil
@@ -139,7 +149,7 @@ function KitsPermissions.GetAllTempRoles()
     local result = {}
     local expired = {}
     for key, entry in pairs(data) do
-        if entry.expires and entry.expires > now then
+        if type(entry) == "table" and entry.expires and entry.role and entry.expires > now then
             local remaining = entry.expires - now
             local daysLeft = math.ceil(remaining / 86400)
             table.insert(result, {
