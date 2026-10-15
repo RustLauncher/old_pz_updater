@@ -211,7 +211,7 @@ function KitsUI:createKitCard(kit, yOff, index)
     self.kitsPanel:addChild(card)
     self.kitCards[kit.id] = card
 
-    self.kitStatus[kit.id] = { text = "LISTO", state = "ready" }
+    self.kitStatus[kit.id] = { text = "...", state = "locked" }
 
     local permText = ""
     if kit.permission and kit.permission ~= "all" then
@@ -255,10 +255,11 @@ function KitsUI:createKitCard(kit, yOff, index)
     btn:initialise()
     btn:instantiate()
     btn.internal = kit.id
-    btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
+    btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
     btn.backgroundColorMouseOver = { r = C_BTN_HI.r, g = C_BTN_HI.g, b = C_BTN_HI.b, a = 1 }
     btn.borderColor = { r = 0, g = 0, b = 0, a = 0 }
-    btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
+    btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
+    btn:setEnable(false)
     card:addChild(btn)
     self.kitButtons[kit.id] = btn
 
