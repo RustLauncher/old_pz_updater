@@ -424,8 +424,6 @@ Events.OnClientCommand.Add(onClientCommand)
 
 local function onServerStarted()
     loadKitOverrides()
-    KitsPermissions.ClearAllTempRoles()
-    print("[KitsServer] Temp roles cleared on startup")
 end
 
 Events.OnServerStarted.Add(onServerStarted)
