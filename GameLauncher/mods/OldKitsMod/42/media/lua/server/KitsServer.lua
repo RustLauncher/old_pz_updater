@@ -285,6 +285,7 @@ local function onClientCommand(module, command, player, args)
             return
         end
         KitsPermissions.SetTempRole(targetName, roleName, days)
+        KitsPermissions.BroadcastExecSetRole(targetName, roleName)
         local target = KitsPermissions.FindPlayerByName(targetName)
         if target then
             sendPermissions(target)
@@ -305,6 +306,7 @@ local function onClientCommand(module, command, player, args)
         end
         local removed = KitsPermissions.RemoveTempRole(targetName)
         if removed then
+            KitsPermissions.BroadcastExecSetRole(targetName, "")
             local target = KitsPermissions.FindPlayerByName(targetName)
             if target then
                 sendPermissions(target)
