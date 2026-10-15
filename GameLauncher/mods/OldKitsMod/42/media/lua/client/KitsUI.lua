@@ -1097,16 +1097,14 @@ function KitsUI:render()
                     local cs = tostring(item.count)
                     local badgeFont = UIFont.NewSmall
                     local csw = getTextManager():MeasureStringX(badgeFont, cs)
-                    local csh = getTextManager():MeasureStringY(badgeFont, cs)
-                    local badgePadX = 3
-                    local badgePadY = 2
+                    local badgePadX = 2
                     local badgeW = csw + badgePadX * 2
-                    local badgeH = csh + badgePadY * 2
+                    local badgeH = 12
                     local badgeX = ix + ICON_SIZE - badgeW
                     local badgeY = iy + ICON_SIZE - badgeH
                     self:drawRect(badgeX, badgeY, badgeW, badgeH, 0.95,
                         C_COUNT_BG.r, C_COUNT_BG.g, C_COUNT_BG.b)
-                    self:drawText(cs, badgeX + badgePadX, badgeY + badgePadY,
+                    self:drawText(cs, badgeX + badgePadX, badgeY,
                         1, 1, 1, 1, badgeFont)
                 end
 
