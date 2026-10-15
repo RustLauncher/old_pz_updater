@@ -36,48 +36,16 @@ local function getRoleLevel(roleName)
     return ROLE_LEVEL[roleName:lower()] or 10
 end
 
-local function sendExecSetRole(adminPlayer, targetName, roleName)
-    sendServerCommand(adminPlayer, "Kits", "execSetRole", {
-        targetName = targetName,
-        roleName = roleName,
-    })
-end
-
-local function findAnyAdmin()
-    local players = getOnlinePlayers()
-    for i = 0, players:size() - 1 do
-        local p = players:get(i)
-        local role = getPlayerRoleName(p)
-        if role == "admin" or role == "moderator" then
-            return p
-        end
-    end
-    return nil
-end
-
-local function getEffectiveRole(player)
-    local username = player:getUsername()
+function KitsPermissions.SetTempRole(player, roleName, days)
     local data = getTempRolesData()
-    local entry = data[username]
-    if entry and type(entry) == "table" and entry.expires then
-        local expires = tonumber(entry.expires)
-        if expires and expires <= os.time() then
-            return "user"
-        end
-    end
-    return getPlayerRoleName(player)
-end
-
-function KitsPermissions.SetTempRole(adminPlayer, target, roleName, days)
-    local data = getTempRolesData()
-    local targetName = target:getUsername()
-    data[targetName] = {
+    local name = player:getUsername()
+    data[name] = {
         role = roleName:lower(),
         expires = os.time() + (days * 86400),
-        playerName = targetName,
+        playerName = name,
     }
     ModData.transmit(TEMP_ROLES_KEY)
-    sendExecSetRole(adminPlayer, targetName, roleName)
+    player:setAccessLevel(roleName)
 end
 
 function KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
@@ -86,17 +54,40 @@ function KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
         role = roleName:lower(),
         expires = os.time() + (days * 86400),
         playerName = targetName,
+        pending = "yes",
     }
     ModData.transmit(TEMP_ROLES_KEY)
 end
 
-function KitsPermissions.RemoveTempRole(adminPlayer, target)
+function KitsPermissions.ApplyPendingRole(player)
     local data = getTempRolesData()
-    local targetName = target:getUsername()
-    if data[targetName] then
-        data[targetName] = nil
+    local name = player:getUsername()
+    local entry = data[name]
+    if not entry or type(entry) ~= "table" then return end
+    if entry.pending ~= "yes" then return end
+    local expires = tonumber(entry.expires)
+    if not expires or not entry.role then
+        data[name] = nil
         ModData.transmit(TEMP_ROLES_KEY)
-        sendExecSetRole(adminPlayer, targetName, "user")
+        return
+    end
+    if expires <= os.time() then
+        data[name] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        return
+    end
+    player:setAccessLevel(entry.role)
+    entry.pending = nil
+    ModData.transmit(TEMP_ROLES_KEY)
+end
+
+function KitsPermissions.RemoveTempRole(player)
+    local data = getTempRolesData()
+    local name = player:getUsername()
+    if data[name] then
+        data[name] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        player:setAccessLevel("")
         return true
     end
     return false
@@ -104,40 +95,29 @@ end
 
 function KitsPermissions.RemoveTempRoleOffline(targetName)
     local data = getTempRolesData()
-    local found = false
     if data[targetName] then
         data[targetName] = nil
-        found = true
-    end
-    for key, entry in pairs(data) do
-        if type(entry) == "table" and entry.playerName == targetName then
-            data[key] = nil
-            found = true
-        end
-    end
-    if found then
         ModData.transmit(TEMP_ROLES_KEY)
+        return true
     end
-    return found
+    return false
 end
 
-function KitsPermissions.SweepExpiredRoles(adminPlayer)
+function KitsPermissions.CheckExpiredRoles(player)
     local data = getTempRolesData()
-    local now = os.time()
-    local swept = false
-    for key, entry in pairs(data) do
-        if type(entry) == "table" then
-            local expires = tonumber(entry.expires)
-            if expires and expires <= now then
-                local targetName = entry.playerName or key
-                sendExecSetRole(adminPlayer, targetName, "user")
-                data[key] = nil
-                swept = true
-            end
-        end
-    end
-    if swept then
+    local name = player:getUsername()
+    local entry = data[name]
+    if not entry or type(entry) ~= "table" then return end
+    local expires = tonumber(entry.expires)
+    if not expires or not entry.role then
+        data[name] = nil
         ModData.transmit(TEMP_ROLES_KEY)
+        return
+    end
+    if expires <= os.time() then
+        data[name] = nil
+        ModData.transmit(TEMP_ROLES_KEY)
+        player:setAccessLevel("")
     end
 end
 
@@ -148,9 +128,7 @@ function KitsPermissions.GetTempRoleInfo(username)
     local expires = tonumber(entry.expires)
     if not expires or not entry.role then return nil end
     local remaining = expires - os.time()
-    if remaining <= 0 then
-        return { role = entry.role, daysLeft = 0, expired = true }
-    end
+    if remaining <= 0 then return nil end
     return {
         role = entry.role,
         daysLeft = math.ceil(remaining / 86400),
@@ -165,11 +143,10 @@ function KitsPermissions.GetAllTempRoles()
         if type(entry) == "table" and entry.role then
             local expires = tonumber(entry.expires)
             if expires and expires > now then
-                local remaining = expires - now
                 table.insert(result, {
                     playerName = entry.playerName or key,
                     role = entry.role,
-                    daysLeft = math.ceil(remaining / 86400),
+                    daysLeft = math.ceil((expires - now) / 86400),
                 })
             end
         end
@@ -178,8 +155,7 @@ function KitsPermissions.GetAllTempRoles()
 end
 
 function KitsPermissions.GetPlayerLevel(player)
-    local role = getEffectiveRole(player)
-    return getRoleLevel(role)
+    return getRoleLevel(getPlayerRoleName(player))
 end
 
 function KitsPermissions.IsAdmin(player)
@@ -189,12 +165,8 @@ end
 
 function KitsPermissions.CanUseKit(player, kit)
     local perm = kit.permission or "all"
-    if perm == "all" then
-        return true
-    end
-    local playerLevel = KitsPermissions.GetPlayerLevel(player)
-    local requiredLevel = ROLE_LEVEL[perm] or 0
-    return playerLevel >= requiredLevel
+    if perm == "all" then return true end
+    return KitsPermissions.GetPlayerLevel(player) >= (ROLE_LEVEL[perm] or 0)
 end
 
 function KitsPermissions.GetPlayerPermissionsMap(player)
@@ -204,13 +176,10 @@ function KitsPermissions.GetPlayerPermissionsMap(player)
         local perm = kit.permission or "all"
         if perm == "all" then
             result[kit.id] = "yes"
+        elseif playerLevel >= (ROLE_LEVEL[perm] or 0) then
+            result[kit.id] = "yes"
         else
-            local requiredLevel = ROLE_LEVEL[perm] or 0
-            if playerLevel >= requiredLevel then
-                result[kit.id] = "yes"
-            else
-                result[kit.id] = "no"
-            end
+            result[kit.id] = "no"
         end
     end
     return result
@@ -236,7 +205,6 @@ function KitsPermissions.CleanCorruptEntries()
         end
     end
     for _, key in ipairs(toRemove) do
-        print("[KitsPerms] Removing corrupt entry: " .. tostring(key))
         data[key] = nil
     end
     if #toRemove > 0 then

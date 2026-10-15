@@ -10928,13 +10928,13 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsPermissions.lua",
-                      "sha256":  "00330f92281e9c6dc5b14a06df22bd7ac59172e8303be46cb85f28a2160b6cdb",
-                      "size":  6914
+                      "sha256":  "39bfb05e9a75eec284d2346e5ab30b5d847c33a6dc9e64aa5182854185d7c438",
+                      "size":  5920
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsServer.lua",
-                      "sha256":  "7f5376fc8c54486c543860a53890bc8c27c76ef981d0c34b3e7344019832a1fd",
-                      "size":  13370
+                      "sha256":  "375a30e8feeed166bd23d4164fc85e7f137c574148cbcfade1c6d8be6fb89022",
+                      "size":  13086
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/shared/KitsConfig.lua",
