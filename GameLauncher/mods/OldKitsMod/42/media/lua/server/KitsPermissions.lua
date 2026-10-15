@@ -47,7 +47,12 @@ end
 function KitsPermissions.GetTempRole(player)
     local data = getTempRolesData()
     local key = getPlayerKey(player)
+    local steamId = player:getSteamID()
+    print("[KitsPerms] GetTempRole: username=" .. player:getUsername() .. " steamId=" .. tostring(steamId) .. " key=" .. tostring(key))
     local entry = data[key]
+    if entry then
+        print("[KitsPerms]   found temp role: " .. tostring(entry.role) .. " for " .. tostring(entry.playerName))
+    end
     if not entry then return nil end
     local now = os.time()
     if entry.expires <= now then
