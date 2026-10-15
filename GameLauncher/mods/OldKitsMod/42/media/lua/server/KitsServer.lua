@@ -115,14 +115,30 @@ local function sendTempRolesList(player)
     end
     local known = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
     for name, info in pairs(known) do
-        if type(info) == "table" and info.role and info.role ~= "" and info.role ~= "none" and info.role ~= "user" and ELEVATED_ROLES[info.role] then
-            if not tempNames[name] then
+        if not tempNames[name] then
+            local role = nil
+            if type(info) == "table" and info.role then
+                role = info.role
+            end
+            if not role or role == "" or role == "user" or role == "none" then
+                pcall(function()
+                    local dbUser = ServerWorldDatabase.instance:getUser(name)
+                    if dbUser then
+                        local dbRole = dbUser:getAccessLevel()
+                        if dbRole and dbRole ~= "" then
+                            role = dbRole:lower()
+                        end
+                    end
+                end)
+            end
+            if role and role ~= "" and role ~= "none" and role ~= "user" and ELEVATED_ROLES[role] then
                 table.insert(roles, {
                     playerName = name,
-                    role = info.role,
+                    role = role,
                     daysLeft = -1,
                     isNative = true,
                 })
+                tempNames[name] = true
             end
         end
     end

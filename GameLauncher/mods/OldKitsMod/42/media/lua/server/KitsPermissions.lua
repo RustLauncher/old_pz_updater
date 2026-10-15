@@ -65,6 +65,9 @@ function KitsPermissions.SetTempRoleOffline(targetName, roleName, days)
         pending = true,
     }
     ModData.transmit(TEMP_ROLES_KEY)
+    pcall(function()
+        ServerWorldDatabase.instance:setAccessLevel(targetName, roleName)
+    end)
 end
 
 function KitsPermissions.ApplyPendingRole(player)
@@ -103,19 +106,24 @@ end
 
 function KitsPermissions.RemoveTempRoleOffline(targetName)
     local data = getTempRolesData()
+    local found = false
     if data[targetName] then
         data[targetName] = nil
-        ModData.transmit(TEMP_ROLES_KEY)
-        return true
+        found = true
     end
     for key, entry in pairs(data) do
         if entry.playerName == targetName then
             data[key] = nil
-            ModData.transmit(TEMP_ROLES_KEY)
-            return true
+            found = true
         end
     end
-    return false
+    if found then
+        ModData.transmit(TEMP_ROLES_KEY)
+        pcall(function()
+            ServerWorldDatabase.instance:setAccessLevel(targetName, "user")
+        end)
+    end
+    return found
 end
 
 function KitsPermissions.CheckExpiredRoles(player)
