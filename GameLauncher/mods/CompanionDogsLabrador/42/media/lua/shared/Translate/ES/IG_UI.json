@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Labrador",
+    "IGUI_AnimalType_labmale": "Labrador (macho)",
+    "IGUI_AnimalType_labfemale": "Labrador (hembra)",
+    "IGUI_AnimalType_labpup": "Labrador (cachorro)",
+    "IGUI_PD_Breed_labrador": "Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Un perro de caza hecho para traerla de vuelta: entrena Caza al doble de velocidad, con Obediencia justo detrás. A propósito es uno de los peores luchadores de la familia: solo el Carlino muerde más flojo, sin derribo, y una pelea lo deja muy alterado. Su don es la boca. Te trae sus presas desde el momento en que puede cazar, en vez de esperar a tener Caza alta, nunca las suelta por el camino y a menudo aparece cargando alguna otra cosa que encontró (Boca Blanda). Común en casas, y ronda cabañas de caza, campamentos, cobertizos de barcos y puestos de guardabosques. Despiezar lo que te trae también cunde más con él cerca.",
+    "IGUI_PD_Moodle_SoftMouth": "Boca Blanda",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Tu Labrador te trae cada presa desde su primera cacería, y a menudo algo extra. Mientras esté cerca, alimentado y leal, además aprendes Carnicería y Hoja Corta más rápido.",
+    "IGUI_PD_LabExtra": "Tu %1 te trajo algo más: %2."
+}

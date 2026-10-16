@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: 猫",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "猫の出現倍率",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "野良猫が住宅、店舗、ペットショップに出現する頻度を調整します。1.0 が通常の確率、2.0 で倍、0 で猫の出現を無効にします。犬の出現設定とは独立しており、野良犬を減らしたり無効にしても猫には影響しません。"
+}

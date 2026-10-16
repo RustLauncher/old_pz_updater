@@ -1,0 +1,49 @@
+module Base
+{
+    model Rottweiler_Body
+    {
+        mesh = Skinned/Rottweiler_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = RottAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        /* ALFORJE. Valores ajustados a olho em jogo. Nao derive por medicao no GLB nem por
+           proporcao do flanco: ja falhou tres vezes.
+           localX = LATERAL | localY = FRENTE/TRAS | localZ = VERTICAL, +Z = BAIXO.
+           rotate = Rx*Ry*Rz mesh-local; a PZ ainda aplica um bake Rx(-90) no load do FBX.
+           A engine escala por float unico, nao por eixo.
+           Este .txt so e reparseado no BOOT; recarregar o save nao pega valor novo. */
+        attachment saddlebags_l
+        {
+            offset = 0.07 0.038 0.075,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.6,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.07 0.038 0.075,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.6,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 90.0 -90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    animationsMesh RottAnim
+    {
+        meshFile = Skinned/Rottweiler_Body,
+        keepMeshAnimations = true,
+    }
+}

@@ -1,0 +1,9 @@
+id=CompanionDogsRottweiler
+name=CD: Rottweiler
+description=Rottweilers for Companion Dogs - the first optional breed add-on. A combat-category dog: a fearless warrior on par with the German Shepherd, with its own Front Line moodle (your melee swings cost less endurance while your Rottweiler fights beside you). Stray Rottweilers guard warehouses, factories and junkyards, with a rare chance in homes. REQUIRES the Companion Dogs mod (0.6.3 or newer). Do not remove this add-on from a save with living Rottweilers.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.0
+pzversion=42.19.0
+versionMin=42.18.0

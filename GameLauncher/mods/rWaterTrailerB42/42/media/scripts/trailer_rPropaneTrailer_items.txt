@@ -1,0 +1,21 @@
+module PropaneTrailer
+{
+	imports
+	{
+		Base
+	}
+
+	item 800TankPropane
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight = 20.0,
+		ItemType = base:normal,
+		DisplayName = Propane Storage Tank,
+		Icon = CarGastank,
+		MaxCapacity = 800,
+		ConditionAffectsCapacity = true,
+		ConditionMax = 100,
+		ChanceToSpawnDamaged = 80,
+		MechanicsItem = TRUE,
+	}
+}

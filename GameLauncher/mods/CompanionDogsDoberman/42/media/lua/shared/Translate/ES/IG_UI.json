@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_doberman": "Doberman",
+    "IGUI_AnimalType_dobmale": "Doberman (macho)",
+    "IGUI_AnimalType_dobfemale": "Doberman (hembra)",
+    "IGUI_AnimalType_dobpup": "Doberman (cachorro)",
+    "IGUI_PD_Breed_doberman": "Doberman",
+    "IGUI_PD_BreedDesc_doberman": "Un perro guardián esbelto y atento, y el más listo de todas las razas: entrena Obediencia más rápido incluso que el Pastor Alemán. En la pelea es todo filo y nada de armadura: flojo sin entrenar, pero con Combate al máximo muerde más fuerte que cualquier otro perro de la manada, aunque aguanta menos castigo que un Rottweiler. Su verdadero don es el aplomo: con tu Doberman al lado se te calman los nervios, tu arma de fuego recupera antes el retroceso y recargas más rápido (Pulso Firme). Se encuentra vigilando comisarías y controles militares.",
+    "IGUI_PD_Moodle_SteadyAim": "Pulso Firme",
+    "IGUI_PD_Moodle_SteadyAim_desc": "Tu Doberman te cubre las espaldas. Mientras esté cerca, bien alimentado y leal, tu estrés se disipa, tu puntería se recupera antes después de cada disparo y recargas más rápido."
+}

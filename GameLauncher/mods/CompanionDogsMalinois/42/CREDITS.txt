@@ -1,0 +1,5 @@
+CD: Belgian Malinois: Asset Credits
+==================================
+
+The Malinois plays the German Shepherd animations of the Companion Dogs base mod. The limping
+clips are by Cerise (https://steamcommunity.com/profiles/76561198351533061).

@@ -1,0 +1,46 @@
+module Base
+{
+    model Cat_Body
+    {
+        mesh = Skinned/Cat_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CatAnim,
+        attachment head
+        {
+            offset = -0.0060 0.1619 0.0491,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        /* ALFORJE. Ajustado a olho em jogo. Nao derivar por medicao no GLB nem por proporcao
+           do flanco. localX = LATERAL | localY = FRENTE/TRAS | localZ = VERTICAL, +Z = BAIXO.
+           A engine escala por float unico. Este .txt so e reparseado no BOOT. */
+        attachment saddlebags_l
+        {
+            offset = 0.017 0.0 0.002,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.104,
+            bone = Wolf_Spine_02SHJnt,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.017 0.0 0.002,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.104,
+            bone = Wolf_Spine_02SHJnt,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.0 -0.02,
+            rotate = 90.0 -90.0 0.0,
+            scale = 0.09,
+            bone = Wolf_Spine_02SHJnt,
+        }
+    }
+
+    animationsMesh CatAnim
+    {
+        meshFile = Skinned/Cat_Body,
+        keepMeshAnimations = true,
+    }
+}

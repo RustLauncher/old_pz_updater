@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: Gatos",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "Multiplicador de spawn de gatos",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Ajusta com que frequência gatos vira-lata aparecem em casas, lojas e pet shops. 1.0 é a taxa normal, 2.0 dobra, 0 desliga o spawn de gatos. É separado da opção de spawn de cães: reduzir ou desligar os cães vira-lata não mexe mais nos gatos."
+}

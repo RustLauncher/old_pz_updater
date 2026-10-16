@@ -1,0 +1,328 @@
+module RotatorsB42
+{
+	item 1000TankWater1
+   {
+      Weight	=	10.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   1,
+      MaxCapacity = 1000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 1000TankWater2
+   {
+      Weight	=	10.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   2,
+      MaxCapacity = 1000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 1000TankWater3
+   {
+      Weight	=	10.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   3,
+      MaxCapacity = 1000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+   
+	item 1500TankWater1
+   {
+      Weight	=	15.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   1,
+      MaxCapacity = 1500,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 1500TankWater2
+   {
+      Weight	=	15.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   2,
+      MaxCapacity = 1500,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 1500TankWater3
+   {
+      Weight	=	15.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   3,
+      MaxCapacity = 1500,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+
+	item 3000TankWater1
+   {
+      Weight	=	20.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   1,
+      MaxCapacity = 3000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 3000TankWater2
+   {
+      Weight	=	20.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   2,
+      MaxCapacity = 3000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 3000TankWater3
+   {
+      Weight	=	20.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   3,
+      MaxCapacity = 3000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+
+	item 5000TankWater1
+   {
+      Weight	=	25.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   1,
+      MaxCapacity = 5000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 5000TankWater2
+   {
+      Weight	=	25.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   2,
+      MaxCapacity = 5000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+	item 5000TankWater3
+   {
+      Weight	=	25.0,
+       ItemType = base:normal,
+      DisplayName	=	Storage Tank,
+      Icon	=	CarWatertank,
+      VehicleType =   3,
+      MaxCapacity = 5000,
+      ConditionAffectsCapacity = true,
+      ConditionMax = 100,
+      ChanceToSpawnDamaged = 80,
+      MechanicsItem = TRUE,
+   }
+      
+	template vehicle TruckWaterTank
+	{
+      /* Water Tanks */
+      part 1000WaterTank
+		{
+			area = WaterTank,
+			category = watertank,
+			itemType = RotatorsB42.1000TankWater,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+					test = rWaterTrailer.Vehicle.ContainerAccess.WaterTank,
+				contentType = Water Storage,
+				conditionAffectsCapacity = true,
+			}
+			
+			lua
+			{
+				create = rWaterTrailer.VFluid.Create.FilledMultiTank,
+			}
+		}
+      
+      part 1500WaterTank
+		{
+			area = WaterTank,
+			category = watertank,
+			itemType = RotatorsB42.1500TankWater,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+					test = rWaterTrailer.Vehicle.ContainerAccess.WaterTank,
+				contentType = Water Storage,
+				conditionAffectsCapacity = true,
+			}
+			
+			lua
+			{
+				create = rWaterTrailer.VFluid.Create.FilledMultiTank,
+			}
+		}
+      
+		part 3000WaterTank
+		{
+			area = WaterTank,
+			category = watertank,
+			itemType = RotatorsB42.3000TankWater,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+					test = rWaterTrailer.Vehicle.ContainerAccess.WaterTank,
+				contentType = Water Storage,
+				conditionAffectsCapacity = true,
+			}
+			
+			lua
+			{
+				create = rWaterTrailer.VFluid.Create.FilledMultiTank,
+			}
+		}
+      
+		part 5000WaterTank
+		{
+			area = WaterTank,
+			category = watertank,
+			itemType = RotatorsB42.5000TankWater,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+					test = rWaterTrailer.Vehicle.ContainerAccess.WaterTank,
+				contentType = Water Storage,
+				conditionAffectsCapacity = true,
+			}
+			
+			lua
+			{
+				create = rWaterTrailer.VFluid.Create.FilledMultiTank,
+			}
+		}
+      
+      /* Big Tank Pump */
+		part WaterTankPump
+		{
+			category = watertank,
+			area = WaterTank,
+
+			anim Close
+			{
+				anim = TankHose_static,
+			}
+			anim Open
+			{
+				anim = TankHose_static,
+			}
+			anim Closed
+			{
+				anim = TankHose_static,
+			}
+			anim Opened
+			{
+				anim = TankHose_static,
+			}
+
+			itemType = RotatorsB42.WaterTrailerTankPump,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			lua
+			{
+				create = rWaterTrailer.Vehicle.Create.OptionalPart,
+			}
+		}
+      
+      /* Water Filter */
+		part WaterTankFilter
+		{
+			category = watertank,
+			area = WaterTank,
+			itemType = RotatorsB42.WaterTrailerTankFilter,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 150,
+				skills = Mechanics:2,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 150,
+				skills = Mechanics:2,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+			lua
+			{
+				create = rWaterTrailer.Vehicle.Create.OptionalPart,
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "马林诺斯犬",
+    "IGUI_AnimalType_malmale": "马林诺斯犬（雄性）",
+    "IGUI_AnimalType_malfemale": "马林诺斯犬（雌性）",
+    "IGUI_AnimalType_malpup": "马林诺斯犬（幼犬）",
+    "IGUI_PD_Breed_malinois": "马林诺斯犬",
+    "IGUI_PD_BreedDesc_malinois": "警犬兼搜索犬。专精嗅觉、服从和战斗。拥有独特机制：它不只是闻到丧尸，还会为你指出丧尸的确切位置。常见于警察局和军事建筑，偶尔也会出现在住宅中。",
+    "IGUI_PD_Moodle_K9Scent": "K9 嗅觉",
+    "IGUI_PD_Moodle_K9Scent_desc": "你的马林诺斯犬嗅觉最出色，能嗅出最近丧尸的确切位置。"
+}

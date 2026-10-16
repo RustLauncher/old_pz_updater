@@ -1,0 +1,26 @@
+VERSION = 1,
+
+option ALifeRelations.Tags = {
+    type = boolean, default = true,
+    page = ALifeRelations, translation = ALifeRelations_Tags,
+}
+
+option ALifeRelations.TagRange = {
+    type = integer, min = 5, max = 30, default = 15,
+    page = ALifeRelations, translation = ALifeRelations_TagRange,
+}
+
+option ALifeRelations.MapMarks = {
+    type = boolean, default = true,
+    page = ALifeRelations, translation = ALifeRelations_MapMarks,
+}
+
+option ALifeRelations.DiscoverRadius = {
+    type = integer, min = 10, max = 200, default = 50,
+    page = ALifeRelations, translation = ALifeRelations_DiscoverRadius,
+}
+
+option ALifeRelations.TalkAnywhere = {
+    type = boolean, default = false,
+    page = ALifeRelations, translation = ALifeRelations_TalkAnywhere,
+}

@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option CompanionFancyRat.FancyRatSpawnMultiplier
+{
+	type = double,
+	min = 0.0,
+	max = 5.0,
+	default = 1.0,
+	page = CompanionFancyRat,
+	translation = CompanionFancyRat_FancyRatSpawnMultiplier,
+}

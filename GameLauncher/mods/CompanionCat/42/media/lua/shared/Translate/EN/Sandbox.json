@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: Cats",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "Cat spawn rate multiplier",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Scales how often stray cats appear in houses, shops and pet stores. 1.0 is the normal rate, 2.0 doubles them, 0 turns cat spawns off. This is separate from the dog spawn setting: turning stray dogs down or off no longer takes the cats with them."
+}

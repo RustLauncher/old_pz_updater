@@ -1,0 +1,108 @@
+module Base
+{
+    /* Companion Dogs Bowl: a single placeable ITEM that IS the feeding station: drop it on the ground
+       (IsoWorldInventoryObject) and it renders the mod's own dog bowl model. It holds food OR water (one at a time, like
+       the vanilla trough, the fill commands refuse the opposite kind until it's emptied); the auto-feed
+       (CompanionDogs_Companion) reads how much from the item ModData (cdFoodMeals OR cdWater, a 0..100 budget).
+       VISUAL (lives-updates, no chunk reload): the bowl is a cosmetic FluidContainer, and CD.refreshDishModel drives
+       DUAS alavancas a partir do estoque. (1) O modelIndex escolhe entre os dois modelos do WorldStaticModelsByIndex,
+       que sao o MESMO pote: 0 = servido com racao, 1 = servido com agua, e vazio fica no 0. (2) O fluido diz se ela
+       esta cheia: a engine troca sozinha para o irmao <modelo>_Fluid quando o FluidContainer passa de 50%, e re-tira o
+       snapshot ao vivo quando o nivel muda (isStillValid). Nao depende de tint: a racao e a agua ja vem pintadas no
+       CDBowl.png, cada uma na sua ilha de UV. Esse par de alavancas substitui um setWorldStaticModel+worldScale antigo
+       que crashava no render nativo; o modelIndex e serializado pela engine, entao sobrevive ao save e a rede.
+       The two cosmetic fluids are NOT water/beverage (Industrial), so the bowl is never a water source nor drinkable,
+       and RainFactor 0 keeps the rain from changing the look; the fluid is purely visual, gameplay stays in ModData. */
+    fluid CompanionDogsKibble
+    {
+        DisplayName = Fluid_Name_CompanionDogsKibble,
+        ColorReference = Sienna,
+        Categories
+        {
+            Industrial,
+        }
+    }
+
+    fluid CompanionDogsBowlWater
+    {
+        DisplayName = Fluid_Name_CompanionDogsBowlWater,
+        ColorReference = DeepSkyBlue,
+        Categories
+        {
+            Industrial,
+        }
+    }
+
+    item CompanionDogsBowl
+    {
+        DisplayCategory = Animal,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Waterdish_Grey,
+        IconFluidMask = WaterDish_Mask,
+        WorldStaticModelsByIndex = CompanionDogsBowlFood;CompanionDogsBowlWater,
+        /* rede de seguranca: getWorldStaticItem() tenta o indice primeiro e cai neste. Tigela salva
+           antes desta versao volta com modelIndex -1, e sem esta linha o modelo dela some. */
+        WorldStaticModel = CompanionDogsBowlFood,
+        Tags = base:OmitEmptyFromName,
+        component FluidContainer
+        {
+            ContainerName = CompanionDogsBowl,
+            Capacity = 0.3,
+            RainFactor = 0,
+            InitialPercentMin = 0,
+            InitialPercentMax = 0,
+            Fluids
+            {
+                fluid = CompanionDogsKibble:1.0,
+                fluid = CompanionDogsBowlWater:1.0,
+            }
+            /* so os dois fluidos cosmeticos entram: sem isto o menu "Fluido" do inventario aceitava
+               agua de verdade, que sumia ao soltar a tigela (o estoque mora no modData). */
+            whitelist
+            {
+                fluid = CompanionDogsKibble/CompanionDogsBowlWater,
+            }
+        }
+    }
+
+    /* The bowl is obtained by repurposing ANY cooking vessel / dish (base:cookable = pots, pans, baking/roasting pans,
+       kettles, buckets, mugs, bottles…), an easy, always-available recipe (no carpentry, no skill). It also spawns in
+       loot (see CompanionDogs_Distributions.lua). The recipe's UI label comes from Translate/<lang>/Recipes.json. */
+    craftRecipe MakeCompanionDogsBowlFromCookware
+    {
+        time = 60,
+        timedAction = Making,
+        category = CompanionDogs,
+        Tags = InHandCraft;Farming,
+        inputs
+        {
+            /* flags[ItemCount] = consumir 1 ITEM (nao 1 "uso"); sem ele o engine trata cookables com FluidContainer
+               (panela, chaleira, balde) por semantica de fluido e o craft falha em silencio (padrao vanilla MakeJar) */
+            item 1 tags[base:cookable] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsBowl,
+        }
+    }
+
+    /* Same bowl from the vanilla pet Water Dish (Base.WaterDish), the game's pet dish. A single input can't mix
+       tags[base:cookable] with a specific item, so this is a sibling recipe; both output the identical
+       Base.CompanionDogsBowl. */
+    craftRecipe MakeCompanionDogsBowlFromPetDish
+    {
+        time = 60,
+        timedAction = Making,
+        category = CompanionDogs,
+        Tags = InHandCraft;Farming,
+        inputs
+        {
+            item 1 [Base.WaterDish] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsBowl,
+        }
+    }
+}

@@ -1,0 +1,600 @@
+module VapesOf93
+{
+    item VapePen
+    {
+        DisplayName = Refillable Vape Pen (Empty),
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = VapePen,
+        StaticModel = VapesOf93.Model_VapePen,
+        WorldStaticModel = VapesOf93.Model_VapePen,
+    }
+
+    item UsedVape
+    {
+        DisplayName = Used THC Vape,
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = UsedVape,
+        StaticModel = VapesOf93.Model_UsedVape,
+        WorldStaticModel = VapesOf93.Model_UsedVape,
+    }
+
+    item Juice_Mango
+    {
+        DisplayName = Mango Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Mango,
+        StaticModel = VapesOf93.Model_Juice_Mango,
+        WorldStaticModel = VapesOf93.Model_Juice_Mango,
+    }
+
+    item Juice_Strawberry
+    {
+        DisplayName = Strawberry Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Strawberry,
+        StaticModel = VapesOf93.Model_Juice_Strawberry,
+        WorldStaticModel = VapesOf93.Model_Juice_Strawberry,
+    }
+
+    item Juice_KiwiPassionGuava
+    {
+        DisplayName = Kiwi Passion Fruit Guava Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_KiwiPassionGuava,
+        StaticModel = VapesOf93.Model_Juice_KiwiPassionGuava,
+        WorldStaticModel = VapesOf93.Model_Juice_KiwiPassionGuava,
+    }
+
+    item Juice_Banana
+    {
+        DisplayName = Banana Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Banana,
+        StaticModel = VapesOf93.Model_Juice_Banana,
+        WorldStaticModel = VapesOf93.Model_Juice_Banana,
+    }
+
+    item Juice_BlueRazz
+    {
+        DisplayName = Blue Razz Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_BlueRazz,
+        StaticModel = VapesOf93.Model_Juice_BlueRazz,
+        WorldStaticModel = VapesOf93.Model_Juice_BlueRazz,
+    }
+
+    item Juice_Blueberry
+    {
+        DisplayName = Blueberry Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Blueberry,
+        StaticModel = VapesOf93.Model_Juice_Blueberry,
+        WorldStaticModel = VapesOf93.Model_Juice_Blueberry,
+    }
+
+    item Juice_Watermelon
+    {
+        DisplayName = Watermelon Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Watermelon,
+        StaticModel = VapesOf93.Model_Juice_Watermelon,
+        WorldStaticModel = VapesOf93.Model_Juice_Watermelon,
+    }
+
+    item Juice_Grape
+    {
+        DisplayName = Grape Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Grape,
+        StaticModel = VapesOf93.Model_Juice_Grape,
+        WorldStaticModel = VapesOf93.Model_Juice_Grape,
+    }
+
+    item Juice_Peach
+    {
+        DisplayName = Peach Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Peach,
+        StaticModel = VapesOf93.Model_Juice_Peach,
+        WorldStaticModel = VapesOf93.Model_Juice_Peach,
+    }
+
+    item Juice_Pineapple
+    {
+        DisplayName = Pineapple Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Pineapple,
+        StaticModel = VapesOf93.Model_Juice_Pineapple,
+        WorldStaticModel = VapesOf93.Model_Juice_Pineapple,
+    }
+
+    item Juice_CottonCandy
+    {
+        DisplayName = Cotton Candy Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_CottonCandy,
+        StaticModel = VapesOf93.Model_Juice_CottonCandy,
+        WorldStaticModel = VapesOf93.Model_Juice_CottonCandy,
+    }
+
+    item Juice_Mint
+    {
+        DisplayName = Mint Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Mint,
+        StaticModel = VapesOf93.Model_Juice_Mint,
+        WorldStaticModel = VapesOf93.Model_Juice_Mint,
+    }
+
+    item Juice_Menthol
+    {
+        DisplayName = Menthol Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Menthol,
+        StaticModel = VapesOf93.Model_Juice_Menthol,
+        WorldStaticModel = VapesOf93.Model_Juice_Menthol,
+    }
+
+    item Juice_Tobacco
+    {
+        DisplayName = Classic Tobacco Vape Juice,
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = Juice_Tobacco,
+        StaticModel = VapesOf93.Model_Juice_Tobacco,
+        WorldStaticModel = VapesOf93.Model_Juice_Tobacco,
+    }
+
+    item VapePen_Mango
+    {
+        DisplayName = Vape Pen (Mango),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Mango,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Mango,
+        WorldStaticModel = VapesOf93.Model_VapePen_Mango,
+    }
+
+    item VapePen_Strawberry
+    {
+        DisplayName = Vape Pen (Strawberry),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Strawberry,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Strawberry,
+        WorldStaticModel = VapesOf93.Model_VapePen_Strawberry,
+    }
+
+    item VapePen_KiwiPassionGuava
+    {
+        DisplayName = Vape Pen (Kiwi Passion Fruit Guava),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_KiwiPassionGuava,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_KiwiPassionGuava,
+        WorldStaticModel = VapesOf93.Model_VapePen_KiwiPassionGuava,
+    }
+
+    item VapePen_Banana
+    {
+        DisplayName = Vape Pen (Banana),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Banana,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Banana,
+        WorldStaticModel = VapesOf93.Model_VapePen_Banana,
+    }
+
+    item VapePen_BlueRazz
+    {
+        DisplayName = Vape Pen (Blue Razz),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_BlueRazz,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_BlueRazz,
+        WorldStaticModel = VapesOf93.Model_VapePen_BlueRazz,
+    }
+
+    item VapePen_Blueberry
+    {
+        DisplayName = Vape Pen (Blueberry),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Blueberry,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Blueberry,
+        WorldStaticModel = VapesOf93.Model_VapePen_Blueberry,
+    }
+
+    item VapePen_Watermelon
+    {
+        DisplayName = Vape Pen (Watermelon),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Watermelon,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Watermelon,
+        WorldStaticModel = VapesOf93.Model_VapePen_Watermelon,
+    }
+
+    item VapePen_Grape
+    {
+        DisplayName = Vape Pen (Grape),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Grape,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Grape,
+        WorldStaticModel = VapesOf93.Model_VapePen_Grape,
+    }
+
+    item VapePen_Peach
+    {
+        DisplayName = Vape Pen (Peach),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Peach,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Peach,
+        WorldStaticModel = VapesOf93.Model_VapePen_Peach,
+    }
+
+    item VapePen_Pineapple
+    {
+        DisplayName = Vape Pen (Pineapple),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Pineapple,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Pineapple,
+        WorldStaticModel = VapesOf93.Model_VapePen_Pineapple,
+    }
+
+    item VapePen_CottonCandy
+    {
+        DisplayName = Vape Pen (Cotton Candy),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_CottonCandy,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_CottonCandy,
+        WorldStaticModel = VapesOf93.Model_VapePen_CottonCandy,
+    }
+
+    item VapePen_Mint
+    {
+        DisplayName = Vape Pen (Mint),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Mint,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Mint,
+        WorldStaticModel = VapesOf93.Model_VapePen_Mint,
+    }
+
+    item VapePen_Menthol
+    {
+        DisplayName = Vape Pen (Menthol),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Menthol,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Menthol,
+        WorldStaticModel = VapesOf93.Model_VapePen_Menthol,
+    }
+
+    item VapePen_Tobacco
+    {
+        DisplayName = Vape Pen (Classic Tobacco),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.15,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = VapePen_Tobacco,
+        ReplaceOnDeplete = VapesOf93.VapePen,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        FoodSicknessChange = 6,
+        InverseCoughProbability = 6,
+        InverseCoughProbabilitySmoker = 2,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_VapePen_Tobacco,
+        WorldStaticModel = VapesOf93.Model_VapePen_Tobacco,
+    }
+
+    item THCVape_Sativa
+    {
+        DisplayName = THC Vape (Sativa),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = THCVape_Sativa,
+        ReplaceOnDeplete = VapesOf93.UsedVape,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = VapesOf93OnEat.thc,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_THCVape_Sativa,
+        WorldStaticModel = VapesOf93.Model_THCVape_Sativa,
+    }
+
+    item THCVape_Indica
+    {
+        DisplayName = THC Vape (Indica),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = THCVape_Indica,
+        ReplaceOnDeplete = VapesOf93.UsedVape,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = VapesOf93OnEat.thc,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_THCVape_Indica,
+        WorldStaticModel = VapesOf93.Model_THCVape_Indica,
+    }
+
+    item THCVape_Hybrid
+    {
+        DisplayName = THC Vape (Hybrid),
+        DisplayCategory = Junk,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+        Icon = THCVape_Hybrid,
+        ReplaceOnDeplete = VapesOf93.UsedVape,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        Eattime = 230,
+        OnEat = VapesOf93OnEat.thc,
+        Tags = base:consumable;base:smokable;base:ignorezombiedensity,
+        StaticModel = VapesOf93.Model_Hand_THCVape_Hybrid,
+        WorldStaticModel = VapesOf93.Model_THCVape_Hybrid,
+    }
+
+}

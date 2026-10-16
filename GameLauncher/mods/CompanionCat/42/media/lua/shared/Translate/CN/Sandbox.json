@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: 猫咪",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "猫咪生成倍率",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "调整流浪猫在住宅、商店和宠物店中出现的频率。1.0 为正常概率，2.0 翻倍，0 则完全关闭猫咪生成。该选项与狗的生成设置相互独立：调低或关闭流浪狗不再影响猫咪。"
+}

@@ -1,0 +1,113 @@
+module Base
+{
+    sound WR_PlantWaterAmbient
+    {
+        category = World,
+        master = Ambient,
+        is3D = true,
+        loop = true,
+        clip
+        {
+            file = media/sound/WR_PlantWaterAmbient.wav,
+            distanceMax = 100,
+            volume = 0.8,
+        }
+    }
+    sound WR_ComputerRepair
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            event = Object/Generator/Repair,
+            distanceMax = 15,
+            volume = 0.8,
+        }
+    }
+    sound WR_Computer
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_Computer.wav,
+            distanceMax = 15,
+            volume = 0.8,
+        }
+    }
+    sound WR_ValveMaintenance
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_ValveMaintenance.wav,
+            distanceMax = 20,
+            volume = 0.9,
+        }
+    }
+    sound WR_ValveTurn
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_ValveTurn.wav,
+            distanceMax = 20,
+            volume = 0.9,
+        }
+    }
+    sound WR_StationFlow
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_StationFlow.wav,
+            distanceMax = 25,
+            volume = 0.8,
+        }
+    }
+    sound WR_ValveFlow
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_ValveFlow.wav,
+            distanceMax = 20,
+            volume = 0.9,
+        }
+    }
+    sound WR_WaterReturn
+    {
+        category = Object,
+        is3D = true,
+        clip
+        {
+            file = media/sound/WR_WaterReturn.wav,
+            distanceMax = 100,
+            volume = 1.0,
+        }
+    }
+    sound WR_ConsoleBoot
+    {
+        category = UI,
+        is3D = false,
+        clip
+        {
+            file = media/sound/WR_ConsoleBoot.wav,
+            volume = 0.7,
+        }
+    }
+    sound WR_ConsoleButton
+    {
+        category = UI,
+        is3D = false,
+        clip
+        {
+            file = media/sound/WR_ConsoleButton.wav,
+            volume = 0.7,
+        }
+    }
+}

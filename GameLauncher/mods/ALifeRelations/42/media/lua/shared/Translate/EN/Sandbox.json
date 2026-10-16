@@ -1,0 +1,13 @@
+{
+  "Sandbox_ALifeRelations": "A-Life Faction Relations",
+  "Sandbox_ALifeRelations_Tags": "Faction tags over NPCs",
+  "Sandbox_ALifeRelations_Tags_tooltip": "Off hides faction tags for every player, whatever they set in Options. Met factions are still recorded.",
+  "Sandbox_ALifeRelations_TagRange": "Tag range (tiles)",
+  "Sandbox_ALifeRelations_TagRange_tooltip": "How far away faction tags show. Also how close an NPC must be for its faction to count as met.",
+  "Sandbox_ALifeRelations_MapMarks": "Outpost marks on the world map",
+  "Sandbox_ALifeRelations_MapMarks_tooltip": "Off stops marking outposts on the world map for every player, whatever they set in Options.",
+  "Sandbox_ALifeRelations_DiscoverRadius": "Outpost discovery radius (tiles)",
+  "Sandbox_ALifeRelations_DiscoverRadius_tooltip": "How close a player must get to an outpost for it to be marked on their map.",
+  "Sandbox_ALifeRelations_TalkAnywhere": "Say and Shout everywhere",
+  "Sandbox_ALifeRelations_TalkAnywhere_tooltip": "On: the right-click Say and Shout menus show everywhere. Off: Say only shows with an A-Life NPC within 12 tiles, Shout within 25 (how far A-Life hears them)."
+}

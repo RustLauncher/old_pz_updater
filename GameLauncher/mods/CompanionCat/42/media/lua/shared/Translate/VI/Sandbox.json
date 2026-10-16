@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: Mèo",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "Hệ số xuất hiện của mèo",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Điều chỉnh tần suất mèo hoang xuất hiện trong nhà, cửa hàng và tiệm thú cưng. 1.0 là tỉ lệ bình thường, 2.0 gấp đôi, 0 tắt hoàn toàn việc mèo xuất hiện. Tùy chọn này tách biệt với cài đặt của chó: giảm hoặc tắt chó hoang không còn ảnh hưởng tới mèo nữa."
+}

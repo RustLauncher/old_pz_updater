@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_doberman": "杜賓犬",
+    "IGUI_AnimalType_dobmale": "杜賓犬（雄性）",
+    "IGUI_AnimalType_dobfemale": "杜賓犬（雌性）",
+    "IGUI_AnimalType_dobpup": "杜賓犬（幼犬）",
+    "IGUI_PD_Breed_doberman": "杜賓犬",
+    "IGUI_PD_BreedDesc_doberman": "身形精瘦、警覺性極高的看門犬，也是所有犬種中學得最快的一個：服從技能的訓練速度甚至超過德國牧羊犬。牠在戰鬥中全是鋒刃而無護甲：未受訓練時很弱，但戰鬥技能滿級後咬合力超過模組中任何一條狗，只是比羅威納犬更不耐打。牠真正的天賦是穩定：杜賓犬在你身旁時，你的心神會安定下來，槍械後座力恢復更快，裝彈也更迅速（穩定瞄準）。常見於警察局和軍事檢查哨。",
+    "IGUI_PD_Moodle_SteadyAim": "穩定瞄準",
+    "IGUI_PD_Moodle_SteadyAim_desc": "你的杜賓犬正在為你警戒。只要牠在附近、吃飽且忠誠，你的壓力就會消退，每次射擊後瞄準恢復更快，裝彈也更迅速。"
+}

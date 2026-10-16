@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "Rottweiler",
+    "IGUI_AnimalType_rottmale": "Rottweiler (maschio)",
+    "IGUI_AnimalType_rottfemale": "Rottweiler (femmina)",
+    "IGUI_AnimalType_rottpup": "Rottweiler (cucciolo)",
+    "IGUI_PD_Breed_rottweiler": "Rottweiler",
+    "IGUI_PD_BreedDesc_rottweiler": "Un possente cane da guardia allevato per la protezione, un vero guerriero alla pari del Pastore Tedesco: impara il Combattimento due volte più in fretta, colpisce duro ad alto livello, atterra gli zombie e continua a lottare dove la maggior parte delle razze va nel panico. Combattere al suo fianco tempra anche te: mentre il tuo Rottweiler è impegnato in combattimento nelle vicinanze, i tuoi colpi corpo a corpo consumano meno resistenza (Prima Linea). Si trova a guardia di magazzini, fabbriche e sfasciacarrozze, con una rara possibilità nelle case.",
+    "IGUI_PD_Moodle_FrontLine": "Prima Linea",
+    "IGUI_PD_Moodle_FrontLine_desc": "Il tuo Rottweiler sta combattendo al tuo fianco. Finché è impegnato in combattimento vicino a te, nutrito e fedele, i tuoi colpi corpo a corpo consumano meno resistenza."
+}

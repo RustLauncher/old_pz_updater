@@ -1,0 +1,7 @@
+name=True Cigarettes
+id=TrueCigarettes
+description=July 1993 US cigarette brands: a pack, a single and a carton per brand, each with its own effects. Compatible with True Smoking and Smokes n Guns. Unofficial fan tribute: brand names belong to their owners. Made by log with assistance from Anthropic's Claude.
+poster=poster.png
+modversion=1.2.0
+versionMin=42.13
+author=log

@@ -1,0 +1,9 @@
+id=CompanionDogsLabrador
+name=CD: Labrador
+description=Labrador Retrievers for Companion Dogs - a hunting dog built to bring it back. The Labrador trains Hunting twice as fast, with Obedience close behind, and it is one of the worst fighters in the family by design: only the Pug bites weaker, no knockdown, and it stresses badly in a brawl. Its gift is its mouth. With the Soft Mouth moodle a Labrador brings its kills back to you from the moment it can hunt, instead of waiting for a high Hunting skill, never drops one on the way, and often turns up with something else it found - and while it is at your side you learn Butchering and Short Blade faster. Stray Labradors are common in homes and turn up around hunting cabins, campsites, boathouses and ranger stations. REQUIRES the Companion Dogs mod (0.6.6 or newer). Do not remove this add-on from a save with living Labradors.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.0
+pzversion=42.19.0
+versionMin=42.18.0

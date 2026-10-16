@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Pastore Belga Malinois",
+    "IGUI_AnimalType_malmale": "Pastore Belga Malinois (maschio)",
+    "IGUI_AnimalType_malfemale": "Pastore Belga Malinois (femmina)",
+    "IGUI_AnimalType_malpup": "Pastore Belga Malinois (cucciolo)",
+    "IGUI_PD_Breed_malinois": "Pastore Belga Malinois",
+    "IGUI_PD_BreedDesc_malinois": "Un cane da polizia e da rilevamento. Specializzato in fiuto, obbedienza e combattimento. Un cane con una meccanica unica: non si limita a fiutare lo zombi, ti indica anche la sua posizione esatta. Si trova nelle stazioni di polizia, negli edifici militari e, raramente, nelle case.",
+    "IGUI_PD_Moodle_K9Scent": "Fiuto K9",
+    "IGUI_PD_Moodle_K9Scent_desc": "Il tuo Malinois è il migliore nel fiuto: può fiutare la posizione esatta dello zombi più vicino."
+}

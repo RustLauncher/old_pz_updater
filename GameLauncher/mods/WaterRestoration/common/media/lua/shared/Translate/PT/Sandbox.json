@@ -1,0 +1,17 @@
+{
+    "Sandbox_WaterRestoration": "Water Restoration",
+    "Sandbox_ElectricityLevel": "Nível de Elétrica necessário",
+    "Sandbox_ElectricityLevel_tooltip": "Habilidade de Elétrica necessária para reparar e manter os computadores da estação.",
+    "Sandbox_MechanicsLevel": "Nível de Mecânica necessário",
+    "Sandbox_MechanicsLevel_tooltip": "Habilidade de Mecânica necessária para reparar e manter os computadores da estação.",
+    "Sandbox_StrengthLevel": "Nível de Força necessário",
+    "Sandbox_StrengthLevel_tooltip": "Força necessária para os reparos pesados da estação.",
+    "Sandbox_CentralScrap": "Sucata para o computador central",
+    "Sandbox_CentralScrap_tooltip": "Sucata eletrônica consumida no reparo inicial do computador central. Mínimo: 10.",
+    "Sandbox_PanelScrap": "Sucata por computador secundário",
+    "Sandbox_PanelScrap_tooltip": "Sucata eletrônica consumida no reparo inicial de cada computador secundário. Mínimo: 10.",
+    "Sandbox_MaintenanceScrap": "Sucata por manutenção de computador",
+    "Sandbox_MaintenanceScrap_tooltip": "Sucata eletrônica consumida na manutenção de cada computador.",
+    "Sandbox_MaintenanceDays": "Dias entre manutenções",
+    "Sandbox_MaintenanceDays_tooltip": "Vida útil máxima de cada equipamento: até 21 dias no jogo. Faça a manutenção das peças desgastadas e reconecte o sistema."
+}

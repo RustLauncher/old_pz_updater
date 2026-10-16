@@ -1,0 +1,9 @@
+id=CompanionDogsDoberman
+name=CD: Doberman
+description=Dobermans for Companion Dogs - a gunfighter's dog. It trains for the fight as fast as the German Shepherd and the Rottweiler, but what sets it apart is the steepest lethality curve in the mod: weak while untrained, deadlier than any other breed once fully trained, and it soaks up less punishment than a Rottweiler. Comes with its own Steady Aim moodle - your firearm accuracy, recoil recovery and reload speed all improve while your Doberman is at your side. Stray Dobermans guard police stations and military checkpoints, and very rarely turn up at a house. REQUIRES the Companion Dogs mod (0.6.3 or newer). Do not remove this add-on from a save with living Dobermans.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.0
+pzversion=42.19.0
+versionMin=42.18.0

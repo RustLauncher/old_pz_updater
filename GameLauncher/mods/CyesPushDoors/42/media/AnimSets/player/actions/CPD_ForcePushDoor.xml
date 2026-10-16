@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+    <m_Name>CPDForcePushDoor</m_Name>
+    <m_AnimName>Bob_ForcePushDoor</m_AnimName>
+    <m_Looped>false</m_Looped>
+    <m_BlendTime>0.08</m_BlendTime>
+    <m_BlendOutTime>0.12</m_BlendOutTime>
+    <m_SpeedScale>0.80</m_SpeedScale>
+    <m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+    <m_Conditions x_name="018885c5-1fe9-4dbb-937c-e71cf95c3cd5">
+        <m_Name>PerformingAction</m_Name>
+        <m_Type>STRING</m_Type>
+        <m_Value>CPDForcePushDoor</m_Value>
+    </m_Conditions>
+    <m_SubStateBoneWeights>
+        <boneName>Dummy01</boneName>
+    </m_SubStateBoneWeights>
+    <m_SubStateBoneWeights>
+        <boneName>Translation_Data</boneName>
+    </m_SubStateBoneWeights>
+</animNode>

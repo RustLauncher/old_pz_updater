@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "マリノア",
+    "IGUI_AnimalType_malmale": "マリノア（オス）",
+    "IGUI_AnimalType_malfemale": "マリノア（メス）",
+    "IGUI_AnimalType_malpup": "マリノア（子犬）",
+    "IGUI_PD_Breed_malinois": "マリノア",
+    "IGUI_PD_BreedDesc_malinois": "警察犬・探知犬。嗅覚、服従、戦闘に秀でている。独自の仕組みを持つ犬で、ゾンビを嗅ぎつけるだけでなく、その正確な位置を教えてくれる。警察署や軍の施設で見つかり、まれに民家にもいる。",
+    "IGUI_PD_Moodle_K9Scent": "K9の嗅覚",
+    "IGUI_PD_Moodle_K9Scent_desc": "あなたのマリノアは嗅覚が一番。一番近いゾンビの正確な位置を嗅ぎ当てられる。"
+}

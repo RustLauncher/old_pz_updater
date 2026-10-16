@@ -1,0 +1,8 @@
+name=Barricade The Door
+id=BarricadeTheDoor
+description=Barricade doors using chairs. Increases door health, slows down zombies, NPC's & Players.
+poster=poster.png
+preview=preview.png
+author=Alphagamer1981
+modversion=3.0
+versionMin=42.20

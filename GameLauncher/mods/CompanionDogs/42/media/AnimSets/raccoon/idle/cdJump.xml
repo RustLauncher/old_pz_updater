@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>cdJump</m_Name>
+	<m_ConditionPriority>10</m_ConditionPriority>
+	<m_AnimName>Rac_Jump</m_AnimName>
+	<m_BlendTime>0.08</m_BlendTime>
+	<m_SpeedScale>2.3</m_SpeedScale>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="cda77ac4-0009-4001-8001-000000000009">
+		<m_Name>cdJump</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

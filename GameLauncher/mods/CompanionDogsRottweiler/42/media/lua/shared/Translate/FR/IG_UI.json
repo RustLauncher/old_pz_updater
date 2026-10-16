@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "Rottweiler",
+    "IGUI_AnimalType_rottmale": "Rottweiler (mâle)",
+    "IGUI_AnimalType_rottfemale": "Rottweiler (femelle)",
+    "IGUI_AnimalType_rottpup": "Rottweiler (chiot)",
+    "IGUI_PD_Breed_rottweiler": "Rottweiler",
+    "IGUI_PD_BreedDesc_rottweiler": "Un chien de garde puissant, élevé pour la protection, un vrai guerrier à la hauteur du Berger Allemand: il apprend le Combat deux fois plus vite, frappe très fort à haut niveau, met les zombies à terre et continue de se battre là où la plupart des races paniquent. Se battre à ses côtés vous aguerrit aussi: tant que votre Rottweiler est engagé dans un combat près de vous, vos coups de mêlée consomment moins d'endurance (Ligne de front). On le trouve à garder les entrepôts, les usines et les casses, et plus rarement dans les maisons.",
+    "IGUI_PD_Moodle_FrontLine": "Ligne de front",
+    "IGUI_PD_Moodle_FrontLine_desc": "Votre Rottweiler se bat à vos côtés. Tant qu'il est engagé dans un combat près de vous, nourri et loyal, vos coups de mêlée consomment moins d'endurance."
+}

@@ -1,0 +1,65 @@
+module Base
+{
+    /* Vozes do gato (CD: Cats). Mesmo molde do sounds_companiondogs.txt do base: .ogg SOLTO, sem banco
+       de FMOD. A engine resolve o nome por GameSounds.getSound e toca o clip.file por
+       FMODManager.loadSound; varios clips no mesmo sound = variacao aleatoria (getRandomClip).
+       Audio: BigSoundBank.com (Joseph Sardin) -- ver CREDITS.txt na raiz do mod.
+       Cortados e convertidos para mono 44.1 kHz com ffmpeg, pico normalizado em -1.4 dBFS, o mesmo
+       padrao dos clips do cao.
+
+       maxInstancesPerEmitter = 1 em todos, pelo mesmo motivo do base: o emitter e por bicho, e isto e a
+       trava declarativa contra a mesma voz empilhar num animal so (o loop de latido que ja mordeu o mod).
+
+       distanceMax: o gato e o bicho mais discreto do mod (barkNoiseMult 0.5), entao o alcance audivel
+       aqui e menor que o do cao (30) de proposito -- o miado de alarme chama VOCE, nao o quarteirao.
+
+       distanceMin e OBRIGATORIO em todo clip. O default do engine e 10, e ele e o raio de volume CHEIO:
+       declarar so o distanceMax deixa min=10 > max, e no rolloff inverso do FMOD isso significa que o som
+       nunca atenua -- toca no volume cheio na cell inteira, atravessando parede e quarteirao. Foi o que
+       fez o ronronado ser ouvido de qualquer lugar do mapa. O par min < max e que da a queda por distancia.
+       Passado o distanceMax o rolloff inverso PARA de atenuar em vez de silenciar: o clip segue tocando em
+       distanceMin/distanceMax do volume, a qualquer distancia. Essa razao e o piso audivel, por isso o
+       distanceMin fica baixo nas vozes altas. O alcance que impede o pacote de chegar no jogador distante
+       esta no CD.registerVoices do CompanionCat_Breed.lua, e espelha o distanceMax daqui. */
+
+    sound CDCatMeow        /* alarme do sentinela, combate e caca: o "latido" do gato */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatMeow1.ogg, distanceMin = 3, distanceMax = 22, }
+    }
+    sound CDCatMeowAmbient /* miado distante de gato vadio (cosmetico, nunca atrai zumbi) */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatMeow1.ogg, distanceMin = 3, distanceMax = 22, volume = 0.45, }
+    }
+    sound CDCatGrowl       /* alerta QUIETO do sentinela: ronco grave, e o bufo como variacao */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatGrowl1.ogg, distanceMin = 3, distanceMax = 10, volume = 0.55, }
+        clip { file = media/sound/CDCatGrowl2.ogg, distanceMin = 3, distanceMax = 10, volume = 0.55, }
+        clip { file = media/sound/CDCatHiss1.ogg,  distanceMin = 3, distanceMax = 10, volume = 0.55, }
+    }
+    sound CDCatHiss        /* bufo puro: ameaca e dor. Curto e de banda larga, corta por cima do resto */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatHiss1.ogg, distanceMin = 2, distanceMax = 14, }
+    }
+    sound CDCatPurr        /* voz ociosa: ronronado. Tres variacoes pra nao repetir o mesmo trecho */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatPurr1.ogg, distanceMin = 1, distanceMax = 6, volume = 0.35, }
+        clip { file = media/sound/CDCatPurr2.ogg, distanceMin = 1, distanceMax = 6, volume = 0.35, }
+        clip { file = media/sound/CDCatPurr3.ogg, distanceMin = 1, distanceMax = 6, volume = 0.35, }
+    }
+    sound CDCatPet         /* carinho: o ronronado longo, mais alto porque o dono esta encostado nele */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDCatPurrLoop1.ogg, distanceMin = 2, distanceMax = 8, volume = 0.8, }
+    }
+}

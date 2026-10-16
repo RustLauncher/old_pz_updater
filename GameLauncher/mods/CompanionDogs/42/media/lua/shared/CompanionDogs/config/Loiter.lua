@@ -1,0 +1,58 @@
+CompanionDogs = CompanionDogs or {}
+local CD = CompanionDogs
+
+CD.PASSIVE_IDLE_ENABLED = true
+CD.LOITER_RADIUS = 6
+CD.LOITER_RADIUS_MIN = 2
+CD.LOITER_RADIUS_MAX = 20
+CD.LOITER_REANCHOR_DIST = 20
+CD.LOITER_MIN_STEP = 3
+CD.LOITER_RUN_MIN_STEP = 5
+CD.LOITER_PICK_TRIES = 16
+CD.LOITER_ARRIVE_DIST = 1.2
+CD.LOITER_WALK_TIMEOUT_MS = 15000
+CD.LOITER_WANDER_HOLD = 3000
+CD.LOITER_BADROOM_MS = 180000
+CD.LOITER_BADPT_R = 2
+CD.LOITER_BADPT_MAX = 6
+CD.LOITER_STALL_MS = 4000
+CD.LOITER_PROGRESS_EPS = 0.25
+CD.LOITER_REST_MS_MIN = 20000
+CD.LOITER_REST_MS_MAX = 45000
+CD.LOITER_IDLE_MS_MIN = 5200
+CD.LOITER_IDLE_MS_MAX = 11700
+CD.LOITER_DWELL_MS_MIN = 3900
+CD.LOITER_DWELL_MS_MAX = 10400
+CD.LOITER_FEED_MS_MIN = 5000
+CD.LOITER_FEED_MS_MAX = 8000
+CD.LOITER_SNIFF_PCT = 35
+CD.LOITER_ACTIONS = {
+    { act = "walk",  w = 50 },
+    { act = "run",   w = 25 },
+    { act = "eat",   w = 10 },
+    { act = "drink", w = 10 },
+    { act = "bark",  w = 5 },
+    { act = "rest",  w = 12 },
+}
+
+CD.STRAY_ROAD_SEARCH = 12
+CD.STRAY_ROAD_MARGIN = 2
+CD.STRAY_ROAD_PLAYER_DIST = 3
+-- Unidade do timer de vagar da engine (cerca de 48 por segundo em 1x), nao ms.
+CD.STRAY_ROAD_HOLD = 1800
+CD.STRAY_ROAD_ARRIVE_DIST = 1.2
+CD.STRAY_ROAD_PROGRESS_EPS = 0.25
+CD.STRAY_ROAD_TIMEOUT_MS = 20000
+CD.STRAY_ROAD_STALL_MS = 5000
+CD.STRAY_ROAD_RETRY_MS = 5000
+CD.STRAY_ROAD_NOEXIT_MS = 30000
+CD.STRAY_ROAD_MEMO_MAX = 50000
+
+CD.LOITER_STUCK_ACTIONS = {
+    { act = "sniff", w = 35 },
+    { act = "rest",  w = 30 },
+    { act = "bark",  w = 10 },
+    { act = "eat",   w = 10 },
+    { act = "drink", w = 10 },
+    { act = "idle",  w = 5 },
+}

@@ -1,0 +1,9 @@
+id=CompanionCat
+name=CD: Cats
+description=Cats for Companion Dogs, in eleven coats: black, white, orange, calico, tuxedo, brown tabby, grey tabby, orange tabby, barley, cow and tortoiseshell. A cat is a lookout. It won't fight the dead, it won't work your livestock and it won't breed with a dog. It notices zombies further out than any dog in the mod and stays quiet about it, it goes hunting while you sleep and leaves what it caught at your feet, and its Cat's Eyes moodle keeps the dark from cutting your night foraging down to arm's length. It takes rodents and rabbits, leaves deer alone, and your own chickens and cows are never prey. The catch is that it is the most stubborn animal in the family, its loyalty fades faster than a dog's if you neglect it, and every so often it spots a rat, drops everything and goes after it until it is done. Strays turn up in houses, shops and pet stores, with their own spawn multiplier in the sandbox options, and the coat you find is luck. REQUIRES the Companion Dogs mod, version 0.7.0 or newer. Removing it means removing the whole thing, and the wiki has the procedure: https://companiondogs.pet/docs/en/features.html#23-removing-the-mod-from-a-save-read-this-first
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.5
+pzversion=42.19.0
+versionMin=42.18.0

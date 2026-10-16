@@ -1,0 +1,47 @@
+module Base
+{
+    model Malinois_Body
+    {
+        mesh = Skinned/Malinois_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = MalAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        /* ALFORJE. Valores do Pastor Alemao, que tem o mesmo esqueleto: ainda nao ajustado em jogo.
+           Nao derivar por medicao no GLB nem por proporcao do flanco. localX = LATERAL |
+           localY = FRENTE/TRAS | localZ = VERTICAL, +Z = BAIXO. A engine escala por float unico.
+           Este .txt so e reparseado no BOOT. */
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.03,
+            rotate = 90.0 90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    animationsMesh MalAnim
+    {
+        meshFile = Skinned/Malinois_Body,
+        keepMeshAnimations = true,
+    }
+}

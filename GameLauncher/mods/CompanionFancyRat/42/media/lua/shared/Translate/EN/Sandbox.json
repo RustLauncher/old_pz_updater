@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionFancyRat": "CD: Fancy Rats",
+    "Sandbox_CompanionFancyRat_FancyRatSpawnMultiplier": "Fancy rat spawn rate multiplier",
+    "Sandbox_CompanionFancyRat_FancyRatSpawnMultiplier_tooltip": "Scales how often stray fancy rats appear in houses, farms and grubby buildings (warehouses, kitchens, storage, basements). 1.0 is the normal rate, 2.0 doubles it, 0 turns spawns off."
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+    <m_Name>CPDKickDoor</m_Name>
+    <m_AnimName>Bob_PushDoor</m_AnimName>
+    <m_Looped>false</m_Looped>
+    <m_BlendTime>0.08</m_BlendTime>
+    <m_BlendOutTime>0.12</m_BlendOutTime>
+    <m_SpeedScale>0.80</m_SpeedScale>
+    <m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+    <m_Conditions x_name="d8f57b8a-43b8-48d9-a62d-fd15bd93cc82">
+        <m_Name>PerformingAction</m_Name>
+        <m_Type>STRING</m_Type>
+        <m_Value>CPDKickDoor</m_Value>
+    </m_Conditions>
+    <m_SubStateBoneWeights>
+        <boneName>Dummy01</boneName>
+    </m_SubStateBoneWeights>
+    <m_SubStateBoneWeights>
+        <boneName>Translation_Data</boneName>
+    </m_SubStateBoneWeights>
+</animNode>

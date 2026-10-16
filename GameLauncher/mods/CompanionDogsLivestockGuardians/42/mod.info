@@ -1,0 +1,10 @@
+name=CD: Livestock Guardians
+id=CompanionDogsLivestockGuardians
+author=Shyne
+description=Adds the Anatolian Shepherd and Greater Swiss Mountain Dog breeds to Companion Dogs. REQUIRES Companion Dogs 0.7.0 or newer.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.2.6
+pzversion=42
+versionMin=42.20

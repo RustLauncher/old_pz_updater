@@ -1,0 +1,71 @@
+VERSION = 1,
+
+option WaterRestoration.ElectricityLevel
+{
+    type = integer,
+    default = 7,
+    min = 0,
+    max = 10,
+    page = WaterRestoration,
+    translation = ElectricityLevel,
+}
+
+option WaterRestoration.MechanicsLevel
+{
+    type = integer,
+    default = 7,
+    min = 0,
+    max = 10,
+    page = WaterRestoration,
+    translation = MechanicsLevel,
+}
+
+option WaterRestoration.StrengthLevel
+{
+    type = integer,
+    default = 6,
+    min = 0,
+    max = 10,
+    page = WaterRestoration,
+    translation = StrengthLevel,
+}
+
+option WaterRestoration.CentralScrap
+{
+    type = integer,
+    default = 10,
+    min = 0,
+    max = 100,
+    page = WaterRestoration,
+    translation = CentralScrap,
+}
+
+option WaterRestoration.PanelScrap
+{
+    type = integer,
+    default = 10,
+    min = 0,
+    max = 100,
+    page = WaterRestoration,
+    translation = PanelScrap,
+}
+
+option WaterRestoration.MaintenanceScrap
+{
+    type = integer,
+    default = 2,
+    min = 0,
+    max = 100,
+    page = WaterRestoration,
+    translation = MaintenanceScrap,
+}
+
+option WaterRestoration.MaintenanceDays
+{
+    type = integer,
+    default = 21,
+    min = 1,
+    max = 21,
+    page = WaterRestoration,
+    translation = MaintenanceDays,
+}

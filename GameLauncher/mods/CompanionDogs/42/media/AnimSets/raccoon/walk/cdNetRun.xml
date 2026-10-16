@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Corrida da copia remota. Par do cdNetWalk: o run.xml vanilla tem m_SpeedScale fixo em 1.30 e a corrida tem
+     duas marchas (alcance e cruzeiro), entao escala fixa cruza as pernas na cadencia errada em uma das duas.
+     Medido em jogo: 5.91 de perna contra 5.13 de corpo. Vence o vanilla por prioridade e, no empate de
+     prioridade, por ter mais condicoes. -->
+<animNode>
+	<m_Name>cdNetRun</m_Name>
+	<m_ConditionPriority>5</m_ConditionPriority>
+	<m_AnimName>Rac_Run</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdRunScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>true</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cda77ac4-0007-4001-8001-000000000003">
+		<m_Name>cdNetGait</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-0007-4001-8001-000000000004">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

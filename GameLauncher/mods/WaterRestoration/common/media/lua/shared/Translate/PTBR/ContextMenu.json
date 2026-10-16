@@ -1,0 +1,17 @@
+{
+    "ContextMenu_WR_ReadManual": "Estudar o manual de operações da estação de tratamento",
+    "ContextMenu_WR_RepairCentral": "Reparar computador central de água",
+    "ContextMenu_WR_CheckCentral": "Verificar estado do sistema de água",
+    "ContextMenu_WR_ActivateWater": "Conectar abastecimento de água",
+    "ContextMenu_WR_SystemOperational": "Sistemas de água operacionais",
+    "ContextMenu_WR_MaintainCentral": "Fazer manutenção no computador central",
+    "ContextMenu_WR_RepairPanel": "Reparar computador de controle secundário",
+    "ContextMenu_WR_MaintainPanel": "Fazer manutenção no computador secundário",
+    "ContextMenu_WR_PanelConnected": "Conexão com a estação estabelecida",
+    "ContextMenu_WR_TurnValve": "Abrir válvula de tratamento",
+    "ContextMenu_WR_ValveOpen": "Válvula de tratamento aberta",
+    "ContextMenu_WR_InspectPlant": "Ver estado da estação",
+    "ContextMenu_WR_MaintainValve": "Fazer manutenção na válvula",
+    "ContextMenu_WR_InspectTerminal": "Usar terminal de controle",
+    "ContextMenu_WR_RegionalStation": "Usar distribuidor regional de água"
+}

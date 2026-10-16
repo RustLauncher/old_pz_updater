@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: Gatos",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "Multiplicador de aparición de gatos",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Ajusta con qué frecuencia aparecen gatos callejeros en casas, tiendas y tiendas de mascotas. 1.0 es la tasa normal, 2.0 la duplica, 0 desactiva la aparición de gatos. Es independiente de la opción de perros: reducir o desactivar los perros callejeros ya no afecta a los gatos."
+}

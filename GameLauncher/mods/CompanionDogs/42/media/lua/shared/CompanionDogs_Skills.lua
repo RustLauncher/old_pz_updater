@@ -1,0 +1,1 @@
+-- Vazio de proposito: o upload da Workshop e aditivo e quem ja era assinante ainda tem este .lua no disco.

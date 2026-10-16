@@ -1,0 +1,92 @@
+module Base
+{
+    /* Real dog voices for CompanionDogs (loose .ogg, no FMOD bank required).
+       The engine resolves these names via GameSounds.getSound and plays the
+       clip.file through FMODManager.loadSound. Multiple clips per sound = random
+       variation (getRandomClip). Drop the matching .ogg files in 42/media/sound/.
+       Audio: CC0 (see CREDITS.txt at the root of the mod).
+
+       maxInstancesPerEmitter = 1 on every sound: the emitter is per-dog, so this is a DECLARATIVE clamp against
+       the same voice stacking on one animal (the bark/growl feedback loop this mod has already been bitten by).
+       It backs up the Lua-side clamp instead of replacing it, and it matters most for the two looped sounds
+       (CDDogEat / CDDogDrink), where a second instance would never be stopped by the stop-by-name path.
+       distanceMin is MANDATORY on every clip. The engine default is 10 and it is the FULL-volume radius, so a
+       clip that only declares distanceMax ends up with min = 10 >= max, and FMOD's inverse rolloff can never
+       attenuate it: the sound plays at full volume across the whole cell, through walls and across the block.
+       The min < max pair is what actually produces the falloff. */
+    /* depois do distanceMax o rolloff inverso para de atenuar e fica no piso distanceMin/distanceMax, por isso
+       o min baixo nas vozes altas; CD.SOUND_RANGE (config/Needs.lua) espelha o max, mexeu num mexe no outro */
+
+    sound CDDogBark        /* bark / alarm: combat, sentinel alarm, stress self-bark */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogBark1.ogg, distanceMin = 4, distanceMax = 30, }
+        clip { file = media/sound/CDDogBark2.ogg, distanceMin = 4, distanceMax = 30, }
+        clip { file = media/sound/CDDogBark3.ogg, distanceMin = 4, distanceMax = 30, }
+    }
+    sound CDDogBarkAmbient /* atmospheric distant bark for wild strays (cosmetic, never attracts zombies); reuses the bark clips at lower volume so the companion alarm stays at full */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogBark1.ogg, distanceMin = 4, distanceMax = 30, volume = 0.40, }
+        clip { file = media/sound/CDDogBark2.ogg, distanceMin = 4, distanceMax = 30, volume = 0.40, }
+        clip { file = media/sound/CDDogBark3.ogg, distanceMin = 4, distanceMax = 30, volume = 0.40, }
+    }
+    sound CDDogGrowl       /* low growl: quiet sentinel cue + engine "stressed" */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogGrowl1.ogg, distanceMin = 2, distanceMax = 12, volume = 0.7, }
+        clip { file = media/sound/CDDogGrowl2.ogg, distanceMin = 2, distanceMax = 12, volume = 0.7, }
+    }
+    sound CDDogWhine       /* whimper / pain: engine "pain" on damage */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogWhine1.ogg, distanceMin = 2, distanceMax = 15, }
+        clip { file = media/sound/CDDogWhine2.ogg, distanceMin = 2, distanceMax = 15, }
+    }
+    sound CDDogIdle        /* ambient huff/snort: engine "idle" */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogIdle1.ogg, distanceMin = 2, distanceMax = 10, volume = 0.2, }
+        clip { file = media/sound/CDDogIdle2.ogg, distanceMin = 2, distanceMax = 10, volume = 0.2, }
+    }
+    sound CDDogPickup      /* soft huff when picked up / set down: reuses the idle clips a touch louder than ambient idle so it reads as a gentle, quiet cue (replaces the raccoon pick_up/put_down) */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogIdle1.ogg, distanceMin = 2, distanceMax = 8, volume = 0.5, }
+        clip { file = media/sound/CDDogIdle2.ogg, distanceMin = 2, distanceMax = 8, volume = 0.5, }
+    }
+    sound CDDogPet         /* content huff/snort when the owner pets the dog: reuses the idle clips louder so the affection is clearly audible up close (the native petting anim has no foley) */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogIdle1.ogg, distanceMin = 2, distanceMax = 12, volume = 0.9, }
+        clip { file = media/sound/CDDogIdle2.ogg, distanceMin = 2, distanceMax = 12, volume = 0.9, }
+    }
+    sound CDDogDeath       /* death yelp: engine "death" (permadeath) */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDDogDeath1.ogg, distanceMin = 4, distanceMax = 25, }
+    }
+    sound CDDogEat         /* kibble crunching loop: bowl/trough meal dwell + hand-feed pulse (replaces the herbivore AnimalFoleyEatGrass); looped, stopped by name on state exit */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        /* loop pertence ao bloco sound: LoadClip nao le a chave e o clip toca uma vez so */
+        loop = true,
+        clip { file = media/sound/CDDogEat1.ogg, distanceMin = 2, distanceMax = 10, }
+    }
+    sound CDDogDrink       /* water lapping loop: bowl/trough drink dwell + hand-water pulse; looped, stopped by name on state exit */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        loop = true,
+        clip { file = media/sound/CDDogDrink1.ogg, distanceMin = 2, distanceMax = 10, }
+    }
+}

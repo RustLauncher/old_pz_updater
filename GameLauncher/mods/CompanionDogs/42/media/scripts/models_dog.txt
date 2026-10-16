@@ -1,0 +1,248 @@
+module Base
+{
+    model CompanionDogsArchStrap
+    {
+        mesh = WorldItems/CompanionDogsArchStrap,
+        texture = WorldItems/LeatherStrips,
+        scale = 0.006,
+    }
+
+    /* Tigela: um pote so, servido de dois jeitos. O modelIndex (WorldStaticModelsByIndex em
+       companiondogs_bowl.txt) escolhe entre servir racao e servir agua, e cada um tem seu irmao _Fluid,
+       que a engine usa sozinha quando o FluidContainer passa de 50% cheio. A escala iguala a pegada da
+       WaterDish vanilla, que entra no jogo com 1.0545 x 0.15 = 0.1582, e a nossa malha mede 0.2858. Esse
+       "entra no jogo" NAO e o tamanho que o Blender mostra: o Assimp do PZ ignora o UnitScaleFactor do FBX
+       e aplica o Lcl Scaling do no Model. */
+    model CompanionDogsBowlFood
+    {
+        mesh = WorldItems/CDBowlFood,
+        texture = WorldItems/CDBowl,
+        scale = 0.5535,
+    }
+
+    model CompanionDogsBowlFood_Fluid
+    {
+        mesh = WorldItems/CDBowlFood_Full,
+        texture = WorldItems/CDBowl,
+        scale = 0.5535,
+    }
+
+    model CompanionDogsBowlWater
+    {
+        mesh = WorldItems/CDBowlWater,
+        texture = WorldItems/CDBowl,
+        scale = 0.5535,
+    }
+
+    model CompanionDogsBowlWater_Fluid
+    {
+        mesh = WorldItems/CDBowlWater_Full,
+        texture = WorldItems/CDBowl,
+        scale = 0.5535,
+    }
+
+    model GermanShepherd_Body
+    {
+        mesh = Skinned/GermanShepherd_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = GSAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.03,
+            rotate = 90.0 90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    model Caramelo_Body
+    {
+        mesh = Skinned/Caramelo_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CaramAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.03,
+            rotate = 90.0 90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    model Retriever_Body
+    {
+        mesh = Skinned/Retriever_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = RetrAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.03,
+            rotate = 90.0 90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    model Husky_Body
+    {
+        mesh = Skinned/Husky_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = HuskyAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.5,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.03,
+            rotate = 90.0 90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    animationsMesh GSAnim
+    {
+        meshFile = Skinned/GermanShepherd_Body,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh HuskyAnim
+    {
+        meshFile = Skinned/Husky_Body,
+        keepMeshAnimations = true,
+    }
+
+    model BorderCollie_Body
+    {
+        mesh = Skinned/BorderCollie_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = BorderCollieAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.065 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.55,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.065 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.55,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.04 -0.06,
+            rotate = 90.0 -90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    animationsMesh BorderCollieAnim
+    {
+        meshFile = Skinned/BorderCollie_Body,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh CaramAnim
+    {
+        meshFile = Skinned/Caramelo_Body,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh RetrAnim
+    {
+        meshFile = Skinned/Retriever_Body,
+        keepMeshAnimations = true,
+    }
+}

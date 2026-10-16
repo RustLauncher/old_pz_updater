@@ -1,0 +1,32 @@
+module Base
+{
+    sound CDFRSqueak        /* sentinel alarm: the fancy rat's "bark" */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDFRSqueak1.ogg, distanceMin = 3, distanceMax = 10, }
+        clip { file = media/sound/CDFRSqueak2.ogg, distanceMin = 3, distanceMax = 10, }
+    }
+    sound CDFRSqueakAmbient /* distant squeak, cosmetic */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDFRSqueak1.ogg, distanceMin = 3, distanceMax = 10, volume = 0.4, }
+        clip { file = media/sound/CDFRSqueak2.ogg, distanceMin = 3, distanceMax = 10, volume = 0.4, }
+    }
+    sound CDFRChatter       /* quiet alert + pain */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDFRChatter1.ogg, distanceMin = 1, distanceMax = 5, volume = 0.5, }
+        clip { file = media/sound/CDFRChatter2.ogg, distanceMin = 1, distanceMax = 5, volume = 0.5, }
+    }
+    sound CDFRPet           /* petting response */
+    {
+        category = Animal,
+        maxInstancesPerEmitter = 1,
+        clip { file = media/sound/CDFRPet1.ogg, distanceMin = 1, distanceMax = 4, volume = 0.6, }
+        clip { file = media/sound/CDFRPet2.ogg, distanceMin = 1, distanceMax = 4, volume = 0.6, }
+        clip { file = media/sound/CDFRPet3.ogg, distanceMin = 1, distanceMax = 4, volume = 0.6, }
+    }
+}

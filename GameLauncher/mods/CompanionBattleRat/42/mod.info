@@ -1,0 +1,10 @@
+id=CompanionBattleRat
+name=CD: Battle Rats
+description=Fancy rats addon for Companion Dogs. A fancy rat will be your new scouting buddy. It will help with livestock, but it notices trouble further out than almost anything else in the mod and is the quietest about it. In this version, Your Companion Rats will fight. Be aware that they are nervous little animals, though. Strays turn up in houses, farm buildings, and anywhere cluttered or grubby. Warehouses, kitchens, storage rooms, basements. REQUIRES the Companion Dogs mod 0.7.4+.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.0
+pzversion=42.20.4
+versionMin=42.20.0
+incompatible=CompanionFancyRat

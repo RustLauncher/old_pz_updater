@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "Anatolian Shepherd",
+    "IGUI_AnimalType_anatolianmale": "Anatolian Shepherd (male)",
+    "IGUI_AnimalType_anatolianfemale": "Anatolian Shepherd (female)",
+    "IGUI_AnimalType_anatolianpup": "Anatolian Shepherd (puppy)",
+    "IGUI_PD_Breed_anatolianshepherd": "Anatolian Shepherd",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "A large, courageous livestock guardian with a pale fawn coat, cream underside and dark facial mask. It learns combat quickly, carries larger saddlebags and helps calm its owner's panic.",
+    "IGUI_Breed_greaterswissmountaindog": "Greater Swiss Mountain Dog",
+    "IGUI_AnimalType_greaterswissmale": "Greater Swiss Mountain Dog (male)",
+    "IGUI_AnimalType_greaterswissfemale": "Greater Swiss Mountain Dog (female)",
+    "IGUI_AnimalType_greaterswisspup": "Greater Swiss Mountain Dog (puppy)",
+    "IGUI_PD_Breed_greaterswissmountaindog": "Greater Swiss Mountain Dog",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "A large, courageous tricolor working dog bred to guard farms, pull carts and drive livestock. It learns combat quickly, carries larger saddlebags and helps calm its owner's panic."
+}

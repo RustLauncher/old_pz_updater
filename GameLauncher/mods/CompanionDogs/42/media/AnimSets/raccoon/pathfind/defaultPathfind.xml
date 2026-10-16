@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultPathfind</m_Name>
+	<m_AnimName>Rac_Walk</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdWalkScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="011e4558-6271-49cc-a370-a16688cd8baa">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="80c80874-bdba-41aa-8921-f6d7b343bf8c">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="5119988e-13af-49e9-baaa-8ac724a3a6f3">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

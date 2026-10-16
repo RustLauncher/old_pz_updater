@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "ロットワイラー",
+    "IGUI_AnimalType_rottmale": "ロットワイラー（オス）",
+    "IGUI_AnimalType_rottfemale": "ロットワイラー（メス）",
+    "IGUI_AnimalType_rottpup": "ロットワイラー（子犬）",
+    "IGUI_PD_Breed_rottweiler": "ロットワイラー",
+    "IGUI_PD_BreedDesc_rottweiler": "護衛のために生み出された力強い番犬で、ジャーマンシェパードに並ぶ生粋の戦士。戦闘スキルを2倍の速さで習得し、高レベルでは強烈な一撃を放ち、ゾンビを転倒させ、他の犬種がパニックに陥る状況でも戦い続けます。共に戦うあなたも奮い立たせます：ロットワイラーが近くで戦闘中の間、あなたの近接攻撃のスタミナ消費が減ります（前線）。倉庫や工場、廃品置き場を守っており、まれに民家でも見つかります。",
+    "IGUI_PD_Moodle_FrontLine": "前線",
+    "IGUI_PD_Moodle_FrontLine_desc": "ロットワイラーがあなたの傍らで戦っています。近くで戦闘中で、餌を与えられ忠実な間、あなたの近接攻撃のスタミナ消費が減ります。"
+}

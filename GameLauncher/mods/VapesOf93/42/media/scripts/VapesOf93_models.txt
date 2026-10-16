@@ -1,0 +1,403 @@
+module VapesOf93
+{
+    model Model_VapePen
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_UsedVape
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_UsedVape,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Mango
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Mango,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Strawberry
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Strawberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_KiwiPassionGuava
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_KiwiPassionGuava,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Banana
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Banana,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_BlueRazz
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_BlueRazz,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Blueberry
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Blueberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Watermelon
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Watermelon,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Grape
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Grape,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Peach
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Peach,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Pineapple
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Pineapple,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_CottonCandy
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_CottonCandy,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Mint
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Mint,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Menthol
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Menthol,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Juice_Tobacco
+    {
+        mesh = VapesOf93/Vape_Pack,
+        texture = VapesOf93/Tex_Juice_Tobacco,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Mango
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Mango,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Strawberry
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Strawberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_KiwiPassionGuava
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_KiwiPassionGuava,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Banana
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Banana,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_BlueRazz
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_BlueRazz,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Blueberry
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Blueberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Watermelon
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Watermelon,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Grape
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Grape,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Peach
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Peach,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Pineapple
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Pineapple,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_CottonCandy
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_CottonCandy,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Mint
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Mint,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Menthol
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Menthol,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_VapePen_Tobacco
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_VapePen_Tobacco,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_THCVape_Sativa
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_THCVape_Sativa,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_THCVape_Indica
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_THCVape_Indica,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_THCVape_Hybrid
+    {
+        mesh = VapesOf93/Vape_Puff,
+        texture = VapesOf93/Tex_THCVape_Hybrid,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Mango
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Mango,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Strawberry
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Strawberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_KiwiPassionGuava
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_KiwiPassionGuava,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Banana
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Banana,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_BlueRazz
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_BlueRazz,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Blueberry
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Blueberry,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Watermelon
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Watermelon,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Grape
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Grape,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Peach
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Peach,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Pineapple
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Pineapple,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_CottonCandy
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_CottonCandy,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Mint
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Mint,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Menthol
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Menthol,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_VapePen_Tobacco
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_VapePen_Tobacco,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_THCVape_Sativa
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_THCVape_Sativa,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_THCVape_Indica
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_THCVape_Indica,
+        scale = 1.0,
+        static = true,
+    }
+
+    model Model_Hand_THCVape_Hybrid
+    {
+        mesh = VapesOf93/Vape_Puff_Hand,
+        texture = VapesOf93/Tex_THCVape_Hybrid,
+        scale = 1.0,
+        static = true,
+    }
+
+}

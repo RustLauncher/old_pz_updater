@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "Berger d'Anatolie",
+    "IGUI_AnimalType_anatolianmale": "Berger d'Anatolie (male)",
+    "IGUI_AnimalType_anatolianfemale": "Berger d'Anatolie (femelle)",
+    "IGUI_AnimalType_anatolianpup": "Berger d'Anatolie (chiot)",
+    "IGUI_PD_Breed_anatolianshepherd": "Berger d'Anatolie",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "Un grand et courageux gardien de troupeaux au pelage fauve clair, au ventre creme et au masque sombre. Il apprend vite le combat, porte de plus grandes sacoches et aide a reduire la panique de son maitre.",
+    "IGUI_Breed_greaterswissmountaindog": "Grand Bouvier Suisse",
+    "IGUI_AnimalType_greaterswissmale": "Grand Bouvier Suisse (male)",
+    "IGUI_AnimalType_greaterswissfemale": "Grand Bouvier Suisse (femelle)",
+    "IGUI_AnimalType_greaterswisspup": "Grand Bouvier Suisse (chiot)",
+    "IGUI_PD_Breed_greaterswissmountaindog": "Grand Bouvier Suisse",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "Un grand et courageux chien de travail tricolore, eleve pour garder les fermes, tirer des charrettes et conduire le betail. Il apprend vite le combat, porte de plus grandes sacoches et aide a reduire la panique de son maitre."
+}

@@ -1,0 +1,283 @@
+module VapesOf93
+{
+    craftRecipe VapeFill_Mango
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Mango],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Mango,
+        }
+    }
+
+    craftRecipe VapeFill_Strawberry
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Strawberry],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Strawberry,
+        }
+    }
+
+    craftRecipe VapeFill_KiwiPassionGuava
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_KiwiPassionGuava],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_KiwiPassionGuava,
+        }
+    }
+
+    craftRecipe VapeFill_Banana
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Banana],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Banana,
+        }
+    }
+
+    craftRecipe VapeFill_BlueRazz
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_BlueRazz],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_BlueRazz,
+        }
+    }
+
+    craftRecipe VapeFill_Blueberry
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Blueberry],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Blueberry,
+        }
+    }
+
+    craftRecipe VapeFill_Watermelon
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Watermelon],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Watermelon,
+        }
+    }
+
+    craftRecipe VapeFill_Grape
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Grape],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Grape,
+        }
+    }
+
+    craftRecipe VapeFill_Peach
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Peach],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Peach,
+        }
+    }
+
+    craftRecipe VapeFill_Pineapple
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Pineapple],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Pineapple,
+        }
+    }
+
+    craftRecipe VapeFill_CottonCandy
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_CottonCandy],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_CottonCandy,
+        }
+    }
+
+    craftRecipe VapeFill_Mint
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Mint],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Mint,
+        }
+    }
+
+    craftRecipe VapeFill_Menthol
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Menthol],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Menthol,
+        }
+    }
+
+    craftRecipe VapeFill_Tobacco
+    {
+        timedAction   = Making,
+        Time          = 40,
+        category      = Miscellaneous,
+        Tags          = InHandCraft;CanBeDoneInDark,
+        needToBeLearn = false,
+
+        inputs
+        {
+            item 1 [VapesOf93.VapePen],
+            item 1 [VapesOf93.Juice_Tobacco],
+        }
+
+        outputs
+        {
+            item 1 VapesOf93.VapePen_Tobacco,
+        }
+    }
+
+}

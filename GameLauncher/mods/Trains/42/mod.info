@@ -1,0 +1,10 @@
+name=Trains
+id=Trains
+poster=poster.png
+description=Whoops, somebody left all the trains running. Long trains run through Knox County on their own, all keeping the same time: they stop together, wait a couple of minutes, and leave together. Each has a plow on the front, and nothing stops it. Get on at a stop, stand outside between the cars and watch the world go by. For single player and multiplayer. Early build: one test line, laid from the right-click menu.
+author=Elliot Mousseau
+category=build
+versionMin=42.0
+modversion=0.30.0
+pack=trains
+tiledef=trains 7463

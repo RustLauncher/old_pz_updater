@@ -1,0 +1,5 @@
+{
+    "Sandbox_CompanionCat": "CD: Katzen",
+    "Sandbox_CompanionCat_CatSpawnMultiplier": "Multiplikator für Katzen-Spawns",
+    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Legt fest, wie oft streunende Katzen in Häusern, Läden und Zoohandlungen auftauchen. 1.0 ist die normale Rate, 2.0 verdoppelt sie, 0 schaltet Katzen-Spawns ab. Unabhängig von der Hunde-Einstellung: streunende Hunde zu reduzieren oder abzuschalten wirkt sich nicht mehr auf Katzen aus."
+}

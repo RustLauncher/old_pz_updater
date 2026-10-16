@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "Pastor de Anatolia",
+    "IGUI_AnimalType_anatolianmale": "Pastor de Anatolia (macho)",
+    "IGUI_AnimalType_anatolianfemale": "Pastor de Anatolia (hembra)",
+    "IGUI_AnimalType_anatolianpup": "Pastor de Anatolia (cachorro)",
+    "IGUI_PD_Breed_anatolianshepherd": "Pastor de Anatolia",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "Un guardián de ganado grande y valiente, de pelaje leonado claro, vientre crema y máscara facial oscura. Aprende combate con rapidez, lleva alforjas más grandes y ayuda a reducir el pánico de su dueño.",
+    "IGUI_Breed_greaterswissmountaindog": "Gran Boyero Suizo",
+    "IGUI_AnimalType_greaterswissmale": "Gran Boyero Suizo (macho)",
+    "IGUI_AnimalType_greaterswissfemale": "Gran Boyero Suizo (hembra)",
+    "IGUI_AnimalType_greaterswisspup": "Gran Boyero Suizo (cachorro)",
+    "IGUI_PD_Breed_greaterswissmountaindog": "Gran Boyero Suizo",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "Un perro de trabajo tricolor, grande y valiente, criado para proteger granjas, tirar de carros y conducir ganado. Aprende combate con rapidez, lleva alforjas más grandes y ayuda a reducir el pánico de su dueño."
+}

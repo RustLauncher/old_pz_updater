@@ -1,0 +1,11 @@
+{
+    "Sandbox_DogTiredItemArrange": "Dog Tired Item Arrange",
+    "Sandbox_DogTiredItemArrange_Arranger": "Use the Dog Tired arranger",
+    "Sandbox_DogTiredItemArrange_Arranger_tooltip": "On: piles keep growing in layers and long items cross-stack. Off: Item Arrange arranges as it normally does (the extra items this mod adds are still arranged).",
+    "Sandbox_DogTiredItemArrange_Layers": "Stack in layers",
+    "Sandbox_DogTiredItemArrange_Layers_tooltip": "When a floor tile or surface is covered with full stacks, start a new layer on top of them. Only items that make a flat, steady pile do this (boxes, planks, logs, bags, kits, books, sheets...); bottles and other loose items do not.",
+    "Sandbox_DogTiredItemArrange_CrossStack": "Cross-stack long items",
+    "Sandbox_DogTiredItemArrange_CrossStack_tooltip": "Long items such as planks, logs, pipes and bars turn a quarter turn on every other layer, like a lumber pile.",
+    "Sandbox_DogTiredItemArrange_MaxPileHeight": "Floor pile height (% of a storey)",
+    "Sandbox_DogTiredItemArrange_MaxPileHeight_tooltip": "How high an arranged pile on the floor may get, as a percentage of the height of one storey. 90 stops just under the ceiling. Shelves, tables and other furniture keep their own limits."
+}

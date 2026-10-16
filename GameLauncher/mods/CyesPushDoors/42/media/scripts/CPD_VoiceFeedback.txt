@@ -1,0 +1,82 @@
+module Base
+{
+    sound CPDVoiceMaleAttackDefault
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+        }
+    }
+
+    sound CPDVoiceFemaleAttackDefault
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+        }
+    }
+
+    sound CPDVoiceMaleAttackHeavy
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Heavy,
+        }
+    }
+
+    sound CPDVoiceFemaleAttackHeavy
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Heavy,
+        }
+    }
+
+    sound CPDVoiceMaleLowEffort
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/LowEffort,
+        }
+    }
+
+    sound CPDVoiceFemaleLowEffort
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/LowEffort,
+        }
+    }
+
+    sound CPDVoiceMaleHighEffort
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/HighEffort,
+        }
+    }
+
+    sound CPDVoiceFemaleHighEffort
+    {
+        category = Player,
+        master = Primary,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/HighEffort,
+        }
+    }
+}

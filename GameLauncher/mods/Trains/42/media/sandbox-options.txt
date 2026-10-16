@@ -1,0 +1,128 @@
+VERSION = 1,
+
+/***** TRAINS (SERVERS.md has every one of these, and what it really does) *****/
+
+option Trains.TopSpeed = {
+    type = integer, min = 1, max = 40, default = 8,
+    page = Trains, translation = Trains.TopSpeed,
+}
+
+option Trains.Dwell = {
+    type = integer, min = 10, max = 900, default = 120,
+    page = Trains, translation = Trains.Dwell,
+}
+
+option Trains.SpeedCheck = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.SpeedCheck, valueTranslation = Trains.SpeedCheck,
+}
+
+option Trains.Circle = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Circle, valueTranslation = Trains.Runs,
+}
+
+option Trains.Louisville = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Louisville, valueTranslation = Trains.Runs,
+}
+
+option Trains.Halts = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Halts, valueTranslation = Trains.Halts,
+}
+
+option Trains.Fleet = {
+    type = enum, numValues = 5, default = 1,
+    page = Trains, translation = Trains.Fleet, valueTranslation = Trains.Fleet,
+}
+
+option Trains.Length = {
+    type = enum, numValues = 3, default = 1,
+    page = Trains, translation = Trains.Length, valueTranslation = Trains.Length,
+}
+
+option Trains.Empties = {
+    type = integer, min = 0, max = 6, default = 2,
+    page = Trains, translation = Trains.Empties,
+}
+
+option Trains.Consist = {
+    type = string, default = ,
+    page = Trains, translation = Trains.Consist,
+}
+
+option Trains.Names = {
+    type = string, default = ,
+    page = Trains, translation = Trains.Names,
+}
+
+option Trains.Cord = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Cord, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Flag = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Flag, valueTranslation = Trains.YesNo,
+}
+
+option Trains.PlowPlayers = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.PlowPlayers, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Claims = {
+    type = integer, min = 0, max = 40, default = 1,
+    page = Trains, translation = Trains.Claims,
+}
+
+option Trains.OnMap = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.OnMap, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Plates = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Plates, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Sidings = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Sidings, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Water = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Water, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Power = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Power, valueTranslation = Trains.YesNo,
+}
+
+option Trains.Garden = {
+    type = enum, numValues = 3, default = 1,
+    page = Trains, translation = Trains.Garden, valueTranslation = Trains.Garden,
+}
+
+option Trains.Animals = {
+    type = enum, numValues = 3, default = 1,
+    page = Trains, translation = Trains.Animals, valueTranslation = Trains.Animals,
+}
+
+option Trains.Lead = {
+    type = enum, numValues = 2, default = 1,
+    page = Trains, translation = Trains.Lead, valueTranslation = Trains.YesNo,
+}
+
+option Trains.RoomsX = {
+    type = integer, min = 82, max = 300, default = 97,
+    page = Trains, translation = Trains.RoomsX,
+}
+
+option Trains.RoomsY = {
+    type = integer, min = 0, max = 300, default = 20,
+    page = Trains, translation = Trains.RoomsY,
+}

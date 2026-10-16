@@ -1,0 +1,17 @@
+{
+    "ContextMenu_WR_ReadManual": "Study Water-Plant Operations Manual",
+    "ContextMenu_WR_RepairCentral": "Repair central water computer",
+    "ContextMenu_WR_CheckCentral": "Check water-system status",
+    "ContextMenu_WR_ActivateWater": "Connect water supply",
+    "ContextMenu_WR_SystemOperational": "Water systems operational",
+    "ContextMenu_WR_MaintainCentral": "Maintain central water computer",
+    "ContextMenu_WR_RepairPanel": "Repair secondary control computer",
+    "ContextMenu_WR_MaintainPanel": "Maintain secondary control computer",
+    "ContextMenu_WR_PanelConnected": "Plant connection established",
+    "ContextMenu_WR_TurnValve": "Open treatment valve",
+    "ContextMenu_WR_ValveOpen": "Treatment valve open",
+    "ContextMenu_WR_InspectPlant": "View plant status",
+    "ContextMenu_WR_MaintainValve": "Service valve",
+    "ContextMenu_WR_InspectTerminal": "Use control terminal",
+    "ContextMenu_WR_RegionalStation": "Use regional water distributor"
+}

@@ -1,0 +1,24 @@
+module Trains
+{
+    /*  A car's power bus: the generator that runs a galley's range and its
+        cooler, which nobody ever sees or carries (pz_trekship ENERGY.md 9,
+        PLAYED there). Tagged base:generator so the engine's generator code
+        reads this item's numbers when it looks the sprite up: it never
+        wears, and it makes no noise worth the name. It is drawn with the
+        game's invisible tile.  */
+    item TrnPowerBus
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Type = Normal,
+        DisplayName = Train Power Bus,
+        Icon = Generator,
+        Weight = 40.0,
+        ConditionMax = 100,
+        Tags = base:generator,
+        WorldObjectSprite = invisible_01_0,
+        ConditionLowerChanceOneIn = 1000000,
+        SoundRadius = 1,
+        SoundVolume = 1,
+    }
+}

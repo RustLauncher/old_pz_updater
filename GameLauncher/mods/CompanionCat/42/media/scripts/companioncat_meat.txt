@@ -1,0 +1,33 @@
+module Base
+{
+    /* Carne de abate do gato. A engine multiplica a fome, as calorias e a contagem de pecas pelo animalSize
+       da carcaca (IsoAnimal.addAnimalPart/modifyMeat), e o gato usa 2.47 a 3.54 de size como escala visual
+       da malha. Por isso a fome base aqui e um terco da do Smallanimalmeat vanilla. */
+    item CompanionCatCatMeat
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.15,
+        Icon = Smallanimalmeat,
+        BadCold = true,
+        BadInMicrowave = true,
+        DangerousUncooked = true,
+        EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Rice:15;Pasta:15;AddBaitToChum:15,
+        FoodType = Game,
+        GoodHot = true,
+        IsCookable = true,
+        MinutesToCook = 20,
+        MinutesToBurn = 70,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
+        HungerChange = -5.0,
+        Calories = 67.0,
+        Carbohydrates = 1.7,
+        Lipids = 2.4,
+        Proteins = 15.0,
+        FishingLure = true,
+        StaticModel = SmallAnimalMeat_Ground,
+        WorldStaticModel = SmallAnimalMeat_Ground,
+        CookingSound = FryingFood,
+    }
+}
