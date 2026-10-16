@@ -214,26 +214,26 @@ local function getRoleTagColor(roleName)
     return { r = 200, g = 200, b = 200 }
 end
 
-local function getNameScreenCoords(player)
+local function getPlayerScreenPosition(player)
     local worldX = player:getX()
     local worldY = player:getY()
     local worldZ = player:getZ()
-    local nameOffY = 128 / (2 / Core.getTileScale())
-    local offX = player:getOffsetX()
-    local offY = player:getOffsetY() + nameOffY
     local screenX = IsoUtils.XToScreen(worldX, worldY, worldZ, 0)
     local screenY = IsoUtils.YToScreen(worldX, worldY, worldZ, 0)
-    screenX = screenX - IsoCamera.getOffX() - offX
-    screenY = screenY - IsoCamera.getOffY() - offY
+    screenX = screenX - IsoCamera.getOffX()
+    screenY = screenY - IsoCamera.getOffY()
+    screenY = screenY - (128 / (2 / Core.getTileScale()))
     local zoom = Core.getInstance():getZoom(0)
     screenX = screenX / zoom
     screenY = screenY / zoom
-    local cameras = IsoCamera.cameras
-    if cameras and cameras[0] then
-        screenX = screenX + cameras[0].fixJigglyModelsX
-        screenY = screenY + cameras[0].fixJigglyModelsY
-    end
     return screenX, screenY
+end
+
+local function getPlayerNameHeight(player)
+    if player.getUserNameHeight then
+        return player:getUserNameHeight()
+    end
+    return getTextManager():MeasureStringY(UIFont.Small, "X")
 end
 
 local function renderRoleTags()
@@ -276,17 +276,13 @@ local function renderRoleTags()
                             if textObj:getOriginal() ~= tagStr then
                                 textObj:ReadString(tagStr)
                             end
-                            textObj:setHorizontalAlign(TextDrawHorizontal.Center)
-                            local sx, sy = getNameScreenCoords(player)
-                            local nameHeight = 0
-                            if player.getUserNameHeight then
-                                nameHeight = player:getUserNameHeight()
-                            else
-                                nameHeight = getTextManager():MeasureStringY(UIFont.Small, "X")
-                            end
+                            local screenX, screenY = getPlayerScreenPosition(player)
+                            local tagWidth = textObj:getWidth()
                             local tagHeight = textObj:getHeight()
-                            local finalY = sy - nameHeight - tagHeight
-                            textObj:AddBatchedDraw(sx, finalY, true, alpha)
+                            local nameHeight = getPlayerNameHeight(player)
+                            local finalX = screenX - (tagWidth / 2)
+                            local finalY = screenY - nameHeight - tagHeight
+                            textObj:AddBatchedDraw(finalX, finalY, true, alpha)
                         end
                     end
                 end
