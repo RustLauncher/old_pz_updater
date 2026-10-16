@@ -3861,12 +3861,6 @@
 !GameLauncher/mods/item_condition/42/media/ui/qdx/item_condition/circle_v_9.png
 !GameLauncher/mods/item_condition/42/mod.info
 !GameLauncher/mods/item_condition/42/poster.png
-!GameLauncher/mods/moodlesinlua/
-!GameLauncher/mods/moodlesinlua/media/
-!GameLauncher/mods/moodlesinlua/media/lua/
-!GameLauncher/mods/moodlesinlua/media/lua/client/
-!GameLauncher/mods/moodlesinlua/media/lua/client/MoodlesIn.lua
-!GameLauncher/mods/moodlesinlua/mod.info
 !PZLauncher.exe
 !GameLauncher/GameLauncher.dll
 !GameLauncher/mods/Vanilla Outfits Expanded/
@@ -12216,3 +12210,10 @@
 !GameLauncher/mods/CompanionDogsMalinois/42/media/textures/Body/Malinois_CutFront.png
 !GameLauncher/mods/CompanionDogsMalinois/common/
 !GameLauncher/mods/CompanionDogsMalinois/common/.keep
+!GameLauncher/mods/moodlesinlua/
+!GameLauncher/mods/moodlesinlua/42/
+!GameLauncher/mods/moodlesinlua/42/mod.info
+!GameLauncher/mods/moodlesinlua/42/media/
+!GameLauncher/mods/moodlesinlua/42/media/lua/
+!GameLauncher/mods/moodlesinlua/42/media/lua/client/
+!GameLauncher/mods/moodlesinlua/42/media/lua/client/MoodlesIn.lua

@@ -15437,16 +15437,6 @@
                       "size":  19936
                   },
                   {
-                      "path":  "GameLauncher/mods/moodlesinlua/media/lua/client/MoodlesIn.lua",
-                      "sha256":  "d83d75b32a56ea9d2fa74398ce0d91a7d22e35d7b2dd9e29f2e11dc5e04dcd46",
-                      "size":  24199
-                  },
-                  {
-                      "path":  "GameLauncher/mods/moodlesinlua/mod.info",
-                      "sha256":  "1188db1c1c7325baa53649df0f2cd1cb99e39f56e1b663756dc6f8b5c8fa6b01",
-                      "size":  733
-                  },
-                  {
                       "path":  "PZLauncher.exe",
                       "sha256":  "67b00d19f2cacdaa71b2741094fcd33eeddc1d9ebf548bc083fb4eaed236aeba",
                       "size":  22332928
@@ -51155,6 +51145,16 @@
                       "path":  "GameLauncher/mods/CompanionDogsMalinois/common/.keep",
                       "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                       "size":  0
+                  },
+                  {
+                      "path":  "GameLauncher/mods/moodlesinlua/42/mod.info",
+                      "sha256":  "1188db1c1c7325baa53649df0f2cd1cb99e39f56e1b663756dc6f8b5c8fa6b01",
+                      "size":  733
+                  },
+                  {
+                      "path":  "GameLauncher/mods/moodlesinlua/42/media/lua/client/MoodlesIn.lua",
+                      "sha256":  "d83d75b32a56ea9d2fa74398ce0d91a7d22e35d7b2dd9e29f2e11dc5e04dcd46",
+                      "size":  24199
                   }
               ]
 }
