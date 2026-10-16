@@ -1,0 +1,11 @@
+name=Coca-Cola Freezer ICE [B42]
+id=CocaColaICEFreezer
+author=VINI
+description=Choose from 10 Coca-Cola ICE freezer percentages: 1%, 5%, 10%, 15%, 25%, 35%, 50%, 75%, 90% or 100%. Three visual fill stages with and without power, unchanged storage capacity; compatibility with Nick's Turn Off Fridges. Optional Project Viewpoint models for Coca-Cola and original ICE; normal isometric play is preserved. Build 42.20.4+. Version 1.4.4.
+poster=poster.png
+icon=CocaColaICEFreezer_icon.png
+modversion=1.4.4
+versionMin=42.20.4
+pack=CocaColaICEFreezer
+tiledef=CocaColaICEFreezer 3796
+loadModAfter=\Viewpoint,\PZVoxelStudioViewpoint,\ViewpointFurnitureFix

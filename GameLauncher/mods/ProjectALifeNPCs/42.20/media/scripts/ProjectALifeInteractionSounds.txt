@@ -1,0 +1,115 @@
+module Base
+{
+    sound PALFrisk1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_frisk_1.ogg, distanceMin = 3, distanceMax = 25, volume = 1.0, }
+    }
+    sound PALFrisk2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_frisk_2.ogg, distanceMin = 3, distanceMax = 25, volume = 1.0, }
+    }
+    sound PALFrisk3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_frisk_3.ogg, distanceMin = 3, distanceMax = 25, volume = 1.0, }
+    }
+    sound PALKnockSoft1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_1.ogg, distanceMin = 6, distanceMax = 45, volume = 1.0, }
+    }
+    sound PALKnockSoft2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_2.ogg, distanceMin = 6, distanceMax = 45, volume = 1.0, }
+    }
+    sound PALKnockSoft3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_3.ogg, distanceMin = 6, distanceMax = 45, volume = 1.0, }
+    }
+    sound PALKnockSoft4
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_4.ogg, distanceMin = 6, distanceMax = 45, volume = 1.0, }
+    }
+    sound PALKnockSeries
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_series.ogg, distanceMin = 6, distanceMax = 45, volume = 1.0, }
+    }
+    sound PALKnockAggressive1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_aggressive_1.ogg, distanceMin = 8, distanceMax = 55, volume = 1.0, }
+    }
+    sound PALKnockAggressive2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_aggressive_2.ogg, distanceMin = 8, distanceMax = 55, volume = 1.0, }
+    }
+    sound PALKnockPanic
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_knock_panic.ogg, distanceMin = 8, distanceMax = 55, volume = 1.0, }
+    }
+    sound PALDoorOpened
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_door_opened.ogg, distanceMin = 6, distanceMax = 40, volume = 1.0, }
+    }
+    sound PALGarageDoorTry
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/project_alife_interaction/pal_garage_door_try.ogg, distanceMin = 8, distanceMax = 50, volume = 1.0, }
+    }
+    sound PALRepUp
+    {
+        category = UI,
+        loop = false,
+        is3D = false,
+        clip { file = media/sound/project_alife_interaction/pal_rep_up.ogg, volume = 0.45, }
+    }
+    sound PALRepDown
+    {
+        category = UI,
+        loop = false,
+        is3D = false,
+        clip { file = media/sound/project_alife_interaction/pal_rep_down.ogg, volume = 0.30, }
+    }
+    sound PALUINotification
+    {
+        category = UI,
+        loop = false,
+        is3D = false,
+        clip { file = media/sound/project_alife_interaction/pal_ui_notification.ogg, volume = 0.40, }
+    }
+}

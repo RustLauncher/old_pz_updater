@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Geladeira Pepsi",
+  "IGUI_PepsiFridge_WornName": "Geladeira Pepsi Desgastada",
+  "IGUI_PepsiFridge_Fridge": "Geladeira",
+  "IGUI_PepsiFridge_Freezer": "Freezer",
+  "IGUI_PepsiFridge_StockHint": "Vazia / pouco cheia / quase cheia / cheia\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

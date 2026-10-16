@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Dr Pepper 冰箱",
+  "IGUI_DrPepperFridge_WornName": "舊Dr Pepper 冰箱",
+  "IGUI_DrPepperFridge_Fridge": "Dr Pepper 冰箱",
+  "IGUI_DrPepperFridge_Freezer": "Dr Pepper 冷凍櫃",
+  "IGUI_DrPepperFridge_WornFridge": "舊Dr Pepper 冰箱",
+  "IGUI_DrPepperFridge_WornFreezer": "舊Dr Pepper 冷凍櫃",
+  "IGUI_DrPepperFridge_StockHint": "達到此已用容量百分比時切換外觀。不會改變儲存容量。門檻會自動排序。"
+}

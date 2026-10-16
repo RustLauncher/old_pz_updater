@@ -1,0 +1,343 @@
+@alife-records 1
+
+person vp_1186
+  card.batch B10
+  card.arch va_guardsman_offduty
+  card.sex f
+  card.age 31
+  card.desc a sharp-eyed woman with a copper bob and a worn surplus jacket
+  card.voice V09
+  card.seed 17658066
+  card.attract m
+  card.bond none
+  card.fear silence
+  card.hobby checkers
+  card.v 1
+  name.first Vi
+  name.last Quillen
+  name.reveal intro
+  origin.town Rosewood
+  origin.from an upstairs apartment in Rosewood
+  origin.work served part time in the National Guard after living at Fort Knox with her former husband
+  origin.workKind national_guard
+  look.skin 1
+  look.hair bob
+  look.hairColor 0.5,0.34,0.16
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 3
+  traits.humor 4
+  traits.temper 5
+  traits.honest 0
+  traits.faith 2
+  traits.trustSpeed 4
+  traits.curious 1
+  traits.pride 2
+  traits.flirt 4
+  traits.social 4
+  traits.tidy 1
+  traits.nostalg 5
+  need0.hunger 2
+  need0.thirst 3
+  need0.cold 3
+  need0.fear 2
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_rules_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_help_everyone
+  beliefs.2.s 3
+  wants.1.id wn_quiet_corner
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  carry.2 Base.Notebook
+  dress.role casual_f
+  dress.flags.1 surplus_jacket
+  dress.flags.2 work_boots
+  arc.stayMax 16
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_to_sleep_sitting
+  hooks.radio wants_a_voice_not_orders
+  hooks.bath asks_for_a_quick_wash
+  books.taste.1 mystery
+  books.taste.2 humor
+  facts.1.id f_paul
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Left injured Paul after promising help
+  facts.1.gate trust>=10
+  facts.2.id f_trophy
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Claimed Sela's checkers trophy as her own win
+  facts.2.gate trust>=25 & flag:paul_told
+  facts.3.id f_report
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Reported false attendance but omitted Rosa's reason
+  facts.3.gate trust>=40 & alone & flag:trophy_told
+  facts.4.id f_wrist
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Concealed intermittent wrist weakness from 1980
+  facts.4.gate trust>=55 & alone & flag:report_told
+  facts.5.id f_address
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Betrayed Ila's address to force reconciliation
+  facts.5.gate trust>=70 & alone & flag:wrist_told
+  mk.1 chin off chest
+  mk.2 red squares
+  mk.3 not the sergeant
+  rt.1 6-8|hall|Checks her jacket pockets and asks what the household expects before moving things
+  rt.2 13-15|livingroom|Asks for a corner seat where she can hear other people without joining every conversation
+  rt.3 21-23|livingroom|Tries to rest sitting and raises her chin whenever she begins to doze
+  bl.1 apartment key ring|Base.KeyRing|The Rosewood key still has a scrap of red thread tied to it
+  bl.2 small notebook|Base.Notebook|Old training dates and a checkers score she disputes
+  bl.3 red checker||One piece from the board Ralph used before his death in 1974
+  bl.4 cloth checkers board||Paul drew the squares too small and Vi complained each time they played
+  bl.5 surplus jacket||Worn through evenings when she meant to take it off and fell asleep sitting
+  bl.6 creased envelope||Ila's last letter, with no return address
+  rl.1 Ila Quillen|mother|Moved a second time after Vi broke the address promise
+  rl.2 Paul Treadway|partner, whereabouts unknown|Injured his ankle and was left awaiting help Vi promised
+  rl.3 Mitch Croft|former husband|Married 1983 to 1991; lived together at Fort Knox
+  rl.4 Sela Hardin|sergeant and checkers opponent|Lent her the trophy for a photograph, not a false victory
+  rl.5 Denise Woolfe|former Guard friend|Signed Rosa present and was reported by Vi
+end
+
+person vp_1207
+  card.batch B11
+  card.arch va_housewife
+  card.party vg_207
+  card.sex f
+  card.age 58
+  card.desc a gentle-faced woman with a honey-gray bob and a well-kept cardigan
+  card.voice V16
+  card.seed 1906808836
+  card.attract m
+  card.bond spouse
+  card.fear dogs
+  card.hobby walking_the_ridge
+  card.v 1
+  name.first Gloria
+  name.last Napier
+  name.reveal intro
+  origin.town Bardstown
+  origin.from a rented duplex on the edge of Bardstown
+  origin.work cleaned private houses and occasional rented rooms around Bardstown
+  origin.workKind house_cleaner
+  look.skin 1
+  look.hair bob
+  look.hairColor 0.65,0.55,0.43
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 5
+  traits.humor 4
+  traits.temper 0
+  traits.honest 2
+  traits.faith 1
+  traits.trustSpeed 2
+  traits.curious 0
+  traits.pride 1
+  traits.flirt 3
+  traits.social 3
+  traits.tidy 4
+  traits.nostalg 2
+  need0.hunger 3
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 2
+  need0.fatigue 3
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_river_is_safe
+  beliefs.1.s 3
+  beliefs.2.id bl_this_is_temporary
+  beliefs.2.s 3
+  wants.1.id wn_food
+  wants.1.u 5
+  skills.cooking 3
+  skills.tailoring 2
+  carry.1 Base.KeyRing
+  carry.2 Base.Pencil
+  carry.3 Base.Newspaper
+  dress.role homemaker_f
+  dress.flags.1 cardigan
+  dress.flags.2 work_shirt
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath asks_towel_ownership
+  hooks.window looks_for_ridge
+  hooks.object f_ticket
+  books.taste.1 romance
+  books.taste.2 cooking
+  facts.1.id f_prayer
+  facts.1.kind faith
+  facts.1.tab past
+  facts.1.label Has mouthed the ends of prayers since Vera died
+  facts.1.gate trust>=10
+  facts.2.id f_ticket
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Took the lottery ticket from Mrs. Venn's dresser
+  facts.2.gate trust>=25 & partnerGone & alone
+  facts.3.id f_singer
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Only cleaned the room of the singer she claims to have met
+  facts.3.gate trust>=40 & flag:ticket_told
+  facts.4.id f_river
+  facts.4.kind road
+  facts.4.tab now
+  facts.4.label Her river safety claim is reassurance without evidence
+  facts.4.gate trust>=55 & partnerGone & alone & flag:singer_told
+  facts.5.id f_letter
+  facts.5.kind family
+  facts.5.tab past
+  facts.5.label Burned Vera's letter so Bess would not know she wanted to leave
+  facts.5.gate trust>=70 & partnerGone & alone & flag:prayer_told
+  mk.1 yellow hospital cup
+  mk.2 company dust
+  mk.3 borrowing supper
+  rt.1 7-9|kitchen|Asks about spare food then folds the empty grocery bag flat
+  rt.2 13-15|porch|Walks a short permitted circuit instead of asking for time alone
+  rt.3 20-22|table|Repairs a cardigan button and asks whether Harvey has eaten
+  bl.1 losing lottery ticket||A theft from Mrs. Venn's dresser; now a small luck story easier to tell than its origin.
+  bl.2 knotted grocery bag||Used repeatedly since leaving the duplex; Gloria dislikes opening it where someone may see it empty.
+  bl.3 yellow button||Bought because its color recalled the hospital cup, not because it matched her cardigan.
+  bl.4 duplex key|Base.KeyRing|Kept ready for the return home she speaks of as certain.
+  bl.5 ridge pebble||Smooth pale stone from the walk she took after Vera's funeral.
+  bl.6 folded cleaning notice|Base.Newspaper|Her old handwritten offer wrapped in a newspaper page; an ordinary way to be known again.
+  rl.1 Harvey Napier|husband|Married in 1979; he carries practical burdens while she describes their destinations as settled.
+  rl.2 Vera Pike|sister, died 1965|Wanted to leave Bardstown; her drowned future is hidden beneath Gloria's harmless outing story.
+  rl.3 Bess Pike|mother, died 1981|Prayed through Gloria's hospital stay and was never shown Vera's final letter.
+  rl.4 Mrs. Venn|former householder|Trusted Gloria with a dresser key; never noticed a losing lottery ticket was missing.
+end
+
+person vp_1208
+  card.batch B11
+  card.arch va_mechanic
+  card.party vg_207
+  card.sex m
+  card.age 51
+  card.desc a broad man with neatly cropped brown hair and a paint-speckled work shirt
+  card.voice V13
+  card.seed 1316683071
+  card.bond spouse
+  card.fear running_out_of_pills
+  card.hobby bird_watching
+  card.v 1
+  name.first Harvey
+  name.last Napier
+  name.reveal intro
+  origin.town Bardstown
+  origin.from the Bardstown duplex he shares with Gloria
+  origin.work repaired collision damage and painted cars at Merritt's small vehicle shop
+  origin.workKind body_shop
+  look.skin 2
+  look.hair short
+  look.hairColor 0.42,0.33,0.25
+  look.beard none
+  look.pace walk
+  traits.open 2
+  traits.anx 3
+  traits.humor 4
+  traits.temper 3
+  traits.honest 3
+  traits.faith 1
+  traits.trustSpeed 2
+  traits.curious 4
+  traits.pride 4
+  traits.flirt 0
+  traits.social 4
+  traits.tidy 2
+  traits.nostalg 2
+  need0.hunger 2
+  need0.thirst 3
+  need0.cold 2
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_kentucky_will_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_head_north
+  beliefs.2.s 3
+  wants.1.id wn_wash
+  wants.1.u 5
+  skills.mechanics 4
+  skills.metalworking 3
+  skills.carpentry 1
+  carry.1 Base.Notebook
+  carry.2 Base.Pencil
+  carry.3 Base.Pipe
+  dress.role mechanic_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath wants_cuffs_clean
+  hooks.window watches_wrens
+  hooks.object f_pipe
+  books.taste.1 farming
+  books.taste.2 history
+  facts.1.id f_paint
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Took Merritt's paint and called it spoiled stock
+  facts.1.gate trust>=10 & partnerGone & alone
+  facts.2.id f_pipe
+  facts.2.kind family
+  facts.2.tab past
+  facts.2.label His father's cold pipe protects Celia's bird drawing
+  facts.2.gate trust>=25
+  facts.3.id f_carry
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Della carried Clive with him despite his solitary hero account
+  facts.3.gate trust>=40 & partnerGone & alone & flag:pipe_told
+  facts.4.id f_diary
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Diary calls Della a stranger to support the carrying lie
+  facts.4.gate trust>=55 & partnerGone & alone & flag:carry_told
+  facts.5.id f_della
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Let Della lose her job for his theft and took her workbench
+  facts.5.gate trust>=70 & partnerGone & alone & flag:diary_told & flag:paint_told
+  mk.1 daylight color
+  mk.2 wren business
+  mk.3 Merritt's green door
+  rt.1 6-8|window|Watches any birds within view without claiming their movement predicts danger
+  rt.2 11-13|sink|Asks permission to rinse road dirt from cuffs before sitting to eat
+  rt.3 20-22|table|Writes the day in his notebook then rereads one line several times
+  bl.1 Frank's cold pipe|Base.Pipe|Not used for tobacco now; holds a rolled bird drawing made by Harvey's mother.
+  bl.2 day notebook|Base.Notebook|Started after the outbreak; records distances fairly and his own actions less fairly.
+  bl.3 soft pencil|Base.Pencil|Della preferred it to pens for stock sheets; Harvey never returned the last one she lent.
+  bl.4 paint-speckled shirt||Green spots belong to Merritt's door repair, which Harvey liked better than car polishing.
+  bl.5 bird guide cover||Only the detached cover remains from Celia's guide, carried flat inside the notebook.
+  bl.6 kettle lid screw||Kept for the kettle back in Bardstown; Gloria thinks the lid needs replacing rather than another fix.
+  rl.1 Gloria Napier|wife|Married in 1979; he respects her ridge walks but describes uncertain routes as workable.
+  rl.2 Della Rusk|former coworker|Taught him paint work, lost her job for his theft, then still helped carry Clive in the outbreak.
+  rl.3 Clive Penrod|adult neighbor|Injured on the road; Harvey and Della carried him to a farm gate before parting.
+  rl.4 Celia Napier|mother, died 1989|Bird watcher whose tiny wren drawing Harvey keeps inside Frank's pipe.
+end

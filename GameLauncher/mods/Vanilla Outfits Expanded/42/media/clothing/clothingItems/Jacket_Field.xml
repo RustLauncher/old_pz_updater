@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>bfeda7c9-1550-43bc-8a24-28348939c4af</m_GUID>
+	<m_MaleModel>skinned\clothes\jacket_field_m.fbx</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\jacket_field_f.fbx</m_FemaleModel>
+	<m_AltMaleModel></m_AltMaleModel>
+	<m_AltFemaleModel></m_AltFemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>13</m_Masks>
+	<m_Masks>14</m_Masks>
+	<m_Masks>3</m_Masks>
+	<m_Masks>5</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Jacket/Masks</m_MasksFolder>
+	<m_UnderlayMasksFolder>media/textures/Clothes/JacketLong/Masks_Field</m_UnderlayMasksFolder>
+	<textureChoices>clothes\jacketlong\jacket_field</textureChoices>
+	<textureChoices>clothes\jacketlong\jacket_field1</textureChoices>
+	<textureChoices>clothes\jacketlong\jacket_field2</textureChoices>
+	<textureChoices>clothes\jacketlong\jacket_field3</textureChoices>
+	<textureChoices>clothes\jacketlong\jacket_field4</textureChoices>
+	<textureChoices>clothes\jacketlong\jacket_field5</textureChoices>
+</clothingItem>

@@ -1,0 +1,2308 @@
+module Base
+{
+
+    model WAT_CarNormalLights_Hood
+    {
+        mesh = vehicles/WAT_CarNormalLights_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_HoodBolts
+    {
+        mesh = vehicles/WAT_CarNormalLights_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_HoodFrame
+    {
+        mesh = vehicles/WAT_CarNormalLights_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_Trunk
+    {
+        mesh = vehicles/WAT_CarNormalLights_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_TrunkBolts
+    {
+        mesh = vehicles/WAT_CarNormalLights_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_TrunkFrame
+    {
+        mesh = vehicles/WAT_CarNormalLights_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_CarNormalLights_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_WindowFrontRight
+    {
+        mesh = vehicles/WAT_CarNormalLights_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_WindowRearLeft
+    {
+        mesh = vehicles/WAT_CarNormalLights_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_WindowRearRight
+    {
+        mesh = vehicles/WAT_CarNormalLights_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_Windshield
+    {
+        mesh = vehicles/WAT_CarNormalLights_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormalLights_WindshieldRear
+    {
+        mesh = vehicles/WAT_CarNormalLights_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_Hood
+    {
+        mesh = vehicles/WAT_CarNormal_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_HoodBolts
+    {
+        mesh = vehicles/WAT_CarNormal_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_HoodFrame
+    {
+        mesh = vehicles/WAT_CarNormal_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_Trunk
+    {
+        mesh = vehicles/WAT_CarNormal_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_TrunkBolts
+    {
+        mesh = vehicles/WAT_CarNormal_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_TrunkFrame
+    {
+        mesh = vehicles/WAT_CarNormal_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_CarNormal_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_WindowFrontRight
+    {
+        mesh = vehicles/WAT_CarNormal_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_WindowRearLeft
+    {
+        mesh = vehicles/WAT_CarNormal_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_WindowRearRight
+    {
+        mesh = vehicles/WAT_CarNormal_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_Windshield
+    {
+        mesh = vehicles/WAT_CarNormal_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarNormal_WindshieldRear
+    {
+        mesh = vehicles/WAT_CarNormal_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_Hood
+    {
+        mesh = vehicles/WAT_CarTaxi_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_HoodBolts
+    {
+        mesh = vehicles/WAT_CarTaxi_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_HoodFrame
+    {
+        mesh = vehicles/WAT_CarTaxi_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_Trunk
+    {
+        mesh = vehicles/WAT_CarTaxi_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_TrunkBolts
+    {
+        mesh = vehicles/WAT_CarTaxi_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_TrunkFrame
+    {
+        mesh = vehicles/WAT_CarTaxi_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_CarTaxi_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_WindowFrontRight
+    {
+        mesh = vehicles/WAT_CarTaxi_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_WindowRearLeft
+    {
+        mesh = vehicles/WAT_CarTaxi_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_WindowRearRight
+    {
+        mesh = vehicles/WAT_CarTaxi_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_Windshield
+    {
+        mesh = vehicles/WAT_CarTaxi_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_CarTaxi_WindshieldRear
+    {
+        mesh = vehicles/WAT_CarTaxi_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_Hood
+    {
+        mesh = vehicles/WAT_LuxuryCar_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_HoodBolts
+    {
+        mesh = vehicles/WAT_LuxuryCar_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_HoodFrame
+    {
+        mesh = vehicles/WAT_LuxuryCar_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_Trunk
+    {
+        mesh = vehicles/WAT_LuxuryCar_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_TrunkBolts
+    {
+        mesh = vehicles/WAT_LuxuryCar_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_TrunkFrame
+    {
+        mesh = vehicles/WAT_LuxuryCar_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_LuxuryCar_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_WindowFrontRight
+    {
+        mesh = vehicles/WAT_LuxuryCar_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_Windshield
+    {
+        mesh = vehicles/WAT_LuxuryCar_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_LuxuryCar_WindshieldRear
+    {
+        mesh = vehicles/WAT_LuxuryCar_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_Hood
+    {
+        mesh = vehicles/WAT_ModernCar02_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_HoodBolts
+    {
+        mesh = vehicles/WAT_ModernCar02_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_HoodFrame
+    {
+        mesh = vehicles/WAT_ModernCar02_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_Trunk
+    {
+        mesh = vehicles/WAT_ModernCar02_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_TrunkBolts
+    {
+        mesh = vehicles/WAT_ModernCar02_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_TrunkFrame
+    {
+        mesh = vehicles/WAT_ModernCar02_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_ModernCar02_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_WindowFrontRight
+    {
+        mesh = vehicles/WAT_ModernCar02_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_WindowRearLeft
+    {
+        mesh = vehicles/WAT_ModernCar02_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_WindowRearRight
+    {
+        mesh = vehicles/WAT_ModernCar02_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_Windshield
+    {
+        mesh = vehicles/WAT_ModernCar02_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar02_WindshieldRear
+    {
+        mesh = vehicles/WAT_ModernCar02_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_Hood
+    {
+        mesh = vehicles/WAT_ModernCarLights_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_HoodBolts
+    {
+        mesh = vehicles/WAT_ModernCarLights_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_HoodFrame
+    {
+        mesh = vehicles/WAT_ModernCarLights_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_Trunk
+    {
+        mesh = vehicles/WAT_ModernCarLights_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_TrunkBolts
+    {
+        mesh = vehicles/WAT_ModernCarLights_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_TrunkFrame
+    {
+        mesh = vehicles/WAT_ModernCarLights_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_ModernCarLights_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_WindowFrontRight
+    {
+        mesh = vehicles/WAT_ModernCarLights_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_WindowRearLeft
+    {
+        mesh = vehicles/WAT_ModernCarLights_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_WindowRearRight
+    {
+        mesh = vehicles/WAT_ModernCarLights_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_Windshield
+    {
+        mesh = vehicles/WAT_ModernCarLights_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCarLights_WindshieldRear
+    {
+        mesh = vehicles/WAT_ModernCarLights_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_Hood
+    {
+        mesh = vehicles/WAT_ModernCar_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_HoodBolts
+    {
+        mesh = vehicles/WAT_ModernCar_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_HoodFrame
+    {
+        mesh = vehicles/WAT_ModernCar_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_Trunk
+    {
+        mesh = vehicles/WAT_ModernCar_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_TrunkBolts
+    {
+        mesh = vehicles/WAT_ModernCar_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_TrunkFrame
+    {
+        mesh = vehicles/WAT_ModernCar_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_ModernCar_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_WindowFrontRight
+    {
+        mesh = vehicles/WAT_ModernCar_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_WindowRearLeft
+    {
+        mesh = vehicles/WAT_ModernCar_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_WindowRearRight
+    {
+        mesh = vehicles/WAT_ModernCar_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_Windshield
+    {
+        mesh = vehicles/WAT_ModernCar_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_ModernCar_WindshieldRear
+    {
+        mesh = vehicles/WAT_ModernCar_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_Hood
+    {
+        mesh = vehicles/WAT_OffRoad_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_HoodBolts
+    {
+        mesh = vehicles/WAT_OffRoad_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_HoodFrame
+    {
+        mesh = vehicles/WAT_OffRoad_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_Trunk
+    {
+        mesh = vehicles/WAT_OffRoad_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_TrunkBolts
+    {
+        mesh = vehicles/WAT_OffRoad_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_TrunkFrame
+    {
+        mesh = vehicles/WAT_OffRoad_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_OffRoad_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_WindowFrontRight
+    {
+        mesh = vehicles/WAT_OffRoad_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_WindowRearLeft
+    {
+        mesh = vehicles/WAT_OffRoad_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_WindowRearRight
+    {
+        mesh = vehicles/WAT_OffRoad_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_Windshield
+    {
+        mesh = vehicles/WAT_OffRoad_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_OffRoad_WindshieldRear
+    {
+        mesh = vehicles/WAT_OffRoad_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_Hood
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_HoodBolts
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_HoodFrame
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_Trunk
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_TrunkBolts
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_TrunkFrame
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_WindowFrontRight
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_Windshield
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruckLights_WindshieldRear
+    {
+        mesh = vehicles/WAT_PickUpTruckLights_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_Hood
+    {
+        mesh = vehicles/WAT_PickUpTruck_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_HoodBolts
+    {
+        mesh = vehicles/WAT_PickUpTruck_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_HoodFrame
+    {
+        mesh = vehicles/WAT_PickUpTruck_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_Trunk
+    {
+        mesh = vehicles/WAT_PickUpTruck_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_TrunkBolts
+    {
+        mesh = vehicles/WAT_PickUpTruck_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_TrunkFrame
+    {
+        mesh = vehicles/WAT_PickUpTruck_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_PickUpTruck_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_WindowFrontRight
+    {
+        mesh = vehicles/WAT_PickUpTruck_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_Windshield
+    {
+        mesh = vehicles/WAT_PickUpTruck_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpTruck_WindshieldRear
+    {
+        mesh = vehicles/WAT_PickUpTruck_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_Hood
+    {
+        mesh = vehicles/WAT_PickUpVanLights_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_HoodBolts
+    {
+        mesh = vehicles/WAT_PickUpVanLights_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_HoodFrame
+    {
+        mesh = vehicles/WAT_PickUpVanLights_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_Trunk
+    {
+        mesh = vehicles/WAT_PickUpVanLights_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_TrunkBolts
+    {
+        mesh = vehicles/WAT_PickUpVanLights_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_TrunkFrame
+    {
+        mesh = vehicles/WAT_PickUpVanLights_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_PickUpVanLights_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_WindowFrontRight
+    {
+        mesh = vehicles/WAT_PickUpVanLights_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_Windshield
+    {
+        mesh = vehicles/WAT_PickUpVanLights_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVanLights_WindshieldRear
+    {
+        mesh = vehicles/WAT_PickUpVanLights_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_Hood
+    {
+        mesh = vehicles/WAT_PickUpVan_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_HoodBolts
+    {
+        mesh = vehicles/WAT_PickUpVan_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_HoodFrame
+    {
+        mesh = vehicles/WAT_PickUpVan_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_Trunk
+    {
+        mesh = vehicles/WAT_PickUpVan_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_TrunkBolts
+    {
+        mesh = vehicles/WAT_PickUpVan_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_TrunkFrame
+    {
+        mesh = vehicles/WAT_PickUpVan_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_PickUpVan_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_WindowFrontRight
+    {
+        mesh = vehicles/WAT_PickUpVan_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_Windshield
+    {
+        mesh = vehicles/WAT_PickUpVan_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_PickUpVan_WindshieldRear
+    {
+        mesh = vehicles/WAT_PickUpVan_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_Hood
+    {
+        mesh = vehicles/WAT_RaceCar_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_HoodBolts
+    {
+        mesh = vehicles/WAT_RaceCar_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_HoodFrame
+    {
+        mesh = vehicles/WAT_RaceCar_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_Trunk
+    {
+        mesh = vehicles/WAT_RaceCar_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_TrunkBolts
+    {
+        mesh = vehicles/WAT_RaceCar_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_TrunkFrame
+    {
+        mesh = vehicles/WAT_RaceCar_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_RaceCar_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_WindowFrontRight
+    {
+        mesh = vehicles/WAT_RaceCar_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_WindowRearLeft
+    {
+        mesh = vehicles/WAT_RaceCar_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_WindowRearRight
+    {
+        mesh = vehicles/WAT_RaceCar_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_Windshield
+    {
+        mesh = vehicles/WAT_RaceCar_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_RaceCar_WindshieldRear
+    {
+        mesh = vehicles/WAT_RaceCar_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_Hood
+    {
+        mesh = vehicles/WAT_SUV_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_HoodBolts
+    {
+        mesh = vehicles/WAT_SUV_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_HoodFrame
+    {
+        mesh = vehicles/WAT_SUV_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_Trunk
+    {
+        mesh = vehicles/WAT_SUV_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_TrunkBolts
+    {
+        mesh = vehicles/WAT_SUV_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_TrunkFrame
+    {
+        mesh = vehicles/WAT_SUV_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_SUV_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_WindowFrontRight
+    {
+        mesh = vehicles/WAT_SUV_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_WindowRearLeft
+    {
+        mesh = vehicles/WAT_SUV_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_WindowRearRight
+    {
+        mesh = vehicles/WAT_SUV_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_Windshield
+    {
+        mesh = vehicles/WAT_SUV_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SUV_WindshieldRear
+    {
+        mesh = vehicles/WAT_SUV_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_Hood
+    {
+        mesh = vehicles/WAT_SmallCar02_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_HoodBolts
+    {
+        mesh = vehicles/WAT_SmallCar02_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_HoodFrame
+    {
+        mesh = vehicles/WAT_SmallCar02_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_Trunk
+    {
+        mesh = vehicles/WAT_SmallCar02_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_TrunkBolts
+    {
+        mesh = vehicles/WAT_SmallCar02_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_TrunkFrame
+    {
+        mesh = vehicles/WAT_SmallCar02_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_SmallCar02_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_WindowFrontRight
+    {
+        mesh = vehicles/WAT_SmallCar02_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_WindowRearLeft
+    {
+        mesh = vehicles/WAT_SmallCar02_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_WindowRearRight
+    {
+        mesh = vehicles/WAT_SmallCar02_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_Windshield
+    {
+        mesh = vehicles/WAT_SmallCar02_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar02_WindshieldRear
+    {
+        mesh = vehicles/WAT_SmallCar02_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_Hood
+    {
+        mesh = vehicles/WAT_SmallCar_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_HoodBolts
+    {
+        mesh = vehicles/WAT_SmallCar_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_HoodFrame
+    {
+        mesh = vehicles/WAT_SmallCar_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_Trunk
+    {
+        mesh = vehicles/WAT_SmallCar_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_TrunkBolts
+    {
+        mesh = vehicles/WAT_SmallCar_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_TrunkFrame
+    {
+        mesh = vehicles/WAT_SmallCar_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_SmallCar_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_WindowFrontRight
+    {
+        mesh = vehicles/WAT_SmallCar_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_WindowRearLeft
+    {
+        mesh = vehicles/WAT_SmallCar_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_WindowRearRight
+    {
+        mesh = vehicles/WAT_SmallCar_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_Windshield
+    {
+        mesh = vehicles/WAT_SmallCar_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SmallCar_WindshieldRear
+    {
+        mesh = vehicles/WAT_SmallCar_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_Hood
+    {
+        mesh = vehicles/WAT_SportsCar_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_HoodBolts
+    {
+        mesh = vehicles/WAT_SportsCar_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_HoodFrame
+    {
+        mesh = vehicles/WAT_SportsCar_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_Trunk
+    {
+        mesh = vehicles/WAT_SportsCar_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_TrunkBolts
+    {
+        mesh = vehicles/WAT_SportsCar_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_TrunkFrame
+    {
+        mesh = vehicles/WAT_SportsCar_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_SportsCar_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_WindowFrontRight
+    {
+        mesh = vehicles/WAT_SportsCar_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_Windshield
+    {
+        mesh = vehicles/WAT_SportsCar_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_SportsCar_WindshieldRear
+    {
+        mesh = vehicles/WAT_SportsCar_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_Hood
+    {
+        mesh = vehicles/WAT_StationWagon_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_HoodBolts
+    {
+        mesh = vehicles/WAT_StationWagon_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_HoodFrame
+    {
+        mesh = vehicles/WAT_StationWagon_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_Trunk
+    {
+        mesh = vehicles/WAT_StationWagon_Trunk,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_TrunkBolts
+    {
+        mesh = vehicles/WAT_StationWagon_TrunkBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_TrunkFrame
+    {
+        mesh = vehicles/WAT_StationWagon_TrunkFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_StationWagon_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_WindowFrontRight
+    {
+        mesh = vehicles/WAT_StationWagon_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_WindowRearLeft
+    {
+        mesh = vehicles/WAT_StationWagon_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_WindowRearRight
+    {
+        mesh = vehicles/WAT_StationWagon_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_Windshield
+    {
+        mesh = vehicles/WAT_StationWagon_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StationWagon_WindshieldRear
+    {
+        mesh = vehicles/WAT_StationWagon_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_Hood
+    {
+        mesh = vehicles/WAT_StepVan_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_HoodBolts
+    {
+        mesh = vehicles/WAT_StepVan_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_HoodFrame
+    {
+        mesh = vehicles/WAT_StepVan_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_RearDoor
+    {
+        mesh = vehicles/WAT_StepVan_RearDoor,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_RearDoorBolts
+    {
+        mesh = vehicles/WAT_StepVan_RearDoorBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_RearDoorFrame
+    {
+        mesh = vehicles/WAT_StepVan_RearDoorFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_StepVan_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_WindowFrontRight
+    {
+        mesh = vehicles/WAT_StepVan_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_Windshield
+    {
+        mesh = vehicles/WAT_StepVan_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_StepVan_WindshieldRear
+    {
+        mesh = vehicles/WAT_StepVan_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_Hood
+    {
+        mesh = vehicles/WAT_VanAmbulance_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_HoodBolts
+    {
+        mesh = vehicles/WAT_VanAmbulance_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_HoodFrame
+    {
+        mesh = vehicles/WAT_VanAmbulance_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_RearDoor
+    {
+        mesh = vehicles/WAT_VanAmbulance_RearDoor,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_RearDoorBolts
+    {
+        mesh = vehicles/WAT_VanAmbulance_RearDoorBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_RearDoorFrame
+    {
+        mesh = vehicles/WAT_VanAmbulance_RearDoorFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_VanAmbulance_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_WindowFrontRight
+    {
+        mesh = vehicles/WAT_VanAmbulance_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_Windshield
+    {
+        mesh = vehicles/WAT_VanAmbulance_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanAmbulance_WindshieldRear
+    {
+        mesh = vehicles/WAT_VanAmbulance_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_Hood
+    {
+        mesh = vehicles/WAT_VanRadio_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_HoodBolts
+    {
+        mesh = vehicles/WAT_VanRadio_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_HoodFrame
+    {
+        mesh = vehicles/WAT_VanRadio_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_RearDoor
+    {
+        mesh = vehicles/WAT_VanRadio_RearDoor,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_RearDoorBolts
+    {
+        mesh = vehicles/WAT_VanRadio_RearDoorBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_RearDoorFrame
+    {
+        mesh = vehicles/WAT_VanRadio_RearDoorFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_VanRadio_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_WindowFrontRight
+    {
+        mesh = vehicles/WAT_VanRadio_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_Windshield
+    {
+        mesh = vehicles/WAT_VanRadio_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanRadio_WindshieldRear
+    {
+        mesh = vehicles/WAT_VanRadio_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_Hood
+    {
+        mesh = vehicles/WAT_VanSeats_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_HoodBolts
+    {
+        mesh = vehicles/WAT_VanSeats_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_HoodFrame
+    {
+        mesh = vehicles/WAT_VanSeats_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_RearDoor
+    {
+        mesh = vehicles/WAT_VanSeats_RearDoor,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_RearDoorBolts
+    {
+        mesh = vehicles/WAT_VanSeats_RearDoorBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_RearDoorFrame
+    {
+        mesh = vehicles/WAT_VanSeats_RearDoorFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_VanSeats_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_WindowFrontRight
+    {
+        mesh = vehicles/WAT_VanSeats_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_WindowRearLeft
+    {
+        mesh = vehicles/WAT_VanSeats_WindowRearLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_WindowRearRight
+    {
+        mesh = vehicles/WAT_VanSeats_WindowRearRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_Windshield
+    {
+        mesh = vehicles/WAT_VanSeats_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_VanSeats_WindshieldRear
+    {
+        mesh = vehicles/WAT_VanSeats_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_Hood
+    {
+        mesh = vehicles/WAT_Van_Hood,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_HoodBolts
+    {
+        mesh = vehicles/WAT_Van_HoodBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_HoodFrame
+    {
+        mesh = vehicles/WAT_Van_HoodFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_RearDoor
+    {
+        mesh = vehicles/WAT_Van_RearDoor,
+        texture = Vehicles/WAT_PlateSteel,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_RearDoorBolts
+    {
+        mesh = vehicles/WAT_Van_RearDoorBolts,
+        texture = Vehicles/WAT_PlateBolt,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_RearDoorFrame
+    {
+        mesh = vehicles/WAT_Van_RearDoorFrame,
+        texture = Vehicles/WAT_PlateDark,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_WindowFrontLeft
+    {
+        mesh = vehicles/WAT_Van_WindowFrontLeft,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_WindowFrontRight
+    {
+        mesh = vehicles/WAT_Van_WindowFrontRight,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_Windshield
+    {
+        mesh = vehicles/WAT_Van_Windshield,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model WAT_Van_WindshieldRear
+    {
+        mesh = vehicles/WAT_Van_WindshieldRear,
+        texture = Vehicles/WAT_WindowBars,
+        shader = vehiclewheel,
+        invertX = false,
+        scale = 0.008,
+    }
+
+}

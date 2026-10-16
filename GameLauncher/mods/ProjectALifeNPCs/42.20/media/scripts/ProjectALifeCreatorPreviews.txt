@@ -1,0 +1,4491 @@
+module ProjectALife
+{
+    item PALPreview_AerosolBomb
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_AerosolBomb,
+    }
+    item PALPreview_AerosolBombSensor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_AerosolBombSensor,
+    }
+    item PALPreview_AssaultRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_AssaultRifle,
+    }
+    item PALPreview_Axe_Old
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Axe_Old,
+    }
+    item PALPreview_Axe_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Axe_Sawblade,
+    }
+    item PALPreview_Axe_Sawblade_Hatchet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Axe_Sawblade_Hatchet,
+    }
+    item PALPreview_Axe_ScrapCleaver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Axe_ScrapCleaver,
+    }
+    item PALPreview_BadmintonRacket
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BadmintonRacket,
+    }
+    item PALPreview_BallPeenHammerForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BallPeenHammerForged,
+    }
+    item PALPreview_Banjo
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Banjo,
+    }
+    item PALPreview_Banjo_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Banjo_Broken,
+    }
+    item PALPreview_BarBell
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BarBell,
+    }
+    item PALPreview_BarBell_Forged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BarBell_Forged,
+    }
+    item PALPreview_BaseBallBat_CircularSaw
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseBallBat_CircularSaw,
+    }
+    item PALPreview_BaseBallBat_GardenForkHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseBallBat_GardenForkHead,
+    }
+    item PALPreview_BaseBallBat_RailSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseBallBat_RailSpike,
+    }
+    item PALPreview_BaseBallBat_RakeHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseBallBat_RakeHead,
+    }
+    item PALPreview_BaseBallBat_Spiked
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseBallBat_Spiked,
+    }
+    item PALPreview_BaseballBat
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat,
+    }
+    item PALPreview_BaseballBat_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Broken,
+    }
+    item PALPreview_BaseballBat_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Broken_Nails,
+    }
+    item PALPreview_BaseballBat_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Can,
+    }
+    item PALPreview_BaseballBat_Crafted
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Crafted,
+    }
+    item PALPreview_BaseballBat_Metal
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Metal,
+    }
+    item PALPreview_BaseballBat_Metal_Bolts
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Metal_Bolts,
+    }
+    item PALPreview_BaseballBat_Metal_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Metal_Sawblade,
+    }
+    item PALPreview_BaseballBat_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_Nails,
+    }
+    item PALPreview_BaseballBat_ScrapSheet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BaseballBat_ScrapSheet,
+    }
+    item PALPreview_BlockMace
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BlockMace,
+    }
+    item PALPreview_BlockMaul
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BlockMaul,
+    }
+    item PALPreview_BoltCutters
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BoltCutters,
+    }
+    item PALPreview_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Bone,
+    }
+    item PALPreview_BoneClub
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BoneClub,
+    }
+    item PALPreview_BoneClub_Spiked
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BoneClub_Spiked,
+    }
+    item PALPreview_BowlingPin
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BowlingPin,
+    }
+    item PALPreview_BowlingPin_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BowlingPin_Nails,
+    }
+    item PALPreview_BrassNameplate
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BrassNameplate,
+    }
+    item PALPreview_BreadKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BreadKnife,
+    }
+    item PALPreview_Broom
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Broom,
+    }
+    item PALPreview_Broom_BarbedWire
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Broom_BarbedWire,
+    }
+    item PALPreview_Broom_Twig
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Broom_Twig,
+    }
+    item PALPreview_BucketMace_Metal
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BucketMace_Metal,
+    }
+    item PALPreview_BucketMace_Wood
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_BucketMace_Wood,
+    }
+    item PALPreview_ButterKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ButterKnife,
+    }
+    item PALPreview_ButterKnife_Gold
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ButterKnife_Gold,
+    }
+    item PALPreview_ButterKnife_Silver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ButterKnife_Silver,
+    }
+    item PALPreview_CanoePadel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CanoePadel,
+    }
+    item PALPreview_CanoePadelX2
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CanoePadelX2,
+    }
+    item PALPreview_CanoePadelX2_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CanoePadelX2_Broken,
+    }
+    item PALPreview_CarpentryChisel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CarpentryChisel,
+    }
+    item PALPreview_CarvingFork_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CarvingFork_Hand,
+    }
+    item PALPreview_ChairLeg
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ChairLeg,
+    }
+    item PALPreview_ChairLeg_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ChairLeg_Nails,
+    }
+    item PALPreview_ClubHammerForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ClubHammerForged,
+    }
+    item PALPreview_CompassGeometry
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CompassGeometry,
+    }
+    item PALPreview_CrowbarForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrowbarForged,
+    }
+    item PALPreview_CrudeHuntingKnifeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrudeHuntingKnifeForged,
+    }
+    item PALPreview_CrudeKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrudeKnife,
+    }
+    item PALPreview_CrudeShortSword
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrudeShortSword,
+    }
+    item PALPreview_CrudeSword
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrudeSword,
+    }
+    item PALPreview_CrudeSword_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_CrudeSword_Broken,
+    }
+    item PALPreview_Cudgel_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_Bone,
+    }
+    item PALPreview_Cudgel_Brake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_Brake,
+    }
+    item PALPreview_Cudgel_CircularSaw
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_CircularSaw,
+    }
+    item PALPreview_Cudgel_GardenForkHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_GardenForkHead,
+    }
+    item PALPreview_Cudgel_Nail
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_Nail,
+    }
+    item PALPreview_Cudgel_RailSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_RailSpike,
+    }
+    item PALPreview_Cudgel_ScrapSheet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_ScrapSheet,
+    }
+    item PALPreview_Cudgel_SpadeHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_SpadeHead,
+    }
+    item PALPreview_Cudgel_Spike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Cudgel_Spike,
+    }
+    item PALPreview_DoubleBarrelShotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_DoubleBarrelShotgun,
+    }
+    item PALPreview_Drumstick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Drumstick,
+    }
+    item PALPreview_DumbBell
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_DumbBell,
+    }
+    item PALPreview_DumbBell_Forged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_DumbBell_Forged,
+    }
+    item PALPreview_EngineMaul
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_EngineMaul,
+    }
+    item PALPreview_EntrenchingTool
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_EntrenchingTool,
+    }
+    item PALPreview_FieldHockeyStick_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FieldHockeyStick_Broken,
+    }
+    item PALPreview_FieldHockeyStick_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FieldHockeyStick_Broken_Nails,
+    }
+    item PALPreview_FieldHockeyStick_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FieldHockeyStick_Nails,
+    }
+    item PALPreview_FieldHockeyStick_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FieldHockeyStick_Sawblade,
+    }
+    item PALPreview_FightingKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FightingKnife,
+    }
+    item PALPreview_FireAxe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FireAxe,
+    }
+    item PALPreview_Firecracker
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Firecracker,
+    }
+    item PALPreview_Firecracker_Crafted
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Firecracker_Crafted,
+    }
+    item PALPreview_FireplacePoker
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FireplacePoker,
+    }
+    item PALPreview_Firewood
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Firewood,
+    }
+    item PALPreview_Firewood_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Firewood_Nails,
+    }
+    item PALPreview_FishingRod_Crafted
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FishingRod_Crafted,
+    }
+    item PALPreview_FishingRod_Modern
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FishingRod_Modern,
+    }
+    item PALPreview_FlameTrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FlameTrap,
+    }
+    item PALPreview_FlameTrapSensor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FlameTrapSensor,
+    }
+    item PALPreview_FlintNodule
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FlintNodule,
+    }
+    item PALPreview_Flute
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Flute,
+    }
+    item PALPreview_Fork
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Fork,
+    }
+    item PALPreview_ForkForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ForkForged,
+    }
+    item PALPreview_Fork_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Fork_Bone,
+    }
+    item PALPreview_Fork_Gold
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Fork_Gold,
+    }
+    item PALPreview_Fork_Silver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Fork_Silver,
+    }
+    item PALPreview_FryingPan
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FryingPan,
+    }
+    item PALPreview_FryingPanForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_FryingPanForged,
+    }
+    item PALPreview_Gaffhook
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Gaffhook,
+    }
+    item PALPreview_GardenFork
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GardenFork,
+    }
+    item PALPreview_GardenFork_Forged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GardenFork_Forged,
+    }
+    item PALPreview_GardenFork_Head
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GardenFork_Head,
+    }
+    item PALPreview_GardenHoeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GardenHoeForged,
+    }
+    item PALPreview_GardenToolHandle_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GardenToolHandle_Broken,
+    }
+    item PALPreview_Gavel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Gavel,
+    }
+    item PALPreview_GlassShiv
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GlassShiv,
+    }
+    item PALPreview_GolfClub
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GolfClub,
+    }
+    item PALPreview_GridlePan
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GridlePan,
+    }
+    item PALPreview_GuitarAcoustic_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GuitarAcoustic_Broken,
+    }
+    item PALPreview_GuitarElectricBass_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GuitarElectricBass_Broken,
+    }
+    item PALPreview_GuitarElectric_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_GuitarElectric_Broken,
+    }
+    item PALPreview_Guitar_Acoustic
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Guitar_Acoustic,
+    }
+    item PALPreview_HammerForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HammerForged,
+    }
+    item PALPreview_HandAxeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandAxeForged,
+    }
+    item PALPreview_HandAxe_Old
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandAxe_Old,
+    }
+    item PALPreview_HandFork
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandFork,
+    }
+    item PALPreview_HandScytheForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandScytheForged,
+    }
+    item PALPreview_HandguardDagger
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandguardDagger,
+    }
+    item PALPreview_Handgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handgun,
+    }
+    item PALPreview_Handgun02
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handgun02,
+    }
+    item PALPreview_Handgun03
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handgun03,
+    }
+    item PALPreview_Handiknife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handiknife,
+    }
+    item PALPreview_HandleNailSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HandleNailSpike,
+    }
+    item PALPreview_Handle_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handle_Can,
+    }
+    item PALPreview_Handle_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Handle_Hand,
+    }
+    item PALPreview_Hatchet_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Hatchet_Bone,
+    }
+    item PALPreview_HockeyStick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HockeyStick,
+    }
+    item PALPreview_HuntingKnifeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HuntingKnifeForged,
+    }
+    item PALPreview_HuntingRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HuntingRifle,
+    }
+    item PALPreview_IceAxe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IceAxe,
+    }
+    item PALPreview_IceHockeyStick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IceHockeyStick,
+    }
+    item PALPreview_IceHockeyStick_BarbedWire
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IceHockeyStick_BarbedWire,
+    }
+    item PALPreview_IcePick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IcePick,
+    }
+    item PALPreview_IronBarStock
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IronBarStock,
+    }
+    item PALPreview_IronBarStockHalf
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_IronBarStockHalf,
+    }
+    item PALPreview_JS14_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JS14_Rifle,
+    }
+    item PALPreview_JS3T_Shotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JS3T_Shotgun,
+    }
+    item PALPreview_JawboneBovide
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JawboneBovide,
+    }
+    item PALPreview_JawboneBovide_Axe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JawboneBovide_Axe,
+    }
+    item PALPreview_JawboneBovide_Club
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JawboneBovide_Club,
+    }
+    item PALPreview_JawboneBovide_Morningstar
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_JawboneBovide_Morningstar,
+    }
+    item PALPreview_Katana
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Katana,
+    }
+    item PALPreview_Katana_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Katana_Broken,
+    }
+    item PALPreview_KettleMace_Metal
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KettleMace_Metal,
+    }
+    item PALPreview_KettleMace_Wood
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KettleMace_Wood,
+    }
+    item PALPreview_Keytar
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Keytar,
+    }
+    item PALPreview_KitchenKnifeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KitchenKnifeForged,
+    }
+    item PALPreview_KnifeFillet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KnifeFillet,
+    }
+    item PALPreview_KnifeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KnifeForged,
+    }
+    item PALPreview_KnifeParing
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KnifeParing,
+    }
+    item PALPreview_KnifeSteak
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KnifeSteak,
+    }
+    item PALPreview_KnifeSushi
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_KnifeSushi,
+    }
+    item PALPreview_Knife_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Knife_Bone,
+    }
+    item PALPreview_L92_Carbine
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_L92_Carbine,
+    }
+    item PALPreview_L94_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_L94_Rifle,
+    }
+    item PALPreview_LaCrosseStick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LaCrosseStick,
+    }
+    item PALPreview_LargeBone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBone,
+    }
+    item PALPreview_LargeBoneClub
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBoneClub,
+    }
+    item PALPreview_LargeBoneClub_Spiked
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBoneClub_Spiked,
+    }
+    item PALPreview_LargeBranch
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBranch,
+    }
+    item PALPreview_LargeBranch_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBranch_Broken,
+    }
+    item PALPreview_LargeBranch_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeBranch_Broken_Nails,
+    }
+    item PALPreview_LargeHook
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeHook,
+    }
+    item PALPreview_LargeKnife_Scrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LargeKnife_Scrap,
+    }
+    item PALPreview_LeadPipe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LeadPipe,
+    }
+    item PALPreview_LeafRake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LeafRake,
+    }
+    item PALPreview_LetterOpener
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LetterOpener,
+    }
+    item PALPreview_LongCrudeKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongCrudeKnife,
+    }
+    item PALPreview_LongHandle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandle,
+    }
+    item PALPreview_LongHandleBroken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleBroken,
+    }
+    item PALPreview_LongHandleBroken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleBroken_Nails,
+    }
+    item PALPreview_LongHandleNailSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleNailSpike,
+    }
+    item PALPreview_LongHandleRailspike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleRailspike,
+    }
+    item PALPreview_LongHandleRakeHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleRakeHead,
+    }
+    item PALPreview_LongHandleSawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandleSawblade,
+    }
+    item PALPreview_LongHandle_Brake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandle_Brake,
+    }
+    item PALPreview_LongHandle_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandle_Can,
+    }
+    item PALPreview_LongHandle_Mace
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandle_Mace,
+    }
+    item PALPreview_LongHandle_Spiked
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongHandle_Spiked,
+    }
+    item PALPreview_LongMace_Stone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongMace_Stone,
+    }
+    item PALPreview_LongShaft
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongShaft,
+    }
+    item PALPreview_LongShaftBroken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_LongShaftBroken,
+    }
+    item PALPreview_M14
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_M14,
+    }
+    item PALPreview_MSR7T_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MSR7T_Rifle,
+    }
+    item PALPreview_Mace
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Mace,
+    }
+    item PALPreview_Mace_Stone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Mace_Stone,
+    }
+    item PALPreview_MacheteForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MacheteForged,
+    }
+    item PALPreview_MacheteKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MacheteKnife,
+    }
+    item PALPreview_Machete_Crude
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Machete_Crude,
+    }
+    item PALPreview_MasonsChisel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MasonsChisel,
+    }
+    item PALPreview_MasonsTrowel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MasonsTrowel,
+    }
+    item PALPreview_MeatCleaverForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MeatCleaverForged,
+    }
+    item PALPreview_MeatCleaver_Scrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MeatCleaver_Scrap,
+    }
+    item PALPreview_MetalPipe_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MetalPipe_Broken,
+    }
+    item PALPreview_MetalworkingChisel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MetalworkingChisel,
+    }
+    item PALPreview_MetalworkingFile
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MetalworkingFile,
+    }
+    item PALPreview_MetalworkingPunch
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_MetalworkingPunch,
+    }
+    item PALPreview_Molotov
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Molotov,
+    }
+    item PALPreview_Mop_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Mop_Hand,
+    }
+    item PALPreview_Morningstar_Scrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Morningstar_Scrap,
+    }
+    item PALPreview_Morningstar_Scrap_Short
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Morningstar_Scrap_Short,
+    }
+    item PALPreview_Multitool_Knife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Multitool_Knife,
+    }
+    item PALPreview_NailSpikeClub
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_NailSpikeClub,
+    }
+    item PALPreview_NailedPlank
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_NailedPlank,
+    }
+    item PALPreview_Nightstick
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Nightstick,
+    }
+    item PALPreview_NoiseMaker
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_NoiseMaker,
+    }
+    item PALPreview_NoiseMakerSensor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_NoiseMakerSensor,
+    }
+    item PALPreview_Pen
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Pen,
+    }
+    item PALPreview_PenFancy
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PenFancy,
+    }
+    item PALPreview_PenMulticolor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PenMulticolor,
+    }
+    item PALPreview_PenSpiffo
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PenSpiffo,
+    }
+    item PALPreview_Pencil
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Pencil,
+    }
+    item PALPreview_PencilSpiffo
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PencilSpiffo,
+    }
+    item PALPreview_PickAxeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PickAxeForged,
+    }
+    item PALPreview_PipeBomb
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PipeBomb,
+    }
+    item PALPreview_PipeBombSensor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PipeBombSensor,
+    }
+    item PALPreview_PipeWrench
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PipeWrench,
+    }
+    item PALPreview_Plank
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank,
+    }
+    item PALPreview_Plank_Brake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank_Brake,
+    }
+    item PALPreview_Plank_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank_Broken,
+    }
+    item PALPreview_Plank_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank_Broken_Nails,
+    }
+    item PALPreview_Plank_Saw
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank_Saw,
+    }
+    item PALPreview_Plank_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plank_Sawblade,
+    }
+    item PALPreview_Plunger
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plunger,
+    }
+    item PALPreview_Plunger_BarbedWire
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Plunger_BarbedWire,
+    }
+    item PALPreview_PoolCue
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PoolCue,
+    }
+    item PALPreview_PrimitiveScythe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_PrimitiveScythe,
+    }
+    item PALPreview_RailroadSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_RailroadSpike,
+    }
+    item PALPreview_RailroadSpikeKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_RailroadSpikeKnife,
+    }
+    item PALPreview_RailroadSpikePullerOld
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_RailroadSpikePullerOld,
+    }
+    item PALPreview_Rake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Rake,
+    }
+    item PALPreview_Ratchet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Ratchet,
+    }
+    item PALPreview_Revolver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Revolver,
+    }
+    item PALPreview_Revolver_Long
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Revolver_Long,
+    }
+    item PALPreview_Revolver_Short
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Revolver_Short,
+    }
+    item PALPreview_RollingPin
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_RollingPin,
+    }
+    item PALPreview_Sapling
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Sapling,
+    }
+    item PALPreview_SaucePan
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SaucePan,
+    }
+    item PALPreview_SaucePanCopper
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SaucePanCopper,
+    }
+    item PALPreview_Saw_Flint
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Saw_Flint,
+    }
+    item PALPreview_Saxophone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Saxophone,
+    }
+    item PALPreview_Scalpel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Scalpel,
+    }
+    item PALPreview_Scissors
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Scissors,
+    }
+    item PALPreview_ScissorsForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScissorsForged,
+    }
+    item PALPreview_ScrapMaul
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScrapMaul,
+    }
+    item PALPreview_ScrapWeaponBrake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScrapWeaponBrake,
+    }
+    item PALPreview_ScrapWeaponGardenFork
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScrapWeaponGardenFork,
+    }
+    item PALPreview_ScrapWeaponRakeHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScrapWeaponRakeHead,
+    }
+    item PALPreview_ScrapWeaponSpade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ScrapWeaponSpade,
+    }
+    item PALPreview_Screwdriver_Improvised
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Screwdriver_Improvised,
+    }
+    item PALPreview_Screwdriver_Old
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Screwdriver_Old,
+    }
+    item PALPreview_SharpBone_Long
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SharpBone_Long,
+    }
+    item PALPreview_SheetMetalSnips_Closed
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SheetMetalSnips_Closed,
+    }
+    item PALPreview_ShortBat
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortBat,
+    }
+    item PALPreview_ShortBat_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortBat_Can,
+    }
+    item PALPreview_ShortBat_RailSpike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortBat_RailSpike,
+    }
+    item PALPreview_ShortBat_RakeHead
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortBat_RakeHead,
+    }
+    item PALPreview_ShortBat_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortBat_Sawblade,
+    }
+    item PALPreview_ShortSword
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShortSword,
+    }
+    item PALPreview_Shortsword_Scrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Shortsword_Scrap,
+    }
+    item PALPreview_Shotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Shotgun,
+    }
+    item PALPreview_ShotgunDoubleBarrelSawn
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShotgunDoubleBarrelSawn,
+    }
+    item PALPreview_ShotgunSawnOff
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_ShotgunSawnOff,
+    }
+    item PALPreview_Shovel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Shovel,
+    }
+    item PALPreview_Shovel02
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Shovel02,
+    }
+    item PALPreview_SledgeHammer
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SledgeHammer,
+    }
+    item PALPreview_SledgeHammer02
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SledgeHammer02,
+    }
+    item PALPreview_SledgeHammerForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SledgeHammerForged,
+    }
+    item PALPreview_SmashedBottle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SmashedBottle,
+    }
+    item PALPreview_SmithingHammer
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SmithingHammer,
+    }
+    item PALPreview_SmokeBomb
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SmokeBomb,
+    }
+    item PALPreview_SmokeBombSensor
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SmokeBombSensor,
+    }
+    item PALPreview_SnowShovel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SnowShovel,
+    }
+    item PALPreview_SpadeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpadeForged,
+    }
+    item PALPreview_SpadeWood
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpadeWood,
+    }
+    item PALPreview_SpearCrafted
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearCrafted,
+    }
+    item PALPreview_SpearCraftedFireHardened
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearCraftedFireHardened,
+    }
+    item PALPreview_SpearCrude
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearCrude,
+    }
+    item PALPreview_SpearFightingKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearFightingKnife,
+    }
+    item PALPreview_SpearGlass
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearGlass,
+    }
+    item PALPreview_SpearHandFork
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearHandFork,
+    }
+    item PALPreview_SpearHuntingKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearHuntingKnife,
+    }
+    item PALPreview_SpearKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearKnife,
+    }
+    item PALPreview_SpearKnifeSmall
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearKnifeSmall,
+    }
+    item PALPreview_SpearKnifeSteak
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearKnifeSteak,
+    }
+    item PALPreview_SpearLargeKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearLargeKnife,
+    }
+    item PALPreview_SpearScissors
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearScissors,
+    }
+    item PALPreview_SpearScrapKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearScrapKnife,
+    }
+    item PALPreview_SpearScrewdriver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearScrewdriver,
+    }
+    item PALPreview_SpearShortForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearShortForged,
+    }
+    item PALPreview_SpearStone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearStone,
+    }
+    item PALPreview_SpearStoneLong
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpearStoneLong,
+    }
+    item PALPreview_Spear_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spear_Bone,
+    }
+    item PALPreview_Spear_BoneLong
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spear_BoneLong,
+    }
+    item PALPreview_Spear_Plunger
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spear_Plunger,
+    }
+    item PALPreview_SpikePipe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpikePipe,
+    }
+    item PALPreview_SpikedClub
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpikedClub,
+    }
+    item PALPreview_Spoon
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spoon,
+    }
+    item PALPreview_SpoonForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SpoonForged,
+    }
+    item PALPreview_Spoon_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spoon_Bone,
+    }
+    item PALPreview_Spoon_Gold
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spoon_Gold,
+    }
+    item PALPreview_Spoon_Silver
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Spoon_Silver,
+    }
+    item PALPreview_Stake
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Stake,
+    }
+    item PALPreview_SteelBarStock
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SteelBarStock,
+    }
+    item PALPreview_SteelBarStockHalf
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SteelBarStockHalf,
+    }
+    item PALPreview_SteelRod
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SteelRod,
+    }
+    item PALPreview_SteelRod_Half
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SteelRod_Half,
+    }
+    item PALPreview_StoneAxe
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneAxe,
+    }
+    item PALPreview_StoneAxeLarge
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneAxeLarge,
+    }
+    item PALPreview_StoneHammer
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneHammer,
+    }
+    item PALPreview_StoneKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneKnife,
+    }
+    item PALPreview_StoneKnifeLong
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneKnifeLong,
+    }
+    item PALPreview_StoneMaul
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_StoneMaul,
+    }
+    item PALPreview_Stone_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Stone_Hand,
+    }
+    item PALPreview_SwitchKnife
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_SwitchKnife,
+    }
+    item PALPreview_Sword
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Sword,
+    }
+    item PALPreview_Sword_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Sword_Broken,
+    }
+    item PALPreview_Sword_Scrap
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Sword_Scrap,
+    }
+    item PALPreview_Sword_Scrap_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Sword_Scrap_Broken,
+    }
+    item PALPreview_TableLeg
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg,
+    }
+    item PALPreview_TableLeg_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg_Broken,
+    }
+    item PALPreview_TableLeg_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg_Broken_Nails,
+    }
+    item PALPreview_TableLeg_Chain
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg_Chain,
+    }
+    item PALPreview_TableLeg_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg_Nails,
+    }
+    item PALPreview_TableLeg_Sawblade
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TableLeg_Sawblade,
+    }
+    item PALPreview_TennisRacket
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TennisRacket,
+    }
+    item PALPreview_TinOpener_Old
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TinOpener_Old,
+    }
+    item PALPreview_TireIron
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TireIron,
+    }
+    item PALPreview_Toothbrush_Shiv
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Toothbrush_Shiv,
+    }
+    item PALPreview_Trapper_Carbine
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Trapper_Carbine,
+    }
+    item PALPreview_TreeBranch_Bone
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TreeBranch_Bone,
+    }
+    item PALPreview_TreeBranch_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TreeBranch_Can,
+    }
+    item PALPreview_TreeBranch_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TreeBranch_Hand,
+    }
+    item PALPreview_TreeBranch_Nailspike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TreeBranch_Nailspike,
+    }
+    item PALPreview_TreeBranch_Railspike
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_TreeBranch_Railspike,
+    }
+    item PALPreview_Trowel
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Trowel,
+    }
+    item PALPreview_Trumpet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Trumpet,
+    }
+    item PALPreview_Umbrella_Closed_Black
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Umbrella_Closed_Black,
+    }
+    item PALPreview_Umbrella_Closed_Blue
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Umbrella_Closed_Blue,
+    }
+    item PALPreview_Umbrella_Closed_Red
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Umbrella_Closed_Red,
+    }
+    item PALPreview_Umbrella_Closed_White
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Umbrella_Closed_White,
+    }
+    item PALPreview_VarmintRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_VarmintRifle,
+    }
+    item PALPreview_Violin
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Violin,
+    }
+    item PALPreview_WoodAxeForged
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodAxeForged,
+    }
+    item PALPreview_WoodenMallet
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenMallet,
+    }
+    item PALPreview_WoodenStick_Broken
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenStick_Broken,
+    }
+    item PALPreview_WoodenStick_Broken_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenStick_Broken_Nails,
+    }
+    item PALPreview_WoodenStick_Can
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenStick_Can,
+    }
+    item PALPreview_WoodenStick_Hand
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenStick_Hand,
+    }
+    item PALPreview_WoodenStick_Nails
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_WoodenStick_Nails,
+    }
+    item PALPreview_Wrench
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Wrench,
+    }
+    item PALPreview_YardstickDEBUG
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_YardstickDEBUG,
+    }
+    item PALPreview_Held_AssaultRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_AssaultRifle,
+    }
+    item PALPreview_Held_DoubleBarrelShotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_DoubleBarrelShotgun,
+    }
+    item PALPreview_Held_HuntingRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_HuntingRifle,
+    }
+    item PALPreview_Held_JS14_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_JS14_Rifle,
+    }
+    item PALPreview_Held_JS3T_Shotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_JS3T_Shotgun,
+    }
+    item PALPreview_Held_L92_Carbine
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_L92_Carbine,
+    }
+    item PALPreview_Held_L94_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_L94_Rifle,
+    }
+    item PALPreview_Held_M14
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_M14,
+    }
+    item PALPreview_Held_MSR7T_Rifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_MSR7T_Rifle,
+    }
+    item PALPreview_Held_Shotgun
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_Shotgun,
+    }
+    item PALPreview_Held_ShotgunDoubleBarrelSawn
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_ShotgunDoubleBarrelSawn,
+    }
+    item PALPreview_Held_ShotgunSawnOff
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_ShotgunSawnOff,
+    }
+    item PALPreview_Held_Trapper_Carbine
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_Trapper_Carbine,
+    }
+    item PALPreview_Held_VarmintRifle
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Held_VarmintRifle,
+    }
+    item PALPreview_HeldPart_AssaultRifle__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__TritiumSights,
+    }
+    item PALPreview_HeldPart_AssaultRifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__Laser,
+    }
+    item PALPreview_HeldPart_AssaultRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__RecoilPad,
+    }
+    item PALPreview_HeldPart_AssaultRifle__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__RedDot,
+    }
+    item PALPreview_HeldPart_AssaultRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__x2Scope,
+    }
+    item PALPreview_HeldPart_AssaultRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_AssaultRifle__x4Scope,
+    }
+    item PALPreview_HeldPart_M14__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__TritiumSights,
+    }
+    item PALPreview_HeldPart_M14__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__Laser,
+    }
+    item PALPreview_HeldPart_M14__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__RecoilPad,
+    }
+    item PALPreview_HeldPart_M14__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__RedDot,
+    }
+    item PALPreview_HeldPart_M14__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__x2Scope,
+    }
+    item PALPreview_HeldPart_M14__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_M14__x4Scope,
+    }
+    item PALPreview_HeldPart_DoubleBarrelShotgun__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_DoubleBarrelShotgun__RecoilPad,
+    }
+    item PALPreview_HeldPart_HuntingRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_HuntingRifle__RecoilPad,
+    }
+    item PALPreview_HeldPart_HuntingRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_HuntingRifle__x2Scope,
+    }
+    item PALPreview_HeldPart_HuntingRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_HuntingRifle__x4Scope,
+    }
+    item PALPreview_HeldPart_HuntingRifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_HuntingRifle__x8Scope,
+    }
+    item PALPreview_HeldPart_Shotgun__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Shotgun__x2Scope,
+    }
+    item PALPreview_HeldPart_Shotgun__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Shotgun__RecoilPad,
+    }
+    item PALPreview_HeldPart_ShotgunSawnOff__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_ShotgunSawnOff__x2Scope,
+    }
+    item PALPreview_HeldPart_VarmintRifle__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_VarmintRifle__TritiumSights,
+    }
+    item PALPreview_HeldPart_VarmintRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_VarmintRifle__RecoilPad,
+    }
+    item PALPreview_HeldPart_VarmintRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_VarmintRifle__x2Scope,
+    }
+    item PALPreview_HeldPart_VarmintRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_VarmintRifle__x4Scope,
+    }
+    item PALPreview_HeldPart_VarmintRifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_VarmintRifle__x8Scope,
+    }
+    item PALPreview_HeldPart_JS14_Rifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_JS14_Rifle__Laser,
+    }
+    item PALPreview_HeldPart_JS14_Rifle__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_JS14_Rifle__RedDot,
+    }
+    item PALPreview_HeldPart_JS14_Rifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_JS14_Rifle__x2Scope,
+    }
+    item PALPreview_HeldPart_JS14_Rifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_JS14_Rifle__x4Scope,
+    }
+    item PALPreview_HeldPart_JS3T_Shotgun__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_JS3T_Shotgun__RedDot,
+    }
+    item PALPreview_HeldPart_L94_Rifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_L94_Rifle__RecoilPad,
+    }
+    item PALPreview_HeldPart_MSR7T_Rifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_MSR7T_Rifle__RecoilPad,
+    }
+    item PALPreview_HeldPart_MSR7T_Rifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_MSR7T_Rifle__x2Scope,
+    }
+    item PALPreview_HeldPart_MSR7T_Rifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_MSR7T_Rifle__x4Scope,
+    }
+    item PALPreview_HeldPart_MSR7T_Rifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_MSR7T_Rifle__x8Scope,
+    }
+    item PALPreview_HeldPart_MSR7T_Rifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_MSR7T_Rifle__Laser,
+    }
+    item PALPreview_HeldPart_Trapper_Carbine__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Trapper_Carbine__Laser,
+    }
+    item PALPreview_HeldPart_Trapper_Carbine__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Trapper_Carbine__RedDot,
+    }
+    item PALPreview_HeldPart_Trapper_Carbine__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Trapper_Carbine__x2Scope,
+    }
+    item PALPreview_HeldPart_Trapper_Carbine__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_HeldPart_Trapper_Carbine__x4Scope,
+    }
+}

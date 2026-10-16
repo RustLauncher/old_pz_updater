@@ -1,0 +1,7 @@
+name=Vehicle Armor Crafting [B42]
+id=VehicleArmorCrafting
+description=Craft and install armor on your vehicle: welded bars over the windows and steel plates on the hood, trunk lid, van rear doors or pickup bed. While a piece of armor holds, the part behind it does not take damage. Singleplayer and multiplayer.
+icon=icon.png
+modversion=1.0.0
+pzversion=42.0.0
+author=sugar_mama

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/1handed/WoodenStick_Broken_Nail_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/1handed/WoodenStick_Broken_Nail_Hand</m_FemaleModel>
+  <m_GUID>a7cf21b0-513c-9a52-0d55-863a0bb6ab2e</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/1handed/Weapons_Can</textureChoices>
+</clothingItem>

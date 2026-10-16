@@ -1,0 +1,934 @@
+module VOE
+{
+	item Jacket_TracksuitJacket
+	{
+		DisplayName = Jacket - Tracksuit,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Weight = 1,
+		Icon = Jacket_Tracksuit,
+		BloodLocation = Jumper,
+		BodyLocation = base:jacket,
+		ClothingItem = Jacket_Tracksuit,
+		Insulation = 0.40,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Jacket_Shellsuit_Ground,
+		Tags = base:isfirefuel;base:isfiretinder,
+	}
+
+	item Trousers_Tracksuit
+	{
+		DisplayName = Pants - Tracksuit,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Icon = Pants_Athletic_Blue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Tracksuit,
+		Insulation = 0.30,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		FabricType = Cotton,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_Tracksuit_Skinny
+	{
+		DisplayName = Pants - Tracksuit,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Icon = Pants_Athletic_Blue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Tracksuit_Skinny,
+		Insulation = 0.30,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		FabricType = Cotton,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Gloves_Firefighter
+	{
+		DisplayName = Gloves - Firefighter,
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.1,
+		Icon = GlovesFirefighter,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_Firefighter,
+		Insulation = 0.70,
+		ScratchDefense = 35,
+		BiteDefense = 10,
+		WindResistance = 0.70,
+		WorldStaticModel = Gloves_Ground,
+	}
+
+	item Gloves_Shooting
+	{
+		DisplayName = Gloves - Shooting,
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.1,
+		Icon = GlovesShooting,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_Shooting,
+		Insulation = 0.35,
+		ScratchDefense = 5,
+		WindResistance = 0.25,
+		WorldStaticModel = Gloves_Ground,
+	}
+
+	item Jacket_SmockDOWN
+	{
+		DisplayName = Jacket - Smock,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Weight = 2,
+		Icon = Jacket_Smock,
+		BiteDefense = 10,
+		BloodLocation = Jacket,
+		BodyLocation = Jacket_Bulky,
+		ClothingExtraSubmenu = DownHoodie,
+		ClothingItem = Jacket_SmockDOWN,
+		ClothingItemExtra = Jacket_Smock,
+		ClothingItemExtraOption = UpHoodie,
+		Insulation = 0.75,
+		NeckProtectionModifier = 0.05,
+		ScratchDefense = 25,
+		WaterResistance = 0.45,
+		WindResistance = 0.70,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item Jacket_Smock
+	{
+		DisplayName = Jacket - Smock,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Weight = 2,
+		Icon = Jacket_Smock,
+		BiteDefense = 10,
+		BloodLocation = Jumper;FullHelmet,
+		BodyLocation = JacketHat_Bulky,
+		ClothingExtraSubmenu = UpHoodie,
+		ClothingItem = Jacket_Smock,
+		ClothingItemExtra = Jacket_SmockDOWN,
+		ClothingItemExtraOption = DownHoodie,
+		Insulation = 0.75,
+		ScratchDefense = 25,
+		WaterResistance = 0.50,
+		WindResistance = 0.75,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item Jacket_SmockCamo
+	{
+		DisplayName = Jacket - Camo Smock,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Weight = 2,
+		IconsForTexture = Jacket_SmockCamo1;Jacket_SmockCamo2;Jacket_SmockCamo3,
+		BiteDefense = 10,
+		BloodLocation = Jumper;FullHelmet,
+		BodyLocation = JacketHat_Bulky,
+		ClothingExtraSubmenu = UpHoodie,
+		ClothingItem = Jacket_SmockCamo,
+		ClothingItemExtra = Jacket_SmockCamoDOWN,
+		ClothingItemExtraOption = DownHoodie,
+		Insulation = 0.75,
+		ScratchDefense = 25,
+		WaterResistance = 0.45,
+		WindResistance = 0.70,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item Jacket_SmockCamoDOWN
+	{
+		DisplayName = Jacket - Camo Smock,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Weight = 2,
+		IconsForTexture = Jacket_SmockCamo1;Jacket_SmockCamo2;Jacket_SmockCamo3,
+		BiteDefense = 10,
+		BloodLocation = Jacket,
+		BodyLocation = Jacket_Bulky,
+		ClothingExtraSubmenu = DownHoodie,
+		ClothingItem = Jacket_SmockCamoDOWN,
+		ClothingItemExtra = Jacket_SmockCamo,
+		ClothingItemExtraOption = UpHoodie,
+		Insulation = 0.75,
+		NeckProtectionModifier = 0.05,
+		ScratchDefense = 25,
+		WaterResistance = 0.45,
+		WindResistance = 0.70,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item Trousers_DenimRippedTEXTURE
+	{
+		DisplayName = Jeans - Ripped,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		IconsForTexture = Trousers_Denim_Ripped;Trousers_DenimDark_Ripped;Trousers_DenimLight_Ripped,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_DenimRippedTEXTURE,
+		FabricType = Denim,
+		Insulation = 0.55,
+		ScratchDefense = 10,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Vest_BodyWarmer
+	{
+		DisplayName = Body Warmer,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Icon = BodyWarmer,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = TorsoExtraVest,
+		ClothingItem = Vest_BodyWarmer,
+		BiteDefense = 5,
+		ScratchDefense = 10,
+		Insulation = 0.30,
+		ScratchDefense = 10,
+		WindResistance = 0.15,
+		WorldStaticModel = HuntingVest_Ground,
+	}
+
+	item Shorts_Booty
+	{
+		DisplayName = Shorts - Booty,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		Icon = ShortsDenim,
+		BiteDefense = 10,
+		BloodLocation = ShortsShort,
+		BodyLocation = base:shortsshort,
+		ClothingItem = Shorts_Booty,
+		FabricType = Denim,
+		Insulation = 0.15,
+		ScratchDefense = 10,
+		WindResistance = 0.05,
+		WorldStaticModel = ShortShorts_Ground,
+		Tags = base:ripclothingdenim,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Hat_ShemaghFace_Skull
+	{
+		DisplayName = Shemagh - Skull (Open Face),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Skull,
+		BloodLocation = Neck;Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace_Skull,
+
+		ClothingItemExtra = Hat_ShemaghFull_Skull;ShemaghScarf_Skull;ShemaghScarfFace_Skull,
+		ClothingItemExtraOption = CoverFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+
+	}
+
+	item Hat_ShemaghFull_Skull
+	{
+		DisplayName = Shemagh - Skull (Fully Closed),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Skull,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull_Skull,
+
+		ClothingItemExtra = Hat_ShemaghFace_Skull;ShemaghScarf_Skull;ShemaghScarfFace_Skull,
+		ClothingItemExtraOption = RevealFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = base:isdisguise;base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item ShemaghScarf_Skull
+	{
+		DisplayName = Shemagh - Skull (Scarf),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Skull,
+		BloodLocation = Neck,
+		BodyLocation = Scarf,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarf_Skull,
+
+		ClothingItemExtra = Hat_ShemaghFull_Skull;Hat_ShemaghFace_Skull;ShemaghScarfFace_Skull,
+		ClothingItemExtraOption = CoverHeadFully;CoverHead;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item ShemaghScarfFace_Skull
+	{
+		DisplayName = Shemagh - Skull (Face Covering Scarf),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Skull,
+		BloodLocation = Neck;Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarfFace_Skull,
+
+		ClothingItemExtra = ShemaghScarf_Skull;Hat_ShemaghFull_Skull;Hat_ShemaghFace_Skull,
+		ClothingItemExtraOption = Scarf;CoverHeadFully;CoverHead,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = base:islowerdisguise;base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item Hat_ShemaghFace_Plain
+	{
+		DisplayName = Shemagh - Plain (Open Face),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Plain,
+		BloodLocation = Neck;Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace_Plain,
+
+		ClothingItemExtra = Hat_ShemaghFull_Plain;ShemaghScarf_Plain;ShemaghScarfFace_Plain,
+		ClothingItemExtraOption = CoverFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+
+	}
+
+	item Hat_ShemaghFull_Plain
+	{
+		DisplayName = Shemagh - Plain (Fully Closed),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Plain,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull_Plain,
+
+		ClothingItemExtra = Hat_ShemaghFace_Plain;ShemaghScarf_Plain;ShemaghScarfFace_Plain,
+		ClothingItemExtraOption = RevealFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = base:isdisguise;base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item ShemaghScarf_Plain
+	{
+		DisplayName = Shemagh - Plain (Scarf),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Plain,
+		BloodLocation = Neck,
+		BodyLocation = Scarf,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarf_Plain,
+
+		ClothingItemExtra = Hat_ShemaghFull_Plain;Hat_ShemaghFace_Plain;ShemaghScarfFace_Plain,
+		ClothingItemExtraOption = CoverHeadFully;CoverHead;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item ShemaghScarfFace_Plain
+	{
+		DisplayName = Shemagh - Plain (Face Covering Scarf),
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Plain,
+		BloodLocation = Neck;Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarfFace_Plain,
+
+		ClothingItemExtra = ShemaghScarf_Plain;Hat_ShemaghFull_Plain;Hat_ShemaghFace_Plain,
+		ClothingItemExtraOption = Scarf;CoverHeadFully;CoverHead,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = base:islowerdisguise;base:isfirefuel;base:isfiretinder;base:ignorezombiedensity,
+	}
+
+	item Hat_Bandana_Skull
+	{
+		DisplayName = Skull Bandana - Head,
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.2,
+		Icon = Bandanna_Rag,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_Bandana_Skull,
+		ClothingItemExtra = Hat_BandanaTied_Skull;Hat_BandanaMask_Skull,
+		ClothingItemExtraOption = TieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+        Tags = base:norope;base:fitswallet,
+	}
+
+	item Hat_BandanaMask_Skull
+	{
+		DisplayName = Skull Bandana - Face,
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.2,
+		Icon = BandanaSkull,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaMask_Skull,
+		ClothingItemExtra = Hat_Bandana_Skull;Hat_BandanaTied_Skull,
+		ClothingItemExtraOption = UntieBandana;TieBandana,
+		Insulation = 0.10,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		FabricType = Cotton,
+		Tags = base:norope;islowerdisguise;fitswallet,
+	}
+
+	item Hat_BandanaTied_Skull
+	{
+		DisplayName = Skull Bandana - Tied,
+		DisplayCategory = Accessory,
+		ItemType = base:clothing,
+		Weight = 0.2,
+		Icon = RamboBandanna_Rag,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaTied_Skull,
+		ClothingItemExtra = Hat_Bandana_Skull;Hat_BandanaMask_Skull,
+		ClothingItemExtraOption = UntieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = base:norope,
+	}
+
+	item Trousers_Cargo
+	{
+		DisplayName = Cargo Pants,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		IconsForTexture = CargoPants;CargoPants1;CargoPants2;CargoPants3,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Cargo,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		ScratchDefense = 20,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+  	item Jacket_EMS
+   	{
+		DisplayName = Jacket - EMS,
+		DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 2.0,
+        Icon = JacketEMS,
+        BiteDefense = 20,
+        BloodLocation = Jacket,
+        BodyLocation = base:jacket,
+        ClothingItem = Jacket_EMS,
+        FabricType = Cotton,
+        Insulation = 0.5,
+        NeckProtectionModifier = 0.5,
+        RunSpeedModifier = 0.95,
+        ScratchDefense = 30,
+        WaterResistance = 0.25,
+        WindResistance = 0.6,
+        WorldStaticModel = Jacket_Ground,
+        Tags = base:ripclothingcotton,
+    }	
+
+    item Trousers_EMS
+    {
+		DisplayName = Pants - EMS,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = TrousersEMS,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants,
+        ClothingItem = Trousers_EMS,
+        FabricType = Cotton,
+        Insulation = 0.35,
+        ScratchDefense = 10,
+        WindResistance = 0.5,
+        WorldStaticModel = Trousers_Ground,
+        Tags = base:ripclothingcotton,
+        Researchablerecipes = SewTrousers,
+    }
+	
+    	item Tshirt_EMS
+    	{
+		DisplayName = T-shirt - EMS,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = TshirtEMS;TshirtEMS1,
+        BloodLocation = Shirt,
+        BodyLocation = base:tshirt,
+        ClothingItem = Tshirt_EMS,
+        FabricType = Cotton,
+        Insulation = 0.2,
+        WindResistance = 0.15,
+        WorldStaticModel = TShirt_Ground,
+        Tags = base:ripclothingcotton,
+    }
+	
+    	item Shirt_EMS
+    {
+		DisplayName = Shirt - EMS,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = ShirtEMS,
+        BloodLocation = ShirtLongSleeves,
+        BodyLocation = base:shirt,
+        ClothingItem = Shirt_EMS,
+        FabricType = Cotton,
+        Insulation = 0.4,
+        WindResistance = 0.35,
+        WorldStaticModel = Shirt_Ground,
+        Tags = base:ripclothingcotton,
+        Researchablerecipes = SewShirt;SewShirtSleeveless,
+ 	  }
+	
+    	item Hat_BaseballCap_EMS
+    {
+		DisplayName = Baseball Cap - EMS,
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+		Icon = BaseballHat_EMS,
+        Weight = 0.5,
+        BodyLocation = base:hat,
+        CanHaveHoles = false,
+        ChanceToFall = 60,
+        ClothingExtraSubmenu = ForwardCap,
+        ClothingItem = Hat_BaseballCap_EMS,
+        ClothingItemExtra = Hat_BaseballCap_EMS_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+        Insulation = 0.1,
+        Tags = base:isfirefuel;base:isfiretinder,
+    }
+
+    	item Hat_BaseballCap_EMS_Reverse
+    {
+		DisplayName = Baseball Cap - EMS,
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+		Icon = BaseballHat_EMS,
+        Weight = 0.5,
+        BodyLocation = base:hat,
+        CanHaveHoles = false,
+        ChanceToFall = 60,
+        ClothingExtraSubmenu = ReverseCap,
+        ClothingItem = Hat_BaseballCap_EMS_Reverse,
+        ClothingItemExtra = Hat_BaseballCap_EMS,
+        ClothingItemExtraOption = ForwardCap,
+        Insulation = 0.1,
+        Tags = base:isfirefuel;base:isfiretinder,
+    }
+
+    	item Jacket_Winter
+    {
+		DisplayName = Winter Jacket,
+		DisplayCategory = Clothing,
+        ItemType = base:clothing,
+		IconsForTexture = Jacket_Winter_Orange;Jacket_Winter_Brown;Jacket_Winter_Green,
+		Weight = 2.5,
+		BiteDefense = 15,
+        BloodLocation = Jacket,
+        BodyLocation = base:jacket,
+        ClothingItem = Jacket_Winter,
+        FabricType = Cotton,
+		ScratchDefense = 30,
+		RunSpeedModifier = 0.94,
+        Insulation = 0.95,
+		WaterResistance = 0.35,
+        WindResistance = 0.45,
+        WorldStaticModel = Jacket_Ground,
+    }
+
+    	item Skirt_Knees_Kilt
+    {
+		DisplayName = Kilt,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = Kilt_Green;Kilt_Blue;Kilt_Red,
+        BloodLocation = ShortsShort;Shirt,
+        BodyLocation = base:skirt,
+        ClothingItem = Skirt_Knees_Kilt,
+        FabricType = Cotton,
+        Insulation = 0.15,
+        WindResistance = 0.2,
+        WorldStaticModel = Dress_Short_Ground,
+        Tags = base:ripclothingcotton;base:noragdoll,
+        Researchablerecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+    }
+
+    	item TightsLatex
+    {
+		DisplayName = Tights - Latex,
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.1,
+        Icon = PantyhoseOpaque,
+        BodyLocation = base:underwearextra1,
+        ClothingItem = TightsLatex,
+        WorldStaticModel = TightsBlack_Ground,
+        Tags = base:isfirefuel;base:isfiretinder,
+    }
+
+    	item Dress_Belted
+    {
+		DisplayName = Belted Dress,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = Dress_Belted_Red;Dress_Belted_Blue;Dress_Belted_Black;Dress_Belted_Purple,
+        BloodLocation = ShortsShort;Shirt,
+        BodyLocation = base:dress,
+       	ClothingItem = Dress_Belted,
+       	FabricType = Cotton,
+        Insulation = 0.15,
+		RunSpeedModifier = 0.98,
+        WindResistance = 0.1,
+        WorldStaticModel = Dress_Mid_Ground,
+        Tags = base:isfirefuel;base:ripclothingcotton;base:noragdoll,
+    }
+
+    	item Jacket_Field
+    {
+		DisplayName = Field Jacket,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 2,
+        Icon = Jacket_Field,
+        BiteDefense = 20,
+        BloodLocation = LongJacket,
+        BodyLocation = base:jacket,
+        ClothingItem = Jacket_Field,
+        FabricType = Cotton,
+        Insulation = 0.7,
+        NeckProtectionModifier = 0.5,
+		RunSpeedModifier = 0.95,
+        ScratchDefense = 40,
+        WaterResistance = 0.55,
+        WindResistance = 0.45,
+        WorldStaticModel = JacketLong_Ground,
+        Researchablerecipes = SewHideCoat;SewHideJacket;SewHideHoodie,
+    }
+
+    	item Vest_Utility
+    {
+		DisplayName = Utility Vest,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = ConstructionVest,
+        BloodLocation = ShirtNoSleeves,
+        BodyLocation = base:torsoextravest,
+        ClothingItem = Vest_Utility,
+		BiteDefense = 5,
+		ScratchDefense = 10,
+        Insulation = 0.2,
+        ScratchDefense = 10,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+
+    	item Shorts_Gym
+    {
+		DisplayName = Shorts - Gym,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = ShortsAthleticBlue,
+        BloodLocation = ShortsShort,
+        BodyLocation = base:shortsshort,
+        ClothingItem = Shorts_Gym,
+        Insulation = 0.08,
+        WindResistance = 0.08,
+        WorldStaticModel = ShortShorts_Ground,
+        Researchablerecipes = SewTrousers,
+    }
+	
+    item LongCoat_Parka
+    {
+		DisplayName = Winter Parka,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = Jacket_Parka;Jacket_Parka1;Jacket_Parka2,
+		Weight = 3.5,
+        BloodLocation = Trousers;Jumper,
+        BodyLocation = base:jacket,
+        ClothingItem = LongCoat_Parka,
+        FabricType = Cotton,
+        Insulation = 0.98,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 35,
+		BiteDefense = 25,
+        WindResistance = 0.75,
+		WaterResistance = 0.5,
+        WorldStaticModel = Bathrobe_Ground,
+        Tags = base:ripclothingcotton,
+    }
+	
+    item LongCoat_Parka_HuntingCamo
+    {
+		DisplayName = Winter Parka - Hunting Camo,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = Jacket_Parka_CamoTree,
+		Weight = 3.5,
+        BloodLocation = Trousers;Jumper,
+        BodyLocation = base:jacket,
+        ClothingItem = LongCoat_Parka_HuntingCamo,
+        FabricType = Cotton,
+        Insulation = 0.98,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 35,
+		BiteDefense = 25,
+        WindResistance = 0.75,
+		WaterResistance = 0.5,
+        WorldStaticModel = Bathrobe_Ground,
+        Tags = base:ripclothingcotton,
+    }
+
+    item Dungarees_Short
+    {
+	DisplayName = Short Overalls,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = OverallShorts;OverallShorts1;OverallShorts2,
+        ScratchDefense = 10,
+        BloodLocation = Trousers;ShirtNoSleeves,
+        BodyLocation = base:pantsextra,
+        ClothingItem = Dungarees_Short,
+        FabricType = Denim,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        WorldStaticModel = Dungarees_Ground,
+        Tags = base:ripclothingdenim,
+        Researchablerecipes = SewTrousers,
+    }
+	
+    item HoodieDOWN_Tracksuit
+    {
+		DisplayName = Hoodie - Tracksuit,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = HoodieTracksuit;HoodieTracksuit1,
+        BloodLocation = Jumper,
+        BodyLocation = base:sweater,
+        ClothingExtraSubmenu = DownHoodie,
+        ClothingItem = HoodieDOWN_Tracksuit,
+        ClothingItemExtra = VOE.HoodieUP_Tracksuit,
+        ClothingItemExtraOption = UpHoodie,
+        FabricType = Cotton,
+        Insulation = 0.5,
+        NeckProtectionModifier = 0.5,
+        ScratchDefense = 10,
+        WindResistance = 0.25,
+        WorldStaticModel = Hoodie_Ground,
+        Tags = base:canbedyed;base:ripclothingcotton,
+    }
+
+    item HoodieUP_Tracksuit
+    {
+		DisplayName = Hoodie - Tracksuit,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = HoodieTracksuit;HoodieTracksuit1,
+        BloodLocation = Jumper;Neck;FullHelmet,
+        BodyLocation = base:sweaterhat,
+        ClothingExtraSubmenu = UpHoodie,
+        ClothingItem = HoodieUP_Tracksuit,
+        ClothingItemExtra = VOE.HoodieDOWN_Tracksuit,
+        ClothingItemExtraOption = DownHoodie,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        ScratchDefense = 10,
+        WindResistance = 0.2,
+        WorldStaticModel = Hoodie_Ground,
+        Tags = base:canbedyed;base:ripclothingcotton,
+    }
+	
+	item Trousers_Cargo_Camo
+	{
+		DisplayName = Cargo Pants - Camouflage,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		IconsForTexture = CargoCamo;CargoCamo1;CargoCamo2;CargoCamo3,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Cargo_Camo,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		ScratchDefense = 20,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+		item Trousers_Cargo_Camo_Tucked
+	{
+		DisplayName = Cargo Pants - Camouflage,
+		DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		IconsForTexture = CargoCamo;CargoCamo1;CargoCamo2;CargoCamo3,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Cargo_Camo_Tucked,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		ScratchDefense = 20,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = base:ripclothingcotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+    	item TightsLatexShort
+    {
+		DisplayName = Short Tights - Latex,
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.1,
+        Icon = PantyhoseOpaque,
+        BodyLocation = base:underwearextra1,
+        ClothingItem = TightsLatexShort,
+        WorldStaticModel = TightsBlack_Ground,
+        Tags = base:isfirefuel;base:isfiretinder,
+    }
+	
+	    item Trousers_JeanRegular
+    {
+		DisplayName = Jeans - Regular,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        IconsForTexture = TrousersDenimBlue;TrousersDenimBlack;TrousersDenimLightBlue,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants,
+        ClothingItem = Trousers_JeanRegular,
+        FabricType = Denim,
+        Insulation = 0.7,
+        RunSpeedModifier = 0.99,
+        ScratchDefense = 20,
+        WindResistance = 0.55,
+        WorldStaticModel = Trousers_Ground,
+        Tags = base:ripclothingdenim,
+        Researchablerecipes = SewTrousers,
+    }
+	
+    item Jacket_Denim
+    {
+		DisplayName = Jacket - Denim,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 2.0,
+        IconsForTexture = Jacket_Denim;Jacket_Denim1;Jacket_Denim2;Jacket_Denim3,
+        BiteDefense = 15,
+        BloodLocation = Jacket,
+        BodyLocation = base:jacket,
+        ClothingItem = Jacket_Denim,
+        CombatSpeedModifier = 0.97,
+        FabricType = Denim,
+        Insulation = 0.4,
+        ScratchDefense = 30,
+        WaterResistance = 0.4,
+        WindResistance = 0.6,
+        WorldStaticModel = JacketCoat_Ground,
+        Tags = base:ripclothingdenim,
+    }
+	
+    item Skirt_Frilly
+    {
+		DisplayName = Skirt - Frilly,
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = SkirtGeneric,
+        BloodLocation = ShortsShort,
+        BodyLocation = base:skirt,
+        ClothingItem = Skirt_Frilly,
+        FabricType = Cotton,
+        Insulation = 0.1,
+        WindResistance = 0.01,
+        WorldStaticModel = Skirt_Short_Ground,
+        Tags = base:canbedyed;base:ripclothingcotton;base:noragdoll,
+        Researchablerecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+    }
+
+}

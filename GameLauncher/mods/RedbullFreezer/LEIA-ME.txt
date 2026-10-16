@@ -1,0 +1,39 @@
+REMOÇÃO SEGURA — BUILD 42.21
+Antes de desativar esta aparência em um mundo existente, faça backup e siga REMOCAO-SEGURA.md, incluído nesta pasta.
+Em mundo íntegro, ative VINI Furniture Recovery [B42] (ViniFridgeRecovery) com a aparência ainda ativa; carregue, salve e feche antes de desativar a aparência. Mantenha o Recovery ativo enquanto houver regiões não visitadas, móveis guardados ou tipos Dr Pepper ainda presentes. Não cancele todos os pacotes provedores sem preparar uma cópia independente completa do suporte.
+Em multiplayer, servidor e jogadores precisam dos mesmos arquivos. Em mundo já afetado por remoção/conflito, trabalhe numa cópia e siga o guia completo.
+O suporte requer Build 42.21. Guia completo: ../ViniFridgeRecovery/common/SAFE-REMOVAL-GUIDE.md.
+
+SAFE REMOVAL — BUILD 42.21
+Back up and follow REMOCAO-SEGURA.md before disabling this appearance in an existing world. For an undamaged world, enable VINI Furniture Recovery while the appearance is still active; load, save and close before disabling the appearance. Keep Recovery for unseen regions, stored furniture and remaining Dr Pepper types. Keep a supplying package or a complete standalone copy; servers and players need matching files. Work on a copy of an already affected world. Full guide: ../ViniFridgeRecovery/common/SAFE-REMOVAL-GUIDE.md.
+
+Redbull Freezer 1.1.0 — Build 42
+
+ID: RedbullFreezer
+Versão mínima: 42.20.4
+
+Instalação pela Steam Workshop: inscreva-se, aguarde o download e ative Redbull Freezer [B42] no jogo. Para conferir um pacote local, use um perfil de teste isolado; não ative duas cópias com o mesmo ID.
+
+Personaliza o mini freezer de baú de um quadrado. Mantém sua capacidade e propriedades nativas. Inclui quatro orientações, nome Redbull Freezer, ícones próprios e luz azul ligada à energia.
+
+Preenchimento visual: abaixo de 15%, vazio; de 15% a menos de 30%, latas e gelo; a partir de 30%, cheio. Funciona ligado ou desligado. Não limita o armazenamento: você pode continuar adicionando itens normalmente. Letras ampliadas e bordas suavizadas.
+
+Nick's Turn Off Fridges: integração testada com seu código instalado, nas duas ordens de carregamento, incluindo modo manual, automático, gerador e comandos de servidor/cliente simulados. O modo automático usa a quantidade real de itens, independentemente do visual abaixo de 15%.
+
+Sandbox > Redbull Freezer: 1%, 5%, 10%, 15%, 25%, 35%, 50%, 75%, 90% ou 100% (padrão). Cada porcentagem é a chance de um mini freezer existente usar o visual Redbull. Não aumenta a quantidade de objetos no mapa.
+
+Traduções: AR, CH, CN, CS, DA, DE, EN, ES, ES_CL, ES_MX, FI, FR, HU, ID, IT, JP, KO, NL, NO, PL, PT, PTBR, RU, TH, TR e UA.
+
+Testes automatizados e leitura pelo motor B42 aprovados. Conferência gráfica em um mapa, salvar/reabrir e multiplayer com jogadores ainda pendentes. Use um mundo de teste para a primeira conferência.
+
+Sem dependências obrigatórias de Project Viewpoint ou dos outros mods de freezer/geladeira.
+
+Project Viewpoint (opcional)
+
+Inclui modelos 3D baseados nos sprites originais, nas quatro direções e nos três preenchimentos, com e sem energia. Ativa somente com o Project Viewpoint ativo e sua API disponível; também considera o Viewpoint instalado apenas no cliente multiplayer. Não substitui sprites de outros mods.
+
+Sem Viewpoint, os sprites e os scripts normais continuam funcionando. Capacidade, inventários, refrigeração, iluminação azul, sons, opções de spawn, transporte, integração com Nick e identificadores dos saves permanecem os mesmos.
+
+Após o download, reinicie o jogo. Nas opções do Viewpoint (Delete), ative 3D model packs e Redbull Freezer [B42], e deixe a distância dos modelos acima de zero. O preset Low utiliza sprites. Guia completo: common/PROJECT-VIEWPOINT.md.
+
+As prévias do pacote são renderizações técnicas por CPU. A conferência gráfica em partida com Viewpoint e uma conexão multiplayer real ainda são necessárias.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Held/Shotgun</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Held/Shotgun</m_FemaleModel>
+  <m_GUID>cb33cc90-83b4-2c26-9e3b-b362fb041e31</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/firearm/PumpAction_Shotgun</textureChoices>
+</clothingItem>

@@ -1,0 +1,55 @@
+DOCUMENTATION PATCH — 2026-10-16
+Safe-removal instructions are now visible in REMOCAO-SEGURA.md and the main readme of each of the five appearance packages. Monster's obsolete disable-and-restart instruction is corrected. The included Recovery guide remains unchanged.
+These current removal instructions supersede removal wording in the historical notes below. Setting 0% alone does not migrate unseen areas or stored references. Recovery must remain active while those references or retained Dr Pepper types remain. This documentation patch does not change gameplay files, art, saved identifiers or game-mod versions.
+
+1.4.0 - Refined freezer artwork and seamless in-game rendering
+Reworked the metal frame, center divider and corners for a continuous, aligned finish. Improved the Coca-Cola lettering while preserving the approved freezer design.
+Updated both orientations and all six power/fill combinations. Empty compartments contain no cans; partial and full appearances show 3 and 6 decorative cans per compartment. Below 15% occupancy looks empty, from 15% looks partial, and from 30% looks full. The more occupied compartment determines the shared visual level; actual items and capacity remain unchanged.
+Corrected the gap between the freezer halves caused by the native B42 depth cut. Texture pixels now belong to the appropriate half without changing the approved assembled artwork or native depth definitions.
+Unpowered interiors retain their neutral gray metal without powered illumination. Existing distribution percentages, saved identifiers, native sounds, inventory behavior and Nick's manual unplug support are preserved.
+Updated the Mods-menu description in all 26 supported language selections to explain the visual stages and unchanged capacity.
+
+1.3.0 - Ten appearance percentages (unpublished local draft)
+Fixed the old interior showing through during transparency and certain viewing positions. Each powered/unpowered fill state now uses one complete native sprite, with no obsolete interior underneath. All 12 normal views retain the exact approved artwork pixels and native picking silhouettes. Mixed visual states remain compatible with native pickup and rotation. Original tile IDs remain registered, and the native ICE pixel fix is preserved.
+Choose 1%, 5%, 10%, 15%, 25%, 35%, 50%, 75%, 90% or 100% Coca-Cola ICE freezers. Default: 100%. Each value now uses its exact probability instead of rounding to multiples of 25. Updated menu descriptions and per-option help in all 26 language selections.
+Saved percentages, including legacy 0%, retain their numerical value. Opening and saving the menu does not change a saved setting. Existing per-freezer rolls and matching appearances across both halves remain preserved. Artwork, lighting, filling, storage and audio are unchanged.
+
+1.2.2 - Restore visible red illumination
+Restored the original red-light intensity on each powered half. The previous split-light update halved the per-source RGB values, making the glow difficult to see after lighting falloff. Both halves still emit equally, with the same short radius. Sources removed from the native lighting registry are recreated safely; managed RGB and active state are restored during refresh. Unplugged or unpowered halves remain dark.
+Art, textures, filling thresholds, storage, sounds and translations are unchanged. Automated Lua and native B42 checks passed for intensity, power, source recovery and Nick compatibility. In-map visual confirmation of this revised intensity is pending.
+
+1.2.1 - Balanced two-half lighting
+Fixed asymmetric red illumination caused by placing the light on only one square of the two-tile freezer. Each powered half now owns an equal half-strength light. The complete freezer retains the previous nominal combined RGB emission; surviving halves do not change intensity when a neighbour unloads or is unplugged. Cleanup, native power checks and Nick's manual unplug state remain respected. Art, capacity, contents, translations and sound files are unchanged.
+Validated through Lua regression tests and B42 native light registration. Visual confirmation in the actual map is still required. 
+
+1.2.0 - Dynamic interiors and a subtle red glow
+Visual contents use the more occupied individual compartment: below 15% empty, 15% partially filled, and 30% fully filled. Both halves share the visual level; inventory items, weights and capacity remain independent and unchanged. Reworked interior cans and ice with distinct powered and unpowered appearances. Original exterior textures and the original ICE pixel correction are preserved.
+Added one subtle red light per Coca-Cola freezer, controlled by native electricity and manual unplug state. Prevented the duplicate native lit-lid render pass, retained Nick's off-state marker, and added native B42 depth assignments to the interior overlays. Existing distribution, movable IDs, storage properties, audio, icons and 26 language selections are retained.
+Automated tests use Lua fixtures and the installed B42 engine; perceived lighting, actual GPU rendering and live multiplayer require in-game validation.
+
+1.1.1 - Multilingual interface
+Localized sandbox labels and option tooltips, container names, compartment tooltips, movable furniture names, and Mods-menu name/description. Added the requested languages, including all three Latin American Spanish selections. Fixed the Coca-Cola movable translation key. Follows the game language; gameplay, textures, sounds and saved identifiers are unchanged.
+
+[h1]1.1.0 — Choose your mix, enjoy a refined design[/h1]
+[list]
+[*]Added five sandbox choices: 0%, 25%, 50%, 75% and 100% Coca-Cola ICE freezers. Default: 100%. Includes per-choice hover descriptions in English, Brazilian Portuguese and European Portuguese.
+[*]Improved textures on both orientations, with cleaner top metal frames, lid divider and lower trim while preserving the Coca-Cola design.
+[*]Removed the isolated floor pixel from both the Coca-Cola freezer and the original ICE texture. The original correction remains active at 0% while the mod is enabled.
+[*]Fixed the interaction with Nick's Turn Off Fridges that repeatedly cleared its invisible off-state overlay and made the glass flicker. Off-state markers and unrelated overlays are respected.
+[*]Preserved native freezer sounds and the hum recovery after reconnecting a loaded, unplugged freezer, with power checks and emitter deduplication.
+[*]Added a Coca-Freezer container-panel title and custom icon only for Coca-Cola freezer objects. Original and unrelated freezer buttons remain unchanged.
+[*]Updated the small Mods-menu icon for better readability.
+[*]Refreshed the Workshop presentation and English description; retained the Sketchfab preview and Monster fridge recommendation.
+[/list]
+[h2]Technical and save compatibility[/h2]
+[list]
+[*]Mod ID: CocaColaICEFreezer. Workshop ID: 3796500904. Built and checked against Project Zomboid 42.20.4; minimum version remains 42.20.4.
+[*]Chance remains a numeric percentage in save/server data; the UI presents five choices instead of a text field. Earlier test values are rounded to the nearest supported choice.
+[*]Server-side appearance selection uses a persisted world seed and per-object roll. Both halves share the selection; the native ForceSingleItem pickup/placement path retains it. Changing the setting can change appearances as objects load or are placed.
+[*]Coca-Cola sprites use their own tile definitions (3796). Native capacity, cooling-related properties, pickup requirements, placement links and sound properties are retained.
+[*]The original ICE fix overrides appliances_refrigeration_01_20 and changes only the isolated pixel's alpha. Other mods replacing this same texture can conflict depending on load order.
+[*]For multiplayer, enable the mod on the server and clients; the server controls the percentage. Automated network-path tests passed, but a live multiplayer session has not been validated for this release.
+[*]Existing saves can use this update. Keep the mod enabled once its custom freezers are saved. Do not disable it or downgrade to 1.0.3 in those saves without restoring a suitable backup: custom world sprites and stored moveable items depend on these definitions. Setting 0% alone does not migrate unloaded map areas or stored items.
+[/list]
+[h2]Validation[/h2]
+Six automated suites passed, combining the installed game engine and native Lua functions with simulated objects: 20,000 complete-freezer distribution cases, pickup and placement, serialization, localized sandbox controls, inventory-button isolation and texture alignment. The installed Nick's Core/Light code passed 80 on/off cycles and 14,400 refreshes. The author also tested in-game and supplied updated screenshots. These checks do not guarantee compatibility with every mod combination.

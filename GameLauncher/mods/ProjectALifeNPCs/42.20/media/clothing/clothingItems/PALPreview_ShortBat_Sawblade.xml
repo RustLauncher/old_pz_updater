@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/1handed/MaceHandle_CircularSaw_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/1handed/MaceHandle_CircularSaw_Hand</m_FemaleModel>
+  <m_GUID>62e8d378-53ff-593b-a414-8464923d6842</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/1handed/MaceHandle_RailSkp_CirSaw</textureChoices>
+</clothingItem>

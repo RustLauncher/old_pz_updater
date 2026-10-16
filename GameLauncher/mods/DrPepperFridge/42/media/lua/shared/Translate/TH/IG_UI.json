@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "ตู้เย็น Dr Pepper",
+  "IGUI_DrPepperFridge_WornName": "ตู้เย็น Dr Pepper เก่า",
+  "IGUI_DrPepperFridge_Fridge": "ตู้เย็น Dr Pepper",
+  "IGUI_DrPepperFridge_Freezer": "ตู้แช่แข็ง Dr Pepper",
+  "IGUI_DrPepperFridge_WornFridge": "ตู้เย็น Dr Pepper เก่า",
+  "IGUI_DrPepperFridge_WornFreezer": "ตู้แช่แข็ง Dr Pepper เก่า",
+  "IGUI_DrPepperFridge_StockHint": "เปอร์เซ็นต์ความจุที่ใช้เพื่อเริ่มภาพระดับนี้ ไม่เปลี่ยนความจุจริง ระบบเรียงเกณฑ์ให้อัตโนมัติ"
+}

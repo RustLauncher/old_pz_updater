@@ -1,0 +1,225 @@
+@alife-records 1
+
+arch va_baptist_preacher
+  a.label Baptist preacher
+  a.carrier alife_vis_churchfolk
+  a.taste religion,history,biography
+  a.arr 82b3g2i2
+end
+
+arch va_bar_musician
+  a.label Bar musician
+  a.carrier alife_vis_roughharmless
+  a.taste biography,poetry,humor
+  a.arr 0243a2g2
+end
+
+arch va_bartender
+  a.label Bartender
+  a.carrier alife_vis_roughharmless
+  a.taste mystery,humor
+  a.arr 0242a2g2
+end
+
+arch va_carpenter
+  a.label Carpenter
+  a.carrier alife_vis_trades
+  a.taste history,western
+  a.arr 4282e2g3
+end
+
+arch va_conspiracy_talker
+  a.label Conspiracy talker
+  a.carrier alife_vis_outsiders
+  a.taste true_crime,history,thriller
+  a.arr 024283g2
+end
+
+arch va_deacon
+  a.label Deacon
+  a.carrier alife_vis_churchfolk
+  a.taste religion,history
+  a.arr 8392g2i2
+end
+
+arch va_drifter_addict
+  a.label Drifter in withdrawal
+  a.carrier alife_vis_drifters
+  a.taste scifi,true_crime
+  a.arr 04425262
+end
+
+arch va_factory_laidoff
+  a.label Laid-off plant worker
+  a.carrier alife_vis_laidoff
+  a.taste sports,true_crime
+  a.arr 0342g2i3
+end
+
+arch va_farm_widow
+  a.label Farm widow
+  a.carrier alife_vis_elders
+  a.taste religion,romance
+  a.arr 8292k3m2
+end
+
+arch va_guardsman_offduty
+  a.label Guardsman, off duty
+  a.carrier alife_vis_exservice
+  a.taste war,sports,thriller
+  a.arr 5262g3l1m2
+end
+
+arch va_hispanic_farmworker
+  a.label Tobacco farmworker
+  a.carrier alife_vis_families
+  a.taste religion,humor
+  a.arr 4282i3m3
+end
+
+arch va_house_painter
+  a.label House painter
+  a.carrier alife_vis_trades
+  a.taste humor,sports
+  a.arr 0242e2g3
+end
+
+arch va_housewife
+  a.label Homemaker
+  a.carrier alife_vis_families
+  a.taste romance,mystery,cooking
+  a.arr 83e2i3m2
+end
+
+arch va_insurance_agent
+  a.label Insurance agent
+  a.carrier alife_vis_outsiders
+  a.taste self_help,thriller
+  a.arr 014282g2m2
+end
+
+arch va_librarian
+  a.label Librarian
+  a.carrier alife_vis_neighbours
+  a.taste classic,mystery,history
+  a.arr 8292g2m2
+end
+
+arch va_lineman
+  a.label Utility lineman
+  a.carrier alife_vis_trades
+  a.taste sports,western
+  a.arr 425262g3
+end
+
+arch va_mechanic
+  a.label Mechanic
+  a.carrier alife_vis_trades
+  a.taste true_crime,sports
+  a.arr 0142e2g3
+end
+
+arch va_mennonite_neighbour
+  a.label Mennonite neighbour
+  a.carrier alife_vis_elders
+  a.taste religion,farming
+  a.arr 83e2g2m2
+end
+
+arch va_nurse_aide
+  a.label Nurse aide
+  a.carrier alife_vis_medical
+  a.taste romance,mystery,horror
+  a.arr 4261c2i2n3
+end
+
+arch va_reformed_ex_con
+  a.label Ex-con, reformed
+  a.carrier alife_vis_roughharmless
+  a.taste true_crime,religion,western
+  a.arr 024291g3
+end
+
+arch va_retired_teacher
+  a.label Retired teacher
+  a.carrier alife_vis_elders
+  a.taste classic,poetry,history
+  a.arr 8292k2m2
+end
+
+arch va_runaway_young_adult
+  a.label Runaway
+  a.carrier alife_vis_drifters
+  a.taste scifi,horror
+  a.arr 03435361
+end
+
+arch va_rural_doctor
+  a.label Country doctor
+  a.carrier alife_vis_medical
+  a.taste history,biography,classic
+  a.arr c4g2m1n3
+end
+
+arch va_short_order_cook
+  a.label Short-order cook
+  a.carrier alife_vis_neighbours
+  a.taste true_crime,humor
+  a.arr 024282g3
+end
+
+arch va_student_college
+  a.label College student
+  a.carrier alife_vis_youngadults
+  a.taste scifi,humor,fantasy
+  a.arr 024253g2
+end
+
+arch va_teacher
+  a.label Schoolteacher
+  a.carrier alife_vis_neighbours
+  a.taste classic,history,mystery
+  a.arr 82g2i2m2
+end
+
+arch va_tobacco_farmer
+  a.label Tobacco farmer
+  a.carrier alife_vis_neighbours
+  a.taste farming,western,religion
+  a.arr 83e2g2i2
+end
+
+arch va_travelling_salesman
+  a.label Traveling salesman
+  a.carrier alife_vis_outsiders
+  a.taste biography,self_help,humor
+  a.arr 0243d2g2m2
+end
+
+arch va_trucker
+  a.label Long-haul trucker
+  a.carrier alife_vis_outsiders
+  a.taste western,true_crime
+  a.arr 4352g2m2
+end
+
+arch va_vet_korea
+  a.label Korean War veteran
+  a.carrier alife_vis_exservice
+  a.taste war,history
+  a.arr 024282k2m2
+end
+
+arch va_vet_wwii
+  a.label World War II veteran
+  a.carrier alife_vis_elders
+  a.taste war,history,western
+  a.arr 8392k2m3
+end
+
+arch va_veterinarian
+  a.label Veterinarian
+  a.carrier alife_vis_medical
+  a.taste farming,biography
+  a.arr c3g2m1n3
+end

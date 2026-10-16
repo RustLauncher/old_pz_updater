@@ -1,0 +1,336 @@
+@alife-records 1
+
+person vp_1338
+  card.batch B17
+  card.arch va_house_painter
+  card.sex f
+  card.age 31
+  card.desc a wiry roofer with dark hair tied back and a fitted denim work jacket
+  card.voice V12
+  card.seed 1369801524
+  card.attract m
+  card.bond none
+  card.fear the_river
+  card.hobby dominoes
+  card.v 1
+  name.first Elise
+  name.last Fugate
+  name.reveal intro
+  origin.town Cave City
+  origin.from a room over a closed repair shop in Cave City
+  origin.work painted houses before joining a roofing crew in 1986
+  origin.workKind roofer
+  look.skin 2
+  look.hair ponytail
+  look.hairColor 0.29,0.21,0.16
+  look.beard none
+  look.pace normal
+  traits.open 2
+  traits.anx 3
+  traits.humor 3
+  traits.temper 1
+  traits.honest 2
+  traits.faith 4
+  traits.trustSpeed 4
+  traits.curious 1
+  traits.pride 5
+  traits.flirt 2
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 4
+  need0.hunger 1
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_radio_will_tell
+  beliefs.1.s 3
+  beliefs.2.id bl_keep_moving
+  beliefs.2.s 3
+  wants.1.id wn_bed
+  wants.1.u 5
+  skills.carpentry 2
+  skills.maintenance 3
+  carry.1 Base.Pencil
+  carry.2 Base.Note
+  carry.3 Base.Thread
+  dress.role worker_f
+  dress.flags.1 work_boots
+  dress.flags.2 denim_jacket
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_when_to_get_up
+  hooks.radio waits_for_plain_instructions
+  books.taste.1 mystery
+  facts.1.id f_trainees
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Left the trainees before Dale's ladder fall
+  facts.1.gate trust>=15
+  facts.2.id f_need
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label Lost her rented room and hides her need for a bed
+  facts.2.gate trust>=30 & flag:trainees_told
+  facts.3.id f_card
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Changed the expiry date on her safety card
+  facts.3.gate trust>=45 & alone & flag:need_told
+  facts.4.id f_report
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Gwen lost her job after Elise reported the wage complaint
+  facts.4.gate trust>=60 & alone & flag:card_told
+  facts.5.id f_quilt
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Sold the memorial quilt to repair her truck
+  facts.5.gate trust>=75 & alone & flag:report_told
+  mk.1 double six trouble
+  mk.2 heels down
+  mk.3 paint side out
+  rt.1 7-9|hall|Asks about the day's work before admitting that she wants breakfast
+  rt.2 13-15|livingroom|Practices adding domino totals on a scrap without requiring a game
+  rt.3 21-23|bedroom|Requests a sleeping place and checks the door twice before settling
+  bl.1 stub pencil|Base.Pencil|Used for roof measurements and scoring dominoes in the same cramped figures
+  bl.2 folded score sheet|Base.Note|May won the last recorded game by four points, which Elise still disputes
+  bl.3 red thread|Base.Thread|Left from binding the circle's quilt rather than from any roofing job
+  bl.4 course card||Its date has a darker final digit and a rub mark beside it
+  bl.5 domino double six||A loose tile from Amos's set, kept for the satisfying weight
+  bl.6 room receipt||Proves that a place once belonged to her for a week at a time
+  rl.1 Amos Fugate|father|House painter, last known in Cave City; their argument remains unsettled
+  rl.2 May Fugate|aunt|Organized the quilting circle and expected Elise to keep her promise
+  rl.3 Gwen Avery|former friend and coworker|Lost roofing work after Elise spoke to the foreman
+  rl.4 Dale Henson|adult former trainee|Broke his ankle during the shift Elise was meant to supervise
+end
+
+person vp_1345
+  card.batch B18
+  card.arch va_librarian
+  card.sex f
+  card.age 45
+  card.desc a neatly dressed librarian with a chestnut bob and a soft knitted cardigan
+  card.voice V14
+  card.seed 1766016053
+  card.attract m
+  card.bond none
+  card.fear being_alone
+  card.hobby knitting
+  card.v 1
+  name.first Bonnie
+  name.last Yates
+  name.reveal intro
+  origin.town Elizabethtown
+  origin.from a small upstairs flat in Elizabethtown
+  origin.work worked the library circulation desk and prepared the withdrawn-book lists
+  origin.workKind librarian
+  look.skin 1
+  look.hair bob
+  look.hairColor 0.42,0.3,0.22
+  look.beard none
+  look.pace walk
+  traits.open 2
+  traits.anx 4
+  traits.humor 4
+  traits.temper 2
+  traits.honest 4
+  traits.faith 1
+  traits.trustSpeed 4
+  traits.curious 4
+  traits.pride 2
+  traits.flirt 4
+  traits.social 0
+  traits.tidy 4
+  traits.nostalg 0
+  need0.hunger 3
+  need0.thirst 1
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_stockpile_wins
+  beliefs.1.s 3
+  beliefs.2.id bl_luck_is_real
+  beliefs.2.s 3
+  wants.1.id wn_quiet
+  wants.1.u 5
+  skills.tailoring 2
+  carry.1 Base.KnittingNeedles
+  carry.2 Base.Pencil
+  carry.3 Base.Notebook
+  dress.role teacher_f
+  dress.flags.1 cardigan
+  arc.stayMax 16
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.shelf asks_before_borrowing
+  hooks.bed prefers_hearing_company_nearby
+  books.taste.1 mystery
+  books.taste.2 history
+  facts.1.id f_alias
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Used Mrs Vale for visits to Colin's prison
+  facts.1.gate trust>=10
+  facts.2.id f_visits
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Colin refuses the visits she keeps requesting
+  facts.2.gate trust>=35 & flag:alias_told
+  facts.3.id f_will
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Forged Ellis's acknowledgment of the will
+  facts.3.gate trust>=38 & alone & flag:visits_told
+  facts.4.id f_books
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Falsely withdrew and sold thirty donated books
+  facts.4.gate trust>=55 & alone & flag:will_told
+  facts.5.id f_letter
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Burned Colin's admission and left a neighbor under suspicion
+  facts.5.gate trust>=72 & alone & flag:books_told
+  mk.1 the blue tray
+  mk.2 one quiet corner
+  mk.3 print side up
+  rt.1 8-10|kitchen|Reads a food label before asking what may be used
+  rt.2 14-16|livingroom|Unpicks her crooked knitting instead of requesting constant conversation
+  rt.3 20-22|hall|Asks whether someone will remain within calling distance while she rests
+  bl.1 knitting needles|Base.KnittingNeedles|One has a smoother point because she always takes it in her right hand
+  bl.2 account notebook|Base.Notebook|Money entries on one side and unanswered appointment requests on the other
+  bl.3 yellow pencil|Base.Pencil|Too short to put behind an ear but still long enough to correct a date
+  bl.4 crooked cuff||She knitted it while watching the stairs and refuses to hide the uneven row
+  bl.5 blue tray label||A paper label saved when the library replaced its returns tray
+  bl.6 old visiting slip||Filed under a name her colleagues would not recognize
+  rl.1 Colin Yates|son, born 1970|Imprisoned in 1991; has refused Bonnie's requested visits since 1992
+  rl.2 Ellis Mercer|younger brother|Never received a genuine chance to acknowledge or contest their father's will
+  rl.3 Dennis Yates|estranged husband|Railway clerk who left in 1974 and sent irregular support
+  rl.4 Alma Nunn|former library colleague|Preferred mending books to arguing about the withdrawal lists
+end
+
+person vp_1349
+  card.batch B18
+  card.arch va_bar_musician
+  card.sex f
+  card.age 38
+  card.desc a poised pianist with long chestnut hair and a dark denim jacket
+  card.voice VX21
+  card.seed 193974254
+  card.attract m
+  card.bond none
+  card.fear basements
+  card.hobby cards
+  card.v 1
+  name.first Arianne
+  name.last Yates
+  name.reveal intro
+  origin.town Pikeville
+  origin.from a rented back room in Pikeville
+  origin.work played piano for bar singers and took occasional solo sets
+  origin.workKind bar_musician
+  look.skin 2
+  look.hair long
+  look.hairColor 0.34,0.19,0.13
+  look.beard none
+  look.pace normal
+  traits.open 3
+  traits.anx 1
+  traits.humor 4
+  traits.temper 1
+  traits.honest 4
+  traits.faith 3
+  traits.trustSpeed 5
+  traits.curious 2
+  traits.pride 3
+  traits.flirt 2
+  traits.social 5
+  traits.tidy 2
+  traits.nostalg 4
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 1
+  need0.fear 3
+  need0.fatigue 5
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_luck_is_real
+  beliefs.1.s 3
+  beliefs.2.id bl_work_fixes_things
+  beliefs.2.s 3
+  wants.1.id wn_work
+  wants.1.u 5
+  skills.maintenance 1
+  carry.1 Base.SilverCoin
+  carry.2 Base.Pencil
+  carry.3 Base.SheetPaper2
+  dress.role musician_f
+  dress.flags.1 denim_jacket
+  dress.flags.2 plain_dress
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_about_daytime_rest
+  hooks.radio listens_for_a_piano_part
+  books.taste.1 humor
+  books.taste.2 mystery
+  facts.1.id f_cellar
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Left the stranger calling from the road beside the cellar stair
+  facts.1.gate trust>=20
+  facts.2.id f_tunes
+  facts.2.kind secret
+  facts.2.tab talk
+  facts.2.label Wrote Otis's piano arrangements anonymously
+  facts.2.gate trust>=32 & flag:cellar_told
+  facts.3.id f_ran
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Ran from the 1981 solo set despite her boast
+  facts.3.gate trust>=46 & alone & flag:tunes_told
+  facts.4.id f_cards
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Took the furnace benefit pot with marked cards
+  facts.4.gate trust>=61 & alone & flag:ran_told
+  facts.5.id f_car
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Washed Arlen's car after his admitted hit and run
+  facts.5.gate trust>=78 & alone & flag:cards_told
+  mk.1 piano money
+  mk.2 thumbs together
+  mk.3 the bent quarter
+  rt.1 9-11|livingroom|Counts her coins without offering them as proof of wealth
+  rt.2 15-17|kitchen|Asks for a small chore before returning to penciled music
+  rt.3 20-22|hall|Presses her thumbs together while deciding whether to join conversation
+  bl.1 silver coin|Base.SilverCoin|Chosen for a worn date rather than any knowledge of its price
+  bl.2 music fragment|Base.SheetPaper2|Only the left-hand part survives on a folded scrap
+  bl.3 pencil|Base.Pencil|Its eraser disappeared faster than the lead while she tried new endings
+  bl.4 bent quarter||Her father refused to drop it into the tip jar
+  bl.5 coin purse||A stiff clasp which needs both thumbs to open
+  bl.6 room rent stub||Mabel wrote paid without once spelling Arianne's name correctly
+  rl.1 Arlen Yates|younger adult brother|Last known in Pikeville; Arianne concealed his admitted hit and run
+  rl.2 Otis Bell|former bandleader|Bought anonymous arrangements and used his own credit
+  rl.3 Mabel Crane|former room owner|Accepted weekly rent and disliked instruments in the passage
+  rl.4 Roy Yates|father, died 1992|Taught accompaniment and insisted that bent coins jammed the tip jar
+end

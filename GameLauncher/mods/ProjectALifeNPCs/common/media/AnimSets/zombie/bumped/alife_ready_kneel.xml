@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeReadyKneel</m_Name>
+	<m_AnimName>Bob_IdleSneak_Shotgun</m_AnimName>
+	<m_Priority>8</m_Priority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_SpeedScale>0.85</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>ALifeReadyKneel</m_Value>
+	</m_Conditions>
+</animNode>

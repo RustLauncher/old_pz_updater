@@ -1,0 +1,520 @@
+module ProjectALife
+{
+    item PALPreview_Part_AssaultRifle__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__TritiumSights,
+    }
+    item PALPreview_Part_AssaultRifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__Laser,
+    }
+    item PALPreview_Part_AssaultRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__RecoilPad,
+    }
+    item PALPreview_Part_AssaultRifle__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__RedDot,
+    }
+    item PALPreview_Part_AssaultRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__x2Scope,
+    }
+    item PALPreview_Part_AssaultRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_AssaultRifle__x4Scope,
+    }
+    item PALPreview_Part_M14__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__TritiumSights,
+    }
+    item PALPreview_Part_M14__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__Laser,
+    }
+    item PALPreview_Part_M14__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__RecoilPad,
+    }
+    item PALPreview_Part_M14__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__RedDot,
+    }
+    item PALPreview_Part_M14__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__x2Scope,
+    }
+    item PALPreview_Part_M14__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_M14__x4Scope,
+    }
+    item PALPreview_Part_DoubleBarrelShotgun__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_DoubleBarrelShotgun__RecoilPad,
+    }
+    item PALPreview_Part_HuntingRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_HuntingRifle__RecoilPad,
+    }
+    item PALPreview_Part_HuntingRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_HuntingRifle__x2Scope,
+    }
+    item PALPreview_Part_HuntingRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_HuntingRifle__x4Scope,
+    }
+    item PALPreview_Part_HuntingRifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_HuntingRifle__x8Scope,
+    }
+    item PALPreview_Part_Handgun03__GunLight
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun03__GunLight,
+    }
+    item PALPreview_Part_Handgun03__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun03__Laser,
+    }
+    item PALPreview_Part_Handgun02__GunLight
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun02__GunLight,
+    }
+    item PALPreview_Part_Handgun02__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun02__Laser,
+    }
+    item PALPreview_Part_Handgun__GunLight
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun__GunLight,
+    }
+    item PALPreview_Part_Handgun__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Handgun__Laser,
+    }
+    item PALPreview_Part_Revolver_Long__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Revolver_Long__x2Scope,
+    }
+    item PALPreview_Part_Shotgun__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Shotgun__x2Scope,
+    }
+    item PALPreview_Part_Shotgun__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Shotgun__RecoilPad,
+    }
+    item PALPreview_Part_ShotgunSawnOff__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_ShotgunSawnOff__x2Scope,
+    }
+    item PALPreview_Part_VarmintRifle__TritiumSights
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_VarmintRifle__TritiumSights,
+    }
+    item PALPreview_Part_VarmintRifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_VarmintRifle__RecoilPad,
+    }
+    item PALPreview_Part_VarmintRifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_VarmintRifle__x2Scope,
+    }
+    item PALPreview_Part_VarmintRifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_VarmintRifle__x4Scope,
+    }
+    item PALPreview_Part_VarmintRifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_VarmintRifle__x8Scope,
+    }
+    item PALPreview_Part_JS14_Rifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_JS14_Rifle__Laser,
+    }
+    item PALPreview_Part_JS14_Rifle__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_JS14_Rifle__RedDot,
+    }
+    item PALPreview_Part_JS14_Rifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_JS14_Rifle__x2Scope,
+    }
+    item PALPreview_Part_JS14_Rifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_JS14_Rifle__x4Scope,
+    }
+    item PALPreview_Part_JS3T_Shotgun__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_JS3T_Shotgun__RedDot,
+    }
+    item PALPreview_Part_L94_Rifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_L94_Rifle__RecoilPad,
+    }
+    item PALPreview_Part_MSR7T_Rifle__RecoilPad
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_MSR7T_Rifle__RecoilPad,
+    }
+    item PALPreview_Part_MSR7T_Rifle__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_MSR7T_Rifle__x2Scope,
+    }
+    item PALPreview_Part_MSR7T_Rifle__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_MSR7T_Rifle__x4Scope,
+    }
+    item PALPreview_Part_MSR7T_Rifle__x8Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_MSR7T_Rifle__x8Scope,
+    }
+    item PALPreview_Part_MSR7T_Rifle__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_MSR7T_Rifle__Laser,
+    }
+    item PALPreview_Part_Trapper_Carbine__Laser
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Trapper_Carbine__Laser,
+    }
+    item PALPreview_Part_Trapper_Carbine__RedDot
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Trapper_Carbine__RedDot,
+    }
+    item PALPreview_Part_Trapper_Carbine__x2Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Trapper_Carbine__x2Scope,
+    }
+    item PALPreview_Part_Trapper_Carbine__x4Scope
+    {
+        ItemType = base:clothing,
+        DisplayName = Creator preview only,
+        DisplayCategory = Hidden,
+        Hidden = true,
+        Weight = 0,
+        Icon = Question_On,
+        BodyLocation = base:bandage,
+        ClothingItem = PALPreview_Part_Trapper_Carbine__x4Scope,
+    }
+}

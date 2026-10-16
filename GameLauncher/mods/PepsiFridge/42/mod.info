@@ -1,0 +1,10 @@
+name=Pepsi Fridge [B42]
+id=PepsiFridge
+author=VINI
+description=White Industrial Fridge with clean and apocalypse-worn Pepsi looks, four stock levels, blue lighting with occasional worn-cabinet flicker, and separate appearance chances.
+poster=poster.png
+icon=PepsiFridge_icon.png
+modversion=1.1.4
+versionMin=42.20.4
+pack=PepsiFridge
+tiledef=PepsiFridge 4862

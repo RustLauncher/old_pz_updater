@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Pepsi 冷蔵庫",
+  "IGUI_PepsiFridge_WornName": "使い古された Pepsi 冷蔵庫",
+  "IGUI_PepsiFridge_Fridge": "冷蔵室",
+  "IGUI_PepsiFridge_Freezer": "冷凍室",
+  "IGUI_PepsiFridge_StockHint": "空 / 少量 / ほぼ満杯 / 満杯\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

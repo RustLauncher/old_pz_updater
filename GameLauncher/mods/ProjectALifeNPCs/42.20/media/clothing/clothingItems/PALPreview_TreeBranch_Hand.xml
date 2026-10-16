@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/1handed/TreeBranch_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/1handed/TreeBranch_Hand</m_FemaleModel>
+  <m_GUID>189443f2-d5d0-5578-a38a-c04c5dae0d15</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/1handed/TreeBranch_Variations</textureChoices>
+</clothingItem>

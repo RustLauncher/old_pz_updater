@@ -1,0 +1,4 @@
+{
+  "IGUI_RedbullFreezer_Name": "Redbull Freezer",
+  "IGUI_RedbullFreezer_StockHint": "外观填充：低于15%%时看起来是空的；达到15%%时出现饮料罐和冰块；达到30%%时看起来装满。通电或断电均适用，仍可正常继续存放物品。"
+}

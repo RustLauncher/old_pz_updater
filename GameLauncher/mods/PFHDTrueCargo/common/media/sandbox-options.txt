@@ -1,0 +1,27 @@
+VERSION = 1,
+
+/*
+ * Server switches: one page, "True Cargo". Read as SandboxVars.TrailerCargo.<Name>
+ * (TrailerCargo_Sandbox.lua) and enforced by the server. Labels resolve as
+ * "Sandbox_" .. translation, tooltips as that .. "_tooltip", the page title
+ * as "Sandbox_TrailerCargo"; all in Translate/EN/Sandbox.json. The damage
+ * multiplier is a double over vanilla's own multiplier range (loot, 0-4).
+ */
+
+option TrailerCargo.ItemSpill
+{
+    type = boolean, default = true,
+    page = TrailerCargo, translation = TrailerCargo_ItemSpill,
+}
+
+option TrailerCargo.CarSpill
+{
+    type = boolean, default = true,
+    page = TrailerCargo, translation = TrailerCargo_CarSpill,
+}
+
+option TrailerCargo.CarSpillDamage
+{
+    type = double, min = 0.0, max = 4.0, default = 1.0,
+    page = TrailerCargo, translation = TrailerCargo_CarSpillDamage,
+}

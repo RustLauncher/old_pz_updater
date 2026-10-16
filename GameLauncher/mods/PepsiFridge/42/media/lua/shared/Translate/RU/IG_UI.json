@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Холодильник Pepsi",
+  "IGUI_PepsiFridge_WornName": "Изношенный холодильник Pepsi",
+  "IGUI_PepsiFridge_Fridge": "Холодильник",
+  "IGUI_PepsiFridge_Freezer": "Морозильник",
+  "IGUI_PepsiFridge_StockHint": "Пустой / немного заполнен / почти полный / полный\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

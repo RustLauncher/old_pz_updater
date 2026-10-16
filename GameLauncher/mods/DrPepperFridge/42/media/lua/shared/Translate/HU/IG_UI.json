@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Dr Pepper hűtő",
+  "IGUI_DrPepperFridge_WornName": "Kopott Dr Pepper hűtő",
+  "IGUI_DrPepperFridge_Fridge": "Dr Pepper hűtő",
+  "IGUI_DrPepperFridge_Freezer": "Dr Pepper fagyasztó",
+  "IGUI_DrPepperFridge_WornFridge": "Kopott Dr Pepper hűtő",
+  "IGUI_DrPepperFridge_WornFreezer": "Kopott Dr Pepper fagyasztó",
+  "IGUI_DrPepperFridge_StockHint": "A foglalt kapacitás százaléka, amelynél ez a megjelenés kezdődik. Nem változtatja meg a kapacitást. A küszöbök automatikusan rendeződnek."
+}

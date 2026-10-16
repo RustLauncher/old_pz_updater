@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Nevera Dr Pepper",
+  "IGUI_DrPepperFridge_WornName": "Nevera Dr Pepper usada",
+  "IGUI_DrPepperFridge_Fridge": "Nevera Dr Pepper",
+  "IGUI_DrPepperFridge_Freezer": "Congelador Dr Pepper",
+  "IGUI_DrPepperFridge_WornFridge": "Nevera Dr Pepper usada",
+  "IGUI_DrPepperFridge_WornFreezer": "Congelador Dr Pepper usat",
+  "IGUI_DrPepperFridge_StockHint": "Percentatge de capacitat ocupada que inicia aquesta fase visual. No canvia la capacitat. Els llindars s'ordenen automàticament."
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>e9beefa2-2596-483a-804e-5a158e99d89b</m_GUID>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>true</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\trousers\trousers_tracksuit_blue</m_BaseTextures>
+	<m_BaseTextures>clothes\trousers\trousers_tracksuit_red</m_BaseTextures>
+	<m_BaseTextures>clothes\trousers\trousers_tracksuit_alt</m_BaseTextures>
+</clothingItem>

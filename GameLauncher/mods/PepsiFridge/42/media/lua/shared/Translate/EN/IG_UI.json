@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Pepsi Fridge",
+  "IGUI_PepsiFridge_WornName": "Worn Pepsi Fridge",
+  "IGUI_PepsiFridge_Fridge": "Fridge",
+  "IGUI_PepsiFridge_Freezer": "Freezer",
+  "IGUI_PepsiFridge_StockHint": "Empty / a little full / almost full / full\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

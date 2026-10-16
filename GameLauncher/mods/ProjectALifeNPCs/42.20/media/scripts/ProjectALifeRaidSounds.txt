@@ -1,0 +1,10 @@
+module Base
+{
+    sound PALRaidBattleCry
+    {
+        category = UI,
+        loop = false,
+        is3D = false,
+        clip { file = media/sound/full_scale_raid_battle_cry.ogg, volume = 1.0, }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/JawBone_Axe_2Handed_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/JawBone_Axe_2Handed_Hand</m_FemaleModel>
+  <m_GUID>1cdb946a-cc96-babc-1353-a5f151467fd9</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/1handed/Jawbone_Weapon</textureChoices>
+</clothingItem>

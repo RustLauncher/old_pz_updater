@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>Trowel</m_MaleModel>
+  <m_FemaleModel>Trowel</m_FemaleModel>
+  <m_GUID>6af5f687-c7ef-5835-389e-989e2e3b7132</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>Trowel</textureChoices>
+</clothingItem>

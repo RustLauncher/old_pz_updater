@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Held/MSR7T_Rifle</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Held/MSR7T_Rifle</m_FemaleModel>
+  <m_GUID>56514797-b44d-3a3a-2851-b4b6dd976978</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/firearm/MSR788_Rifle_Tactical</textureChoices>
+</clothingItem>

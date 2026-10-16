@@ -1,0 +1,40 @@
+module Base
+{
+
+    sound PALRadioOpen
+    {
+        category = World,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_radio/pal_radio_open.wav,
+            distanceMax = 20,
+            volume = 0.25,
+        }
+    }
+
+    sound PALRadioStatic
+    {
+        category = World,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/project_alife_radio/pal_radio_static.wav,
+            distanceMax = 15,
+            volume = 0.12,
+        }
+    }
+
+    sound PALRadioClose
+    {
+        category = World,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_radio/pal_radio_close.wav,
+            distanceMax = 20,
+            volume = 0.25,
+        }
+    }
+}

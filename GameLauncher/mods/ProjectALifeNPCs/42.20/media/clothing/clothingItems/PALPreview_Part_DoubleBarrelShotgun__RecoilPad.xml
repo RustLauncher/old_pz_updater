@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Part_DoubleBarrelShotgun__RecoilPad</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Part_DoubleBarrelShotgun__RecoilPad</m_FemaleModel>
+  <m_GUID>c82de765-c12d-916f-0d71-fbbfb1b4c702</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Rifle_RecoilPad</textureChoices>
+</clothingItem>

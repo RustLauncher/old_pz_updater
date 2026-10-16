@@ -1,0 +1,344 @@
+@alife-records 1
+
+person vp_1006
+  card.batch B01
+  card.arch va_vet_wwii
+  card.sex m
+  card.age 76
+  card.desc an elderly man with clipped white hair and a crisp collar above patched overalls
+  card.voice V01
+  card.seed 684837674
+  card.attract m
+  card.bond none
+  card.fear forgetting
+  card.hobby whittling
+  card.v 1
+  name.first Otis
+  name.last Wright
+  name.reveal intro
+  origin.town Taylorsville
+  origin.from a rented farm west of Taylorsville
+  origin.work Army vehicle recovery in Europe then farm machinery repair beside his rented tobacco ground
+  origin.workKind wwii_vet
+  look.skin 2
+  look.hair short
+  look.hairColor 0.8,0.8,0.75
+  look.beard none
+  look.pace walk
+  traits.open 1
+  traits.anx 0
+  traits.humor 1
+  traits.temper 4
+  traits.honest 4
+  traits.faith 2
+  traits.trustSpeed 2
+  traits.curious 0
+  traits.pride 5
+  traits.flirt 1
+  traits.social 5
+  traits.tidy 3
+  traits.nostalg 4
+  need0.hunger 2
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 3
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_god_is_silent
+  beliefs.1.s 3
+  beliefs.2.id bl_foreign_power_made_it
+  beliefs.2.s 3
+  beliefs.2.bias true
+  wants.1.id wn_to_get_home
+  wants.1.u 5
+  skills.mechanics 4
+  skills.farming 3
+  skills.carpentry 2
+  carry.1 Base.KeyRing
+  carry.2 Base.Newspaper
+  carry.3 Base.Pencil
+  dress.role elder_m_rural
+  dress.flags.1 overalls
+  dress.flags.2 work_boots
+  dress.flags.3 work_shirt
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 morning
+  arc.returns true
+  hooks.shelf slow_western_reader
+  hooks.window measures_weather
+  hooks.object f_elmer
+  books.taste.1 western
+  books.taste.2 farming
+  facts.1.id f_elmer
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Promised Elmer help and has not gone back
+  facts.1.gate trust>=10
+  facts.2.id f_names
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label Cannot place familiar names despite his boasting
+  facts.2.gate trust>=25
+  facts.3.id f_raymond
+  facts.3.kind love
+  facts.3.tab past
+  facts.3.label Sent Raymond away instead of sharing his home
+  facts.3.gate trust>=40 & alone & flag:names_told
+  facts.4.id f_turn
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Heard Elmer call before turning away
+  facts.4.gate trust>=55 & alone & flag:elmer_told
+  facts.5.id f_cup
+  facts.5.kind secret
+  facts.5.tab now
+  facts.5.label Wants to face Elmer himself rather than send someone
+  facts.5.gate trust>=70 & alone & flag:turn_told
+  mk.1 measure it again
+  mk.2 rented ground
+  mk.3 Elmer's blue cup
+  rt.1 6-8|porch|Checks light and weather before deciding whether the walk home is possible
+  rt.2 12-14|table|Whittles a small boat over newspaper if the host permits it
+  rt.3 19-21|livingroom|Reads a western slowly then folds the newspaper beneath his key
+  bl.1 pickup ignition key||The pickup no longer starts; the key provides a reason to promise he is going home.
+  bl.2 cedar boat||A new unfinished carving meant to replace the one Elmer kept for decades.
+  bl.3 folded newspaper|Base.Newspaper|Protects tables from shavings; Otis reads sale notices long after the sales ceased.
+  bl.4 stub pencil|Base.Pencil|Marks machinery measurements and names he does not want to lose.
+  bl.5 patched overalls||Ada's old patch is beneath three newer repairs near the pocket.
+  bl.6 Raymond's envelope||An empty envelope addressed in Raymond's careful lettering, kept flat behind the newspaper.
+  rl.1 Elmer Voss|lifelong friend|First-grade companion; alive when last seen at his gate, keeps a blue cup for Otis.
+  rl.2 Raymond Pell|former companion|Army clerk whose careful letters Otis saved; sent away after a three-day visit in 1968.
+  rl.3 Ada Wright|mother, died 1962|Made him remove muddy overalls before supper and corrected his inflated accounts.
+end
+
+person vp_1013
+  card.batch B01
+  card.arch va_vet_korea
+  card.sex m
+  card.age 65
+  card.desc a broad older man with neat silver hair and a faded field jacket
+  card.voice V08
+  card.seed 1232419328
+  card.attract f
+  card.bond none
+  card.fear losing_the_last_one
+  card.hobby whittling
+  card.v 1
+  name.first Lowell
+  name.last Sanders
+  name.reveal intro
+  origin.town Bardstown
+  origin.from a small farm outside Bardstown
+  origin.work Korean War Army service followed by farming and union work at a farm implement plant; remained an Army reservist until 1980
+  origin.workKind retired_farmer
+  look.skin 2
+  look.hair short
+  look.hairColor 0.7,0.7,0.65
+  look.beard none
+  look.pace walk
+  traits.open 0
+  traits.anx 2
+  traits.humor 2
+  traits.temper 3
+  traits.honest 0
+  traits.faith 3
+  traits.trustSpeed 3
+  traits.curious 5
+  traits.pride 4
+  traits.flirt 4
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 3
+  need0.hunger 4
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 4
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_karma
+  beliefs.1.s 3
+  beliefs.2.id bl_head_north
+  beliefs.2.s 3
+  wants.1.id wn_blanket
+  wants.1.u 5
+  skills.farming 4
+  skills.carpentry 2
+  carry.1 Base.KeyRing
+  carry.2 Base.Notebook
+  carry.3 Base.Pencil
+  dress.role elder_m_rural
+  dress.flags.1 work_boots
+  dress.flags.2 work_shirt
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.shelf westerns_without_glory
+  hooks.object f_pills
+  books.taste.1 western
+  books.taste.2 history
+  facts.1.id f_pills
+  facts.1.kind health
+  facts.1.tab now
+  facts.1.label Conceals prescribed diabetes pills
+  facts.1.gate trust>=10
+  facts.2.id f_ball
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Played Sunday baseball, never college ball
+  facts.2.gate trust>=25
+  facts.3.id f_nina
+  facts.3.kind family
+  facts.3.tab past
+  facts.3.label Rejected Nina's marriage and ignored her invitations
+  facts.3.gate trust>=40 & alone & flag:ball_told
+  facts.4.id f_cash
+  facts.4.kind money
+  facts.4.tab now
+  facts.4.label Has concealed pension cash in his jacket
+  facts.4.gate trust>=55 & alone & flag:pills_told
+  facts.5.id f_visit
+  facts.5.kind family
+  facts.5.tab now
+  facts.5.label North means a late attempt to visit Nina
+  facts.5.gate trust>=70 & alone & flag:cash_told
+  mk.1 put a date on it
+  mk.2 Sunday shortstop
+  mk.3 Ruth's clothespins
+  rt.1 6-8|porch|Checks his notebook dates and listens before committing to a route
+  rt.2 12-14|table|Carves a clothespin over his own paper if permitted
+  rt.3 19-21|livingroom|Adjusts his ring and reads a western while keeping his jacket nearby
+  bl.1 wedding band||Ruth had it resized twice; turning it gives him time to avoid an answer.
+  bl.2 small notebook|Base.Notebook|Contains dates of Reserve renewals, plant shifts and pension payments.
+  bl.3 pencil|Base.Pencil|Sharpened carefully so his small writing remains legible.
+  bl.4 unfinished clothespin||A carving made to Ruth's preferred width although she can no longer test it.
+  bl.5 field jacket||An old repaired jacket with his pension cash concealed inside a patch.
+  bl.6 prescription bottle||Carries his own diabetes medication; kept out of sight when asking for ordinary help.
+  rl.1 Ruth Sanders|wife, died 1986|Dressmaker who tested his carved clothespins and resized his ring.
+  rl.2 Nina Vaught|adult daughter|Born 1956; moved to Cincinnati in 1978 after Lowell opposed her marriage.
+  rl.3 Jean Mercer|sister|Last relative seen before leaving; asked him to visit Nina and received an unkept promise.
+end
+
+person vp_1027
+  card.batch B02
+  card.arch va_tobacco_farmer
+  card.sex m
+  card.age 48
+  card.desc a broad quiet man with close brown hair and a weathered straw hat
+  card.voice V12
+  card.seed 1866756994
+  card.attract f
+  card.bond none
+  card.fear deep_water
+  card.hobby cards
+  card.v 1
+  name.first Phillip
+  name.last Dawson
+  name.reveal intro
+  origin.town Somerset
+  origin.from a two-room house beyond Somerset
+  origin.work seasonal tobacco hand after the warehouse let him go in 1979
+  origin.workKind farmhand
+  look.skin 2
+  look.hair short
+  look.hairColor 0.38,0.3,0.22
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 2
+  traits.humor 4
+  traits.temper 0
+  traits.honest 5
+  traits.faith 5
+  traits.trustSpeed 0
+  traits.curious 0
+  traits.pride 3
+  traits.flirt 2
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 5
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 5
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_no_one_comes
+  beliefs.1.s 3
+  beliefs.2.id bl_luck_is_real
+  beliefs.2.s 3
+  wants.1.id wn_church
+  wants.1.u 5
+  skills.farming 3
+  skills.tailoring 2
+  carry.1 Base.Matchbox
+  carry.2 Base.KeyRing
+  carry.3 Base.SheetPaper2
+  dress.role farm_m
+  dress.flags.1 hat
+  dress.flags.2 work_shirt
+  dress.flags.3 work_boots
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 morning
+  arc.returns true
+  hooks.radio waits_for_somerset
+  hooks.window checks_rain
+  hooks.bath asks_water_limit
+  books.taste.1 farming
+  books.taste.2 religion
+  facts.1.id f_card
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Kept Nettie's queen of clubs against his promise
+  facts.1.gate trust>=10
+  facts.2.id f_sewing
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Sews work cuffs using Nettie's tin
+  facts.2.gate trust>=25 & flag:card_told
+  facts.3.id f_payment
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Lyle made the last payment on the house
+  facts.3.gate trust>=40 & alone & flag:sewing_told
+  facts.4.id f_creek
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Left June with a traveler beside the creek
+  facts.4.gate trust>=55 & alone & flag:payment_told
+  facts.5.id f_return
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Never fetched the help he promised June
+  facts.5.gate trust>=70 & alone & flag:creek_told
+  mk.1 hat in the lap
+  mk.2 fair to middling
+  mk.3 give it shade
+  rt.1 6-8|hall|Checks whether his hat is dry and asks before setting it elsewhere
+  rt.2 12-14|kitchen|Offers to sort usable string or mend a cuff if permission is given
+  rt.3 19-21|livingroom|Waits for company with the folded route paper on his lap
+  bl.1 straw hat||Nettie blocked it over a saucepan; the brim still bears the uneven curve
+  bl.2 house keys|Base.KeyRing|Two keys to the paid-off house whose blue screen door he never replaced
+  bl.3 route paper|Base.SheetPaper2|Leon drew a church and a crossing but Phillip has worn through the fold
+  bl.4 queen of clubs||One survivor of a worn deck and a promise made to Nettie
+  bl.5 sewing tin||Contains the cuff thread he learned to use away from the warehouse men
+  bl.6 matchbox|Base.Matchbox|Kept dry for church candles rather than tobacco
+  rl.1 Nettie Dawson|mother, dead 1990|Insisted on hat manners and taught him useful sewing without an audience
+  rl.2 Lyle Dawson|older brother|Quiet assistance that Phillip finds easier to accept than acknowledge
+  rl.3 June Talley|adult cousin|Made the car seat covers and remained with a traveler at the creek
+  rl.4 Leon Dawson|uncle|Tobacco mentor and owner of the Friday card table
+end

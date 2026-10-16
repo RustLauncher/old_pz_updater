@@ -1,0 +1,58 @@
+module Base
+{
+    item Jacket_Varsity
+    {
+        IconsForTexture = JacketVarsity_KY;JacketVarsity_Alpha;JacketVarsity_Blue;JacketVarsity_Brown;JacketVarsity_Orange;JacketVarsity_Red,
+    }
+
+    item Jacket_Leather
+    {
+        IconsForTexture = JacketBlack;JacketLeatherBrown2;Jacket_Leather_Plain;Jacket_Leather_Plain1;Jacket_Leather_Plain2;Jacket_Leather_Plain3,
+    }
+
+    item Dungarees
+    {
+        IconsForTexture = OverallsDenim;OverallsBrown;OverallsGrey,
+    }
+
+    item WeldingMask
+    {
+        IconsForTexture = WeldingMask;WelderMask_Smile;WelderMask_Rust;WelderMask_Black;WelderMask_Skull,
+    }
+
+    item Trousers_Fireman
+    {
+        IconsForTexture = TrousersFireman;TrousersFireman_Black,
+    }
+
+    item Jacket_Fireman
+    {
+        IconsForTexture = JacketFireman;JacketFireman_Black,
+    }
+
+    item Hat_Fireman
+    {
+        IconsForTexture = HelmetFireman;FiremanHat_Red;FiremanHat_Black;FiremanHat_White,
+    }
+
+    item Vest_HighViz
+    {
+        IconsForTexture = ConstructionVest;HighVisVest_Orange,
+    }
+
+    item Jacket_Leather_Punk
+    {
+        IconsForTexture = JacketLeather_Punk4;JacketLeather_Punk3;JacketLeather_Punk2;JacketLeather_Punk1;Jacket_Leather_Patches;Jacket_Leather_Patches1,
+    }
+
+    item Bag_BigHikingBag
+    {
+        IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red;BigHiking_Orange;BigHiking_Pink,
+    }
+
+    item Bag_BigHikingBag_Travel
+    {
+        IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red;BigHiking_Orange;BigHiking_Pink,
+    }
+
+}

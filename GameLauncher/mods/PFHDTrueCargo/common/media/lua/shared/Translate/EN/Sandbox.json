@@ -1,0 +1,9 @@
+{
+    "Sandbox_TrailerCargo": "True Cargo",
+    "Sandbox_TrailerCargo_ItemSpill": "Items spill from a tipped trailer",
+    "Sandbox_TrailerCargo_ItemSpill_tooltip": "On: a trailer or pickup that tips over drops its cargo onto the ground. Off: the cargo stays in the trunk. Each player's own Spill on flip option still applies when this is on.",
+    "Sandbox_TrailerCargo_CarSpill": "Cars spill from a rolled car trailer",
+    "Sandbox_TrailerCargo_CarSpill_tooltip": "On: cars loaded on the W900 car trailer are thrown off when it rolls. Off: they stay loaded. Each player's own Spill on flip option still applies when this is on.",
+    "Sandbox_TrailerCargo_CarSpillDamage": "Spilled car damage multiplier",
+    "Sandbox_TrailerCargo_CarSpillDamage_tooltip": "Multiplies the damage a car takes when it lands after a spill. 1.0 is normal, 0.0 none, 2.0 double."
+}

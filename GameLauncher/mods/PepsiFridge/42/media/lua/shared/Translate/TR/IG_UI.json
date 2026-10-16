@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Pepsi Buzdolabı",
+  "IGUI_PepsiFridge_WornName": "Yıpranmış Pepsi Buzdolabı",
+  "IGUI_PepsiFridge_Fridge": "Buzdolabı",
+  "IGUI_PepsiFridge_Freezer": "Dondurucu",
+  "IGUI_PepsiFridge_StockHint": "Boş / az dolu / neredeyse dolu / dolu\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

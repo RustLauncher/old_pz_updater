@@ -1,0 +1,126 @@
+REMOÇÃO SEGURA — BUILD 42.21
+Antes de desativar esta aparência em um mundo existente, faça backup e siga REMOCAO-SEGURA.md, incluído nesta pasta.
+Em mundo íntegro, ative VINI Furniture Recovery [B42] (ViniFridgeRecovery) com a aparência ainda ativa; carregue, salve e feche antes de desativar a aparência. Mantenha o Recovery ativo enquanto houver regiões não visitadas, móveis guardados ou tipos Dr Pepper ainda presentes. Não cancele todos os pacotes provedores sem preparar uma cópia independente completa do suporte.
+Em multiplayer, servidor e jogadores precisam dos mesmos arquivos. Em mundo já afetado por remoção/conflito, trabalhe numa cópia e siga o guia completo.
+O suporte requer Build 42.21. Guia completo: ../ViniFridgeRecovery/common/SAFE-REMOVAL-GUIDE.md.
+
+SAFE REMOVAL — BUILD 42.21
+Back up and follow REMOCAO-SEGURA.md before disabling this appearance in an existing world. For an undamaged world, enable VINI Furniture Recovery while the appearance is still active; load, save and close before disabling the appearance. Keep Recovery for unseen regions, stored furniture and remaining Dr Pepper types. Keep a supplying package or a complete standalone copy; servers and players need matching files. Work on a copy of an already affected world. Full guide: ../ViniFridgeRecovery/common/SAFE-REMOVAL-GUIDE.md.
+
+ATUALIZAÇÃO 1.4.0
+Dez opções de frequência Monster: 1%, 5%, 10%, 15%, 25%, 35%, 50%, 75%, 90% e 100%.
+O padrão continua em 100%. Os nomes, rótulos e descrições das opções acompanham
+o idioma escolhido no jogo, com 26 seleções de idioma suportadas.
+Saves anteriores mantêm sua configuração; o 0% antigo é preservado até você
+escolher uma das dez opções novas. Não há uma décima primeira opção na lista.
+Reinicie o jogo após a atualização. Nenhuma textura ou regra de armazenamento,
+iluminação, áudio ou enchimento visual foi alterada nesta versão.
+
+HISTÓRICO DAS VERSÕES ANTERIORES
+
+ATUALIZAÇÃO 1.3.3
+Luz verde suave nas quatro orientações da Monster ligada, com alcance curto e
+maior destaque natural no escuro. Apaga sem energia ou ao desligar pelo Nick.
+Removida a camada iluminada duplicada que gerava o quadriculado no vidro.
+Reinicie o jogo após atualizar.
+
+CORREÇÕES MANTIDAS DA 1.3.1
+Correção de profundidade do vidro, áudio espacial por Monster próxima e ícones
+diferentes de geladeira/freezer, com o nome Monster Fridge. Reinicie o jogo
+para testar as correções visuais e o som ao desligar/religar pelo Nick.
+
+MONSTER ENERGY FRIDGE - VERSÃO 1.3.3
+
+No Sandbox, abra Monster Energy Fridge e selecione a porcentagem na lista.
+0%: todas originais. 25%, 50% e 75%: mistura aproximada. 100%: todas Monster (padrão).
+Passe o mouse sobre as opções abertas para ver a explicação de cada uma.
+A proporção é aproximada no mundo, não uma cota exata em cada loja.
+A escolha acompanha o móvel ao transportá-lo. Alterações do Sandbox são aplicadas
+quando os objetos carregam ou são colocados; objetos já carregados devem ser recarregados.
+No multijogador, vale a opção do servidor. Teste em servidor real ainda pendente.
+Reinicie completamente o jogo após a instalação. As texturas do móvel permanecem iguais; os ícones dos compartimentos são novos.
+
+MONSTER ENERGY FRIDGE [B42]
+Project Zomboid 42.20.4 | Versão 1.3.3 | Autor: VINI
+
+INSTALAÇÃO
+Copie a pasta MonsterBlackFridge para C:\Users\SEU_USUARIO\Zomboid\mods.
+Ative “Monster Energy Fridge [B42]” no menu Mods.
+Em uma partida existente, ative também o mod na lista de mods dessa partida.
+Reinicie o jogo após ativar. Não é necessário criar um mundo novo.
+
+O QUE MUDA
+Permite misturar o visual original e o visual Monster da geladeira industrial preta.
+As quatro orientações recebem a personalização: frente, laterais e traseira.
+O efeito alcança os objetos que já existem no mapa e os que forem colocados depois.
+Não muda geladeiras brancas, azuis, vermelhas, mini-geladeiras ou o freezer ICE.
+
+DESIGN E ENERGIA
+Arte revisada: logos maiores, cinco latas por fileira e redução de serrilhado.
+Frente, laterais e traseira foram inspecionadas nas quatro orientações.
+Corpo preto, marca Monster em verde, porta de vidro e latas em cinco cores:
+preto/verde, branco/prata, laranja, rosa e azul.
+Com eletricidade da rede ou de um gerador, o interior e o cabeçalho ficam claros.
+Quando falta energia, o vidro e as latas ficam escurecidos.
+A detecção usa a energia da geladeira original e reconhece o estado desligado
+pelo mod Nick's Turn Off Fridges. O conteúdo visual é preservado ao desligar.
+A luz externa da Monster é verde suave e se destaca quando a luz do cômodo apaga.
+O brilho emitido é constante; o contraste aumenta naturalmente no escuro, sem
+pulsação ou ajuste de brilho baseado na própria luz. As outras geladeiras
+mantêm sua iluminação. Refrigeração, capacidade, sons e consumo são preservados.
+Não adiciona um interruptor independente à geladeira.
+
+ESTOQUE VISUAL
+São seis níveis: vazia, uma, duas, três, quatro ou cinco fileiras preenchidas.
+Vazia: nenhum item nos compartimentos refrigerados.
+1 fileira: até 20% da capacidade ocupada.
+2 fileiras: acima de 20% até 40%.
+3 fileiras: acima de 40% até 60%.
+4 fileiras: acima de 60% até 80%.
+5 fileiras: acima de 80%.
+O cálculo soma a ocupação por peso e a capacidade dos compartimentos de geladeira
+e freezer. Ele acompanha colocar e retirar itens, inclusive ao esvaziar totalmente.
+As latas são uma representação visual do estoque: não convertem os alimentos
+armazenados em bebidas e não adicionam itens Monster consumíveis ao inventário.
+Os sabores são representados pelas cores; não há efeitos de bebida novos.
+Transferências atualizam a sobreposição diretamente, evitando imagens de alimentos
+padrão. Atualizações diretas do motor/rede são recuperadas no próximo ciclo do jogo.
+
+COMPATIBILIDADE
+Preparado e conferido com os arquivos da instalação 42.20.4.
+Compatível com Nick's Turn Off Fridges (fridgeoff/freezeroff).
+Mod ID: MonsterBlackFridge
+Independente dos mods Dinai e Coca-Cola ICE; não altera os mesmos sprites deles.
+Outros mods que substituam a mesma geladeira ou suas sobreposições podem conflitar.
+Em multijogador, cada cliente precisa ter o mod para ver a personalização.
+O estoque reflete o inventário que o servidor já sincronizou com cada cliente.
+Não envia alterações de inventário nem modifica propriedades físicas dos objetos.
+Para remover a aparência de um save existente, siga REMOCAO-SEGURA.md: faça backup e ative VINI Furniture Recovery [B42] antes de desativar o Monster. Mantenha o suporte enquanto houver referências antigas.
+
+VALIDAÇÃO REALIZADA
+- Leitura das 30 texturas pelo TexturePackDevice da própria instalação do jogo.
+- Compilação pelo compilador Kahlua usado pelo jogo.
+- Conferência dos métodos de energia, inventário e sprites na instalação.
+- Testes automatizados de ocupação, limites, energia, rotação, remoção, carregamento
+  de áreas e recuperação após atualizações visuais do jogo.
+- Inspeção visual das texturas empacotadas, inclusive ligada/desligada e vazia/cheia.
+O usuário já testou o mod em partida. As correções da 1.2.0 passaram em testes
+automatizados; a confirmação delas em nova partida e em servidor está pendente.
+
+TESTE RECOMENDADO EM PARTIDA
+1. Ative o mod em uma partida de teste e encontre uma geladeira industrial preta.
+2. Esvazie geladeira e freezer: o vidro deve mostrar prateleiras vazias.
+3. Adicione itens gradualmente aos compartimentos e observe as fileiras de latas.
+4. Retire os itens e confirme que as fileiras desaparecem.
+5. Confira a aparência com e sem energia, incluindo um gerador.
+   Com o mod do Nick, desligue e religue: a quantidade de fileiras deve ser mantida.
+6. Gire/recoloque a geladeira e salve/reabra a partida.
+
+CRÉDITOS
+Arte original criada com auxílio de IA e adaptada aos sprites da versão indicada.
+Prévia de apresentação: MonsterBlackFridge-preview.png (não é captura em partida).
+Mod de fã, sem vínculo com Monster Energy. Marcas pertencem aos respectivos titulares.
+
+Referências técnicas consultadas:
+https://projectzomboid.com/modding/zombie/iso/IsoObject.html
+https://projectzomboid.com/modding/zombie/inventory/ItemContainer.html

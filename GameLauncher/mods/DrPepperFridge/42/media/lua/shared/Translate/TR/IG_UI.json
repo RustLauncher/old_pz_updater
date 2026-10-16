@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Dr Pepper buzdolabı",
+  "IGUI_DrPepperFridge_WornName": "Eskimiş Dr Pepper buzdolabı",
+  "IGUI_DrPepperFridge_Fridge": "Dr Pepper buzdolabı",
+  "IGUI_DrPepperFridge_Freezer": "Dr Pepper dondurucu",
+  "IGUI_DrPepperFridge_WornFridge": "Eskimiş Dr Pepper buzdolabı",
+  "IGUI_DrPepperFridge_WornFreezer": "Eskimiş Dr Pepper dondurucu",
+  "IGUI_DrPepperFridge_StockHint": "Bu görünümün başlayacağı dolu kapasite yüzdesi. Kapasiteyi değiştirmez. Eşikler otomatik sıralanır."
+}

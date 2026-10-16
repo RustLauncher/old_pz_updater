@@ -1,0 +1,10 @@
+{
+    "ContextMenu_WAT_Menu": "Защита стёкол",
+    "ContextMenu_WAT_Install": "Установить",
+    "ContextMenu_WAT_Remove": "Снять",
+    "ContextMenu_WAT_InstallAll": "Установить на все стёкла",
+    "ContextMenu_WAT_RemoveAll": "Снять всю защиту",
+    "ContextMenu_WAT_BodyMenu": "Защита кузова",
+    "ContextMenu_WAT_BodyInstallAll": "Установить на капот и багажник",
+    "ContextMenu_WAT_BodyRemoveAll": "Снять защиту кузова"
+}

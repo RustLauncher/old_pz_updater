@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Dr Pepper Fridge",
+  "IGUI_DrPepperFridge_WornName": "Worn Dr Pepper Fridge",
+  "IGUI_DrPepperFridge_Fridge": "Dr Pepper Fridge",
+  "IGUI_DrPepperFridge_Freezer": "Dr Pepper Freezer",
+  "IGUI_DrPepperFridge_WornFridge": "Worn Dr Pepper Fridge",
+  "IGUI_DrPepperFridge_WornFreezer": "Worn Dr Pepper Freezer",
+  "IGUI_DrPepperFridge_StockHint": "Stored capacity percentage that starts this visual stage. Does not change storage capacity. Thresholds are sorted automatically."
+}

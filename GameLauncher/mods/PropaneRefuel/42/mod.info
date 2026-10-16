@@ -1,0 +1,9 @@
+name=Propane Refuelling at Gas Pumps
+id=PropaneRefuel
+description=Refill propane tanks and welding torches straight from a working gas station pump.
+poster=poster.png
+icon=icon.png
+author=Micha
+pzversion=42
+modversion=1.0.2
+versionMin=42.0

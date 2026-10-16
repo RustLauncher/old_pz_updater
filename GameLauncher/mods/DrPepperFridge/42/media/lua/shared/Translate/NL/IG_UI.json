@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Dr Pepper koelkast",
+  "IGUI_DrPepperFridge_WornName": "Versleten Dr Pepper koelkast",
+  "IGUI_DrPepperFridge_Fridge": "Dr Pepper koelkast",
+  "IGUI_DrPepperFridge_Freezer": "Dr Pepper vriezer",
+  "IGUI_DrPepperFridge_WornFridge": "Versleten Dr Pepper koelkast",
+  "IGUI_DrPepperFridge_WornFreezer": "Versleten Dr Pepper vriezer",
+  "IGUI_DrPepperFridge_StockHint": "Percentage gebruikte capaciteit waarbij deze weergave begint. Verandert de capaciteit niet. Drempels worden automatisch gesorteerd."
+}

@@ -1,0 +1,216 @@
+module Base
+{
+    model ToolBox_BagAttached
+    {
+        mesh = WorldItems/Clothing/ToolBox_Ground,
+        texture = Clothes/Bag/ToolBox,
+        scale = 0.35,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.05 -0.1,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.05 -0.025,
+            rotate = 55.0 90.0 45.0,
+        }
+    }
+
+    model FirstAidKit_BagAttached
+    {
+        mesh = WorldItems/Clothing/PlasticLunchBox_Ground,
+        texture = Clothes/Bag/PlasticLunchBox_Medic,
+        scale = 0.35,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+    }
+
+    model Lunchbox_BagAttached
+    {
+        mesh = WorldItems/Clothing/PlasticLunchBox_Ground,
+        texture = Clothes/Bag/PlasticLunchBox_01,
+        scale = 0.35,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.05 -0.05,
+            rotate = 55.0 90.0 45.0,
+        }
+    }
+
+    model PetrolCan_BagAttached
+    {
+        mesh = GasCan,
+        attachment bedroll_bottom
+        {
+            offset = 0.05 0.02 0.03,
+            rotate = 0.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.05 0.02 0.0,
+            rotate = 0.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.05 0.02 0.04,
+            rotate = 0.0 0.0 90.0,
+        }
+    }
+
+    model JerryCan_BagAttached
+    {
+        mesh = JerryCan,
+        scale = 0.9,
+        attachment bedroll_bottom
+        {
+            offset = 0.15 -0.01 -0.04,
+            rotate = 45.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.15 -0.01 -0.05,
+            rotate = 45.0 90.0 45.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.15 0.0 -0.03,
+            rotate = 45.0 90.0 45.0,
+        }
+    }
+
+    model WaterBottle_BagAttached
+    {
+        mesh = WaterBottle,
+        attachment bedroll_bottom
+        {
+            offset = 0.05 0.0 0.01,
+            rotate = 45.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.05 0.0 -0.01,
+            rotate = 45.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.05 0.0 0.01,
+            rotate = 45.0 0.0 90.0,
+        }
+    }
+
+    model Sportsbottle_BagAttached
+    {
+        mesh = WorldItems/Sportsbottle,
+        scale = 0.125,
+        attachment bedroll_bottom
+        {
+            offset = 0.05 0.0 0.01,
+            rotate = 0.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.05 0.0 -0.01,
+            rotate = 0.0 0.0 90.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.05 0.0 0.02,
+            rotate = 0.0 0.0 90.0,
+        }
+    }
+
+    model Tacklebox_BagAttached
+    {
+        mesh = WorldItems/Clothing/Tacklebox_Ground,
+        texture = Tacklebox1,
+        scale = 0.0875,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.03 -0.08,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.03 -0.095,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.03 -0.05,
+            rotate = 90.0 0.0 0.0,
+        }
+    }
+
+    model Tacklebox_BagAttached_2
+    {
+        mesh = WorldItems/Clothing/Tacklebox_Ground,
+        texture = Tacklebox2,
+        scale = 0.0875,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.03 -0.08,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.03 -0.095,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.03 -0.05,
+            rotate = 90.0 0.0 0.0,
+        }
+    }
+
+    model Tacklebox_BagAttached_3
+    {
+        mesh = WorldItems/Clothing/Tacklebox_Ground,
+        texture = Tacklebox3,
+        scale = 0.0875,
+        attachment bedroll_bottom
+        {
+            offset = 0.0 0.03 -0.08,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_big
+        {
+            offset = 0.0 0.03 -0.095,
+            rotate = 90.0 0.0 0.0,
+        }
+        attachment bedroll_bottom_alice
+        {
+            offset = 0.0 0.03 -0.05,
+            rotate = 90.0 0.0 0.0,
+        }
+    }
+}

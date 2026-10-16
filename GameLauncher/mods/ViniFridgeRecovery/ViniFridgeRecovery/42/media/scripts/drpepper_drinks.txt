@@ -1,0 +1,120 @@
+module DrPepper
+{
+    imports { Base }
+
+    /* Benefits are proportional to native consumption; neutral properties
+       avoid duplicate effects and permit sandbox values. */
+    fluid DrPepperRegular
+    {
+        ColorReference = Cola,
+        DisplayName = Fluid_Name_DrPepperRegular,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = 0.0,
+            UnhappyChange = 0.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+    fluid DrPepperDiet
+    {
+        ColorReference = Cola,
+        DisplayName = Fluid_Name_DrPepperDiet,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = 0.0,
+            UnhappyChange = 0.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    item CanRegular
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = DrPepperCanRegular,
+        EatType = Popcan,
+        StaticModel = DrPepper.DrPepperCanRegular,
+        WorldStaticModel = DrPepper.DrPepperCanRegular,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = DrPepperCanRegular,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = DrPepperRegular:1.0, }
+        }
+    }
+    item CanDiet
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = DrPepperCanDiet,
+        EatType = Popcan,
+        StaticModel = DrPepper.DrPepperCanDiet,
+        WorldStaticModel = DrPepper.DrPepperCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = DrPepperCanDiet,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = DrPepperDiet:1.0, }
+        }
+    }
+    model DrPepperCanRegular
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/DrPepperCanRegular,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+    model DrPepperCanDiet
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/DrPepperCanDiet,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+}

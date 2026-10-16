@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/Spear_Crude_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/Spear_Crude_Hand</m_FemaleModel>
+  <m_GUID>d643a9ef-5b52-97b0-0650-81cf8bc62cd8</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/2handed/Spear_Crude</textureChoices>
+</clothingItem>

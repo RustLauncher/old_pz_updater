@@ -1,0 +1,79 @@
+VERSION = 1,
+
+option PropaneRefuel.PropaneTankCost
+{
+	type = integer, min = 1, max = 100, default = 20,
+	page = PropaneRefuel, translation = PropaneRefuel_PropaneTankCost,
+}
+
+option PropaneRefuel.BlowTorchCost
+{
+	type = integer, min = 1, max = 100, default = 4,
+	page = PropaneRefuel, translation = PropaneRefuel_BlowTorchCost,
+}
+
+option PropaneRefuel.PropaneBottleCost
+{
+	type = integer, min = 1, max = 100, default = 6,
+	page = PropaneRefuel, translation = PropaneRefuel_PropaneBottleCost,
+}
+
+option PropaneRefuel.AllowBlowTorch
+{
+	type = boolean, default = true,
+	page = PropaneRefuel, translation = PropaneRefuel_AllowBlowTorch,
+}
+
+option PropaneRefuel.AllowPropaneBottle
+{
+	type = boolean, default = true,
+	page = PropaneRefuel, translation = PropaneRefuel_AllowPropaneBottle,
+}
+
+option PropaneRefuel.AllowPropaneTruck
+{
+	type = boolean, default = true,
+	page = PropaneRefuel, translation = PropaneRefuel_AllowPropaneTruck,
+}
+
+option PropaneRefuel.AllowTankerRefill
+{
+	type = boolean, default = true,
+	page = PropaneRefuel, translation = PropaneRefuel_AllowTankerRefill,
+}
+
+option PropaneRefuel.AllowIndustrialTanks
+{
+	type = boolean, default = true,
+	page = PropaneRefuel, translation = PropaneRefuel_AllowIndustrialTanks,
+}
+
+option PropaneRefuel.IndustrialTankSpawnMin
+{
+	type = integer, min = 0, max = 10000, default = 0,
+	page = PropaneRefuel, translation = PropaneRefuel_IndustrialTankSpawnMin,
+}
+
+option PropaneRefuel.IndustrialTankSpawnMax
+{
+	type = integer, min = 0, max = 10000, default = 500,
+	page = PropaneRefuel, translation = PropaneRefuel_IndustrialTankSpawnMax,
+}
+
+option PropaneRefuel.IndustrialTankCapacity
+{
+	type = integer, min = 0, max = 10000, default = 1000,
+	page = PropaneRefuel, translation = PropaneRefuel_IndustrialTankCapacity,
+}
+
+option PropaneRefuel.PropaneTruckReserveMin
+{
+	type = integer, min = 0, max = 1000, default = 0,
+	page = PropaneRefuel, translation = PropaneRefuel_PropaneTruckReserveMin,
+}
+
+option PropaneRefuel.PropaneTruckReserveMax
+{
+	type = integer, min = 0, max = 1000, default = 200,
+	page = PropaneRefuel, translation = PropaneRefuel_PropaneTruckReserveMax,
+}

@@ -1,0 +1,575 @@
+@alife-records 1
+
+pool VP_CANNIBAL_APPROACH
+  p.kind cannibal
+  p.adult true
+  t.1 Walk past.. just keep walking.. why'd I stop?
+  t.2 Stay where you are.. no, you can't help that now
+  t.3 No one's here to argue over it.. good
+  t.4 Can't hear anyone.. listen again before you kneel
+  t.5 Knew it was worth checking this road
+  t.6 Don't make a name up for them.. don't start that
+  t.7 I'm only going to look.. that's what I said last time
+  t.8 Sorry.. haven't even done it yet and I'm saying sorry
+  t.9 You had something to do today.. keep thinking about that
+  t.10 No grave.. can't do that and this, not both
+  t.11 Don't start guessing who you were thinking of
+  t.12 Something else'll take it if I wait.. there, that's my excuse
+  t.13 Please don't move when I get close.. please
+  t.14 Fuck.. almost walked straight past you
+  t.15 Get down before you change your damn mind
+  t.16 Who am I asking permission from?.. nobody's left here to give it
+  t.17 Was going to say excuse me.. listen to me
+  t.18 Still waiting for someone to tell me that's their seat
+  t.any.any.1 Walk past.. just keep walking.. why'd I stop?
+  t.any.any.2 Stay where you are.. no, you can't help that now
+  t.any.any.3 No one's here to argue over it.. good
+  t.any.any.4 Can't hear anyone.. listen again before you kneel
+  t.any.any.5 Knew it was worth checking this road
+  t.any.any.6 Don't make a name up for them.. don't start that
+  t.any.any.7 I'm only going to look.. that's what I said last time
+  t.any.any.8 Sorry.. haven't even done it yet and I'm saying sorry
+  t.any.any.9 You had something to do today.. keep thinking about that
+  t.any.any.10 No grave.. can't do that and this, not both
+  t.any.any.11 Don't start guessing who you were thinking of
+  t.any.any.12 Something else'll take it if I wait.. there, that's my excuse
+  t.any.any.13 Please don't move when I get close.. please
+  t.rough.any.1 Fuck.. almost walked straight past you
+  t.rough.any.2 Get down before you change your damn mind
+  t.rough.any.3 Who am I asking permission from?.. nobody's left here to give it
+  t.wry.any.1 Was going to say excuse me.. listen to me
+  t.wry.any.2 Still waiting for someone to tell me that's their seat
+end
+
+pool VP_CANNIBAL_FEEDING
+  p.kind cannibal
+  p.adult true
+  t.1 Mm.. no, don't make that sound.. don't enjoy it
+  t.2 Keeps happening.. I take another before I finish thinking
+  t.3 Used to need someone to remind me to eat
+  t.4 My jaw aches.. only noticing that now
+  t.5 The shaking's stopping.. I wish it wasn't
+  t.6 I'm still listening for your voice.. stupid thing to listen for
+  t.7 Mm.. that's better, don't even want to get up
+  t.8 Don't ask what you'd think of me.. you can't answer
+  t.9 Oh God.. I stopped looking away
+  t.10 Would you have done this?.. don't tell me you would, I don't know that
+  t.11 There's enough here.. don't have to race anyone for once
+  t.12 Whatever's next can wait.. I'm not leaving halfway through
+  t.13 I keep thinking somebody will call me in for supper
+  t.14 Mmh.. fuck.. can't take that noise back
+  t.15 Don't need a plate.. been past needing one for a while
+  t.16 Wouldn't have left this for me on purpose.. taking it anyway
+  t.17 Going to hear this when I try to sleep.. already know it
+  t.18 Didn't cover your face.. can't pretend I didn't see you
+  t.19 Counting the breaths I take.. easier than finding a reason
+  t.20 Don't get up.. don't you fucking get up now
+  t.21 Was going to bury you.. look at what I'm doing instead
+  t.22 I thought I'd cry.. there's nothing coming
+  t.23 Not a sound.. I'd pay for a quiet meal like this
+  t.24 Said I was nearly done.. don't know who I was telling
+  t.25 Haven't looked at the sky since I sat down
+  t.26 Listen.. someone?.. no, just me
+  t.27 Keep reaching for a reasonable word.. there isn't one
+  t.28 I could explain every decision that brought me here.. none explains staying
+  t.29 The alternative is dying beside you.. I find that a persuasive argument
+  t.30 I'm composing an account of it.. already leaving things out
+  t.31 Started saying grace.. couldn't get past the first word
+  t.32 Lord.. don't let me call this something You sent
+  t.33 I know asking forgiveness isn't the same as putting it down
+  t.34 Can't pray with my mouth doing this.. can't seem to stop it either
+  t.35 The living still need feeding.. I keep waiting for the Lord to contradict me
+  t.36 Fuckin' finally.. get to sit down and enjoy something
+  t.37 Quit checking the road and admit what you're doing
+  t.38 Mine?.. heard myself say mine like I bought the fucking thing
+  t.39 Should be choking on it.. why aren't I?
+  t.40 Keep coming back to that damn tune.. must be in a good mood
+  t.41 I can stop whenever.. bullshit, listen to that bullshit
+  t.42 Wasn't a dog.. knew that before I sat down
+  t.43 No one's taking this from me.. had enough of coming second
+  t.44 My raising ought to have stopped me farther back than this
+  t.45 Still got the knees to get down.. wonder if they'll let me up
+  t.46 Don't compare it to anything.. that's a person's doing, making comparisons
+  t.47 Had a place to eat once.. no, leave that place out of this
+  t.48 Won't go hungry with all this lying about.. that's all I'll say
+  t.49 Need my hands steady tomorrow.. been using that excuse all afternoon
+  t.50 Sitting on the ground again.. got dust in every pocket
+  t.51 There'll be another road after this.. need the legs to walk it
+  t.52 Keep working my jaw like there's a whistle about to blow
+  t.53 Keep wiping my hands out of habit.. can't believe I bother
+  t.54 No one shouting to get moving.. I'm staying till I'm ready
+  t.55 Elbows off the table.. where did that come from?
+  t.56 Nobody's going to ask if I enjoyed it.. that's something
+  t.57 Almost said pass me the.. no, never mind
+  t.58 Still trying not to make a mess.. priorities, eh?
+  t.59 Wouldn't have let a fly near my supper before
+  t.60 No one's asking how my day's been.. already an improvement
+  t.61 Well.. at least you're spared my table talk
+  t.62 Okay.. no.. saying okay doesn't make it okay
+  t.63 I can still see my hand doing it.. feels like I ought to grab it
+  t.64 Don't be sick.. oh God, I don't know which would be worse
+  t.65 Thought I'd hear myself screaming.. I'm not even saying anything
+  t.66 I want somebody to come.. I want nobody ever to find me here
+  t.any.any.1 Mm.. no, don't make that sound.. don't enjoy it
+  t.any.any.2 Keeps happening.. I take another before I finish thinking
+  t.any.any.3 Used to need someone to remind me to eat
+  t.any.any.4 My jaw aches.. only noticing that now
+  t.any.any.5 The shaking's stopping.. I wish it wasn't
+  t.any.any.6 I'm still listening for your voice.. stupid thing to listen for
+  t.any.any.7 Mm.. that's better, don't even want to get up
+  t.any.any.8 Don't ask what you'd think of me.. you can't answer
+  t.any.any.9 Oh God.. I stopped looking away
+  t.any.any.10 Would you have done this?.. don't tell me you would, I don't know that
+  t.any.any.11 There's enough here.. don't have to race anyone for once
+  t.any.any.12 Whatever's next can wait.. I'm not leaving halfway through
+  t.any.any.13 I keep thinking somebody will call me in for supper
+  t.any.any.14 Mmh.. fuck.. can't take that noise back
+  t.any.any.15 Don't need a plate.. been past needing one for a while
+  t.any.any.16 Wouldn't have left this for me on purpose.. taking it anyway
+  t.any.any.17 Going to hear this when I try to sleep.. already know it
+  t.any.any.18 Didn't cover your face.. can't pretend I didn't see you
+  t.any.any.19 Counting the breaths I take.. easier than finding a reason
+  t.any.any.20 Don't get up.. don't you fucking get up now
+  t.any.any.21 Was going to bury you.. look at what I'm doing instead
+  t.any.any.22 I thought I'd cry.. there's nothing coming
+  t.any.any.23 Not a sound.. I'd pay for a quiet meal like this
+  t.any.any.24 Said I was nearly done.. don't know who I was telling
+  t.any.any.25 Haven't looked at the sky since I sat down
+  t.any.any.26 Listen.. someone?.. no, just me
+  t.professional.any.1 Keep reaching for a reasonable word.. there isn't one
+  t.professional.any.2 I could explain every decision that brought me here.. none explains staying
+  t.professional.any.3 The alternative is dying beside you.. I find that a persuasive argument
+  t.professional.any.4 I'm composing an account of it.. already leaving things out
+  t.religious.any.1 Started saying grace.. couldn't get past the first word
+  t.religious.any.2 Lord.. don't let me call this something You sent
+  t.religious.any.3 I know asking forgiveness isn't the same as putting it down
+  t.religious.any.4 Can't pray with my mouth doing this.. can't seem to stop it either
+  t.religious.any.5 The living still need feeding.. I keep waiting for the Lord to contradict me
+  t.rough.any.1 Fuckin' finally.. get to sit down and enjoy something
+  t.rough.any.2 Quit checking the road and admit what you're doing
+  t.rough.any.3 Mine?.. heard myself say mine like I bought the fucking thing
+  t.rough.any.4 Should be choking on it.. why aren't I?
+  t.rough.any.5 Keep coming back to that damn tune.. must be in a good mood
+  t.rough.any.6 I can stop whenever.. bullshit, listen to that bullshit
+  t.rough.any.7 Wasn't a dog.. knew that before I sat down
+  t.rough.any.8 No one's taking this from me.. had enough of coming second
+  t.rural_elder.any.1 My raising ought to have stopped me farther back than this
+  t.rural_elder.any.2 Still got the knees to get down.. wonder if they'll let me up
+  t.rural_elder.any.3 Don't compare it to anything.. that's a person's doing, making comparisons
+  t.rural_elder.any.4 Had a place to eat once.. no, leave that place out of this
+  t.rural_elder.any.5 Won't go hungry with all this lying about.. that's all I'll say
+  t.working.any.1 Need my hands steady tomorrow.. been using that excuse all afternoon
+  t.working.any.2 Sitting on the ground again.. got dust in every pocket
+  t.working.any.3 There'll be another road after this.. need the legs to walk it
+  t.working.any.4 Keep working my jaw like there's a whistle about to blow
+  t.working.any.5 Keep wiping my hands out of habit.. can't believe I bother
+  t.working.any.6 No one shouting to get moving.. I'm staying till I'm ready
+  t.wry.any.1 Elbows off the table.. where did that come from?
+  t.wry.any.2 Nobody's going to ask if I enjoyed it.. that's something
+  t.wry.any.3 Almost said pass me the.. no, never mind
+  t.wry.any.4 Still trying not to make a mess.. priorities, eh?
+  t.wry.any.5 Wouldn't have let a fly near my supper before
+  t.wry.any.6 No one's asking how my day's been.. already an improvement
+  t.wry.any.7 Well.. at least you're spared my table talk
+  t.young.any.1 Okay.. no.. saying okay doesn't make it okay
+  t.young.any.2 I can still see my hand doing it.. feels like I ought to grab it
+  t.young.any.3 Don't be sick.. oh God, I don't know which would be worse
+  t.young.any.4 Thought I'd hear myself screaming.. I'm not even saying anything
+  t.young.any.5 I want somebody to come.. I want nobody ever to find me here
+end
+
+pool VP_CANNIBAL_FIND_BODY
+  p.kind cannibal
+  p.adult true
+  t.1 Is that someone?.. no movement
+  t.2 Almost called out.. almost
+  t.3 Been lying there long? Can't tell from here
+  t.4 There's someone lying there.. why'd my stomach notice first?
+  t.5 Don't go over.. just stand here a moment
+  t.6 Was somebody with you?.. nobody I can see
+  t.7 Could be waiting for me to get close.. watch for a second
+  t.8 A still shape.. ought to know better than to stop and stare
+  t.9 Somebody ought to cover you.. somebody else
+  t.10 No.. I know what I'm thinking, no
+  t.11 Fuck.. there I go looking again
+  t.any.any.1 Is that someone?.. no movement
+  t.any.any.2 Almost called out.. almost
+  t.any.any.3 Been lying there long? Can't tell from here
+  t.any.any.4 There's someone lying there.. why'd my stomach notice first?
+  t.any.any.5 Don't go over.. just stand here a moment
+  t.any.any.6 Was somebody with you?.. nobody I can see
+  t.any.any.7 Could be waiting for me to get close.. watch for a second
+  t.any.any.8 A still shape.. ought to know better than to stop and stare
+  t.any.any.9 Somebody ought to cover you.. somebody else
+  t.any.any.10 No.. I know what I'm thinking, no
+  t.rough.any.1 Fuck.. there I go looking again
+end
+
+pool VP_CANNIBAL_INTERRUPTED
+  p.kind cannibal
+  p.adult true
+  t.1 N-no!.. don't come closer!
+  t.2 How long?.. how long were you there?
+  t.3 Let me get up.. can't get my words out down here
+  t.4 Shit.. I thought I heard nothing
+  t.5 Who is it?.. say something so I can hear you
+  t.6 I'm moving back.. you stay there please
+  t.7 Don't reach for me.. let me stand on my own
+  t.8 You saw enough.. please don't make me explain it here
+  t.9 I heard you.. I just didn't want to stop
+  t.10 Give me room to stand.. that's all I'm asking
+  t.11 Back the fuck up!.. let me get on my feet
+  t.12 Don't stare like you know how I got here
+  t.any.any.1 N-no!.. don't come closer!
+  t.any.any.2 How long?.. how long were you there?
+  t.any.any.3 Let me get up.. can't get my words out down here
+  t.any.any.4 Shit.. I thought I heard nothing
+  t.any.any.5 Who is it?.. say something so I can hear you
+  t.any.any.6 I'm moving back.. you stay there please
+  t.any.any.7 Don't reach for me.. let me stand on my own
+  t.any.any.8 You saw enough.. please don't make me explain it here
+  t.any.any.9 I heard you.. I just didn't want to stop
+  t.any.any.10 Give me room to stand.. that's all I'm asking
+  t.rough.any.1 Back the fuck up!.. let me get on my feet
+  t.rough.any.2 Don't stare like you know how I got here
+end
+
+pool VP_CANNIBAL_LEAVE
+  p.kind cannibal
+  p.adult true
+  t.1 Get up.. don't decide to stay because getting up is hard
+  t.2 Still have to go on from here.. haven't worked out which way
+  t.3 Thought I could leave without looking.. looked anyway
+  t.4 No one to clear a place for now.. just the road
+  t.5 I'm not hungry.. don't know what to do with that yet
+  t.6 Still got the rest of this day to walk through
+  t.7 Want to leave something.. can't think what would make any difference
+  t.8 Already trying to forget where I sat.. know I won't
+  t.9 Was waiting to feel better before I left.. can't wait for that
+  t.10 Goodbye.. shouldn't be leaving you like this
+  t.11 Nothing to put on the calendar for this.. probably just as well
+  t.any.any.1 Get up.. don't decide to stay because getting up is hard
+  t.any.any.2 Still have to go on from here.. haven't worked out which way
+  t.any.any.3 Thought I could leave without looking.. looked anyway
+  t.any.any.4 No one to clear a place for now.. just the road
+  t.any.any.5 I'm not hungry.. don't know what to do with that yet
+  t.any.any.6 Still got the rest of this day to walk through
+  t.any.any.7 Want to leave something.. can't think what would make any difference
+  t.any.any.8 Already trying to forget where I sat.. know I won't
+  t.any.any.9 Was waiting to feel better before I left.. can't wait for that
+  t.any.any.10 Goodbye.. shouldn't be leaving you like this
+  t.wry.any.1 Nothing to put on the calendar for this.. probably just as well
+end
+
+pool VP_CANNIBAL_PLAYER_BODY
+  p.kind cannibal
+  p.adult true
+  t.1 Who was waiting for you?.. don't answer that for them
+  t.2 Might have passed you on a road.. might have, I don't know
+  t.3 You had a name before I made you a meal
+  t.4 I'm talking like you agreed to this.. you didn't
+  t.5 I wonder what you were about to do next
+  t.6 Someone'll be looking.. can't use not knowing them as an excuse
+  t.7 You don't owe me a damn thing.. not even now
+  t.8 Keep looking for a reason you deserved this.. there isn't one here
+  t.9 If you knew me you might have said no.. should've had the chance
+  t.10 Can't tell what kind of person you were.. keep trying anyway
+  t.11 I'm not going to invent a quick end for you just to feel better
+  t.12 Had a day planned once, didn't you?.. probably an ordinary one
+  t.13 Nearly called you friend.. haven't earned that
+  t.14 I'm the one still moving.. that's all it proves
+  t.15 Won't take your things and call it remembering you
+  t.16 There might have been someone you trusted.. I hope it wasn't me
+  t.17 Ought to find a prayer for you.. can't think of one that isn't about me
+  t.18 If there's someone to forgive me it shouldn't have to be you
+  t.19 Don't know how you died.. still acting like I beat you
+  t.20 Fuck.. keep talking tough to someone who can't get up
+  t.21 Can't threaten me from there.. why do I keep checking?
+  t.22 Would introduce myself.. seems a little late to make a good impression
+  t.any.any.1 Who was waiting for you?.. don't answer that for them
+  t.any.any.2 Might have passed you on a road.. might have, I don't know
+  t.any.any.3 You had a name before I made you a meal
+  t.any.any.4 I'm talking like you agreed to this.. you didn't
+  t.any.any.5 I wonder what you were about to do next
+  t.any.any.6 Someone'll be looking.. can't use not knowing them as an excuse
+  t.any.any.7 You don't owe me a damn thing.. not even now
+  t.any.any.8 Keep looking for a reason you deserved this.. there isn't one here
+  t.any.any.9 If you knew me you might have said no.. should've had the chance
+  t.any.any.10 Can't tell what kind of person you were.. keep trying anyway
+  t.any.any.11 I'm not going to invent a quick end for you just to feel better
+  t.any.any.12 Had a day planned once, didn't you?.. probably an ordinary one
+  t.any.any.13 Nearly called you friend.. haven't earned that
+  t.any.any.14 I'm the one still moving.. that's all it proves
+  t.any.any.15 Won't take your things and call it remembering you
+  t.any.any.16 There might have been someone you trusted.. I hope it wasn't me
+  t.religious.any.1 Ought to find a prayer for you.. can't think of one that isn't about me
+  t.religious.any.2 If there's someone to forgive me it shouldn't have to be you
+  t.rough.any.1 Don't know how you died.. still acting like I beat you
+  t.rough.any.2 Fuck.. keep talking tough to someone who can't get up
+  t.rough.any.3 Can't threaten me from there.. why do I keep checking?
+  t.wry.any.1 Would introduce myself.. seems a little late to make a good impression
+end
+
+pool VP_CANNIBAL_STAB
+  p.kind cannibal
+  p.adult true
+  t.1 Hands won't stop.. STOP
+  t.2 Look somewhere else.. not there
+  t.3 Thought I could do this without shaking
+  t.4 No one's holding my hand.. that's me doing it
+  t.5 I'm sorry for what comes next
+  t.6 Still time to put it down.. still time
+  t.7 Keep looking away.. won't stop being here when I look back
+  t.8 I said never again.. heard myself say it
+  t.9 H-hold on.. give me a second
+  t.any.any.1 Hands won't stop.. STOP
+  t.any.any.2 Look somewhere else.. not there
+  t.any.any.3 Thought I could do this without shaking
+  t.any.any.4 No one's holding my hand.. that's me doing it
+  t.any.any.5 I'm sorry for what comes next
+  t.any.any.6 Still time to put it down.. still time
+  t.any.any.7 Keep looking away.. won't stop being here when I look back
+  t.any.any.8 I said never again.. heard myself say it
+  t.any.any.9 H-hold on.. give me a second
+end
+
+pool VP_DOLINES_FRESH
+  p.kind dolines
+  g.any.any clean
+  g.any.hi clean & trust>=25
+  t.1 *Checks the clean hands once more*
+  t.2 *Turns one hand then the other*
+  t.3 *Studies the clean palms for a moment*
+  t.4 *Studies the pale marks where the dirt was*
+  t.5 *Runs a thumb over a washed knuckle*
+  t.6 *Touches a clean fingertip with the opposite thumb*
+  t.7 *Looks at a wrist then lowers both hands*
+  t.8 *Offers a hand then glances down at its clean palm*
+  t.9 *Lets the player see a small smile before looking away*
+  t.10 *Shifts a little closer without raising the voice*
+  t.any.any.1 *Checks the clean hands once more*
+  t.any.any.2 *Turns one hand then the other*
+  t.any.any.3 *Studies the clean palms for a moment*
+  t.any.any.4 *Studies the pale marks where the dirt was*
+  t.any.any.5 *Runs a thumb over a washed knuckle*
+  t.any.any.6 *Touches a clean fingertip with the opposite thumb*
+  t.any.any.7 *Looks at a wrist then lowers both hands*
+  t.any.hi.1 *Offers a hand then glances down at its clean palm*
+  t.any.hi.2 *Lets the player see a small smile before looking away*
+  t.any.hi.3 *Shifts a little closer without raising the voice*
+end
+
+pool VP_WASH_ASK
+  p.kind wash
+  t.1 Can I use the sink?.. I'll stand aside if you need it
+  t.2 Is there water to spare? Even enough for these hands
+  t.3 I'd like to get this dust off before it gets on your chair
+  t.4 Which way's the bathroom? Just to wash up, if that's all right
+  t.5 Got any soap I could borrow?.. water on its own is fine too
+  t.6 Clothes keep sticking to me.. could I wash somewhere?
+  t.7 If the tap's dry I'll manage.. thought I'd ask first
+  t.8 Please point out which towel's for guests.. I don't want to take yours
+  t.9 Can we talk after I've washed? I keep rubbing grit into my eyes
+  t.10 May I leave my things here while I clean up?.. here where you can see them
+  t.11 Need a damn wash.. where can I do that without making a mess?
+  t.12 This shirt's stuck to me.. got somewhere I can clean up?
+  t.13 A little water in a basin would suit me.. no need to fill it
+  t.14 I'd be obliged if I could rinse my hands before we talk
+  t.15 The sink won't look worse when I leave it.. probably the strongest promise I've got
+  t.16 Could I wash first? I'll be easier to sit next to
+  t.17 Would it be weird if I asked to wash my face before anything else?
+  t.18 Could you show me where to wash?.. don't want to go looking without asking
+  t.any.any.1 Can I use the sink?.. I'll stand aside if you need it
+  t.any.any.2 Is there water to spare? Even enough for these hands
+  t.any.any.3 I'd like to get this dust off before it gets on your chair
+  t.any.any.4 Which way's the bathroom? Just to wash up, if that's all right
+  t.any.any.5 Got any soap I could borrow?.. water on its own is fine too
+  t.any.any.6 Clothes keep sticking to me.. could I wash somewhere?
+  t.any.any.7 If the tap's dry I'll manage.. thought I'd ask first
+  t.any.any.8 Please point out which towel's for guests.. I don't want to take yours
+  t.any.any.9 Can we talk after I've washed? I keep rubbing grit into my eyes
+  t.any.any.10 May I leave my things here while I clean up?.. here where you can see them
+  t.rough.any.1 Need a damn wash.. where can I do that without making a mess?
+  t.rough.any.2 This shirt's stuck to me.. got somewhere I can clean up?
+  t.rural_elder.any.1 A little water in a basin would suit me.. no need to fill it
+  t.rural_elder.any.2 I'd be obliged if I could rinse my hands before we talk
+  t.wry.any.1 The sink won't look worse when I leave it.. probably the strongest promise I've got
+  t.wry.any.2 Could I wash first? I'll be easier to sit next to
+  t.young.any.1 Would it be weird if I asked to wash my face before anything else?
+  t.young.any.2 Could you show me where to wash?.. don't want to go looking without asking
+end
+
+pool VP_WASH_BLOOD
+  p.kind wash
+  t.1 Please let me wash before you start asking about the blood
+  t.2 Can you tell whether I've missed any?.. I keep checking the same hand
+  t.3 I know how this looks from the doorway.. give me a minute
+  t.4 Got blood right across the button.. I keep finding more of it
+  t.5 Don't put your good towel down beside me
+  t.6 I was trying to keep it off your floor.. let me clean up
+  t.7 Can't tell where the dirt ends anymore.. I need a wash
+  t.8 Could you stay on the other side of the door for a minute? Just stay there
+  t.9 I need to wash before I handle anything in here
+  t.10 Please don't assume the blood tells you what happened.. let me finish first
+  t.11 Christ.. every time I think it's gone I find another mark
+  t.12 I'm not spreading this shit around.. where's the sink?
+  t.any.any.1 Please let me wash before you start asking about the blood
+  t.any.any.2 Can you tell whether I've missed any?.. I keep checking the same hand
+  t.any.any.3 I know how this looks from the doorway.. give me a minute
+  t.any.any.4 Got blood right across the button.. I keep finding more of it
+  t.any.any.5 Don't put your good towel down beside me
+  t.any.any.6 I was trying to keep it off your floor.. let me clean up
+  t.any.any.7 Can't tell where the dirt ends anymore.. I need a wash
+  t.any.any.8 Could you stay on the other side of the door for a minute? Just stay there
+  t.professional.any.1 I need to wash before I handle anything in here
+  t.professional.any.2 Please don't assume the blood tells you what happened.. let me finish first
+  t.rough.any.1 Christ.. every time I think it's gone I find another mark
+  t.rough.any.2 I'm not spreading this shit around.. where's the sink?
+end
+
+pool VP_WASH_CAUGHT
+  p.kind wash
+  t.1 Hey!.. can you wait outside please?
+  t.2 Not quite finished.. I'll come find you
+  t.3 Could you turn away a moment?
+  t.4 I heard you.. please wait till I answer next time
+  t.5 Please leave me some room.. I'll be out shortly
+  t.6 Oh!.. I didn't hear you coming
+  t.7 Give me a minute on my own, all right?
+  t.8 You need something?.. can it wait until I'm done?
+  t.9 Christ, give me a chance to say come in first
+  t.any.any.1 Hey!.. can you wait outside please?
+  t.any.any.2 Not quite finished.. I'll come find you
+  t.any.any.3 Could you turn away a moment?
+  t.any.any.4 I heard you.. please wait till I answer next time
+  t.any.any.5 Please leave me some room.. I'll be out shortly
+  t.any.any.6 Oh!.. I didn't hear you coming
+  t.any.any.7 Give me a minute on my own, all right?
+  t.any.any.8 You need something?.. can it wait until I'm done?
+  t.rough.any.1 Christ, give me a chance to say come in first
+end
+
+pool VP_WASH_CHANGE
+  p.kind wash
+  p.adult true
+  t.1 Let me find somewhere private to change.. won't be long
+  t.2 Could you face the other way while I switch shirts?
+  t.3 Just checking which way round this goes.. don't come in yet
+  t.4 I'll be right back after I change.. please wait here
+  t.5 Give me a moment to sort these clothes out
+  t.6 I'd like to get changed before I settle in.. if there's room
+  t.7 Nearly ready.. I packed everything in the wrong order
+  t.8 Is this a room I can use to change in? I don't want to take somebody's place
+  t.9 Please wait till I call.. I'm still changing
+  t.10 One moment.. I want to put the old things away properly
+  t.any.any.1 Let me find somewhere private to change.. won't be long
+  t.any.any.2 Could you face the other way while I switch shirts?
+  t.any.any.3 Just checking which way round this goes.. don't come in yet
+  t.any.any.4 I'll be right back after I change.. please wait here
+  t.any.any.5 Give me a moment to sort these clothes out
+  t.any.any.6 I'd like to get changed before I settle in.. if there's room
+  t.any.any.7 Nearly ready.. I packed everything in the wrong order
+  t.any.any.8 Is this a room I can use to change in? I don't want to take somebody's place
+  t.any.any.9 Please wait till I call.. I'm still changing
+  t.any.any.10 One moment.. I want to put the old things away properly
+end
+
+pool VP_WASH_DONE_BATH
+  p.kind wash
+  t.1 I'm out.. sorry if you were waiting to use it
+  t.2 Didn't hear the house for a bit in there.. kept checking you were still around
+  t.3 Let me see whether I left any dirt behind before you go in
+  t.4 I almost came out to ask whether I was taking too long
+  t.5 Better not sit right down.. I'd have trouble getting back up now
+  t.6 I can stand having my collar against me again
+  t.7 That was more water than I expected anyone to spare
+  t.8 I stopped scrubbing and just stood there.. needed someone to tell me I was done
+  t.9 Give me a moment.. wasn't expecting to like being here this much
+  t.10 Was going to make a joke when I came out.. can't quite remember it now
+  t.11 I did think about staying in there.. your bathroom's occupied enough already
+  t.any.any.1 I'm out.. sorry if you were waiting to use it
+  t.any.any.2 Didn't hear the house for a bit in there.. kept checking you were still around
+  t.any.any.3 Let me see whether I left any dirt behind before you go in
+  t.any.any.4 I almost came out to ask whether I was taking too long
+  t.any.any.5 Better not sit right down.. I'd have trouble getting back up now
+  t.any.any.6 I can stand having my collar against me again
+  t.any.any.7 That was more water than I expected anyone to spare
+  t.any.any.8 I stopped scrubbing and just stood there.. needed someone to tell me I was done
+  t.rural_elder.any.1 Give me a moment.. wasn't expecting to like being here this much
+  t.wry.any.1 Was going to make a joke when I came out.. can't quite remember it now
+  t.wry.any.2 I did think about staying in there.. your bathroom's occupied enough already
+end
+
+pool VP_WASH_DONE_SINK
+  p.kind wash
+  t.1 There.. now I can put my hands on the table
+  t.2 Didn't realize how much dirt I'd been carrying around
+  t.3 Still catching myself reaching back for the tap.. I'm finished
+  t.4 Got the grit off my wrists at last
+  t.5 Better.. I'll leave the sink clear for you
+  t.6 I kept rubbing the same place after it was clean
+  t.7 Kept going after my hands were clean.. didn't want to stop just yet
+  t.8 Took longer than I meant to.. thanks for waiting
+  t.9 My hands look awfully pale without all that road on them
+  t.10 Hell, look at that.. actual hands under there
+  t.11 Could've done with that wash a while back.. kept putting it off
+  t.12 You can safely shake hands now.. if either of us still does that
+  t.13 I'll try not to spend the whole visit in your bathroom
+  t.any.any.1 There.. now I can put my hands on the table
+  t.any.any.2 Didn't realize how much dirt I'd been carrying around
+  t.any.any.3 Still catching myself reaching back for the tap.. I'm finished
+  t.any.any.4 Got the grit off my wrists at last
+  t.any.any.5 Better.. I'll leave the sink clear for you
+  t.any.any.6 I kept rubbing the same place after it was clean
+  t.any.any.7 Kept going after my hands were clean.. didn't want to stop just yet
+  t.any.any.8 Took longer than I meant to.. thanks for waiting
+  t.any.any.9 My hands look awfully pale without all that road on them
+  t.rough.any.1 Hell, look at that.. actual hands under there
+  t.rough.any.2 Could've done with that wash a while back.. kept putting it off
+  t.wry.any.1 You can safely shake hands now.. if either of us still does that
+  t.wry.any.2 I'll try not to spend the whole visit in your bathroom
+end
+
+pool VP_WASH_NO_WATER
+  p.kind wash
+  t.1 Nothing.. kept waiting for something to come out
+  t.2 Tap's dry.. should I leave it turned off?
+  t.3 I can hear the handle moving and that's all
+  t.4 Never mind.. thought something might come through if I waited
+  t.5 Is there stored water or is that for drinking? I can leave it
+  t.6 Could I have a dry cloth instead?.. only if it's spare
+  t.7 I'll stop fiddling with it.. you must have tried already
+  t.8 Won't take any from your bottles without asking
+  t.9 Damn it.. no, not you, the tap
+  t.any.any.1 Nothing.. kept waiting for something to come out
+  t.any.any.2 Tap's dry.. should I leave it turned off?
+  t.any.any.3 I can hear the handle moving and that's all
+  t.any.any.4 Never mind.. thought something might come through if I waited
+  t.any.any.5 Is there stored water or is that for drinking? I can leave it
+  t.any.any.6 Could I have a dry cloth instead?.. only if it's spare
+  t.any.any.7 I'll stop fiddling with it.. you must have tried already
+  t.any.any.8 Won't take any from your bottles without asking
+  t.rough.any.1 Damn it.. no, not you, the tap
+end
+
+pool VP_WASH_THANKS
+  p.kind wash
+  t.1 Thank you for letting me use the water.. I did try not to waste it
+  t.2 Thanks.. been asking for the road so much I forgot I could ask for a wash
+  t.3 Meant to thank you before I started.. got as far as the tap and forgot
+  t.4 I'll get out of your way now.. thanks for the bathroom
+  t.5 I wanted to ask when I came in.. couldn't work up to it
+  t.6 Thank you.. I can put my hands down without leaving marks now
+  t.7 Didn't expect you to say yes so easily.. thanks
+  t.8 If water gets short while I'm here you tell me.. I won't pretend not to notice
+  t.9 Thanks.. had a whole speech about not needing a wash, but I did
+  t.any.any.1 Thank you for letting me use the water.. I did try not to waste it
+  t.any.any.2 Thanks.. been asking for the road so much I forgot I could ask for a wash
+  t.any.any.3 Meant to thank you before I started.. got as far as the tap and forgot
+  t.any.any.4 I'll get out of your way now.. thanks for the bathroom
+  t.any.any.5 I wanted to ask when I came in.. couldn't work up to it
+  t.any.any.6 Thank you.. I can put my hands down without leaving marks now
+  t.any.any.7 Didn't expect you to say yes so easily.. thanks
+  t.any.any.8 If water gets short while I'm here you tell me.. I won't pretend not to notice
+  t.wry.any.1 Thanks.. had a whole speech about not needing a wash, but I did
+end

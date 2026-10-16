@@ -1,0 +1,140 @@
+module Base
+{
+    entity ExpandedStorage_MilitaryCrateGreen
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_ExpandedStorage_MilitaryCrateGreen,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face E
+            {
+                layer
+                {
+                    row = location_military_generic_01_0,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_military_generic_01_1,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            SkillRequired = MetalWelding:9,
+            xpAward = MetalWelding:90,
+            category = Furniture,
+            Tags = Welding;Furniture,
+            Tooltip = Tooltip_craft_crateDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+    entity ExpandedStorage_MilitaryCrateGrey
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_ExpandedStorage_MilitaryCrateGrey,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face E
+            {
+                layer
+                {
+                    row = location_military_generic_01_8,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_military_generic_01_9,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            SkillRequired = MetalWelding:9,
+            xpAward = MetalWelding:90,
+            category = Furniture,
+            Tags = Welding;Furniture,
+            Tooltip = Tooltip_craft_crateDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+    entity ExpandedStorage_LargeMetalShelves
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_ExpandedStorage_LargeMetalShelves,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_shelving_01_25,
+                    row = furniture_shelving_01_24,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_shelving_01_26 furniture_shelving_01_27,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 100,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:50,
+            category = Furniture,
+            Tags = Welding;Furniture,
+            Tooltip = Tooltip_craft_shelvesDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SheetMetal],
+                item 4 [Base.MetalPipe],
+                item 2 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

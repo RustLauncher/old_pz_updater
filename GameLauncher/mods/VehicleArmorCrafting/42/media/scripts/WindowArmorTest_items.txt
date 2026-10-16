@@ -1,0 +1,29 @@
+module WindowArmorTest
+{
+    imports
+    {
+        Base
+    }
+
+    item GlassArmorKit
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 3.0,
+        Icon = GlassArmorKit,
+        ConditionMax = 100,
+        WorldStaticModel = MetalSheet,
+        Tooltip = Tooltip_WAT_Kit,
+    }
+
+    item BodyArmorPlate
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = BodyArmorPlate,
+        ConditionMax = 100,
+        WorldStaticModel = MetalSheet,
+        Tooltip = Tooltip_WAT_Plate,
+    }
+}

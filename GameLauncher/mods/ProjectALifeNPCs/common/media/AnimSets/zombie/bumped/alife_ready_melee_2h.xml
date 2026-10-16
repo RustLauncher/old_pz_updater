@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeReadyMelee2H</m_Name>
+	<m_AnimName>Bob_IdleAimBat</m_AnimName>
+	<m_SpeedScale>0.90</m_SpeedScale>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_BlendOutTime>0.24</m_BlendOutTime>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions>
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>ALifeReadyMelee2H</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,7 @@
+{
+  "IGUI_PepsiFridge_Name": "Réfrigérateur Pepsi",
+  "IGUI_PepsiFridge_WornName": "Réfrigérateur Pepsi Usé",
+  "IGUI_PepsiFridge_Fridge": "Réfrigérateur",
+  "IGUI_PepsiFridge_Freezer": "Congélateur",
+  "IGUI_PepsiFridge_StockHint": "Vide / peu rempli / presque plein / plein\n<10%% / 10–<20%% / 20–<30%% / ≥30%%"
+}

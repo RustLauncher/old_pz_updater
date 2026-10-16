@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Nevera Dr Pepper",
+  "IGUI_DrPepperFridge_WornName": "Nevera Dr Pepper usada",
+  "IGUI_DrPepperFridge_Fridge": "Nevera Dr Pepper",
+  "IGUI_DrPepperFridge_Freezer": "Congelador Dr Pepper",
+  "IGUI_DrPepperFridge_WornFridge": "Nevera Dr Pepper usada",
+  "IGUI_DrPepperFridge_WornFreezer": "Congelador Dr Pepper usado",
+  "IGUI_DrPepperFridge_StockHint": "Porcentaje de capacidad ocupada que inicia esta etapa visual. No cambia la capacidad. Los umbrales se ordenan automáticamente."
+}

@@ -1,0 +1,241 @@
+module Base
+{
+    item MonsterCan
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = MonsterCan,
+        EatType = Popcan,
+        StaticModel = MonsterCanModel,
+        WorldStaticModel = MonsterCanModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterEnergy:1.0, }
+        }
+    }
+
+    item MonsterUltraWhite
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra,
+        Weight = 0.5,
+        Icon = MonsterUltraWhite,
+        EatType = Popcan,
+        StaticModel = MonsterUltraWhiteModel,
+        WorldStaticModel = MonsterUltraWhiteModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterUltraParadise
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra Paradise,
+        Weight = 0.5,
+        Icon = MonsterUltraParadise,
+        EatType = Popcan,
+        StaticModel = MonsterUltraParadiseModel,
+        WorldStaticModel = MonsterUltraParadiseModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterUltraSunrise
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra Sunrise,
+        Weight = 0.5,
+        Icon = MonsterUltraSunrise,
+        EatType = Popcan,
+        StaticModel = MonsterUltraSunriseModel,
+        WorldStaticModel = MonsterUltraSunriseModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterUltraViolet
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra Violet,
+        Weight = 0.5,
+        Icon = MonsterUltraViolet,
+        EatType = Popcan,
+        StaticModel = MonsterUltraVioletModel,
+        WorldStaticModel = MonsterUltraVioletModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterUltraRed
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra Red,
+        Weight = 0.5,
+        Icon = MonsterUltraRed,
+        EatType = Popcan,
+        StaticModel = MonsterUltraRedModel,
+        WorldStaticModel = MonsterUltraRedModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterUltraPeachyKeen
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Ultra Peachy Keen,
+        Weight = 0.5,
+        Icon = MonsterUltraPeachyKeen,
+        EatType = Popcan,
+        StaticModel = MonsterUltraPeachyKeenModel,
+        WorldStaticModel = MonsterUltraPeachyKeenModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterUltra:1.0, }
+        }
+    }
+
+    item MonsterPipelinePunch
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Pipeline Punch,
+        Weight = 0.5,
+        Icon = MonsterPipelinePunch,
+        EatType = Popcan,
+        StaticModel = MonsterPipelinePunchModel,
+        WorldStaticModel = MonsterPipelinePunchModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterJuice:1.0, }
+        }
+    }
+
+    item MonsterMangoLoco
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Mango Loco,
+        Weight = 0.5,
+        Icon = MonsterMangoLoco,
+        EatType = Popcan,
+        StaticModel = MonsterMangoLocoModel,
+        WorldStaticModel = MonsterMangoLocoModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterJuice:1.0, }
+        }
+    }
+
+    item MonsterKhaotic
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Monster Khaotic,
+        Weight = 0.5,
+        Icon = MonsterKhaotic,
+        EatType = Popcan,
+        StaticModel = MonsterKhaoticModel,
+        WorldStaticModel = MonsterKhaoticModel,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = CanPop,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids { fluid = MonsterJuice:1.0, }
+        }
+    }
+}

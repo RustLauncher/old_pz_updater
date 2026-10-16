@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/Mop_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/Mop_Hand</m_FemaleModel>
+  <m_GUID>17f8d809-2c40-b526-2c07-26c7afef0b58</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>WorldItems/Mop</textureChoices>
+</clothingItem>

@@ -1,0 +1,19 @@
+﻿<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\jacket_denim_m.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\Kate_JacketLeather.X</m_FemaleModel>
+	<m_GUID>58f3806f-dadc-4373-a576-fe17fdc7c375</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>12</m_Masks>
+	<m_Masks>13</m_Masks>
+	<m_Masks>3</m_Masks>
+	<m_Masks>5</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Jacket/Masks_Leather</m_MasksFolder>
+	<m_UnderlayMasksFolder>media/textures/Clothes/Jacket/Masks</m_UnderlayMasksFolder>
+	<textureChoices>clothes\jacket\jacket_denim</textureChoices>
+	<textureChoices>clothes\jacket\jacket_denim1</textureChoices>
+	<textureChoices>clothes\jacket\jacket_denim2</textureChoices>
+	<textureChoices>clothes\jacket\jacket_denim3</textureChoices>
+</clothingItem>

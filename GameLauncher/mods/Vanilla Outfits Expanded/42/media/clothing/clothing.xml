@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<outfitManager>
+
+	<m_MaleOutfits>
+		<m_Name>VOE_FieldJacket</m_Name>
+		<m_Guid>26983255-2468-4b24-9e8a-cce98e46471d</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers_Denim -->
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Black -->
+			<itemGUID>d3481027-59dc-42ac-9e66-8cc2ba1f66a4</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trousers Cargo Camo -->
+			<probability>0.2</probability>
+			<itemGUID>46516d90-84c4-4918-b146-8f4c4ed8b81e</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shoes Black -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems> <!-- Shoes Brown -->
+			<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+			<subItems> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.6</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.3</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Field Jacket -->
+			<itemGUID>bfeda7c9-1550-43bc-8a24-28348939c4af</itemGUID>
+		</m_items>
+		<m_items> <!-- Fingerless Gloves Leather -->
+			<probability>0.1</probability>
+			<itemGUID>5b375379-8f0f-46cc-93fb-4909193bdcbd</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.5</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Beanie -->
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+			<subItems> <!-- Baseball Cap Hunting Camo -->
+			<itemGUID>77e6fb5c-e5f4-4d6b-ad29-bcd8e06266df</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shemagh Plain Mask -->
+			<probability>0.04</probability>
+			<itemGUID>a3070909-bb36-4fda-8fb3-4e0c66080be5</itemGUID>
+		</m_items>
+		<m_items> <!-- Beret -->
+			<probability>0.08</probability>
+			<itemGUID>f2467000-e675-458c-9f63-5cc2f0ed0f3f</itemGUID>
+		</m_items>
+		<m_items> <!-- Aviator Glasses -->
+			<probability>0.08</probability>
+			<itemGUID>6b01e5b3-860d-4361-b43f-7b8ea152f1bf</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>VOE_Tracksuit</m_Name>
+		<m_Guid>1a6b9b08-45a0-47e9-a389-c12406fdbeea</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers Tracksuit -->
+			<itemGUID>10bc8510-4a50-423d-93c5-53172b55cc81</itemGUID>
+			<subItems> <!-- Trousers Tracksuit SKINNY -->
+			<itemGUID>e9beefa2-2596-483a-804e-5a158e99d89b</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<probability>0.1</probability>
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.3</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Tracksuit Jacket -->
+			<probability>0.8</probability>
+			<itemGUID>5174009e-a6be-40af-9f0d-3580a84a5f45</itemGUID>
+		</m_items>
+		<m_items> <!-- Fingerless Gloves -->
+			<probability>0.2</probability>
+			<itemGUID>cf0b766a-c273-49b0-bee4-5a0bb6496491</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.5</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<probability>0.3</probability>
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Sweat Band -->
+			<probability>0.2</probability>
+			<itemGUID>5315b11d-1d27-4d9a-80bc-4ba21560fc32</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>VOE_Smock</m_Name>
+		<m_Guid>9c6f943c-fd5c-4a40-bdcb-4cd0bdcf79c8</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers Denimn Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			<subItems> <!-- Trousers Tracksuit SKINNY -->
+			<itemGUID>e9beefa2-2596-483a-804e-5a158e99d89b</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Baggy -->
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Smock -->
+			<itemGUID>58d30680-2075-4422-949c-3d324d6e3a1d</itemGUID>
+			<subItems> <!-- Smock Hood UP -->
+			<probability>0.1</probability>
+			<itemGUID>a3ba4c81-8d30-434a-b0b5-1dce6414b3a1</itemGUID>
+			</subItems>
+			<subItems> <!-- Smock Camo -->
+			<probability>0.03</probability>
+			<itemGUID>a2ffdc73-342e-4038-8031-9dd21843964f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shooting Gloves -->
+			<probability>0.05</probability>
+			<itemGUID>02c5484d-f8d2-44d8-af28-aae4e4fd0da4</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.2</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<probability>0.1</probability>
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Beanie -->
+			<probability>0.2</probability>
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>VOE_GymShorts</m_Name>
+		<m_Guid>359e664e-4e3e-418b-a7af-e361fb915298</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Gym Shorts -->
+			<itemGUID>69764bb2-62cb-4af9-adc5-3977ed5efda4</itemGUID>
+		</m_items>
+		<m_items> <!-- Tracksuit Pants TEXTURE -->
+			<probability>0.2</probability>
+			<itemGUID>e9beefa2-2596-483a-804e-5a158e99d89b</itemGUID>
+		</m_items>
+		<m_items> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			<subItems> <!-- Vest TINT -->
+			<itemGUID>a700a956-32c2-49a6-bd5f-5a2895073f19</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Flip Flops -->
+			<probability>0.2</probability>
+			<itemGUID>46780aae-03ef-45d7-a0e8-36278f328576</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.1</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Sweat Band -->
+			<itemGUID>5315b11d-1d27-4d9a-80bc-4ba21560fc32</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Visor TINY -->
+			<probability>0.2</probability>
+			<itemGUID>aea918c3-0928-404f-a24e-43c4b28cc640</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks TINT -->
+			<probability>0.9</probability>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>VOE_Denim</m_Name>
+		<m_Guid>c8eeeaae-de95-4ccf-8bc3-57f8f34516cf</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_items> <!-- Jacket Denim -->
+			<probability>0.9</probability>
+			<itemGUID>58f3806f-dadc-4373-a576-fe17fdc7c375</itemGUID>
+		</m_items>		
+		<m_items> <!-- Trousers_Denim Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+		</m_items>
+		<m_items> <!-- Trousers Cargo -->
+			<probability>0.3</probability>
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+		</m_items>
+		<m_items> <!-- Jeans Ripped -->
+			<probability>0.3</probability>
+			<itemGUID>b7258813-aa0a-4a59-8ea5-38db709e28ce</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Beanie -->
+			<probability>0.2</probability>
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+		</m_items>
+		<m_items> <!-- Sun Glasses -->
+			<probability>0.1</probability>
+			<itemGUID>3d6530fd-b3c1-4ae3-ad23-657ed73c51fe</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks TINT -->
+			<probability>0.5</probability>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>VOE_BodyWarmer</m_Name>
+		<m_Guid>8e3249d1-c1c7-4415-b07c-813ea7ee486a</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers_Denim -->
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Baggy -->
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trousers Cargo Camo -->
+			<probability>0.06</probability>
+			<itemGUID>46516d90-84c4-4918-b146-8f4c4ed8b81e</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shirt Work -->
+			<probability>0.08</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items> <!-- Shoes Black -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems> <!-- Shoes Brown -->
+			<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+			<subItems> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.2</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Body Warmer -->
+			<probability>0.8</probability>
+			<itemGUID>2c6d9d61-fd7f-4725-ac33-98ddb8f31808</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Beanie -->
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_FieldJacket</m_Name>
+		<m_Guid>26983255-2468-4b24-9e8a-cce98e46471d</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers_Denim -->
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Black -->
+			<itemGUID>d3481027-59dc-42ac-9e66-8cc2ba1f66a4</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trousers Cargo Camo -->
+			<probability>0.2</probability>
+			<itemGUID>46516d90-84c4-4918-b146-8f4c4ed8b81e</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shoes Black -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems> <!-- Shoes Brown -->
+			<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+			<subItems> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.6</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.3</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Field Jacket -->
+			<itemGUID>bfeda7c9-1550-43bc-8a24-28348939c4af</itemGUID>
+		</m_items>
+		<m_items> <!-- Fingerless Gloves Leather -->
+			<probability>0.1</probability>
+			<itemGUID>5b375379-8f0f-46cc-93fb-4909193bdcbd</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.5</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Beanie -->
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+			<subItems> <!-- Baseball Cap Hunting Camo -->
+			<itemGUID>77e6fb5c-e5f4-4d6b-ad29-bcd8e06266df</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shemagh Plain Mask -->
+			<probability>0.04</probability>
+			<itemGUID>a3070909-bb36-4fda-8fb3-4e0c66080be5</itemGUID>
+		</m_items>
+		<m_items> <!-- Beret -->
+			<probability>0.08</probability>
+			<itemGUID>f2467000-e675-458c-9f63-5cc2f0ed0f3f</itemGUID>
+		</m_items>
+		<m_items> <!-- Aviator Glasses -->
+			<probability>0.08</probability>
+			<itemGUID>6b01e5b3-860d-4361-b43f-7b8ea152f1bf</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_Tracksuit</m_Name>
+		<m_Guid>1a6b9b08-45a0-47e9-a389-c12406fdbeea</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers Tracksuit -->
+			<itemGUID>10bc8510-4a50-423d-93c5-53172b55cc81</itemGUID>
+			<subItems> <!-- Trousers Tracksuit SKINNY -->
+			<itemGUID>e9beefa2-2596-483a-804e-5a158e99d89b</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<probability>0.1</probability>
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.3</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Tracksuit Jacket -->
+			<probability>0.8</probability>
+			<itemGUID>5174009e-a6be-40af-9f0d-3580a84a5f45</itemGUID>
+		</m_items>
+		<m_items> <!-- Fingerless Gloves -->
+			<probability>0.2</probability>
+			<itemGUID>cf0b766a-c273-49b0-bee4-5a0bb6496491</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.5</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<probability>0.3</probability>
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Sweat Band -->
+			<probability>0.1</probability>
+			<itemGUID>5315b11d-1d27-4d9a-80bc-4ba21560fc32</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_DressBelted</m_Name>
+		<m_Guid>1a6b9b08-45a0-47e9-a389-c12406fdbeea</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Dress Belted -->
+			<itemGUID>25846fe9-869e-4b65-895b-993c19da31b8</itemGUID>
+		</m_items>
+		<m_items> <!-- Strapped Shoes -->
+			<itemGUID>f6b27bb5-b736-4bd7-afb1-689ecb9a9c52</itemGUID>
+			<subItems> <!-- Fancy Shoes -->
+			<itemGUID>b87c05cc-9a93-4572-99f8-005e350ee723</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Tights Black -->
+			<probability>0.8</probability>
+			<itemGUID>6d483049-2392-47e1-a6f8-c10ef5c1b040</itemGUID>
+			<subItems> <!-- Tights Semi Transparent -->
+			<probability>0.8</probability>
+			<itemGUID>88225fb4-a18f-46eb-96d1-2ce415f52bf0</itemGUID>
+			</subItems>
+			<subItems> <!-- Tights Fishnet -->
+			<probability>0.3</probability>
+			<itemGUID>e30e2622-0034-4895-8912-ed53dfafd3d0</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Long Gloves -->
+			<probability>0.3</probability>
+			<itemGUID>9c36a162-1348-46ad-81bd-70bf3ed7a93e</itemGUID>
+			<subItems> <!-- Gold Bangle Left -->
+			<probability>0.4</probability>
+			<itemGUID>14830a20-18ff-458c-afa4-8c7c288746a4</itemGUID>
+			</subItems>
+			<subItems> <!-- Gold Bangle Right -->
+			<probability>0.4</probability>
+			<itemGUID>f0dd71ac-a98f-4251-899f-30d727167722</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Necklace Gold Diamond -->
+			<probability>0.4</probability>
+			<itemGUID>778cc04b-761d-4268-9479-09829468775c</itemGUID>
+		</m_items>
+		<m_items> <!-- Necklace Gold Ruby -->
+			<probability>0.4</probability>
+			<itemGUID>bd36d524-dc71-4ee0-80d7-3e5791f85f7d</itemGUID>
+		</m_items>
+		<m_items> <!-- Necklace Gold -->
+			<probability>0.4</probability>
+			<itemGUID>3ae13d94-8df6-45c7-9e99-ad03c7d411ce</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_Smock</m_Name>
+		<m_Guid>9c6f943c-fd5c-4a40-bdcb-4cd0bdcf79c8</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers Denimn Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			<subItems> <!-- Trousers Tracksuit SKINNY -->
+			<itemGUID>e9beefa2-2596-483a-804e-5a158e99d89b</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Baggy -->
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Smock -->
+			<itemGUID>58d30680-2075-4422-949c-3d324d6e3a1d</itemGUID>
+			<subItems> <!-- Smock Hood UP -->
+			<probability>0.1</probability>
+			<itemGUID>a3ba4c81-8d30-434a-b0b5-1dce6414b3a1</itemGUID>
+			</subItems>
+			<subItems> <!-- Smock Camo -->
+			<probability>0.03</probability>
+			<itemGUID>a2ffdc73-342e-4038-8031-9dd21843964f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Gloves Shooting -->
+			<probability>0.05</probability>
+			<itemGUID>02c5484d-f8d2-44d8-af28-aae4e4fd0da4</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.2</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<probability>0.1</probability>
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Beanie -->
+			<probability>0.2</probability>
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_GirlShortsTypes</m_Name>
+		<m_Guid>418963d5-5582-48ea-bbc6-d61bb46d3323</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Booty Shorts -->
+			<itemGUID>6e2a3369-4e3a-4075-86ce-62bb2c3ac657</itemGUID>
+			<subItems> <!-- Short Overalls -->
+			<itemGUID>71f09ff8-2e84-441e-81ff-f25914baf2cb</itemGUID>
+			</subItems>
+			<subItems> <!-- Skirt Frilly -->
+			<itemGUID>dcf84c1e-7698-427e-bcc5-44aaefafa818</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			<subItems> <!-- Crop Top No Arms -->
+			<itemGUID>06234961-aab3-4ce4-b5d2-2a7e5af074fb</itemGUID>
+			</subItems>
+			<subItems> <!-- Crop Top -->
+			<itemGUID>cceb85fc-8c41-477e-9167-07513bad2dd9</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Work Boots -->
+			<probability>0.02</probability>
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.1</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks TINT -->
+			<probability>0.8</probability>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<m_items> <!-- Tights Semi-Transparent -->
+			<probability>0.2</probability>
+			<itemGUID>88225fb4-a18f-46eb-96d1-2ce415f52bf0</itemGUID>
+			<subItems> <!-- Tights Latex Short -->
+			<itemGUID>2adef62b-d717-4e9e-88c7-f9e48650384a</itemGUID>
+			</subItems>
+			<subItems> <!-- Stockings Semi-Trans -->
+			<itemGUID>6ba314a1-43c6-4240-b313-0ba75fb2ca6c</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_GymShorts</m_Name>
+		<m_Guid>359e664e-4e3e-418b-a7af-e361fb915298</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Gym Shorts -->
+			<itemGUID>69764bb2-62cb-4af9-adc5-3977ed5efda4</itemGUID>
+		</m_items>
+		<m_items> <!-- Crop Top Armless -->
+			<itemGUID>06234961-aab3-4ce4-b5d2-2a7e5af074fb</itemGUID>
+			<subItems> <!-- Vest TINT -->
+			<itemGUID>a700a956-32c2-49a6-bd5f-5a2895073f19</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.1</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+			<subItems> <!-- Sweat Band -->
+			<itemGUID>5315b11d-1d27-4d9a-80bc-4ba21560fc32</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Visor TINY -->
+			<probability>0.2</probability>
+			<itemGUID>aea918c3-0928-404f-a24e-43c4b28cc640</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks TINT -->
+			<probability>0.8</probability>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<m_items> <!-- Latex Tights Short -->
+			<probability>0.2</probability>
+			<itemGUID>2adef62b-d717-4e9e-88c7-f9e48650384a</itemGUID>
+		</m_items>
+		<m_items> <!-- Stockings Semi-Trans -->
+			<probability>0.2</probability>
+			<itemGUID>6ba314a1-43c6-4240-b313-0ba75fb2ca6c</itemGUID>
+		</m_items>
+		<m_items> <!-- Tights Latex -->
+			<probability>0.2</probability>
+			<itemGUID>cc703b32-e869-4c1c-a55b-28940fe69a3e</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_Denim</m_Name>
+		<m_Guid>c8eeeaae-de95-4ccf-8bc3-57f8f34516cf</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_items> <!-- Jacket Denim -->
+			<probability>0.9</probability>
+			<itemGUID>58f3806f-dadc-4373-a576-fe17fdc7c375</itemGUID>
+		</m_items>		
+		<m_items> <!-- Trousers_Denim Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+		</m_items>
+		<m_items> <!-- Trousers Cargo -->
+			<probability>0.3</probability>
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+		</m_items>
+		<m_items> <!-- Jeans Ripped -->
+			<probability>0.3</probability>
+			<itemGUID>b7258813-aa0a-4a59-8ea5-38db709e28ce</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Baseball Cap TINT Reverse -->
+			<itemGUID>178013e2-d91e-444c-97ea-ecd95740950a</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Beanie -->
+			<probability>0.2</probability>
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+		</m_items>
+		<m_items> <!-- Sun Glasses -->
+			<probability>0.1</probability>
+			<itemGUID>3d6530fd-b3c1-4ae3-ad23-657ed73c51fe</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks TINT -->
+			<probability>0.5</probability>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_FemaleOutfits>
+		<m_Name>VOE_BodyWarmer</m_Name>
+		<m_Guid>8e3249d1-c1c7-4415-b07c-813ea7ee486a</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Trousers_Denim -->
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems> <!-- Trousers Cargo -->
+			<itemGUID>32659170-368f-4c3c-aee4-f750b3903e52</itemGUID>
+			</subItems>
+			<subItems> <!-- Trousers Default TEXTURE -->
+			<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Regular -->
+			<itemGUID>b4801b73-4a8f-4f83-8882-fd54fce4cb4d</itemGUID>
+			</subItems>
+			<subItems> <!-- Jeans Baggy -->
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Trousers Cargo Camo -->
+			<probability>0.06</probability>
+			<itemGUID>46516d90-84c4-4918-b146-8f4c4ed8b81e</itemGUID>
+		</m_items>
+		<m_items> <!--T-Shirt Default Texture -->
+			<itemGUID>e4ec9087-006d-41dc-81f4-585b6d2e958c</itemGUID>
+			<subItems> <!-- T-Shirt Default Texture TINT -->
+			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems> <!-- T-Shirt Long Sleeve White TINT -->
+			<itemGUID>99b1ff28-3884-4ca3-b827-7fdab685c7a6</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Shirt Work -->
+			<probability>0.08</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items> <!-- Shoes Black -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems> <!-- Shoes Brown -->
+			<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+			<subItems> <!-- Work Boots -->
+			<itemGUID>16d40a43-6b93-4dd6-985f-e72bfc91456c</itemGUID>
+			</subItems>
+			<subItems> <!-- Trainers TINT -->
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Hoodie -->
+			<probability>0.4</probability>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+			<subItems> <!-- Hoodie UP -->
+			<probability>0.2</probability>
+			<itemGUID>623c97c5-49f2-4763-bafb-549a881d6495</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Body Warmer -->
+			<probability>0.8</probability>
+			<itemGUID>2c6d9d61-fd7f-4725-ac33-98ddb8f31808</itemGUID>
+		</m_items>
+		<m_items> <!-- Baseball Cap TINT -->
+			<probability>0.3</probability>
+			<itemGUID>cfa30053-1c89-4749-8f6f-ce8335b7a031</itemGUID>
+			<subItems> <!-- Beanie -->
+			<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+
+</outfitManager>

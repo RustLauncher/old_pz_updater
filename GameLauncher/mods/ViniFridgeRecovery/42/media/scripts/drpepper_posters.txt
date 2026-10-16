@@ -1,0 +1,53 @@
+module DrPepper
+{
+    item PosterBeAPepper
+    {
+        DisplayName = Dr Pepper - Be a Pepper Poster,
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = DrPepperPosterBeAPepper,
+        Weight = 0.5,
+        WorldObjectSprite = drpepper_posters_01_1,
+        Tooltip = Tooltip_DrPepperPosterBeAPepper,
+    }
+    item PosterOriginal
+    {
+        DisplayName = Dr Pepper - Be an Original Poster,
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = DrPepperPosterOriginal,
+        Weight = 0.5,
+        WorldObjectSprite = drpepper_posters_01_3,
+        Tooltip = Tooltip_DrPepperPosterOriginal,
+    }
+    item PosterRefreshment
+    {
+        DisplayName = Dr Pepper - Refreshment Poster,
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = DrPepperPosterRefreshment,
+        Weight = 0.5,
+        WorldObjectSprite = drpepper_posters_01_5,
+        Tooltip = Tooltip_DrPepperPosterRefreshment,
+    }
+    item PosterGoodTimes
+    {
+        DisplayName = Dr Pepper - Good Times Poster,
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = DrPepperPosterGoodTimes,
+        Weight = 0.5,
+        WorldObjectSprite = drpepper_posters_01_7,
+        Tooltip = Tooltip_DrPepperPosterGoodTimes,
+    }
+    item PosterPeppersDelight
+    {
+        DisplayName = Dr Pepper - Pepper's Delight Poster,
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = DrPepperPosterPeppersDelight,
+        Weight = 0.5,
+        WorldObjectSprite = drpepper_posters_01_9,
+        Tooltip = Tooltip_DrPepperPosterPeppersDelight,
+    }
+}

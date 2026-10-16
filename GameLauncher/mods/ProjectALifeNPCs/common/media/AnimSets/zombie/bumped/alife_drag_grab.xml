@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeDragGrab</m_Name>
+	<m_AnimName>Bob_EndDeath</m_AnimName>
+	<m_Priority>9</m_Priority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>ALifeDragSpeed</m_SpeedScale>
+	<m_BlendTime>0.15</m_BlendTime>
+	<m_BlendOutTime>0.15</m_BlendOutTime>
+	<m_Conditions>
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>ALifeDragGrab</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,335 @@
+@alife-records 1
+
+person vp_1066
+  card.batch B04
+  card.arch va_rural_doctor
+  card.sex m
+  card.age 74
+  card.desc a silver-haired man with a neat haircut and an immaculate collar
+  card.voice V14
+  card.seed 1208721426
+  card.attract m,f
+  card.bond none
+  card.fear strangers_at_the_door
+  card.hobby reading
+  card.v 1
+  name.first Wendell
+  name.last Estes
+  name.reveal intro
+  origin.town Elizabethtown
+  origin.from Elizabethtown since 1986, previously Hamilton, Ohio
+  origin.work hospital nurse in Ohio, briefly a Kentucky clinic nurse before a 1987 layoff
+  origin.workKind nurse
+  look.skin 2
+  look.hair short
+  look.hairColor 0.8,0.8,0.75
+  look.beard none
+  look.pace walk
+  traits.open 2
+  traits.anx 2
+  traits.humor 3
+  traits.temper 1
+  traits.honest 3
+  traits.faith 0
+  traits.trustSpeed 2
+  traits.curious 1
+  traits.pride 3
+  traits.flirt 2
+  traits.social 3
+  traits.tidy 5
+  traits.nostalg 5
+  need0.hunger 2
+  need0.thirst 1
+  need0.cold 2
+  need0.fear 1
+  need0.fatigue 5
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_kentucky_will_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_trust_nurses
+  beliefs.2.s 3
+  wants.1.id wn_shower
+  wants.1.u 5
+  skills.firstaid 4
+  skills.tailoring 1
+  carry.1 Base.Comb
+  carry.2 Base.Notebook
+  carry.3 Base.Pen
+  dress.role medical_m
+  dress.flags.1 work_shirt
+  arc.stayMax 16
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.shelf detective_ending_reader
+  hooks.object f_keys
+  books.taste.1 mystery
+  books.taste.2 classic
+  facts.1.id f_keys
+  facts.1.kind job
+  facts.1.tab past
+  facts.1.label Returned clinic keys rather than losing them
+  facts.1.gate trust>=10
+  facts.2.id f_journal
+  facts.2.kind family
+  facts.2.tab past
+  facts.2.label Read and retained Gertrude's private journal
+  facts.2.gate trust>=25 & alone & flag:keys_told
+  facts.3.id f_gap
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Falsified employment dates, not nursing qualifications
+  facts.3.gate trust>=40 & alone & flag:journal_told
+  facts.4.id f_callers
+  facts.4.kind home
+  facts.4.tab past
+  facts.4.label False wiring inspectors robbed his household in 1988
+  facts.4.gate trust>=55 & alone & flag:gap_told
+  facts.5.id f_form
+  facts.5.kind job
+  facts.5.tab now
+  facts.5.label Application never submitted; wants no new post
+  facts.5.gate trust>=70 & alone & flag:callers_told
+  mk.1 Gertrude's blue door
+  mk.2 the missing chapter
+  mk.3 one clean collar
+  rt.1 6-8|bathroom|Requests washing access and attends carefully to his collar
+  rt.2 12-14|livingroom|Reads a detective story, humming when the answer seems obvious
+  rt.3 19-21|table|Writes a short note to Clara and then puts his pen away
+  bl.1 pocket comb|Base.Comb|A precise part in his hair survived more shifts than his shoes.
+  bl.2 notebook|Base.Notebook|Letters to Clara start at the back so they cannot become nursing notes.
+  bl.3 fountain pen|Base.Pen|Miriam's retirement present after a closure nobody called retirement.
+  bl.4 spare white collar||Carried rolled inside a cloth even when the rest of him is dirty.
+  bl.5 Gertrude's journal||One volume he retained despite promising to burn the private writings unread.
+  bl.6 volunteer application||Unsubmitted paper, folded until its blank spaces are soft.
+  rl.1 Gertrude Estes|mother, died 1989|Born 1895; moved with him in 1986 and died aged ninety-four.
+  rl.2 Clara Hale|younger sister|Lives in Elizabethtown; shared care for Gertrude after the move.
+  rl.3 Miriam Fogg|former nurse coworker|Met at the Kentucky clinic and kept visiting after its closure.
+end
+
+person vp_1070
+  card.batch B04
+  card.arch va_veterinarian
+  card.sex m
+  card.age 64
+  card.desc a broad-shouldered older man with clipped gray hair and a worn camera strap
+  card.voice V06
+  card.seed 1255457100
+  card.attract m,f
+  card.bond none
+  card.fear the_open_road
+  card.hobby crossword_puzzles
+  card.v 1
+  name.first Earl
+  name.last Daugherty
+  name.reveal intro
+  origin.town Muldraugh
+  origin.from Muldraugh by way of a farm call near Fort Knox
+  origin.work large-animal veterinarian with a small Muldraugh practice
+  origin.workKind veterinarian
+  look.skin 3
+  look.hair short
+  look.hairColor 0.6,0.6,0.55
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 2
+  traits.humor 1
+  traits.temper 4
+  traits.honest 3
+  traits.faith 4
+  traits.trustSpeed 4
+  traits.curious 4
+  traits.pride 2
+  traits.flirt 3
+  traits.social 1
+  traits.tidy 4
+  traits.nostalg 3
+  need0.hunger 4
+  need0.thirst 2
+  need0.cold 1
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_no_mercy_for_the_bitten
+  beliefs.1.s 3
+  beliefs.2.id bl_land_will_carry_us
+  beliefs.2.s 3
+  wants.1.id wn_batteries
+  wants.1.u 5
+  skills.firstaid 3
+  skills.farming 2
+  carry.1 Base.Notebook
+  carry.2 Base.Pencil
+  carry.3 Base.KeyRing
+  dress.role medical_m
+  dress.flags.1 work_shirt
+  arc.stayMax 12
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.shelf crossword_without_answers
+  hooks.object f_photo
+  books.taste.1 western
+  facts.1.id f_photo
+  facts.1.kind job
+  facts.1.tab past
+  facts.1.label Broke Marion Kemp's promise about a teaching photograph
+  facts.1.gate trust>=10
+  facts.2.id f_boxer
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Never fought a boxing bout
+  facts.2.gate trust>=25 & alone & flag:photo_told
+  facts.3.id f_mileage
+  facts.3.kind job
+  facts.3.tab past
+  facts.3.label False mileage claims paid for engine repairs
+  facts.3.gate trust>=40 & alone & flag:boxer_told
+  facts.4.id f_inez
+  facts.4.kind family
+  facts.4.tab past
+  facts.4.label Estranged from Inez since 1985
+  facts.4.gate trust>=55 & alone & flag:mileage_told
+  facts.5.id f_diary
+  facts.5.kind faith
+  facts.5.tab world
+  facts.5.label The bitten stranger unsettled Earl's prayer and certainty
+  facts.5.gate trust>=70 & alone & flag:inez_told
+  mk.1 six across
+  mk.2 Jo's green truck
+  mk.3 Junebug's owner
+  rt.1 5-7|window|Listens before deciding whether to go outside
+  rt.2 12-14|table|Tries crossword clues and refuses to look at the answer page
+  rt.3 20-22|quiet corner|Adds a few plain sentences to the new diary
+  bl.1 new diary|Base.Notebook|Most pages empty; first entry records a stranger's objection to the word hopeless.
+  bl.2 short pencil|Base.Pencil|Used on crosswords long before he began recording days.
+  bl.3 practice keys|Base.KeyRing|One brass key has Junebug's tooth mark in its plastic tag.
+  bl.4 empty camera||No film inside; does not take the batteries he is presently seeking.
+  bl.5 small flashlight||Its weak light made the culvert feel longer; wants batteries for this, not the camera.
+  bl.6 crossword booklet||Jo wrote one deliberately impossible clue beside six across.
+  rl.1 Inez Daugherty|younger sister|A 1985 disagreement about her dog became eight years without speaking.
+  rl.2 Jo Mercer|practice assistant|Worked with Earl since 1980; drove a conspicuous green truck.
+  rl.3 Marion Kemp|former client|Junebug's owner; ended her custom after Earl used a photograph against his promise.
+  rl.4 Ada Daugherty|former wife|Married in 1959, divorced in 1979; no children together.
+end
+
+person vp_1078
+  card.batch B04
+  card.arch va_nurse_aide
+  card.sex f
+  card.age 29
+  card.desc a warm-eyed woman with dark hair pinned neatly above her cardigan and scrubs
+  card.voice VX22
+  card.seed 169054362
+  card.bond none
+  card.fear being_found
+  card.hobby fishing
+  card.v 1
+  name.first Rose
+  name.last Kessler
+  name.reveal intro
+  origin.town Campbellsville
+  origin.from Campbellsville, after leaving a care ward
+  origin.work night-shift nurse aide
+  origin.workKind nurse_aide
+  look.skin 3
+  look.hair bun
+  look.hairColor 0.25,0.16,0.1
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 4
+  traits.humor 5
+  traits.temper 4
+  traits.honest 2
+  traits.faith 5
+  traits.trustSpeed 3
+  traits.curious 3
+  traits.pride 5
+  traits.flirt 0
+  traits.social 5
+  traits.tidy 5
+  traits.nostalg 2
+  need0.hunger 4
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 1
+  vice.kind tobacco
+  beliefs.1.id bl_river_is_safe
+  beliefs.1.s 3
+  beliefs.2.id bl_it_will_burn_out
+  beliefs.2.s 3
+  wants.1.id wn_cigarettes
+  wants.1.u 5
+  skills.firstaid 2
+  skills.fishing 2
+  carry.1 Base.CigarettePack
+  carry.2 Base.Lighter
+  carry.3 Base.Notebook
+  dress.role care_worker_f
+  dress.flags.1 scrubs
+  dress.flags.2 cardigan
+  arc.stayMax 14
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.tv late_shift_noise
+  hooks.object f_cards
+  books.taste.1 humor
+  books.taste.2 mystery
+  facts.1.id f_gus
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Gus's death and Rose's flight from the ward
+  facts.1.gate trust>=15
+  facts.2.id f_jury
+  facts.2.kind past
+  facts.2.tab past
+  facts.2.label Changed a jury vote out of exhaustion
+  facts.2.gate trust>=30 & alone & flag:gus_told
+  facts.3.id f_shift
+  facts.3.kind job
+  facts.3.tab past
+  facts.3.label False attendance covered a fishing absence
+  facts.3.gate trust>=45 & alone & flag:jury_told
+  facts.4.id f_wedding
+  facts.4.kind love
+  facts.4.tab past
+  facts.4.label Marriage was partly an escape from family demands
+  facts.4.gate trust>=60 & alone & flag:shift_told
+  facts.5.id f_cards
+  facts.5.kind family
+  facts.5.tab past
+  facts.5.label Brent's deck was taken from June against her wishes
+  facts.5.gate trust>=75 & alone & flag:wedding_told
+  mk.1 the nine of us
+  mk.2 June's orange curtains
+  mk.3 last hand wins
+  rt.1 6-8|porch|Asks about a cigarette and talks until she catches herself yawning
+  rt.2 13-15|table|Shuffles the old deck, occasionally laying out a solitaire game
+  rt.3 21-23|quiet corner|Prays privately, then checks that her belongings are together
+  bl.1 crushed cigarette pack|Base.CigarettePack|Mostly empty; the first thing she checks in a pocket.
+  bl.2 plain lighter|Base.Lighter|Nell gave it to her after she borrowed matches for a month.
+  bl.3 small notebook|Base.Notebook|Addresses of siblings, written without ranking which one might welcome her.
+  bl.4 Brent's cards||An old deck with a bent red king, taken from June without permission.
+  bl.5 fishing float||Brent painted it white and orange; Rose repaired the paint badly.
+  bl.6 spare cardigan button||Carried because she keeps postponing the small repair that needs it.
+  rl.1 Brent Kessler|husband, died 1989|Born 1962, met Rose in 1983 and married her in 1985; taught her to fish without talking.
+  rl.2 Ruth Vance|younger sister|Born 1967; closest of Rose's eight siblings and capable of telling her no.
+  rl.3 June Kessler|mother-in-law|Kept Brent's deck after his death; Rose took it without permission in 1993.
+  rl.4 Nell Barton|aide coworker|Covered Rose's missed 1992 shift without knowing Rose was fishing.
+end

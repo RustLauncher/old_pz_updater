@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Frigo Dr Pepper",
+  "IGUI_DrPepperFridge_WornName": "Frigo Dr Pepper usurato",
+  "IGUI_DrPepperFridge_Fridge": "Frigo Dr Pepper",
+  "IGUI_DrPepperFridge_Freezer": "Congelatore Dr Pepper",
+  "IGUI_DrPepperFridge_WornFridge": "Frigo Dr Pepper usurato",
+  "IGUI_DrPepperFridge_WornFreezer": "Congelatore Dr Pepper usurato",
+  "IGUI_DrPepperFridge_StockHint": "Percentuale di capacità occupata che avvia questa fase visiva. Non modifica la capacità. Le soglie vengono ordinate automaticamente."
+}

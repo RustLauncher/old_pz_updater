@@ -1,0 +1,7 @@
+name=VINI Furniture Recovery [B42]
+id=ViniFridgeRecovery
+author=VINI
+modversion=1.0.1
+versionMin=42.21
+description=Support for disabling VINI fridge/freezer artwork in existing worlds. Keep enabled while old chunks, stored furniture, Dr Pepper cans or fluids, poster items or wall-poster aliases remain. Visiting an area does not convert every reference. Contains no custom artwork.
+poster=poster.png

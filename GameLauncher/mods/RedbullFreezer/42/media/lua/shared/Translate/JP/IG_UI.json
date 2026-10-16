@@ -1,0 +1,4 @@
+{
+  "IGUI_RedbullFreezer_Name": "Redbull Freezer",
+  "IGUI_RedbullFreezer_StockHint": "見た目の充填量：15%%未満は空、15%%以上で缶と氷、30%%以上で満杯に見えます。通電中も停電中も反映されます。その後も通常どおりアイテムを収納できます。"
+}

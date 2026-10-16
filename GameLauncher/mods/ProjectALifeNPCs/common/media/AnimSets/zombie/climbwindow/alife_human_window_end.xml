@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeHumanWindowEnd</m_Name>
+	<m_AnimName>Bob_ClimbWindowEnd</m_AnimName>
+	<m_Priority>30</m_Priority>
+	<m_ConditionPriority>30</m_ConditionPriority>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>ALifeActor</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ClimbWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Events>
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbWindowEnd=true</m_ParameterValue>
+	</m_Events>
+	<m_Events>
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbWindowFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events><m_EventName>SetVariable</m_EventName><m_TimePc>0.1</m_TimePc><m_ParameterValue>BlockWindow=false</m_ParameterValue></m_Events>
+</animNode>

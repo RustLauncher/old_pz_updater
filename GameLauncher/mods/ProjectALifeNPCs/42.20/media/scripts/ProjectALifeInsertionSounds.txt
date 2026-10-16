@@ -1,0 +1,45 @@
+module ProjectALife
+{
+    sound PALReinforcementCarArrival
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_car_arrival.wav,
+            distanceMin = 8,
+            distanceMax = 120,
+            reverbFactor = 0.1,
+            volume = 0.55,
+        }
+    }
+    sound PALReinforcementRappel
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_rappel_insertion.wav,
+            distanceMin = 8,
+            distanceMax = 65,
+            reverbFactor = 0.1,
+            volume = 0.9,
+        }
+    }
+    sound PALHelicopterLoop
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_helicopter_loop.wav,
+            distanceMin = 10,
+            distanceMax = 120,
+            reverbFactor = 0.05,
+            volume = 0.65,
+        }
+    }
+}

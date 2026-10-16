@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Held/Part_AssaultRifle__TritiumSights</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Held/Part_AssaultRifle__TritiumSights</m_FemaleModel>
+  <m_GUID>29b05bf1-73b7-ac81-f187-7112b99c8357</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Rifle_IronSights</textureChoices>
+</clothingItem>

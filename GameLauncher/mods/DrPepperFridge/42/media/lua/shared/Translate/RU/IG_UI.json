@@ -1,0 +1,9 @@
+{
+  "IGUI_DrPepperFridge_Name": "Холодильник Dr Pepper",
+  "IGUI_DrPepperFridge_WornName": "Потёртый холодильник Dr Pepper",
+  "IGUI_DrPepperFridge_Fridge": "Холодильник Dr Pepper",
+  "IGUI_DrPepperFridge_Freezer": "Морозилка Dr Pepper",
+  "IGUI_DrPepperFridge_WornFridge": "Потёртый холодильник Dr Pepper",
+  "IGUI_DrPepperFridge_WornFreezer": "Потёртая морозилка Dr Pepper",
+  "IGUI_DrPepperFridge_StockHint": "Процент занятой вместимости, с которого начинается этот вид. Не меняет вместимость. Пороги автоматически сортируются."
+}

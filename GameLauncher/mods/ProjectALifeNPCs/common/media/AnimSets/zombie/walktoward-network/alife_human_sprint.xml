@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeHumanSprintTowardNetwork</m_Name>
+	<m_AnimName>Bob_Sprint</m_AnimName>
+	<m_Priority>32</m_Priority>
+	<m_ConditionPriority>32</m_ConditionPriority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.12</m_BlendTime>
+	<m_SpeedScale>ALifeSprintSpeed</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>ALifeActor</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifePace</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sprint</m_Value>
+	</m_Conditions>
+</animNode>

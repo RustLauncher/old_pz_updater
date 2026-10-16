@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>b7258813-aa0a-4a59-8ea5-38db709e28ce</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\trousers\trousers_denim_ripped</m_BaseTextures>
+	<m_BaseTextures>clothes\trousers\trousers_denimdark_ripped</m_BaseTextures>
+	<m_BaseTextures>clothes\trousers\trousers_denimlight_ripped</m_BaseTextures>
+</clothingItem>

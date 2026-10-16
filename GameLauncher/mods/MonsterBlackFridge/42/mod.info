@@ -1,0 +1,10 @@
+name=Monster Energy Fridge [B42]
+id=MonsterBlackFridge
+author=VINI
+description=Choose from ten Monster industrial fridge percentages: 1%, 5%, 10%, 15%, 25%, 35%, 50%, 75%, 90% and 100%. Powered Monster fridges cast a soft green light, more noticeable in dark rooms. Version 1.4.2.
+poster=poster.png
+icon=MonsterBlackFridge_icon.png
+modversion=1.4.2
+versionMin=42.20.4
+pack=MonsterBlackFridge
+tiledef=MonsterBlackFridge 3797

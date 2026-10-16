@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\m_baseballcap</m_MaleModel>
+	<m_FemaleModel>static\clothes\f_baseballcap</m_FemaleModel>
+	<m_GUID>2eee6ecf-d6b1-46f5-b8e3-0b0f1d2ed50a</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Head</m_AttachBone>
+	<m_HatCategory>Group01</m_HatCategory>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\hat\baseballcap_EMS</textureChoices>
+</clothingItem>

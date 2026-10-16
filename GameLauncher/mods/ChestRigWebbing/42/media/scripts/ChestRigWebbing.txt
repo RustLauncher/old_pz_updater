@@ -1,0 +1,7 @@
+module Base
+{
+	item Bag_ChestRig
+	{
+		AttachmentsProvided = WebbingRight,
+	}
+}

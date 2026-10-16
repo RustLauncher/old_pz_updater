@@ -1,0 +1,7 @@
+name=Chest Rig Has Webbing - Dual Slot
+id=ChestRigWebbing_Dual_Slot
+description=Adds a second webbing slot to the chest rig. Requires Chest Rig Has Webbing.
+poster=poster.png
+icon=Chestrig_icon.png
+require=ChestRigWebbing
+loadModAfter=ChestRigWebbing

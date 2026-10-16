@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeHumanWalkToward</m_Name>
+	<m_AnimName>Bob_Walk</m_AnimName>
+	<m_Priority>30</m_Priority>
+	<m_ConditionPriority>30</m_ConditionPriority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.18</m_BlendTime>
+	<m_SpeedScale>ALifeWalkSpeed</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>ALifeActor</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifePace</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>walk</m_Value>
+	</m_Conditions>
+	<m_Events>
+		<m_EventName>Footstep</m_EventName>
+		<m_TimePc>0.15</m_TimePc>
+		<m_ParameterValue>walk</m_ParameterValue>
+	</m_Events>
+	<m_Events>
+		<m_EventName>Footstep</m_EventName>
+		<m_TimePc>0.60</m_TimePc>
+		<m_ParameterValue>walk</m_ParameterValue>
+	</m_Events>
+</animNode>

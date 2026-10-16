@@ -1,0 +1,4 @@
+DOCUMENTATION PATCH — 2026-10-16
+Safe-removal instructions are now visible in REMOCAO-SEGURA.md and the main readme of each of the five appearance packages. Monster's obsolete disable-and-restart instruction is corrected. The included Recovery guide remains unchanged.
+These current removal instructions supersede removal wording in the historical notes below. Setting 0% alone does not migrate unseen areas or stored references. Recovery must remain active while those references or retained Dr Pepper types remain. This documentation patch does not change gameplay files, art, saved identifiers or game-mod versions.
+

@@ -1,0 +1,223 @@
+@alife-records 1
+
+person vp_1399
+  card.batch B20
+  card.arch va_drifter_addict
+  card.sex m
+  card.age 33
+  card.desc a lean man with cropped dark hair and a tidy beard above worn denim
+  card.voice V20
+  card.seed 470378219
+  card.bond none
+  card.fear strangers_at_the_door
+  card.hobby guitar
+  card.v 1
+  name.first Steve
+  name.last Troutman
+  name.reveal intro
+  origin.town Mount Washington
+  origin.from a rented room in Mount Washington, born in West Point
+  origin.work carried materials on building jobs after serving a burglary sentence from 1982 to 1984
+  origin.workKind ex_con_laborer
+  look.skin 2
+  look.hair short
+  look.hairColor 0.19,0.13,0.08
+  look.beard full
+  look.pace walk
+  traits.open 4
+  traits.anx 3
+  traits.humor 2
+  traits.temper 4
+  traits.honest 2
+  traits.faith 3
+  traits.trustSpeed 2
+  traits.curious 5
+  traits.pride 1
+  traits.flirt 0
+  traits.social 0
+  traits.tidy 0
+  traits.nostalg 1
+  need0.hunger 3
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 5
+  need0.dirty 3
+  need0.sick 4
+  need0.pain 3
+  vice.kind heroin_withdrawal
+  beliefs.1.id bl_keep_moving
+  beliefs.1.s 3
+  beliefs.2.id bl_kentucky_will_hold
+  beliefs.2.s 3
+  wants.1.id wn_to_be_believed
+  wants.1.u 5
+  carry.1 Base.Book
+  carry.2 Base.SheetPaper2
+  dress.role drifter_m
+  dress.flags.1 work_shirt
+  dress.flags.2 denim_jacket
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_not_to_be_crowded
+  hooks.bath wants_to_wash_book_kept_dry
+  hooks.radio listens_before_speaking
+  books.taste.1 religion
+  books.taste.2 western
+  facts.1.id f_bible
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Stole Ada's Bible to sell, kept it and denied seeing it
+  facts.1.gate trust>=15
+  facts.2.id f_school
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Claimed high-school completion after leaving ninth grade
+  facts.2.gate trust>=30 & flag:bible_told
+  facts.3.id f_leg
+  facts.3.kind secret
+  facts.3.tab now
+  facts.3.label Conceals the 1986 roofing fall and broken left leg from employers
+  facts.3.gate trust>=45 & alone & flag:school_told
+  facts.4.id f_reference
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Wrote a false reference under Roy Kellum's name in 1990
+  facts.4.gate trust>=60 & alone & flag:leg_told
+  facts.5.id f_song
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Still remembers the private guitar tune he wrote for baby Corey
+  facts.5.gate trust>=75 & alone & flag:reference_told & imin>=60
+  mk.1 Ada's blue writing
+  mk.2 nine school years
+  mk.3 lower than that
+  rt.1 6-8|hall|Asks what is expected before moving farther into the house
+  rt.2 12-14|livingroom|Finds a little space from conversation and hums only when he thinks it will not interrupt
+  rt.3 20-22|livingroom|Asks for a place to rest where nobody has to stand over him
+  bl.1 Ada's pocket Bible|Base.Book|Damaged book with Ada's blue writing inside, taken in 1991 and never sold
+  bl.2 folded reference letter|Base.SheetPaper2|Steve wrote Roy's name on the 1990 job reference
+  bl.3 old guitar pick||Worn edge from playing the tune he wrote when Corey was a baby
+  bl.4 denim jacket||Second-hand jacket from the first winter after his prison sentence
+  bl.5 work shirt||Pru supplied it for a muddy site job and never asked for it back
+  bl.6 hospital envelope||Old 1986 papers he has kept away from later employers
+  rl.1 Ada Troutman|mother|Has blue writing inside the pocket Bible Steve stole in 1991
+  rl.2 Nancy Voss|first wife, born 1959|Met in 1978, married 1980 and divorced 1981; only listener to Corey's tune
+  rl.3 Corey Troutman|son, born December 1978|Last known living with Nancy near Mount Washington; not travelling with Steve
+  rl.4 Pru Givens|former contractor|Hired Steve in 1985 after the false school-completion claim
+  rl.5 Roy Kellum|former foreman|Did not know Steve wrote a reference in his name
+end
+
+person vp_1410
+  card.batch B21
+  card.arch va_insurance_agent
+  card.sex m
+  card.age 30
+  card.desc a neat young man with short chestnut hair and a loosened tie
+  card.voice VX25
+  card.seed 1156063799
+  card.attract f
+  card.bond none
+  card.fear empty_houses
+  card.hobby woodcarving
+  card.v 1
+  name.first Brent
+  name.last Gentry
+  name.reveal intro
+  origin.town Louisville
+  origin.from Louisville, recently walked from Radcliff
+  origin.work bank teller since 1987, formerly sold insurance door to door
+  origin.workKind bank_teller
+  look.skin 1
+  look.hair short
+  look.hairColor 0.27,0.18,0.10
+  look.beard none
+  look.pace walk
+  traits.open 2
+  traits.anx 4
+  traits.humor 3
+  traits.temper 4
+  traits.honest 2
+  traits.faith 1
+  traits.trustSpeed 4
+  traits.curious 0
+  traits.pride 2
+  traits.flirt 5
+  traits.social 2
+  traits.tidy 5
+  traits.nostalg 5
+  need0.hunger 2
+  need0.thirst 1
+  need0.cold 2
+  need0.fear 3
+  need0.fatigue 3
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_pay_what_you_owe
+  beliefs.1.s 3
+  beliefs.2.id bl_head_north
+  beliefs.2.s 3
+  wants.1.id wn_to_be_useful
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  carry.2 Base.SheetPaper2
+  dress.role business_m
+  dress.flags.1 tie
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_about_the_nearest_occupied_room
+  hooks.bath wants_to_keep_shirt_collar_dry
+  hooks.radio prefers_music_to_sales_voices
+  books.taste.1 mystery
+  books.taste.2 western
+  facts.1.id f_orval
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Left Orval at the Radcliff shop after promising to wait
+  facts.1.gate trust>=15
+  facts.2.id f_miles
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Collected eighty dollars for invented insurance journeys in 1986
+  facts.2.gate trust>=30 & flag:orval_told
+  facts.3.id f_wedding
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Accepted a sales territory before the wedding after promising Celia to stop
+  facts.3.gate trust>=45 & alone & flag:miles_told
+  facts.4.id f_cash
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Still carries the tie and savings hidden from Celia during divorce
+  facts.4.gate trust>=60 & alone & flag:wedding_told
+  facts.5.id f_elsie
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Reported Elsie despite knowing she had replaced the till money
+  facts.5.gate trust>=75 & alone & flag:cash_told & imin>=60
+  mk.1 a little territory
+  mk.2 Owen's wooden horse
+  mk.3 not the wedding
+  rt.1 6-8|hall|Straightens his collar and asks whether there is a useful task
+  rt.2 12-14|livingroom|Turns an unfinished wooden horse over in his fingers without cutting indoors
+  rt.3 20-22|livingroom|Asks where the other occupied rooms are before settling to rest
+  bl.1 room key|Base.KeyRing|Key to the Louisville room he rented after the divorce
+  bl.2 old sales card|Base.SheetPaper2|Printed when insurance was his whole little territory
+  bl.3 unfinished wooden horse||Meant for Owen, but its legs are still much too thick
+  bl.4 old striped tie||Holds the one hundred eighty dollars hidden during the divorce
+  bl.5 folded cigarette paper||Retains the hand habit of rolling for his father Max
+  bl.6 collar brush||Used to brush dust off before knocking on sales calls
+  rl.1 Celia Hensley|former wife, born 1962|Mother of Owen; married Brent in 1984 and divorced in 1991
+  rl.2 Owen Gentry|son, born 1982|Last known with Celia in Louisville; not travelling with Brent
+  rl.3 Orval McKee|recent walking companion|Brent left him at a Radcliff shop after promising to wait
+  rl.4 Elsie Rudd|former colleague and friend|Lost her teller job after Brent's 1988 report
+  rl.5 Jasper Hale|bank manager|Received Brent's report about Elsie
+end

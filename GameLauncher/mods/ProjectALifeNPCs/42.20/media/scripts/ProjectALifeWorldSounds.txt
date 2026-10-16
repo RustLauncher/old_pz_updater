@@ -1,0 +1,505 @@
+module ProjectALife
+{
+
+    sound PALWorldSessionAlarm
+    {
+        category = UI,
+        loop = false,
+        is3D = false,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_session_alarm.ogg,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarCrash1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_car_crash_1.ogg,
+            distanceMin = 40,
+            distanceMax = 1500,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarCrash2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_car_crash_2.ogg,
+            distanceMin = 40,
+            distanceMax = 1500,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarCrash3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_car_crash_3.ogg,
+            distanceMin = 40,
+            distanceMax = 1500,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarAlarm
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_car_alarm.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.7,
+        }
+    }
+
+    sound PALWorldHeliPass1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_heli_pass_1.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.95,
+        }
+    }
+
+    sound PALWorldHeliPass2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_heli_pass_2.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.95,
+        }
+    }
+
+    sound PALWorldPoliceSiren
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_police_siren.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.95,
+        }
+    }
+
+    sound PALWorldShootout
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_shootout.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.8,
+        }
+    }
+
+    sound PALWorldDistress1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_distress_1.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.95,
+        }
+    }
+
+    sound PALWorldDistress2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_distress_2.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.95,
+        }
+    }
+
+    sound PALWorldEerie1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie_1.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldEerie2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie_2.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldEerie3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie_3.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldEerie4
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie_4.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldScream
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_scream.ogg,
+            distanceMin = 40,
+            distanceMax = 1500,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldBroadcast
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_broadcast.ogg,
+            distanceMin = 20,
+            distanceMax = 1000,
+            volume = 0.7,
+        }
+    }
+
+    sound PALWorldRadioBackup
+    {
+        category = World,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_radio_backup.ogg,
+            distanceMin = 2,
+            distanceMax = 24,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldRadioOff
+    {
+        category = World,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_radio_off.ogg,
+            distanceMin = 2,
+            distanceMax = 24,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldRoundWhizz
+    {
+        category = World,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_round_whizz.ogg,
+            distanceMin = 1,
+            distanceMax = 30,
+            volume = 0.8,
+        }
+    }
+
+    sound PALWorldAirRaidSiren
+    {
+        category = Ambient,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_airraidsiren.ogg,
+            distanceMax = 450,
+            volume = 0.6,
+        }
+    }
+
+    sound PALWorldArtillery1
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_artillery1.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldArtillery2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_artillery2.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldArtillery3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_artillery3.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldWarExplosions
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_warexplosions.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldJetOverhead
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_jetoverhead.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldSirensServices
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_sirensservices.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldHeliPass3
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_helipass3.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldHeliPass4
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_helipass4.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarPullup2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_carpullup2.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldCarAlarm2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_caralarm2.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldShootout2
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_shootout2.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldHunterRifle
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_hunterrifle.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldTortured
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_tortured.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldEerie5
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie5.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+
+    sound PALWorldEerie6
+    {
+        category = Meta,
+        loop = false,
+        is3D = true,
+        maxInstancesPerEmitter = 1,
+        clip
+        {
+            file = media/sound/project_alife_world/pal_world_eerie6.ogg,
+            distanceMax = 1000,
+            volume = 1.0,
+        }
+    }
+}
