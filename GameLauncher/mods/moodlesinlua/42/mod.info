@@ -1,8 +1,0 @@
-name=Moodles in lua
-id=moodlesinlua
-description=This mod completely replaces the moodles rendering system, thus allowing hot-swappable textures and fixing several bugs of the original system. <LINE> <LINE> Without texture packs, mod will use the default textures from the original game and you can download more texures but they have to support this mod, check the steam page of this mod for more info. <LINE> <LINE> If new texture packs do not appear in the list, check the mod load order, all texture mods should be placed under Moodles In Lua to work correctly example picture can be found on the steam page of this mod.
-poster=poster.png
-icon=moodlesicon.png
-author=molecule31; Dreamweave
-versionMin=42.0.0
-modversion=11

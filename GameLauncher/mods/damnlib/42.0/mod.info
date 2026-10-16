@@ -1,0 +1,9 @@
+name=that DAMN Library
+id=damnlib
+modversion=0.9856b
+poster=preview.png
+icon=icon.png
+description=Asset library required by all KI5 mods (This version is deprecated and not receiving updates anymore since April of 2026, update your game past b42.12 to access current feature set)
+author=KI5/bikinihorst
+category=vehicle
+versionMin=42.0.0

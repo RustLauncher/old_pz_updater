@@ -1,0 +1,5 @@
+Sandbox_FR = {
+    Sandbox_VisibleDoorDamage = "Visible Door Damage",
+    Sandbox_VisibleDoorDamage_EnableTestMenu = "Afficher le menu de tests des portes",
+    Sandbox_VisibleDoorDamage_EnableTestMenu_tooltip = "Active les outils de test dans le menu du clic droit. En multijoueur, seuls les administrateurs y ont acces. Desactive par defaut.",
+}

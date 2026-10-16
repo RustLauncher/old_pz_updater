@@ -1,0 +1,87 @@
+module Base
+{
+model ct_hd_location_community_church_small_01_28_s0_v0
+{
+        mesh = IsoObject/ct_hd_location_community_church_small_01_28_s0_v0.glb,
+        animationsMesh = door_pair_left_w,
+        texture = ct_hd_location_community_church_small_01_28_texture_0,
+        shader = door,
+        static = false,
+        scale = 1.0,
+        attachment curtain1
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 0.02863244,
+            rotate = 180 0 180,
+        }
+        attachment curtain2
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 -0.029316932,
+            rotate = 0 0 0,
+        }
+    }
+model ct_hd_location_community_church_small_01_28_s0_v1
+{
+        mesh = IsoObject/ct_hd_location_community_church_small_01_28_s0_v1.glb,
+        animationsMesh = door_pair_right_n,
+        texture = ct_hd_location_community_church_small_01_28_texture_0,
+        shader = door,
+        static = false,
+        scale = 1.0,
+        attachment curtain1
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 0.028792206,
+            rotate = 180 0 180,
+        }
+        attachment curtain2
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 -0.027928859,
+            rotate = 0 0 0,
+        }
+    }
+model ct_hd_location_community_church_small_01_28_s0_v2
+{
+        mesh = IsoObject/ct_hd_location_community_church_small_01_28_s0_v2.glb,
+        animationsMesh = door_pair_left_w_open,
+        texture = ct_hd_location_community_church_small_01_28_texture_0,
+        shader = door,
+        static = false,
+        scale = 1.0,
+        attachment curtain1
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 0.02863244,
+            rotate = 180 0 180,
+        }
+        attachment curtain2
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 -0.029316932,
+            rotate = 0 0 0,
+        }
+    }
+model ct_hd_location_community_church_small_01_28_s0_v3
+{
+        mesh = IsoObject/ct_hd_location_community_church_small_01_28_s0_v3.glb,
+        animationsMesh = door_pair_right_n_open,
+        texture = ct_hd_location_community_church_small_01_28_texture_0,
+        shader = door,
+        static = false,
+        scale = 1.0,
+        attachment curtain1
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 0.028792206,
+            rotate = 180 0 180,
+        }
+        attachment curtain2
+        {
+            bone = DoorBone,
+            offset = 0 1.8943 -0.027928859,
+            rotate = 0 0 0,
+        }
+    }
+}

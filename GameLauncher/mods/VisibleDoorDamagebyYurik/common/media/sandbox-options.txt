@@ -1,0 +1,9 @@
+VERSION = 1,
+
+option VisibleDoorDamage.EnableTestMenu
+{
+    type = boolean,
+    default = false,
+    page = VisibleDoorDamage,
+    translation = VisibleDoorDamage_EnableTestMenu,
+}

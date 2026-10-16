@@ -1,0 +1,9 @@
+name='82 Oshkosh M911
+id=82oshkoshM911
+require=\damnlib
+poster=preview.png
+icon=icon.png
+description=This mod adds Oshkosh M911 Semi-Trailer Truck and 5 Semi-Trailers
+author=KI5
+category=vehicle
+versionMin=42.20.0

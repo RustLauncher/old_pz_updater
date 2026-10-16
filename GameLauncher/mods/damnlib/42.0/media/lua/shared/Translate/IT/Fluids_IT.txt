@@ -1,0 +1,4 @@
+Fluids_IT = {
+    Fluid_Container_MilitaryGasCan = "Tanica militare per carburante",
+    Fluid_Container_MilitaryWaterCan = "Tanica militare per acqua",
+}

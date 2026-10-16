@@ -1,0 +1,5 @@
+name=Cuddys Custom Skins
+id=CuddySkins42
+require=\damnlib
+description=This mod adds Cuddys custom vehicle skins.
+versionMin=42.0.0

@@ -1,0 +1,85 @@
+IG_UI_IT = {
+    IGUI_VehiclePartWindowBackLeft = "Finestrino posteriore sinistro",
+	IGUI_VehiclePartWindowBackRight = "Finestrino posteriore destro",
+    IGUI_VehiclePartWindowMiddleLeft = "Finestrino centrale sinistro",
+	IGUI_VehiclePartWindowMiddleRight = "Finestrino centrale destro",
+    
+    IGUI_VehiclePartSeatFrontMiddle = "Sedile anteriore centrale",
+    IGUI_VehiclePartSeatMiddleMiddle = "Sedile centrale",
+    IGUI_VehiclePartSeatRearMiddle = "Sedile posteriore centrale",
+    IGUI_VehiclePartSeatBackLeft = "Sedile in fondo a sinistra",
+    IGUI_VehiclePartSeatBackMiddle = "Sedile in fondo al centro",
+    IGUI_VehiclePartSeatBackRight = "Sedile in fondo a destra",
+
+    IGUI_VehiclePartDAMNSpareTire = "Ruota di scorta",
+    IGUI_VehiclePartDAMNSpareTire2 = "Ruota di scorta",
+	IGUI_VehiclePartDAMNSpareTireRoof = "Ruota di scorta sul tetto",
+    IGUI_VehiclePartDAMNSpareTireRoof2 = "Ruota di scorta sul tetto",
+	IGUI_VehiclePartDAMNSpareTireTrunk = "Ruota di scorta nel bagagliaio",
+    IGUI_VehiclePartDAMNSpareTireBed = "Ruota di scorta nel cassone",
+    IGUI_VehiclePartDAMNSpareTireFront = "Ruota di scorta frontale",
+
+	IGUI_VehiclePartDAMNSideSteps = "Pedane laterali",
+	IGUI_VehiclePartDAMNSunRoof = "Tettuccio apribile",
+    IGUI_VehiclePartDAMNRoofLights = "Luci sul tetto",
+    IGUI_VehiclePartDAMNTent = "Tenda",
+    IGUI_VehiclePartDAMNMudflaps = "Paraspruzzi",
+	IGUI_VehiclePartDAMNSnorkel = "Snorkel",
+    IGUI_VehiclePartDAMNSpoiler = "Spoiler",
+    IGUI_VehiclePartDAMNSpoilerRoof = "Spoiler sul tetto",
+    IGUI_VehiclePartDAMNBarrier = "Divisorio della cabina",
+    IGUI_VehiclePartDAMNTruckBedCover = "Copertura del cassone",
+    IGUI_VehiclePartDAMNSunVisor = "Visiera parasole"
+    IGUI_VehiclePartDAMNSideskirts = "Minigonne laterali",
+    IGUI_VehiclePartDAMNSearchlight = "Faro di ricerca",
+
+	IGUI_VehiclePartDAMNTrunk = "Vano bagagliaio",
+	IGUI_VehiclePartDAMNRoofrack = "Vano portapacchi sul tetto",
+    IGUI_VehiclePartDAMNGunrack = "Vano armi",
+    IGUI_VehiclePartDAMNStretcher = "Barella",
+
+    IGUI_VehiclePartDAMNBumperFront = "Paraurti anteriore",
+	IGUI_VehiclePartDAMNBumperRear = "Paraurti posteriore",
+
+	IGUI_VehiclePartDAMNWindshieldArmor = "Rinforzo del parabrezza",
+	IGUI_VehiclePartDAMNWindshieldRearArmor = "Rinforzo del lunotto",
+	IGUI_VehiclePartDAMNFrontLeftArmor = "Rinforzo del finestrino anteriore sinistro",
+	IGUI_VehiclePartDAMNFrontRightArmor = "Rinforzo del finestrino anteriore destro",
+	IGUI_VehiclePartDAMNRearLeftArmor = "Rinforzo del finestrino posteriore sinistro",
+	IGUI_VehiclePartDAMNRearRightArmor = "Rinforzo del finestrino posteriore destro",
+	IGUI_VehiclePartDAMNMiddleLeftArmor = "Rinforzo del finestrino centrale sinistro",
+	IGUI_VehiclePartDAMNMiddleRightArmor = "Rinforzo del finestrino centrale destro",
+    IGUI_VehiclePartDAMNBackLeftArmor = "Rinforzo del finestrino in fondo a sinistra",
+	IGUI_VehiclePartDAMNBackRightArmor = "Rinforzo del finestrino in fondo a destra",
+
+    IGUI_VehiclePartDAMNGasCanOne = "Tanica di carburante",
+    IGUI_VehiclePartDAMNGasCanTwo = "Tanica di carburante",
+    IGUI_VehiclePartDAMNGasCanThree = "Tanica di carburante",
+    IGUI_VehiclePartDAMNGasCanFour = "Tanica di carburante",
+    IGUI_VehiclePartDAMNGenerator = "Generatore",
+
+    IGUI_VehiclePartDAMNPropaneTankOne = "Bombola di propano",
+    IGUI_VehiclePartDAMNPropaneTankTwo = "Bombola di propano",
+    IGUI_VehiclePartDAMNPropaneTankThree = "Bombola di propano",
+
+    IGUI_VehiclePartDAMNFenderFrontLeft = "Parafango anteriore sinistro",
+	IGUI_VehiclePartDAMNFenderFrontRight = "Parafango anteriore destro",
+	IGUI_VehiclePartDAMNFenderRearLeft = "Parafango posteriore sinistro",
+	IGUI_VehiclePartDAMNFenderRearRight = "Parafango posteriore destro",
+
+    IGUI_VehiclePartToolboxLidRight = "Coperchio destro della cassetta porta-attrezzi",
+    IGUI_VehiclePartToolboxLidLeft = "Coperchio sinistro della cassetta porta-attrezzi",
+
+    IGUI_VehiclePartGM85Roofrack = "Portapacchi sul tetto",
+    IGUI_VehiclePartGM85VinylRoof = "Rivestimento del tetto in vinile",
+
+    IGUI_DL_InstallPartsFirst= "Devi prima installare %1 componente/i:",
+    IGUI_DL_UninstallPartsFirst = "Devi prima rimuovere %1 componente/i:",
+    IGUI_DL_GasCanInstallHint = "Questa è una posizione comoda per riporre le taniche di carburante, non un'estensione del serbatoio.",
+    IGUI_DL_GeneratorInstallHint = "Questa è una posizione comoda per riporre il generatore. Non fornirà energia elettrica intorno al veicolo.",
+
+    IGUI_VehiclePartDAMNBedOne = "Letto uno",
+    IGUI_VehiclePartDAMNBedTwo = "Letto due",
+    IGUI_DAMN_CLOSE_AWNING = "Chiudi tendalino"
+    IGUI_DAMN_OPEN_AWNING = "Apri tendalino"
+}

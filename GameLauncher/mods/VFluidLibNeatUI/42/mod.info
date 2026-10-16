@@ -1,0 +1,8 @@
+name=VFluid Lib - NeatUI Skin
+id=VFluidLibNeatUI
+description=Optional visual patch: reskins VFluid Lib's Fluid Info window with the NeatUI Framework look - a Neat title bar with the fluid-drop sprite, the title and a red close button, and the NeatUI panel body in place of the stock window frame; the footer tooltip body loses its vanilla box. Honours Neat Rocco's background-alpha option when Neat Rocco is loaded. Pure chrome: every level bar, designation control and consumption row stays VFluid Lib's own, and nothing outside this one window is touched. Requires VFluid Lib and NeatUI Framework.
+author=Rocco & Afyrmo (NeatUI Framework), BEN (VFluid Lib + patch)
+require=\VFluidLib,\NeatUI_Framework
+loadModAfter=VFluidLib,NeatUI_Framework,Neat_Rocco
+modversion=1.0.0
+versionMin=42.0

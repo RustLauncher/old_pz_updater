@@ -1,0 +1,28 @@
+IG_UI_CH = {
+	IGUI_VehicleName82oshkoshM911 = "'82 豪士科 M911 卡車",
+	IGUI_VehicleName82oshkoshM911B = "'82 豪士科 M911 黑色",
+	IGUI_VehicleName82oshkoshM911Burnt = "'82 豪士科 M911 焦焚",
+
+	IGUI_VehiclePartM911Trunk = "行李箱容量",
+	IGUI_VehiclePartM911Toolbox = "工具箱",
+	IGUI_VehiclePartM911Bullbar = "防護桿",
+	IGUI_VehiclePartM911Mudflaps = "擋泥板",
+	IGUI_VehiclePartM911Muffler = "消音器",
+	IGUI_VehiclePartM911SpareTire = "備用輪胎",
+	IGUI_VehiclePartM911WindshieldArmor = "擋風玻璃防護",
+	IGUI_VehiclePartM911WindshieldRearArmor = "後車窗防護",
+	IGUI_VehiclePartM911DoorFrontLeftArmor = "左前門防護",
+	IGUI_VehiclePartM911DoorFrontRightArmor = "右前門防護",
+
+	IGUI_VehicleNameTrailerM747lowbed = "M747 低板拖車",
+	IGUI_VehicleNameTrailerM127stake = "M127 平板拖車",
+	IGUI_VehicleNameTrailerM128van = "M128 廂型拖車",
+	IGUI_VehicleNameTrailerM129van = "M129 廂型拖車",
+	IGUI_VehicleNameTrailerM967tanker = "M967 油罐拖車",
+
+	IGUI_VehiclePartM967Trunk2 = "行李箱 2",
+	IGUI_VehiclePartM967Trunk3 = "行李箱 3",
+	IGUI_VehiclePartTrunkDoor2 = "行李箱蓋 2",
+	IGUI_VehiclePartTrunkDoor3 = "行李箱蓋 3",
+
+}

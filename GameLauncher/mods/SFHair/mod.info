@@ -1,0 +1,8 @@
+name=Spitfire Hair Studio
+authors=Bubwinga
+poster=poster.png
+icon=icon.png
+require=FH
+description=Adds 10 new hairstyles— More to come!
+versionMin=42.20
+incompatible=TombBody

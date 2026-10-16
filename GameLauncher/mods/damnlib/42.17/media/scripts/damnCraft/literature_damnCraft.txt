@@ -1,0 +1,272 @@
+module damnCraft
+{
+	item magEmergencyVehiclesMagazine
+    {
+	    DisplayName = Emergency Vehicles Service Manual,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNemergency_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+		/*
+        49 Dodge Power Wagon Crew Cab
+        59 Cadillac Miller-Meteor + ECTO-1
+        76 Chevrolet K Series
+        82 Jeep J10
+        85 Chevrolet Step-Van
+        85 Chevrolet Caprice / Impala
+        86 Ford Econoline E-150 + Pop Culture vans
+        87 Ford B700/F700 Trucks
+        89 Ford Bronco
+        90 Ford F350 Ambulance
+        90 Pierce Arrow Pumper
+        91 Ford LTD Crown Victoria / Country Squire
+        92 Ford Crown Victoria
+        93 Chevrolet Suburban / Silverado
+        93 Ford F-Series
+        93 Ford Mustang
+        99 Ford Crown Victoria Police Interceptor
+        */
+		Tooltip = Tooltip_item_damnEmergencyManual,
+		StaticModel = Magazine,
+		WorldStaticModel = emergencyVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magMilitaryVehiclesMagazine
+    {
+	    DisplayName = Military Vehicles Service Manual,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNmilitary_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        49 Dodge Power Wagon Crew Cab
+        67 Cadillac Gage Commando
+        74 AM General M151A2 MUTT
+        78 AM General M35 Series Trucks
+        80 MAN KAT1
+        82 Oshkosh M911 + Military Semi-Trailers
+        83 AM General M923
+        84 Mercedes Benz W460
+        84 Cadillac Gage LAV-300
+        86 Chevrolet CUCVs + M101A2 Trailer
+        86 Oshkosh P19A + Military Trailers
+        87 Ford B700/F700 Trucks
+        89 LAND ROVER Defender
+        92 AM General M998 + M101A3 Cargo trailer
+        97 ADI Bushmaster
+        */
+		Tooltip = Tooltip_item_damnMilitaryManual,
+		StaticModel = Magazine,
+		WorldStaticModel = militaryVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magPassengerClassicVehiclesMagazine
+    {
+	    DisplayName = Passenger Vehicles: Classic Era,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNpassengerClassic_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        59 Cadillac Miller-Meteor + ECTO-1
+        63 Volkswagen 1300 Beetle
+        63 Volkswagen Type 2 Van
+        69 Mini Mk2
+        70 Ford Escort
+        75 Pontiac Grand Prix
+        76 Chrysler New Yorker
+        */
+		Tooltip = Tooltip_item_damnPassengerClassicManual,
+		StaticModel = Magazine,
+		WorldStaticModel = passengerClassicVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magPassengerMidVehiclesMagazine
+    {
+	    DisplayName = Passenger Vehicles: Mid Era,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNpassengerMid_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        84 Oldsmobile 98 Regency
+        84 Buick Electra
+        84 Cadillac DeVille
+        85 Oldsmobile Delta 88
+        85 Buick LeSabre
+        85 Pontiac Parisienne
+        85 Chevrolet Caprice / Impala
+        86 Ford Econoline E-150 + Pop Culture vans
+        89 Volvo 200 Series
+        89 Dodge Caravan
+        */
+		Tooltip = Tooltip_item_damnPassengerMidManual,
+		StaticModel = Magazine,
+		WorldStaticModel = passengerMidVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magPassengerModernVehiclesMagazine
+    {
+	    DisplayName = Passenger Vehicles: Modern Era,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNpassengerModern_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        90 BMW 3 Series (E30)
+        91 Geo Metro
+        91 Ford LTD Crown Victoria / Country Squire
+        93 Ford Taurus
+        93 Lincoln Town Car + Limo
+        96 Saturn S Series
+        */
+		Tooltip = Tooltip_item_damnPassengerModernManual,
+		StaticModel = Magazine,
+		WorldStaticModel = passengerModernVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magPerformanceVehiclesMagazine
+    {
+	    DisplayName = Ultimate Performance Car Guide,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNperformance_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        65 Pontiac Banshee
+        78 Lamborghini Countach
+        81 DeLorean DMC-12
+        82 Porsche 911
+        82 Pontiac Firebird
+        84 Chevrolet Corvette
+        */
+		Tooltip = Tooltip_item_damnPerformanceManual,
+		StaticModel = Magazine,
+		WorldStaticModel = performanceVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magMuscleVehiclesMagazine
+    {
+	    DisplayName = Guide to American Muscle Cars,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNmuscle_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        66 Pontiac LeMans / GTO
+        67 Shelby GT500 + Eleanor
+        68 Pontiac Firebird
+        69 Chevrolet Camaro
+        69 Dodge Charger
+        70 Plymouth Barracuda
+        70 Dodge Challenger
+        70 Plymouth Road Runner
+        73 Ford Falcon
+        77 Pontiac Firebird
+        79 Chevrolet Camaro
+        87 Buick Regal
+        */
+		Tooltip = Tooltip_item_damnMuscleManual,
+		StaticModel = Magazine,
+		WorldStaticModel = muscleVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magSportUtilityVehiclesMagazine
+    {
+	    DisplayName = Sport Utility Vehicles of the World,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNsportUtility_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        84 Mercedes Benz W460
+        84 Jeep XJ Cherokee
+        87 Chevrolet Suburban
+        89 LAND ROVER Defender
+        89 Isuzu Trooper
+        91 RANGE ROVER Classic
+        92 Jeep YJ Wrangler
+        93 Chevrolet Suburban / Silverado
+        */
+		Tooltip = Tooltip_item_damnSportUtilityManual,
+		StaticModel = Magazine,
+		WorldStaticModel = sportUtilityVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magUtilityVehiclesMagazine
+    {
+	    DisplayName = Utility Vehicles Service Manual,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNutility_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        49 Dodge Power Wagon Crew Cab
+        76 Chevrolet K Series
+        82 Jeep J10
+        85 Chevrolet Step-Van
+        86 Ford Econoline E-150 + Pop Culture vans
+        87 Ford B700/F700 Trucks
+        88 Chevrolet S10
+        88 Toyota Hilux
+        89 Ford Bronco
+        91 Ford Ranger
+        93 Chevrolet Suburban / Silverado
+        93 Ford F-Series
+        93 Ford CF8000 Elgin Street Sweeper
+        */
+		Tooltip = Tooltip_item_damnUtilityManual,
+		StaticModel = Magazine,
+		WorldStaticModel = utilityVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+
+    item magJdmVehiclesMagazine
+    {
+	    DisplayName = Cars of Japan,
+		DisplayCategory = SkillBook,
+		ItemType = base:literature,
+		Weight = 0.7,
+		Icon = DAMNjdm_mag,
+		BoredomChange = -25,
+        StressChange = -20,
+        /*
+        87 Toyota MR2
+        91 Nissan 240SX
+        92 NISSAN Skyline GT-R (R32)
+        95 Subaru Impreza WRX STI
+        96 Mitsubishi Lancer EVO IV
+        98 Nissan Stagea 260RS Autech
+        */
+		Tooltip = Tooltip_item_damnJDMManual,
+		StaticModel = Magazine,
+		WorldStaticModel = jdmVehiclesMagazineWI,
+		Tags = base:magazine,
+    }
+}

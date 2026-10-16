@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>damn_idle_lyingSide</m_Name>
+	<m_AnimName>Bob_Lying_asleep</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions>
+		<m_Name>damnVehicle</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>True</m_StringValue>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>damnPosition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>lyingSide</m_StringValue>
+	</m_Conditions>
+</animNode>

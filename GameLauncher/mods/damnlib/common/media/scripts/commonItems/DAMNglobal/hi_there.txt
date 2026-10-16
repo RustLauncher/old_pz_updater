@@ -1,0 +1,1 @@
+hi there, template_DAMNglobal does nothing, it is my internal list of vehicles i use for local debugging, nothing in this list has ever impacted anything in the game, if some llm guru tells you this is for spawning, b42 stable or anything stupid like that, they are lying, this is just a dumb list

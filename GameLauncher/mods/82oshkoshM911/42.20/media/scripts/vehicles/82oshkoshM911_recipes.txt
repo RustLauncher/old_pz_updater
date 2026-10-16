@@ -1,0 +1,431 @@
+module Base
+{
+    craftRecipe 82oshkoshM911MakeHood
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:5,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 2 [damnCraft.HingeLarge],
+            item 2 [damnCraft.HingeSmall],
+            item 4 [Base.SheetMetal],
+            item 4 [Base.Screws],
+			item 8 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911EngineDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeFrontDoor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:25,
+        SkillRequired = MetalWelding:7,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeSmall],
+            item 2 [Base.SheetMetal],
+            item 2 [Base.SmallSheetMetal],
+            item 2 [Base.Screws],
+			item 8 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911CarFrontDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeLarge],
+            item 1 [Base.SheetMetal],
+            item 1 [Base.Screws],
+			item 4 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911TrunkDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM127MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeLarge],
+            item 3 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 5 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M127TrunkDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM128MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:5,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 2 [damnCraft.HandleModern],
+            item 4 [damnCraft.HingeLarge],
+            item 4 [Base.SheetMetal],
+            item 4 [Base.Screws],
+			item 8 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M128TrunkDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM129MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:5,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeLarge],
+            item 2 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 6 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M129TrunkDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM967MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeLarge],
+            item 1 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 4 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M967TrunkDoor2,
+        }
+	}
+
+    craftRecipe ISOMakeContainerDoor
+	{
+        timedAction = Welding,
+        time = 150,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:5,
+
+        inputs
+        {
+            item 1 [damnCraft.HandleModern],
+            item 2 [damnCraft.HingeSmall],
+            item 4 [Base.SheetMetal],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.IsoContainerTrunkDoor2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeFrontWindshield
+	{
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        category = Mechanical,
+        xpAward = Mechanics:2,
+        SkillRequired = Mechanics:3,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 2 [Base.GlassPanel],
+            item 4 [damnCraft.RubberStrip],
+            item 1 [Base.Scalpel] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911Windshield2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeFrontSideWindow
+	{
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        category = Mechanical,
+        xpAward = Mechanics:2,
+        SkillRequired = Mechanics:3,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 2 [damnCraft.RubberStrip],
+            item 1 [Base.Scalpel] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911SideWindow2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeRearWindshield
+	{
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        category = Mechanical,
+        xpAward = Mechanics:2,
+        SkillRequired = Mechanics:3,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 3 [Base.GlassPanel],
+            item 6 [damnCraft.RubberStrip],
+            item 1 [Base.Scalpel] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911WindshieldRear2,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeFrontWindshieldArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Armoring,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 5 [Base.SmallSheetMetal],
+            item 3 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 9 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911WindshieldArmor,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeFrontWindowArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Armoring,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 3 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 5 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911CarFrontDoorArmor,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeRearWindshieldArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Armoring,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911WindshieldRearArmor,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeBullbar
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 3 [Base.SheetMetal],
+            item 5 [Base.SmallSheetMetal],
+            item 1 [Base.MetalPipe],
+            item 4 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911Bullbar0,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeMakeshiftBullbar
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:3,
+
+        inputs
+        {
+            item 3 [Base.SheetMetal],
+            item 4 [Base.SmallSheetMetal],
+            item 3 [Base.Screws],
+			item 9 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911Bullbar1,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeMuffler
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Mechanical,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:3,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 2 [Base.SheetMetal],
+            item 2 [Base.SmallSheetMetal],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.M911Muffler,
+        }
+	}
+
+    craftRecipe 82oshkoshM911MakeMudflaps
+	{
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        category = Mechanical,
+        xpAward = Mechanics:2,
+        SkillRequired = Mechanics:2,
+        NeedToBeLearn = True,
+
+        inputs
+        {
+            item 2 [Base.Glue],
+            item 4 [damnCraft.RubberStrip;Base.TirePiece] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.M911Mudflaps,
+        }
+	}
+}

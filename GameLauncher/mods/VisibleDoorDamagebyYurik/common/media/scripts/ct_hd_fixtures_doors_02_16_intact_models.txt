@@ -1,0 +1,43 @@
+module Base
+{
+model ct_hd_fixtures_doors_02_16_s0_v0
+{
+    mesh = IsoObject/ct_hd_fixtures_doors_02_16_s0_v0.glb,
+    animationsMesh = fixtures_doors_02_18,
+    texture = ct_hd_fixtures_doors_02_16_texture_0,
+    shader = door,
+    static = false,
+    scale = 1.0,
+    undoCoreScale = true,
+}
+model ct_hd_fixtures_doors_02_16_s0_v1
+{
+    mesh = IsoObject/ct_hd_fixtures_doors_02_16_s0_v1.glb,
+    animationsMesh = fixtures_doors_02_19,
+    texture = ct_hd_fixtures_doors_02_16_texture_0,
+    shader = door,
+    static = false,
+    scale = 1.0,
+    undoCoreScale = true,
+}
+model ct_hd_fixtures_doors_02_16_s0_v2
+{
+    mesh = IsoObject/ct_hd_fixtures_doors_02_16_s0_v2.glb,
+    animationsMesh = fixtures_doors_02_18,
+    texture = ct_hd_fixtures_doors_02_16_texture_0,
+    shader = door,
+    static = false,
+    scale = 1.0,
+    undoCoreScale = true,
+}
+model ct_hd_fixtures_doors_02_16_s0_v3
+{
+    mesh = IsoObject/ct_hd_fixtures_doors_02_16_s0_v3.glb,
+    animationsMesh = fixtures_doors_02_19,
+    texture = ct_hd_fixtures_doors_02_16_texture_0,
+    shader = door,
+    static = false,
+    scale = 1.0,
+    undoCoreScale = true,
+}
+}

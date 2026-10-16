@@ -1,0 +1,6 @@
+Sandbox_IT = {
+	Sandbox_DAMN_Options = "damnlib | Opzioni",
+	Sandbox_DAMN_AllowVanillaVehicleDismantling = "Abilita il riciclo dei componenti dei veicoli del gioco base",
+    Sandbox_DAMN_AllowVanillaWorldItemDismantling = "Abilita il riciclo di finestre e specchi delle abitazioni",
+    Sandbox_DAMN_Spawns = "KI5 | Preset di spawn",
+}

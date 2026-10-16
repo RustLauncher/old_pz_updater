@@ -1,0 +1,189 @@
+module Base
+{
+	model TrailerM967tankerBase
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|M967_trailer,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.1,
+	}
+	vehicle TrailerM967tanker
+    {
+        mechanicType = 2,
+        offRoadEfficiency = 1.3,
+        engineRepairLevel = 4,
+        playerDamageProtection = 1,
+
+        model
+        {
+            file = TrailerM967tankerBase,
+            scale = 0.9000,
+            offset = 0.0000 1.1444 4.3667,
+        }
+
+        skin
+        {
+            texture = Vehicles/Trailers_M967tanker_Shell_USMCgreen,
+        }
+
+        skin
+        {
+            texture = Vehicles/Trailers_M967tanker_Shell_desertTan,
+        }
+
+        skin
+        {
+            texture = Vehicles/Trailers_M967tanker_Shell_NATOgreen,
+        }
+
+        skin
+        {
+            texture = Vehicles/Trailers_M967tanker_Shell_autotsar,
+        }
+
+        textureRust = Vehicles/Trailers_M967tanker_Rust,
+        textureMask = Vehicles/Trailers_M967tanker_Mask,
+        textureLights = Vehicles/Trailers_M967tanker_Lights,
+        textureDamage1Overlay = Vehicles/Trailers_M967tanker_Overlays_Damaged01,
+        textureDamage1Shell = Vehicles/Trailers_M967tanker_Damaged01,
+        textureDamage2Overlay = Vehicles/Trailers_M967tanker_Overlays_Damaged02,
+        textureDamage2Shell = Vehicles/Trailers_M967tanker_Damaged02,
+        extents = 2.5111 0.9556 3.0000,
+        shadowExtents = 2.5555 8.6221,
+        shadowOffset = 0.0000 2.1376,
+        mass = 875,
+        physicsChassisShape = 2.5111 0.9556 2.9333,
+        centerOfMassOffset = 0.0000 0.8667 0.0000,
+        engineForce = 5000,
+        engineQuality = 60,
+        engineLoudness = 55,
+        maxSpeed = 60f,
+        brakingForce = 1,
+        stoppingMovementForce = 2.0f,
+        rollInfluence = 0.15f,
+        steeringIncrement = 0.03,
+        steeringClamp = 0.3,
+        suspensionStiffness = 40,
+        suspensionCompression = 4.83,
+        suspensionDamping = 3.88,
+        maxSuspensionTravelCm = 15,
+        suspensionRestLength = 0.16f,
+        wheelFriction = 2.5f,
+        frontEndHealth = 150,
+        rearEndHealth = 150,
+        seats = 2,
+
+        wheel FrontLeft
+        {
+            front = true,
+            offset = 0.9222 -0.8000 -3.6889,
+            radius = 0.60f,
+            width = 0.60f,
+        }
+
+        wheel FrontRight
+        {
+            front = true,
+            offset = -0.9222 -0.8000 -3.6889,
+            radius = 0.60f,
+            width = 0.60f,
+        }
+
+        wheel RearLeft
+        {
+            front = false,
+            offset = 0.9222 -0.8000 -5.0333,
+            radius = 0.60f,
+            width = 0.60f,
+        }
+
+        wheel RearRight
+        {
+            front = false,
+            offset = -0.9222 -0.8000 -5.0333,
+            radius = 0.60f,
+            width = 0.60f,
+        }
+
+        area TruckBed
+        {
+            xywh = -2.0000 4.3157 1.4889 1.4889,
+        }
+
+        area TruckBed2
+        {
+            xywh = 2.0000 3.3439 1.4889 1.4889,
+        }
+
+        area TruckBed3
+        {
+            xywh = 2.0000 1.8536 1.4889 1.4889,
+        }
+
+        area TireFrontLeft
+        {
+            xywh = 1.8222 0.6945 0.4444 0.4889,
+        }
+
+        area TireFrontRight
+        {
+            xywh = -1.8222 0.6945 0.4444 0.4889,
+        }
+
+        area TireRearLeft
+        {
+            xywh = 1.8222 -0.6832 0.4444 0.4889,
+        }
+
+        area TireRearRight
+        {
+            xywh = -1.8222 -0.6832 0.4444 0.4889,
+        }
+
+        template = TiresV100A3,
+        template = Suspension/part/SuspensionFrontLeft,
+        template = Suspension/part/SuspensionFrontRight,
+        template = Suspension/part/SuspensionRearLeft,
+        template = Suspension/part/SuspensionRearRight,
+        template = M967Storage,
+        template = M967TrunkDoors,
+
+        area GasTank
+        {
+            xywh = 0.0000 4.2846 5.4889 4.4667,
+        }
+
+        template = TruckTank/part/1000FuelTank,
+        template = DAMNglobal,
+		template = DAMNTrailerM967tanker,
+        useChassisPhysicsCollision = false,
+
+        physics box
+        {
+            offset = 0.0000 2.0000 3.6402,
+            extents = 2.2333 1.2889 9.0333,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        physics box
+        {
+            offset = 0.0000 0.8741 1.7000,
+            extents = 2.4667 0.9556 6.3333,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        physics box
+        {
+            offset = 0.0000 0.1852 4.6667,
+            extents = 1.2222 0.4222 0.3333,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment trailer
+        {
+            offset = 0.0000 0.0556 2.9111,
+            rotate = 0.0000 0.0000 0.0000,
+            canAttach = trailerfront,
+        }
+    }
+}
