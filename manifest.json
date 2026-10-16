@@ -10933,8 +10933,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsServer.lua",
-                      "sha256":  "08d5c82fe359fb4cdfe69738648fed8c1b6e575d7ed558a74cd3bea0a2ddb92c",
-                      "size":  12399
+                      "sha256":  "aa230849afd2274ed99ff61f8e5b00b31508421dc1ad830733e58d296a588efe",
+                      "size":  12437
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/shared/KitsConfig.lua",
