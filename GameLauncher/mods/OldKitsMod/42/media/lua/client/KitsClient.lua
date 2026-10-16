@@ -166,6 +166,15 @@ local function onServerCommand(module, command, args)
 
     elseif command == "onlineRoles" then
         KitsClient.OnlineRoles = args or {}
+        local onlinePlayers = getOnlinePlayers()
+        if onlinePlayers then
+            for i = 0, onlinePlayers:size() - 1 do
+                local p = onlinePlayers:get(i)
+                if p and p.setShowAdminTag then
+                    p:setShowAdminTag(false)
+                end
+            end
+        end
 
     elseif command == "roleColors" then
         KitsClient.RoleColors = {}

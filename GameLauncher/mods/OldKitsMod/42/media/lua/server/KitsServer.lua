@@ -252,7 +252,6 @@ local function onClientCommand(module, command, player, args)
         sendPlayerRoleInfo(player)
         sendKitsToPlayer(player)
         sendRoleColors(player)
-        player:setShowAdminTag(false)
         broadcastOnlineRoles()
 
     elseif command == "checkAdmin" then
