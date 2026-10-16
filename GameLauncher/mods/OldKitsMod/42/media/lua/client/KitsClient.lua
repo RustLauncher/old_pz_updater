@@ -166,15 +166,6 @@ local function onServerCommand(module, command, args)
 
     elseif command == "onlineRoles" then
         KitsClient.OnlineRoles = args or {}
-        local onlinePlayers = getOnlinePlayers()
-        if onlinePlayers then
-            for i = 0, onlinePlayers:size() - 1 do
-                local p = onlinePlayers:get(i)
-                if p and p.setShowAdminTag then
-                    p:setShowAdminTag(false)
-                end
-            end
-        end
 
     elseif command == "roleColors" then
         KitsClient.RoleColors = {}
@@ -238,45 +229,6 @@ local function getPlayerScreenPosition(player)
     return screenX, screenY
 end
 
-local function calculateUsernameWidth(player)
-    local username = player:getUsername()
-    if not username or username == "" then return 0 end
-    local displayUsername = getServerOptions():getBoolean("DisplayUserName")
-    local showFirstAndLastName = getServerOptions():getBoolean("ShowFirstAndLastName")
-    local namePart = ""
-    if showFirstAndLastName then
-        namePart = player:getFullName() or ""
-    end
-    if displayUsername then
-        if namePart ~= "" then
-            namePart = string.format("%s (%s)", namePart, username)
-        else
-            namePart = username
-        end
-    elseif not showFirstAndLastName then
-        namePart = username
-    end
-    local tag = player.getTagPrefix and player:getTagPrefix() or nil
-    if tag and tag ~= "" then
-        namePart = "[" .. tag .. "] " .. namePart
-    end
-    local access = player:getAccessLevel()
-    if access and access ~= "None" and player.isShowAdminTag and player:isShowAdminTag() then
-        namePart = access .. " " .. namePart
-    end
-    if player.isSpeek or player.isVoiceMute then
-        namePart = "   " .. namePart
-    end
-    return getTextManager():MeasureStringX(UIFont.Small, namePart)
-end
-
-local function getPlayerUsernameHeight(player)
-    if player.getUserNameHeight then
-        return player:getUserNameHeight()
-    end
-    return getTextManager():MeasureStringY(UIFont.Small, player:getUsername() or "")
-end
-
 local function renderRoleTags()
     local localPlayer = getPlayer()
     if not localPlayer then return end
@@ -292,9 +244,6 @@ local function renderRoleTags()
     for i = 0, onlinePlayers:size() - 1 do
         local player = onlinePlayers:get(i)
         if player then
-            if player.setShowAdminTag then
-                player:setShowAdminTag(false)
-            end
             local username = player:getUsername()
             local roleName = KitsClient.OnlineRoles[username]
             if roleName and roleName ~= "user" then
@@ -323,9 +272,8 @@ local function renderRoleTags()
                             local screenX, screenY = getPlayerScreenPosition(player)
                             local tagWidth = textObj:getWidth()
                             local finalX = screenX - (tagWidth / 2)
-                            local usernameHeight = getPlayerUsernameHeight(player)
-                            local tagHeight = getTextManager():MeasureStringY(UIFont.Small, "X")
-                            local finalY = screenY - usernameHeight - tagHeight
+                            local nameHeight = getTextManager():MeasureStringY(UIFont.Small, "X")
+                            local finalY = screenY - (nameHeight * 2)
                             textObj:AddBatchedDraw(finalX, finalY, true, alpha)
                         end
                     end
