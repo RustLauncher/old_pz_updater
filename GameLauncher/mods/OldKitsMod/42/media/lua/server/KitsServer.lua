@@ -91,21 +91,6 @@ local function sendPlayerRoleInfo(player)
     })
 end
 
-local function broadcastOnlineRoles()
-    local onlinePlayers = getOnlinePlayers()
-    local rolesMap = {}
-    for i = 0, onlinePlayers:size() - 1 do
-        local p = onlinePlayers:get(i)
-        local role = KitsPermissions.GetEffectiveRole(p)
-        if role ~= "user" then
-            rolesMap[p:getUsername()] = role
-        end
-    end
-    for i = 0, onlinePlayers:size() - 1 do
-        sendServerCommand(onlinePlayers:get(i), "Kits", "onlineRoles", rolesMap)
-    end
-end
-
 local function sendRoleColors(player)
     local colors = {}
     local roles = getRoles()
@@ -252,7 +237,6 @@ local function onClientCommand(module, command, player, args)
         sendPlayerRoleInfo(player)
         sendKitsToPlayer(player)
         sendRoleColors(player)
-        broadcastOnlineRoles()
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
@@ -278,7 +262,6 @@ local function onClientCommand(module, command, player, args)
         end
         sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         sendTempRolesList(player)
-        broadcastOnlineRoles()
 
     elseif command == "adminRemoveTempRole" then
         if not KitsPermissions.IsAdmin(player) then
@@ -302,7 +285,6 @@ local function onClientCommand(module, command, player, args)
             sendMsg(player, targetName .. " no tiene rol temporal.")
         end
         sendTempRolesList(player)
-        broadcastOnlineRoles()
 
     elseif command == "adminListTempRoles" then
         if not KitsPermissions.IsAdmin(player) then
@@ -376,7 +358,6 @@ Events.OnServerStarted.Add(onServerStarted)
 
 local function onEveryOneMinute()
     KitsPermissions.CheckExpiredRoles()
-    broadcastOnlineRoles()
 end
 
 Events.EveryOneMinute.Add(onEveryOneMinute)

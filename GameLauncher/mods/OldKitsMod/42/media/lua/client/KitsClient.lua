@@ -10,7 +10,6 @@ KitsClient.AllPlayers = {}
 KitsClient.PlayerRole = "user"
 KitsClient.PlayerRoleDaysLeft = -1
 KitsClient.RoleColors = {}
-KitsClient.OnlineRoles = {}
 
 function KitsClient.RequestKit(kitId)
     sendClientCommand("Kits", "requestKit", { kitId = kitId })
@@ -177,9 +176,6 @@ local function onServerCommand(module, command, args)
             end
         end
 
-    elseif command == "onlineRoles" then
-        KitsClient.OnlineRoles = args or {}
-
     elseif command == "error" then
         local player = getPlayer()
         if player then
@@ -189,50 +185,6 @@ local function onServerCommand(module, command, args)
 end
 
 Events.OnServerCommand.Add(onServerCommand)
-
-local ROLE_TAG_COLORS = {
-    vip       = { r = 1.00, g = 0.85, b = 0.20 },
-    ultimate  = { r = 0.90, g = 0.15, b = 0.35 },
-    priority  = { r = 1.00, g = 0.85, b = 0.20 },
-    gm        = { r = 0.80, g = 0.50, b = 1.00 },
-    moderator = { r = 0.30, g = 0.60, b = 1.00 },
-    admin     = { r = 1.00, g = 0.30, b = 0.30 },
-}
-
-local function drawOutlinedText(font, x, y, text, r, g, b)
-    local tm = getTextManager()
-    tm:DrawString(font, x - 1, y - 1, text, 0, 0, 0, 1.0)
-    tm:DrawString(font, x + 1, y - 1, text, 0, 0, 0, 1.0)
-    tm:DrawString(font, x - 1, y + 1, text, 0, 0, 0, 1.0)
-    tm:DrawString(font, x + 1, y + 1, text, 0, 0, 0, 1.0)
-    tm:DrawString(font, x, y, text, r, g, b, 1.0)
-end
-
-local function renderRoleTags()
-    local me = getPlayer()
-    if not me then return end
-    local onlineRoles = KitsClient.OnlineRoles
-    if not onlineRoles then return end
-    local players = getOnlinePlayers()
-    if not players then return end
-    local zoom = getCore():getZoom(0)
-    for i = 0, players:size() - 1 do
-        local p = players:get(i)
-        local role = onlineRoles[p:getUsername()]
-        if role then
-            local tag = "[" .. role:upper() .. "]"
-            local font = UIFont.Small
-            local sx = isoToScreenX(0, p:getX(), p:getY(), p:getZ())
-            local sy = isoToScreenY(0, p:getX(), p:getY(), p:getZ())
-            local offsetY = 140 / zoom
-            local tw = getTextManager():MeasureStringX(font, tag)
-            local c = ROLE_TAG_COLORS[role:lower()] or { r = 0.8, g = 0.8, b = 0.8 }
-            drawOutlinedText(font, sx - tw / 2, sy - offsetY, tag, c.r, c.g, c.b)
-        end
-    end
-end
-
-Events.OnPostUIDraw.Add(renderRoleTags)
 
 local function onGameStart()
     sendClientCommand("Kits", "requestCooldowns", {})
