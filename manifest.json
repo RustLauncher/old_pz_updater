@@ -43078,8 +43078,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/VapesOf93/42/media/lua/server/VapesOf93/VapesOf93_Loot.lua",
-                      "sha256":  "3ea26d72923b5e558a69598f273e5ba8f686ca53f16c28fef04b0859529c95df",
-                      "size":  15666
+                      "sha256":  "867bf904048cc908fdc52fd40d5a62392112e3c649cc55137f82fde272c3e4ea",
+                      "size":  15548
                   },
                   {
                       "path":  "GameLauncher/mods/VapesOf93/42/media/lua/shared/VapesOf93/VapeHooks.lua",
@@ -43483,8 +43483,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/ElectricRestoration/42.20/media/lua/server/ElectricRestoration/ER_Server.lua",
-                      "sha256":  "757eb32c38e98fa61fc0f1994f0023df9e696969d72a8f8dff9df3d59fb0031d",
-                      "size":  12781
+                      "sha256":  "9b7f108ef4c6ae24a377eaa6811424d185ea7bd75c8c439adb344d8cf31973ae",
+                      "size":  12874
                   },
                   {
                       "path":  "GameLauncher/mods/ElectricRestoration/42.20/media/lua/server/ElectricRestoration/ER_ZLocalReset.lua",
@@ -43728,8 +43728,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/WaterRestoration/42.20/media/lua/server/WaterRestoration/WR_Server.lua",
-                      "sha256":  "abbb9580ca5e68a2c64df88f85f73ba4e605659d52a00e3d3795ba58ae19f034",
-                      "size":  23567
+                      "sha256":  "28c1dad6f69be33cc172d8cad6d36aac404b16286f67504b7d689dcf303a79b5",
+                      "size":  23639
                   },
                   {
                       "path":  "GameLauncher/mods/WaterRestoration/42.20/media/lua/server/WaterRestoration/WR_ZIndustrialPower.lua",

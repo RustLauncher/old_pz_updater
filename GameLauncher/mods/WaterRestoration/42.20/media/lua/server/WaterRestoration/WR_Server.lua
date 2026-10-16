@@ -5,6 +5,8 @@ require "WaterRestoration/WR_Power"
 require "WaterRestoration/WR_Service"
 
 WR.Server = WR.Server or {}
+WR._serverReady = false
+Events.OnServerStarted.Add(function() WR._serverReady = true end)
 local Server = WR.Server
 
 local function log(message)
@@ -110,9 +112,8 @@ end
 
 local function broadcastState()
     ModData.transmit(WR.DATA_KEY)
-    if isServer() then
+    if isServer() and WR._serverReady then
         local players = getOnlinePlayers()
-        if not players then return end
         for i = 0, players:size() - 1 do
             Server.sendState(players:get(i))
         end

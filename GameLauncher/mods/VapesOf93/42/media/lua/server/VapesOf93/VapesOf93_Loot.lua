@@ -186,14 +186,15 @@ local function isCigaretteName(name)
     return type(name) == "string" and name:lower():find("cigarette", 1, true) ~= nil
 end
 
--- Item type ("Food", "Literature", ...) from the item scripts, or nil if the game cannot tell yet.
 local function itemTypeName(fullType)
     local sm = (getScriptManager and getScriptManager()) or nil
     if not sm then return nil end
-    local ok, it = pcall(function() return sm:FindItem(fullType) end)
-    if not ok or not it then return nil end
-    local ok2, t = pcall(function() return it:getType() end)
-    if ok2 and t then return tostring(t) end
+    local it = sm:FindItem(fullType)
+    if not it then return nil end
+    if it.getDisplayCategory then
+        local cat = it:getDisplayCategory()
+        if cat then return tostring(cat) end
+    end
     return nil
 end
 

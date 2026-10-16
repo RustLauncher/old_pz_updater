@@ -3,6 +3,8 @@ require "ElectricRestoration/ER_Service"
 require "ElectricRestoration/ER_Requirements"
 require "ElectricRestoration/ER_Network"
 ER.Server=ER.Server or {}
+ER._serverReady=false
+Events.OnServerStarted.Add(function() ER._serverReady=true end)
 local S=ER.Server;local C=ER.Core
 local function hour() return getGameTime():getWorldAgeHours() end
 function S.data()
@@ -31,7 +33,7 @@ local function result(player,key)
 end
 local function broadcast()
  ModData.transmit(ER.DATA_KEY)
- if isServer() then local ps=getOnlinePlayers();if ps then for i=0,ps:size()-1 do S.send(ps:get(i)) end end
+ if isServer() and ER._serverReady then local ps=getOnlinePlayers();for i=0,ps:size()-1 do S.send(ps:get(i)) end
  elseif getPlayer() then S.send(getPlayer()) end
 end
 local function network()
