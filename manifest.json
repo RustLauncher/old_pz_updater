@@ -81205,6 +81205,96 @@
                       "path":  "GameLauncher/mods/KI5TrailersKeyless/common/media/scripts/vehicles/zzz_ki5_traileroverride.txt",
                       "sha256":  "8b85fc53c5b97b0dfc526c8be37889c24eefad98b25134a6083457c0778ed3f4",
                       "size":  1748
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/icon.png",
+                      "sha256":  "4d2dbd7fd454ac6ac72f68680794c16bd45564aeec1dfa8d10602d9d39f8e2d7",
+                      "size":  407
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/mod.info",
+                      "sha256":  "77f4846d9ab38498e0bf988762d622c4a2599f7d10761211cb17b9bdc1bbc407",
+                      "size":  184
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/poster.png",
+                      "sha256":  "29ceefa750efbe8360634267208c9d9bddcb3babc7ad213445b020a025420132",
+                      "size":  151032
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/icon.png",
+                      "sha256":  "4d2dbd7fd454ac6ac72f68680794c16bd45564aeec1dfa8d10602d9d39f8e2d7",
+                      "size":  407
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/mod.info",
+                      "sha256":  "8fcd492637f3b9af5de987cd7d30de84e8389ef9c4d1068d783353c50f94fc77",
+                      "size":  265
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/poster.png",
+                      "sha256":  "e4265aab4cd8ab6e3530dd71a8204e6a20c0f9c6d3be7c78d6a7f0c34ec9d4aa",
+                      "size":  140099
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/media/lua/client/errorMagnifier_events.lua",
+                      "sha256":  "9b3ad14b900d7f9ec7e9c871ba265d55b9acbde1b9f2685e1515efbb0c1962e2",
+                      "size":  2902
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/media/lua/client/errorMagnifier_Main.lua",
+                      "sha256":  "e3c9b59b3b36804ab7180ca4f890df38e2f0672af25451547b65931a97be950d",
+                      "size":  42710
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/42.15/media/lua/client/fingerPrint_Main.lua",
+                      "sha256":  "2f5d0bfd02490455e9c532d3e6ec384b355b1d7a659b36e27f4a67491cf0e70b",
+                      "size":  1348
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/ChangeLog.txt",
+                      "sha256":  "f0c96ed7b2fefe7906a60a313cad57cdf3745463bb9c37b00a971995890791a1",
+                      "size":  2045
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/media/textures/clipboardError.png",
+                      "sha256":  "2c585aede028d2bfc0a1c25fccce66e84db7a2eea5d5899aa3f17a909f86ac8e",
+                      "size":  255
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/media/textures/consolelogClear.png",
+                      "sha256":  "b04a20fac8de15bf4bf36edc5cef83210a990fd5112508bdc5d60293a3ce4647",
+                      "size":  3154
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/media/textures/consolelogError.png",
+                      "sha256":  "ef8def1394d4a18cae2c4af5598a815575b855ebb6a619c9ea8c218ab393b803",
+                      "size":  301
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/media/textures/consolelogErrorFolder.png",
+                      "sha256":  "6fba77aec11526698ae8b506c8f3a0bc33e826eb40d3311f1b9d427d3a2faaba",
+                      "size":  275
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/common/media/textures/magGlassError.png",
+                      "sha256":  "e6ba9c86e385bbd74619e6448d2c2f891411129d23a4b3975578cf7cc8ab129c",
+                      "size":  1677
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/media/lua/client/errorMagnifier_events.lua",
+                      "sha256":  "9b3ad14b900d7f9ec7e9c871ba265d55b9acbde1b9f2685e1515efbb0c1962e2",
+                      "size":  2902
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/media/lua/client/errorMagnifier_Main.lua",
+                      "sha256":  "e2c3e49b50ebce78589dcdd86a9b367832f4b84b4ffe8da63212493f1b16ef76",
+                      "size":  43259
+                  },
+                  {
+                      "path":  "GameLauncher/mods/errorMagnifier/media/lua/client/fingerPrint_Main.lua",
+                      "sha256":  "7dc182da07fbd0f2b10c36422eed76cb10d224c316504235db56b399a7c774e1",
+                      "size":  810
                   }
               ]
 }
