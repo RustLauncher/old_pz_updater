@@ -10908,8 +10908,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsClient.lua",
-                      "sha256":  "454da21997f6583c80e9cdc2854bb8b67aec6532e051b593d11129df8a864b29",
-                      "size":  11070
+                      "sha256":  "9c9817aab38f4d968b811083bf88c48d3c3cbf45fca2942864fc644a3a97ee52",
+                      "size":  10995
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsHudButton.lua",

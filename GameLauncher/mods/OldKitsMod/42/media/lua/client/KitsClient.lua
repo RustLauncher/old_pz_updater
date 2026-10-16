@@ -309,13 +309,11 @@ local function renderRoleTags()
                                 textObj:ReadString(tagStr)
                             end
                             local screenX, screenY = getPlayerScreenPosition(player)
-                            local usernameWidth = calculateUsernameWidth(player)
-                            local finalX = screenX - ((usernameWidth + textObj:getWidth()) / 2) - 3
+                            local tagWidth = textObj:getWidth()
+                            local finalX = screenX - (tagWidth / 2)
                             local usernameHeight = getPlayerUsernameHeight(player)
-                            local finalY = screenY
-                            if usernameHeight > 0 then
-                                finalY = finalY - usernameHeight
-                            end
+                            local tagHeight = getTextManager():MeasureStringY(UIFont.Small, "X")
+                            local finalY = screenY - usernameHeight - tagHeight
                             textObj:AddBatchedDraw(finalX, finalY, true, alpha)
                         end
                     end
