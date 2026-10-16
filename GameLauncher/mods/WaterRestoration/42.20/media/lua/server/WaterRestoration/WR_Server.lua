@@ -112,6 +112,7 @@ local function broadcastState()
     ModData.transmit(WR.DATA_KEY)
     if isServer() then
         local players = getOnlinePlayers()
+        if not players then return end
         for i = 0, players:size() - 1 do
             Server.sendState(players:get(i))
         end

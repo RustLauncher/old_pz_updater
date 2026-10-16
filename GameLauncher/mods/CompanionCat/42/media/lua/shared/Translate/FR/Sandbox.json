@@ -1,5 +1,0 @@
-{
-    "Sandbox_CompanionCat": "CD : Chats",
-    "Sandbox_CompanionCat_CatSpawnMultiplier": "Multiplicateur d'apparition des chats",
-    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Détermine la fréquence d'apparition des chats errants dans les maisons, les boutiques et les animaleries. 1.0 est le taux normal, 2.0 le double, 0 désactive l'apparition des chats. Ce réglage est indépendant de celui des chiens : réduire ou désactiver les chiens errants n'affecte plus les chats."
-}

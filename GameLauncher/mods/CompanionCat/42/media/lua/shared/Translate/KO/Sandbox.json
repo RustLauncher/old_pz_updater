@@ -1,5 +1,0 @@
-{
-    "Sandbox_CompanionCat": "CD: 고양이",
-    "Sandbox_CompanionCat_CatSpawnMultiplier": "고양이 생성 배율",
-    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "길고양이가 주택, 상점, 애완동물 가게에 나타나는 빈도를 조절합니다. 1.0이 기본 확률이고 2.0은 두 배, 0은 고양이 생성을 끕니다. 개 생성 설정과는 별개이므로 떠돌이 개를 줄이거나 꺼도 고양이에는 영향을 주지 않습니다."
-}

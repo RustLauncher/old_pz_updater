@@ -192,10 +192,8 @@ local function itemTypeName(fullType)
     if not sm then return nil end
     local ok, it = pcall(function() return sm:FindItem(fullType) end)
     if not ok or not it then return nil end
-    local ok2, t = pcall(function() return it:getTypeString() end)
+    local ok2, t = pcall(function() return it:getType() end)
     if ok2 and t then return tostring(t) end
-    local ok3, t3 = pcall(function() return it:getType() end)
-    if ok3 and t3 then return tostring(t3) end
     return nil
 end
 

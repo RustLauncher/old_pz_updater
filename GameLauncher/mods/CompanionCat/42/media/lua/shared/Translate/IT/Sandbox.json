@@ -1,5 +1,0 @@
-{
-    "Sandbox_CompanionCat": "CD: Gatti",
-    "Sandbox_CompanionCat_CatSpawnMultiplier": "Moltiplicatore di comparsa dei gatti",
-    "Sandbox_CompanionCat_CatSpawnMultiplier_tooltip": "Regola la frequenza con cui i gatti randagi compaiono in case, negozi e negozi di animali. 1.0 è il valore normale, 2.0 lo raddoppia, 0 disattiva la comparsa dei gatti. È separato dall'impostazione dei cani: ridurre o disattivare i cani randagi non tocca più i gatti."
-}

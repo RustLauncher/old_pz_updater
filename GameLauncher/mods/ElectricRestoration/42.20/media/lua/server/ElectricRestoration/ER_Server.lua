@@ -31,7 +31,7 @@ local function result(player,key)
 end
 local function broadcast()
  ModData.transmit(ER.DATA_KEY)
- if isServer() then local ps=getOnlinePlayers();for i=0,ps:size()-1 do S.send(ps:get(i)) end
+ if isServer() then local ps=getOnlinePlayers();if ps then for i=0,ps:size()-1 do S.send(ps:get(i)) end end
  elseif getPlayer() then S.send(getPlayer()) end
 end
 local function network()
