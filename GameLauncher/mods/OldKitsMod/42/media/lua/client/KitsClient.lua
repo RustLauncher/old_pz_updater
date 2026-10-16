@@ -229,6 +229,28 @@ local function getPlayerScreenPosition(player)
     return screenX, screenY
 end
 
+local function calculateUsernameWidth(player)
+    local displayUsername = getServerOptions():getBoolean("DisplayUserName")
+    local showFirstAndLastName = getServerOptions():getBoolean("ShowFirstAndLastName")
+    local namePart = ""
+    if showFirstAndLastName then
+        namePart = player:getFullName() or ""
+    end
+    if displayUsername then
+        local uname = player:getUsername() or ""
+        if namePart ~= "" then
+            namePart = namePart .. " (" .. uname .. ")"
+        else
+            namePart = uname
+        end
+    end
+    local tag = player.getTagPrefix and player:getTagPrefix() or nil
+    if tag and tag ~= "" then
+        namePart = "[" .. tag .. "] " .. namePart
+    end
+    return getTextManager():MeasureStringX(UIFont.Small, namePart)
+end
+
 local function getPlayerNameHeight(player)
     if player.getUserNameHeight then
         return player:getUserNameHeight()
@@ -277,11 +299,11 @@ local function renderRoleTags()
                                 textObj:ReadString(tagStr)
                             end
                             local screenX, screenY = getPlayerScreenPosition(player)
+                            local usernameWidth = calculateUsernameWidth(player)
                             local tagWidth = textObj:getWidth()
-                            local tagHeight = textObj:getHeight()
                             local nameHeight = getPlayerNameHeight(player)
-                            local finalX = screenX - (tagWidth / 2)
-                            local finalY = screenY - nameHeight - tagHeight
+                            local finalX = screenX - ((usernameWidth + tagWidth) / 2) - 3
+                            local finalY = screenY - nameHeight
                             textObj:AddBatchedDraw(finalX, finalY, true, alpha)
                         end
                     end
