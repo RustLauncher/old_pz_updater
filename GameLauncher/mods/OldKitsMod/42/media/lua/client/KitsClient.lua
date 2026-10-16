@@ -292,6 +292,9 @@ local function renderRoleTags()
     for i = 0, onlinePlayers:size() - 1 do
         local player = onlinePlayers:get(i)
         if player then
+            if player.setShowAdminTag then
+                player:setShowAdminTag(false)
+            end
             local username = player:getUsername()
             local roleName = KitsClient.OnlineRoles[username]
             if roleName and roleName ~= "user" then
