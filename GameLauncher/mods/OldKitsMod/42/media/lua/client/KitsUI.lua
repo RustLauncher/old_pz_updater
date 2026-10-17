@@ -1016,8 +1016,8 @@ function KitsUI:update()
     ISPanel.update(self)
     if not self.lastRefresh then self.lastRefresh = 0 end
     local now = getTimestampMs()
-    if now - self.lastRefresh > 2000 then
-        KitsClient.RequestCooldowns()
+    if now - self.lastRefresh > 10000 then
+        KitsClient.RefreshCooldowns()
         self.lastRefresh = now
     end
 

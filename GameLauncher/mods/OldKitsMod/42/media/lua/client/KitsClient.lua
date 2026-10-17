@@ -20,6 +20,10 @@ function KitsClient.RequestCooldowns()
     sendClientCommand("Kits", "requestCooldowns", {})
 end
 
+function KitsClient.RefreshCooldowns()
+    sendClientCommand("Kits", "refreshCooldowns", {})
+end
+
 function KitsClient.CheckAdmin()
     sendClientCommand("Kits", "checkAdmin", {})
 end
@@ -208,6 +212,20 @@ local ROLE_TAG_COLORS = {
 
 local roleTextCache = {}
 
+local _optDisplayUser = nil
+local _optShowFirstLast = nil
+local _optCacheTime = 0
+
+local function getCachedServerOptions()
+    local now = getTimestampMs()
+    if now - _optCacheTime > 5000 then
+        _optDisplayUser = getServerOptions():getBoolean("DisplayUserName")
+        _optShowFirstLast = getServerOptions():getBoolean("ShowFirstAndLastName")
+        _optCacheTime = now
+    end
+    return _optDisplayUser, _optShowFirstLast
+end
+
 local function getRoleTagColor(roleName)
     local c = ROLE_TAG_COLORS[roleName:lower()]
     if c then return c end
@@ -229,9 +247,7 @@ local function getPlayerScreenPosition(player)
     return screenX, screenY
 end
 
-local function calculateUsernameWidth(player)
-    local displayUsername = getServerOptions():getBoolean("DisplayUserName")
-    local showFirstAndLastName = getServerOptions():getBoolean("ShowFirstAndLastName")
+local function calculateUsernameWidth(player, displayUsername, showFirstAndLastName)
     local namePart = ""
     if showFirstAndLastName then
         namePart = player:getFullName() or ""
@@ -263,12 +279,15 @@ local function renderRoleTags()
     if not localPlayer then return end
     if not KitsClient.OnlineRoles then return end
 
-    local displayUsername = getServerOptions():getBoolean("DisplayUserName")
-    local showFirstAndLastName = getServerOptions():getBoolean("ShowFirstAndLastName")
+    local displayUsername, showFirstAndLastName = getCachedServerOptions()
     if not displayUsername and not showFirstAndLastName then return end
 
     local onlinePlayers = getOnlinePlayers()
     if not onlinePlayers then return end
+
+    local localX = localPlayer:getX()
+    local localY = localPlayer:getY()
+    local localNum = localPlayer:getPlayerNum()
 
     for i = 0, onlinePlayers:size() - 1 do
         local player = onlinePlayers:get(i)
@@ -276,12 +295,13 @@ local function renderRoleTags()
             local username = player:getUsername()
             local roleName = KitsClient.OnlineRoles[username]
             if roleName and roleName ~= "user" then
-                local currentSquare = player:getCurrentSquare()
-                if currentSquare and currentSquare:getCanSee(localPlayer:getPlayerNum()) then
-                    local dx = localPlayer:getX() - player:getX()
-                    local dy = localPlayer:getY() - player:getY()
-                    local dist = math.sqrt(dx * dx + dy * dy)
-                    if dist <= 20 then
+                local dx = localX - player:getX()
+                local dy = localY - player:getY()
+                local distSq = dx * dx + dy * dy
+                if distSq <= 400 then
+                    local currentSquare = player:getCurrentSquare()
+                    if currentSquare and currentSquare:getCanSee(localNum) then
+                        local dist = math.sqrt(distSq)
                         local alpha = 1.0
                         if dist > 15 then
                             alpha = 1.0 - (dist - 15) / 5
@@ -299,7 +319,7 @@ local function renderRoleTags()
                                 textObj:ReadString(tagStr)
                             end
                             local screenX, screenY = getPlayerScreenPosition(player)
-                            local usernameWidth = calculateUsernameWidth(player)
+                            local usernameWidth = calculateUsernameWidth(player, displayUsername, showFirstAndLastName)
                             local tagWidth = textObj:getWidth()
                             local nameHeight = getPlayerNameHeight(player)
                             local finalX = screenX - ((usernameWidth + tagWidth) / 2) - 3

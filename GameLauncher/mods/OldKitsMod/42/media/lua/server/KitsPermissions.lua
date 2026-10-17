@@ -194,6 +194,7 @@ function KitsPermissions.CheckExpiredRoles()
             end
         end
     end
+    return changed
 end
 
 function KitsPermissions.LoadRoles()

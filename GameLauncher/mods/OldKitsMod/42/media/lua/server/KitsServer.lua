@@ -113,7 +113,14 @@ local function sendTempRolesList(player)
     sendServerCommand(player, "Kits", "tempRolesList", { roles = roles })
 end
 
-local function broadcastOnlineRoles()
+local _lastBroadcastRoles = nil
+local _rolesDirty = true
+
+local function markRolesDirty()
+    _rolesDirty = true
+end
+
+local function buildOnlineRolesMap()
     local players = getOnlinePlayers()
     local rolesMap = {}
     for i = 0, players:size() - 1 do
@@ -123,6 +130,30 @@ local function broadcastOnlineRoles()
             rolesMap[p:getUsername()] = role
         end
     end
+    return rolesMap
+end
+
+local function broadcastOnlineRoles(force)
+    local rolesMap = buildOnlineRolesMap()
+    if not force and not _rolesDirty then
+        local changed = false
+        if not _lastBroadcastRoles then
+            changed = true
+        else
+            for k, v in pairs(rolesMap) do
+                if _lastBroadcastRoles[k] ~= v then changed = true; break end
+            end
+            if not changed then
+                for k in pairs(_lastBroadcastRoles) do
+                    if not rolesMap[k] then changed = true; break end
+                end
+            end
+        end
+        if not changed then return end
+    end
+    _rolesDirty = false
+    _lastBroadcastRoles = rolesMap
+    local players = getOnlinePlayers()
     for i = 0, players:size() - 1 do
         sendServerCommand(players:get(i), "Kits", "onlineRoles", rolesMap)
     end
@@ -246,13 +277,17 @@ local function onClientCommand(module, command, player, args)
         })
         sendAllCooldowns(player)
 
+    elseif command == "refreshCooldowns" then
+        sendAllCooldowns(player)
+
     elseif command == "requestCooldowns" then
         sendAllCooldowns(player)
         sendPermissions(player)
         sendPlayerRoleInfo(player)
         sendKitsToPlayer(player)
         sendRoleColors(player)
-        broadcastOnlineRoles()
+        markRolesDirty()
+        broadcastOnlineRoles(true)
 
     elseif command == "checkAdmin" then
         local isAdmin = KitsPermissions.IsAdmin(player)
@@ -278,7 +313,8 @@ local function onClientCommand(module, command, player, args)
         end
         sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         sendTempRolesList(player)
-        broadcastOnlineRoles()
+        markRolesDirty()
+        broadcastOnlineRoles(true)
 
     elseif command == "adminRemoveTempRole" then
         if not KitsPermissions.IsAdmin(player) then
@@ -302,7 +338,8 @@ local function onClientCommand(module, command, player, args)
             sendMsg(player, targetName .. " no tiene rol temporal.")
         end
         sendTempRolesList(player)
-        broadcastOnlineRoles()
+        markRolesDirty()
+        broadcastOnlineRoles(true)
 
     elseif command == "adminListTempRoles" then
         if not KitsPermissions.IsAdmin(player) then
@@ -375,8 +412,11 @@ end
 Events.OnServerStarted.Add(onServerStarted)
 
 local function onEveryOneMinute()
-    KitsPermissions.CheckExpiredRoles()
-    broadcastOnlineRoles()
+    local expired = KitsPermissions.CheckExpiredRoles()
+    if expired then
+        markRolesDirty()
+    end
+    broadcastOnlineRoles(false)
 end
 
 Events.EveryOneMinute.Add(onEveryOneMinute)
