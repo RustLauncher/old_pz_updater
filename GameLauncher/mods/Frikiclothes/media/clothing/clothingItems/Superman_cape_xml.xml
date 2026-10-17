@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\backpacks\SupermanCape.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\backpacks\SupermanCape.fbx</m_FemaleModel>
+	<m_GUID>fa1b8a42-e531-4c21-8036-ab040270aa72</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\Superman_cape_text</textureChoices>
+</clothingItem>

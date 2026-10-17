@@ -1,0 +1,3432 @@
+module FrikiItems{
+
+	imports{
+		Base
+	}
+
+    	item GearsOfWar_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Gears Of War,
+		ClothingItem = GearsOfWar_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = GearsOfWar_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item DeBruyne_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Kevin De Bruyne,
+		ClothingItem = DeBruyne_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = DeBruyne_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item GameOfThronesStark_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Game Of Thrones de los Stark,
+		ClothingItem = GameOfThronesStark_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = GameOfThronesStark_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Snoppy_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Snoppy,
+		ClothingItem = Snoppy_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Snoppy_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Levi_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Levi,
+		ClothingItem = Levi_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Levi_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item AOT_negra__shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Shingeki No Kyojin negra,
+		ClothingItem = AOT_negra_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = AOT_negra_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Haaland_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Erling Haaland,
+		ClothingItem = Haaland_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Haaland_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item PumasAzul_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Pumas azul,
+		ClothingItem = PumasAzul_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = PumasAzul_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item PumasDorado_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Pumas dorado,
+		ClothingItem = PumasDorado_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = PumasDorado_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Mbappe_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Kylian Mbappé,
+		ClothingItem = Mbappe_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Mbappe_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Zidane_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Zinedine Zidane,
+		ClothingItem = Zidane_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Zidane_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item MetallicaBlack_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Metallica negra,
+		ClothingItem = MetallicaBlack_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = MetallicaBlack_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item SilentHill2White_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Silent Hill 2 blanca,
+		ClothingItem = SilentHill2White_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = SilentHill2White_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item ErenJaeger1_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Eren Jaeger,
+		ClothingItem = ErenJaeger1_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = ErenJaeger1_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_ErenJaeger1,
+	}
+
+        item MichaelJordan
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Michael Jordan,
+        	ClothingItem = MichaelJordan_shirt_xml,
+        	BodyLocation = TankTop,
+        	Icon = MichaelJordan_shirt_icon,
+        	BloodLocation = ShirtNoSleeves,
+        	Insulation = 0.40,
+        	WindResistance = 0.30,
+        	FabricType = Cotton,
+        	WorldStaticModel = BulletVest_Ground,
+    }
+
+    	item ChicagoBulls_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de los Chicago Bulls,
+		ClothingItem = ChicagoBulls_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = ChicagoBulls_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item RedDeadRedemption2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Red Dead Redemption 2,
+		ClothingItem = RedDeadRedemption2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = RedDeadRedemption2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item ArthurMorgan_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Arthur Morgan,
+		ClothingItem = ArthurMorgan_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = ArthurMorgan_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item SilentHill2Black_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Silent Hill 2,
+		ClothingItem = SilentHill2Black_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = SilentHill2Black_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+        item SpidermanBody
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Peto del traje de Spiderman,
+        	ClothingItem = SpidermanBody_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	SpidermanBody_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item SpidermanPants
+	{
+	        DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Pantalones de Spiderman,
+		ClothingItem = SpidermanPants_pants_xml,
+		BodyLocation = UnderwearExtra1,
+		Icon = SpidermanPants_pants_icon,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+		Weight = 0.1,
+		WorldStaticModel = TightsBlack_Ground,
+	}
+
+	item SpidermanBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Spiderman,
+		ClothingItem = SpidermanBoots_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = SpidermanBoots_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item SpidermanGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Spiderman,
+		ClothingItem = SpidermanGloves_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = SpidermanGloves_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+ 	item SpidermanMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Spiderman,
+ 		ClothingItem = SpidermanMask_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = SpidermanMask_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+		Tooltip = Tooltip_SpidermanMask, 
+ 	}
+
+    	item JurassicPark_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Jurassic Park,
+		ClothingItem = JurassicPark_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = JurassicPark_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Creeper_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Creeper,
+		ClothingItem = Creeper_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Creeper_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Minecraft_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Minecraft,
+		ClothingItem = Minecraft_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Minecraft_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item StarWars_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Star Wars,
+		ClothingItem = StarWars_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = StarWars_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Episode3_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Star Wars Episodio III,
+		ClothingItem = Episode3_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Episode3_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Episode1_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Star Wars Episodio I,
+		ClothingItem = Episode1_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Episode1_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Halo3_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Halo 3,
+		ClothingItem = Halo3_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Halo3_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+   	item Halo_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Halo,
+		ClothingItem = Halo_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Halo_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+  	item Halo2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Halo 2,
+		ClothingItem = Halo2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Halo2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+  	item Gears2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Gears Of War,
+		ClothingItem = Gears2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Gears2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+  	item GearsOfWar2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Gears Of War 2,
+		ClothingItem = GearsOfWar2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = GearsOfWar2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+  	item AOT2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Shingeki No Kyiojin,
+		ClothingItem = AOT2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = AOT2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+	item MarioBrosCap
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gorra de Mario Bros,
+		ClothingItem = MarioBrosCap_head_xml,
+		ClothingItemExtra = MarioBrosCap_Reverse,
+       		ClothingItemExtraOption = ReverseCap,
+        	clothingExtraSubmenu = ForwardCap,
+		BodyLocation = Hat,
+		Icon = MarioBrosCap_head_icon,
+		CanHaveHoles = false,
+		ChanceToFall = 60,
+		Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+		Weight = 0.5,
+		Tooltip = Tooltip_MarioBrosCap,
+	}
+
+	item MarioBrosCap_Reverse
+    	{
+        	DisplayCategory = Accessory,
+        	Type = Clothing,
+        	DisplayName = Gorra de Mario Bros,
+        	ClothingItem = MarioBrosCap_Reverse_head_xml,
+        	ClothingItemExtra = MarioBrosCap,
+        	ClothingItemExtraOption = ForwardCap,
+        	clothingExtraSubmenu = ReverseCap,
+        	BodyLocation = Hat,
+        	Icon = MarioBrosCap_head_icon,
+        	CanHaveHoles = false,
+        	ChanceToFall = 60,
+        	Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	Weight = 0.5,
+		Tooltip = Tooltip_MarioBrosCap,
+    	}
+
+    	item MarioBrosPlate
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Peto de Mario Bros,
+        	ClothingItem = MarioBrosPlate_shirt_xml,
+        	BodyLocation = Pants,
+        	Icon = MarioBrosPlate_shirt_icon,
+        	BloodLocation = Trousers;ShirtNoSleeves,
+        	RunSpeedModifier = 0.95,
+        	BiteDefense = 10,
+        	ScratchDefense = 20,
+        	Insulation = 0.65,
+        	WindResistance = 0.5,
+        	FabricType = Denim,
+        	WaterResistance = 0.20,
+        	WorldStaticModel = Dungarees_Ground,
+    	}
+
+        item MarioBrosShirt
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Mario Bros,
+        	ClothingItem = MarioBrosShirt_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	MarioBrosShirt_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item IronMan
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Iron Man,
+        	ClothingItem = IronMan_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	IronMan_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Grogu
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Grogu,
+        	ClothingItem = Grogu_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Grogu_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item DarthVader
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Darth Vader,
+        	ClothingItem = DarthVader_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	DarthVader_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item JurassicPark2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Jurassic Park,
+        	ClothingItem = JurassicPark2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	JurassicPark2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item JohnCena
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de John Cena,
+        	ClothingItem = JohnCena_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	JohnCena_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_JohnCena,
+        }
+
+        item ResidentEvil
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Resident Evil,
+        	ClothingItem = ResidentEvil_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	ResidentEvil_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item ResidentEvil2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Resident Evil 2,
+        	ClothingItem = ResidentEvil2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	ResidentEvil2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item PZ
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Project Zomboid,
+        	ClothingItem = PZ_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	PZ_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item L4D
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Left 4 Dead,
+        	ClothingItem = L4D_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	L4D_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item L4D2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Left 4 Dead 2,
+        	ClothingItem = L4D2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	L4D2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item SpongeBob
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Bob Esponja,
+        	ClothingItem = SpongeBob_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	SpongeBob_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Goku
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Goku,
+        	ClothingItem = Goku_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Goku_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item TheGodfather
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de El Padrino,
+        	ClothingItem = TheGodfather_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	TheGodfather_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_TheGodfather,
+        }
+
+        item TheGodfather2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de El Padrino,
+        	ClothingItem = TheGodfather2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	TheGodfather2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_TheGodfather,
+        }
+
+        item Superman
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Superman,
+        	ClothingItem = Superman_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Superman_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Batman
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Batman,
+        	ClothingItem = Batman_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Batman_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+    	item SurveyCorps
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Capa de la legión de reconocimiento,
+        	ClothingItem = SurveyCorps_poncho_xml,
+        	BodyLocation = JacketHat,
+        	Icon = SurveyCorps_poncho_icon,
+        	ColorRed = 69,
+        	ColorGreen = 98,
+        	ColorBlue = 36,
+        	BloodLocation = Shirt;FullHelmet;Trousers,
+        	RunSpeedModifier = 0.9,
+        	ClothingItemExtra = SurveyCorpsDown,
+        	ClothingItemExtraOption = DownHoodie,
+        	clothingExtraSubmenu = UpHoodie,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	Insulation = 0.1,
+        	WindResistance = 0.75,
+        	WaterResistance = 1.0,
+        	WorldStaticModel = Poncho_Ground,
+   	}
+
+    	item SurveyCorpsDown
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Capa de la legión de reconocimiento,
+        	ClothingItem = SurveyCorpsDown_poncho_xml,
+        	BodyLocation = Jacket_Down,
+        	Icon = SurveyCorpsDown_poncho_icon,
+        	ColorRed = 69,
+        	ColorGreen = 98,
+        	ColorBlue = 36,
+        	BloodLocation = Shirt;FullHelmet;Trousers,
+        	RunSpeedModifier = 0.9,
+        	ClothingItemExtra = SurveyCorps,
+        	ClothingItemExtraOption = UpHoodie,
+        	clothingExtraSubmenu = DownHoodie,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	ScratchDefense = 10,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.15,
+        	WindResistance = 0.8,
+        	WaterResistance = 1.0,
+        	WorldStaticModel = Poncho_Ground,
+    	}
+
+        item LOTR
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de El Señor de los Anillos,
+        	ClothingItem = LOTR_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	LOTR_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item PVZ1
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Plantas vs Zombis,
+        	ClothingItem = PVZ1_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	PVZ1_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item PVZ2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Plantas vs Zombis,
+        	ClothingItem = PVZ2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	PVZ2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Portal
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Portal,
+        	ClothingItem = Portal_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Portal_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Rumbling
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de El Retumbar,
+        	ClothingItem = Rumbling_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Rumbling_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_Rumbling,
+        }
+
+        item HalfLife
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Half Life,
+        	ClothingItem = HalfLife_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	HalfLife_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Xbox
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Xbox,
+        	ClothingItem = Xbox_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Xbox_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Playstation
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Playstation,
+        	ClothingItem = Playstation_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Playstation_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+    	item HarryPotter
+    	{
+        	DisplayCategory = Accessory,
+        	Type = Clothing,
+        	DisplayName = Bufanda de Howarts,
+        	ClothingItem = HarryPotter_head_xml,
+        	BodyLocation = Scarf,
+        	Icon = HarryPotter_head_icon,
+        	Weight = 0.2,
+        	BloodLocation = Neck,
+        	ScratchDefense = 10,
+        	Insulation = 0.75,
+        	WindResistance = 0.75,
+        	FabricType = Cotton,
+        	WorldStaticModel = Scarf_Ground,
+    	}
+
+        item StarWars2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Star Wars episodio II,
+        	ClothingItem = StarWars2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	StarWars2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item StarWars4
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Star Wars episodio IV,
+        	ClothingItem = StarWars4_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	StarWars4_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item StarWars5
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Star Wars episodio V,
+        	ClothingItem = StarWars5_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	StarWars5_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item StarWars6
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Star Wars episodio VI,
+        	ClothingItem = StarWars6_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	StarWars6_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+ 	item SlendermanMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Slenderman,
+ 		ClothingItem = SlendermanMask_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = SlendermanMask_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+        item IronGiant
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera del Gigante de Hierro,
+        	ClothingItem = IronGiant_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	IronGiant_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Johan
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Johan Liebheart,
+        	ClothingItem = Johan_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Johan_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item IronGiant2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera del Gigante de Hierro,
+        	ClothingItem = IronGiant2_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	IronGiant2_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item DeathNote
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Death Note,
+        	ClothingItem = DeathNote_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	DeathNote_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_DeathNote,
+        }
+
+        item OnePiece
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de One Piece,
+        	ClothingItem = OnePiece_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	OnePiece_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Naruto
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Naruto,
+        	ClothingItem = Naruto_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Naruto_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Berserk
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Berserk,
+        	ClothingItem = Berserk_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Berserk_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Homer
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Homero Simpson,
+        	ClothingItem = Homer_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Homer_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item YoutubeClassic
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Clásico de Youtube,
+        	ClothingItem = YoutubeClassic_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	YoutubeClassic_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_YoutubeClassic,
+        }
+
+        item Aguero
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Sergio Agüero,
+        	ClothingItem = Aguero_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Aguero_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_Aguero,
+        }
+
+        item ToyStory
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Toy Story,
+        	ClothingItem = ToyStory_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	ToyStory_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item Undertale
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Undertale,
+        	ClothingItem = Undertale_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Undertale_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_Undertale,
+        }
+
+        item Frisk
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Frisk,
+        	ClothingItem = Frisk_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Frisk_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+	item SurveyCorpsBody
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pijama de la Legión de Reconocimiento,
+        	ClothingItem = SurveyCorpsBody_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = SurveyCorpsBody_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+    	item ObiWan
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Obi Wan,
+        	ClothingItem = ObiWan_shirt_xml,
+        	BodyLocation = Jacket,
+        	BloodLocation = LongJacket,
+        	Icon = ObiWan_shirt_icon,
+        	RunSpeedModifier = 0.85,
+        	CombatSpeedModifier = 0.9,
+        	BiteDefense = 15,
+        	ScratchDefense = 15,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	Weight = 3,
+        	FabricType = Cotton,
+        	WorldStaticModel = JacketLong_Ground,
+		Tooltip = Tooltip_ObiWan,
+    	}
+
+        item ObiWanPants
+	{
+	        DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Pantalones de Obi Wan,
+		ClothingItem = ObiWanPants_pants_xml,
+		BodyLocation = UnderwearExtra1,
+		Icon = ObiWanPants_pants_icon,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+		Weight = 0.1,
+		WorldStaticModel = TightsBlack_Ground,
+	}
+
+	item ObiWanBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Obi Wan,
+		ClothingItem = ObiWanBoots_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = ObiWanBoots_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item JokerGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes del Joker,
+		ClothingItem = JokerGloves_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = JokerGloves_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+    	item JokerJacket
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta del Joker,
+        	ClothingItem = JokerJacket_jacket_xml,
+        	BodyLocation = JacketSuit,
+        	BloodLocation = Jacket,
+        	Icon = JokerJacket_jacket_icon,
+        	RunSpeedModifier = 0.95,
+        	CombatSpeedModifier = 0.95,
+        	ScratchDefense = 25,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.55,
+        	WindResistance = 0.45,
+        	FabricType = Cotton,
+        	Weight = 2,
+        	WorldStaticModel = SuitJacket_Ground,
+    	}
+
+    	item JokerPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones del Joker,
+        	ClothingItem = JokerPants_pants_xml,
+        	BodyLocation = Pants,
+        	Icon = JokerPants_pants_icon,
+        	BloodLocation = Trousers,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+        	Insulation = 0.4,
+        	WindResistance = 0.2,
+        	FabricType = Cotton,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+    	item JokerVest
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaleco del Joker,
+        	ClothingItem = JokerVest_shirt_xml,
+        	BodyLocation = TorsoExtra,
+        	Icon = JokerVest_shirt_icon,
+        	BloodLocation = ShirtNoSleeves,
+        	Insulation = 0.35,
+        	WindResistance = 0.25,
+		BiteDefense = 10,
+        	ScratchDefense = 10,
+        	FabricType = Cotton,
+        	WorldStaticModel = BulletVest_Ground,
+    	}
+
+	item JokerShirt
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Camisa del Joker,
+		ClothingItem = JokerShirt_shirt_xml,
+		BodyLocation = Shirt,
+		Icon = JokerShirt_shirt_icon,
+		BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.25,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+       	 	FabricType = Cotton,
+        	WorldStaticModel = Shirt_Ground,
+	}
+
+	item JokerShoes
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Zapatos del Joker,
+		ClothingItem = JokerShoes_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = JokerShoes_shoes_icon,
+		StompPower = 2.1,
+		ConditionLowerChanceOneIn = 12,
+        	ConditionMax = 24,
+        	RunSpeedModifier = 0.95,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	WorldStaticModel = Shoes_Ground,
+	}
+
+	item JokerTie
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Corbata del Joker,
+		ClothingItem = JokerTie_tie_xml,
+		BodyLocation = Neck,
+		Icon = JokerTie_tie_icon,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+
+	item Leon
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pijama de Leon,
+        	ClothingItem = Leon_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = Leon_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+    	item HevVest
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Peto del traje Hev,
+        	ClothingItem = Hev_vest_xml,
+        	BodyLocation = TorsoExtraVest,
+        	Icon = Hev_vest_icon,
+        	BloodLocation = ShirtNoSleeves,
+        	Insulation = 0.65,
+        	WindResistance = 0.30,
+        	BiteDefense = 50,
+        	ScratchDefense = 50,
+        	BulletDefense = 100,
+        	WorldStaticModel = BulletVest_Ground,
+    	}
+
+        item HevShirt
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje Hev,
+        	ClothingItem = Hev_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Hev_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	ScratchDefense = 15,
+        	BiteDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+    	item HevPants
+
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones del traje Hev,
+        	ClothingItem = Hev_pants_xml,
+        	BodyLocation = Pants,
+        	BloodLocation = Trousers,
+        	Icon =  Hev_pants_icon,
+        	RunSpeedModifier = 0.95,
+        	BiteDefense = 20,
+        	ScratchDefense = 20,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+        	WaterResistance = 0.6,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+	item HevGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes del traje Hev,
+		ClothingItem = Hev_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Hev_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 75,
+        	ScratchDefense = 75,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+	item HevBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas del traje Hev,
+		ClothingItem = Hev_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Hev_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item Elza
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Elza Walker,
+        	ClothingItem = Elza_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = Elza_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+	item BruceLee
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Bruce Lee,
+        	ClothingItem = BruceLee_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = BruceLee_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+    	item Starcraft
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Starcraft,
+		ClothingItem = Starcraft_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Starcraft_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Fnaf
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Five Night´s At Freddy´s,
+		ClothingItem = Fnaf_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Fnaf_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+	item TarMan
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Tar Man,
+        	ClothingItem = TarMan_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = TarMan_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+    	item WuTang
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Wu Tang,
+		ClothingItem = WuTang_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = WuTang_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Morrowind
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de The Elder Scrolls Morrowind,
+		ClothingItem = Morrowind_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Morrowind_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Oblivion
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de The Elder Scrolls Oblivion,
+		ClothingItem = Oblivion_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Oblivion_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Skyrim
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de The Elder Scrolls Skyrim,
+		ClothingItem = Skyrim_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Skyrim_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item HSOTD
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Highschool of the Dead,
+		ClothingItem = HSOTD_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = HSOTD_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Zoom
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta de Akira Tendo,
+        	ClothingItem = Zoom_jacket_xml,
+        	BodyLocation = Jacket,
+        	BloodLocation = Jacket,
+        	IconsForTexture = Zoom_jacket_icon,
+        	ScratchDefense = 20,
+        	BiteDefense = 10,
+        	NeckProtectionModifier = 0.3,
+        	Insulation = 0.60,
+        	WindResistance = 0.5,
+        	FabricType = Cotton,
+        	WorldStaticModel = JacketCoat_Ground,
+    	}
+
+    	item Jojo
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta del Akira Yoshikage,
+        	ClothingItem = Jojo_jacket_xml,
+        	BodyLocation = JacketSuit,
+        	BloodLocation = Jacket,
+        	Icon = Jojo_jacket_icon,
+        	RunSpeedModifier = 0.95,
+        	CombatSpeedModifier = 0.95,
+        	ScratchDefense = 75,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.55,
+        	WindResistance = 0.45,
+        	FabricType = Cotton,
+        	Weight = 2,
+        	WorldStaticModel = SuitJacket_Ground,
+    	}
+
+    	item JojoPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones de Kira Yoshikage,
+        	ClothingItem = Jojo_pants_xml,
+        	BodyLocation = Pants,
+        	Icon = Jojo_pants_icon,
+        	BloodLocation = Trousers,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+        	Insulation = 0.4,
+        	WindResistance = 0.2,
+        	FabricType = Cotton,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+	item JojoTie
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Corbata de Kira Yoshikage,
+		ClothingItem = Jojo_tie_xml,
+		BodyLocation = Neck,
+		Icon = Jojo_tie_icon,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+    	
+
+	item JojoShirt
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Camisa de Kira Yoshikage,
+		ClothingItem = Jojo_shirt_xml,
+		BodyLocation = Shirt,
+		Icon = Jojo_shirt_icon,
+		BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.25,
+        	WindResistance = 0.15,
+		BiteDefense = 5,
+        	ScratchDefense = 5,
+       	 	FabricType = Cotton,
+        	WorldStaticModel = Shirt_Ground,
+	}
+
+ 	item TarManMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Tar man,
+ 		ClothingItem = TarManMask_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = TarManMask_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+	item TarManGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Tar man,
+		ClothingItem = TarMan_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = TarMan_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+    	item TarManPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones de Tar man,
+        	ClothingItem = TarMan_pants_xml,
+        	BodyLocation = Skirt,
+        	Icon = TarMan_pants_icon,
+        	BloodLocation = ShortsShort,
+        	Insulation = 0.1,
+        	WindResistance = 0.01,
+        	FabricType = Cotton,
+        	WorldStaticModel = Skirt_Short_Ground,
+    	}
+
+	item TarManShoes
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Zapatos de Tar man,
+		ClothingItem = TarMan_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = TarMan_shoes_icon,
+		StompPower = 2.1,
+		ConditionLowerChanceOneIn = 12,
+        	ConditionMax = 24,
+        	RunSpeedModifier = 0.95,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 20,
+        	BiteDefense = 10,
+        	Insulation = 0.25,
+        	WindResistance = 0.25,
+        	WaterResistance = 0.25,
+        	WorldStaticModel = Shoes_Ground,
+	}
+
+	item MandalorianHelmet
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Casco del mandaloriano,
+		ClothingItem = MandalorianHelmet_head_xml,
+		BodyLocation = Hat,
+		Icon = ,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 100,
+       		ScratchDefense = 100,
+        	ChanceToFall = 0,
+        	Insulation = 0.3,
+	}
+
+    	item JamesSunderland
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta de James Sunderland,
+        	ClothingItem = JamesSunderland_jacket_xml,
+        	BodyLocation = JacketSuit,
+        	BloodLocation = Jacket,
+        	Icon = JamesSunderland_jacket_icon,
+        	RunSpeedModifier = 0.95,
+        	CombatSpeedModifier = 0.95,
+        	ScratchDefense = 75,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.55,
+        	WindResistance = 0.45,
+        	FabricType = Cotton,
+        	Weight = 2,
+        	WorldStaticModel = SuitJacket_Ground,
+		Tooltip = Tooltip_JamesSunderland,
+    	}
+
+    	item FrikiTrousers
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Jeans,
+       		ClothingItem = Trousers_pants_xml,
+        	BodyLocation = Pants,
+        	IconsForTexture = TrousersDenimBlue;TrousersDenimBlack;TrousersDenimLightBlue;TrousersScrubsBlue,
+        	BloodLocation = Trousers,
+        	BiteDefense = 10,
+        	ScratchDefense = 20,
+        	RunSpeedModifier = 0.98,
+        	Insulation = 0.7,
+        	WindResistance = 0.55,
+        	FabricType = Denim,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+	item AshGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Ash Ketchum,
+		ClothingItem = Ash_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Ash_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 0.25,
+        	WindResistance = 0.3,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+    	item AshVest
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaleco de Ash Ketchum,
+        	ClothingItem = Ash_vest_xml,
+        	BodyLocation = TorsoExtra,
+        	Icon = Ash_vest_icon,
+        	BloodLocation = ShirtNoSleeves,
+        	Insulation = 0.40,
+        	WindResistance = 0.20,
+        	FabricType = Cotton,
+        	WorldStaticModel = BulletVest_Ground,
+    	}
+
+	item AshShirt	
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Playera de Ash Ketchum,
+		ClothingItem = Ash_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Ash_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.15,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = Shirt_Ground,
+	}
+
+	item AshCap
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gorra de Ash Ketchum,
+		ClothingItem = Ash_head_xml,
+		ClothingItemExtra = AshCap_Reverse,
+       		ClothingItemExtraOption = ReverseCap,
+        	clothingExtraSubmenu = ForwardCap,
+		BodyLocation = Hat,
+		Icon = Ash_head_icon,
+		CanHaveHoles = false,
+		ChanceToFall = 60,
+		Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 50,
+		Weight = 0.5,
+	}
+
+	item AshCap_Reverse
+    	{
+        	DisplayCategory = Accessory,
+        	Type = Clothing,
+        	DisplayName = Gorra de Ash Ketchum,
+        	ClothingItem = Ash_Reverse_head_xml,
+        	ClothingItemExtra = AshCap,
+        	ClothingItemExtraOption = ForwardCap,
+        	clothingExtraSubmenu = ReverseCap,
+        	BodyLocation = Hat,
+        	Icon = Ash_head_icon,
+        	CanHaveHoles = false,
+        	ChanceToFall = 60,
+        	Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 50,
+        	Weight = 0.5,
+    	}
+
+	item FrikiShoes
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Zapatos,
+		ClothingItem = Shoes_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = ShoesBlack_icon,
+		StompPower = 2.1,
+		ConditionLowerChanceOneIn = 12,
+        	ConditionMax = 24,
+        	RunSpeedModifier = 0.95,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 25,
+        	BiteDefense = 25,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	WorldStaticModel = Shoes_Ground,
+	}
+
+    	item VenomSuit
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Venom,
+        	ClothingItem = Venom_suit_xml,
+        	BodyLocation = Boilersuit,
+        	Icon = Venom_suit_icon,
+        	BloodLocation = Trousers;Jumper,
+        	RunSpeedModifier = 0.9,
+        	ScratchDefense = 100,
+        	Insulation = 0.45,
+        	WindResistance = 0.35,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+	item VenomGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Venom,
+		ClothingItem = Venom_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Venom_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+	item VenomBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Venom,
+		ClothingItem = Venom_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Venom_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}	
+
+	item VenomMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Mascara de Venom,
+ 		ClothingItem = Venom_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = Venom_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+	item VaderHelmet
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Casco de Darth Vader,
+		ClothingItem = VaderHelmet_head_xml,
+		BodyLocation = Hat,
+		Icon = VaderHelmet_head_icon,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 75,
+       		ScratchDefense = 75,
+        	ChanceToFall = 0,
+        	Insulation = 0.3,
+		WorldStaticModel = VaderHelmet_ground,
+		Tooltip = Tooltip_VaderHelmet,
+	}
+
+	item VaderShirt
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Darth Vader,
+        	ClothingItem = VaderShirt_shirt_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = VaderShirt_shirt_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}	
+
+    	item SurveyCorpsClassicJacket
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta de la Legion de Reconocimento,
+        	ClothingItem = SurveyCorpsClassic_jacket_xml,
+        	BodyLocation = Jacket,
+        	Icon = SurveyCorpsClassic_jacket_icon,
+        	BloodLocation = Jacket,
+        	RunSpeedModifier = 0.95,
+        	CombatSpeedModifier = 0.97,
+        	BiteDefense = 20,
+        	ScratchDefense = 40,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.40,
+        	WindResistance = 0.6,
+        	FabricType = Leather,
+        	WaterResistance = 0.4,
+        	Weight = 2,
+        	WorldStaticModel = JacketCoat_Ground,
+		Tooltip = Tooltip_SurveyCorpsClassicJacket,
+    	}
+
+        item SurveyCorpsClassicShirt
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de la Legion de Reconocimento de Eren,
+        	ClothingItem = SurveyCorpsClassic_shirt_xml,
+        	BodyLocation = ShortSleeveShirt,
+        	Icon	=	SurveyCorpsClassic_shirt_icon,
+        	BloodLocation = Shirt,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item SurveyCorpsClassicPants
+	{
+	        DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Pantalones de la Legion de Reconocimento,
+		ClothingItem = SurveyCorpsClassic_pants_xml,
+		BodyLocation = UnderwearExtra1,
+		Icon = SurveyCorpsClassic_pants_icon,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+		Weight = 0.1,
+		WorldStaticModel = TightsBlack_Ground,
+	}
+
+    	item SurveyCorpsClassicShort
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Falda de la Legion de Reconocimento,
+        	ClothingItem = SurveyCorpsClassic_short_xml,
+        	BodyLocation = Pants,
+        	BloodLocation = ShortsShort,
+        	Icon = SurveyCorpsClassic_short_icon,
+        	Insulation = 0.15,
+        	WindResistance = 0.10,
+        	FabricType = Cotton,
+        	WorldStaticModel = ShortShorts_Ground,
+    	}
+
+	item SurveyCorpsClassicBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de la Legion de Reconocimento,
+		ClothingItem = SurveyCorpsClassic_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = SurveyCorpsClassic_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+        item SurveyCorpsClassicShirt2
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de la Legion de Reconocimento,
+        	ClothingItem = SurveyCorpsClassic2_shirt_xml,
+        	BodyLocation = ShortSleeveShirt,
+        	Icon	=	SurveyCorpsClassic2_shirt_icon,
+        	BloodLocation = Shirt,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+	item VaderCape
+    	{
+        	DisplayCategory = Bag,
+        	WeightReduction	=	80,
+        	Weight	=	0.1,
+        	Type	=	Container,
+        	Capacity	=	1,
+        	DisplayName	=	Capa de Darth Vader,
+        	Icon = Vader_cape_icon,
+        	CanBeEquipped = Back,
+        	OpenSound   =   OpenBag,
+        	CloseSound   =   CloseBag,
+        	PutInSound   =   PutItemInBag,
+        	ClothingItem = Vader_cape_xml,
+        	BloodLocation = Bag,
+        	RunSpeedModifier = 1,
+        	AttachmentReplacement = Bag,
+		CanHaveHoles = false,		
+		ConditionLowerChanceOneIn = 9999,
+        	ConditionMax = 9999,
+        	RemoveOnBroken = false,	
+		WorldStaticModel = VaderCape_ground,			
+    	}
+
+	item VaderSkirt
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Falda de Darth Vader,
+        	ClothingItem = Vader_skirt_xml,
+        	BodyLocation = Skirt,
+        	BloodLocation = ShortsShort,
+        	Icon = Vader_skirt_icon,
+        	BiteDefense = 10,
+        	ScratchDefense = 20,
+        	Insulation = 0.65,
+        	WindResistance = 0.60,
+		CanHaveHoles = false,		
+		ConditionLowerChanceOneIn = 9999,
+        	ConditionMax = 9999,
+        	RemoveOnBroken = false,	
+		WorldStaticModel = VaderSkirt_ground,		
+    	}
+
+	item VaderBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Darth Vader,
+		ClothingItem = Vader_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Vader_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item VaderGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Darth Vader,
+		ClothingItem = Vader_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Vader_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 0.5,
+        	WindResistance = 0.5,
+        	FabricType = Cotton,
+        	WorldStaticModel = GlovesLong_Ground,
+	}
+
+	item GreenGoblingHelmet
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Casco del Duende Verde,
+		ClothingItem = GreenGoblin_head_xml,
+		BodyLocation = Hat,
+		Icon = GreenGoblin_head_icon,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 75,
+       		ScratchDefense = 75,
+        	ChanceToFall = 0,
+        	Insulation = 0.3,
+		WorldStaticModel = VaderHelmet_ground,
+	}
+
+	item GokuHairWig
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Peluca de Goku,
+		ClothingItem = Goku_head_xml,
+		BodyLocation = Hat,
+		Icon = Goku_head_icon,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+        	ChanceToFall = 0,
+        	Insulation = 0.1,
+		WorldStaticModel = GokuHair_ground,
+	}
+
+    	item GokuSuit
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Goku,
+        	ClothingItem = Goku_suit_xml,
+        	BodyLocation = Boilersuit,
+        	Icon = Goku_suit_icon,
+        	BloodLocation = Trousers;Jumper,
+        	RunSpeedModifier = 0.9,
+        	ScratchDefense = 100,
+        	Insulation = 0.45,
+        	WindResistance = 0.35,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+
+	item GokuBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Goku,
+		ClothingItem = Goku_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Goku_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+    	item GokuLongShirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Goku,
+		ClothingItem = GokuShirt_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = GokuShirt_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+	item SupermanCape
+    	{
+        	DisplayCategory = Bag,
+        	WeightReduction	=	80,
+        	Weight	=	0.1,
+        	Type	=	Container,
+        	Capacity	=	1,
+        	DisplayName	=	Capa de Superman,
+        	Icon = Superman_cape_icon,
+        	CanBeEquipped = Back,
+        	OpenSound   =   OpenBag,
+        	CloseSound   =   CloseBag,
+        	PutInSound   =   PutItemInBag,
+        	ClothingItem = Superman_cape_xml,
+        	BloodLocation = Bag,
+        	RunSpeedModifier = 1,
+        	AttachmentReplacement = Bag,
+		CanHaveHoles = false,		
+		ConditionLowerChanceOneIn = 9999,
+        	ConditionMax = 9999,
+        	RemoveOnBroken = false,
+		WorldStaticModel = SupermanCape_ground,				
+    	}
+	
+	item SupermanSuit
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Superman,
+        	ClothingItem = Superman_suit_xml,
+        	BodyLocation = Torso1Legs1,
+        	BloodLocation = Trousers;ShirtLongSleeves,
+        	Icon = Superman_suit_icon,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = BoilerSuit_Ground,
+    	}
+
+	item SupermanBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Superman,
+		ClothingItem = Superman_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Superman_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+    	item Yellowstone_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Yellowstone,
+		ClothingItem = Yellowstone_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Yellowstone_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Snoppy2_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Snoppy,
+		ClothingItem = Snoppy2_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Snoppy2_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Chavo_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera del Chavo del 8,
+		ClothingItem = Chavo_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Chavo_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item TWD_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de The Walking Dead,
+		ClothingItem = TWD_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = TWD_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Goodman_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Goodman,
+		ClothingItem = Goodman_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Goodman_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_Goodman_shirt,
+	}
+
+    	item Chef_Jacket
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaqueta de la Universidad Autónoma de Aguascalientes,
+        	ClothingItem = ChefJacket_jacket_xml,
+        	BodyLocation = Jacket,
+        	Icon = ChefJacket_jacket_icon,
+        	BloodLocation = Jacket,
+        	RunSpeedModifier = 0.95,
+        	CombatSpeedModifier = 0.97,
+        	NeckProtectionModifier = 0.5,
+        	Insulation = 0.35,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	Weight = 2,
+        	WorldStaticModel = JacketCoat_Ground,
+    	}
+
+	item HatChef
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Cofia de la Universidad Autónoma de Aguascalientes,
+		ClothingItem = HatChef_head_xml,
+		BodyLocation = Hat,
+		Icon = HatChef_head_icon,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Weight = 0.5,
+		Tooltip = Tooltip_HatChef,
+	}
+
+    	item ChefPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones de la Universidad Autónoma de Aguascalientes,
+        	ClothingItem = ChefPants_pants_xml,
+        	BodyLocation = Pants,
+        	Icon = ChefPants_pants_icon,
+        	BloodLocation = Trousers,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+        	Insulation = 0.4,
+        	WindResistance = 0.2,
+        	FabricType = Cotton,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+    	item Mafia_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Mafia,
+		ClothingItem = Mafia_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Mafia_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+        item DeadpoolBody
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Peto del traje de Deadpool,
+        	ClothingItem = DeadpoolBody_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	DeadpoolBody_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+ 	item DeadpoolMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Deadpool,
+ 		ClothingItem = DeadpoolMask_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = DeadpoolMask_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+        item DeadpoolPants
+	{
+	        DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Pantalones de Deadpool,
+		ClothingItem = DeadpoolPants_pants_xml,
+		BodyLocation = UnderwearExtra1,
+		Icon = DeadpoolPants_pants_icon,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+		Weight = 0.1,
+		WorldStaticModel = TightsBlack_Ground,
+	}
+
+	item  DeadpoolBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Deadpool,
+		ClothingItem = DeadpoolBoots_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = DeadpoolBoots_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item DeadpoolGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Deadpool,
+		ClothingItem = DeadpoolGloves_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = DeadpoolGloves_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+	item DeadpoolKatana
+    	{
+        	DisplayCategory = Bag,
+        	WeightReduction	=	10,
+        	Weight	=	0.1,
+        	Type	=	Container,
+        	Capacity	=	1,
+        	DisplayName	=	Katana de Deadpool tamaño real,
+        	Icon = Deadpool_katana_icon,
+        	CanBeEquipped = Back,
+        	OpenSound   =   OpenBag,
+        	CloseSound   =   CloseBag,
+        	PutInSound   =   PutItemInBag,
+        	ClothingItem = Deadpool_katana_xml,
+        	BloodLocation = Bag,
+        	RunSpeedModifier = 1,
+        	AttachmentReplacement = Bag,
+		CanHaveHoles = false,		
+		ConditionLowerChanceOneIn = 9999,
+        	ConditionMax = 9999,
+        	RemoveOnBroken = false,	
+		WorldStaticModel = Deadpoolkatana_ground,	
+		Tooltip = Tooltip_DeadpoolKatana,			
+    	}
+
+	item BatmanMask
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Máscara de Batman,
+		ClothingItem = Batman_head_xml,
+		BodyLocation = Mask,
+		Icon = Batman_head_icon,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 25,
+       		ScratchDefense = 25,
+        	ChanceToFall = 0,
+        	Insulation = 0.3,
+		WorldStaticModel = BatmanMask_ground,
+	}
+
+	item PyramidHeadHelmet
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Casco de Pyramid Head,
+		ClothingItem = Pyramid_Head_Helmet_head_xml,
+		BodyLocation = Hat,
+		Icon = PyramidHeadHelmet_head_icon,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 100,
+       		ScratchDefense = 100,
+        	ChanceToFall = 0,
+        	Insulation = 0.3,
+		WorldStaticModel = PyramidHeadHelmet_ground,
+	}
+
+
+    	item PyramidHeadDress
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de Pyramid Head,
+        	ClothingItem =  Pyramid_Head_dress_xml,
+        	BodyLocation = Dress,
+        	BloodLocation = Trousers;Shirt,
+        	Icon = Pyramid_Head_dress_icon,
+        	RunSpeedModifier = 0.93,
+        	Insulation = 0.20,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = Dress_Mid_Ground,
+    	}
+
+	item PyramidHeadBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Pyramid Head,
+		ClothingItem = PyramidHead_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = PyramidHead_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item PyramidHeadGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Pyramid Head,
+		ClothingItem = PyramidHeadGloves_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = PyramidHeadGloves_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+    	item PyramidHeadKnife
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gran cuchillo de Pyramid Head de juguete,
+		ClothingItem = PyramidHeadKnife_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = PyramidHeadKnife_icon,
+		Weight = 2,
+        	Insulation = 0.25,
+        	WindResistance = 0.3,
+        	WorldStaticModel = PyramidHeadKnife_Ground,
+	}
+
+	item ElChavoHat
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gorro del Chavo del 8,
+		ClothingItem = ElChavo_Hat_xml,
+		BodyLocation = Hat,
+		Icon = ElChavo_Hat_icon,
+		CanHaveHoles = false,
+		ChanceToFall = 40,
+        	BloodLocation = Head,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+        	WaterResistance = 0.5,
+        	Weight = 0.5,
+		Tooltip = Tooltip_ElChavoHat,
+   	}
+
+    	item Elchavo_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera del Chavo del 8,
+		ClothingItem = Elchavo_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Elchavo_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+        item Elchavo_Short
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Bermudas del Chavo del 8,
+        	ClothingItem = Elchavo_Short_xml,
+        	BodyLocation = Pants,
+        	Icon = Elchavo_Short_icon,
+        	BloodLocation = Trousers,
+        	Insulation = 0.25,
+        	WindResistance = 0.1,
+        	FabricType = Cotton,
+        	WorldStaticModel = LongShorts_Ground,
+    	}
+
+        item Fantastic4Body
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de los 4 fantasticos,
+        	ClothingItem = Fantastic4_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	Fantastic4_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+	item Fantastic4Boots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de súperheroe,
+		ClothingItem = Fantastic4_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Fantastic4_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item Fantastic4Gloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de súperheroe,
+		ClothingItem = Fantastic4_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Fantastic4_gloves_icon,
+		Weight = 0.1,
+        	ScratchDefense = 25,
+        	BiteDefense = 25,
+        	Insulation = 0.5,
+        	WindResistance = 0.5,
+        	FabricType = Cotton,
+        	WorldStaticModel = GlovesLong_Ground,
+	}
+
+    	item HanSoloVest
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Chaleco de Han Solo,
+        	ClothingItem = HanSolo_vest_xml,
+        	BodyLocation = TorsoExtra,
+        	Icon = HanSolo_vest_icon,
+        	BloodLocation = ShirtNoSleeves,
+        	Insulation = 0.35,
+        	WindResistance = 0.25,
+        	FabricType = Cotton,
+        	WorldStaticModel = BulletVest_Ground,
+		Tooltip = Tooltip_HanSoloVest,
+    	}
+
+    	item HanSoloShirt
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Playera de Han Solo,
+        	ClothingItem = HanSolo_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	HanSolo_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+    	}
+
+    	item HanSoloPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones de Han Solo,
+        	ClothingItem = HanSolo_pants_xml,
+        	BodyLocation = Pants,
+        	Icon = HanSolo_pants_icon,
+        	BloodLocation = Trousers,
+        	Insulation = 0.5,
+        	WindResistance = 0.25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+	item HanSoloBoots
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Han Solo,
+		ClothingItem = HanSolo_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = HanSolo_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+        item SpidermanBodyBlack
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Peto del traje de Spiderman negro,
+        	ClothingItem = SpidermanBodyBlack_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	SpidermanBodyBlack_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+        item SpidermanPantsBlack
+	{
+	        DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Pantalones de Spiderman negro,
+		ClothingItem = SpidermanPantsBlack_pants_xml,
+		BodyLocation = UnderwearExtra1,
+		Icon = SpidermanPantsBlack_pants_icon,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+		Weight = 0.1,
+		WorldStaticModel = TightsBlack_Ground,
+	}
+
+	item SpidermanBootsBlack
+	{
+	    	DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Botas de Spiderman negro,
+		ClothingItem = SpidermanBootsBlack_shoes_xml,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = SpidermanBootsBlack_shoes_icon,
+		StompPower = 2.2,
+		ConditionLowerChanceOneIn = 15,
+        	ConditionMax = 27,
+        	RunSpeedModifier = 0.9,
+        	RemoveOnBroken = false,
+        	ScratchDefense = 100,
+        	BiteDefense = 100,
+        	Insulation = 0.9,
+        	WindResistance = 0.6,
+        	WaterResistance = 0.45,
+        	WorldStaticModel = Boots_Ground,
+	}
+
+	item SpidermanGlovesBlack
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Guantes de Spiderman negro,
+		ClothingItem = SpidermanGlovesBlack_gloves_xml,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = SpidermanGlovesBlack_gloves_icon,
+		Weight = 0.1,
+        	Insulation = 1.0,
+        	WindResistance = 1.0,
+		BiteDefense = 25,
+        	ScratchDefense = 25,
+        	FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+
+ 	item SpidermanMaskBlack
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Spiderman negro,
+ 		ClothingItem = SpidermanMaskBlack_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = SpidermanMaskBlack_head_Icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+ 	item TheIncrediblesMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Antifaz de superhéroe,
+ 		ClothingItem = TheIncrediblesMask_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = TheIncrediblesMask_head_icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Weight = 0.1,
+ 	}
+
+    	item Shrek_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Shrek,
+		ClothingItem = Shrek_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shrek_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item KFPanda_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Kung Fu Panda,
+		ClothingItem = KFPanda_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = KFPanda_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Patrick_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Patrcio,
+		ClothingItem = Patrick_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Patrick_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item Messi_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Messi,
+		ClothingItem = Messi_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Messi_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_Messi,
+	}
+
+    	item KNY_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Kimetsu No Yaiba,
+		ClothingItem = KNY_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = KNY_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item JJK_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Jujutsu Kaisen,
+		ClothingItem = JJK_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = JJK_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item PeakyB_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Peaky Blinders,
+		ClothingItem = PeakyB_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = PeakyB_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+    	item LOZ_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de The Legend of Zelda,
+		ClothingItem = LOZ_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = LOZ_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+
+ 	item RorschachMask
+ 	{
+ 		Type = Clothing,
+		DisplayName = Máscara de Rorschach,
+ 		ClothingItem = Rorschach_head_xml,
+ 		BodyLocation = Mask,
+ 		Icon = Rorschach_head_icon,
+ 		BloodLocation = Head,
+ 		CanHaveHoles = false,
+ 		Insulation = 0.8,
+ 		WindResistance = 0.8,
+		BiteDefense = 50,
+        	ScratchDefense = 50,
+ 		Weight = 0.1,
+ 		WorldStaticModel = SpidermanMask,
+ 	}
+
+    	item JesseP_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de Jesse Pinkman,
+		ClothingItem = JesseP_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = JesseP_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+		Tooltip = Tooltip_JesseP,
+	}
+
+        item TheIncrediblesBody
+        {
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Traje de los increibles,
+        	ClothingItem = TheIncredibles_shirt_xml,
+        	BodyLocation = Tshirt,
+        	Icon	=	TheIncredibles_shirt_icon,
+        	BloodLocation = ShirtLongSleeves,
+        	Insulation = 0.3,
+        	WindResistance = 0.15,
+		BiteDefense = 15,
+        	ScratchDefense = 15,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+        }
+
+    	item FrikiClothes_shirt
+	{
+		DisplayCategory = Clothing,
+	    	Type = Clothing,
+		DisplayName = Playera de FrikiClothes,
+		ClothingItem = FrikiClothes_shirt_xml,
+		BodyLocation = ShortSleeveShirt,
+		Icon = FrikiClothes_shirt_icon,
+		BloodLocation = Shirt,
+        	Insulation = 0.2,
+        	WindResistance = 0.05,
+        	FabricType = Cotton,
+        	WorldStaticModel = TShirt_Ground,
+	}
+
+	item FrikiClothesCap
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gorra de trabajador de FrikiClothes,
+		ClothingItem = FrikiClothes_head_xml,
+		ClothingItemExtra = FrikiClothesCap_Reverse,
+       		ClothingItemExtraOption = ReverseCap,
+        	clothingExtraSubmenu = ForwardCap,
+		BodyLocation = Hat,
+		Icon = FrikiClothes_head_icon,
+		CanHaveHoles = false,
+		ChanceToFall = 60,
+		Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 50,
+		Weight = 0.5,
+	}
+
+	item FrikiClothesCap_Reverse
+    	{
+        	DisplayCategory = Accessory,
+        	Type = Clothing,
+        	DisplayName = Gorra de trabajador de FrikiClothes,
+        	ClothingItem = FrikiClothes_Reverse_head_xml,
+        	ClothingItemExtra = FrikiClothesCap,
+        	ClothingItemExtraOption = ForwardCap,
+        	clothingExtraSubmenu = ReverseCap,
+        	BodyLocation = Hat,
+        	Icon = FrikiClothes_head_icon,
+        	CanHaveHoles = false,
+        	ChanceToFall = 60,
+        	Insulation = 0.10,
+		BiteDefense = 25,
+        	ScratchDefense = 50,
+        	Weight = 0.5,
+    	}
+
+    	item FrikiClothesPants
+    	{
+        	DisplayCategory = Clothing,
+        	Type = Clothing,
+        	DisplayName = Pantalones de trabajador de FrikiClothes,
+        	ClothingItem = FrikiClothes_pants_xml,
+        	BodyLocation = Pants,
+        	Icon = FrikiClothes_pants_icon,
+        	BloodLocation = Trousers,
+		BiteDefense = 20,
+        	ScratchDefense = 20,
+        	Insulation = 0.4,
+        	WindResistance = 0.2,
+        	FabricType = Cotton,
+        	WorldStaticModel = Trousers_Ground,
+    	}
+
+}

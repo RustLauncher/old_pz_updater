@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\m_fullmodelmask</m_MaleModel>
+	<m_FemaleModel>skinned\f_fullmodelmask</m_FemaleModel>
+ 	<m_GUID>72254578-3207-4815-b7c7-2bd74d77a092</m_GUID>
+ 	<m_Static>false</m_Static>
+ 	<m_AllowRandomHue>false</m_AllowRandomHue>
+ 	<m_AllowRandomTint>false</m_AllowRandomTint>
+ 	<m_AttachBone></m_AttachBone>
+	<m_Masks>0</m_Masks>
+	<m_HatCategory>nohairnobeard</m_HatCategory>
+ 	<textureChoices>clothes\Venom_head_text</textureChoices>
+</clothingItem>

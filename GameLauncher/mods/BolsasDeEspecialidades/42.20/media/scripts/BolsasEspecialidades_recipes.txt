@@ -1,0 +1,108 @@
+module BolsasEspecialidades
+{
+    craftRecipe SewSpecialtyBagMecanica
+    {
+        Time = 500,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        timedAction = Making,
+        needTobeLearn = true,
+        SkillRequired = Tailoring:3,
+        OnCreate = BolsasEspecialidades.OnCrafted,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.Thread],
+            item 3 [Base.Sheet] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 BolsasEspecialidades.Bag_Mecanica,
+        }
+    }
+
+    craftRecipe SewSpecialtyBagPesca
+    {
+        Time = 500,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        timedAction = Making,
+        needTobeLearn = true,
+        SkillRequired = Tailoring:3,
+        OnCreate = BolsasEspecialidades.OnCrafted,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.Thread],
+            item 3 [Base.Sheet] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 BolsasEspecialidades.Bag_Pesca,
+        }
+    }
+
+    craftRecipe SewSpecialtyBagCaca
+    {
+        Time = 500,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        timedAction = Making,
+        needTobeLearn = true,
+        SkillRequired = Tailoring:3,
+        OnCreate = BolsasEspecialidades.OnCrafted,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.Thread],
+            item 3 [Base.Sheet] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 BolsasEspecialidades.Bag_Caca,
+        }
+    }
+
+    craftRecipe SewSpecialtyBagFirearms
+    {
+        Time = 500,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        timedAction = Making,
+        needTobeLearn = true,
+        SkillRequired = Tailoring:3,
+        OnCreate = BolsasEspecialidades.OnCrafted,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.Thread],
+            item 3 [Base.Sheet] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 BolsasEspecialidades.Bag_Firearms,
+        }
+    }
+
+    craftRecipe SewSpecialtyBagCarpintaria
+    {
+        Time = 500,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        timedAction = Making,
+        needTobeLearn = true,
+        SkillRequired = Tailoring:3,
+        OnCreate = BolsasEspecialidades.OnCrafted,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.Thread],
+            item 3 [Base.Sheet] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 BolsasEspecialidades.Bag_Carpintaria,
+        }
+    }
+
+}

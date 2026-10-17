@@ -1,0 +1,10 @@
+<clothingItem>
+<m_MaleModel/>
+<m_FemaleModel/>
+<m_GUID>2e65ae4a-4e10-47c3-914b-32ca47067e62</m_GUID>
+<m_Static>false</m_Static>
+<m_AllowRandomHue>false</m_AllowRandomHue>
+<m_AllowRandomTint>false</m_AllowRandomTint>
+<m_AttachBone/>
+<m_BaseTextures>clothes\AOT2_shirt_text</m_BaseTextures>
+</clothingItem>

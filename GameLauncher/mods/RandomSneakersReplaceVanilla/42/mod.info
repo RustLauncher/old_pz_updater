@@ -1,0 +1,9 @@
+name=Random Sneakers - Replace Vanilla Sneaker Loot
+id=RandomSneakersReplaceVanilla
+require=RandomSneakers
+description=Optional add-on for Random Sneakers. Vanilla sneakers stop spawning in containers, bags and vehicles, and Random Sneakers take their place.
+description=Zombies still wear vanilla sneakers. Ticking this also ticks Random Sneakers (Very WIP).
+poster=poster.png
+modversion=0.2.1
+versionMin=42.0.0
+url=https://steamcommunity.com/sharedfiles/filedetails/?id=3795098913

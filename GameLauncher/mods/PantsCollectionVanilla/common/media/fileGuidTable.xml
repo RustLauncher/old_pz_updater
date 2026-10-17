@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+<files>
+		<path>media/clothing/clothingItems/Pants_OliveCargoWorn.xml</path>
+		<guid>6e562f4a-84bb-42d9-98f3-e58a3b1ce29e</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_BlackBlueLegging.xml</path>
+		<guid>ab9fb7af-81d1-46e7-9c6b-51e1d19706f5</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_FlowerTealLegging.xml</path>
+		<guid>b4e76829-258a-4ebe-8078-9b1a61299b60</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_FlowerTurquoiseLegging.xml</path>
+		<guid>4029c5e0-2013-47cf-980e-14832f34629b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_NavySportLegging.xml</path>
+		<guid>dc37d221-7ad3-4907-88f9-b3c56d99b750</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_FlowerPinkLegging.xml</path>
+		<guid>84b0663b-8760-4b8c-bad7-8991059d3598</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_WhiteKnitLegging.xml</path>
+		<guid>9c86bb44-860b-44b7-80b9-addbda37292b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_NavyStrokeLegging.xml</path>
+		<guid>0e8b3035-9a34-46ee-a734-733ea9d9844a</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_BlueMarbleLegging.xml</path>
+		<guid>1f2fd806-59e9-4ee5-b26d-82a41fc1a608</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_LightBlueJeans.xml</path>
+		<guid>a21cfb07-2192-4c4b-a56b-73fa294c2f00</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_BlackRippedJeans.xml</path>
+		<guid>ddc1bfd0-2d58-433a-9f24-0c957840b53f</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_FlowerBrightLegging.xml</path>
+		<guid>80a4d23c-aa2c-4740-90a8-5abb60ea817f</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_FlowerWhiteLegging.xml</path>
+		<guid>e83c1229-38b9-462a-8866-130f352fd0b7</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_MissouriCargoKhaki.xml</path>
+		<guid>c7ff2e70-d411-48b9-b675-9eab92147752</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_MissouriCargoNavy.xml</path>
+		<guid>c78cd709-d2b1-4b93-927b-1892333182b8</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_MissouriCargoOlive.xml</path>
+		<guid>c07016b9-bcae-403a-883c-7df80cc09675</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_MissouriCargoCharcoal.xml</path>
+		<guid>39c03b47-7578-4e38-a79a-4220ffd7a520</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_MissouriCargoStoneGrey.xml</path>
+		<guid>c82474b6-db83-4951-b210-1b1810ab61f0</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_NeonBlackLegging.xml</path>
+		<guid>fd45baf0-d5e8-4877-8a24-5bc0e526310b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_IceBlueLegging.xml</path>
+		<guid>7252c118-b5ff-4ca5-aec6-b1a514df1411</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_NeonTealLegging.xml</path>
+		<guid>41646f3d-c6f4-406e-9960-23a75bb12add</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_FlowerWhitePinkLegging.xml</path>
+		<guid>a9803034-a23f-4981-9f29-07c273ab0011</guid>
+	</files>
+<files>
+		<path>media/clothing/clothingItems/Pants_SafariPants.xml</path>
+		<guid>ca7690bf-3336-4fae-bc7a-ac4406c1b8b7</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_RippedSkinnyJeans.xml</path>
+		<guid>d67f1ccd-6471-478e-81fb-417ed9163ecf</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_WornCargoStoneGrey.xml</path>
+		<guid>8f315732-a854-400a-bfb4-eb6a7ac8224c</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_WornCargoCharcoal.xml</path>
+		<guid>5c0b3fd2-269e-4ac6-baf5-1e7e5cf87f62</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_WornCargoNavy.xml</path>
+		<guid>dc88b7d7-5111-4676-a386-2a046efe1edb</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Pants_WornCargoTan.xml</path>
+		<guid>4b9267f0-5413-4b0f-b469-4dea79a5fa26</guid>
+	</files>
+</fileGuidTable>

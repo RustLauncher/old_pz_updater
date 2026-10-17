@@ -1,0 +1,101 @@
+module Base{
+
+
+    model VaderHelmet_ground
+    {
+        mesh = WorldItems/Clothing/VaderHelmet,
+	texture = clothes/VaderHelmet_head_text,
+        
+    }
+
+    model VaderCape_ground
+    {
+        mesh = WorldItems/Clothing/VaderCape,
+	texture = clothes/Vader_cape_text,
+        
+    }
+
+    model VaderSkirt_ground
+    {
+        mesh = WorldItems/Clothing/VaderSkirt,
+	texture = clothes/Vader_skirt_text,
+        
+    }
+
+    model GokuHair_ground
+    {
+        mesh = WorldItems/Clothing/GokuHairGround,
+	texture = clothes/Goku_head_text,
+        
+    }
+
+    model SupermanCape_ground
+    {
+        mesh = WorldItems/Clothing/VaderCape,
+	texture = clothes/Superman_cape_text,
+        
+    }
+
+    model IronGiant
+    {
+	mesh = WorldItems/IronGiantModel,
+        texture = clothes/IronGiantTexture,
+        scale = 0.4,
+    }
+
+    model PyramidHeadHelmet_ground
+    {
+        mesh = WorldItems/Clothing/PyramidHeadHelmet,
+	texture = clothes/PyramidHeadHelmet_head_text,
+        
+    }
+
+    model Deadpoolkatana_ground
+    {
+        mesh = WorldItems/Clothing/Deadpoolkatana,
+	texture = clothes/Deadpool_katana_text,
+        
+    }
+
+    model SpongeBobToy
+    {
+	mesh = WorldItems/SpongeBobModel,
+        texture = clothes/GoldTexture,
+        scale = 0.4,
+    }
+
+    model NemesisToy
+    {
+	mesh = WorldItems/NemesisModel,
+        texture = clothes/GoldTexture,
+        scale = 0.4,
+    }
+
+    model XenomorphToy
+    {
+	mesh = WorldItems/XenomorphModel,
+        texture = clothes/GoldTexture,
+        scale = 0.4,
+    }
+
+    model ColossalTitanToy
+    {
+	mesh = WorldItems/ColossalTitanModel,
+        texture = clothes/GoldTexture,
+        scale = 0.4,
+    }
+
+    model C3poToy
+    {
+	mesh = WorldItems/C3poModel,
+        texture = clothes/GoldTexture,
+        scale = 0.4,
+    }
+
+    model GoldenKatanaModel
+    {
+	mesh = weapons/2handed/GoldenKatana,
+        texture = weapons/2handed/GoldTextureKatana,
+    }
+    
+}

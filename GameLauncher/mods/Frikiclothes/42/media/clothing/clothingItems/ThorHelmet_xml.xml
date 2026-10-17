@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\ThorHelmet</m_MaleModel>
+	<m_FemaleModel>skinned\ThorHelmet</m_FemaleModel>
+ 	<m_GUID>c5b3be9b-a4c5-4ed1-b7d2-7cdfd4ba6078</m_GUID>
+ 	<m_Static>true</m_Static>
+ 	<m_AllowRandomHue>false</m_AllowRandomHue>
+ 	<m_AllowRandomTint>false</m_AllowRandomTint>
+ 	<m_AttachBone></m_AttachBone>
+	<m_HatCategory>nohair</m_HatCategory>
+	 <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+ 	<textureChoices>clothes\ThorHelmet_text</textureChoices>
+</clothingItem>

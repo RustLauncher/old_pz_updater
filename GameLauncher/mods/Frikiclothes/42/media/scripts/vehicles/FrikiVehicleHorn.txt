@@ -1,0 +1,11 @@
+module Base
+{
+	sound CustomsVanSoundHorn
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/CustomsVanSound.ogg,
+		}
+	}
+}

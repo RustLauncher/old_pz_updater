@@ -1,0 +1,210 @@
+module RandomSneakers
+{
+    imports
+    {
+        Base,
+    }
+
+    model W_Shoes_CourtMid
+    {
+        mesh    = WorldItems/W_Shoes_CourtMid,
+        texture = Clothes/RandomSneakers/CourtMid,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RacerMid
+    {
+        mesh    = WorldItems/W_Shoes_RacerMid,
+        texture = Clothes/RandomSneakers/RacerMid,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RacerMidBlackBrown
+    {
+        mesh    = WorldItems/W_Shoes_RacerMid,
+        texture = Clothes/RandomSneakers/RacerMidBlackBrown,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RacerMidGrey
+    {
+        mesh    = WorldItems/W_Shoes_RacerMid,
+        texture = Clothes/RandomSneakers/RacerMidGrey,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RacerMidGreenOrange
+    {
+        mesh    = WorldItems/W_Shoes_RacerMid,
+        texture = Clothes/RandomSneakers/RacerMidGreenOrange,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RacerMidRed
+    {
+        mesh    = WorldItems/W_Shoes_RacerMid,
+        texture = Clothes/RandomSneakers/RacerMidRed,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RetroMid
+    {
+        mesh    = WorldItems/W_Shoes_RetroMid,
+        texture = Clothes/RandomSneakers/RetroMid,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeRed
+    {
+        mesh    = WorldItems/W_Shoes_WedgeRed,
+        texture = Clothes/RandomSneakers/WedgeRed,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_StrapHigh
+    {
+        mesh    = WorldItems/W_Shoes_StrapHigh,
+        texture = Clothes/RandomSneakers/StrapHigh,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_SplatterHigh
+    {
+        mesh    = WorldItems/W_Shoes_SplatterHigh,
+        texture = Clothes/RandomSneakers/SplatterHigh,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_FlowerPink
+    {
+        mesh    = WorldItems/W_Shoes_FlowerPink,
+        texture = Clothes/RandomSneakers/FlowerPink,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_BrownLaced
+    {
+        mesh    = WorldItems/W_Shoes_BrownLaced,
+        texture = Clothes/RandomSneakers/BrownLaced,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_AirLow
+    {
+        mesh    = WorldItems/W_Shoes_AirLow,
+        texture = Clothes/RandomSneakers/AirLow,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_BabyBlue
+    {
+        mesh    = WorldItems/W_Shoes_BabyBlue,
+        texture = Clothes/RandomSneakers/BabyBlue,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_BlackBrown
+    {
+        mesh    = WorldItems/W_Shoes_BlackBrown,
+        texture = Clothes/RandomSneakers/BlackBrown,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_BlackRed
+    {
+        mesh    = WorldItems/W_Shoes_BlackRed,
+        texture = Clothes/RandomSneakers/BlackRed,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_RedHigh
+    {
+        mesh    = WorldItems/W_Shoes_RedHigh,
+        texture = Clothes/RandomSneakers/RedHigh,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_ScoobHigh
+    {
+        mesh    = WorldItems/W_Shoes_ScoobHigh,
+        texture = Clothes/RandomSneakers/ScoobHigh,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeBlackGrey
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/BlackGrey,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeBlue
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/Blue,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeBrownLight
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/BrownLight,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeCremeBrown
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/CremeBrown,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeJeans
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/Jeans,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeOffWhite
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/OffWhite,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeVelvetRed
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/VelvetRed,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeRedWhiteBlue
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/RedWhiteBlue,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeTanBrown
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/TanBrown,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeWornBrown
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/WornBrown,
+        scale   = 0.0001,
+    }
+
+    model W_Shoes_WedgeZebra
+    {
+        mesh    = WorldItems/W_Shoes_Wedge,
+        texture = Clothes/RandomSneakers/Zebra,
+        scale   = 0.0001,
+    }
+}

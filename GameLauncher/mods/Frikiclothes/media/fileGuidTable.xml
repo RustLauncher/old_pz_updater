@@ -1,0 +1,1043 @@
+<fileGuidTable>
+
+    <files>
+        <path>media/clothing/clothingItems/GearsOfWar_shirt_xml.xml</path>
+        <guid>2bae9e0d-63f9-423c-9def-23dd4dd2b537</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeBruyne_shirt_xml.xml</path>
+        <guid>803b6374-a303-4f5f-b279-07f5155ab760</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/GameOfThronesStark_shirt_xml.xml</path>
+        <guid>040e733b-a5dd-4b64-908c-7b514f9d21bf</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Snoppy_shirt_xml.xml</path>
+        <guid>fc477221-a81d-480c-97f4-418b6e5a492d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Levi_shirt_xml.xml</path>
+        <guid>61127de2-5be0-4bd6-9b20-a3c71e25df50</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/AOT_negra_shirt_xml.xml</path>
+        <guid>7288fde7-5f92-49e8-82e4-5ced23f9411a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Haaland_shirt_xml.xml</path>
+        <guid>e6db0c95-2dea-459d-89d1-643048ac5f7f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PumasAzul_shirt_xml.xml</path>
+        <guid>5acba0c1-9092-4eec-a78c-72dfafdf42ff</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PumasDorado_shirt_xml.xml</path>
+        <guid>4a090f2f-02cf-4689-aa73-9db2b5154554</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Mbappe_shirt_xml.xml</path>
+        <guid>1cb2e6c2-6f76-4e12-a12d-f139d84b4c9d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Zidane_shirt_xml.xml</path>
+        <guid>55f9e334-9ccf-48ed-a59f-678a9b8b96f1</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MetallicaBlack_shirt_xml.xml</path>
+        <guid>4ece03b0-9dfc-4c7f-b5fc-9b05f99d796f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SilentHill2White_shirt_xml.xml</path>
+        <guid>738ac1c6-f59e-4a8d-ba22-e38378b6488f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ErenJaeger1_shirt_xml.xml</path>
+        <guid>56912e3b-1068-466e-aec8-96602459a123</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MichaelJordan_shirt_xml.xml</path>
+        <guid>5516723f-1cc0-4e20-bb6b-d11cc71dd9b7</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ChicagoBulls_shirt_xml.xml</path>
+        <guid>6a61de52-9535-4078-aa29-8112ca95942d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/RedDeadRedemption2_shirt_xml.xml</path>
+        <guid>c33c8a61-0b5f-4550-90a8-60c23a9ca51e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ArthurMorgan_shirt_xml.xml</path>
+        <guid>f80a5dfe-5f58-43f8-b7b6-75f60d436c17</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SilentHill2Black_shirt_xml.xml</path>
+        <guid>bdc1d65e-d40f-4afa-a339-07b982f75bd7</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanBody_shirt_xml.xml</path>
+        <guid>b2b8d090-8a93-45c2-bd50-80aa3504effa</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanPants_pants_xml.xml</path>
+        <guid>919145b3-2f2d-47b7-a045-bfa389e66062</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanBoots_shoes_xml.xml</path>
+        <guid>ea751c78-df32-4b13-8005-a525f12734db</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanGloves_gloves_xml.xml</path>
+        <guid>fa981ecb-2402-4353-a2aa-d22aa056cffc</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanMask_head_xml.xml</path>
+        <guid>530a215f-324c-4f43-8807-f3198d1310d0</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JurassicPark_shirt_xml.xml</path>
+        <guid>6883c25f-a099-40cf-a966-3070ae375680</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Creeper_shirt_xml.xml</path>
+        <guid>530545a2-c9e5-42b7-b527-d660e6464175</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Minecraft_shirt_xml.xml</path>
+        <guid>083aa625-1dc9-4e6a-89ff-6b629bf0ad30</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/StarWars_shirt_xml.xml</path>
+        <guid>5af0c3da-2caa-45fe-94bc-d7fa60d48817</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Episode3_shirt_xml.xml</path>
+        <guid>f553d25e-612d-446b-958c-1ed38795fd39</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Episode1_shirt_xml.xml</path>
+        <guid>c91011ab-b51c-4b23-98d6-61bebd618ec5</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Halo3_shirt_xml.xml</path>
+        <guid>40323a7d-e437-4606-a25a-15c6375e9327</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Halo_shirt_xml.xml</path>
+        <guid>ca60191d-e6b5-4a54-b6c4-ffca7a05c537</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Halo2_shirt_xml.xml</path>
+        <guid>23d1987f-6268-4519-b335-4e9406cbf54d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Gears2_shirt_xml.xml</path>
+        <guid>b5a4e0a6-59af-44fb-82fa-8c0268e62e54</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/GearsOfWar2_shirt_xml.xml</path>
+        <guid>47144ee4-45e8-404a-880b-8f8e8c69ec57</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/AOT2_shirt_xml.xml</path>
+        <guid>2e65ae4a-4e10-47c3-914b-32ca47067e62</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MarioBrosCap_head_xml.xml</path>
+        <guid>d7eb4be1-3b2c-4470-9111-9a30d7e01fd5</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MarioBrosCap_Reverse_head_xml.xml</path>
+        <guid>1a8d236a-3edc-46e6-9024-72d4a9b7512b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MarioBrosPlate_shirt_xml.xml</path>
+        <guid>fb1181d2-72e9-4953-a7ee-7194abac4bae</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MarioBrosShirt_shirt_xml.xml</path>
+        <guid>9f4e462d-81f7-48eb-ac51-f108638ccf1b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Grogu_shirt_xml.xml</path>
+        <guid>99e69bd9-308d-4a41-8a13-4eeb39bb623d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DarthVader_shirt_xml.xml</path>
+        <guid>e1c4ff91-9ed0-4415-b42e-26579b09df7d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JurassicPark2_shirt_xml.xml</path>
+        <guid>35024387-b648-4385-a607-de94accb4568</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JohnCena_shirt_xml.xml</path>
+        <guid>5dc947d3-bcc3-4534-b806-b0758027ba03</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ResidentEvil_shirt_xml.xml</path>
+        <guid>013ddbbb-ee0e-41d7-9d5d-f2870690fa17</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ResidentEvil2_shirt_xml.xml</path>
+        <guid>a085563a-50f3-4173-9c39-e81e7032fde0</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PZ_shirt_xml.xml</path>
+        <guid>73ff330f-0d5f-4b80-a263-a238cbd884b8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/L4D_shirt_xml.xml</path>
+        <guid>ce9374e6-4f49-4520-a1cf-27458b06f37f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/L4D2_shirt_xml.xml</path>
+        <guid>b0cc6231-8f69-4968-bd46-eb363e5c0413</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpongeBob_shirt_xml.xml</path>
+        <guid>f880ca03-f984-468a-b3cd-d88d85e4c827</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Goku_shirt_xml.xml</path>
+        <guid>b7faaea0-9abe-4bb0-bea1-d056b3253746</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TheGodfather_shirt_xml.xml</path>
+        <guid>2528f355-582a-44cb-a49b-799edec8bbc6</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TheGodfather2_shirt_xml.xml</path>
+        <guid>40e0da56-88c1-4d5d-8352-b5aac4f71873</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Superman_shirt_xml.xml</path>
+        <guid>012c9c74-39d2-4752-b792-a1e1e2793b80</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Batman_shirt_xml.xml</path>
+        <guid>acc9960a-02b8-40ae-90bc-7f4dd1292b5d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorps_poncho_xml.xml</path>
+        <guid>83364bbe-41cc-4552-bcc7-9519c7b79eaf</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsDown_poncho_xml.xml</path>
+        <guid>81277e04-089a-4069-b1d9-82c0f427f240</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/LOTR_shirt_xml.xml</path>
+        <guid>766b3069-aca8-45e5-8af2-fd02cb4ce0f7</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PVZ1_shirt_xml.xml</path>
+        <guid>f4faccc2-8c90-497d-ad40-3ace4d108cb8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PVZ2_shirt_xml.xml</path>
+        <guid>7cebe9a2-31f0-48e1-8a71-04673a5bd0b1</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Portal_shirt_xml.xml</path>
+        <guid>5b2471a3-57d9-460a-8826-bc1f83aecd03</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Rumbling_shirt_xml.xml</path>
+        <guid>9b825426-ce94-4a2b-93c5-9d763816195b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HalfLife_shirt_xml.xml</path>
+        <guid>b5eaa718-707b-4c77-8104-42a3f2680d6d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Xbox_shirt_xml.xml</path>
+        <guid>7330b460-a20b-4188-8f76-1303886ef599</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Playstation_shirt_xml.xml</path>
+        <guid>3a956886-f414-4fc3-858c-2141bdc22519</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HarryPotter_head_xml.xml</path>
+        <guid>0b78dd60-ca1b-463a-b841-63c65041fb26</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/StarWars2_shirt_xml.xml</path>
+        <guid>3098a23c-82d2-4013-a609-437c346cfbfd</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/StarWars4_shirt_xml.xml</path>
+        <guid>9f9340fe-f296-4880-a285-73d35cc24872</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/StarWars5_shirt_xml.xml</path>
+        <guid>4df7f6b3-2d23-451b-b829-dddffdc2c0a3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/StarWars6_shirt_xml.xml</path>
+        <guid>07c4fc43-9d84-40be-a959-60651d599048</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SlendermanMask_head_xml.xml</path>
+        <guid>0406e104-429a-46b4-a164-a471b4f736c8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/IronGiant_shirt_xml.xml</path>
+        <guid>ec88dec9-f3ec-4a06-a091-8a9bfeb16d03</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/IronGiant2_shirt_xml.xml</path>
+        <guid>1044a7f1-6dba-45da-bc2b-e35a12ff378b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Johan_shirt_xml.xml</path>
+        <guid>922768cf-bd72-4cdd-9c28-f7886b4307f8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeathNote_shirt_xml.xml</path>
+        <guid>7448e33c-e30d-4572-9ced-b977a93b056b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/OnePiece_shirt_xml.xml</path>
+        <guid>dba653f9-1ac2-4dde-8633-8e9a4f14b641</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Naruto_shirt_xml.xml</path>
+        <guid>ba70f843-a190-4867-85e7-4ffd99e43abe</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Berserk_shirt_xml.xml</path>
+        <guid>d233b854-3423-4352-944b-9adc38a94a58</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Homer_shirt_xml.xml</path>
+        <guid>e223ab43-19e0-4235-83a0-5a05ecc2073e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/YoutubeClassic_shirt_xml.xml</path>
+        <guid>7895e40c-b441-4ab0-8e69-5d6711b8f44a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Aguero_shirt_xml.xml</path>
+        <guid>3738a9ba-d070-4aba-8308-bcd75d654f64</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ToyStory_shirt_xml.xml</path>
+        <guid>0715f829-8cd7-4300-b69e-e02a6873f0f4</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Undertale_shirt_xml.xml</path>
+        <guid>2c7838eb-01c3-419d-bd0b-af6e16662c27</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Frisk_shirt_xml.xml</path>
+        <guid>85bcbd57-ee69-4957-9688-995f2edbc0ae</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsBody_shirt_xml.xml</path>
+        <guid>93c1fa9f-c6f0-4c48-8865-7e5fb9e77d90</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JamesSunderland_jacket_xml.xml</path>
+        <guid>6cfd2075-86a3-4744-99ee-dda6242b632c</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ObiWan_shirt_xml.xml</path>
+        <guid>b40a82c8-a14c-42c4-b4e8-d05681b7d04b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ObiWanPants_pants_xml.xml</path>
+        <guid>52a698f0-f584-4b9b-8ab6-1ca4a271be0f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ObiWanBoots_shoes_xml.xml</path>
+        <guid>e601d619-9638-43dd-8fa2-ecb0df9e3425</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerGloves_gloves_xml.xml</path>
+        <guid>30cab9c6-90c9-426d-9072-84ef6790d8e8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerJacket_jacket_xml.xml</path>
+        <guid>0651da1f-36f1-42c1-8a5d-fd101915e545</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerPants_pants_xml.xml</path>
+        <guid>ac2401b3-adf1-4ceb-8e4a-7bc44a52e3ab</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerVest_shirt_xml.xml</path>
+        <guid>656620d7-3b6e-4bee-87be-bd84c32361ff</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerShirt_shirt_xml.xml</path>
+        <guid>a49d26c3-9319-4696-80f2-b93f8f218c97</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerShoes_shoes_xml.xml</path>
+        <guid>26aab544-3195-4fdf-a1f7-1878e62d9fbb</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JokerTie_tie_xml.xml</path>
+        <guid>837cfdaa-eae1-44a6-9bc2-2ce3ae9dc6f5</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Leon_shirt_xml.xml</path>
+        <guid>780bbea5-5c32-4f3f-a902-3bfa207a1f23</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Hev_vest_xml.xml</path>
+        <guid>10ce249d-ce97-4a04-8633-b7be5e8ef62b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Hev_shirt_xml.xml</path>
+        <guid>b0a2df10-5342-44bf-b7e7-f9fe48819e71</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Hev_pants_xml.xml</path>
+        <guid>585e50a0-86af-4cda-bf67-96bb90ac3ea5</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Hev_gloves_xml.xml</path>
+        <guid>f6111870-e28a-47c1-b7fc-90527b5e93ae</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Hev_shoes_xml.xml</path>
+        <guid>c7b49be0-6302-47e6-9399-6fe1983e62a6</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Elza_shirt_xml.xml</path>
+        <guid>dbe3c8ee-b118-4fa9-a9cf-2d723d598e29</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/BruceLee_shirt_xml.xml</path>
+        <guid>bce3d98b-16e8-4e4f-acdd-d0bba22c69ac</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Starcraft_shirt_xml.xml</path>
+        <guid>4595d258-7c08-43a4-a6b9-ca841c32732f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Fnaf_shirt_xml.xml</path>
+        <guid>e83c7503-a4ed-4386-b7d2-aadfee3ec1eb</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TarMan_shirt_xml.xml</path>
+        <guid>23c7debd-0c3a-4277-b5b0-a118d36dfecd</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/WuTang_shirt_xml.xml</path>
+        <guid>cedff20d-eec0-47db-b818-29f7d22cbb05</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Morrowind_shirt_xml.xml</path>
+        <guid>40ea7f38-fb5e-4d83-816d-0a49ab98c8f3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Oblivion_shirt_xml.xml</path>
+        <guid>5494379f-834a-42cd-b5cf-15c1a22a5405</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Skyrim_shirt_xml.xml</path>
+        <guid>ed5901c4-5e1e-43a2-b817-f55ca5496363</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HSOTD_shirt_xml.xml</path>
+        <guid>3eda826b-09f5-4324-88a8-fcae5094e9b3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Zoom_jacket_xml.xml</path>
+        <guid>7c4f6a0d-2cff-4af8-b938-ad86c0be6677</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Jojo_jacket_xml.xml</path>
+        <guid>7bc9770a-de05-42f7-afc3-b2897e39d9ca</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Jojo_pants_xml.xml</path>
+        <guid>6f588a2e-d83b-405e-9ec8-3a7426bfa7dc</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Jojo_tie_xml.xml</path>
+        <guid>08cc2a0f-efb8-4b7d-9c13-43355a84a58f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Jojo_shirt_xml.xml</path>
+        <guid>1a7b0426-06be-480b-bb97-38c2d965a702</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TarManMask_head_xml.xml</path>
+        <guid>1f5daec5-116f-4d54-8733-6a8910e5098b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TarMan_gloves_xml.xml</path>
+        <guid>e12220d1-e71d-4a0a-8dc5-9df623aaeae3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TarMan_pants_xml.xml</path>
+        <guid>5e4556c2-464f-46f7-ac48-9b134d9c2c6f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TarMan_shoes_xml.xml</path>
+        <guid>5885f8bc-a11c-436c-a44e-c8a4939c5eb3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/IronMan_shirt_xml.xml</path>
+        <guid>e0b8b4dc-6ca6-498f-8fce-0899b3e6ae24</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Mandalorian_head_xml.xml</path>
+        <guid>6aea21cb-3efa-48bb-a5b5-ac60d3d0aaea</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Trousers_pants_xml.xml</path>
+        <guid>e0a2f078-e3e0-4b64-9106-cfc0e94415b3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Ash_gloves_xml.xml</path>
+        <guid>433dab36-482d-4ee4-a7b6-6cd4da209da1</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Ash_vest_xml.xml</path>
+        <guid>965ce59f-922a-4287-91d4-b62059bfe1bc</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Ash_shirt_xml.xml</path>
+        <guid>231ef05c-dcda-4296-ba6a-db7a22dfda8f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Ash_head_xml.xml</path>
+        <guid>d6da6bd0-05af-4375-a846-fc5df8c88d62</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Ash_Reverse_head_xml.xml</path>
+        <guid>09b10582-74a4-41a7-ad78-c0aba8b02161</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Shoes_shoes_xml.xml</path>
+        <guid>03c3247c-395d-47cd-957b-42c16c6a1c6b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Venom_suit_xml.xml</path>
+        <guid>f62801cc-80cf-4df9-8132-89cc6a96414b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Venom_gloves_xml.xml</path>
+        <guid>b32ded3a-ff95-479b-8361-7829a3a83c03</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Venom_shoes_xml.xml</path>
+        <guid>1196b912-3006-4257-be9c-aefd348dd98b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Venom_head_xml.xml</path>
+        <guid>72254578-3207-4815-b7c7-2bd74d77a092</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/MandalorianHelmet_head_xml.xml</path>
+        <guid>d122f4c8-bc6f-400c-b92f-03fa73ca2e46</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/VaderHelmet_head_xml.xml</path>
+        <guid>ea1ff321-aa7d-4247-a9f4-de29086e99fa</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/VaderShirt_shirt_xml.xml</path>
+        <guid>2e44dc0f-7f92-4f08-980b-8919992aabea</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic_jacket_xml.xml</path>
+        <guid>011b438c-df95-4ddd-838d-a589c1ed8002</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic_shirt_xml.xml</path>
+        <guid>ef073fe2-690d-4f81-8710-1e22600818f2</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic_pants_xml.xml</path>
+        <guid>3d612c01-fcff-45ab-9b97-92536a8fe302</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic_short_xml.xml</path>
+        <guid>55ca0d2e-1e3f-4232-88ec-b0d91912a9ad</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic_shoes_xml.xml</path>
+        <guid>ce00150e-a331-45f7-bdac-626c7ddb97c7</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SurveyCorpsClassic2_shirt_xml.xml</path>
+        <guid>fd8880e2-54f8-4669-ada8-558e96bbaa4a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Vader_cape_xml.xml</path>
+        <guid>0ae09dc9-da3e-49c2-9191-cf5d06af8a6d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Vader_skirt_xml.xml</path>
+        <guid>193d5066-31ae-4104-9d69-90c03a6645b8</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Vader_shoes_xml.xml</path>
+        <guid>d6510562-5862-40c5-b257-f30824545e0e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Vader_gloves_xml.xml</path>
+        <guid>8d4dca6b-b15b-4737-aad5-863758d3b4be</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/GreenGoblin_head_xml.xml</path>
+        <guid>dffdb341-28a8-412c-a978-63567a5bfa34</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Goku_head_xml.xml</path>
+        <guid>914199c3-67c9-411b-bf3f-6bcaf6665cae</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Goku_suit_xml.xml</path>
+        <guid>25bed7fc-68c8-4a03-a6b5-82e08e837dd3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Goku_shoes_xml.xml</path>
+        <guid>a810736b-bc1e-43ad-857e-60b93c113e6b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/GokuShirt_shirt_xml.xml</path>
+        <guid>d4a65edd-8140-47a8-b0aa-34e73fb2150a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Superman_cape_xml.xml</path>
+        <guid>fa1b8a42-e531-4c21-8036-ab040270aa72</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Superman_suit_xml.xml</path>
+        <guid>1fc55605-10ed-49d1-ba7c-a53b176a87cc</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Superman_shoes_xml.xml</path>
+        <guid>fb096157-3bf0-4b22-ac47-4784b2da2722</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Yellowstone_shirt_xml.xml</path>
+        <guid>ca5fcaf9-c67d-431a-a4fb-5019c2cd833e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Snoppy2_shirt_xml.xml</path>
+        <guid>a3bf64ab-01da-4ec8-a86b-acec3e7a6417</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Chavo_shirt_xml.xml</path>
+        <guid>fa97bb2f-a474-48e6-a3fb-7e3ade226efd</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TWD_shirt_xml.xml</path>
+        <guid>841949e3-5c27-4a92-a09a-ef683d95f1ca</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Goodman_shirt_xml.xml</path>
+        <guid>1e46fde8-f2c9-4baa-a1f7-ac458d1dba58</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ChefJacket_jacket_xml.xml</path>
+        <guid>7bfabc6a-0f75-44bf-a4c0-28768532c41a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HatChef_head_xml.xml</path>
+        <guid>e912136d-3269-4e49-ac43-e856c682f59a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/ChefPants_pants_xml.xml</path>
+        <guid>550cc5ea-108d-4919-89c6-e062cbd793a1</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Mafia_shirt_xml.xml</path>
+        <guid>eeb37cae-9855-4459-8243-42f267c1d213</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeadpoolBody_shirt_xml.xml</path>
+        <guid>567fd0bd-23c5-4016-9e4b-aa8a096979e4</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeadpoolMask_head_xml.xml</path>
+        <guid>7be73d21-807f-4c6e-91f7-6664d54150aa</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeadpoolPants_pants_xml.xml</path>
+        <guid>0fa3aa0d-3cce-4d40-92d3-b34b212a098f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeadpoolBoots_shoes_xml.xml</path>
+        <guid>821e626e-17de-44ac-909e-c659eecd773b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/DeadpoolGloves_gloves_xml.xml</path>
+        <guid>b30bba0f-4dd1-40eb-b7f1-e64c56bbe088</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Deadpool_katana_xml.xml</path>
+        <guid>b0f765f1-2ca8-4ed0-ad7c-2542134a896c</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Batman_head_xml.xml</path>
+        <guid>a12ae813-48cc-4c8d-b1d0-2609d9789160</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Pyramid_Head_Helmet_head_xml.xml</path>
+        <guid>68605735-f139-4281-a368-05ac4dbb5aeb</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Pyramid_Head_dress_xml.xml</path>
+        <guid>e54b236d-68c4-487b-a245-f3bab0933c57</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PyramidHead_shoes_xml.xml</path>
+        <guid>2b96099a-06b9-440c-88c4-d21e0fb03ad3</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PyramidHeadGloves_gloves_xml.xml</path>
+        <guid>077b0cb5-4089-457e-b489-7718d6197f65</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PyramidHeadKnife_xml.xml</path>
+        <guid>8f175a22-a244-4d6a-abf2-d43033fcd8e5</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Batman_suit_xml.xml</path>
+        <guid>fe6eee78-d6d9-49a4-a4c4-8ea79bbc0e51</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Elchavo_Hat_xml.xml</path>
+        <guid>8905e922-37ef-4a5d-9f55-3969d2326416</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Elchavo_shirt_xml.xml</path>
+        <guid>238dca7a-53c1-4872-b2af-ef51e8263c6b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Elchavo_Short_xml.xml</path>
+        <guid>1ffda2eb-89b2-40e9-8240-d4b21e26a32a</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Fantastic4_shirt_xml.xml</path>
+        <guid>4424d460-ce2d-4155-8e81-94aff05b691e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Fantastic4_shoes_xml.xml</path>
+        <guid>2a33e5cd-c3e6-4881-b9cf-484d0b125175</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Fantastic4_gloves_xml.xml</path>
+        <guid>3a9886b1-705f-41a9-9b43-070c383db6f9</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HanSolo_vest_xml.xml</path>
+        <guid>5fe80577-0881-4105-8368-500e837c08a6</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HanSolo_shirt_xml.xml</path>
+        <guid>1d85bdf1-3cc5-408b-a697-f676d4a842c9</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HanSolo_shoes_xml.xml</path>
+        <guid>d7379c5e-b6bd-48c5-b36a-6308b2f25b1f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/HanSolo_pants_xml.xml</path>
+        <guid>d19dae47-6f9b-4727-833b-bb585869640b</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanPantsBlack_pants_xml.xml</path>
+        <guid>c8cc3f59-0e67-44fb-918a-adc71b3e2ccc</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanBodyBlack_shirt_xml.xml</path>
+        <guid>944bd7cb-a6d6-479c-bd40-40d8f038879d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanBootsBlack_shoes_xml.xml</path>
+        <guid>f0f1ad03-82e6-4c76-85f3-2c6465c6af67</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanGlovesBlack_gloves_xml.xml</path>
+        <guid>cb8d94fc-0404-469d-86d7-064500bbab1c</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/SpidermanMaskBlack_head_xml.xml</path>
+        <guid>973c93af-4cc8-465b-afa7-b93cec3ead3c</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TheIncrediblesMask_head_xml.xml</path>
+        <guid>9208c017-22ff-4184-b6dc-bf08086c5fd9</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Shrek_shirt_xml.xml</path>
+        <guid>404e30dd-34c5-458e-a249-2da92e689a95</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/KFPanda_shirt_xml.xml</path>
+        <guid>5fc50540-d183-49f7-88b4-9a10dd38b58c</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Patrick_shirt_xml.xml</path>
+        <guid>d7d8ab50-142c-4ddf-b71d-0efc97bb285e</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Messi_shirt_xml.xml</path>
+        <guid>3f17aa84-ab7b-47b6-8743-392924146d02</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/KNY_shirt_xml.xml</path>
+        <guid>778324ae-f799-473e-8c7d-a271e7a36e87</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JJK_shirt_xml.xml</path>
+        <guid>ebced5fc-6e86-4f25-9d88-a52ac1eb5a29</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/PeakyB_shirt_xml.xml</path>
+        <guid>d4660477-5419-4b61-a45b-26034d0bfb6f</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/LOZ_shirt_xml.xml</path>
+        <guid>23864885-bc96-41d7-a0b5-22c6e7c68760</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/JesseP_shirt_xml.xml</path>
+        <guid>b16e1ced-3a61-4d85-8775-549a3609f241</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/Rorschach_head_xml.xml</path>
+        <guid>3212c848-f855-41fa-9c4c-e6ab4f48b2ed</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/TheIncredibles_shirt_xml.xml</path>
+        <guid>3fc678ee-103a-46a4-9174-e8cf7534c579</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/FrikiClothes_shirt_xml.xml</path>
+        <guid>0e146cdb-1e70-4359-b39f-8ebd37b0b350</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/FrikiClothes_head_xml.xml</path>
+        <guid>0e29d3e5-1e47-49cc-bbb1-d129b669fe09</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/FrikiClothes_Reverse_head_xml.xml</path>
+        <guid>75c73b7c-2a4b-4dde-b2e4-887cd5413d6d</guid>
+    </files>
+
+    <files>
+        <path>media/clothing/clothingItems/FrikiClothes_pants_xml.xml</path>
+        <guid>4c44315e-d6a0-40cf-99ec-0f676c7be44a</guid>
+    </files>
+
+</fileGuidTable>

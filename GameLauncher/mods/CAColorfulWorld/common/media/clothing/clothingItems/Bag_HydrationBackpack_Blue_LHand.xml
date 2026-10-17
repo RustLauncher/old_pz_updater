@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\BackPacks\HydrationBackpack_LHand.x</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\BackPacks\HydrationBackpack_LHand.x</m_FemaleModel>
+	<m_GUID>c0e3614d-74ad-40d9-887b-624dce6ddb7a</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\CAColorfulWorld\hydrationbackpack_blue_bright</textureChoices>
+</clothingItem>

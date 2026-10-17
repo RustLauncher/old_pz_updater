@@ -1,0 +1,98 @@
+module BolsasEspecialidades
+{
+    item Bag_Mecanica_LowerBack
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        ClothingItem = Bag_Mecanica_LowerBack,
+        CanBeEquipped = base:back,
+        WeightReduction = 65,
+        Weight = 1,
+        Capacity = 18,
+        Icon = Mecanica,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.97,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_Mecanica_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Mecanica_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        }
+    item Bag_Pesca_LowerBack
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        ClothingItem = Bag_Pesca_LowerBack,
+        CanBeEquipped = base:back,
+        WeightReduction = 65,
+        Weight = 1,
+        Capacity = 18,
+        Icon = Pesca,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.97,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_Pesca_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Pesca_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        }
+    item Bag_Caca_LowerBack
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        ClothingItem = Bag_Caca_LowerBack,
+        CanBeEquipped = base:back,
+        WeightReduction = 65,
+        Weight = 1,
+        Capacity = 18,
+        Icon = Caca,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.97,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_Caca_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Caca_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        }
+    item Bag_Firearms_LowerBack
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        ClothingItem = Bag_Firearms_LowerBack,
+        CanBeEquipped = base:back,
+        WeightReduction = 65,
+        Weight = 1,
+        Capacity = 18,
+        Icon = Firearms,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.97,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_Firearms_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Firearms_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        }
+    item Bag_Carpintaria_LowerBack
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        ClothingItem = Bag_Carpintaria_LowerBack,
+        CanBeEquipped = base:back,
+        WeightReduction = 65,
+        Weight = 1,
+        Capacity = 18,
+        Icon = Carpintaria,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.97,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_Carpintaria_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Carpintaria_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        }
+}

@@ -1,0 +1,10 @@
+<clothingItem>
+<m_MaleModel/>
+<m_FemaleModel/>
+<m_GUID>ebced5fc-6e86-4f25-9d88-a52ac1eb5a29</m_GUID>
+<m_Static>false</m_Static>
+<m_AllowRandomHue>false</m_AllowRandomHue>
+<m_AllowRandomTint>false</m_AllowRandomTint>
+<m_AttachBone/>
+<m_BaseTextures>clothes\JJK_shirt_text</m_BaseTextures>
+</clothingItem>

@@ -1,0 +1,8 @@
+module Base
+{
+	model SpidermanMask
+	{
+		mesh = WorldItems/Clothing/SpidermanMask,
+		scale = 1
+ 	}
+}

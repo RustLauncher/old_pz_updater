@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_tie</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\bob_tie</m_FemaleModel>
+	<m_GUID>08cc2a0f-efb8-4b7d-9c13-43355a84a58f</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\Jojo_tie_text</textureChoices>
+</clothingItem>

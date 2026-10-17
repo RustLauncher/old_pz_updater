@@ -1,0 +1,28 @@
+module FrikiNotes{
+
+    imports {
+        Base
+    }
+
+    item Note1
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Nota 1,
+    		Icon = NoteIcon,
+            Tooltip = Tooltip_Note,
+	}
+
+    item Note2
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Nota 2,
+    		Icon = NoteIcon,
+            Tooltip = Tooltip_Note2,
+	}
+    
+
+}

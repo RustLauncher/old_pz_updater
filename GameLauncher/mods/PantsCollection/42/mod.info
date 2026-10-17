@@ -1,0 +1,9 @@
+name=[B42] Pants Collection
+id=PantsCollection
+description=Thirty-three skinny pants and leggings painted directly on the B42 body UV.
+description=2D clothing items - no mesh, so nothing can clip.
+poster=poster.png
+modversion=0.2.0
+versionMin=42.0.0
+incompatible=PantsCollectionVanilla
+url=https://steamcommunity.com/sharedfiles/filedetails/?id=3799111159

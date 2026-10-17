@@ -1,0 +1,11 @@
+module Base{
+
+	sound GoldenKatanaHit {
+    		category = Item,
+    		clip
+    		{
+      			file = media/sound/GoldenKatanaHit.ogg,
+    		}
+  	}
+
+}

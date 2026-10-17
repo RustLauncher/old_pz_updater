@@ -1,0 +1,30 @@
+module FrikiWaponsRecipes{
+
+imports{
+	Base
+} 
+
+
+  recipe Make Chrome Golden Katana {
+    keep FrikiWeapons.KatanaFragment1,
+    keep FrikiWeapons.KatanaFragment2,
+    keep FrikiWeapons.KatanaFragment3,
+    keep FrikiWeapons.KatanaFragment4,
+    keep FrikiWeapons.KatanaFragment5,
+
+    BlowTorch=10,
+    SheetMetal=1,
+    SmallSheetMetal=2,
+    WeldingRods=4,
+    LeatherStrips=4,
+    Woodglue=1,
+
+    Result:FrikiWeapons.GoldenKatana,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+    SkillRequired:MetalWelding=6,
+    Time:360.0,
+    Sound:BlowTorch,
+    NeedToBeLearn:False,
+  }
+
+}

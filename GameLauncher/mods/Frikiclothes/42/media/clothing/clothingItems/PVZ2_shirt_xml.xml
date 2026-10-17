@@ -1,0 +1,10 @@
+<clothingItem>
+<m_MaleModel/>
+<m_FemaleModel/>
+<m_GUID>7cebe9a2-31f0-48e1-8a71-04673a5bd0b1</m_GUID>
+<m_Static>false</m_Static>
+<m_AllowRandomHue>false</m_AllowRandomHue>
+<m_AllowRandomTint>false</m_AllowRandomTint>
+<m_AttachBone/>
+<m_BaseTextures>clothes\PVZ2_shirt_text</m_BaseTextures>
+</clothingItem>

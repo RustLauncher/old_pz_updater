@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\Bob_ElbowPad_L.x</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\Kate_ElbowPad_L.x</m_FemaleModel>
+	<m_AltMaleModel>media\models_X\Skinned\Clothes\Bob_ElbowPad_L_ALT.x</m_AltMaleModel>
+	<m_AltFemaleModel>media\models_X\Skinned\Clothes\Kate_ElbowPad_L_ALT.x</m_AltFemaleModel>
+	<m_GUID>6f593a10-0dcd-4f26-a43e-81b0384db53b</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_MasksFolder>none</m_MasksFolder>
+	<textureChoices>clothes\IronManElbowPad_text</textureChoices>
+	<m_SpawnWith>36ba91a3-db22-4dd1-a026-e31d249c1f4c</m_SpawnWith>
+</clothingItem>

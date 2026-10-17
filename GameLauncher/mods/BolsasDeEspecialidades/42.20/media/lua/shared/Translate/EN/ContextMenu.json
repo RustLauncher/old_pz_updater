@@ -1,0 +1,9 @@
+{
+    "ContextMenu_BE_Study": "Study bag construction",
+    "ContextMenu_BE_StudyHint": "Learn all five recipes. Requires Tailoring 3 and light. Place the bag in your main inventory. The bag and its contents are preserved.",
+    "ContextMenu_BE_InvalidBag": "This bag cannot be studied.",
+    "ContextMenu_BE_AlreadyKnown": "You already know all five recipes.",
+    "ContextMenu_BE_TakeBag": "Place the bag in your main inventory to study it.",
+    "ContextMenu_BE_NeedTailoring": "Requires Tailoring level 3.",
+    "ContextMenu_BE_NeedLight": "More light is needed to study the bag."
+}

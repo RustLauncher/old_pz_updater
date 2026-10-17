@@ -1,0 +1,10 @@
+<clothingItem>
+<m_MaleModel/>
+<m_FemaleModel/>
+<m_GUID>3f17aa84-ab7b-47b6-8743-392924146d02</m_GUID>
+<m_Static>false</m_Static>
+<m_AllowRandomHue>false</m_AllowRandomHue>
+<m_AllowRandomTint>false</m_AllowRandomTint>
+<m_AttachBone/>
+<m_BaseTextures>clothes\Messi_shirt_text</m_BaseTextures>
+</clothingItem>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\backpacks\ThorCape.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\backpacks\ThorCape.fbx</m_FemaleModel>
+	<m_GUID>5a39c727-b998-44e8-bea8-164e4dfb8957</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\Thor_cape_text</textureChoices>
+</clothingItem>

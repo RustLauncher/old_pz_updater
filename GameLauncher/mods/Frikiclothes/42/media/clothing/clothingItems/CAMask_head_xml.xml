@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\CAMask</m_MaleModel>
+	<m_FemaleModel>skinned\CAMask</m_FemaleModel>
+	<m_GUID>129f152b-0638-4a8c-ad5e-1fc2e558fcec</m_GUID>
+ 	<m_Static>true</m_Static>
+ 	<m_AllowRandomHue>false</m_AllowRandomHue>
+ 	<m_AllowRandomTint>false</m_AllowRandomTint>
+ 	<m_AttachBone></m_AttachBone>
+	<m_HatCategory>nohair</m_HatCategory>
+	 <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+ 	<textureChoices>clothes\CAMask_head_text</textureChoices>
+</clothingItem>

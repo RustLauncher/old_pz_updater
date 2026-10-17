@@ -1,0 +1,16 @@
+{
+  "Tooltip_EVHalloween_Decor_WitchHatProp": "小巧且略顯陳舊的女巫貓雕像。",
+  "Tooltip_EVHalloween_Decor_CandleCluster": "用於裝飾的未點燃蠟燭。",
+  "Tooltip_EVHalloween_Decor_HangingLantern": "可放在地上或拿在任一隻手中的電池燈。從主要物品欄更換電池和燈泡。滿電電池：24 個遊戲小時；燈泡：120 小時使用壽命。",
+  "Tooltip_EVHalloween_Decor_WitchesCauldron": "放置後會升起綠色氣泡的裝飾坩堝。",
+  "Tooltip_EVHalloween_Decor_HauntedMirror": "陳舊破裂的鏡子，帶有淡淡的幽靈影像。僅作裝飾，不會實時反射場景。",
+  "Tooltip_EVHalloween_PumpkinTreatPail": "可拿在任一隻手中，裝入糖果，或放置為容器。",
+  "Tooltip_EVHalloween_Decor_CoffinProp": "容量：16。可單獨放置，每格最多堆疊三個。",
+  "Tooltip_EVHalloween_Decor_HalloweenCandyBowl": "容量：8。可見糖果隨已用容量變化：空、最多 百分之25、最多 百分之60、然後滿。",
+  "Tooltip_EVHalloween_Decor_JackOLanternGrin": "初始內含蠟燭。拿在手中或放在地上時均可開關。從主要物品欄更換蠟燭。完整蠟燭：8 個遊戲小時。",
+  "Tooltip_EVHalloween_Decor_TombstoneCracked": "略顯陳舊的萬聖節門墊。兩種圖案共用一個獎勵條目，可放在門旁。",
+  "Tooltip_EVHalloween_Decor_BonePile": "配有木製指示板的裝飾通靈板。",
+  "Tooltip_EVHalloween_PumpkinTreatBucket": "可拿在任一隻手中，裝入糖果，或放置為容器。",
+  "Tooltip_EVHalloween_WitchCauldron": "可拿在任一隻手中，裝入糖果，或放置為容器。",
+  "Tooltip_EVHalloween_Decor_JackOLanternCat": "初始內含蠟燭。拿在手中或放在地上時均可開關。從主要物品欄更換蠟燭。完整蠟燭：8 個遊戲小時。"
+}

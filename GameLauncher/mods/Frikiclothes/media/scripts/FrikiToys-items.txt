@@ -1,0 +1,85 @@
+module FrikiToys {
+
+	imports{
+		Base
+	}
+
+	item TheIronGiant
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Estatuilla del Gigante de Hierro,
+		Icon 				= 	IronGiant_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	IronGiant,
+		WorldStaticModel 	= 	IronGiant,
+		Tooltip = Tooltip_TheIronGiant,
+	}
+
+	item SpongeBobToy
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Figura de Bob Esponja cromada en oro,
+		Icon 				= 	SpongeBobToy_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	SpongeBobToy,
+		Tooltip = Tooltip_SpongeBobToy,
+		Icon = SpongeBobToyIcon,
+	}
+
+	item NemesisToy
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Figura de Nemesis cromada en oro,
+		Icon 				= 	NemesisToy_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	NemesisToy,
+		Tooltip = Tooltip_SpongeBobToy,
+		Icon = NemesisToyIcon,
+	}
+
+	item XenomorphToy
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Figura de Xenomorfo cromada en oro,
+		Icon 				= 	XenomorphToy_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	XenomorphToy,
+		Tooltip = Tooltip_SpongeBobToy,
+		Icon = XenomorphToyIcon,
+	}
+
+	item ColossalTitanToy
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Figura de Titán colosal cromada en oro,
+		Icon 				= 	ColossalTitanToy_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	ColossalTitanToy,
+		Tooltip = Tooltip_SpongeBobToy,
+		Icon = ColossalTitanToyIcon,
+	}
+
+	item C3poToy
+	{
+		DisplayCategory 	= 	Raccoon,
+		Weight 				= 	0.2,
+		Type 				= 	Normal,
+		DisplayName 		= 	Figura de Citripio cromada en oro,
+		Icon 				= 	C3poToy_icon,
+		AttachmentType 		= 	SpiffoPlushie,
+		WorldStaticModel 	= 	C3poToy,
+		Tooltip = Tooltip_SpongeBobToy,
+		Icon = C3poToyIcon,
+	}
+
+}

@@ -1,0 +1,132 @@
+/* Face-only baked brightness models. Stable real pumpkin body. */
+module HalloweenEvent
+{
+    model EVHItems_Decor_JackOLanternGrin_Glow_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow4_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow4,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow5_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow5,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow6_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow6,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Glow7_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Glow7,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow4_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow4,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow5_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow5,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow6_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow6,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Glow7_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Glow7,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+}

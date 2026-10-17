@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<clothingItem>
+  <m_MaleModel>skinned\backpacks\DuffelBag_RHand</m_MaleModel>
+  <m_FemaleModel>skinned\backpacks\DuffelBag_RHand</m_FemaleModel>
+  <m_GUID>debf0b43-7bda-539c-8459-56b2c6faebdf</m_GUID>
+  <m_Static>false</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone />
+  <textureChoices>clothes\Bag_Pesca</textureChoices>
+</clothingItem>

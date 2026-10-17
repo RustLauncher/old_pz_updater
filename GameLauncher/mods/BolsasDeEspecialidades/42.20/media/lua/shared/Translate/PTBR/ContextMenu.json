@@ -1,0 +1,9 @@
+{
+    "ContextMenu_BE_Study": "Aprender Costurar Bolsa",
+    "ContextMenu_BE_StudyHint": "Aprende as cinco receitas. Requer Costura 3 e iluminação. Coloque a bolsa no inventário principal. A bolsa e seu conteúdo são preservados.",
+    "ContextMenu_BE_InvalidBag": "Esta bolsa não pode ser estudada.",
+    "ContextMenu_BE_AlreadyKnown": "Você já conhece as cinco receitas.",
+    "ContextMenu_BE_TakeBag": "Coloque a bolsa no inventário principal para aprender a confecção.",
+    "ContextMenu_BE_NeedTailoring": "Requer Costura nível 3.",
+    "ContextMenu_BE_NeedLight": "Requer ambiente iluminado."
+}

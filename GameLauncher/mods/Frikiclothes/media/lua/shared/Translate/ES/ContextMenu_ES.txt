@@ -1,0 +1,8 @@
+ContextMenu_ES = {
+
+	ContextMenu_Investigate = "Pulsar boton secreto",
+	ContextMenu_InvestigateResult = "Eh encontrado algo dentro!",
+	ContextMenu_InvestigateTT = "Pulsa el boton y ve que esconde",
+	
+
+}

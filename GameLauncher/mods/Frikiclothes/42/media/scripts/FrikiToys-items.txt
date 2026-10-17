@@ -1,0 +1,21 @@
+module FrikiToys {
+
+	imports {
+		Base
+	}
+
+	item TheIronGiant
+	{
+		DisplayCategory = Household,
+		ItemType = base:normal, 
+		Type = Normal,
+		Weight = 0.5,
+		DisplayName = Estatuilla del Gigante de Hierro,
+		Icon = IronGiant_icon,
+		AttachmentType = SpiffoPlushie,
+		WorldStaticModel = IronGiant,
+		Tags = base:ignorezombiedensity;Toy;Plushie, /* AÑADIDO: Tag base para estabilidad */
+		Tooltip = Tooltip_TheIronGiant,
+	}
+
+}

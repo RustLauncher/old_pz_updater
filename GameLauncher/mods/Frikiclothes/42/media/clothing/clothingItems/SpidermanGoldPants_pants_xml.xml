@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>694abb5d-1a78-47ff-ab3a-6f63b290cfa9</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_UnderLayer>true</m_UnderLayer>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\SpidermanGoldPants_pants_text</m_BaseTextures>
+</clothingItem>

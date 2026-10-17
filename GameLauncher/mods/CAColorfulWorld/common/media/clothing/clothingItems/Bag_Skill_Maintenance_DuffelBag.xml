@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\backpacks\m_duffelbag</m_MaleModel>
+	<m_FemaleModel>skinned\backpacks\f_duffelbag</m_FemaleModel>
+	<m_GUID>89690cc3-7359-4e42-a888-43086b0cb713</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_red</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_orange</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_mustard</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_tan</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_green</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_lime</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_teal</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_sky</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_royal</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_purple</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_pink</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\duffelbagblue_charcoal</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_red</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_orange</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_mustard</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_tan</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_green</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_lime</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_teal</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_sky</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_royal</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_purple</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_pink</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\dufflebag_blue_charcoal</textureChoices>
+	<textureChoices>clothes\bag\DuffleBag_Sports_Blue</textureChoices>
+	<textureChoices>clothes\bag\DuffleBag_Sports_Red</textureChoices>
+</clothingItem>

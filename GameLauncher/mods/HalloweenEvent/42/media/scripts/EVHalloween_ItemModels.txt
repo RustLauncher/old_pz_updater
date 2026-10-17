@@ -1,0 +1,1438 @@
+/* Items11: 25 rewards; persistent bucket variants; fill/candle states. */
+module HalloweenEvent
+{
+    model EVHItems_PumpkinTreatPail_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatPail_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatPail_Variant1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant1,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatPail_Variant1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant1_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatPail_Variant2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant2,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatPail_Variant2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant2_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatPail_Variant3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant3,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatPail_Variant3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatPail_Variant3_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007867192 -0.054434431 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatBucket_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatBucket_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatBucket_Variant1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant1,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatBucket_Variant1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant1_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatBucket_Variant2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant2,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatBucket_Variant2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant2_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_PumpkinTreatBucket_Variant3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant3,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+    }
+    model EVHItems_PumpkinTreatBucket_Variant3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_PumpkinTreatBucket_Variant3_Held,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.0035,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.007656147 -0.054464515 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_WitchCauldron_Ground
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+    }
+    model EVHItems_WitchCauldron_Hand
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_WitchCauldron_Variant1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+    }
+    model EVHItems_WitchCauldron_Variant1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant1_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_WitchCauldron_Variant2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+    }
+    model EVHItems_WitchCauldron_Variant2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant2_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_WitchCauldron_Variant3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+    }
+    model EVHItems_WitchCauldron_Variant3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_WitchCauldron_Variant3_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.004,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Right
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+        attachment EVH_Pail_Left
+        {
+            offset = 0.000000000 -0.018000000 0.000000000,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_PumpkinOrange_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_PumpkinOrange,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_PumpkinWhite_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_PumpkinWhite,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit1_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit2_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit3_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit4_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit4,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit4_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit4_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit5_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit5,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit5_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit5_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit6_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit6,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit6_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit6_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit7_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit7,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternGrin_Lit7_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternGrin_Lit7_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit1_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit2_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit3_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit4_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit4,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit4_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit4_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit5_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit5,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit5_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit5_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit6_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit6,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit6_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit6_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit7_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit7,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_JackOLanternCat_Lit7_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_JackOLanternCat_Lit7_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_GhostYardFigure_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_GhostYardFigure,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_TombstonePlain_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_TombstonePlain,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_TombstoneRIP_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_TombstoneRIP,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_TombstoneCracked_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_TombstoneCracked,
+        texture = WorldItems/EVHalloween_Doormats,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_TombstoneCracked_Variant1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_TombstoneCracked_Variant1,
+        texture = WorldItems/EVHalloween_Doormats,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_WoodenCross_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_WoodenCross,
+        texture = WorldItems/EVHalloween_Items7Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_BatBanner_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_BatBanner,
+        texture = WorldItems/EVHalloween_Items7Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_SkullPile_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_SkullPile,
+        texture = WorldItems/EVHalloween_Items10Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_BonePile_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_BonePile,
+        texture = WorldItems/EVHalloween_Ouija10,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_WitchesCauldron_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_WitchesCauldron,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_WitchBroom_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_WitchBroom,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_WitchBroom_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_WitchBroom_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_WitchHatProp_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_WitchHatProp,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HangingLantern_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HangingLantern,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HangingLantern_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HangingLantern_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_HangingLantern_Lit_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HangingLantern_Lit,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HangingLantern_Lit_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HangingLantern_Lit_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_CandleCluster_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_CandleCluster,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenPennant_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenPennant,
+        texture = WorldItems/EVHalloween_Items7Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_CoffinProp_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_CoffinProp,
+        texture = WorldItems/EVHalloween_CoffinWood,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_CoffinProp_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_CoffinProp_Held,
+        texture = WorldItems/EVHalloween_CoffinWood,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_HauntedMirror_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HauntedMirror,
+        texture = WorldItems/EVHalloween_DetailAtlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_PumpkinSmash_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_PumpkinSmash,
+        texture = WorldItems/EVHalloween_Items7Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill1_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill1,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill1_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill1_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill2_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill2,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill2_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill2_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill3_Ground
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill3,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+    }
+    model EVHItems_Decor_HalloweenCandyBowl_Fill3_Hand
+    {
+        mesh = EVHalloween/EVHalloween_Decor_HalloweenCandyBowl_Fill3_Held,
+        texture = WorldItems/EVHalloween_Atlas,
+        static = true,
+        scale = 0.005,
+        cullFace = None,
+        attachment hand
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop1
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0 0 0,
+            rotate = 0 0 0,
+        }
+    }
+}

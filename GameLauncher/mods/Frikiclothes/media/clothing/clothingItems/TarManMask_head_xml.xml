@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\m_fullmodelmask</m_MaleModel>
+	<m_FemaleModel>skinned\f_fullmodelmask</m_FemaleModel>
+ 	<m_GUID>1f5daec5-116f-4d54-8733-6a8910e5098b</m_GUID>
+ 	<m_Static>false</m_Static>
+ 	<m_AllowRandomHue>false</m_AllowRandomHue>
+ 	<m_AllowRandomTint>false</m_AllowRandomTint>
+ 	<m_AttachBone></m_AttachBone>
+	<m_Masks>0</m_Masks>
+	<m_HatCategory>nohairnobeard</m_HatCategory>
+ 	<textureChoices>clothes\TarManMask_head_text</textureChoices>
+</clothingItem>
+
+
+
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_longshorts</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_longshorts</m_FemaleModel>
+	<m_GUID>e27ef562-11ab-4a6a-89a3-8a7724ffd4f8</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>14</m_Masks>
+	<m_Masks>15</m_Masks>
+	<textureChoices>clothes\CAColorfulWorld\longshorts_sportblue_bright</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\longshorts_sportgreen_bright</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\longshorts_sportred_bright</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\longshorts_sportyellow_bright</textureChoices>
+</clothingItem>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\m_fullmodelmask</m_MaleModel>
+	<m_FemaleModel>skinned\f_fullmodelmask</m_FemaleModel>
+ 	<m_GUID>530a215f-324c-4f43-8807-f3198d1310d0</m_GUID>
+ 	<m_Static>false</m_Static>
+ 	<m_AllowRandomHue>false</m_AllowRandomHue>
+ 	<m_AllowRandomTint>false</m_AllowRandomTint>
+ 	<m_AttachBone></m_AttachBone>
+	<m_Masks>0</m_Masks>
+	<m_HatCategory>nohairnobeard</m_HatCategory>
+ 	<textureChoices>clothes\SpidermanMask_head_text</textureChoices>
+</clothingItem>

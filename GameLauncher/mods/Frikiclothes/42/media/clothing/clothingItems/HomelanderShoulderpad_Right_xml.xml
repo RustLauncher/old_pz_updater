@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>18d3f865-b419-42bd-bc7f-1d5d0b5e7934</m_GUID>
+	<m_MaleModel>media\models_X\Skinned\Homelander_shoulderpad_right.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Homelander_shoulderpad_right.fbx</m_FemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_MasksFolder>none</m_MasksFolder>
+	<textureChoices>clothes\Homelander_shoulderpads_text</textureChoices>
+</clothingItem>

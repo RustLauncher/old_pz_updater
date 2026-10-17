@@ -1,0 +1,13 @@
+{
+    "Sandbox_PetFoodPackage": "Pet Food Package",
+    "Sandbox_PetFoodPackage_Abundance": "Pet Food Boxes",
+    "Sandbox_PetFoodPackage_Abundance_tooltip": "Abundance | Market/store | Vehicle trunk | Residential kitchen\nNone | 0% | 0% | 0%\nInsane | 12.5% | 6.25% | 3.75%\nExtremely rare | 18.75% | 9.375% | 5.625%\nRare | 22.5% | 11.25% | 6.75",
+    "Sandbox_PetFoodPackage_Abundance_option1": "None",
+    "Sandbox_PetFoodPackage_Abundance_option2": "Insane",
+    "Sandbox_PetFoodPackage_Abundance_option3": "Extremely Rare",
+    "Sandbox_PetFoodPackage_Abundance_option4": "Rare",
+    "Sandbox_PetFoodPackage_Abundance_option5": "Normal",
+    "Sandbox_PetFoodPackage_Abundance_option6": "Common",
+    "Sandbox_PetFoodPackage_Abundance_option7": "Abundant",
+
+}

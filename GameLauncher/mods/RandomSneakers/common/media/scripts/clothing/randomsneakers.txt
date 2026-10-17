@@ -1,0 +1,587 @@
+module RandomSneakers
+{
+    imports
+    {
+        Base,
+    }
+
+    item Shoes_CourtMid
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_CourtMid,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_CourtMid,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_CourtMid,
+    }
+
+    item Shoes_RacerMid
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RacerMid,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RacerMid,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RacerMid,
+    }
+
+    item Shoes_RacerMidBlackBrown
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RacerMidBlackBrown,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RacerMidBlackBrown,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RacerMidBlackBrown,
+    }
+
+    item Shoes_RacerMidGrey
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RacerMidGrey,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RacerMidGrey,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RacerMidGrey,
+    }
+
+    item Shoes_RacerMidGreenOrange
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RacerMidGreenOrange,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RacerMidGreenOrange,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RacerMidGreenOrange,
+    }
+
+    item Shoes_RacerMidRed
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RacerMidRed,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RacerMidRed,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RacerMidRed,
+    }
+
+    item Shoes_RetroMid
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RetroMid,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RetroMid,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RetroMid,
+    }
+
+    item Shoes_WedgeRed
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeRed,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeRed,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeRed,
+    }
+
+    item Shoes_StrapHigh
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_StrapHigh,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_StrapHigh,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_StrapHigh,
+    }
+
+    item Shoes_SplatterHigh
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_SplatterHigh,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_SplatterHigh,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_SplatterHigh,
+    }
+
+    item Shoes_FlowerPink
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_FlowerPink,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_FlowerPink,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_FlowerPink,
+    }
+
+    item Shoes_BrownLaced
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_BrownLaced,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_BrownLaced,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_BrownLaced,
+    }
+
+    item Shoes_AirLow
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_AirLow,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_AirLow,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_AirLow,
+    }
+
+    item Shoes_BabyBlue
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_BabyBlue,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_BabyBlue,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_BabyBlue,
+    }
+
+    item Shoes_BlackBrown
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_BlackBrown,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_BlackBrown,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_BlackBrown,
+    }
+
+    item Shoes_BlackRed
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_BlackRed,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_BlackRed,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_BlackRed,
+    }
+
+    item Shoes_RedHigh
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_RedHigh,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_RedHigh,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_RedHigh,
+    }
+
+    item Shoes_ScoobHigh
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_ScoobHigh,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_ScoobHigh,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_ScoobHigh,
+    }
+
+    item Shoes_WedgeBlackGrey
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeBlackGrey,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeBlackGrey,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeBlackGrey,
+    }
+
+    item Shoes_WedgeBlue
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeBlue,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeBlue,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeBlue,
+    }
+
+    item Shoes_WedgeBrownLight
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeBrownLight,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeBrownLight,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeBrownLight,
+    }
+
+    item Shoes_WedgeCremeBrown
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeCremeBrown,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeCremeBrown,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeCremeBrown,
+    }
+
+    item Shoes_WedgeJeans
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeJeans,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeJeans,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeJeans,
+    }
+
+    item Shoes_WedgeOffWhite
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeOffWhite,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeOffWhite,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeOffWhite,
+    }
+
+    item Shoes_WedgeVelvetRed
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeVelvetRed,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeVelvetRed,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeVelvetRed,
+    }
+
+    item Shoes_WedgeRedWhiteBlue
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeRedWhiteBlue,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeRedWhiteBlue,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeRedWhiteBlue,
+    }
+
+    item Shoes_WedgeTanBrown
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeTanBrown,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeTanBrown,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeTanBrown,
+    }
+
+    item Shoes_WedgeWornBrown
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeWornBrown,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeWornBrown,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeWornBrown,
+    }
+
+    item Shoes_WedgeZebra
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Shoes_WedgeZebra,
+        BloodLocation = Shoes,
+        BodyLocation = base:shoes,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Shoes_WedgeZebra,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        RunSpeedModifier = 1.1,
+        ScratchDefense = 10,
+        StompPower = 1.8,
+        WindResistance = 0.3,
+        WorldStaticModel = W_Shoes_WedgeZebra,
+    }
+}

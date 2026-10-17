@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>bb5b22bd-6a56-470a-9d34-1f26d57191ba</m_GUID>
+	<m_MaleModel>skinned\clothes\bob_jumpertanktop</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_jumpertanktop</m_FemaleModel>
+	<m_AltMaleModel>null</m_AltMaleModel>
+	<m_AltFemaleModel>null</m_AltFemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>13</m_Masks>
+	<m_Masks>14</m_Masks>
+	<textureChoices>clothes\ThorVest_text</textureChoices>
+</clothingItem>

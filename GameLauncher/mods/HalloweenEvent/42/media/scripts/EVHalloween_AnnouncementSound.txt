@@ -1,0 +1,27 @@
+module HalloweenEvent
+{
+    sound EVHalloween_EventStarted
+    {
+        category = HalloweenEvent,
+        is3D = false,
+        loop = false,
+        master = Primary,
+        clip
+        {
+            file = media/sound/EVHalloween_EventStarted.ogg,
+            volume = 0.8,
+        }
+    }
+    sound EVHalloween_EventEnded
+    {
+        category = HalloweenEvent,
+        is3D = false,
+        loop = false,
+        master = Primary,
+        clip
+        {
+            file = media/sound/EVHalloween_EventEnded.ogg,
+            volume = 0.8,
+        }
+    }
+}

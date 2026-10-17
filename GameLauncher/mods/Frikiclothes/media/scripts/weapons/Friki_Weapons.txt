@@ -1,0 +1,105 @@
+module FrikiWeapons{
+
+    imports{
+        Base
+    }
+
+    item GoldenKatana
+    {
+        DisplayCategory = Weapon,
+        MaxRange	=	1.4,
+        WeaponSprite	=	GoldenKatanaModel,
+        MinAngle	=	0.8,
+        Type	=	Weapon,
+        MinimumSwingTime	=	3,
+        HitFloorSound	=	KatanaHit,
+		ImpactSound	=	KatanaHit,
+        DoorHitSound = KatanaHit,
+		HitSound	=	KatanaHit,
+		SwingSound = KatanaSwing,
+        KnockBackOnNoDeath = TRUE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	LongBlade,
+        Weight	=	2,
+        ConditionLowerChanceOneIn	=	75,
+        PushBackMod	=	0.5,
+        SubCategory	=	Swinging,
+        ConditionMax	=	100,
+        MaxHitCount	=	3,
+        DoorDamage	=	8,
+        SwingAnim	=	Bat,
+        DisplayName	=	Katana de oro,
+        MinRange	=	0.61,
+        SwingTime	=	3,
+        HitAngleMod	=	-30,
+        KnockdownMod	=	0,
+        Icon	=	GoldenKatanaIcon,
+        RunAnim	=	Run_Weapon2,
+        BreakSound  =   KatanaBreak,
+        TreeDamage  =   1,
+        CriticalChance	=	35,
+        CritDmgMultiplier = 10,
+        MinDamage	=	8,
+        MaxDamage	=	8,
+        BaseSpeed = 1,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        TwoHandWeapon = TRUE,
+        WeaponLength = 0.8,
+        AttachmentType = BigBlade,
+        Tooltip = Tooltip_katana,
+    }
+
+	item KatanaFragment1
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Fragmento de Katana #1,
+    		Icon = FragmentKatana1Icon1,
+			Tooltip = Tooltip_Fragment,
+	}
+
+	item KatanaFragment2
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Fragmento de Katana #2,
+    		Icon = FragmentKatana1Icon2,
+			Tooltip = Tooltip_Fragment,
+	}
+
+	item KatanaFragment3
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Fragmento de Katana #3,
+    		Icon = FragmentKatana1Icon3,
+			Tooltip = Tooltip_Fragment,
+	}
+
+	item KatanaFragment4
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Fragmento de Katana #4,
+    		Icon = FragmentKatana1Icon4,
+			Tooltip = Tooltip_Fragment,
+	}
+
+	item KatanaFragment5
+	{
+    		DisplayCategory = Junk,
+    		Weight = 0.1,
+    		Type = Normal,
+    		DisplayName = Fragmento de Katana #5,
+    		Icon = FragmentKatana1Icon5,
+			Tooltip = Tooltip_Fragment,
+	}
+
+
+
+}
