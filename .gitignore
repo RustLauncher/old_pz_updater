@@ -3962,44 +3962,6 @@
 !GameLauncher/mods/Containers In Inventory (Extra)/42/media/lua/
 !GameLauncher/mods/Containers In Inventory (Extra)/42/media/lua/shared/
 !GameLauncher/mods/Containers In Inventory (Extra)/42/media/lua/shared/containers_in_inventory_extra.lua
-!GameLauncher/mods/Offline Survivor/
-!GameLauncher/mods/Offline Survivor/mod.info
-!GameLauncher/mods/Offline Survivor/README.md
-!GameLauncher/mods/Offline Survivor/42.0/
-!GameLauncher/mods/Offline Survivor/42.0/mod.info
-!GameLauncher/mods/Offline Survivor/42.0/media/
-!GameLauncher/mods/Offline Survivor/42.0/media/sandbox-options.txt
-!GameLauncher/mods/Offline Survivor/42.0/media/actiongroups/
-!GameLauncher/mods/Offline Survivor/42.0/media/actiongroups/.keep
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/OfflineSurvivorV2/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/OfflineSurvivorV2/OS_AdminUI.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/OfflineSurvivorV2/OS_BodyProtection.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/OfflineSurvivorV2/OS_Client.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/client/OfflineSurvivorV2/OS_LootUI.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/server/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/server/OfflineSurvivorV2/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/server/OfflineSurvivorV2/OS_AdminCleanup.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/server/OfflineSurvivorV2/OS_Server.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/OfflineSurvivorV2/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/OfflineSurvivorV2/OS_BodyLifecycle.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/OfflineSurvivorV2/OS_Constants.lua
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/EN/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/EN/Sandbox.json
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/EN/UI.json
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/ES/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/ES/Sandbox.json
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/ES/UI.json
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/PTBR/
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/PTBR/Sandbox.json
-!GameLauncher/mods/Offline Survivor/42.0/media/lua/shared/Translate/PTBR/UI.json
-!GameLauncher/mods/Offline Survivor/common/
-!GameLauncher/mods/Offline Survivor/common/media/
-!GameLauncher/mods/Offline Survivor/common/media/AnimSets/
-!GameLauncher/mods/Offline Survivor/common/media/AnimSets/.keep
 !GameLauncher/mods/Offline Survivor Silent Death/
 !GameLauncher/mods/Offline Survivor Silent Death/mod.info
 !GameLauncher/mods/Offline Survivor Silent Death/README.md
