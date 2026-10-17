@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Dr Pepper 冷蔵庫",
-  "IGUI_DrPepperFridge_WornName": "古びたDr Pepper 冷蔵庫",
-  "IGUI_DrPepperFridge_Fridge": "Dr Pepper 冷蔵庫",
-  "IGUI_DrPepperFridge_Freezer": "Dr Pepper 冷凍庫",
-  "IGUI_DrPepperFridge_WornFridge": "古びたDr Pepper 冷蔵庫",
-  "IGUI_DrPepperFridge_WornFreezer": "古びたDr Pepper 冷凍庫",
-  "IGUI_DrPepperFridge_StockHint": "この外観に切り替わる使用容量の割合です。収納容量は変わりません。しきい値は自動で昇順に並びます。"
-}

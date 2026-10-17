@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Dr Pepper Kühlschrank",
-  "IGUI_DrPepperFridge_WornName": "Abgenutzter Dr Pepper Kühlschrank",
-  "IGUI_DrPepperFridge_Fridge": "Dr Pepper Kühlschrank",
-  "IGUI_DrPepperFridge_Freezer": "Dr Pepper Gefrierfach",
-  "IGUI_DrPepperFridge_WornFridge": "Abgenutzter Dr Pepper Kühlschrank",
-  "IGUI_DrPepperFridge_WornFreezer": "Abgenutztes Dr Pepper Gefrierfach",
-  "IGUI_DrPepperFridge_StockHint": "Anteil der belegten Kapazität, ab dem diese Darstellung beginnt. Ändert die Kapazität nicht. Die Schwellen werden automatisch sortiert."
-}

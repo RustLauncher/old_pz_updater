@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Lodówka Dr Pepper",
-  "IGUI_DrPepperFridge_WornName": "Zużyta lodówka Dr Pepper",
-  "IGUI_DrPepperFridge_Fridge": "Lodówka Dr Pepper",
-  "IGUI_DrPepperFridge_Freezer": "Zamrażarka Dr Pepper",
-  "IGUI_DrPepperFridge_WornFridge": "Zużyta lodówka Dr Pepper",
-  "IGUI_DrPepperFridge_WornFreezer": "Zużyta zamrażarka Dr Pepper",
-  "IGUI_DrPepperFridge_StockHint": "Procent zajętej pojemności, od którego zaczyna się ten wygląd. Nie zmienia pojemności. Progi są automatycznie sortowane."
-}

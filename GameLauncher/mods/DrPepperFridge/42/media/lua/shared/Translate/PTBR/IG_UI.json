@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Geladeira Dr Pepper",
-  "IGUI_DrPepperFridge_WornName": "Geladeira Dr Pepper usada",
-  "IGUI_DrPepperFridge_Fridge": "Geladeira Dr Pepper",
-  "IGUI_DrPepperFridge_Freezer": "Freezer Dr Pepper",
-  "IGUI_DrPepperFridge_WornFridge": "Geladeira Dr Pepper usada",
-  "IGUI_DrPepperFridge_WornFreezer": "Freezer Dr Pepper usado",
-  "IGUI_DrPepperFridge_StockHint": "Porcentagem da capacidade ocupada que inicia este estágio visual. Não altera a capacidade de armazenamento. Os limites são ordenados automaticamente."
-}

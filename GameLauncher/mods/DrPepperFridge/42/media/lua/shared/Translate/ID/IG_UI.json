@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Kulkas Dr Pepper",
-  "IGUI_DrPepperFridge_WornName": "Kulkas Dr Pepper usang",
-  "IGUI_DrPepperFridge_Fridge": "Kulkas Dr Pepper",
-  "IGUI_DrPepperFridge_Freezer": "Freezer Dr Pepper",
-  "IGUI_DrPepperFridge_WornFridge": "Kulkas Dr Pepper usang",
-  "IGUI_DrPepperFridge_WornFreezer": "Freezer Dr Pepper usang",
-  "IGUI_DrPepperFridge_StockHint": "Persentase kapasitas terpakai untuk memulai tahap tampilan ini. Tidak mengubah kapasitas. Ambang diurutkan otomatis."
-}

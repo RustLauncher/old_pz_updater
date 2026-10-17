@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Dr Pepper jääkaappi",
-  "IGUI_DrPepperFridge_WornName": "Kulunut Dr Pepper jääkaappi",
-  "IGUI_DrPepperFridge_Fridge": "Dr Pepper jääkaappi",
-  "IGUI_DrPepperFridge_Freezer": "Dr Pepper pakastin",
-  "IGUI_DrPepperFridge_WornFridge": "Kulunut Dr Pepper jääkaappi",
-  "IGUI_DrPepperFridge_WornFreezer": "Kulunut Dr Pepper pakastin",
-  "IGUI_DrPepperFridge_StockHint": "Käytetyn kapasiteetin prosenttiosuus, josta tämä ulkoasu alkaa. Ei muuta kapasiteettia. Rajat järjestetään automaattisesti."
-}

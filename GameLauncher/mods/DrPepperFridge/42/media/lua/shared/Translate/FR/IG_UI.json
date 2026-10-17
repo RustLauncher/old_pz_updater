@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Frigo Dr Pepper",
-  "IGUI_DrPepperFridge_WornName": "Frigo Dr Pepper usé",
-  "IGUI_DrPepperFridge_Fridge": "Frigo Dr Pepper",
-  "IGUI_DrPepperFridge_Freezer": "Congélateur Dr Pepper",
-  "IGUI_DrPepperFridge_WornFridge": "Frigo Dr Pepper usé",
-  "IGUI_DrPepperFridge_WornFreezer": "Congélateur Dr Pepper usé",
-  "IGUI_DrPepperFridge_StockHint": "Pourcentage de capacité occupée qui déclenche cet état visuel. Ne change pas la capacité. Les seuils sont triés automatiquement."
-}

@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Lednice Dr Pepper",
-  "IGUI_DrPepperFridge_WornName": "Opotřebená lednice Dr Pepper",
-  "IGUI_DrPepperFridge_Fridge": "Lednice Dr Pepper",
-  "IGUI_DrPepperFridge_Freezer": "Mrazák Dr Pepper",
-  "IGUI_DrPepperFridge_WornFridge": "Opotřebená lednice Dr Pepper",
-  "IGUI_DrPepperFridge_WornFreezer": "Opotřebený mrazák Dr Pepper",
-  "IGUI_DrPepperFridge_StockHint": "Procento obsazené kapacity, od kterého začíná tento vzhled. Nemění kapacitu. Prahy se automaticky seřadí."
-}

@@ -1,1 +1,0 @@
-VINI Furniture Recovery: enable before disabling original VINI fridge/freezer mods. Keep enabled while unseen chunks or stored furniture still reference them, and for as long as Dr Pepper cans, custom fluids, poster items or wall-poster aliases remain. Visiting an area does not convert all these references. See SAFE-REMOVAL-GUIDE.md. Back up saves before changing mods.

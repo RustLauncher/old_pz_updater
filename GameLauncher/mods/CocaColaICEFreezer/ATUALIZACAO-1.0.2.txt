@@ -1,3 +1,0 @@
-1.0.2: corrigido o som do motor ao religar um freezer ICE carregado desligado com Nick's Turn Off Fridges. Mantém o som original, respeita falta de energia e evita duplicação. Correção nas duas orientações e em ambas as metades. Reinicie o jogo após atualizar. Mod ID preservado.
-
-Validado com o código real do Nick e com o motor de áudio da versão 42.20.4 em testes isolados. A saída de áudio dentro de uma partida e em servidor MP não foi testada nesta revisão.

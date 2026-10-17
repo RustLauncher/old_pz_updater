@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Dr Pepper køleskab",
-  "IGUI_DrPepperFridge_WornName": "Slidt Dr Pepper køleskab",
-  "IGUI_DrPepperFridge_Fridge": "Dr Pepper køleskab",
-  "IGUI_DrPepperFridge_Freezer": "Dr Pepper fryser",
-  "IGUI_DrPepperFridge_WornFridge": "Slidt Dr Pepper køleskab",
-  "IGUI_DrPepperFridge_WornFreezer": "Slidt Dr Pepper fryser",
-  "IGUI_DrPepperFridge_StockHint": "Procent optaget kapacitet, der starter dette visuelle trin. Ændrer ikke kapaciteten. Grænserne sorteres automatisk."
-}

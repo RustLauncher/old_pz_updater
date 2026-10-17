@@ -1,9 +1,0 @@
-{
-  "IGUI_DrPepperFridge_Name": "Dr Pepper 냉장고",
-  "IGUI_DrPepperFridge_WornName": "낡은 Dr Pepper 냉장고",
-  "IGUI_DrPepperFridge_Fridge": "Dr Pepper 냉장고",
-  "IGUI_DrPepperFridge_Freezer": "Dr Pepper 냉동고",
-  "IGUI_DrPepperFridge_WornFridge": "낡은 Dr Pepper 냉장고",
-  "IGUI_DrPepperFridge_WornFreezer": "낡은 Dr Pepper 냉동고",
-  "IGUI_DrPepperFridge_StockHint": "이 외관 단계가 시작되는 사용 용량 비율입니다. 저장 용량은 바뀌지 않습니다. 기준은 자동으로 정렬됩니다."
-}
