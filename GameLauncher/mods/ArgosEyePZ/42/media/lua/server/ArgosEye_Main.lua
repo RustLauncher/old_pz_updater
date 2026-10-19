@@ -2,31 +2,28 @@ if not isServer() then return end
 
 local ArgosEye = {}
 
-ArgosEye.CHECK_INTERVAL = 60
-ArgosEye.POLL_INTERVAL = 2
+ArgosEye.KICK_ENABLED = false
 ArgosEye.AFK_THRESHOLD = 300
 ArgosEye.CHAT_FLUSH_SECONDS = 60
-ArgosEye.KICK_ENABLED = false
 
-ArgosEye.kickMessage = "You dont have AntiCheat - Download AntiCheat"
 ArgosEye.trackedPlayers = {}
 ArgosEye.lastPositions = {}
 ArgosEye.lastMoveTime = {}
 ArgosEye.afkPlayers = {}
 ArgosEye.pendingChatLogs = {}
+ArgosEye.playerIPs = {}
 ArgosEye.requestCounter = 0
-ArgosEye.baseDir = nil
+ArgosEye.serverStartTime = nil
+ArgosEye.pendingPeriodicFile = nil
 
-function ArgosEye.getBaseDir()
-    if ArgosEye.baseDir then return ArgosEye.baseDir end
-    ArgosEye.baseDir = "ArgosEye"
-    return ArgosEye.baseDir
-end
+-- ============================================================
+-- File I/O helpers (bridge communication)
+-- ============================================================
 
 function ArgosEye.writeRequest(prefix, jsonStr)
     ArgosEye.requestCounter = ArgosEye.requestCounter + 1
     local filename = prefix .. ArgosEye.requestCounter .. ".json"
-    local path = ArgosEye.getBaseDir() .. "/requests/" .. filename
+    local path = "ArgosEye/requests/" .. filename
     local writer = getFileWriter(path, true, false)
     if writer then
         writer:write(jsonStr)
@@ -37,7 +34,7 @@ end
 
 function ArgosEye.readResponse(filename)
     local respName = filename:gsub("%.json$", "_resp.json")
-    local path = ArgosEye.getBaseDir() .. "/responses/" .. respName
+    local path = "ArgosEye/responses/" .. respName
     local reader = getFileReader(path, false)
     if not reader then return nil end
 
@@ -60,6 +57,10 @@ function ArgosEye.readResponse(filename)
     return content
 end
 
+-- ============================================================
+-- JSON helpers
+-- ============================================================
+
 function ArgosEye.escapeJson(str)
     if not str then return "" end
     str = str:gsub('\\', '\\\\')
@@ -70,21 +71,98 @@ function ArgosEye.escapeJson(str)
     return str
 end
 
+-- ============================================================
+-- Player IP from connection logs
+-- ============================================================
+
+function ArgosEye.parsePlayerIPs()
+    local reader = getFileReader("ArgosEye/player_ips.txt", false)
+    if not reader then return end
+
+    local line = reader:readLine()
+    while line do
+        local steamId, ip = line:match("^(%d+)=([%d%.]+)$")
+        if steamId and ip then
+            ArgosEye.playerIPs[steamId] = ip
+        end
+        line = reader:readLine()
+    end
+    reader:close()
+end
+
+-- ============================================================
+-- PlayerData JSON (matches Rust plugin exactly)
+-- Fields: playerIp, userId, playerName, IsConnected, IsAfk
+-- ============================================================
+
 function ArgosEye.buildPlayerJson(player, isConnected)
-    local userId = tostring(player:getSteamID())
-    local name = ArgosEye.escapeJson(player:getUsername())
-    local isAfk = ArgosEye.afkPlayers[userId] or false
+    if not player then return nil end
+
+    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    if not ok or not steamId then return nil end
+
+    local ok2, name = pcall(function() return player:getUsername() end)
+    if not ok2 then name = "unknown" end
+    name = ArgosEye.escapeJson(name or "unknown")
+
+    local ip = ArgosEye.playerIPs[steamId] or "0.0.0.0"
+    local isAfk = ArgosEye.afkPlayers[steamId] or false
 
     return string.format(
-        '{"userId":"%s","playerName":"%s","playerIp":"0.0.0.0","IsConnected":%s,"IsAfk":%s}',
-        userId, name,
+        '{"playerIp":"%s","userId":"%s","playerName":"%s","IsConnected":%s,"IsAfk":%s}',
+        ip, steamId, name,
         isConnected and "true" or "false",
         isAfk and "true" or "false"
     )
 end
 
+-- ============================================================
+-- ServerData JSON (matches Rust plugin exactly)
+-- Fields: hostname, banner, version, description, max_players,
+--         url, port, query_port, server_level, server_seed,
+--         server_worldsize, server_fps, used_memory, uptime,
+--         network_in, network_out
+-- ============================================================
+
+function ArgosEye.formatUptime()
+    if not ArgosEye.serverStartTime then return "0m 0s" end
+    local elapsed = math.floor((getTimestampMs() - ArgosEye.serverStartTime) / 1000)
+    local days = math.floor(elapsed / 86400)
+    local hours = math.floor((elapsed % 86400) / 3600)
+    local mins = math.floor((elapsed % 3600) / 60)
+    local secs = elapsed % 60
+    if days >= 1 then return string.format("%dd %dh", days, hours) end
+    if hours >= 1 then return string.format("%dh %dm", hours, mins) end
+    return string.format("%dm %ds", mins, secs)
+end
+
+function ArgosEye.sendServerInfo()
+    local opts = getServerOptions()
+    local hostname = ArgosEye.escapeJson(opts and opts:getOption("PublicName") or "PZ Server")
+    local description = ArgosEye.escapeJson(opts and opts:getOption("ServerWelcomeMessage") or "")
+    local maxPlayers = opts and opts:getInteger("MaxPlayers") or 16
+    local port = opts and opts:getInteger("DefaultPort") or 16261
+
+    local json = string.format(
+        '{"hostname":"%s","banner":"","version":"PZ Build 42","description":"%s","max_players":%d,"url":"","port":%d,"query_port":%d,"server_level":"","server_seed":0,"server_worldsize":0,"server_fps":0,"used_memory":0,"uptime":"%s","network_in":"N/A","network_out":"N/A"}',
+        hostname, description, maxPlayers, port, port + 1,
+        ArgosEye.formatUptime()
+    )
+
+    ArgosEye.writeRequest("server_info_", json)
+end
+
+-- ============================================================
+-- Player connection / disconnection
+-- Matches Rust: OnUserApprove / OnPlayerConnected / OnPlayerDisconnected
+-- Sends to: /internal_player_state (array of PlayerData)
+-- ============================================================
+
 function ArgosEye.onPlayerConnect(player)
     if not player then return end
+
+    ArgosEye.parsePlayerIPs()
+
     local steamId = tostring(player:getSteamID())
     ArgosEye.trackedPlayers[steamId] = {
         player = player,
@@ -93,27 +171,37 @@ function ArgosEye.onPlayerConnect(player)
         connectTime = getTimestampMs()
     }
 
-    local json = "[" .. ArgosEye.buildPlayerJson(player, true) .. "]"
+    local pjson = ArgosEye.buildPlayerJson(player, true)
+    if not pjson then return end
+
+    local json = "[" .. pjson .. "]"
     local filename = ArgosEye.writeRequest("player_check_", json)
     ArgosEye.trackedPlayers[steamId].pendingFile = filename
 
-    print("[ArgosEye] Player connecting: " .. player:getUsername() .. " (" .. steamId .. ")")
+    print("[ArgosEye] Player connecting: " .. (player:getUsername() or steamId) .. " (" .. steamId .. ") IP: " .. (ArgosEye.playerIPs[steamId] or "unknown"))
 end
 
 function ArgosEye.onPlayerDisconnect(player)
     if not player then return end
     local steamId = tostring(player:getSteamID())
 
-    local json = "[" .. ArgosEye.buildPlayerJson(player, false) .. "]"
-    ArgosEye.writeRequest("player_check_", json)
+    local pjson = ArgosEye.buildPlayerJson(player, false)
+    if pjson then
+        ArgosEye.writeRequest("player_check_", "[" .. pjson .. "]")
+    end
 
     ArgosEye.trackedPlayers[steamId] = nil
     ArgosEye.lastPositions[steamId] = nil
     ArgosEye.lastMoveTime[steamId] = nil
     ArgosEye.afkPlayers[steamId] = nil
 
-    print("[ArgosEye] Player disconnected: " .. player:getUsername())
+    print("[ArgosEye] Player disconnected: " .. (player:getUsername() or steamId))
 end
+
+-- ============================================================
+-- Response polling
+-- Matches Rust: AntiCheatResponse { ip, valid, hban, hbanMessage, userId }
+-- ============================================================
 
 function ArgosEye.pollResponses()
     for steamId, data in pairs(ArgosEye.trackedPlayers) do
@@ -149,6 +237,11 @@ function ArgosEye.pollResponses()
     end
 end
 
+-- ============================================================
+-- Periodic check (matches Rust: VerifyAntiCheatCheck)
+-- Sends to: /internal_players_check (array of PlayerData)
+-- ============================================================
+
 function ArgosEye.periodicCheck()
     local players = getOnlinePlayers()
     if not players or players:size() == 0 then return end
@@ -157,7 +250,10 @@ function ArgosEye.periodicCheck()
     for i = 0, players:size() - 1 do
         local player = players:get(i)
         if player then
-            table.insert(parts, ArgosEye.buildPlayerJson(player, true))
+            local pjson = ArgosEye.buildPlayerJson(player, true)
+            if pjson then
+                table.insert(parts, pjson)
+            end
         end
     end
 
@@ -165,7 +261,6 @@ function ArgosEye.periodicCheck()
 
     local json = "[" .. table.concat(parts, ",") .. "]"
     local filename = ArgosEye.writeRequest("players_check_", json)
-
     ArgosEye.pendingPeriodicFile = filename
 end
 
@@ -184,7 +279,9 @@ function ArgosEye.pollPeriodicResponse()
     for entry in resp:gmatch('{[^{}]+}') do
         local valid = entry:find('"valid"%s*:%s*true')
         local hban = entry:find('"hban"%s*:%s*true')
-        local userId = entry:match('"userId"%s*:%s*(%d+)')
+        local oddsUserId = entry:match('"userId"%s*:%s*(%d+)')
+        local strUserId = entry:match('"userId"%s*:%s*"(%d+)"')
+        local userId = oddsUserId or strUserId
 
         if userId then
             userId = tostring(userId)
@@ -196,7 +293,8 @@ function ArgosEye.pollPeriodicResponse()
                         data.player:disconnect()
                     end
                 elseif hban then
-                    print("[ArgosEye] Periodic: HBAN detected " .. userId)
+                    local reason = entry:match('"hbanMessage"%s*:%s*"([^"]*)"') or "Banned"
+                    print("[ArgosEye] Periodic: HBAN " .. userId .. ": " .. reason)
                     if ArgosEye.KICK_ENABLED then
                         data.player:disconnect()
                     end
@@ -206,19 +304,9 @@ function ArgosEye.pollPeriodicResponse()
     end
 end
 
-function ArgosEye.sendServerInfo()
-    local hostname = ArgosEye.escapeJson(getServerOptions():getOption("PublicName") or "PZ Server")
-    local maxPlayers = getServerOptions():getInteger("MaxPlayers") or 16
-    local players = getOnlinePlayers()
-    local playerCount = players and players:size() or 0
-
-    local json = string.format(
-        '{"hostname":"%s","version":"PZ 42","max_players":%d,"current_players":%d}',
-        hostname, maxPlayers, playerCount
-    )
-
-    ArgosEye.writeRequest("server_info_", json)
-end
+-- ============================================================
+-- AFK detection (matches Rust: CheckAfkPlayers / DoNotChangeMe = 300f)
+-- ============================================================
 
 function ArgosEye.checkAfk()
     local players = getOnlinePlayers()
@@ -228,26 +316,27 @@ function ArgosEye.checkAfk()
     for i = 0, players:size() - 1 do
         local player = players:get(i)
         if player and player:isAlive() then
-            local steamId = tostring(player:getSteamID())
-            local x = player:getX()
-            local y = player:getY()
-            local z = player:getZ()
+            local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+            if ok and steamId then
+                local x = player:getX()
+                local y = player:getY()
 
-            local last = ArgosEye.lastPositions[steamId]
-            if not last then
-                ArgosEye.lastPositions[steamId] = {x = x, y = y, z = z}
-                ArgosEye.lastMoveTime[steamId] = now
-            else
-                local dx = math.abs(x - last.x)
-                local dy = math.abs(y - last.y)
-                if dx > 0.1 or dy > 0.1 then
-                    ArgosEye.lastPositions[steamId] = {x = x, y = y, z = z}
+                local last = ArgosEye.lastPositions[steamId]
+                if not last then
+                    ArgosEye.lastPositions[steamId] = {x = x, y = y}
                     ArgosEye.lastMoveTime[steamId] = now
-                    ArgosEye.afkPlayers[steamId] = nil
                 else
-                    local elapsed = (now - (ArgosEye.lastMoveTime[steamId] or now)) / 1000
-                    if elapsed >= ArgosEye.AFK_THRESHOLD then
-                        ArgosEye.afkPlayers[steamId] = true
+                    local dx = math.abs(x - last.x)
+                    local dy = math.abs(y - last.y)
+                    if dx > 0.1 or dy > 0.1 then
+                        ArgosEye.lastPositions[steamId] = {x = x, y = y}
+                        ArgosEye.lastMoveTime[steamId] = now
+                        ArgosEye.afkPlayers[steamId] = nil
+                    else
+                        local elapsed = (now - (ArgosEye.lastMoveTime[steamId] or now)) / 1000
+                        if elapsed >= ArgosEye.AFK_THRESHOLD then
+                            ArgosEye.afkPlayers[steamId] = true
+                        end
                     end
                 end
             end
@@ -255,20 +344,36 @@ function ArgosEye.checkAfk()
     end
 end
 
+-- ============================================================
+-- Player death (matches Rust: OnPlayerDeath)
+-- Sends to: /internal_server_death
+-- ============================================================
+
 function ArgosEye.onPlayerDeath(player)
     if not player then return end
-    local steamId = tostring(player:getSteamID())
+    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    if not ok then return end
+
     local json = string.format(
-        '{"timestamp":%d,"victimId":"%s"}',
+        '{"timestamp":%d,"victimId":"%s","attackerId":"N/A","attackerHealth":"0","victimHealth":"0","weapon":"Unknown","hitBone":"Body","distance":0}',
         math.floor(getTimestampMs() / 1000), steamId
     )
     ArgosEye.writeRequest("player_death_", json)
 end
 
+-- ============================================================
+-- Chat logging (matches Rust: OnPlayerChat / OnUserCommand)
+-- Sends to: /internal_server_chat_logs
+-- ============================================================
+
 function ArgosEye.queueChatLog(player, message, msgType, channel, isCommand)
     if not player or not message or message == "" then return end
-    local steamId = tostring(player:getSteamID())
-    local name = ArgosEye.escapeJson(player:getUsername())
+    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    if not ok then return end
+    local ok2, name = pcall(function() return player:getUsername() end)
+    if not ok2 then name = "unknown" end
+
+    name = ArgosEye.escapeJson(name or "unknown")
     local msg = ArgosEye.escapeJson(message)
     if #msg > 600 then msg = msg:sub(1, 600) end
 
@@ -291,10 +396,34 @@ function ArgosEye.flushChatLogs()
     ArgosEye.writeRequest("chat_logs_", json)
 end
 
+-- ============================================================
+-- Cleanup (matches Rust: Unload / OnServerShutdown)
+-- ============================================================
+
+function ArgosEye.cleanup()
+    local players = getOnlinePlayers()
+    if players then
+        for i = 0, players:size() - 1 do
+            local player = players:get(i)
+            if player then
+                local pjson = ArgosEye.buildPlayerJson(player, false)
+                if pjson then
+                    ArgosEye.writeRequest("player_check_", "[" .. pjson .. "]")
+                end
+            end
+        end
+    end
+    ArgosEye.flushChatLogs()
+end
+
+-- ============================================================
+-- Event hooks
+-- ============================================================
+
 local tickCounter = 0
 local function onTick()
     tickCounter = tickCounter + 1
-    if tickCounter % (ArgosEye.POLL_INTERVAL * 30) == 0 then
+    if tickCounter % 60 == 0 then
         ArgosEye.pollResponses()
         ArgosEye.pollPeriodicResponse()
     end
@@ -308,7 +437,10 @@ local function onEveryMinute()
 end
 
 local function onServerStarted()
-    print("[ArgosEye] Server-side AntiCheat mod loaded!")
+    ArgosEye.serverStartTime = getTimestampMs()
+    ArgosEye.parsePlayerIPs()
+
+    print("[ArgosEye] Server-side AntiCheat mod loaded! (KICK_ENABLED=" .. tostring(ArgosEye.KICK_ENABLED) .. ")")
     print("[ArgosEye] Make sure ArgosEyeBridge is running.")
 
     ArgosEye.sendServerInfo()
@@ -332,3 +464,7 @@ end
 Events.OnServerStarted.Add(onServerStarted)
 Events.OnCreatePlayer.Add(onConnected)
 Events.OnPlayerDeath.Add(onDeath)
+
+if Events.OnPlayerDisconnect then
+    Events.OnPlayerDisconnect.Add(onDisconnected)
+end
