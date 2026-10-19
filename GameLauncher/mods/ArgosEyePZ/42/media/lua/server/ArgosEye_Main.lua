@@ -71,21 +71,13 @@ function ArgosEye.escapeJson(str)
 end
 
 function ArgosEye.buildPlayerJson(player, isConnected)
-    local ip = "0.0.0.0"
-    if player:getNetworkInterface() then
-        local rawIp = tostring(player:getNetworkInterface():getRemoteAddress())
-        if rawIp then
-            ip = rawIp:match("([%d%.]+)") or "0.0.0.0"
-        end
-    end
-
     local userId = tostring(player:getSteamID())
     local name = ArgosEye.escapeJson(player:getUsername())
     local isAfk = ArgosEye.afkPlayers[userId] or false
 
     return string.format(
-        '{"userId":"%s","playerName":"%s","playerIp":"%s","IsConnected":%s,"IsAfk":%s}',
-        userId, name, ip,
+        '{"userId":"%s","playerName":"%s","playerIp":"0.0.0.0","IsConnected":%s,"IsAfk":%s}',
+        userId, name,
         isConnected and "true" or "false",
         isAfk and "true" or "false"
     )
