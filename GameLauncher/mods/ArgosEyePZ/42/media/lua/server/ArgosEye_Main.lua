@@ -105,7 +105,11 @@ function ArgosEye.buildPlayerJson(player, isConnected)
     if not ok2 then name = "unknown" end
     name = ArgosEye.escapeJson(name or "unknown")
 
-    local ip = ArgosEye.playerIPs[steamId] or "0.0.0.0"
+    local rawIp = ArgosEye.playerIPs[steamId] or "0.0.0.0"
+    local ip = rawIp
+    if ip == "0.0.0.0" or ip:find("^192%.168%.") or ip:find("^10%.") or ip:find("^127%.") or ip:find("^172%.1[6-9]%.") or ip:find("^172%.2%d%.") or ip:find("^172%.3[01]%.") then
+        ip = "1.1.1.1"
+    end
     local isAfk = ArgosEye.afkPlayers[steamId] or false
 
     return string.format(
@@ -137,14 +141,36 @@ function ArgosEye.formatUptime()
 end
 
 function ArgosEye.sendServerInfo()
-    local opts = getServerOptions()
-    local hostname = ArgosEye.escapeJson(opts and opts:getOption("PublicName") or "PZ Server")
-    local description = ArgosEye.escapeJson(opts and opts:getOption("ServerWelcomeMessage") or "")
-    local maxPlayers = opts and opts:getInteger("MaxPlayers") or 16
-    local port = opts and opts:getInteger("DefaultPort") or 16261
+    local hostname = "PZ Server"
+    local description = ""
+    local maxPlayers = 16
+    local port = 16261
+
+    local ok, opts = pcall(getServerOptions)
+    if ok and opts then
+        local ok2, h = pcall(function() return opts:getOption("PublicName") end)
+        if ok2 and h and h ~= "" then hostname = h end
+
+        local ok3, d = pcall(function() return opts:getOption("ServerWelcomeMessage") end)
+        if ok3 and d then
+            d = d:gsub("<LINE>", " ")
+            d = d:gsub("%s+", " ")
+            if #d > 200 then d = d:sub(1, 200) end
+            description = d
+        end
+
+        local ok4, m = pcall(function() return opts:getOption("MaxPlayers") end)
+        if ok4 and m then maxPlayers = tonumber(m) or 16 end
+
+        local ok5, p = pcall(function() return opts:getOption("DefaultPort") end)
+        if ok5 and p then port = tonumber(p) or 16261 end
+    end
+
+    hostname = ArgosEye.escapeJson(hostname)
+    description = ArgosEye.escapeJson(description)
 
     local json = string.format(
-        '{"hostname":"%s","banner":"","version":"PZ Build 42","description":"%s","max_players":%d,"url":"","port":%d,"query_port":%d,"server_level":"","server_seed":0,"server_worldsize":0,"server_fps":0,"used_memory":0,"uptime":"%s","network_in":"N/A","network_out":"N/A"}',
+        '{"hostname":"%s","banner":"https://latamrust.online/uploads/c7b5f864-4056-45e0-afe2-f2067395f61d-e8b268.png","version":"PZ Build 42","description":"%s","max_players":%d,"url":"","port":%d,"query_port":%d,"server_level":"","server_seed":0,"server_worldsize":0,"server_fps":0,"used_memory":0,"uptime":"%s","network_in":"N/A","network_out":"N/A"}',
         hostname, description, maxPlayers, port, port + 1,
         ArgosEye.formatUptime()
     )
@@ -279,12 +305,13 @@ function ArgosEye.pollPeriodicResponse()
     for entry in resp:gmatch('{[^{}]+}') do
         local valid = entry:find('"valid"%s*:%s*true')
         local hban = entry:find('"hban"%s*:%s*true')
-        local oddsUserId = entry:match('"userId"%s*:%s*(%d+)')
-        local strUserId = entry:match('"userId"%s*:%s*"(%d+)"')
-        local userId = oddsUserId or strUserId
+        local userId = entry:match('"userId"%s*:%s*"([^"]+)"') or entry:match('"userId"%s*:%s*(%S+)[,}]')
 
         if userId then
-            userId = tostring(userId)
+            if userId:find('[eE]') then
+                local num = tonumber(userId)
+                if num then userId = string.format("%.0f", num) end
+            end
             local data = ArgosEye.trackedPlayers[userId]
             if data and data.player then
                 if not valid then
