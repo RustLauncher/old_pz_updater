@@ -10427,6 +10427,16 @@
                       "size":  65255400
                   },
                   {
+                      "path":  "GameLauncher/steam_appid.txt",
+                      "sha256":  "e949c123a0b46184369ad161d6cfed2433c734e3143268a23cd30cb82568f6f2",
+                      "size":  5
+                  },
+                  {
+                      "path":  "GameLauncher/steam_api64.dll",
+                      "sha256":  "e082bf5c9f881c822b1540a76b74f9d15e18019a73ebd206a559595badcb7f65",
+                      "size":  319584
+                  },
+                  {
                       "path":  "GameLauncher/mods/Vanilla Outfits Expanded/icon.png",
                       "sha256":  "a91808276ab73616549d7a9101ac411252d3e15df417fd5e963d2c55f9dea3d0",
                       "size":  6965
