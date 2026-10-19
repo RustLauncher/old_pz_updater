@@ -2719,6 +2719,8 @@
 !GameLauncher/mods/item_condition/42/poster.png
 !PZLauncher.exe
 !GameLauncher/GameLauncher.dll
+!GameLauncher/steam_appid.txt
+!GameLauncher/steam_api64.dll
 !GameLauncher/mods/Vanilla Outfits Expanded/
 !GameLauncher/mods/Vanilla Outfits Expanded/icon.png
 !GameLauncher/mods/Vanilla Outfits Expanded/mod.info
