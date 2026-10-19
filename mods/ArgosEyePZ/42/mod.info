@@ -1,0 +1,6 @@
+name=ArgosEye AntiCheat
+id=ArgosEyePZ
+description=Server-side ArgosEye AntiCheat integration for Project Zomboid
+author=magnus_dev
+modversion=1.0.0
+versionMin=42.0.0

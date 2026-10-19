@@ -89925,6 +89925,26 @@
                       "path":  "GameLauncher/mods/HalloweenEvent/common/media/AnimSets/.keep",
                       "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                       "size":  0
+                  },
+                  {
+                      "path":  "mods/ArgosEyePZ/42/mod.info",
+                      "sha256":  "e2541bc732002703740fd786c09dd362320fa50d32a995f8c857d31d3b37fbfa",
+                      "size":  166
+                  },
+                  {
+                      "path":  "mods/ArgosEyePZ/42/media/lua/server/ArgosEye_Main.lua",
+                      "sha256":  "81f1f323242952907a961c74b26f5e0657b76a716bc3536954ab5c854fc5a1c4",
+                      "size":  11232
+                  },
+                  {
+                      "path":  "ArgosEyeBridge/ArgosEyeBridge.class",
+                      "sha256":  "31e1ed6031b990c3bb4fb10a9c2b36e443394571fe934bfcca4040aab93942ae",
+                      "size":  8945
+                  },
+                  {
+                      "path":  "ArgosEyeBridge/ArgosEyeBridge.java",
+                      "sha256":  "a991025957007601ae4431e583697fd2cf8cefc2755cc50d3fb5a20ddc919a10",
+                      "size":  7443
                   }
               ]
 }
