@@ -10418,8 +10418,8 @@
                   },
                   {
                       "path":  "PZLauncher.exe",
-                      "sha256":  "4ca32346f525db6e7d6583be676d11b832ce7224f24de19f7aee7bffd63339b9",
-                      "size":  22372352
+                      "sha256":  "7c6f778be0f33ff820d10821f69f3e5f5a8b470547fe2838dba79ddfc10f0977",
+                      "size":  22378496
                   },
                   {
                       "path":  "GameLauncher/GameLauncher.dll",
