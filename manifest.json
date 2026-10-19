@@ -10418,13 +10418,18 @@
                   },
                   {
                       "path":  "PZLauncher.exe",
-                      "sha256":  "7c6f778be0f33ff820d10821f69f3e5f5a8b470547fe2838dba79ddfc10f0977",
+                      "sha256":  "64171fff178c48065362d3be04a7470c257c146fa629bb18ac723d0cf6627e06",
                       "size":  22378496
                   },
                   {
                       "path":  "GameLauncher/GameLauncher.dll",
-                      "sha256":  "2c87338a30469b41cce4eb3be5567cd33a58e15a67ddcc3bd8b00bb3b17a5a68",
-                      "size":  65255400
+                      "sha256":  "3082d59bf81d95ae5452a68ef5a738673aaa43eaacf6a2bb46b1a3a428764c99",
+                      "size":  65256411
+                  },
+                  {
+                      "path":  "GameLauncher/EasyAntiCheat.dll",
+                      "sha256":  "15e387d3f0139346d3082746805d6235ec5132f3243e766472d68541f6dea7a1",
+                      "size":  15407400
                   },
                   {
                       "path":  "GameLauncher/steam_appid.txt",
