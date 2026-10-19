@@ -10423,8 +10423,8 @@
                   },
                   {
                       "path":  "GameLauncher/GameLauncher.dll",
-                      "sha256":  "695e9f7341d4838f00bca09b42dd53fcef3cb196c4c8fa5643d0dc48caaad70c",
-                      "size":  65255796
+                      "sha256":  "7098f22f3e2d9c820f439c8b2ab738525948ce8d7bbf7445a530dd945eed0215",
+                      "size":  65256627
                   },
                   {
                       "path":  "GameLauncher/steam_appid.txt",
