@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.74",
+    "version":  "1.0.75",
     "files":  [
                   {
                       "path":  "GameLauncher/EasyAntiCheat.dll",
@@ -89938,8 +89938,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/ArgosEyePZ/42/media/lua/server/ArgosEye_Main.lua",
-                      "sha256":  "963b5bd638fb9091881d0a5fdea345677cb06fd656afda38e1e4d6185eb07e20",
-                      "size":  19246
+                      "sha256":  "16f7e7337e0d8bbc8484942cb626ae4b4c2bd6f371995509c2378e94d89348d6",
+                      "size":  19819
                   }
               ]
 }

@@ -80,6 +80,7 @@ function ArgosEye.parsePlayerIPs()
     local reader = getFileReader("ArgosEye/player_ips.txt", false)
     if not reader then return end
 
+    local count = 0
     local line = reader:readLine()
     while line do
         local steamId, ip = line:match("^(%d+)=([%d%.]+)$")
@@ -87,22 +88,31 @@ function ArgosEye.parsePlayerIPs()
             ArgosEye.playerIPs[steamId] = ip
             local num = tonumber(steamId)
             if num then
-                ArgosEye.mangledToReal[tostring(num)] = steamId
-                ArgosEye.mangledToReal[string.format("%.0f", num)] = steamId
+                local key1 = tostring(num)
+                local key2 = string.format("%.0f", num)
+                ArgosEye.mangledToReal[key1] = steamId
+                ArgosEye.mangledToReal[key2] = steamId
+                count = count + 1
+                print("[ArgosEye] IP map: " .. steamId .. " -> keys [" .. key1 .. "] [" .. key2 .. "]")
             end
         end
         line = reader:readLine()
     end
     reader:close()
+    ArgosEye.mangledToRealCount = count
+    print("[ArgosEye] parsePlayerIPs loaded " .. count .. " entries")
 end
 
 function ArgosEye.resolveSteamId(player)
     local raw = tostring(player:getSteamID())
     if raw:match("^%d+$") then return raw end
     local formatted = string.format("%.0f", player:getSteamID())
-    return ArgosEye.mangledToReal[raw]
+    local resolved = ArgosEye.mangledToReal[raw]
         or ArgosEye.mangledToReal[formatted]
-        or formatted
+    if not resolved then
+        print("[ArgosEye] WARN resolveSteamId MISS raw=" .. raw .. " fmt=" .. formatted .. " mapSize=" .. tostring(ArgosEye.mangledToRealCount or "?"))
+    end
+    return resolved or formatted
 end
 
 ArgosEye.steamNames = {}
@@ -497,6 +507,7 @@ local function onTick()
 end
 
 local function onEveryMinute()
+    ArgosEye.parsePlayerIPs()
     ArgosEye.parseSteamNames()
     ArgosEye.periodicCheck()
     ArgosEye.sendServerInfo()
