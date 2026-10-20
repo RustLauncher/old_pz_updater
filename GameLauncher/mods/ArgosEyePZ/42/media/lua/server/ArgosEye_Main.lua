@@ -12,6 +12,7 @@ ArgosEye.lastMoveTime = {}
 ArgosEye.afkPlayers = {}
 ArgosEye.pendingChatLogs = {}
 ArgosEye.playerIPs = {}
+ArgosEye.mangledToReal = {}
 ArgosEye.requestCounter = 0
 ArgosEye.serverStartTime = nil
 ArgosEye.pendingPeriodicFile = nil
@@ -84,10 +85,24 @@ function ArgosEye.parsePlayerIPs()
         local steamId, ip = line:match("^(%d+)=([%d%.]+)$")
         if steamId and ip then
             ArgosEye.playerIPs[steamId] = ip
+            local num = tonumber(steamId)
+            if num then
+                ArgosEye.mangledToReal[tostring(num)] = steamId
+                ArgosEye.mangledToReal[string.format("%.0f", num)] = steamId
+            end
         end
         line = reader:readLine()
     end
     reader:close()
+end
+
+function ArgosEye.resolveSteamId(player)
+    local raw = tostring(player:getSteamID())
+    if raw:match("^%d+$") then return raw end
+    local formatted = string.format("%.0f", player:getSteamID())
+    return ArgosEye.mangledToReal[raw]
+        or ArgosEye.mangledToReal[formatted]
+        or formatted
 end
 
 -- ============================================================
@@ -98,7 +113,7 @@ end
 function ArgosEye.buildPlayerJson(player, isConnected)
     if not player then return nil end
 
-    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok or not steamId then return nil end
 
     local ok2, name = pcall(function() return player:getUsername() end)
@@ -189,7 +204,7 @@ function ArgosEye.onPlayerConnect(player)
 
     ArgosEye.parsePlayerIPs()
 
-    local steamId = tostring(player:getSteamID())
+    local steamId = ArgosEye.resolveSteamId(player)
     ArgosEye.trackedPlayers[steamId] = {
         player = player,
         validated = false,
@@ -209,7 +224,7 @@ end
 
 function ArgosEye.onPlayerDisconnect(player)
     if not player then return end
-    local steamId = tostring(player:getSteamID())
+    local steamId = ArgosEye.resolveSteamId(player)
 
     local pjson = ArgosEye.buildPlayerJson(player, false)
     if pjson then
@@ -308,9 +323,14 @@ function ArgosEye.pollPeriodicResponse()
         local userId = entry:match('"userId"%s*:%s*"([^"]+)"') or entry:match('"userId"%s*:%s*(%S+)[,}]')
 
         if userId then
-            if userId:find('[eE]') then
+            if userId:find('[eE]') or not userId:match("^%d+$") then
                 local num = tonumber(userId)
-                if num then userId = string.format("%.0f", num) end
+                if num then
+                    local formatted = string.format("%.0f", num)
+                    userId = ArgosEye.mangledToReal[userId]
+                        or ArgosEye.mangledToReal[formatted]
+                        or formatted
+                end
             end
             local data = ArgosEye.trackedPlayers[userId]
             if data and data.player then
@@ -343,7 +363,7 @@ function ArgosEye.checkAfk()
     for i = 0, players:size() - 1 do
         local player = players:get(i)
         if player and player:isAlive() then
-            local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+            local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
             if ok and steamId then
                 local x = player:getX()
                 local y = player:getY()
@@ -378,7 +398,7 @@ end
 
 function ArgosEye.onPlayerDeath(player)
     if not player then return end
-    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok then return end
 
     local json = string.format(
@@ -395,7 +415,7 @@ end
 
 function ArgosEye.queueChatLog(player, message, msgType, channel, isCommand)
     if not player or not message or message == "" then return end
-    local ok, steamId = pcall(function() return tostring(player:getSteamID()) end)
+    local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok then return end
     local ok2, name = pcall(function() return player:getUsername() end)
     if not ok2 then name = "unknown" end

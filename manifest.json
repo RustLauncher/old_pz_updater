@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.71",
+    "version":  "1.0.72",
     "files":  [
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
@@ -89933,8 +89933,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/ArgosEyePZ/42/media/lua/server/ArgosEye_Main.lua",
-                      "sha256":  "3471a564d89e86ee1a61288de134d107b87a2025f7bbec72be683c2446ef8856",
-                      "size":  17780
+                      "sha256":  "7383b4fb3ddd2eb821669f358ef530ffafa97b92fd11038309eb63402288a9c8",
+                      "size":  18583
                   }
               ]
 }
