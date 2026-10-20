@@ -105,6 +105,31 @@ function ArgosEye.resolveSteamId(player)
         or formatted
 end
 
+ArgosEye.steamNames = {}
+
+function ArgosEye.parseSteamNames()
+    local reader = getFileReader("ArgosEye/steam_names.txt", false)
+    if not reader then return end
+    local line = reader:readLine()
+    while line do
+        local steamId, name = line:match("^(%d+)=(.+)$")
+        if steamId and name then
+            ArgosEye.steamNames[steamId] = name
+        end
+        line = reader:readLine()
+    end
+    reader:close()
+end
+
+function ArgosEye.getSteamName(player)
+    local steamId = ArgosEye.resolveSteamId(player)
+    local cached = ArgosEye.steamNames[steamId]
+    if cached and cached ~= "" then return cached end
+    local ok, fallback = pcall(function() return player:getUsername() end)
+    if ok and fallback then return fallback end
+    return "unknown"
+end
+
 -- ============================================================
 -- PlayerData JSON (matches Rust plugin exactly)
 -- Fields: playerIp, userId, playerName, IsConnected, IsAfk
@@ -116,9 +141,7 @@ function ArgosEye.buildPlayerJson(player, isConnected)
     local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok or not steamId then return nil end
 
-    local ok2, name = pcall(function() return player:getUsername() end)
-    if not ok2 then name = "unknown" end
-    name = ArgosEye.escapeJson(name or "unknown")
+    local name = ArgosEye.escapeJson(ArgosEye.getSteamName(player))
 
     local rawIp = ArgosEye.playerIPs[steamId] or "0.0.0.0"
     local ip = rawIp
@@ -219,7 +242,7 @@ function ArgosEye.onPlayerConnect(player)
     local filename = ArgosEye.writeRequest("player_check_", json)
     ArgosEye.trackedPlayers[steamId].pendingFile = filename
 
-    print("[ArgosEye] Player connecting: " .. (player:getUsername() or steamId) .. " (" .. steamId .. ") IP: " .. (ArgosEye.playerIPs[steamId] or "unknown"))
+    print("[ArgosEye] Player connecting: " .. ArgosEye.getSteamName(player) .. " (" .. steamId .. ") IP: " .. (ArgosEye.playerIPs[steamId] or "unknown"))
 end
 
 function ArgosEye.onPlayerDisconnect(player)
@@ -236,7 +259,7 @@ function ArgosEye.onPlayerDisconnect(player)
     ArgosEye.lastMoveTime[steamId] = nil
     ArgosEye.afkPlayers[steamId] = nil
 
-    print("[ArgosEye] Player disconnected: " .. (player:getUsername() or steamId))
+    print("[ArgosEye] Player disconnected: " .. ArgosEye.getSteamName(player) .. " (" .. steamId .. ")")
 end
 
 -- ============================================================
@@ -417,10 +440,7 @@ function ArgosEye.queueChatLog(player, message, msgType, channel, isCommand)
     if not player or not message or message == "" then return end
     local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok then return end
-    local ok2, name = pcall(function() return player:getUsername() end)
-    if not ok2 then name = "unknown" end
-
-    name = ArgosEye.escapeJson(name or "unknown")
+    local name = ArgosEye.escapeJson(ArgosEye.getSteamName(player))
     local msg = ArgosEye.escapeJson(message)
     if #msg > 600 then msg = msg:sub(1, 600) end
 
@@ -477,6 +497,7 @@ local function onTick()
 end
 
 local function onEveryMinute()
+    ArgosEye.parseSteamNames()
     ArgosEye.periodicCheck()
     ArgosEye.sendServerInfo()
     ArgosEye.checkAfk()
@@ -486,6 +507,7 @@ end
 local function onServerStarted()
     ArgosEye.serverStartTime = getTimestampMs()
     ArgosEye.parsePlayerIPs()
+    ArgosEye.parseSteamNames()
 
     print("[ArgosEye] Server-side AntiCheat mod loaded! (KICK_ENABLED=" .. tostring(ArgosEye.KICK_ENABLED) .. ")")
     print("[ArgosEye] Make sure ArgosEyeBridge is running.")
