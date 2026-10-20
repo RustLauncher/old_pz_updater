@@ -1,6 +1,11 @@
 {
-    "version":  "1.0.73",
+    "version":  "1.0.74",
     "files":  [
+                  {
+                      "path":  "GameLauncher/EasyAntiCheat.dll",
+                      "sha256":  "15e387d3f0139346d3082746805d6235ec5132f3243e766472d68541f6dea7a1",
+                      "size":  15407400
+                  },
                   {
                       "path":  "GameLauncher/media/lua/client/SkipToServer.lua",
                       "sha256":  "86b9877203f233c93edb18130f9a4e309a520449d28dec01fde4da64c780bcb8",
