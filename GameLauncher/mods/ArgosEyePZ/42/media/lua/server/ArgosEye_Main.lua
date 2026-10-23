@@ -3,6 +3,7 @@ if not isServer() then return end
 local ArgosEye = {}
 
 ArgosEye.KICK_ENABLED = false
+ArgosEye.KICK_MESSAGE = "You dont have AntiCheat - DownloadAntiCheat - URL"
 ArgosEye.AFK_THRESHOLD = 300
 ArgosEye.CHAT_FLUSH_SECONDS = 60
 
@@ -16,6 +17,49 @@ ArgosEye.mangledToReal = {}
 ArgosEye.requestCounter = 0
 ArgosEye.serverStartTime = nil
 ArgosEye.pendingPeriodicFile = nil
+ArgosEye.lastAttacker = {}
+
+-- ============================================================
+-- Config file (ArgosEye/config.txt)
+-- ============================================================
+
+function ArgosEye.loadConfig()
+    local reader = getFileReader("ArgosEye/config.txt", false)
+    if not reader then
+        print("[ArgosEye] No config.txt found, creating default")
+        ArgosEye.saveDefaultConfig()
+        return
+    end
+
+    local line = reader:readLine()
+    while line do
+        local key, value = line:match("^([%w_]+)=(.+)$")
+        if key and value then
+            if key == "KICK_ENABLED" then
+                ArgosEye.KICK_ENABLED = value == "true"
+            elseif key == "KICK_MESSAGE" then
+                ArgosEye.KICK_MESSAGE = value
+            elseif key == "AFK_THRESHOLD" then
+                ArgosEye.AFK_THRESHOLD = tonumber(value) or 300
+            elseif key == "CHAT_FLUSH_SECONDS" then
+                ArgosEye.CHAT_FLUSH_SECONDS = tonumber(value) or 60
+            end
+        end
+        line = reader:readLine()
+    end
+    reader:close()
+    print("[ArgosEye] Config loaded: KICK_ENABLED=" .. tostring(ArgosEye.KICK_ENABLED) .. " AFK=" .. ArgosEye.AFK_THRESHOLD .. "s")
+end
+
+function ArgosEye.saveDefaultConfig()
+    local writer = getFileWriter("ArgosEye/config.txt", true, false)
+    if not writer then return end
+    writer:write("KICK_ENABLED=false\n")
+    writer:write("KICK_MESSAGE=You dont have AntiCheat - DownloadAntiCheat - URL\n")
+    writer:write("AFK_THRESHOLD=300\n")
+    writer:write("CHAT_FLUSH_SECONDS=60\n")
+    writer:close()
+end
 
 -- ============================================================
 -- File I/O helpers (bridge communication)
@@ -93,14 +137,12 @@ function ArgosEye.parsePlayerIPs()
                 ArgosEye.mangledToReal[key1] = steamId
                 ArgosEye.mangledToReal[key2] = steamId
                 count = count + 1
-                print("[ArgosEye] IP map: " .. steamId .. " -> keys [" .. key1 .. "] [" .. key2 .. "]")
             end
         end
         line = reader:readLine()
     end
     reader:close()
     ArgosEye.mangledToRealCount = count
-    print("[ArgosEye] parsePlayerIPs loaded " .. count .. " entries")
 end
 
 function ArgosEye.resolveSteamId(player)
@@ -110,7 +152,7 @@ function ArgosEye.resolveSteamId(player)
     local resolved = ArgosEye.mangledToReal[raw]
         or ArgosEye.mangledToReal[formatted]
     if not resolved then
-        print("[ArgosEye] WARN resolveSteamId MISS raw=" .. raw .. " fmt=" .. formatted .. " mapSize=" .. tostring(ArgosEye.mangledToRealCount or "?"))
+        print("[ArgosEye] WARN resolveSteamId MISS raw=" .. raw .. " fmt=" .. formatted)
     end
     return resolved or formatted
 end
@@ -140,9 +182,39 @@ function ArgosEye.getSteamName(player)
     return "unknown"
 end
 
+function ArgosEye.getSteamNameById(steamId)
+    local cached = ArgosEye.steamNames[steamId]
+    if cached and cached ~= "" then return cached end
+    return steamId
+end
+
+-- ============================================================
+-- Broadcast & kick (matches Rust: BroadCastBan / player.Kick)
+-- ============================================================
+
+function ArgosEye.broadcastBan(playerName, reason)
+    local message = "[ArgosEye AntiCheat] Player: " .. playerName .. " has been permanently banned. Reason: " .. reason
+    print("[ArgosEye] BAN BROADCAST: " .. message)
+
+    local players = getOnlinePlayers()
+    if not players then return end
+    for i = 0, players:size() - 1 do
+        local p = players:get(i)
+        if p then
+            pcall(function() p:Say(message) end)
+        end
+    end
+end
+
+function ArgosEye.kickPlayer(player, reason)
+    if not player then return end
+    local msg = reason or ArgosEye.KICK_MESSAGE
+    pcall(function() player:Say("[ArgosEye] " .. msg) end)
+    player:disconnect()
+end
+
 -- ============================================================
 -- PlayerData JSON (matches Rust plugin exactly)
--- Fields: playerIp, userId, playerName, IsConnected, IsAfk
 -- ============================================================
 
 function ArgosEye.buildPlayerJson(player, isConnected)
@@ -170,10 +242,6 @@ end
 
 -- ============================================================
 -- ServerData JSON (matches Rust plugin exactly)
--- Fields: hostname, banner, version, description, max_players,
---         url, port, query_port, server_level, server_seed,
---         server_worldsize, server_fps, used_memory, uptime,
---         network_in, network_out
 -- ============================================================
 
 function ArgosEye.formatUptime()
@@ -228,8 +296,6 @@ end
 
 -- ============================================================
 -- Player connection / disconnection
--- Matches Rust: OnUserApprove / OnPlayerConnected / OnPlayerDisconnected
--- Sends to: /internal_player_state (array of PlayerData)
 -- ============================================================
 
 function ArgosEye.onPlayerConnect(player)
@@ -268,13 +334,13 @@ function ArgosEye.onPlayerDisconnect(player)
     ArgosEye.lastPositions[steamId] = nil
     ArgosEye.lastMoveTime[steamId] = nil
     ArgosEye.afkPlayers[steamId] = nil
+    ArgosEye.lastAttacker[steamId] = nil
 
     print("[ArgosEye] Player disconnected: " .. ArgosEye.getSteamName(player) .. " (" .. steamId .. ")")
 end
 
 -- ============================================================
--- Response polling
--- Matches Rust: AntiCheatResponse { ip, valid, hban, hbanMessage, userId }
+-- Response polling (with broadcast ban + kick message)
 -- ============================================================
 
 function ArgosEye.pollResponses()
@@ -290,16 +356,17 @@ function ArgosEye.pollResponses()
                     if ArgosEye.KICK_ENABLED then
                         local player = data.player
                         if player and player:isAlive() then
-                            player:disconnect()
+                            ArgosEye.kickPlayer(player, ArgosEye.KICK_MESSAGE)
                         end
                     end
                 elseif resp:find('"hban"%s*:%s*true') then
                     local reason = resp:match('"hbanMessage"%s*:%s*"([^"]*)"') or "Banned by AntiCheat"
-                    print("[ArgosEye] HBAN detected " .. steamId .. ": " .. reason)
+                    local playerName = ArgosEye.getSteamNameById(steamId)
+                    ArgosEye.broadcastBan(playerName, reason)
                     if ArgosEye.KICK_ENABLED then
                         local player = data.player
                         if player and player:isAlive() then
-                            player:disconnect()
+                            ArgosEye.kickPlayer(player, reason)
                         end
                     end
                 else
@@ -312,8 +379,7 @@ function ArgosEye.pollResponses()
 end
 
 -- ============================================================
--- Periodic check (matches Rust: VerifyAntiCheatCheck)
--- Sends to: /internal_players_check (array of PlayerData)
+-- Periodic check
 -- ============================================================
 
 function ArgosEye.periodicCheck()
@@ -370,13 +436,14 @@ function ArgosEye.pollPeriodicResponse()
                 if not valid then
                     print("[ArgosEye] Periodic: " .. userId .. " has NO anticheat")
                     if ArgosEye.KICK_ENABLED then
-                        data.player:disconnect()
+                        ArgosEye.kickPlayer(data.player, ArgosEye.KICK_MESSAGE)
                     end
                 elseif hban then
                     local reason = entry:match('"hbanMessage"%s*:%s*"([^"]*)"') or "Banned"
-                    print("[ArgosEye] Periodic: HBAN " .. userId .. ": " .. reason)
+                    local playerName = ArgosEye.getSteamNameById(userId)
+                    ArgosEye.broadcastBan(playerName, reason)
                     if ArgosEye.KICK_ENABLED then
-                        data.player:disconnect()
+                        ArgosEye.kickPlayer(data.player, reason)
                     end
                 end
             end
@@ -425,25 +492,81 @@ function ArgosEye.checkAfk()
 end
 
 -- ============================================================
--- Player death (matches Rust: OnPlayerDeath)
--- Sends to: /internal_server_death
+-- PvP damage tracking (matches Rust: OnPlayerDeath with attacker)
+-- Tracks last attacker per victim via OnWeaponHitCharacter
+-- ============================================================
+
+function ArgosEye.onWeaponHit(attacker, victim, weapon, damage)
+    if not attacker or not victim then return end
+    if not instanceof(victim, "IsoPlayer") then return end
+    if not instanceof(attacker, "IsoPlayer") then return end
+
+    local okV, victimId = pcall(function() return ArgosEye.resolveSteamId(victim) end)
+    local okA, attackerId = pcall(function() return ArgosEye.resolveSteamId(attacker) end)
+    if not okV or not okA then return end
+    if victimId == attackerId then return end
+
+    local weaponName = "Unknown"
+    if weapon then
+        pcall(function() weaponName = weapon:getDisplayName() or weapon:getName() or "Unknown" end)
+    end
+
+    local dist = 0
+    pcall(function()
+        local dx = attacker:getX() - victim:getX()
+        local dy = attacker:getY() - victim:getY()
+        dist = math.sqrt(dx * dx + dy * dy)
+    end)
+
+    local attackerHealth = "0"
+    pcall(function() attackerHealth = string.format("%.0f", attacker:getHealth() * 100) end)
+
+    ArgosEye.lastAttacker[victimId] = {
+        attackerId = attackerId,
+        weapon = weaponName,
+        distance = dist,
+        attackerHealth = attackerHealth,
+        timestamp = getTimestampMs()
+    }
+end
+
+-- ============================================================
+-- Player death (matches Rust: OnPlayerDeath with full attacker data)
 -- ============================================================
 
 function ArgosEye.onPlayerDeath(player)
     if not player then return end
-    local ok, steamId = pcall(function() return ArgosEye.resolveSteamId(player) end)
+    local ok, victimId = pcall(function() return ArgosEye.resolveSteamId(player) end)
     if not ok then return end
 
+    local attackerInfo = ArgosEye.lastAttacker[victimId]
+    local attackerId = "N/A"
+    local weapon = "Unknown"
+    local distance = 0
+    local attackerHealth = "0"
+    local victimHealth = "0"
+
+    if attackerInfo then
+        local age = (getTimestampMs() - attackerInfo.timestamp) / 1000
+        if age < 30 then
+            attackerId = attackerInfo.attackerId
+            weapon = ArgosEye.escapeJson(attackerInfo.weapon)
+            distance = attackerInfo.distance
+            attackerHealth = attackerInfo.attackerHealth
+        end
+    end
+
+    ArgosEye.lastAttacker[victimId] = nil
+
     local json = string.format(
-        '{"timestamp":%d,"victimId":"%s","attackerId":"N/A","attackerHealth":"0","victimHealth":"0","weapon":"Unknown","hitBone":"Body","distance":0}',
-        math.floor(getTimestampMs() / 1000), steamId
+        '{"timestamp":%d,"victimId":"%s","attackerId":"%s","attackerHealth":"%s","victimHealth":"%s","weapon":"%s","hitBone":"Body","distance":%.1f}',
+        math.floor(getTimestampMs() / 1000), victimId, attackerId, attackerHealth, victimHealth, weapon, distance
     )
     ArgosEye.writeRequest("player_death_", json)
 end
 
 -- ============================================================
 -- Chat logging (matches Rust: OnPlayerChat / OnUserCommand)
--- Sends to: /internal_server_chat_logs
 -- ============================================================
 
 function ArgosEye.queueChatLog(player, message, msgType, channel, isCommand)
@@ -471,6 +594,59 @@ function ArgosEye.flushChatLogs()
     local json = "[" .. table.concat(ArgosEye.pendingChatLogs, ",") .. "]"
     ArgosEye.pendingChatLogs = {}
     ArgosEye.writeRequest("chat_logs_", json)
+end
+
+-- ============================================================
+-- Chat interception (PZ Build 42)
+-- Hooks into ChatServer to capture messages and commands
+-- ============================================================
+
+function ArgosEye.hookChatServer()
+    local ok, chatServer = pcall(function() return ChatServer end)
+    if not ok or not chatServer then
+        print("[ArgosEye] WARN: ChatServer not available, chat logging via bridge log parser")
+        return false
+    end
+
+    local original = chatServer.processMessageFromPlayerPacket
+    if not original then
+        print("[ArgosEye] WARN: processMessageFromPlayerPacket not found")
+        return false
+    end
+
+    chatServer.processMessageFromPlayerPacket = function(playerConnection, chatMessage)
+        pcall(function()
+            if not playerConnection or not chatMessage then return end
+
+            local player = nil
+            pcall(function() player = playerConnection:getPlayer() end)
+            if not player then return end
+            if not instanceof(player, "IsoPlayer") then return end
+
+            local text = nil
+            pcall(function() text = chatMessage:getText() end)
+            if not text or text == "" then return end
+
+            local trimmed = text:match("^%s*(.-)%s*$")
+            if not trimmed or trimmed == "" then return end
+
+            if trimmed:sub(1, 1) == "/" then
+                ArgosEye.queueChatLog(player, trimmed, "command", "command", true)
+            else
+                local channel = "general"
+                pcall(function()
+                    local chatType = chatMessage:getChatType()
+                    if chatType then channel = tostring(chatType) end
+                end)
+                ArgosEye.queueChatLog(player, trimmed, "text", channel, false)
+            end
+        end)
+
+        return original(playerConnection, chatMessage)
+    end
+
+    print("[ArgosEye] ChatServer hooked for chat logging")
+    return true
 end
 
 -- ============================================================
@@ -517,8 +693,10 @@ end
 
 local function onServerStarted()
     ArgosEye.serverStartTime = getTimestampMs()
+    ArgosEye.loadConfig()
     ArgosEye.parsePlayerIPs()
     ArgosEye.parseSteamNames()
+    ArgosEye.hookChatServer()
 
     print("[ArgosEye] Server-side AntiCheat mod loaded! (KICK_ENABLED=" .. tostring(ArgosEye.KICK_ENABLED) .. ")")
     print("[ArgosEye] Make sure ArgosEyeBridge is running.")
@@ -541,9 +719,14 @@ local function onDeath(player)
     ArgosEye.onPlayerDeath(player)
 end
 
+local function onWeaponHitCharacter(attacker, victim, weapon, damage)
+    ArgosEye.onWeaponHit(attacker, victim, weapon, damage)
+end
+
 Events.OnServerStarted.Add(onServerStarted)
 Events.OnCreatePlayer.Add(onConnected)
 Events.OnPlayerDeath.Add(onDeath)
+Events.OnWeaponHitCharacter.Add(onWeaponHitCharacter)
 
 if Events.OnPlayerDisconnect then
     Events.OnPlayerDisconnect.Add(onDisconnected)
