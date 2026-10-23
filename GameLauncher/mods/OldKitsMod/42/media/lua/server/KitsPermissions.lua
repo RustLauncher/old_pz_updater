@@ -22,11 +22,25 @@ local function getRoleLevel(roleName)
     return ROLE_LEVEL[roleName:lower()] or 10
 end
 
+function KitsPermissions.GetPlayerKey(player)
+    local steamId = player:getSteamID()
+    if steamId and steamId ~= "" and steamId ~= "0" then
+        return tostring(steamId)
+    end
+    return player:getUsername()
+end
+
+local function getPlayerKey(player)
+    return KitsPermissions.GetPlayerKey(player)
+end
+
+-- Format: steamId|role|expires|displayName
 local function saveRolesToFile()
     local writer = getFileWriter(ROLES_FILE, true, false)
-    for name, entry in pairs(rolesData) do
+    for key, entry in pairs(rolesData) do
         if type(entry) == "table" and entry.role and entry.expires then
-            writer:writeln(name .. "|" .. entry.role .. "|" .. tostring(entry.expires))
+            local displayName = entry.displayName or key
+            writer:writeln(key .. "|" .. entry.role .. "|" .. tostring(entry.expires) .. "|" .. displayName)
         end
     end
     writer:close()
@@ -38,12 +52,15 @@ local function loadRolesFromFile()
     if not reader then return end
     local line = reader:readLine()
     while line do
-        local name, role, expires = line:match("^(.-)|(.-)|(.+)$")
-        if name and role and expires then
-            rolesData[name] = {
+        local key, role, expires, displayName = line:match("^(.-)|(.-)|([^|]+)|?(.*)$")
+        if key and role and expires then
+            if not displayName or displayName == "" then
+                displayName = key
+            end
+            rolesData[key] = {
                 role = role:lower(),
                 expires = tonumber(expires),
-                playerName = name,
+                displayName = displayName,
             }
         end
         line = reader:readLine()
@@ -51,26 +68,67 @@ local function loadRolesFromFile()
     reader:close()
 end
 
-function KitsPermissions.SetTempRole(targetName, roleName, days)
-    rolesData[targetName] = {
+local function findKeyByPlayerName(name)
+    local lowerName = name:lower()
+    for key, entry in pairs(rolesData) do
+        if type(entry) == "table" and entry.displayName and entry.displayName:lower() == lowerName then
+            return key
+        end
+    end
+    return nil
+end
+
+function KitsPermissions.SetTempRole(player, roleName, days)
+    local key = getPlayerKey(player)
+    local displayName = player:getUsername()
+    rolesData[key] = {
         role = roleName:lower(),
         expires = os.time() + (days * 86400),
-        playerName = targetName,
+        displayName = displayName,
     }
     saveRolesToFile()
 end
 
+function KitsPermissions.SetTempRoleByName(targetName, roleName, days)
+    local target = KitsPermissions.FindPlayerByName(targetName)
+    if not target then return false end
+    KitsPermissions.SetTempRole(target, roleName, days)
+    return true
+end
+
 function KitsPermissions.RemoveTempRole(targetName)
-    if rolesData[targetName] then
-        rolesData[targetName] = nil
+    local target = KitsPermissions.FindPlayerByName(targetName)
+    if target then
+        local key = getPlayerKey(target)
+        if rolesData[key] then
+            rolesData[key] = nil
+            saveRolesToFile()
+            return true
+        end
+    end
+    local key = findKeyByPlayerName(targetName)
+    if key and rolesData[key] then
+        rolesData[key] = nil
         saveRolesToFile()
         return true
     end
     return false
 end
 
-function KitsPermissions.GetTempRoleInfo(username)
-    local entry = rolesData[username]
+function KitsPermissions.GetTempRoleInfo(player)
+    local key
+    if type(player) == "string" then
+        local p = KitsPermissions.FindPlayerByName(player)
+        if p then
+            key = getPlayerKey(p)
+        else
+            key = findKeyByPlayerName(player)
+        end
+    else
+        key = getPlayerKey(player)
+    end
+    if not key then return nil end
+    local entry = rolesData[key]
     if not entry or type(entry) ~= "table" then return nil end
     local expires = tonumber(entry.expires)
     if not expires or not entry.role then return nil end
@@ -85,16 +143,16 @@ function KitsPermissions.GetTempRoleInfo(username)
 end
 
 function KitsPermissions.GetEffectiveRole(player)
-    local username = player:getUsername()
     if KitsPermissions.IsAdmin(player) then
         return "admin"
     end
-    local info = KitsPermissions.GetTempRoleInfo(username)
-    if info then
-        if info.expired then
-            return "user"
+    local key = getPlayerKey(player)
+    local entry = rolesData[key]
+    if entry and type(entry) == "table" and entry.role then
+        local expires = tonumber(entry.expires)
+        if expires and expires > os.time() then
+            return entry.role
         end
-        return info.role
     end
     return "user"
 end
@@ -104,15 +162,10 @@ function KitsPermissions.GetPlayerLevel(player)
 end
 
 function KitsPermissions.IsAdmin(player)
-    local role = player:getRole()
-    if role then
-        local name = role:getName()
-        if name then
-            local lower = name:lower()
-            return lower == "admin" or lower == "moderator"
-        end
-    end
-    return false
+    local level = player:getAccessLevel()
+    if not level or level == "" then return false end
+    local lower = level:lower()
+    return lower == "admin" or lower == "moderator"
 end
 
 function KitsPermissions.CanUseKit(player, kit)
@@ -145,7 +198,7 @@ function KitsPermissions.GetAllTempRoles()
             local expires = tonumber(entry.expires)
             if expires and expires > now then
                 table.insert(result, {
-                    playerName = entry.playerName or key,
+                    playerName = entry.displayName or key,
                     role = entry.role,
                     daysLeft = math.ceil((expires - now) / 86400),
                 })
@@ -168,35 +221,46 @@ end
 
 function KitsPermissions.CheckExpiredRoles()
     local now = os.time()
-    local changed = false
     local expired = {}
     for key, entry in pairs(rolesData) do
         if type(entry) == "table" and entry.role then
             local expires = tonumber(entry.expires)
             if expires and expires <= now then
-                table.insert(expired, { key = key, playerName = entry.playerName or key })
-                rolesData[key] = nil
-                changed = true
+                table.insert(expired, { key = key, displayName = entry.displayName or key })
             end
         end
     end
-    if changed then
-        saveRolesToFile()
-        for _, exp in ipairs(expired) do
-            local target = KitsPermissions.FindPlayerByName(exp.playerName)
-            if target then
-                sendServerCommand(target, "Kits", "playerRoleInfo", {
-                    role = "user",
-                    daysLeft = "0",
-                })
-                local perms = KitsPermissions.GetPlayerPermissionsMap(target)
-                sendServerCommand(target, "Kits", "permissionsUpdate", perms)
-            end
+    if #expired == 0 then return false end
+    for _, exp in ipairs(expired) do
+        rolesData[exp.key] = nil
+    end
+    saveRolesToFile()
+    for _, exp in ipairs(expired) do
+        local target = KitsPermissions.FindPlayerByName(exp.displayName)
+        if target then
+            sendServerCommand(target, "Kits", "playerRoleInfo", {
+                role = "user",
+                daysLeft = "0",
+            })
+            local perms = KitsPermissions.GetPlayerPermissionsMap(target)
+            sendServerCommand(target, "Kits", "permissionsUpdate", perms)
         end
     end
-    return changed
+    return true
 end
 
 function KitsPermissions.LoadRoles()
     loadRolesFromFile()
+end
+
+function KitsPermissions.UpdateDisplayName(player)
+    local key = getPlayerKey(player)
+    local entry = rolesData[key]
+    if entry and type(entry) == "table" then
+        local currentName = player:getUsername()
+        if entry.displayName ~= currentName then
+            entry.displayName = currentName
+            saveRolesToFile()
+        end
+    end
 end

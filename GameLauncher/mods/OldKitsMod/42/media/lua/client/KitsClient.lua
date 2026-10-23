@@ -3,6 +3,7 @@ require "KitsConfig"
 KitsClient = KitsClient or {}
 KitsClient.Cooldowns = {}
 KitsClient.Permissions = {}
+KitsClient.PermissionsLoaded = false
 KitsClient.IsAdmin = false
 KitsClient.TempRoles = {}
 KitsClient.OnlinePlayers = {}
@@ -29,9 +30,12 @@ function KitsClient.CheckAdmin()
 end
 
 function KitsClient.HasPermission(kitId)
+    if not KitsClient.PermissionsLoaded then
+        return true
+    end
     local v = KitsClient.Permissions[kitId]
     if v == nil then
-        return false
+        return true
     end
     return v == "yes"
 end
@@ -106,6 +110,7 @@ local function onServerCommand(module, command, args)
 
     elseif command == "permissionsUpdate" then
         KitsClient.Permissions = args
+        KitsClient.PermissionsLoaded = true
         if KitsUI and KitsUI.instance then
             KitsUI.instance:updateCooldowns()
         end

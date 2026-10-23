@@ -5,6 +5,7 @@ KitsServer = KitsServer or {}
 
 local KITS_OVERRIDES_KEY = "KitsOverrides"
 local KITS_KNOWN_PLAYERS_KEY = "KitsKnownPlayers"
+local KITS_COOLDOWNS_KEY = "KitsCooldownsGlobal"
 
 local function registerKnownPlayer(player)
     local data = ModData.getOrCreate(KITS_KNOWN_PLAYERS_KEY)
@@ -19,11 +20,12 @@ local function registerKnownPlayer(player)
 end
 
 local function getPlayerCooldowns(player)
-    local modData = player:getModData()
-    if not modData.KitsCooldowns then
-        modData.KitsCooldowns = {}
+    local data = ModData.getOrCreate(KITS_COOLDOWNS_KEY)
+    local key = KitsPermissions.GetPlayerKey(player)
+    if not data[key] then
+        data[key] = {}
     end
-    return modData.KitsCooldowns
+    return data[key]
 end
 
 local function getCooldownRemaining(player, kitId, cooldownMinutes)
@@ -32,7 +34,8 @@ local function getCooldownRemaining(player, kitId, cooldownMinutes)
     if not lastUsed then
         return 0
     end
-    if lastUsed > 4000000000 then
+    lastUsed = tonumber(lastUsed)
+    if not lastUsed or lastUsed > 4000000000 then
         cooldowns[kitId] = nil
         return 0
     end
@@ -48,6 +51,7 @@ end
 local function setCooldown(player, kitId)
     local cooldowns = getPlayerCooldowns(player)
     cooldowns[kitId] = os.time()
+    ModData.transmit(KITS_COOLDOWNS_KEY)
 end
 
 local function giveKit(player, kit)
@@ -80,7 +84,7 @@ end
 
 local function sendPlayerRoleInfo(player)
     local roleName = KitsPermissions.GetEffectiveRole(player)
-    local tempInfo = KitsPermissions.GetTempRoleInfo(player:getUsername())
+    local tempInfo = KitsPermissions.GetTempRoleInfo(player)
     local daysLeft = "-1"
     if tempInfo then
         daysLeft = tostring(tempInfo.daysLeft)
@@ -281,6 +285,7 @@ local function onClientCommand(module, command, player, args)
         sendAllCooldowns(player)
 
     elseif command == "requestCooldowns" then
+        KitsPermissions.UpdateDisplayName(player)
         sendAllCooldowns(player)
         sendPermissions(player)
         sendPlayerRoleInfo(player)
@@ -305,12 +310,14 @@ local function onClientCommand(module, command, player, args)
             sendMsg(player, "Parametros invalidos.")
             return
         end
-        KitsPermissions.SetTempRole(targetName, roleName, days)
         local target = KitsPermissions.FindPlayerByName(targetName)
-        if target then
-            sendPermissions(target)
-            sendPlayerRoleInfo(target)
+        if not target then
+            sendMsg(player, "Jugador '" .. targetName .. "' no encontrado online.")
+            return
         end
+        KitsPermissions.SetTempRole(target, roleName, days)
+        sendPermissions(target)
+        sendPlayerRoleInfo(target)
         sendMsg(player, "Rol '" .. roleName .. "' dado a " .. targetName .. " por " .. days .. " dias.")
         sendTempRolesList(player)
         markRolesDirty()

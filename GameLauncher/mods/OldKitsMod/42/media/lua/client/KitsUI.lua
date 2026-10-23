@@ -960,12 +960,21 @@ function KitsUI:updateAdminButton()
 end
 
 function KitsUI:updateCooldowns()
+    local loaded = KitsClient.PermissionsLoaded
     for _, kit in ipairs(KitsConfig.Kits) do
         local st = self.kitStatus[kit.id]
         local btn = self.kitButtons[kit.id]
         local card = self.kitCards[kit.id]
         local nameLabel = self.kitNameLabels[kit.id]
         if st and btn then
+            if not loaded then
+                st.text = "..."
+                st.state = "loading"
+                btn:setEnable(false)
+                btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
+                btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
+                goto continue
+            end
             local hasPerm = KitsClient.HasPermission(kit.id)
             if not hasPerm then
                 st.text = "BLOQUEADO"
@@ -1003,6 +1012,7 @@ function KitsUI:updateCooldowns()
                 end
             end
         end
+        ::continue::
     end
 end
 

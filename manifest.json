@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.75",
+    "version":  "1.0.76",
     "files":  [
                   {
                       "path":  "GameLauncher/EasyAntiCheat.dll",
@@ -6968,8 +6968,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsClient.lua",
-                      "sha256":  "0798610b3b3ecfb9421b5d2da568c4d60e56631faf4cd660c2075b7fd7c6aa30",
-                      "size":  11019
+                      "sha256":  "71ecf79cae52b874cf085e317f315d2e4d4e1974b4ed99398726d91b4849491f",
+                      "size":  11172
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsHudButton.lua",
@@ -6983,18 +6983,18 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsUI.lua",
-                      "sha256":  "ff580823cafe7d9aa05804be181138a931c1deee824ecb85e605abece31fe5bd",
-                      "size":  45340
+                      "sha256":  "cf894392e0c093b3af095a494ddf3c4d5b9866e2d98cbfd63b9a10925e210fb7",
+                      "size":  45763
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsPermissions.lua",
-                      "sha256":  "85ab58b922ba8cb0ec78d2c1ff0d7253793b0842da7a1be79ded1e0204553360",
-                      "size":  5731
+                      "sha256":  "81f26741741def294652d6357e560de6a5e0f4631e4c10439238ed583e0690bb",
+                      "size":  7832
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsServer.lua",
-                      "sha256":  "8abb1cceb4a4410a3d490254ce4798b9f0ca6450126297852df095ab1e0b28d3",
-                      "size":  13507
+                      "sha256":  "aa2f351893311eff136988756d1d71b675979765d19e0e5e81db6fc893b9a3d5",
+                      "size":  13812
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/shared/KitsConfig.lua",
