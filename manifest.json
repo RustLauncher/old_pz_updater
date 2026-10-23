@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.76",
+    "version":  "1.0.77",
     "files":  [
                   {
                       "path":  "GameLauncher/EasyAntiCheat.dll",
@@ -6983,8 +6983,8 @@
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/client/KitsUI.lua",
-                      "sha256":  "cf894392e0c093b3af095a494ddf3c4d5b9866e2d98cbfd63b9a10925e210fb7",
-                      "size":  45763
+                      "sha256":  "a66c95258f650fe201904738a6b8b74c66e6f4675eb1e4226bfe6e62183bfc1f",
+                      "size":  45873
                   },
                   {
                       "path":  "GameLauncher/mods/OldKitsMod/42/media/lua/server/KitsPermissions.lua",

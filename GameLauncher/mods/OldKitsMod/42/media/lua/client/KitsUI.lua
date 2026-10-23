@@ -973,46 +973,45 @@ function KitsUI:updateCooldowns()
                 btn:setEnable(false)
                 btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
                 btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
-                goto continue
-            end
-            local hasPerm = KitsClient.HasPermission(kit.id)
-            if not hasPerm then
-                st.text = "BLOQUEADO"
-                st.state = "locked"
-                btn:setEnable(false)
-                btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
-                btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
-                if card then card.backgroundColor = C_CARD_LOCK end
-                if nameLabel then nameLabel:setColor(C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a) end
             else
-                if card then card.backgroundColor = C_CARD end
-                if nameLabel then nameLabel:setColor(C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a) end
-                local remainMs = KitsClient.Cooldowns[kit.id] or 0
-                if remainMs > 0 then
-                    local secs = math.ceil(remainMs / 1000)
-                    local mins = math.floor(secs / 60)
-                    local s = secs % 60
-                    if mins >= 60 then
-                        local h = math.floor(mins / 60)
-                        local m = mins % 60
-                        st.text = string.format("%dh %02dm", h, m)
-                    else
-                        st.text = string.format("%02d:%02d", mins, s)
-                    end
-                    st.state = "cooldown"
+                local hasPerm = KitsClient.HasPermission(kit.id)
+                if not hasPerm then
+                    st.text = "BLOQUEADO"
+                    st.state = "locked"
                     btn:setEnable(false)
                     btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
                     btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
+                    if card then card.backgroundColor = C_CARD_LOCK end
+                    if nameLabel then nameLabel:setColor(C_TEXT2.r, C_TEXT2.g, C_TEXT2.b, C_TEXT2.a) end
                 else
-                    st.text = "LISTO"
-                    st.state = "ready"
-                    btn:setEnable(true)
-                    btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
-                    btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
+                    if card then card.backgroundColor = C_CARD end
+                    if nameLabel then nameLabel:setColor(C_TEXT.r, C_TEXT.g, C_TEXT.b, C_TEXT.a) end
+                    local remainMs = KitsClient.Cooldowns[kit.id] or 0
+                    if remainMs > 0 then
+                        local secs = math.ceil(remainMs / 1000)
+                        local mins = math.floor(secs / 60)
+                        local s = secs % 60
+                        if mins >= 60 then
+                            local h = math.floor(mins / 60)
+                            local m = mins % 60
+                            st.text = string.format("%dh %02dm", h, m)
+                        else
+                            st.text = string.format("%02d:%02d", mins, s)
+                        end
+                        st.state = "cooldown"
+                        btn:setEnable(false)
+                        btn.backgroundColor = { r = C_BTN_OFF.r, g = C_BTN_OFF.g, b = C_BTN_OFF.b, a = 1 }
+                        btn.textColor = { r = 0.35, g = 0.35, b = 0.37, a = 1 }
+                    else
+                        st.text = "LISTO"
+                        st.state = "ready"
+                        btn:setEnable(true)
+                        btn.backgroundColor = { r = C_BTN.r, g = C_BTN.g, b = C_BTN.b, a = 1 }
+                        btn.textColor = { r = 1, g = 1, b = 1, a = 1 }
+                    end
                 end
             end
         end
-        ::continue::
     end
 end
 
