@@ -1,8 +1,0 @@
-{
-  "HWE_DebugStart": "Force Start Halloween Event",
-  "HWE_DebugEnd": "Force End / Restore Zombies",
-  "HWE_DebugDress": "Force Dress Loaded Zombies",
-  "HWE_DebugSpawn": "Spawn Costume Gallery",
-  "HWE_DebugClear": "Resume Automatic Schedule",
-  "HWE_DebugStatus": "Print Event Status"
-}

@@ -1,5 +1,0 @@
-IGUI_ES = {
-
-    IGUI_CraftCategory_Mechanics = "Mecánica",
-	IGUI_VehicleNameCostumesVan = "Camioneta de disfraces",
-}

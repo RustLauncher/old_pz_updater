@@ -1,8 +1,0 @@
-Trains: the common folder.
-
-Build 42 mods are laid out as <mod>/common beside <mod>/42, and the engine
-looks in common first for some things (a mod's maps are read from
-common/media/maps and never from 42/media/maps). The map under the cars'
-insides will live here. The folder exists now so the layout is the one the
-game expects, and this file exists so the folder survives a copy and a
-commit.

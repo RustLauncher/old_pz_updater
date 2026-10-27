@@ -1,5 +1,0 @@
-Sandbox_EN = {
-    Sandbox_VisibleDoorDamage = "Visible Door Damage",
-    Sandbox_VisibleDoorDamage_EnableTestMenu = "Show door test menu",
-    Sandbox_VisibleDoorDamage_EnableTestMenu_tooltip = "Enables test tools in the right-click menu. In multiplayer, access remains restricted to administrators. Disabled by default.",
-}
