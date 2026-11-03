@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Escribir un nombre aquí",
+    "ContextMenu_LPBCS_Rewrite": "Cartel: “%1”",
+    "ContextMenu_LPBCS_Erase": "Borrar el nombre",
+
+    "ContextMenu_LPBCS_StackTop": "arriba",
+    "ContextMenu_LPBCS_StackMiddle": "en medio",
+    "ContextMenu_LPBCS_StackBottom": "abajo",
+
+    "ContextMenu_LPBCS_StylePlank": "En una tabla clavada",
+    "ContextMenu_LPBCS_StylePaper": "En una nota pegada",
+    "ContextMenu_LPBCS_StylePainted": "Pintado directamente",
+
+    "ContextMenu_LPBCS_Side": "Posición",
+    "ContextMenu_LPBCS_SideAuto": "Automático",
+    "ContextMenu_LPBCS_SideLeft": "A la izquierda",
+    "ContextMenu_LPBCS_SideRight": "A la derecha"
+}

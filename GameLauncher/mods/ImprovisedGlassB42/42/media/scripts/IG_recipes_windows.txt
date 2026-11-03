@@ -1,0 +1,264 @@
+module Base
+{
+    /* ================= CRAFTING ================= */
+
+    craftRecipe IGCraftWoodenWindowSingle
+    {
+        time = 100,
+        category = Carpentry,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 4 [Base.Plank],
+            item 4 [Base.Nails],
+            item 1 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.WoodenWindow01,
+        }
+    }
+
+    craftRecipe IGCraftWoodenWindowDouble
+    {
+        time = 120,
+        category = Carpentry,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 4 [Base.Plank],
+            item 4 [Base.Nails],
+            item 2 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.WoodenWindow02,
+        }
+    }
+
+    craftRecipe IGCraftWoodenWindowTriple
+    {
+        time = 140,
+        category = Carpentry,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 5 [Base.Plank],
+            item 6 [Base.Nails],
+            item 3 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.WoodenWindow03,
+        }
+    }
+
+    craftRecipe IGCraftWoodenWindowWhite
+    {
+        time = 130,
+        category = Carpentry,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [Base.Paintbrush] mode:keep,
+            item 4 [Base.Plank],
+            item 4 [Base.Nails],
+            item 1 [Base.PaintWhite],
+            item 1 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.WoodenWindow04,
+        }
+    }
+
+    craftRecipe IGCraftWoodenWindowLarge
+    {
+        time = 150,
+        category = Carpentry,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 6 [Base.Plank],
+            item 6 [Base.Nails],
+            item 2 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.WoodenWindow06,
+        }
+    }
+
+    craftRecipe IGCraftMetalWindow
+    {
+        time = 140,
+        category = Metalworking,
+        tags = InHandCraft,
+        needToBeLearn = true,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.WeldingMask] mode:keep,
+            item 1 [Base.BlowTorch] mode:keep,
+            item 4 [Base.MetalBar],
+            item 1 [Base.GlassPanel],
+        }
+        outputs
+        {
+            item 1 ImprovisedGlass.MetalWindow01,
+        }
+    }
+
+    /* ================= DISASSEMBLY ================= */
+
+    craftRecipe IGDisassembleWoodenWindow01
+    {
+        time = 100,
+        category = Carpentry,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [ImprovisedGlass.WoodenWindow01],
+        }
+        outputs
+        {
+            item 2 Base.Plank,
+            item 2 Base.Nails,
+            item 1 Base.GlassPanel,
+        }
+    }
+
+    craftRecipe IGDisassembleWoodenWindow02
+    {
+        time = 120,
+        category = Carpentry,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [ImprovisedGlass.WoodenWindow02],
+        }
+        outputs
+        {
+            item 2 Base.Plank,
+            item 2 Base.Nails,
+            item 2 Base.GlassPanel,
+        }
+    }
+
+    craftRecipe IGDisassembleWoodenWindow03
+    {
+        time = 140,
+        category = Carpentry,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [ImprovisedGlass.WoodenWindow03],
+        }
+        outputs
+        {
+            item 3 Base.Plank,
+            item 3 Base.Nails,
+            item 3 Base.GlassPanel,
+        }
+    }
+
+    craftRecipe IGDisassembleWoodenWindow04
+    {
+        time = 130,
+        category = Carpentry,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [ImprovisedGlass.WoodenWindow04],
+        }
+        outputs
+        {
+            item 2 Base.Plank,
+            item 2 Base.Nails,
+            item 1 Base.GlassPanel,
+        }
+    }
+
+    craftRecipe IGDisassembleWoodenWindow06
+    {
+        time = 150,
+        category = Carpentry,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.Hammer;Base.BallPeenHammer;Base.ClubHammer;Base.HammerStone] mode:keep,
+            item 1 [Base.Saw;Base.HandAxe] mode:keep,
+            item 1 [ImprovisedGlass.WoodenWindow06],
+        }
+        outputs
+        {
+            item 3 Base.Plank,
+            item 3 Base.Nails,
+            item 2 Base.GlassPanel,
+        }
+    }
+
+    craftRecipe IGDisassembleMetalWindow01
+    {
+        time = 140,
+        category = Metalworking,
+        tags = InHandCraft,
+        timedAction = Making,
+
+        inputs
+        {
+            item 1 [Base.WeldingMask] mode:keep,
+            item 1 [Base.BlowTorch] mode:keep,
+            item 1 [ImprovisedGlass.MetalWindow01],
+        }
+        outputs
+        {
+            item 2 Base.MetalBar,
+            item 1 Base.GlassPanel,
+        }
+    }
+}

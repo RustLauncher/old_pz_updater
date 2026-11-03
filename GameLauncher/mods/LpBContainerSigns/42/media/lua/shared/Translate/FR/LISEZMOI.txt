@@ -1,0 +1,19 @@
+###################################################
+##          Localization by Warlord-Fox3          #
+###################################################
+
+Si vous consultez ce message parce que vous souhaitez contribuer à la traduction de ce mod dans votre langue, je vous en remercie !
+
+Mon objectif est de rendre le mod accessible au plus grand nombre. Je serai donc ravi de collaborer avec toute personne souhaitant améliorer ou compléter sa traduction dans une autre langue.
+
+Si vous souhaitez participer, je vous invite à m’ajouter sur Steam en précisant que vous aimeriez contribuer à la traduction du mod. Lorsque le mod sera mis à jour et que les fichiers de localisation devront être modifiés, je vous contacterai dans la mesure du possible afin que vous puissiez mettre votre traduction à jour.
+
+Une fois les fichiers reçus, je ferai mon possible pour intégrer votre travail dans la prochaine mise à jour du mod.
+
+Tous les utilisateurs ayant participé à la traduction seront crédités.
+
+Si mon nom apparaît comme auteur d’une traduction, cela signifie que celle-ci a été réalisée soit par moi même, soit à l’aide de traducteurs automatiques, de dictionnaires ou d’autres outils en ligne, dans la mesure de mes possibilités.
+
+Si vous constatez des erreurs, des formulations maladroites ou des traductions qui pourraient être améliorées, n’hésitez surtout pas à me les signaler. Certaines parties peuvent en effet avoir été traduites ou complétées à l’aide de ces outils, avec les imperfections que cela peut entraîner.
+
+Merci à toutes les personnes qui prennent le temps de contribuer à l’amélioration des traductions du mod !

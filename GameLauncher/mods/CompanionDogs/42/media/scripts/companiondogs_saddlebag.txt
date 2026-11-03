@@ -1,0 +1,60 @@
+module Base
+{
+    /* Companion Dogs Saddlebag: a container item the player equips on a companion dog so it carries cargo.
+       Cloned from vanilla Bag_Satchel_Leather, but stripped of every
+       human-clothing field: it is never worn by the player, only equipped on the dog. The world / attached
+       model is the rustic CrudeLeatherBag_Ground mesh (also the mesh attached to the dog's spine for the
+       visual). Capacity here is only a placeholder; the real per-dog slot cap is derived from the Strength
+       gene at runtime (ItemContainer:setCapacity). Carried items live as flat records in the dog's ModData
+       (CompanionDogs.bag); this item instance is just the equip token plus the attached visual. */
+    item CompanionDogsSaddlebag
+    {
+        DisplayCategory = Animal,
+        ItemType = base:container,
+        Weight = 1.0,
+        Capacity = 12,
+        WeightReduction = 65,
+        CanHaveHoles = false,
+        Icon = CompanionDogsSaddlebag,
+        StaticModel = CrudeLeatherBag_Ground,
+        WorldStaticModel = CrudeLeatherBag_Ground,
+        OpenSound = OpenLeatherBag,
+        CloseSound = CloseLeatherBag,
+        PutInSound = StoreItemLeatherBag,
+    }
+
+    /* Cosmetic-only piece: the leather strap that bridges the two side saddlebags over the dog's spine. It is
+       never crafted, looted or used; it exists only as the attached model on the dog (CD.applyBagVisual), using
+       the vanilla LeatherStrips mesh. */
+    item CompanionDogsSaddlebagStrap
+    {
+        DisplayCategory = Animal,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CompanionDogsSaddlebag,
+        StaticModel = CompanionDogsArchStrap,
+        WorldStaticModel = CompanionDogsArchStrap,
+    }
+
+    /* Sewn from leather, an accessible craft (Tailoring 1) that also spawns in loot (see
+       CompanionDogs_Distributions.lua). The recipe's UI label comes from Translate/<lang>/Recipes.json. */
+    craftRecipe MakeCompanionDogsSaddlebag
+    {
+        timedAction = Making,
+        time = 150,
+        category = CompanionDogs,
+        Tags = InHandCraft,
+        xpAward = Tailoring:15,
+        SkillRequired = Tailoring:1,
+        inputs
+        {
+            item 2 [Base.LeatherStrips],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 1 tags[base:thread] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsSaddlebag,
+        }
+    }
+}

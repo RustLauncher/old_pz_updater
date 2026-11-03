@@ -1,0 +1,128 @@
+module Base
+{
+	model M127TrunkDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m127_trunkLidWI,
+		texture = Vehicles/Trailers_M127stake_Shell_USMCgreen,
+		scale   = 0.6,
+	}
+
+	model M128TrunkDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m128_trunkLidWI,
+		texture = Vehicles/Trailers_M128van_Shell_USMCgreen,
+		scale   = 0.6,
+	}
+
+	model M129TrunkDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m129_trunkLidWI,
+		texture = Vehicles/Trailers_M129van_Shell_USMCgreen,
+		scale   = 0.6,
+	}
+
+	model ContainerDoorWI
+	{
+		mesh    = vehicles/Objects_ISO_doors|ISOdoorWI,
+		texture = Vehicles/Objects_ISO_Shell,
+		scale   = 0.6,
+	}
+
+	model M967TrunkDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m967_trunkLid1WI,
+		texture = Vehicles/Trailers_M967tanker_Shell_USMCgreen,
+		scale   = 0.6,
+	}
+
+	model M911Bullbar0WI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_bullbar0WI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911Bullbar1WI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_bullbar1WI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911FrontDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_door_flWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911FrontDoorArmorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_door_fl_aWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911EngineDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_hoodWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911MudflapsWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_mudflapsWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911MufflerWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_mufflerWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911TrunkDoorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_trunkDoorWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911WindowWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_window_flWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911WindshieldWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_windshieldWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911WindshieldArmorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_windshield_aWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911WindshieldRearWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_windshield_rearWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+
+	model M911WindshieldRearArmorWI
+	{
+		mesh    = vehicles/Objects_82oshkoshM911_mk2|m911_windshield_rear_aWI,
+		texture = Vehicles/Objects_82oshkoshM911_Shell,
+		scale   = 0.6,
+	}
+}

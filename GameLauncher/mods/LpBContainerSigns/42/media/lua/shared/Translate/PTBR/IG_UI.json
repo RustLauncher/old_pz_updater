@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "O que vai neste contêiner? (máximo de %1 caracteres)",
+    "IGUI_LPBCS_InkLabel": "Escrito com",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "Você precisa de uma caneta ou lápis para escrever aqui.",
+    "IGUI_LPBCS_NeedBrush": "Você precisa de um pincel para pintar um nome aqui.",
+    "IGUI_LPBCS_NeedPaint": "Você precisa de uma lata de tinta para pintar um nome aqui.",
+
+    "IGUI_LPBCS_Disabled": "Escrever em contêineres está desativado neste servidor.",
+    "IGUI_LPBCS_NoContainer": "Esse contêiner não está mais lá.",
+    "IGUI_LPBCS_TooFar": "Você está muito longe desse contêiner.",
+    "IGUI_LPBCS_NoWay": "Não há como chegar a esse contêiner.",
+    "IGUI_LPBCS_NotYourSafehouse": "Esse contêiner está dentro de um safehouse ao qual você não pertence.",
+    "IGUI_LPBCS_WriteFailed": "Não foi possível escrever o nome.",
+    "IGUI_LPBCS_MoveFailed": "Não foi possível mover a placa.",
+    "IGUI_LPBCS_BadRequest": "Essa solicitação não fez sentido e foi ignorada.",
+    "IGUI_LPBCS_TooQuick": "Espere um momento antes de pedir novamente.",
+    "IGUI_LPBCS_VersionSkew": "Este servidor está rodando uma versão mais antiga deste mod."
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hairStyles>
+
+	<male><name>M_BabySpike</name>
+		<model>skinned\hair\M_BabySpike</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_BabySpike" />
+		<alternate category="Group01" style="M_BabySpikeG1" />
+		<alternate category="Group02" style="M_BabySpike" />
+		<alternate category="Group03" style="M_Short" />
+		<alternate category="Group04" style="M_Short" />
+		<alternate category="Group05" style="M_BabySpike" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_BabySpikeG1</name>
+		<model>skinned\hair\M_BabySpikeG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_Bobby</name>
+		<model>skinned\hair\M_Bobby</model>
+		<texture>M_Buzzcut</texture>
+		<alternate category="default" style="M_Bobby" />
+		<alternate category="Group01" style="M_BobbyG1" />
+		<alternate category="Group02" style="M_Bobby" />
+		<alternate category="Group03" style="M_Buzz" />
+		<alternate category="Group04" style="M_Buzz" />
+		<alternate category="Group05" style="M_Bobby" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_BobbyG1</name>
+		<model>skinned\hair\M_BobbyG1</model>
+		<texture>M_Buzzcut</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_Short</name>
+		<model>skinned\hair\M_Short</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>falsee</noChoose>
+	</male>
+
+	<male><name>M_Buzz</name>
+		<model>skinned\hair\M_Buzz</model>
+		<texture>M_Buzzcut</texture>
+		<alternate category="default" style="M_Buzz" />
+		<alternate category="Group01" style="M_Buzz" />
+		<alternate category="Group02" style="M_Buzz" />
+		<alternate category="Group03" style="M_Buzz" />
+		<alternate category="Group04" style="M_Buzz" />
+		<alternate category="Group05" style="M_Buzz" />
+		<alternate category="Group06" style="Bound" />
+		<level>0</level>
+	</male>
+
+	<male><name>M_Flowing</name>
+		<model>skinned\hair\M_Flowing</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_Flowing" />
+		<alternate category="Group01" style="M_FlowingG1" />
+		<alternate category="Group02" style="M_FlowingG1" />
+		<alternate category="Group03" style="M_FlowingG1" />
+		<alternate category="Group04" style="M_FlowingG1" />
+		<alternate category="Group05" style="M_Flowing" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_FlowingG1</name>
+		<model>skinned\hair\M_FlowingG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_Heartthrob</name>
+		<model>skinned\hair\M_Heartthrob</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_Heartthrob" />
+		<alternate category="Group01" style="M_HeartthrobG1" />
+		<alternate category="Group02" style="M_HeartthrobG1" />
+		<alternate category="Group03" style="M_HeartthrobG1" />
+		<alternate category="Group04" style="M_HeartthrobG1" />
+		<alternate category="Group05" style="M_Heartthrob" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_HeartthrobG1</name>
+		<model>skinned\hair\M_HeartthrobG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_LibertySpike</name>
+		<model>skinned\hair\M_LibertySpike</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_LibertySpike" />
+		<alternate category="Group01" style="M_LibertySpikeG1" />
+		<alternate category="Group02" style="M_LibertySpike" />
+		<alternate category="Group03" style="M_Short" />
+		<alternate category="Group04" style="M_Short" />
+		<alternate category="Group05" style="M_LibertySpike" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_LibertySpikeG1</name>
+		<model>skinned\hair\M_LibertySpikeG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_Parted</name>
+		<model>skinned\hair\M_Parted</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_Parted" />
+		<alternate category="Group01" style="M_PartedG1" />
+		<alternate category="Group02" style="M_PartedG1" />
+		<alternate category="Group03" style="M_PartedG1" />
+		<alternate category="Group04" style="M_PartedG1" />
+		<alternate category="Group05" style="M_Parted" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_PartedG1</name>
+		<model>skinned\hair\M_PartedG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+	<male><name>M_PrettyBoy</name>
+		<model>skinned\hair\M_PrettyBoy</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="M_PrettyBoy" />
+		<alternate category="Group01" style="M_PrettyBoyG1" />
+		<alternate category="Group02" style="M_PrettyBoyG1" />
+		<alternate category="Group03" style="M_PrettyBoyG1" />
+		<alternate category="Group04" style="M_PrettyBoyG1" />
+		<alternate category="Group05" style="M_PrettyBoy" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</male>
+	<male><name>M_PrettyBoyG1</name>
+		<model>skinned\hair\M_PrettyBoyG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</male>
+
+
+
+	<!--Female-->
+	<female><name>F_Banshee</name>
+		<model>skinned\hair\F_Banshee</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="F_Banshee" />
+		<alternate category="Group01" style="F_BansheeG1" />
+		<alternate category="Group02" style="F_Banshee" />
+		<alternate category="Group03" style="F_BansheeG4" />
+		<alternate category="Group04" style="F_BansheeG4" />
+		<alternate category="Group05" style="F_Banshee" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+	</female>
+	<female><name>F_BansheeG1</name>
+		<model>skinned\hair\F_BansheeG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</female>
+	<female><name>F_BansheeG4</name>
+		<model>skinned\hair\F_BansheeG4</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</female>
+
+	<female><name>F_Frankie</name>
+		<model>skinned\hair\F_Frankie</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="F_Frankie" />
+		<alternate category="Group01" style="F_Frankie" />
+		<alternate category="Group02" style="F_Frankie" />
+		<alternate category="Group03" style="F_FrankieG1" />
+		<alternate category="Group04" style="F_FrankieG1" />
+		<alternate category="Group05" style="F_Frankie" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+		<attachedHair>true</attachedHair>
+	</female>
+	<female><name>F_FrankieG1</name>
+		<model>skinned\hair\F_FrankieG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</female>
+
+	<female><name>F_Lynn</name>
+		<model>skinned\hair\F_Lynn</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="F_Lynn" />
+		<alternate category="Group01" style="F_LynnG1" />
+		<alternate category="Group02" style="F_LynnG1" />
+		<alternate category="Group03" style="F_LynnG1" />
+		<alternate category="Group04" style="F_LynnG1" />
+		<alternate category="Group05" style="F_Lynn" />
+		<alternate category="Group06" style="Bound" />
+		<level>2</level>
+		<attachedHair>true</attachedHair>
+	</female>
+	<female><name>F_LynnG1</name>
+		<model>skinned\hair\F_LynnG1</model>
+		<texture>F_Hair_White</texture>
+		<noChoose>true</noChoose>
+	</female>
+
+</hairStyles>

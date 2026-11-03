@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Berger Belge Malinois",
+    "IGUI_AnimalType_malmale": "Berger Belge Malinois (mâle)",
+    "IGUI_AnimalType_malfemale": "Berger Belge Malinois (femelle)",
+    "IGUI_AnimalType_malpup": "Berger Belge Malinois (chiot)",
+    "IGUI_PD_Breed_malinois": "Berger Belge Malinois",
+    "IGUI_PD_BreedDesc_malinois": "Un chien de police et de détection. Axé sur le flair, l'obéissance et le combat. Un chien à la mécanique unique : il ne se contente pas de flairer le zombie, il vous indique son emplacement exact. On le trouve dans les commissariats, les bâtiments militaires et, rarement, dans les maisons.",
+    "IGUI_PD_Moodle_K9Scent": "Flair K9",
+    "IGUI_PD_Moodle_K9Scent_desc": "Votre Malinois est le meilleur en flair : il peut flairer la position exacte du zombie le plus proche."
+}

@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Escrever um nome aqui",
+    "ContextMenu_LPBCS_Rewrite": "Assinar: \"%1\"",
+    "ContextMenu_LPBCS_Erase": "Apagar o nome",
+
+    "ContextMenu_LPBCS_StackTop": "no topo",
+    "ContextMenu_LPBCS_StackMiddle": "no meio",
+    "ContextMenu_LPBCS_StackBottom": "na base",
+
+    "ContextMenu_LPBCS_StylePlank": "Em uma tábua pregada",
+    "ContextMenu_LPBCS_StylePaper": "Em um bilhete colado",
+    "ContextMenu_LPBCS_StylePainted": "Pintado direto na superfície",
+
+    "ContextMenu_LPBCS_Side": "Posição",
+    "ContextMenu_LPBCS_SideAuto": "Automático",
+    "ContextMenu_LPBCS_SideLeft": "À esquerda",
+    "ContextMenu_LPBCS_SideRight": "À direita"
+}

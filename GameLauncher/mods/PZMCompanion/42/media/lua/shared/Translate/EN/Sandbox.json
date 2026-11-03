@@ -1,0 +1,10 @@
+{
+    "Sandbox_PZMCompanion": "GPS Companion (projectzomboidmap.com)",
+    "Sandbox_PZMCompanion_SharePositions": "Show other players on the web map",
+    "Sandbox_PZMCompanion_SharePositions_tooltip": "Sends everyone's position to the players you choose, so friends can see each other on projectzomboidmap.com. Off: nobody. Faction members only: each player sees their own faction. Everyone: all players on this server see each other.",
+    "Sandbox_PZMCompanion_SharePositions_option1": "Off",
+    "Sandbox_PZMCompanion_SharePositions_option2": "Faction members only",
+    "Sandbox_PZMCompanion_SharePositions_option3": "Everyone on the server",
+    "Sandbox_PZMCompanion_ShareInterval": "Position update interval (seconds)",
+    "Sandbox_PZMCompanion_ShareInterval_tooltip": "How often the server sends player positions. 1 is smooth; raise it on servers with many players to save bandwidth."
+}

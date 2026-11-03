@@ -1,0 +1,146 @@
+{
+  "IGSmashBottle": "Smash Bottle",
+  "Recipe_IGSmashBottle": "Smash Bottle",
+  "ImprovisedGlass.IGSmashBottle": "Smash Bottle",
+  "Recipe_ImprovisedGlass.IGSmashBottle": "Smash Bottle",
+
+  "IGSmashGlassPane": "Smash Glass Pane",
+  "Recipe_IGSmashGlassPane": "Smash Glass Pane",
+  "ImprovisedGlass.IGSmashGlassPane": "Smash Glass Pane",
+  "Recipe_ImprovisedGlass.IGSmashGlassPane": "Smash Glass Pane",
+
+  "IGPrepareGlassShards": "Prepare Glass Shards in Roasting Pan",
+  "Recipe_IGPrepareGlassShards": "Prepare Glass Shards in Roasting Pan",
+  "ImprovisedGlass.IGPrepareGlassShards": "Prepare Glass Shards in Roasting Pan",
+  "Recipe_ImprovisedGlass.IGPrepareGlassShards": "Prepare Glass Shards in Roasting Pan",
+
+  "IGUnprepareGlassShards": "Remove Glass Shards from Roasting Pan",
+  "Recipe_IGUnprepareGlassShards": "Remove Glass Shards from Roasting Pan",
+  "ImprovisedGlass.IGUnprepareGlassShards": "Remove Glass Shards from Roasting Pan",
+  "Recipe_ImprovisedGlass.IGUnprepareGlassShards": "Remove Glass Shards from Roasting Pan",
+
+  "IGRemoveGlassPane": "Extract Glass Pane from Roasting Pan",
+  "Recipe_IGRemoveGlassPane": "Extract Glass Pane from Roasting Pan",
+  "ImprovisedGlass.IGRemoveGlassPane": "Extract Glass Pane from Roasting Pan",
+  "Recipe_ImprovisedGlass.IGRemoveGlassPane": "Extract Glass Pane from Roasting Pan",
+
+  "IGCraftWoodenWindowSingle": "Craft Single Wooden Window",
+  "Recipe_IGCraftWoodenWindowSingle": "Craft Single Wooden Window",
+  "ImprovisedGlass.IGCraftWoodenWindowSingle": "Craft Single Wooden Window",
+  "Recipe_ImprovisedGlass.IGCraftWoodenWindowSingle": "Craft Single Wooden Window",
+
+  "IGCraftWoodenWindowDouble": "Craft Double Wooden Window",
+  "Recipe_IGCraftWoodenWindowDouble": "Craft Double Wooden Window",
+  "ImprovisedGlass.IGCraftWoodenWindowDouble": "Craft Double Wooden Window",
+  "Recipe_ImprovisedGlass.IGCraftWoodenWindowDouble": "Craft Double Wooden Window",
+
+  "IGCraftWoodenWindowTriple": "Craft Triple Wooden Window",
+  "Recipe_IGCraftWoodenWindowTriple": "Craft Triple Wooden Window",
+  "ImprovisedGlass.IGCraftWoodenWindowTriple": "Craft Triple Wooden Window",
+  "Recipe_ImprovisedGlass.IGCraftWoodenWindowTriple": "Craft Triple Wooden Window",
+
+  "IGCraftWoodenWindowWhite": "Craft White Wooden Window",
+  "Recipe_IGCraftWoodenWindowWhite": "Craft White Wooden Window",
+  "ImprovisedGlass.IGCraftWoodenWindowWhite": "Craft White Wooden Window",
+  "Recipe_ImprovisedGlass.IGCraftWoodenWindowWhite": "Craft White Wooden Window",
+
+  "IGCraftMetalWindow": "Craft Metal Window",
+  "Recipe_IGCraftMetalWindow": "Craft Metal Window",
+  "ImprovisedGlass.IGCraftMetalWindow": "Craft Metal Window",
+  "Recipe_ImprovisedGlass.IGCraftMetalWindow": "Craft Metal Window",
+
+  "IGCraftWoodenWindowLarge": "Craft Large Wooden Window",
+  "Recipe_IGCraftWoodenWindowLarge": "Craft Large Wooden Window",
+  "ImprovisedGlass.IGCraftWoodenWindowLarge": "Craft Large Wooden Window",
+  "Recipe_ImprovisedGlass.IGCraftWoodenWindowLarge": "Craft Large Wooden Window",
+
+  "IGDisassembleWoodenWindow01": "Disassemble Single Wooden Window",
+  "Recipe_IGDisassembleWoodenWindow01": "Disassemble Single Wooden Window",
+  "ImprovisedGlass.IGDisassembleWoodenWindow01": "Disassemble Single Wooden Window",
+  "Recipe_ImprovisedGlass.IGDisassembleWoodenWindow01": "Disassemble Single Wooden Window",
+
+  "IGDisassembleWoodenWindow02": "Disassemble Double Wooden Window",
+  "Recipe_IGDisassembleWoodenWindow02": "Disassemble Double Wooden Window",
+  "ImprovisedGlass.IGDisassembleWoodenWindow02": "Disassemble Double Wooden Window",
+  "Recipe_ImprovisedGlass.IGDisassembleWoodenWindow02": "Disassemble Double Wooden Window",
+
+  "IGDisassembleWoodenWindow03": "Disassemble Triple Wooden Window",
+  "Recipe_IGDisassembleWoodenWindow03": "Disassemble Triple Wooden Window",
+  "ImprovisedGlass.IGDisassembleWoodenWindow03": "Disassemble Triple Wooden Window",
+  "Recipe_ImprovisedGlass.IGDisassembleWoodenWindow03": "Disassemble Triple Wooden Window",
+
+  "IGDisassembleWoodenWindow04": "Disassemble White Wooden Window",
+  "Recipe_IGDisassembleWoodenWindow04": "Disassemble White Wooden Window",
+  "ImprovisedGlass.IGDisassembleWoodenWindow04": "Disassemble White Wooden Window",
+  "Recipe_ImprovisedGlass.IGDisassembleWoodenWindow04": "Disassemble White Wooden Window",
+
+  "IGDisassembleWoodenWindow06": "Disassemble Large Wooden Window",
+  "Recipe_IGDisassembleWoodenWindow06": "Disassemble Large Wooden Window",
+  "ImprovisedGlass.IGDisassembleWoodenWindow06": "Disassemble Large Wooden Window",
+  "Recipe_ImprovisedGlass.IGDisassembleWoodenWindow06": "Disassemble Large Wooden Window",
+
+  "IGDisassembleMetalWindow01": "Disassemble Metal Window",
+  "Recipe_IGDisassembleMetalWindow01": "Disassemble Metal Window",
+  "ImprovisedGlass.IGDisassembleMetalWindow01": "Disassemble Metal Window",
+  "Recipe_ImprovisedGlass.IGDisassembleMetalWindow01": "Disassemble Metal Window",
+
+  "IGWindshield1": "Craft Standard Windshield",
+  "Recipe_IGWindshield1": "Craft Standard Windshield",
+  "ImprovisedGlass.IGWindshield1": "Craft Standard Windshield",
+  "Recipe_ImprovisedGlass.IGWindshield1": "Craft Standard Windshield",
+
+  "IGWindshield2": "Craft Heavy-Duty Windshield",
+  "Recipe_IGWindshield2": "Craft Heavy-Duty Windshield",
+  "ImprovisedGlass.IGWindshield2": "Craft Heavy-Duty Windshield",
+  "Recipe_ImprovisedGlass.IGWindshield2": "Craft Heavy-Duty Windshield",
+
+  "IGWindshield3": "Craft Sports Windshield",
+  "Recipe_IGWindshield3": "Craft Sports Windshield",
+  "ImprovisedGlass.IGWindshield3": "Craft Sports Windshield",
+  "Recipe_ImprovisedGlass.IGWindshield3": "Craft Sports Windshield",
+
+  "IGRearWindshield1": "Craft Standard Rear Windshield",
+  "Recipe_IGRearWindshield1": "Craft Standard Rear Windshield",
+  "ImprovisedGlass.IGRearWindshield1": "Craft Standard Rear Windshield",
+  "Recipe_ImprovisedGlass.IGRearWindshield1": "Craft Standard Rear Windshield",
+
+  "IGRearWindshield2": "Craft Heavy-Duty Rear Windshield",
+  "Recipe_IGRearWindshield2": "Craft Heavy-Duty Rear Windshield",
+  "ImprovisedGlass.IGRearWindshield2": "Craft Heavy-Duty Rear Windshield",
+  "Recipe_ImprovisedGlass.IGRearWindshield2": "Craft Heavy-Duty Rear Windshield",
+
+  "IGRearWindshield3": "Craft Sports Rear Windshield",
+  "Recipe_IGRearWindshield3": "Craft Sports Rear Windshield",
+  "ImprovisedGlass.IGRearWindshield3": "Craft Sports Rear Windshield",
+  "Recipe_ImprovisedGlass.IGRearWindshield3": "Craft Sports Rear Windshield",
+
+  "IGFrontWindow1": "Craft Standard Front Car Window",
+  "Recipe_IGFrontWindow1": "Craft Standard Front Car Window",
+  "ImprovisedGlass.IGFrontWindow1": "Craft Standard Front Car Window",
+  "Recipe_ImprovisedGlass.IGFrontWindow1": "Craft Standard Front Car Window",
+
+  "IGFrontWindow2": "Craft Heavy-Duty Front Car Window",
+  "Recipe_IGFrontWindow2": "Craft Heavy-Duty Front Car Window",
+  "ImprovisedGlass.IGFrontWindow2": "Craft Heavy-Duty Front Car Window",
+  "Recipe_ImprovisedGlass.IGFrontWindow2": "Craft Heavy-Duty Front Car Window",
+
+  "IGFrontWindow3": "Craft Sports Front Car Window",
+  "Recipe_IGFrontWindow3": "Craft Sports Front Car Window",
+  "ImprovisedGlass.IGFrontWindow3": "Craft Sports Front Car Window",
+  "Recipe_ImprovisedGlass.IGFrontWindow3": "Craft Sports Front Car Window",
+
+  "IGRearWindow1": "Craft Standard Rear Car Window",
+  "Recipe_IGRearWindow1": "Craft Standard Rear Car Window",
+  "ImprovisedGlass.IGRearWindow1": "Craft Standard Rear Car Window",
+  "Recipe_ImprovisedGlass.IGRearWindow1": "Craft Standard Rear Car Window",
+
+  "IGRearWindow2": "Craft Heavy-Duty Rear Car Window",
+  "Recipe_IGRearWindow2": "Craft Heavy-Duty Rear Car Window",
+  "ImprovisedGlass.IGRearWindow2": "Craft Heavy-Duty Rear Car Window",
+  "Recipe_ImprovisedGlass.IGRearWindow2": "Craft Heavy-Duty Rear Car Window",
+
+  "IGRearWindow3": "Craft Sports Rear Car Window",
+  "Recipe_IGRearWindow3": "Craft Sports Rear Car Window",
+  "ImprovisedGlass.IGRearWindow3": "Craft Sports Rear Car Window",
+  "Recipe_ImprovisedGlass.IGRearWindow3": "Craft Sports Rear Car Window"
+}

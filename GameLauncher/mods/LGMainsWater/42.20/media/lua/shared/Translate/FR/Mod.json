@@ -1,0 +1,4 @@
+{
+    "name": "LG Raccorder au réseau d'eau",
+    "description": "Ajoute une option \"Raccorder ... à la conduite principale\" pour les lavabos, baignoires, douches, toilettes et lave-linge que tu installes à l'intérieur. Un appareil raccordé compte comme un appareil d'origine du bâtiment : même alimentation sans fin, même jour de coupure, même eau qui reste dans les tuyaux ensuite. Les bâtiments que la carte indique sans eau courante restent secs. Ça ne vaut le coup que si tu installes tes appareils avant la coupure d'eau. Solo, multijoueur hébergé et serveur dédié."
+}

@@ -1,0 +1,37 @@
+{
+"Sandbox_LpBContainerSigns": "LpB Placas de Contêiner",
+
+"Sandbox_LpBContainerSignsDividerRules": "------------- ESCRITA -------------",
+"Sandbox_LpBContainerSignsDividerStyles": "------------- ESTILOS DE PLACA -------------",
+"Sandbox_LpBContainerSignsDividerDebug": "------------- DEPURAÇÃO -------------",
+
+"Sandbox_LpBContainerSigns_WritingEnabled": "Permitir escrita em contêineres",
+"Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Interruptor principal. Desativado, ninguém pode escrever ou apagar um nome, mas placas já escritas permanecem no lugar e legíveis.",
+
+"Sandbox_LpBContainerSigns_CratesOnly": "Somente caixas",
+"Sandbox_LpBContainerSigns_CratesOnly_tooltip": "Placas vão apenas em caixas e nada mais — o armazenamento usado para construir uma base. Desativado, qualquer contêiner no mundo pode receber uma placa: guarda-roupas, geladeiras, armários, balcões. Isso governa tanto a exibição quanto a escrita, então ativar também remove placas de tudo que não seja caixa.",
+
+"Sandbox_LpBContainerSigns_RequireWritingTool": "Exigir caneta ou pincel",
+"Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Escrever precisa de um item marcado como instrumento de escrita (caneta, lápis, canetas coloridas), e pintar precisa de um pincel mais uma lata de tinta. Desativado, qualquer um pode escrever com as mãos.",
+
+"Sandbox_LpBContainerSigns_ConsumeToolUse": "Consumir uso da ferramenta",
+"Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Afeta apenas ferramentas que realmente se desgastam: uma lata de tinta perde um uso, uma caneta não, exatamente como no vanilla quando usada para anotar um mapa.",
+
+"Sandbox_LpBContainerSigns_RestrictToSafehouse": "Somente membros do safehouse",
+"Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Dentro de um safehouse, apenas seus membros podem escrever ou apagar em um contêiner. Admins são isentos para que uma placa alterada possa ser limpa. Fora dos safehouses isso não muda nada.",
+
+"Sandbox_LpBContainerSigns_MaxLabelLength": "Comprimento máximo do nome",
+"Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Quantos caracteres uma placa pode ter. Limitado a 28, o mesmo limite que o vanilla coloca ao renomear um contêiner.",
+
+"Sandbox_LpBContainerSigns_AllowPlankSign": "Permitir placa de madeira pregada",
+"Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Uma ripa de madeira pregada na frente do contêiner.",
+
+"Sandbox_LpBContainerSigns_AllowPaperSign": "Permitir bilhete colado",
+"Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Uma folha de papel colada na frente do contêiner.",
+
+"Sandbox_LpBContainerSigns_AllowPaintedSign": "Permitir pintura direta",
+"Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "O nome pintado diretamente no contêiner, na cor da tinta usada. Este estilo precisa de pincel.",
+
+"Sandbox_LpBContainerSigns_DebugLogging": "Registro de depuração",
+"Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Escreve o que o mod está fazendo em console.txt em cada cliente e em server-console.txt no servidor: uma linha por ação e por solicitação recebida. Desativado por padrão, e vale a pena deixar assim — um servidor movimentado gera muito disso. Ative para relatar um bug."
+}

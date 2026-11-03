@@ -1,0 +1,31 @@
+@alife-records 1
+
+party vg_207
+  p.members vp_1207,vp_1208
+  p.bond spouse
+  p.lead vp_1207
+end
+
+party vg_217
+  p.members vp_1227,vp_1228
+  p.bond parent_child
+  p.lead vp_1227
+end
+
+party vg_224
+  p.members vp_1256,vp_1257
+  p.bond friends
+  p.lead vp_1256
+end
+
+party vg_242
+  p.members vp_1296,vp_1297
+  p.bond spouse
+  p.lead vp_1296
+end
+
+party vg_261
+  p.members vp_1321,vp_1322
+  p.bond coworkers
+  p.lead vp_1321
+end

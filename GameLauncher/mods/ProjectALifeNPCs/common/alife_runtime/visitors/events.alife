@@ -1,0 +1,702 @@
+@alife-records 1
+
+event VE_ARGUE_PARTY
+  ev.when !bond:none & partner
+  ev.once false
+  ev.cd 36
+  ev.w 2
+  ev.timeout 45
+  ev.kind party
+  ev.speaker party:lead
+  ch.1.label Break it up
+  ch.1.fx.1 op +2
+  ch.2.label Side with one
+  ch.2.fx.1 op +3
+  ch.3.label Leave them
+end
+
+event VE_ARMY_QUESTION
+  ev.when belief:bl_wait_for_army & trust>=10
+  ev.once false
+  ev.cd 36
+  ev.w 3
+  ev.timeout 45
+  ev.kind world
+  ev.speaker any
+  ch.1.label Tell them what you know
+  ch.1.fx.1 op +1
+  ch.2.label Nothing
+  ch.2.fx.1 set flag:beliefsag
+  ch.3.label Lie
+  ch.3.fx.1 ledger lied_to
+end
+
+event VE_ASK_NAME_BACK
+  ev.when trait:curious>=2 & imin>=20
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind talk
+  ev.speaker any
+  ch.1.label Say it
+  ch.1.fx.1 op +1
+  ch.1.fx.2 set flag:intro
+  ch.2.label Not yet
+end
+
+event VE_BLANKET
+  ev.when need:cold>=3 & imin>=20
+  ev.once false
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Give one
+  ch.1.fx.1 do open_picker blanket
+  ch.1.fx.2 need cold -2
+  ch.1.fx.3 op +4
+  ch.2.label Light the stove
+  ch.2.fx.1 op +2
+  ch.3.label Sorry
+  ch.3.fx.1 op -1
+  to.1 op -1
+end
+
+event VE_BLOOD_WASH
+  ev.when bloody & (poi:sink | poi:bath) & imin>=10
+  ev.once false
+  ev.cd 12
+  ev.w 4
+  ev.timeout 45
+  ev.kind health
+  ev.speaker any
+  ch.1.label Sink's there
+  ch.1.fx.1 do life wash
+  ch.1.fx.2 need dirty -2
+  ch.1.fx.3 op +3
+  ch.2.label Use the bucket
+  ch.2.fx.1 need dirty -1
+  ch.2.fx.2 op +1
+  ch.3.label Not now
+  ch.3.fx.1 op -1
+  to.1 op -1
+end
+
+event VE_BOOK_BACK
+  ev.when flag:lent_book
+  ev.once true
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind book
+  ev.speaker any
+  ch.1.label Talk
+  ch.1.fx.1 next VQ_BOOK_ENDING
+  ch.1.fx.2 op +4
+  ch.2.label Later
+end
+
+event VE_BORROW_BOOK
+  ev.when poi:shelf & !act:read & imin>=40 & opt:Books
+  ev.once false
+  ev.cd 30
+  ev.w 3
+  ev.timeout 45
+  ev.kind book
+  ev.speaker any
+  ch.1.label Lend one
+  ch.1.fx.1 do open_picker book
+  ch.1.fx.2 op +5
+  ch.2.label Look on the shelf
+  ch.2.fx.1 do life read
+  ch.2.fx.2 op +2
+  ch.3.label No
+end
+
+event VE_CARDS
+  ev.when trait:humor>=2 & trust>=15 & imin>=45
+  ev.once false
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind social
+  ev.speaker any
+  ch.1.label Deal
+  ch.1.fx.1 do life cards
+  ch.1.fx.2 op +4
+  ch.2.label Not now
+end
+
+event VE_CHANGE_CLOTHES
+  ev.when adult & trait:tidy>=2 & (need:dirty>=4 | wet | bloody) & imin>=45 & opt:ChangeClothes & !minorPresent
+  ev.once false
+  ev.cd 48
+  ev.w 3
+  ev.timeout 60
+  ev.promptMax 160
+  ev.kind house
+  ev.speaker adult
+  ev.tags privacy,undress
+  ev.adult true
+  ch.1.label Take this
+  ch.1.fx.1 do open_picker clothes
+  ch.1.fx.2 op +2
+  ch.2.label Use the bathroom
+  ch.2.fx.1 do privacy_begin full
+  ch.2.fx.2 op +1
+  ch.3.label Nothing, sorry
+  ch.3.fx.1 op -1
+end
+
+event VE_COUGH_WORRY
+  ev.when need:sick>=2 & imin>=15
+  ev.once false
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind health
+  ev.speaker any
+  ch.1.label Make tea
+  ch.1.fx.1 op +4
+  ch.2.label Let me look
+  ch.2.fx.1 do treat_flow
+  ch.2.fx.2 op +3
+  ch.3.label Keep your distance
+  ch.3.fx.1 op -3
+  ch.3.fx.2 mood quiet
+end
+
+event VE_CRY_QUIET
+  ev.when (need:fear>=4 | trait:anx>=4) & imin>=30
+  ev.once false
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind feeling
+  ev.speaker any
+  ch.1.label Sit with them
+  ch.1.fx.1 op +5
+  ch.1.fx.2 set flag:comforted
+  ch.2.label Give space
+  ch.2.fx.1 op +2
+end
+
+event VE_DID_YOU_HEAR
+  ev.when night & need:fear>=2 & imin>=30
+  ev.once false
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind alert
+  ev.speaker any
+  ev.tags night
+  ch.1.label Check it
+  ch.1.fx.1 op +2
+  ch.2.label It's nothing
+  ch.2.fx.1 op +1
+  ch.3.label Keep quiet
+end
+
+event VE_DRINK_ASK
+  ev.when vice:alcohol & adult & imin>=45 & trust>=15
+  ev.once false
+  ev.cd 36
+  ev.w 2
+  ev.timeout 45
+  ev.kind vice
+  ev.speaker adult
+  ev.tags privacy
+  ev.adult true
+  ch.1.label Pour one
+  ch.1.fx.1 op +4
+  ch.1.fx.2 set flag:enabled_vice
+  ch.2.label Coffee
+  ch.2.fx.1 op +1
+  ch.3.label No
+end
+
+event VE_FRESH_REMARK
+  ev.when clean & wit:washed
+  ev.once false
+  ev.cd 12
+  ev.w 2
+  ev.timeout 0
+  ev.kind ambient
+  ev.speaker any
+end
+
+event VE_GIFT_BACK
+  ev.when trust>=41 & leaving
+  ev.once true
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind arc
+  ev.speaker any
+  ch.1.label Accept
+  ch.1.fx.1 do gift_back
+  ch.1.fx.2 op +2
+  ch.2.label Refuse kindly
+  ch.2.fx.1 op +2
+end
+
+event VE_GRACE
+  ev.when trait:faith>=3 & (hour:6-8 | hour:11-13 | hour:17-20) & (wit:ate | gave:food)
+  ev.once false
+  ev.cd 12
+  ev.w 3
+  ev.timeout 45
+  ev.kind feeling
+  ev.speaker any
+  ch.1.label Go ahead
+  ch.1.fx.1 anim bow_head
+  ch.1.fx.2 op +3
+  ch.2.label We don't, but go on
+  ch.2.fx.1 anim bow_head
+  ch.2.fx.2 op +2
+  ch.3.label Not at the table
+  ch.3.fx.1 op -1
+  ch.3.fx.2 mood quiet
+end
+
+event VE_HOUSE_COMMENT
+  ev.when imin>=30
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Mine
+  ch.2.label It came like this
+  ch.3.label Both: the curtains too
+  ch.3.fx.1 op +1
+end
+
+event VE_HUM
+  ev.when (trait:faith>=3 | trait:humor>=3) & imin>=20
+  ev.once false
+  ev.cd 12
+  ev.w 1
+  ev.timeout 0
+  ev.kind ambient
+  ev.speaker any
+end
+
+event VE_HUNGRY_EARN
+  ev.when need:hunger>=3 & trait:pride>=3 & !gave:food
+  ev.once false
+  ev.cd 18
+  ev.w 3
+  ev.timeout 45
+  ev.kind social
+  ev.speaker any
+  ch.1.label Eat first
+  ch.1.fx.1 do open_picker food
+  ch.2.label Carry water
+  ch.2.fx.1 do life walk
+  ch.2.fx.2 op +3
+  ch.3.label No
+  ch.3.fx.1 op -2
+end
+
+event VE_LEAVING_AT_DAWN
+  ev.when morning & leaving
+  ev.once true
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind arc
+  ev.speaker any
+  ch.1.label Wish them well
+  ch.1.fx.1 op +2
+  ch.1.fx.2 ledger sheltered
+  ch.2.label Ask them to stay
+  ch.2.fx.1 ev VE_STAY_ANOTHER
+end
+
+event VE_LOCK_DOORS
+  ev.when trait:anx>=3 & imin>=20
+  ev.once false
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind alert
+  ev.speaker any
+  ch.1.label Lock together
+  ch.1.fx.1 do life walk
+  ch.1.fx.2 op +3
+  ch.2.label It's locked
+  ch.2.fx.1 op +1
+  ch.3.label Leave it
+  ch.3.fx.1 op -2
+end
+
+event VE_LOST_ITEM
+  ev.when imin>=60 & trust>=10
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind task
+  ev.speaker any
+  ch.1.label Help
+  ch.1.fx.1 do search_flow
+  ch.1.fx.2 op +4
+  ch.2.label Not now
+  ch.2.fx.1 op -1
+end
+
+event VE_MEMORY_OBJECT
+  ev.when trait:nostalg>=3 & trust>=20 & imin>=45 & !(!carry:photo & !carry:ring & !carry:watch & !carry:letter)
+  ev.once true
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind memory
+  ev.speaker any
+  ch.1.label Tell me about it
+  ch.1.fx.1 reveal @object
+  ch.1.fx.2 anim photo
+  ch.1.fx.3 op +3
+  ch.2.label Put it away, keep it safe
+  ch.2.fx.1 op +1
+  ch.3.label Not now
+end
+
+event VE_MIRROR
+  ev.when trait:tidy>=2 & poi:mirror & imin>=30
+  ev.once false
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Joke back
+  ch.1.fx.1 op +1
+  ch.2.label Say they look fine
+  ch.2.fx.1 op +1
+  ch.3.label Say nothing
+end
+
+event VE_NIGHTMARE
+  ev.when night & need:fatigue>=3 & imin>=90
+  ev.once false
+  ev.cd 36
+  ev.w 2
+  ev.timeout 45
+  ev.kind feeling
+  ev.speaker any
+  ev.tags night
+  ch.1.label Reassure
+  ch.1.fx.1 op +3
+  ch.2.label Ask what it was
+  ch.2.needs trust>=30
+  ch.2.fx.1 reveal @nightmare
+end
+
+event VE_NIGHT_WINDOW
+  ev.when night & (need:fear>=3 | trait:anx>=3) & poi:window_view & (act:stand | act:sit)
+  ev.once false
+  ev.cd 20
+  ev.w 3
+  ev.timeout 45
+  ev.kind feeling
+  ev.speaker any
+  ev.tags night
+  ch.1.label Take the chair
+  ch.1.fx.1 do window_look
+  ch.1.fx.2 op +3
+  ch.2.label Get some rest
+  ch.3.label Keep the lights off
+  ch.3.fx.1 op +1
+end
+
+event VE_OFFER_HELP
+  ev.when trust>=20 & imin>=60 & poi:stove
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind arc
+  ev.speaker any
+  ch.1.label Go ahead
+  ch.1.fx.1 op +4
+  ch.2.label No need
+  ch.2.fx.1 op +1
+end
+
+event VE_PARTNER_WORRY
+  ev.when !bond:none & (pneed:sick>=2 | pneed:pain>=3) & partnerGone
+  ev.once false
+  ev.cd 36
+  ev.w 4
+  ev.timeout 45
+  ev.kind party
+  ev.speaker any
+  ch.1.label What does your companion need?
+  ch.1.fx.1 reveal @partner_need
+  ch.1.fx.2 set flag:knows_withdrawal
+  ch.2.label I can check on your companion
+  ch.2.fx.1 do treat_flow
+  ch.2.fx.2 op +3
+  ch.3.label I can't help
+  ch.3.fx.1 op -2
+  to.1 op -1
+end
+
+event VE_PHONE_TRY
+  ev.when poi:phone & imin>=25
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Sit with them
+  ch.1.fx.1 op +2
+  ch.2.label Let them be
+end
+
+event VE_PHOTO_SHOW
+  ev.when carry:photo & trust>=15 & imin>=30
+  ev.once true
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind memory
+  ev.speaker any
+  ch.1.label Who's in the photograph?
+  ch.1.fx.1 reveal @object
+  ch.1.fx.2 op +3
+  ch.2.label Nod
+  ch.2.fx.1 op +1
+end
+
+event VE_PRIVACY_CAUGHT
+  ev.when adult & act:change
+  ev.once false
+  ev.cd 0
+  ev.w 1
+  ev.timeout 0
+  ev.promptMax 160
+  ev.reaction true
+  ev.kind house
+  ev.speaker adult
+  ev.tags privacy,undress
+  ev.adult true
+end
+
+event VE_RADIO_NEWS
+  ev.when poi:radio & (belief:bl_wait_for_army | want:wn_news_of_army) & !asked:WORLD_RADIO
+  ev.once false
+  ev.cd 36
+  ev.w 4
+  ev.timeout 45
+  ev.kind world
+  ev.speaker any
+  ch.1.label Tune it
+  ch.1.fx.1 do radio_on
+  ch.1.fx.2 set flag:heard_radio
+  ch.1.fx.3 op +1
+  ch.2.label Nothing but static
+  ch.2.fx.1 op +1
+  ch.2.fx.2 set flag:beliefsag
+  ch.3.label Not tonight
+  to.1 op -1
+end
+
+event VE_RECIPE
+  ev.when wit:ate & imin>=30
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind talk
+  ev.speaker any
+  ch.1.label Share a trick
+  ch.1.fx.1 op +2
+  ch.2.label Joke
+  ch.2.fx.1 op +1
+end
+
+event VE_REPAY
+  ev.when trait:pride>=3 & trust>=15 & imin>=45
+  ev.once true
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind barter
+  ev.speaker any
+  ch.1.label Accept
+  ch.1.fx.1 do take_item
+  ch.1.fx.2 op +2
+  ch.2.label Refuse
+  ch.2.fx.1 op -2
+end
+
+event VE_RUMOR
+  ev.when trust>=20
+  ev.once false
+  ev.cd 48
+  ev.w 2
+  ev.timeout 45
+  ev.kind world
+  ev.speaker any
+  ch.1.label Ask more
+  ch.1.fx.1 do rumor
+  ch.2.label Thanks
+  ch.2.fx.1 op +1
+end
+
+event VE_SHOES_DOOR
+  ev.when trait:tidy>=3 & (wet | rain) & imin>=1
+  ev.once false
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Thanks
+  ch.1.fx.1 op +1
+  ch.2.label Leave them on
+  ch.2.fx.1 op +1
+end
+
+event VE_SMOKE_ASK
+  ev.when vice:tobacco & imin>=20
+  ev.once false
+  ev.cd 12
+  ev.w 3
+  ev.timeout 45
+  ev.kind vice
+  ev.speaker any
+  ch.1.label Go ahead
+  ch.1.fx.1 op +2
+  ch.2.label On the porch
+  ch.3.label Not in the house
+  ch.3.fx.1 op -1
+end
+
+event VE_STAY_ANOTHER
+  ev.when staynear & trust>=15
+  ev.once true
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind arc
+  ev.speaker any
+  ch.1.label Stay
+  ch.1.fx.1 op +4
+  ch.1.fx.2 arc stay +24
+  ch.1.fx.3 do stay_extend
+  ch.2.label Not tonight
+  ch.2.fx.1 op -2
+  ch.2.fx.2 do ask_leave
+end
+
+event VE_TEASE
+  ev.when adult & opt:Flirt & trait:flirt>=4 & trust>=55 & night
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind flirt
+  ev.speaker adult
+  ev.tags privacy
+  ev.adult true
+  ch.1.label Smile
+  ch.1.fx.1 set flag:f2_tease
+  ch.2.label Change the subject
+end
+
+event VE_TV_WORKS
+  ev.when poi:tv & insideSec>=180 & !asked:HOUSE_TV & (act:stand | act:sit)
+  ev.once false
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Try it
+  ch.1.fx.1 do tv_on
+  ch.1.fx.2 set flag:watched_tv
+  ch.1.fx.3 op +2
+  ch.2.label No power to spare
+  ch.2.fx.1 set flag:denied_tv
+  ch.2.fx.2 op -1
+  ch.3.label Only static
+  ch.3.fx.1 op +1
+  to.1 op -1
+end
+
+event VE_WASH_UP
+  ev.when need:dirty>=3 & (poi:sink | poi:bath) & imin>=30
+  ev.once false
+  ev.cd 18
+  ev.w 4
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Bathroom's there
+  ch.1.fx.1 do life wash
+  ch.1.fx.2 need dirty -2
+  ch.1.fx.3 op +3
+  ch.2.label Use the bucket
+  ch.2.fx.1 need dirty -1
+  ch.2.fx.2 op +1
+  ch.3.label Not right now
+  ch.3.fx.1 op -1
+  to.1 op -1
+end
+
+event VE_WEATHER_ROOF
+  ev.when rain & imin>=20
+  ev.once false
+  ev.cd 24
+  ev.w 3
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Reassure
+  ch.1.fx.1 op +1
+  ch.2.label Admit the leak
+  ch.2.fx.1 op +2
+end
+
+event VE_WHAT_DID_YOU_DO
+  ev.when trust>=15 & imin>=30
+  ev.once true
+  ev.cd 24
+  ev.w 2
+  ev.timeout 45
+  ev.kind talk
+  ev.speaker any
+  ch.1.label Tell the truth
+  ch.1.fx.1 op +1
+  ch.2.label A joke
+  ch.2.needs trait:humor>=3
+  ch.2.fx.1 op +1
+  ch.3.label Skip
+end
+
+event VE_WHERE_TO_LIE
+  ev.when need:fatigue>=4 & (night | imin>=120) & poi:bed
+  ev.once false
+  ev.cd 24
+  ev.w 4
+  ev.timeout 45
+  ev.kind house
+  ev.speaker any
+  ch.1.label Take the bed
+  ch.1.fx.1 do life rest
+  ch.1.fx.2 op +5
+  ch.2.label The couch
+  ch.2.fx.1 do life rest
+  ch.2.fx.2 op +3
+  ch.3.label Floor by the stove
+  ch.4.label Not tonight
+  ch.4.fx.1 op -2
+end

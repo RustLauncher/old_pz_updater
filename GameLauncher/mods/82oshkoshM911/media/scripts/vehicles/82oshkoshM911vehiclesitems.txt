@@ -1,0 +1,313 @@
+module Base
+{
+
+	/************************ Trunks ************************/
+
+    item M911Trunk2
+    {
+        Weight	=	1.0,
+        Type	=	Normal,
+        DisplayName	=	Trunk,
+        Icon	=	na,
+        VehicleType =   2,
+        MaxCapacity = 75,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item M967SmallTrunk2
+    {
+        Weight  =   1.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   Trunk,
+        Icon    =   na,
+        VehicleType =   2,
+        MaxCapacity = 50,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item M911Toolbox2
+    {
+        Weight	=	1.0,
+        Type	=	Normal,
+        DisplayName	=	Trunk,
+        Icon	=	na,
+        VehicleType =   2,
+        MaxCapacity = 25,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    /************************ Hood ************************/
+
+    item M911EngineDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   12.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Hood,
+        Icon    =   M911hood,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911EngineDoorWI,
+    }
+
+    /************************ Trunk door ************************/
+
+    item M911TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   3.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Trunk Lid,
+        Icon    =   M911trunkDoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911TrunkDoorWI,
+    }
+
+    item M127TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   18.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M127 Trunk Lid,
+        Icon    =   M127trunkDoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M127TrunkDoorWI,
+    }
+
+    item M128TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   25.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M128 Trunk Doors,
+        Icon    =   M128trunkDoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M128TrunkDoorWI,
+    }
+
+    item M129TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   14.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M129 Trunk Door,
+        Icon    =   M129trunkDoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M129TrunkDoorWI,
+    }
+
+    item M967TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   4.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M967 Trunk Lid,
+        Icon    =   M967trunkDoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M967TrunkDoorWI,
+    }
+
+    item IsoContainerTrunkDoor2
+    {
+        Weight  =   15.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   ISO Container Door,
+        Icon    =   ISOdoor,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ContainerDoorWI,
+    }
+
+    /************************ Doors ************************/
+
+    item M911CarFrontDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   10.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Door,
+        Icon    =   M911door,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911FrontDoorWI,
+    }
+
+    /************************ Windows ************************/
+
+    item M911Windshield2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   8.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Windshield,
+        Icon    =   M911wind,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911WindshieldWI,
+    }
+
+    item M911SideWindow2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   3.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Side Window,
+        Icon    =   M911win,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911WindowWI,
+    }
+
+    item M911WindshieldRear2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   6.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Rear Windshield,
+        Icon    =   M911rwind,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911WindshieldRearWI,
+    }
+
+    /************************ Armor ************************/
+
+    item M911CarFrontDoorArmor
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   15.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Makeshift Door Armor,
+        Icon    =   M911doora,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911FrontDoorArmorWI,
+    }
+
+    item M911WindshieldArmor
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   10.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Makeshift Windshield Armor,
+        Icon    =   M911winda,
+        ChanceToSpawnDamaged = 30,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911WindshieldArmorWI,
+    }
+
+    item M911WindshieldRearArmor
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   10.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Makeshift Rear Windshield Armor,
+        Icon    =   M911rwinda,
+        ChanceToSpawnDamaged = 30,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911WindshieldRearArmorWI,
+    }
+
+    /************************ Bullbars ************************/
+
+    item M911Bullbar0
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   20.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Bullbar,
+        Icon    =   M911bull0,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911Bullbar0WI,
+    }
+
+    item M911Bullbar1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   17.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Makeshift Bullbar,
+        Icon    =   M911bull1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911Bullbar1WI,
+    }
+
+    /************************ Muffler ************************/
+
+      item M911Muffler
+      {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   5.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Muffler,
+        Icon    =   M911muff,
+        EngineLoudness = 100,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.04,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911MufflerWI,
+      }
+
+      /************************ Mudflaps ************************/
+
+    item M911Mudflaps
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   4.0,
+        Type    =   Normal,
+        VehicleType =   2,
+        DisplayName =   M911 Mudflaps,
+        Icon    =   M911mudf,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+        WorldStaticModel = M911MudflapsWI,
+    }
+
+}

@@ -1,0 +1,128 @@
+module RotatorsB42
+{
+   /* SMALL TRAILER */
+	model TrailerWaterSmallBase
+   {
+      mesh = vehicles/Trailers_rWaterTrailerSmall|Body_mesh,
+      shader = vehicle_norandom_multiuv,
+      invertX = FALSE,
+      scale = 0.0035,
+   }
+	model WaterTrailerSmalltrunkR
+	{
+      mesh = vehicles/Trailers_rWaterTrailerSmall|Trunk1_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.001115,
+	}
+	model WaterTrailerSmalltrunkL
+	{
+      mesh = vehicles/Trailers_rWaterTrailerSmall|Trunk2_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.001115,
+	}
+	model WaterTrailerSmallTankLid
+	{
+      mesh = vehicles/Trailers_rWaterTrailerSmall|TankLid_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0011235,
+	}
+	model TrailerWaterSmallWheelR
+	{
+		mesh = vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		shader = vehiclewheel,
+		scale = 0.003,
+      
+		/*mesh = vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerSmallWheels, */
+	}
+	model TrailerWaterSmallWheelL
+	{
+		mesh = vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		shader = vehiclewheel,
+      scale = 0.003,
+      
+		/*mesh = vehicles/Trailers_rWaterTrailerSmall_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerSmallWheels, */
+	}
+   
+   
+   /* BIG TRAILER */
+	model TrailerWaterBigBase
+   {
+      mesh = vehicles/Trailers_rWaterTrailerBig|Body_mesh,
+      shader = vehicle_norandom_multiuv,
+      invertX = FALSE,
+      scale = 0.1,
+   }
+	model WaterTrailerBigtrunk
+	{
+      mesh = vehicles/Trailers_rWaterTrailerBig|Trunk_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.025,
+	}
+	model WaterTrailerBigTankLid
+	{
+      mesh = vehicles/Trailers_rWaterTrailerBig|TankLid_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.025,
+	}
+	model WaterTrailerBigTankPump
+	{
+      mesh = vehicles/Trailers_rWaterTrailerBig|Hose_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.025,
+	}
+   
+	model TrailerWaterBigfrontwheelleft
+	{
+		mesh = vehicles/Trailers_rWaterTrailerBig_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerBig_Wheel,
+		shader = vehiclewheel,
+      scale = 0.1,
+	}
+	model TrailerWaterBigfrontwheelright
+	{
+		mesh = vehicles/Trailers_rWaterTrailerBig_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerBig_Wheel,
+		shader = vehiclewheel,
+      scale = 0.1,
+	}
+	model TrailerWaterBigrearwheelleft
+	{
+		mesh = vehicles/Trailers_rWaterTrailerBig_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerBig_Wheel,
+		shader = vehiclewheel,
+      scale = 0.1,
+	}
+	model TrailerWaterBigrearwheelright
+	{
+		mesh = vehicles/Trailers_rWaterTrailerBig_Wheel,
+		texture = Vehicles/Trailers_rWaterTrailerBig_Wheel,
+		shader = vehiclewheel,
+      scale = 0.1,
+	}
+   
+   
+   /* ITEMS */
+	model WaterTrailerTankLidWI
+	{
+		mesh    = vehicles/Trailers_rTankLidWI,
+		texture = Vehicles/Trailers_rWaterBig_USMCGreen,
+		scale   = 0.05,
+	}
+   
+	model WaterTrailerWaterFilterWI
+	{
+		mesh = WorldItems/Battery,
+		texture = WorldItems/rWaterFilter,
+		scale = 0.75,
+	}
+}

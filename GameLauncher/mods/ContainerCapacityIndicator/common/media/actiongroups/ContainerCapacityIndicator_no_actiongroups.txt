@@ -1,0 +1,2 @@
+This client UI mod intentionally ships no action groups.
+

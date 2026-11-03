@@ -1,0 +1,302 @@
+module Base
+{
+    model MagazineGroundGeneric
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundArt
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_art,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundBusiness
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_business,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundCar
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_car,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundChilds
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_childs,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundCinema
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_cinema,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundCrime
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_crime,
+	scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundFashion
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_fashion,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundFirearm
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundGaming
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_gaming,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundGolf
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_golf,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundHealth
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_health,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundHobby
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundHorror
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_horror,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundHumor
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_humor,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundMilitary
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_military,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundMusic
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_music,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundOutdoors
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_outdoors,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundPolice
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_police,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundPopular
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundRich
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundScience
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_science,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundSports
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_sports,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundTech
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_tech,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MagazineGroundTeens
+    {
+        mesh = WorldItems/MagazineOpen,
+        texture = WorldItems/magazine_generic,
+        scale = 0.3,
+        attachment world
+        {
+            offset = 0.0 0.0 -0.605,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+}

@@ -1,0 +1,112 @@
+module Base
+{
+    model MonsterCanModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterCan,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraWhiteModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraWhite,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraParadiseModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraParadise,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraSunriseModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraSunrise,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraVioletModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraViolet,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraRedModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraRed,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterUltraPeachyKeenModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterUltraPeachyKeen,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterPipelinePunchModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterPipelinePunch,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterMangoLocoModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterMangoLoco,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+
+    model MonsterKhaoticModel
+    {
+        mesh = PopCanDiet,
+        texture = WorldItems/MonsterKhaotic,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0177 0.0017 0.0047,
+            rotate = 0.0 -30.9663 0.0,
+        }
+    }
+}

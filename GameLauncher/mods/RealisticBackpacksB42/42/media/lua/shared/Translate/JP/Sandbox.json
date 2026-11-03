@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "リアルなバックパック",
+    "Sandbox_RB_HandmadeCapacity": "手製の袋の容量",
+    "Sandbox_RB_HandmadeWeightReduction": "手製の袋の重量軽減率",
+    "Sandbox_RB_HandmadeWeight": "手製の袋の重量",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "手製の袋の走行速度補正",
+    "Sandbox_RB_HuntingCapacity": "ハンティング・バックパックの容量",
+    "Sandbox_RB_HuntingWeightReduction": "ハンティング・バックパックの重量軽減率",
+    "Sandbox_RB_HuntingWeight": "ハンティング・バックパックの重量",
+    "Sandbox_RB_HuntingRunSpeedModifier": "ハンティング・バックパックの走行速度補正",
+    "Sandbox_RB_AssaultCapacity": "アサルト・バックパックの容量",
+    "Sandbox_RB_AssaultWeightReduction": "アサルト・バックパックの重量軽減率",
+    "Sandbox_RB_AssaultWeight": "アサルト・バックパックの重量",
+    "Sandbox_RB_AssaultRunSpeedModifier": "アサルト・バックパックの走行速度補正",
+    "Sandbox_RB_SleepingBagCapacity": "寝袋付きバックパックの容量",
+    "Sandbox_RB_SleepingBagWeightReduction": "寝袋付きバックパックの重量軽減率",
+    "Sandbox_RB_SleepingBagWeight": "寝袋付きバックパックの重量",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "寝袋付きバックパックの走行速度補正"
+}

@@ -1,0 +1,9 @@
+id=CompanionDogsMalinois
+name=CD: Belgian Malinois
+description=Belgian Malinois for Companion Dogs - a police detection dog. It trains Scent as fast as the Husky, the quickest in the mod, and holds its own in a fight. Comes with its own K9 Scent moodle - while your Malinois is at your side an arrow marks where it last scented the nearest zombie you cannot see. Stray Malinois guard police stations and military checkpoints, and very rarely turn up at a house. REQUIRES the Companion Dogs mod (0.8.0 or newer). Do not remove this add-on from a save with living Malinois.
+poster=poster.png
+icon=icon.png
+require=CompanionDogs
+modversion=0.1.0
+pzversion=42.19.0
+versionMin=42.18.0

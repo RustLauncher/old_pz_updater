@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\BackPacks\HikingBag_RHand.X</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\BackPacks\HikingBag_RHand.X</m_FemaleModel>
+	<m_GUID>cd5923d9-2682-40b3-8d0d-902cbcd4b5e0</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\CAColorfulWorld\hikingbagblue_bright</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\hikingbaggreen_bright</textureChoices>
+	<textureChoices>clothes\CAColorfulWorld\hikingbagred_bright</textureChoices>
+	<textureChoices>clothes\bag\HikingBag_Camo</textureChoices>
+</clothingItem>

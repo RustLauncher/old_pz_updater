@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "Pastor-da-Anatolia",
+    "IGUI_AnimalType_anatolianmale": "Pastor-da-Anatolia (macho)",
+    "IGUI_AnimalType_anatolianfemale": "Pastor-da-Anatolia (femea)",
+    "IGUI_AnimalType_anatolianpup": "Pastor-da-Anatolia (filhote)",
+    "IGUI_PD_Breed_anatolianshepherd": "Pastor-da-Anatolia",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "Um grande e corajoso guardiao de rebanhos, com pelagem fulva clara, ventre creme e mascara facial escura. Aprende combate rapidamente, carrega alforjes maiores e ajuda a reduzir o panico do dono.",
+    "IGUI_Breed_greaterswissmountaindog": "Grande Boiadeiro Suico",
+    "IGUI_AnimalType_greaterswissmale": "Grande Boiadeiro Suico (macho)",
+    "IGUI_AnimalType_greaterswissfemale": "Grande Boiadeiro Suico (femea)",
+    "IGUI_AnimalType_greaterswisspup": "Grande Boiadeiro Suico (filhote)",
+    "IGUI_PD_Breed_greaterswissmountaindog": "Grande Boiadeiro Suico",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "Um grande e corajoso cao de trabalho tricolor, criado para guardar fazendas, puxar carrocas e conduzir rebanhos. Aprende combate rapidamente, carrega alforjes maiores e ajuda a reduzir o panico do dono."
+}

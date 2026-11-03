@@ -1,0 +1,1 @@
+ItemBodyLocation.register("ZombieDismemberment:HeadCarrier")

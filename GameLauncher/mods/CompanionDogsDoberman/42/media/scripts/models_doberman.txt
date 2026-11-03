@@ -1,0 +1,43 @@
+module Base
+{
+    model Doberman_Body
+    {
+        mesh = Skinned/Doberman_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = DobAnim,
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0 -5.0 95.0,
+            bone = Dummy01,
+        }
+        attachment saddlebags_l
+        {
+            offset = 0.055 0.04 0.05,
+            rotate = 8.0 -90.0 90.0,
+            scale = 0.55,
+            bone = Spine_03,
+        }
+        attachment saddlebags_r
+        {
+            offset = -0.055 0.04 0.05,
+            rotate = 8.0 90.0 -90.0,
+            scale = 0.55,
+            bone = Spine_03,
+        }
+        attachment saddlebags_c
+        {
+            offset = 0.0 0.05 -0.04,
+            rotate = 90.0 -90.0 0.0,
+            scale = 0.35,
+            bone = Spine_03,
+        }
+    }
+
+    animationsMesh DobAnim
+    {
+        meshFile = Skinned/Doberman_Body,
+        keepMeshAnimations = true,
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "Sandbox_FTZCarts": "FTZ Carts & Trolleys",
+    "Sandbox_FTZCarts_WorldSpawnChance": "Carts on the floor: chance per room (%)",
+    "Sandbox_FTZCarts_WorldSpawnChance_tooltip": "Chance for a supermarket or warehouse room to have carts standing on the floor, rolled once per room. 0 = never.",
+    "Sandbox_FTZCarts_WorldSpawnMax": "Carts on the floor: maximum per room",
+    "Sandbox_FTZCarts_WorldSpawnMax_tooltip": "Maximum number of carts standing in the same room (the actual number is rolled between 1 and this maximum).",
+    "Sandbox_FTZCarts_LootRate": "Carts in containers (%)",
+    "Sandbox_FTZCarts_LootRate_tooltip": "How often carts show up as container loot (hardware stores, Gigamart, tool crates...). 100 = like the original mod, 0 = never, 500 = five times more.",
+    "Sandbox_FTZCarts_CartCapacity": "Shopping cart capacity",
+    "Sandbox_FTZCarts_CartCapacity_tooltip": "Weight a shopping cart can hold (37 by default).",
+    "Sandbox_FTZCarts_TrolleyCapacity": "Platform trolley capacity",
+    "Sandbox_FTZCarts_TrolleyCapacity_tooltip": "Weight a warehouse platform trolley can hold (50 by default)."
+}

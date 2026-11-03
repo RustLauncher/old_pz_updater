@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Az eső lemossa a vért",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Csempe percenként",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Hány véletlenszerű csempét tisztít meg játékpercenként.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Időjárás-intenzitás küszöb",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Milyen erős esőnek vagy hónak kell esnie, mielőtt a vér lemosódik. Magasabb = erősebb időjárás szükséges.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Hamu tisztítása",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Megtisztítja az elégetett holttestek által hagyott hamut is.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Állati ürülék tisztítása",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Megtisztítja a földön hagyott állati ürüléket (trágyát) is.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Belső tisztítása",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Az épületek belsejében lévő vért is megtisztítja.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Járművek tisztítása",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Fokozatosan megtisztítja a vért a járművekről is.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Jármű-tisztítási sebesség",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Mennyi vér távolítható el a járművekről percenként.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Ruházat tisztítása",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Fokozatosan megtisztítja a vért és piszkot a játékosok viselt ruházatáról is.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Ruházat-tisztítási sebesség",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Mennyi vér és piszok távolítható el a ruházatból percenként.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Mindig tisztít",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Mindig tisztít, időjárástól függetlenül."
+}

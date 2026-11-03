@@ -1,0 +1,89 @@
+module ImprovisedGlass
+{
+    imports
+    {
+        Base
+    }
+
+    item PanWithGlassShards
+    {
+        Weight = 2.0,
+        ItemType = base:food,
+        DisplayName = Roasting Pan with Glass Shards,
+        Icon = PanWithGlassShards,
+        DisplayCategory = Material,
+        IsCookable = TRUE,
+        MinutesToCook = 60,
+        MinutesToBurn = 180,
+        ReplaceOnCooked = ImprovisedGlass.PanWithGlassPane,
+        CantEat = TRUE,
+        BadInMicrowave = TRUE,
+        StaticModel = Pan,
+        WorldStaticModel = PanGround,
+    }
+
+    item PanWithGlassPane
+    {
+        Weight = 2.5,
+        ItemType = base:normal,
+        DisplayName = Roasting Pan with Glass Pane,
+        Icon = PanWithGlassPane,
+        DisplayCategory = Material,
+        StaticModel = Pan,
+        WorldStaticModel = PanGround,
+    }
+
+    item WoodenWindow01
+    {
+        Weight = 3.0,
+        ItemType = base:normal,
+        DisplayName = Single Wooden Window,
+        Icon = WoodenWindowSingle,
+        DisplayCategory = Material,
+    }
+
+    item WoodenWindow02
+    {
+        Weight = 4.0,
+        ItemType = base:normal,
+        DisplayName = Double Wooden Window,
+        Icon = WoodenWindowDouble,
+        DisplayCategory = Material,
+    }
+
+    item WoodenWindow03
+    {
+        Weight = 5.0,
+        ItemType = base:normal,
+        DisplayName = Triple Wooden Window,
+        Icon = WoodenWindowTriple,
+        DisplayCategory = Material,
+    }
+
+    item WoodenWindow04
+    {
+        Weight = 3.5,
+        ItemType = base:normal,
+        DisplayName = White Wooden Window,
+        Icon = WoodenWindowWhite,
+        DisplayCategory = Material,
+    }
+
+    item WoodenWindow06
+    {
+        Weight = 6.0,
+        ItemType = base:normal,
+        DisplayName = Large Wooden Window,
+        Icon = WoodenWindowLarge,
+        DisplayCategory = Material,
+    }
+
+    item MetalWindow01
+    {
+        Weight = 6.0,
+        ItemType = base:normal,
+        DisplayName = Metal Window,
+        Icon = MetalWindowSingle,
+        DisplayCategory = Material,
+    }
+}

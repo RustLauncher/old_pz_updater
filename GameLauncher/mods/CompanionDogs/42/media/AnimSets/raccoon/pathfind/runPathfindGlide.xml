@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gemeo do runPathfind para a copia REMOTA que o nosso follow stream conduz (tickFollowStreamClient).
+     A unica diferenca e m_useDeferredMovement=false. Ele zera o root motion do clip em
+     AnimationPlayer.calculateDeferredMovementAccumInternal, que e quem alimenta getDeferredMovement(), e com isso
+     PathFindBehavior2.moveToPoint cai no "if (speed <= 0) return": o remote-mover da engine fica mudo e a posicao da
+     copia passa a ser so a do nosso setX. Sem isto ele empurra a copia em linha reta pro alvo do pacote, alcanca,
+     bate na zona morta de 0.1 tile e planta ate o proximo pacote, que e a travada da corrida em MP.
+     m_SpeedScale continua valendo: as pernas seguem na cadencia normal, so a translacao sai da conta.
+     cdGlide so e setada pelo client no cao que ele conduz. Variavel ausente com tipo BOOL cai no !boolValue de
+     AnimCondition.check, ou seja FALSO: em SP e em qualquer animal nao streamado este node e inalcancavel. -->
+<animNode>
+	<m_Name>runPathfindGlide</m_Name>
+	<m_AnimName>Rac_Run</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdRunScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_useDeferredMovement>false</m_useDeferredMovement>
+	<m_ConditionPriority>10</m_ConditionPriority>
+	<m_Conditions>
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>cdGlide</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events>
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events>
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option BarricadeTheDoor.DoorHealthMultiplier
+{
+    type = enum,
+    numValues = 4,
+    default = 4,
+    page = BarricadeTheDoor,
+    translation = BarricadeTheDoor_DoorHealthMultiplier,
+    valueTranslation = BarricadeTheDoor_DoorHealthMultiplier_Values,
+}

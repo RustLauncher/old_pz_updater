@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Labrador",
+    "IGUI_AnimalType_labmale": "Labrador (mâle)",
+    "IGUI_AnimalType_labfemale": "Labrador (femelle)",
+    "IGUI_AnimalType_labpup": "Labrador (chiot)",
+    "IGUI_PD_Breed_labrador": "Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Un chien de chasse fait pour rapporter: il progresse en Chasse deux fois plus vite, l'Obéissance juste derrière. Par conception, c'est l'un des pires combattants de la famille: seul le Carlin mord plus faiblement, aucune mise à terre, et une bagarre le laisse profondément secoué. Son don, c'est sa gueule. Il vous rapporte ses prises dès qu'il sait chasser, sans attendre un haut niveau de Chasse, n'en lâche jamais une en chemin, et revient souvent avec autre chose qu'il a trouvé (Gueule douce). Fréquent dans les maisons, il traîne aussi autour des cabanes de chasse, des campings, des hangars à bateaux et des postes de gardes forestiers. Dépecer ce qu'il vous rapporte est également plus facile quand il est là.",
+    "IGUI_PD_Moodle_SoftMouth": "Gueule douce",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Votre Labrador rapporte chaque prise dès sa première chasse, et souvent quelque chose en plus. Tant qu'il reste près de vous, nourri et loyal, vous progressez aussi plus vite en Dépeçage et en Armes tranchantes courtes.",
+    "IGUI_PD_LabExtra": "Votre %1 vous a rapporté autre chose: %2."
+}

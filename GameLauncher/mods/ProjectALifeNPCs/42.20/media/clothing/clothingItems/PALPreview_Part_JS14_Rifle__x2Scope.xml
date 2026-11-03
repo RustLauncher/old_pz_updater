@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Part_JS14_Rifle__x2Scope</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Part_JS14_Rifle__x2Scope</m_FemaleModel>
+  <m_GUID>3e348f42-adf8-0000-ada1-fd8826314ccd</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Rifle_12XScope</textureChoices>
+</clothingItem>

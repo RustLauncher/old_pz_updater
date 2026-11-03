@@ -1,0 +1,68 @@
+module Base
+{
+	template vehicle M967Storage
+	{
+        part M967Trunk1
+		{
+			category = bodywork,
+			area = TruckBed2,
+			itemType = damnCraft.Trunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+            durability = 5,
+			container
+			{
+                capacity = 50,
+				conditionAffectsCapacity = false,
+				test = M911.ContainerAccess.TruckBed2,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M967Trunk2
+		{
+			category = bodywork,
+			area = TruckBed2,
+			itemType = damnCraft.Trunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+            durability = 5,
+			container
+			{
+                capacity = 40,
+				conditionAffectsCapacity = false,
+				test = M911.ContainerAccess.TruckBed2,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M967Trunk3
+		{
+			category = bodywork,
+			area = TruckBed3,
+			itemType = damnCraft.Trunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+            durability = 5,
+			container
+			{
+                capacity = 40,
+				conditionAffectsCapacity = false,
+				test = M911.ContainerAccess.TruckBed3,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+	}
+
+}
+

@@ -1,0 +1,293 @@
+module Tuna_WeaponRack
+{
+    /* no container component anywhere: B42 crafted furniture takes its container from TILE PROPERTIES */
+    entity WeaponRack
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_WeaponRack,
+            uiEnabled = true,
+        }
+        component SpriteConfig
+        {
+            face N
+            {
+                layer
+                {
+                    /* each face block must name the cell whose Facing tile property matches, or the display cannot see through it */
+                    row = tuna_weaponrack_01_0,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_1,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_2,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_3,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureSmall,
+            time = 100,
+            SkillRequired = Woodwork:3,
+            xpAward = Woodwork:20,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+    entity HandgunCase
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_HandgunCase,
+            uiEnabled = true,
+        }
+        component SpriteConfig
+        {
+            face N
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_4,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_5,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_6,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_7,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureSmall,
+            time = 100,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:15,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+            }
+        }
+    }
+
+    /* the 1x2: rows are split on WHITESPACE, a row is the X axis, dimensions are inferred, and the master is the first non-empty tile - so the anchor comes FIRST in every row */
+    entity Armory
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_Armory,
+            uiEnabled = true,
+        }
+        component SpriteConfig
+        {
+            face N
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_8 tuna_weaponrack_01_9,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_10,
+                    row = tuna_weaponrack_01_11,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_12 tuna_weaponrack_01_13,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_14,
+                    row = tuna_weaponrack_01_15,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 100,
+            /* the barrel oven's recipe doubled - vanilla's only welded free-standing furniture, and its only other BuildMetalStructureMedium user */
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:100,
+            category = Welding,
+            Tags = Welding,
+            inputs
+            {
+                item 8 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 4 [Base.SheetMetal],
+                item 2 [Base.NutsBolts],
+                item 8 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+    entity PegBoard
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_PegBoard,
+            uiEnabled = true,
+        }
+        component SpriteConfig
+        {
+            /* the build cursor's own per-square test; MoveType only gates the PLACE path */
+            OnIsValid = TunaWRBuild.NeedsWall,
+            face N
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_16,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_17,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_18,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureSmall,
+            time = 100,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:15,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+    entity FieldRack
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Tuna_FieldRack,
+            uiEnabled = true,
+        }
+        component SpriteConfig
+        {
+            face N
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_20,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_21,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_22,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = tuna_weaponrack_01_23,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 100,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:50,
+            category = Welding,
+            Tags = Welding,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SheetMetal],
+                item 2 [Base.MetalPipe],
+                item 4 [Base.NutsBolts],
+            }
+        }
+    }
+}

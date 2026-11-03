@@ -1,0 +1,46 @@
+/*
+   The original wheel meshes have inverted UVs in Build 42 and sample the empty
+   half of their texture. Reuse damnlib's correctly-authored run-flat wheel
+   models while keeping the original single-wheel silhouette and dimensions.
+*/
+module RotatorsB42
+{
+	model TrailerWaterBigfrontwheelleft
+	{
+		mesh = vehicles/runFlat_models|runFlat_Large,
+		texture = vehicles/Wheels_runFlat_Large,
+		shader = damn_wheel_shader,
+	}
+	model TrailerWaterBigfrontwheelright
+	{
+		mesh = vehicles/runFlat_models|runFlat_Large,
+		texture = vehicles/Wheels_runFlat_Large,
+		shader = damn_wheel_shader,
+	}
+	model TrailerWaterBigrearwheelleft
+	{
+		mesh = vehicles/runFlat_models|runFlat_Large,
+		texture = vehicles/Wheels_runFlat_Large,
+		shader = damn_wheel_shader,
+	}
+	model TrailerWaterBigrearwheelright
+	{
+		mesh = vehicles/runFlat_models|runFlat_Large,
+		texture = vehicles/Wheels_runFlat_Large,
+		shader = damn_wheel_shader,
+	}
+	model TrailerWaterSmallWheelR
+	{
+		mesh = vehicles/runFlat_models|runFlat_Small,
+		texture = vehicles/Wheels_runFlat_Small,
+		shader = damn_wheel_shader,
+		scale = 0.40,
+	}
+	model TrailerWaterSmallWheelL
+	{
+		mesh = vehicles/runFlat_models|runFlat_Small,
+		texture = vehicles/Wheels_runFlat_Small,
+		shader = damn_wheel_shader,
+		scale = 0.40,
+	}
+}

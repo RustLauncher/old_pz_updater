@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "¿Qué quieres escribir en este contenedor? (máximo %1 caracteres)",
+    "IGUI_LPBCS_InkLabel": "Escrito con",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "Necesitas un bolígrafo o un lápiz para escribir aquí.",
+    "IGUI_LPBCS_NeedBrush": "Necesitas una brocha o un pincel para pintar un nombre aquí.",
+    "IGUI_LPBCS_NeedPaint": "Necesitas un bote de pintura para pintar un nombre aquí.",
+
+    "IGUI_LPBCS_Disabled": "Escribir en contenedores está desactivado en este servidor.",
+    "IGUI_LPBCS_NoContainer": "Ese contenedor ya no está ahí.",
+    "IGUI_LPBCS_TooFar": "Estás demasiado lejos de ese contenedor.",
+    "IGUI_LPBCS_NoWay": "No hay forma de llegar a ese contenedor.",
+    "IGUI_LPBCS_NotYourSafehouse": "Este contenedor está dentro de un refugio al que no perteneces.",
+    "IGUI_LPBCS_WriteFailed": "No se ha podido escribir el nombre.",
+    "IGUI_LPBCS_MoveFailed": "No se ha podido mover el cartel.",
+    "IGUI_LPBCS_BadRequest": "La solicitud no tenía sentido y se ignoró.",
+    "IGUI_LPBCS_TooQuick": "Espera un momento antes de volver a intentarlo.",
+    "IGUI_LPBCS_VersionSkew": "Este servidor está ejecutando una versión anterior de este mod."
+}

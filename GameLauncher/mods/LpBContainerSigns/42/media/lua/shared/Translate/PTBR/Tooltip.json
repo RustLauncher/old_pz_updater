@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Uma ripa de madeira pregada na frente. Pode ser lida de longe.",
+    "Tooltip_LPBCS_StylePaper": "Uma folha colada na frente. Rápido e simples.",
+    "Tooltip_LPBCS_StylePainted": "Pintado diretamente na madeira, na cor da tinta usada. Precisa de pincel e tinta.",
+
+    "Tooltip_LPBCS_Side": "Qual face do contêiner a placa ficará.",
+    "Tooltip_LPBCS_SideAuto": "Deixa a escolha para o mod: a face direita, a menos que uma parede ou caixa bloqueie — nesse caso a placa se move sozinha.",
+    "Tooltip_LPBCS_SideLeft": "Pregada na face esquerda e permanece lá, mesmo que a direita fique livre.",
+    "Tooltip_LPBCS_SideRight": "Pregada na face direita e permanece lá, mesmo que algo fique encostado nela."
+}

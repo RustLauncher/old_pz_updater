@@ -1,0 +1,15 @@
+{
+    "IGUI_WAT_Status": "Armor",
+    "IGUI_WAT_Installed": "Armor installed",
+    "IGUI_WAT_Removed": "Armor removed",
+    "IGUI_WAT_Broken": "Armor destroyed",
+    "IGUI_WAT_SmashBlocked": "The glass is covered by armor",
+    "IGUI_WAT_NoVehicle": "No vehicle nearby",
+    "IGUI_WAT_TooFar": "Move closer to the vehicle",
+    "IGUI_WAT_NoKit": "No glass armor kit",
+    "IGUI_WAT_NoGlass": "Install the glass first",
+    "IGUI_WAT_NoPlate": "No armor plate",
+    "IGUI_WAT_NoBodyPart": "Install this part first",
+    "IGUI_WAT_RepairFirst": "Repair first",
+    "IGUI_WAT_Busy": "Someone is already working on this part"
+}

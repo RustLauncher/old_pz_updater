@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Held/Part_ShotgunSawnOff__x2Scope</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Held/Part_ShotgunSawnOff__x2Scope</m_FemaleModel>
+  <m_GUID>a0e8e11e-112b-a7f4-85e7-d0b075daf9f0</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Rifle_12XScope</textureChoices>
+</clothingItem>

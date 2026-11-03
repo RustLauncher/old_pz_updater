@@ -1,0 +1,229 @@
+@alife-records 1
+
+person vp_1289
+  card.batch B15
+  card.arch va_mennonite_neighbour
+  card.sex m
+  card.age 28
+  card.desc a broad young man with neatly clipped brown hair and clean plain cuffs
+  card.voice V14
+  card.seed 650050994
+  card.attract f
+  card.bond none
+  card.fear thunder
+  card.hobby weightlifting
+  card.v 1
+  name.first Noah
+  name.last Stoltzfus
+  name.reveal intro
+  origin.town Lebanon
+  origin.from his parents' house near Lebanon, after a Riverside childhood
+  origin.work made doors and cupboards, and joined a carpenters' union in 1986
+  origin.workKind carpenter
+  look.skin 1
+  look.hair short
+  look.hairColor 0.34,0.24,0.12
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 0
+  traits.humor 3
+  traits.temper 0
+  traits.honest 4
+  traits.faith 5
+  traits.trustSpeed 2
+  traits.curious 5
+  traits.pride 3
+  traits.flirt 2
+  traits.social 5
+  traits.tidy 5
+  traits.nostalg 3
+  need0.hunger 2
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 1
+  need0.fatigue 2
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_children_first
+  beliefs.1.s 3
+  beliefs.2.id bl_the_dead_are_people
+  beliefs.2.s 3
+  wants.1.id wn_blanket
+  wants.1.u 5
+  carry.1 Base.Photo
+  carry.2 Base.Notebook
+  dress.role mennonite_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 player_asks
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.bed folds_blanket_before_rest
+  hooks.radio asks_for_weather_then_music
+  hooks.shelf curious_about_picture_books
+  books.taste.1 humor
+  books.taste.2 sports
+  books.taste.3 history
+  facts.1.id f_barbell
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Hides eighty-six dollars for a barbell behind the photograph
+  facts.1.gate trust>=15
+  facts.2.id f_stranger
+  facts.2.kind secret
+  facts.2.tab world
+  facts.2.label Pretended to know a dead stranger to stop the mockery
+  facts.2.gate trust>=30 & flag:money_told
+  facts.3.id f_drawings
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Secretly draws comic pictures of Willie's lifting club
+  facts.3.gate trust>=45 & alone & flag:stranger_told
+  facts.4.id f_timber
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Falsified Len's timber receipt and kept the difference
+  facts.4.gate trust>=60 & alone & flag:drawings_told
+  facts.5.id f_relief
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Felt momentary relief when brother Reuben died
+  facts.5.gate trust>=75 & alone & flag:timber_told & gave:blanket
+  mk.1 red swim cap
+  mk.2 six good lifts
+  mk.3 Willie's kitchen
+  rt.1 6-8|kitchen|Washes before asking about breakfast and folds any bedding he has used
+  rt.2 12-14|livingroom|Asks about unfamiliar household objects and offers to carry a sensible load
+  rt.3 20-22|hall|Checks his own things are together and asks for a quiet place to pray
+  bl.1 lake photograph|Base.Photo|Becca's 1987 print, Noah holding her red cap; eighty-six dollars hidden behind its backing
+  bl.2 folding rule||Vernon's old rule, with one hinge looser than the others
+  bl.3 lifting-club notebook||His private comic drawings of Willie and the other lifters
+  bl.4 shirt with repaired cuff||Miriam matched the thread closely enough that he had to ask which side she mended
+  bl.5 union dues stub||Folded beside an old cupboard measurement, not displayed as a challenge to his family
+  bl.6 wooden shirt button||Carved during a wet afternoon and never sewn on because it was slightly too large
+  rl.1 Miriam Stoltzfus|mother|Likes him home for Sunday meals and insists on washed hands
+  rl.2 Amos Stoltzfus|father|Expects spare wages toward the household and knows nothing of the barbell savings
+  rl.3 Reuben Stoltzfus|younger brother, died 1980|Died at eleven; Noah remembers both affection and the burden of supervising him
+  rl.4 Willie Bender|friend and lifting partner|Holds the club at his house and unknowingly appears in Noah's comic drawings
+  rl.5 Becca Stoltzfus|cousin|Took the 1987 lake photograph and left her red swim cap in Noah's hand
+  rl.6 Vernon Pace|carpentry teacher|First paid Noah to help make cupboards after school ended in 1983
+end
+
+person vp_1296
+  card.batch B15
+  card.arch va_hispanic_farmworker
+  card.party vg_242
+  card.sex m
+  card.age 21
+  card.desc a young farmhand with close black hair and a clean work shirt collar
+  card.voice VX27
+  card.seed 729859814
+  card.attract f
+  card.bond spouse
+  card.fear being_blamed
+  card.hobby bird_watching
+  card.v 1
+  name.first Raul
+  name.last Aguilar
+  name.reveal intro
+  origin.town Radcliff
+  origin.from a hollow outside Radcliff reached by the long school bus route
+  origin.work farmhand on another family's tobacco ground, never its owner
+  origin.workKind farmhand
+  look.skin 3
+  look.hair short
+  look.hairColor 0.12,0.1,0.08
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 3
+  traits.humor 2
+  traits.temper 4
+  traits.honest 4
+  traits.faith 3
+  traits.trustSpeed 2
+  traits.curious 5
+  traits.pride 4
+  traits.flirt 5
+  traits.social 2
+  traits.tidy 4
+  traits.nostalg 3
+  need0.hunger 4
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 3
+  need0.fatigue 3
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_charity_has_limits
+  beliefs.1.s 3
+  beliefs.2.id bl_nothing_will_be_the_same
+  beliefs.2.s 3
+  wants.1.id wn_rest
+  wants.1.u 5
+  skills.farming 3
+  skills.tailoring 1
+  carry.1 Base.Notebook
+  carry.2 Base.Pencil
+  carry.3 Base.KeyRing
+  dress.role farm_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.window uncertain_bird_names
+  hooks.object f_ground
+  books.taste.1 farming
+  books.taste.2 history
+  facts.1.id f_ground
+  facts.1.kind job
+  facts.1.tab past
+  facts.1.label Farmhand on an employer's ground, not a landowner
+  facts.1.gate trust>=12
+  facts.2.id f_dog
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Left Nube tied despite promising Alonso to bring the dog
+  facts.2.gate trust>=27 & alone & partnerGone & flag:ground_told
+  facts.3.id f_hearing
+  facts.3.kind health
+  facts.3.tab now
+  facts.3.label Old machinery injury reduced hearing on one side
+  facts.3.gate trust>=42 & alone & partnerGone & flag:dog_told
+  facts.4.id f_julia
+  facts.4.kind money
+  facts.4.tab past
+  facts.4.label Julia's Graceland loan remains unpaid
+  facts.4.gate trust>=57 & alone & partnerGone & flag:hearing_told
+  facts.5.id f_thread
+  facts.5.kind love
+  facts.5.tab past
+  facts.5.label Quietly learned sewing to mend Leticia's keepsake
+  facts.5.gate trust>=72 & alone & partnerGone & flag:julia_told
+  mk.1 school bus hill
+  mk.2 borrowed binoculars
+  mk.3 one fence over
+  rt.1 6-8|window|Identifies visible birds carefully without pretending they explain dangers he cannot see
+  rt.2 12-14|porch|Checks the borrowed binoculars and writes uncertain sightings with question marks
+  rt.3 19-21|livingroom|Rests near his bag and quietly checks whether Leticia wants company
+  bl.1 borrowed binoculars||Julia's, loaned in exchange for a bird list rather than money.
+  bl.2 bird notebook|Base.Notebook|Swallow sightings and question marks share the same pages.
+  bl.3 pencil|Base.Pencil|Has a worn eraser from revising overconfident bird names.
+  bl.4 rented room key|Base.KeyRing|Opens neither a farm office nor an owned farmhouse, despite the impression he sometimes gives.
+  bl.5 Graceland ticket||From the 1991 adult trip with Leticia; the pleasure outlasted his willingness to discuss its cost.
+  bl.6 white thread card||A small remainder from learning to mend Leticia's handkerchief.
+  rl.1 Leticia Aguilar|adult wife|Met in 1990 at eighteen and twenty-five; married in 1992 at twenty and twenty-seven.
+  rl.2 Julia Aguilar|adult cousin|Lent binoculars and trip money; the latter is still owed.
+  rl.3 Benito Aguilar|father|Taught bird observation while waiting for work lifts; present whereabouts unconfirmed.
+  rl.4 Alonso Vega|adult neighbor|Trusted Raul to bring the dog Nube when the workers departed.
+end

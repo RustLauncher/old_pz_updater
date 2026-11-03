@@ -1,0 +1,9 @@
+authors=Lexx
+name=Water Semi-Trailer B42.20 Fix
+poster=preview.png
+icon=icon.png
+id=rWaterTrailerSemiB42
+require=rWaterTrailerB42,82oshkoshM911
+description=Build 42.20 fix. Adds the M967 as a VFluid-compatible water tanker. Requires KI5's 82 Oshkosh M911 and the Water Trailer B42.20 Fix; Tsar's Common Library is not required.
+url=https://rotators.net/
+versionMin=42.20.0

@@ -1,0 +1,55 @@
+module Base
+{
+    model PFP_DogFoodBag
+    {
+        mesh = PetFoodPackage/PetFoodBag,
+        texture = WorldItems/PFP_DogFoodBag,
+        scale = 0.25,
+    }
+
+    model PFP_CatFoodBag
+    {
+        mesh = PetFoodPackage/PetFoodBag,
+        texture = WorldItems/PFP_CatFoodBag,
+        scale = 0.25,
+    }
+
+    model PFP_DryDogFood_Box
+    {
+        mesh = PetFoodPackage/Parcel4,
+        texture = WorldItems/PFP_DryDogFood_Box,
+        scale = 0.15,
+    }
+
+    model PFP_DryCatFood_Box
+    {
+        mesh = PetFoodPackage/Parcel4,
+        texture = WorldItems/PFP_DryCatFood_Box,
+        scale = 0.15,
+    }
+
+    model PFP_CannedDogFood_Box
+    {
+        mesh = PetFoodPackage/Parcel4,
+        texture = WorldItems/PFP_CannedDogFood_Box,
+        scale = 0.15,
+    }
+
+    item DogFoodBag
+    {
+        Icon = PFP_DogFoodBag,
+        WorldStaticModel = PFP_DogFoodBag,
+    }
+
+    item CatFoodBag
+    {
+        Icon = PFP_CatFoodBag,
+        WorldStaticModel = PFP_CatFoodBag,
+    }
+
+    item Dogfood_Box
+    {
+        Icon = PFP_CannedDogFood_Box,
+        WorldStaticModel = PFP_CannedDogFood_Box,
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_doberman": "Dobermann",
+    "IGUI_AnimalType_dobmale": "Dobermann (maschio)",
+    "IGUI_AnimalType_dobfemale": "Dobermann (femmina)",
+    "IGUI_AnimalType_dobpup": "Dobermann (cucciolo)",
+    "IGUI_PD_Breed_doberman": "Dobermann",
+    "IGUI_PD_BreedDesc_doberman": "Un cane da guardia asciutto e vigile, il più rapido ad apprendere fra tutte le razze: allena l'Obbedienza più in fretta perfino del Pastore Tedesco. In combattimento è tutto filo e niente corazza: debole finché non è addestrato, ma con l'abilità di Combattimento al massimo morde più forte di ogni altro cane, pur incassando meno di un Rottweiler. Il suo vero dono è la fermezza: con il tuo Dobermann al fianco i nervi si calmano, il rinculo dell'arma da fuoco si riassorbe prima e ricarichi più in fretta (Mira Ferma). Si trova a guardia di stazioni di polizia e posti di blocco militari.",
+    "IGUI_PD_Moodle_SteadyAim": "Mira Ferma",
+    "IGUI_PD_Moodle_SteadyAim_desc": "Il tuo Dobermann ti guarda le spalle. Finché è vicino, nutrito e fedele, lo stress cala, la mira si riassesta più in fretta dopo ogni colpo e ricarichi più rapidamente."
+}

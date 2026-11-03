@@ -1,0 +1,50 @@
+VERSION = 1,
+
+option ReBandaged.AutoPick
+{
+    type = boolean,
+    default = true,
+    page = ReBandaged,
+    translation = ReBandaged_AutoPick
+}
+
+option ReBandaged.AutoDisinfect
+{
+    type = boolean,
+    default = false,
+    page = ReBandaged,
+    translation = ReBandaged_AutoDisinfect
+}
+
+option ReBandaged.AutoSearch
+{
+    type = boolean,
+    default = true,
+    page = ReBandaged,
+    translation = ReBandaged_AutoSearch
+}
+
+option ReBandaged.AutoTranslate
+{
+    type = boolean,
+    default = false,
+    page = ReBandaged,
+    translation = ReBandaged_AutoTranslate
+}
+
+option ReBandaged.OnlyDirty
+{
+    type = boolean,
+    default = false,
+    page = ReBandaged,
+    translation = ReBandaged_OnlyDirty
+}
+
+option ReBandaged.SpecifyPick
+{
+    type = boolean,
+    default = false,
+    page = ReBandaged,
+    translation = ReBandaged_SpecifyPick
+}
+

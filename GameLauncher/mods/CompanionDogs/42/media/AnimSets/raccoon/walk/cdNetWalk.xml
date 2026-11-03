@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Caminhada da copia remota. O animset e organizado por estado, e o estado "pathfind" e inalcancavel num
+     cliente: NetworkPlayerAI.parse zera bPathfind em todo pacote de animal e nada no cliente levanta de volta.
+     Entao o cao remoto vive em walk/idle e tocava o defaultWalk vanilla, que tem m_SpeedScale fixo em 1.20:
+     medido em jogo, 1.95 tile/s de perna contra 1.48 de corpo, 32% de foot-slide. Aqui a cadencia sai do
+     cdWalkScale que o servidor ja manda no proprio frame do stream.
+     Prioridade 5: ganha do vanilla, que nao declara m_ConditionPriority (0), e PERDE de todo node do mod, que
+     esta em 10. Entrou em 20 na primeira versao e comeu a animacao de pulo de cerca em MP.
+     Sync tracking ligado dos dois lados pra fase do ciclo sobreviver a troca de estado. -->
+<animNode>
+	<m_Name>cdNetWalk</m_Name>
+	<m_ConditionPriority>5</m_ConditionPriority>
+	<m_AnimName>Rac_Walk</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdWalkScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>true</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cda77ac4-0007-4001-8001-000000000001">
+		<m_Name>cdNetGait</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-0007-4001-8001-000000000002">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="cda77ac4-0007-4002-8001-000000000001">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="cda77ac4-0007-4002-8001-000000000002">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

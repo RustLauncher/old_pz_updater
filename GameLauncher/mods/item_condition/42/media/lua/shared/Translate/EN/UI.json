@@ -1,0 +1,79 @@
+{
+  "UI_qdx_item_condition_mod_name": "Item Condition",
+  "UI_qdx_item_condition_mod_name_uppercase": "ITEM CONDITION",
+
+  "UI_qdx_item_condition_section_hotbar": "Hotbar",
+  "UI_qdx_item_condition_section_equipped": "Equipped Items",
+  "UI_qdx_item_condition_section_colors": "Colors",
+
+  "UI_qdx_item_condition_option_progressbar_mode_none": "None",
+  "UI_qdx_item_condition_option_progressbar_mode_vertical": "Vertical",
+  "UI_qdx_item_condition_option_progressbar_mode_vertical_multicolor": "Vertical (Multicolor)",
+  "UI_qdx_item_condition_option_progressbar_mode_horizontal": "Horizontal",
+  "UI_qdx_item_condition_option_progressbar_mode_horizontal_multicolor": "Horizontal (Multicolor)",
+
+  "UI_qdx_item_condition_option_hotbar_progressbar_mode_name": "Progress Bar Mode (Hotbar)",
+  "UI_qdx_item_condition_option_hotbar_progressbar_mode_hover": "Choose how the condition indicator is displayed in the hotbar.",
+  "UI_qdx_item_condition_option_hotbar_progressbar_opacity_name": "Progress Bar Opacity (Hotbar)",
+  "UI_qdx_item_condition_option_hotbar_progressbar_opacity_hover": "Controls the transparency of the hotbar condition indicator.",
+
+  "UI_qdx_item_condition_option_equipped_progressbar_mode_name": "Progress Bar Mode (Equipped)",
+  "UI_qdx_item_condition_option_equipped_progressbar_mode_hover": "Choose how the condition indicator is displayed on equipped items.",
+  "UI_qdx_item_condition_option_equipped_progressbar_opacity_name": "Progress Bar Opacity (Equipped)",
+  "UI_qdx_item_condition_option_equipped_progressbar_opacity_hover": "Controls the transparency of the equipped item condition indicator.",
+
+  "UI_qdx_item_condition_option_default_color_P100": "Items: 100",
+  "UI_qdx_item_condition_option_default_color_P100_hover": "Color used at 100 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P100": "Water: 100",
+  "UI_qdx_item_condition_option_water_color_P100_hover": "Color used at 100 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P090": "Items: 90",
+  "UI_qdx_item_condition_option_default_color_P090_hover": "Color used at 90 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P090": "Water: 90",
+  "UI_qdx_item_condition_option_water_color_P090_hover": "Color used at 90 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P080": "Items: 80",
+  "UI_qdx_item_condition_option_default_color_P080_hover": "Color used at 80 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P080": "Water: 80",
+  "UI_qdx_item_condition_option_water_color_P080_hover": "Color used at 80 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P070": "Items: 70",
+  "UI_qdx_item_condition_option_default_color_P070_hover": "Color used at 70 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P070": "Water: 70",
+  "UI_qdx_item_condition_option_water_color_P070_hover": "Color used at 70 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P060": "Items: 60",
+  "UI_qdx_item_condition_option_default_color_P060_hover": "Color used at 60 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P060": "Water: 60",
+  "UI_qdx_item_condition_option_water_color_P060_hover": "Color used at 60 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P050": "Items: 50",
+  "UI_qdx_item_condition_option_default_color_P050_hover": "Color used at 50 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P050": "Water: 50",
+  "UI_qdx_item_condition_option_water_color_P050_hover": "Color used at 50 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P040": "Items: 40",
+  "UI_qdx_item_condition_option_default_color_P040_hover": "Color used at 40 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P040": "Water: 40",
+  "UI_qdx_item_condition_option_water_color_P040_hover": "Color used at 40 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P030": "Items: 30",
+  "UI_qdx_item_condition_option_default_color_P030_hover": "Color used at 30 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P030": "Water: 30",
+  "UI_qdx_item_condition_option_water_color_P030_hover": "Color used at 30 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P020": "Items: 20",
+  "UI_qdx_item_condition_option_default_color_P020_hover": "Color used at 20 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P020": "Water: 20",
+  "UI_qdx_item_condition_option_water_color_P020_hover": "Color used at 20 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P010": "Items: 10",
+  "UI_qdx_item_condition_option_default_color_P010_hover": "Color used at 10 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P010": "Water: 10",
+  "UI_qdx_item_condition_option_water_color_P010_hover": "Color used at 10 percent water level.",
+
+  "UI_qdx_item_condition_option_default_color_P000": "Items: 0",
+  "UI_qdx_item_condition_option_default_color_P000_hover": "Color used at 0 percent condition for default items.",
+  "UI_qdx_item_condition_option_water_color_P000": "Water: 0",
+  "UI_qdx_item_condition_option_water_color_P000_hover": "Color used at 0 percent water level."
+}

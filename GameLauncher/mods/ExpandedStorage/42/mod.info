@@ -1,0 +1,6 @@
+name=Expanded Storage
+id=ExpandedStorage
+description=Expands selected Build 42 storage containers and adds matching construction recipes.
+modversion=2.1.7
+tags=Build 42;Balance;Building
+versionMin=42.0.0

@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Cartelli per contenitori",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- SCRITTURA -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- STILI DEI CARTELLI -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DEBUG -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Consenti di scrivere sui contenitori",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Interruttore generale. Se disabilitato, nessuno può scrivere o cancellare un nome, ma i cartelli già presenti restano al loro posto e rimangono leggibili.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Solo casse",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "I cartelli vengono applicati solo alle casse, i contenitori con cui è costruita una base. Se disabilitato, qualsiasi contenitore del mondo può averne uno: armadi, frigoriferi, armadietti, banconi. L'impostazione riguarda sia la visualizzazione sia la scrittura, quindi attivarla rimuove anche i cartelli da tutto ciò che non è una cassa.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Richiedi una penna o un pennello",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Per scrivere serve un oggetto contrassegnato come strumento di scrittura (penna, matita, penne colorate), mentre per dipingere servono un pennello e un barattolo di vernice. Se disabilitato, chiunque può scrivere a mani nude.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Consuma un utilizzo dello strumento",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Si applica solo agli strumenti che si consumano davvero: un barattolo di vernice perde un utilizzo, una penna no, esattamente come nel gioco base quando una penna viene usata per annotare una mappa.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Solo membri del rifugio",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "All'interno di un rifugio, solo i suoi membri possono scrivere su un contenitore o cancellarne il nome. Gli amministratori sono esclusi dalla restrizione per poter rimuovere cartelli messi apposta per disturbare. Fuori dai rifugi non cambia nulla.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Lunghezza massima del nome",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Quanti caratteri può contenere un cartello. Limitato a 28, lo stesso limite del gioco base per rinominare un contenitore.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Consenti la tavola inchiodata",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Una tavoletta di legno inchiodata sulla parte anteriore del contenitore.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Consenti il foglio attaccato",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Un foglio di carta attaccato sulla parte anteriore del contenitore.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Consenti di dipingere direttamente",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "Il nome dipinto direttamente sul contenitore, nel colore della vernice usata. Questo stile richiede un pennello.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Registro di debug",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Scrive ciò che fa la mod in console.txt su ogni client e in server-console.txt sul server: una riga per ogni azione e richiesta ricevuta. Disattivato per impostazione predefinita, ed è meglio lasciarlo così: un server affollato ne produce moltissimo. Attivalo per segnalare un bug. L'impostazione viene letta in tempo reale, quindi attivarla durante la partita avvia subito il registro, ma i diagnostici di avvio (file caricati e relativa versione, atlante degli sprite non disponibile, chiamata di disegno rifiutata) vengono mostrati una sola volta per sessione e richiedono che l'opzione sia attiva prima dell'avvio."
+}

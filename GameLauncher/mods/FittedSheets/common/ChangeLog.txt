@@ -1,0 +1,27 @@
+[ 9/2/26 v1.0.0 ]
+Initial release.
+Makes the sheet fit the window it is hanging on. Vanilla uses the same small bedsheet on every window, so on tall windows, church windows and storefront glass it covers the top half and zombies see straight through the rest. The fitted sheet is cut to the size of the glass and covers the whole pane.
+Sheets that are already hanging are refitted as the area loads, including ones you hung before installing the mod and ones the game put up on its own.
+Doors keep the vanilla sheet, glass storefront doors included. A few very large windows that span more than one wall tile are left alone.
+The mod does not hang sheets itself: the game adds its sheet the normal way and the mod swaps in one that fits, so open/close, refunds, barricades, saves and multiplayer sync are untouched vanilla.
+[ ------ ]
+
+[ 9/5/26 v1.0.1 ]
+Fix: the mod used far more memory than it needed (about 55 MB, and as much again on the GPU). All sprites now share four depth cells, the way vanilla does.
+No visual change, no gameplay changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]
+
+[ 9/8/26 v1.0.2 ]
+Fix: some storefront windows kept the short vanilla sheet once their glass had been smashed and cleared. They get the fitted sheet now, and sheets already hanging on them are refitted as the area loads.
+No art changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]
+
+[ 9/10/26 v1.0.3 ]
+Fix: furniture standing in front of a window is drawn in front of the sheet, not behind it. Sheets already hanging are corrected as the area loads.
+No art changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]
+
+[ 9/25/26 v1.0.4 ]
+Fix: on the 42.21 unstable branch, the mod threw a stream of errors as the map loaded and no sheet was refitted. Works on both 42.20 and 42.21 now.
+No art changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]

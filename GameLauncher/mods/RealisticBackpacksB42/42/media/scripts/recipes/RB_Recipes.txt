@@ -1,0 +1,104 @@
+module Base
+{
+    craftRecipe CraftHandmadeSackFromCloth
+    {
+        timedAction = SewingCloth,
+        Time = 300,
+        xpAward = Tailoring:10,
+        AllowBatchCraft = False,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        NeedToBeLearn = False,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[base:heavythread] mode:destroy,
+            item 12 [Base.RippedSheets] mode:destroy,
+            item 1 [Base.Rope] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Handmade_Sack,
+        }
+    }
+
+    craftRecipe CraftHandmadeSackFromSandbag
+    {
+        timedAction = SewingCloth,
+        Time = 240,
+        xpAward = Tailoring:8,
+        AllowBatchCraft = False,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        NeedToBeLearn = False,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[base:heavythread] mode:destroy,
+            item 1 [Base.EmptySandbag] mode:destroy,
+            item 1 [Base.Rope] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Handmade_Sack,
+        }
+    }
+
+    craftRecipe CraftHuntingBackpack
+    {
+        timedAction = SewingCloth,
+        Time = 650,
+        xpAward = Tailoring:25,
+        AllowBatchCraft = False,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        NeedToBeLearn = False,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[base:awl] mode:keep flags[MayDegradeLight],
+            item 4 tags[base:heavythread] mode:destroy,
+            item 12 [Base.LeatherStrips] mode:destroy,
+            item 5 [Base.RippedSheets] mode:destroy,
+            item 1 [Base.DuctTape] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Hunting_Backpack_Green,
+        }
+    }
+
+    craftRecipe CraftAssaultBackpack
+    {
+        timedAction = SewingCloth,
+        Time = 1000,
+        xpAward = Tailoring:45,
+        AllowBatchCraft = False,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:6,
+        NeedToBeLearn = False,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[base:awl] mode:keep flags[MayDegradeLight],
+            item 6 tags[base:heavythread] mode:destroy,
+            item 18 [Base.LeatherStrips] mode:destroy,
+            item 10 [Base.RippedSheets] mode:destroy,
+            item 4 [Base.DuctTape] mode:destroy,
+            item 6 [Base.ScrapMetal] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Assault_Backpack_Black,
+        }
+    }
+
+}

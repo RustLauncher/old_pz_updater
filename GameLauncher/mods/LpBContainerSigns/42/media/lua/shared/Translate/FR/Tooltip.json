@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Une latte de bois clouée sur la façade. Lisible d'un bout à l'autre de la pièce.",
+    "Tooltip_LPBCS_StylePaper": "Une feuille collée sur la façade. Rapide, sans façon.",
+    "Tooltip_LPBCS_StylePainted": "Peint à même le bois, dans la couleur du pot utilisé. Demande un pinceau et de la peinture.",
+
+    "Tooltip_LPBCS_Side": "Sur quelle face du conteneur l'écriteau est accroché.",
+    "Tooltip_LPBCS_SideAuto": "Laisse le choix au mod : la face de droite, sauf si un mur ou une caisse la bouche — l'écriteau change alors de côté tout seul.",
+    "Tooltip_LPBCS_SideLeft": "Cloue l'écriteau sur la face de gauche et l'y laisse, même si la droite se dégage.",
+    "Tooltip_LPBCS_SideRight": "Cloue l'écriteau sur la face de droite et l'y laisse, même si quelque chose vient s'y adosser."
+}

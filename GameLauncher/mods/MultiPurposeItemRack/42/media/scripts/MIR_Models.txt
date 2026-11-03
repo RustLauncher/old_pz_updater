@@ -1,0 +1,170 @@
+module Base
+{
+    model MIR_PegboardRack_V8_Render
+    {
+        mesh = MIR/PegboardRackV8,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V9_TrimNegative_Render
+    {
+        mesh = MIR/PegboardRackV9TrimNegative,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V9_TrimPositive_Render
+    {
+        mesh = MIR/PegboardRackV9TrimPositive,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V9_TrimBoth_Render
+    {
+        mesh = MIR/PegboardRackV9TrimBoth,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V10_TrimNegative_Render
+    {
+        mesh = MIR/PegboardRackV10TrimNegative,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V10_TrimPositive_Render
+    {
+        mesh = MIR/PegboardRackV10TrimPositive,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V10_TrimBoth_Render
+    {
+        mesh = MIR/PegboardRackV10TrimBoth,
+        texture = MIR/PegboardV8,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V7_Render
+    {
+        mesh = MIR/PegboardRackV7,
+        texture = MIR/PegboardV3,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V6_Render
+    {
+        mesh = MIR/PegboardRackV6,
+        texture = MIR/PegboardV3,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V5_Render
+    {
+        mesh = MIR/PegboardRackV5,
+        texture = MIR/PegboardV3,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V4_Render
+    {
+        mesh = MIR/PegboardRackV4,
+        texture = MIR/PegboardV3,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_PegboardRack_V3_Render
+    {
+        mesh = MIR/PegboardRackV2,
+        texture = MIR/PegboardV3,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_RackCarrierHidden_V3
+    {
+        mesh = MIR/PegboardRackV2,
+        texture = MIR/PegboardV3,
+        scale = 0.000001,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model MIR_RoundPegV2_World
+    {
+        mesh = MIR/RoundPegV2,
+        texture = MIR/Wood,
+        scale = 1.0,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+}

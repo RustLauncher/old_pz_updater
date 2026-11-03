@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Deszcz zmywa krew",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Kafelków na minutę",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Ile losowych kafelków jest czyszczonych na minutę czasu gry.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Próg intensywności pogody",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Jak intensywny musi być deszcz lub śnieg, aby zmyć krew. Wyżej = potrzeba silniejszej pogody.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Czyść popiół",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Czyści również popiół pozostały po spalonych zwłokach.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Czyść odchody zwierząt",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Czyści również odchody zwierzęce (obornik) pozostawione na ziemi.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Czyść wewnątrz",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Czyści również krew wewnątrz budynków.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Czyść pojazdy",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Stopniowo czyści również krew z pojazdów.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Prędkość czyszczenia pojazdów",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Ile krwi jest usuwane z pojazdów na minutę.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Czyść ubrania",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Stopniowo czyści również krew i brud z noszonych ubrań graczy.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Prędkość czyszczenia ubrań",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Ile krwi i brudu jest usuwane z ubrań na minutę.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Zawsze czyść",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Czyści zawsze, niezależnie od pogody."
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_shortshorts</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_shortshorts</m_FemaleModel>
+	<m_GUID>69764bb2-62cb-4af9-adc5-3977ed5efda4</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AllowRandomHue>true</m_AllowRandomHue>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>14</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Shorts_Textures/ ShortsGym_Mask</m_MasksFolder>
+	<m_UnderlayMasksFolder>media/textures/Clothes/Shorts_Textures/ShortsGym_Mask</m_UnderlayMasksFolder>
+	<textureChoices>clothes\shorts_textures\shorts_gym</textureChoices>
+	<textureChoices>clothes\shorts_textures\shorts_gym1</textureChoices>
+	<textureChoices>clothes\shorts_textures\shorts_gym2</textureChoices>
+	<textureChoices>clothes\shorts_textures\shorts_gym3</textureChoices>
+</clothingItem>

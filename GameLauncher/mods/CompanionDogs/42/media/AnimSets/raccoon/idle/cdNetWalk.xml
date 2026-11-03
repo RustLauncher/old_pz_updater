@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- O mesmo clipe de caminhada, mas no estado idle. Nao e redundancia: medido em jogo, em 49% dos quadros em
+     que o corpo da copia remota esta andando o ActionContext esta em idle, com root motion zero. O corpo
+     continua indo (a posicao vem do nosso stream) e as pernas param: e o deslizar que se ve na tela.
+     O ActionContext alterna walk/idle 3.69 vezes por segundo porque isPlayerMoving vira um teste geometrico
+     contra um alvo defasado, e nao da pra disputar isso do Lua: a engine reescreve bMoving dentro do
+     IsoWorld.update, antes do animator ler, e o OnTick so roda depois. Entao em vez de brigar pelo estado,
+     damos ao estado idle um node de caminhada.
+     Prioridade 5 de proposito: ganha do vanilla, que nao declara prioridade (0), e PERDE de todo node do mod,
+     que esta em 10. A primeira versao disto entrou em 20 e comeu a animacao de pulo de cerca em MP, porque
+     durante o pulo o cao esta em movimento e o gate fica de pe. Depender do gate pra nao colidir com cdJump,
+     cdRest, cdEat, cdSniff, cdDrink, cdIdle2/3 e cdAttack era lista pra esquecer um; a prioridade resolve todos
+     de uma vez. -->
+<animNode>
+	<m_Name>cdNetWalk</m_Name>
+	<m_ConditionPriority>5</m_ConditionPriority>
+	<m_AnimName>Rac_Walk</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdWalkScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>true</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cda77ac4-0007-4001-8002-000000000001">
+		<m_Name>cdNetGait</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-0007-4001-8002-000000000002">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="cda77ac4-0007-4002-8002-000000000001">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="cda77ac4-0007-4002-8002-000000000002">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

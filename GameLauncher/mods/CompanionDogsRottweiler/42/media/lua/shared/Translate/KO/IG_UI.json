@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "로트와일러",
+    "IGUI_AnimalType_rottmale": "로트와일러 (수컷)",
+    "IGUI_AnimalType_rottfemale": "로트와일러 (암컷)",
+    "IGUI_AnimalType_rottpup": "로트와일러 (새끼)",
+    "IGUI_PD_Breed_rottweiler": "로트와일러",
+    "IGUI_PD_BreedDesc_rottweiler": "경비 및 보호 목적으로 개량된 강력한 경비견이자, 저먼 셰퍼드와 견줄 만한 진정한 전사입니다. 전투 스킬을 두 배 빠르게 습득하고, 높은 숙련도를 기반으로 강력한 공격을 퍼부으며, 좀비를 쓰러뜨리고 대부분의 견종이 패닉에 빠질 상황에서도 계속해서 싸웁니다. 녀석의 곁에서 싸우는 것은 당신까지도 단련시킵니다: 로트와일러가 근처에서 전투 중일 때 근접 공격 시 소모되는 지구력이 감소합니다 (최전선). 창고, 공장, 폐차장을 경비하는 모습으로 발견되며, 일반 주택에서도 희귀한 확률로 발견됩니다.",
+    "IGUI_PD_Moodle_FrontLine": "최전선",
+    "IGUI_PD_Moodle_FrontLine_desc": "로트와일러가 당신의 곁에서 싸우고 있습니다. 녀석이 배가 부르고 충성스러운 상태로 가까운 곳에서 전투 중일 때, 근접 공격 시 소모되는 지구력이 줄어듭니다."
+}

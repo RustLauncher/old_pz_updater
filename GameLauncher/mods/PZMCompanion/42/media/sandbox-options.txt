@@ -1,0 +1,21 @@
+VERSION = 1,
+
+option PZMCompanion.SharePositions
+{
+    type = enum,
+    numValues = 3,
+    default = 3,
+    page = PZMCompanion,
+    translation = PZMCompanion_SharePositions,
+    valueTranslation = PZMCompanion_SharePositions,
+}
+
+option PZMCompanion.ShareInterval
+{
+    type = integer,
+    min = 1,
+    max = 10,
+    default = 1,
+    page = PZMCompanion,
+    translation = PZMCompanion_ShareInterval,
+}

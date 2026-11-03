@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeMelee2HTowardRun</m_Name>
+	<m_AnimName>Bob_RunBat</m_AnimName>
+	<m_Priority>31</m_Priority>
+	<m_ConditionPriority>45</m_ConditionPriority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.15</m_BlendTime>
+	<m_SpeedScale>ALifeRunSpeed</m_SpeedScale>
+	<m_Conditions><m_Name>ALifeActor</m_Name><m_Type>BOOL</m_Type><m_Value>true</m_Value></m_Conditions>
+	<m_Conditions><m_Name>ALifeWeaponHeld</m_Name><m_Type>BOOL</m_Type><m_Value>true</m_Value></m_Conditions>
+	<m_Conditions><m_Name>ALifeArms</m_Name><m_Type>STRING</m_Type><m_Value>melee</m_Value></m_Conditions>
+	<m_Conditions><m_Name>ALifeGrip</m_Name><m_Type>STRING</m_Type><m_Value>2hand</m_Value></m_Conditions>
+	<m_Conditions><m_Name>ALifePace</m_Name><m_Type>STRING</m_Type><m_Value>run</m_Value></m_Conditions>
+</animNode>

@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "Rottweiler",
+    "IGUI_AnimalType_rottmale": "Rottweiler (macho)",
+    "IGUI_AnimalType_rottfemale": "Rottweiler (fêmea)",
+    "IGUI_AnimalType_rottpup": "Rottweiler (filhote)",
+    "IGUI_PD_Breed_rottweiler": "Rottweiler",
+    "IGUI_PD_BreedDesc_rottweiler": "Um poderoso cão de guarda criado para proteção, um guerreiro pleno à altura do Pastor Alemão: aprende Combate duas vezes mais rápido, bate forte em nível alto, derruba zumbis e continua lutando onde a maioria das raças entra em pânico. Lutar ao lado dele também te fortalece: enquanto seu Rottweiler está engajado em combate por perto, seus golpes corpo a corpo gastam menos fôlego (Linha de Frente). Encontrado guardando depósitos, fábricas e ferros-velhos, com chance rara em casas.",
+    "IGUI_PD_Moodle_FrontLine": "Linha de Frente",
+    "IGUI_PD_Moodle_FrontLine_desc": "Seu Rottweiler está lutando ao seu lado. Enquanto ele estiver engajado em combate perto de você, alimentado e leal, seus golpes corpo a corpo gastam menos fôlego."
+}

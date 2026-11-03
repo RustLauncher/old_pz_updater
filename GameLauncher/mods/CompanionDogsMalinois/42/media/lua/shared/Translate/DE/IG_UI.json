@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Malinois",
+    "IGUI_AnimalType_malmale": "Malinois (männlich)",
+    "IGUI_AnimalType_malfemale": "Malinois (weiblich)",
+    "IGUI_AnimalType_malpup": "Malinois (Welpe)",
+    "IGUI_PD_Breed_malinois": "Malinois",
+    "IGUI_PD_BreedDesc_malinois": "Ein Polizei- und Spürhund. Spezialisiert auf Spürsinn, Gehorsam und Kampf. Ein Hund mit einzigartiger Mechanik: Er wittert den Zombie nicht nur, er zeigt dir auch seinen genauen Standort. Zu finden in Polizeiwachen, Militärgebäuden und selten in Häusern.",
+    "IGUI_PD_Moodle_K9Scent": "K9-Spürnase",
+    "IGUI_PD_Moodle_K9Scent_desc": "Dein Malinois hat den besten Spürsinn: Er kann die genaue Position des nächsten Zombies wittern."
+}

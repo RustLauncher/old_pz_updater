@@ -1,0 +1,8 @@
+name=Mattnetic's Heart Health Meter
+id=HeartHealthMeter
+author=Mattnetic
+modversion=1.2.3
+versionMin=42.20.0
+description=The vanilla top-left heart drains with your actual overall health. Toggle it from the heart or Options > Mods.
+poster=poster.png
+icon=icon.png

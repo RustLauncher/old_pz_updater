@@ -1,0 +1,121 @@
+tileGeometry
+{
+    VERSION = 2,
+
+    tileset
+    {
+        name = tuna_weaponrack_01,
+
+        /* tuna_weaponrack_01_8  -  armory N anchor */
+        tile
+        {
+            xy = 0x1,
+
+            box
+            {
+                translate = 5000x0x2812,
+                rotate = 0x-900000x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_9  -  armory N partner */
+        tile
+        {
+            xy = 1x1,
+
+            box
+            {
+                translate = -5000x0x2812,
+                rotate = 0x-900000x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_10  -  armory E anchor */
+        tile
+        {
+            xy = 2x1,
+
+            box
+            {
+                translate = -2812x0x5000,
+                rotate = 0x0x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_11  -  armory E partner */
+        tile
+        {
+            xy = 3x1,
+
+            box
+            {
+                translate = -2812x0x-5000,
+                rotate = 0x0x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_12  -  armory S anchor */
+        tile
+        {
+            xy = 4x1,
+
+            box
+            {
+                translate = 5000x0x-2812,
+                rotate = 0x-900000x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_13  -  armory S partner */
+        tile
+        {
+            xy = 5x1,
+
+            box
+            {
+                translate = -5000x0x-2812,
+                rotate = 0x-900000x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_14  -  armory W anchor */
+        tile
+        {
+            xy = 6x1,
+
+            box
+            {
+                translate = 2812x0x5000,
+                rotate = 0x0x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+
+        /* tuna_weaponrack_01_15  -  armory W partner */
+        tile
+        {
+            xy = 7x1,
+
+            box
+            {
+                translate = 2812x0x-5000,
+                rotate = 0x0x0,
+                min = -2200x0x-9400,
+                max = 2200x21000x9400,
+            }
+        }
+    }
+}

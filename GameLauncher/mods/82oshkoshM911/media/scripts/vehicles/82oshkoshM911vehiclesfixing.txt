@@ -1,0 +1,51 @@
+module Base
+{
+	fixing Fix M911Trunk Welding
+	{
+	   Require : M911Trunk2;M911Toolbox2;M967SmallTrunk2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix M911Hood Welding
+	{
+	   Require : M911EngineDoor2;M911TrunkDoor2;M127TrunkDoor2;M128TrunkDoor2;M129TrunkDoor2;M967TrunkDoor2;IsoContainerTrunkDoor2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+   fixing Fix M911Hood
+	{
+	   Require : M911EngineDoor2;M911TrunkDoor2;M127TrunkDoor2;M128TrunkDoor2;M129TrunkDoor2;M967TrunkDoor2;IsoContainerTrunkDoor2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix M911Door Welding
+	{
+	   Require : M911CarFrontDoor2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix M911 Armor Welding
+    {
+       Require : M911Bullbar0;M911Bullbar1;M911WindshieldArmor;M911WindshieldRearArmor;M911CarFrontDoorArmor,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+}

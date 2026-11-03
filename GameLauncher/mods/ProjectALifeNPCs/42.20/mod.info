@@ -1,0 +1,8 @@
+name=Project A-Life [ALIFE NPCS]
+id=ProjectALifeNPCs
+author=Vice
+modversion=1.4.2
+versionMin=42.21.0
+poster=poster.png
+icon=icon.png
+description=Adds NPC factions, patrols, camps, outposts and raids. Includes a faction and NPC creator.

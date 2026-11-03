@@ -1,0 +1,341 @@
+require "KitsConfig"
+
+KitsClient = KitsClient or {}
+KitsClient.Cooldowns = {}
+KitsClient.Permissions = {}
+KitsClient.PermissionsLoaded = false
+KitsClient.IsAdmin = false
+KitsClient.TempRoles = {}
+KitsClient.OnlinePlayers = {}
+KitsClient.AllPlayers = {}
+KitsClient.PlayerRole = "user"
+KitsClient.PlayerRoleDaysLeft = -1
+KitsClient.RoleColors = {}
+KitsClient.OnlineRoles = {}
+
+function KitsClient.RequestKit(kitId)
+    sendClientCommand("Kits", "requestKit", { kitId = kitId })
+end
+
+function KitsClient.RequestCooldowns()
+    sendClientCommand("Kits", "requestCooldowns", {})
+end
+
+function KitsClient.RefreshCooldowns()
+    sendClientCommand("Kits", "refreshCooldowns", {})
+end
+
+function KitsClient.CheckAdmin()
+    sendClientCommand("Kits", "checkAdmin", {})
+end
+
+function KitsClient.HasPermission(kitId)
+    if not KitsClient.PermissionsLoaded then
+        return true
+    end
+    local v = KitsClient.Permissions[kitId]
+    if v == nil then
+        return true
+    end
+    return v == "yes"
+end
+
+function KitsClient.AdminSetTempRole(targetName, roleName, days)
+    sendClientCommand("Kits", "adminSetTempRole", {
+        targetName = targetName,
+        roleName = roleName,
+        days = days,
+    })
+end
+
+function KitsClient.AdminRemoveTempRole(targetName)
+    sendClientCommand("Kits", "adminRemoveTempRole", { targetName = targetName })
+end
+
+function KitsClient.AdminListTempRoles()
+    sendClientCommand("Kits", "adminListTempRoles", {})
+end
+
+function KitsClient.AdminListOnline()
+    sendClientCommand("Kits", "adminListOnline", {})
+end
+
+function KitsClient.AdminListAllPlayers()
+    sendClientCommand("Kits", "adminListAllPlayers", {})
+end
+
+function KitsClient.AdminGetKits()
+    sendClientCommand("Kits", "adminGetKits", {})
+end
+
+function KitsClient.AdminSaveKit(kitId, name, icon, cooldown, permission, itemsStr)
+    sendClientCommand("Kits", "adminSaveKit", {
+        kitId = kitId,
+        name = name,
+        icon = icon,
+        cooldown = tostring(cooldown),
+        permission = permission,
+        items = itemsStr,
+    })
+end
+
+local function refreshInventoryUI()
+    local player = getPlayer()
+    if not player then return end
+    local inv = player:getInventory()
+    if inv then
+        inv:setDrawDirty(true)
+    end
+    if ISInventoryPage and ISInventoryPage.dirtySlice ~= nil then
+        ISInventoryPage.dirtySlice = true
+    end
+    local pInv = getPlayerInventory(0)
+    if pInv then
+        pInv:refreshBackpacks()
+    end
+    local pLoot = getPlayerLoot(0)
+    if pLoot then
+        pLoot:refreshBackpacks()
+    end
+end
+
+local function onServerCommand(module, command, args)
+    if module ~= "Kits" then return end
+
+    if command == "cooldowns" then
+        KitsClient.Cooldowns = args
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateCooldowns()
+        end
+
+    elseif command == "permissionsUpdate" then
+        KitsClient.Permissions = args
+        KitsClient.PermissionsLoaded = true
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateCooldowns()
+        end
+
+    elseif command == "adminStatus" then
+        KitsClient.IsAdmin = args.isAdmin
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateAdminButton()
+        end
+
+    elseif command == "kitGiven" then
+        local player = getPlayer()
+        if player then
+            player:Say("Kit '" .. tostring(args.name) .. "' recibido!")
+        end
+        refreshInventoryUI()
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateCooldowns()
+        end
+
+    elseif command == "tempRolesList" then
+        KitsClient.TempRoles = args.roles or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateTempRolesList()
+        end
+
+    elseif command == "onlineList" then
+        KitsClient.OnlinePlayers = args.players or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateOnlineList()
+        end
+
+    elseif command == "allPlayersList" then
+        KitsClient.AllPlayers = args.players or {}
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updatePlayerList()
+        end
+
+    elseif command == "kitsList" then
+        local kits = args.kits or {}
+        KitsConfig.Kits = {}
+        for _, kd in ipairs(kits) do
+            table.insert(KitsConfig.Kits, {
+                id = kd.id,
+                name = kd.name,
+                icon = kd.icon,
+                cooldown = tonumber(kd.cooldown) or 360,
+                permission = kd.permission or "all",
+                items = KitsConfig.DeserializeItems(kd.items),
+            })
+        end
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:rebuildKitsPanel()
+        end
+
+    elseif command == "playerRoleInfo" then
+        KitsClient.PlayerRole = args.role or "user"
+        KitsClient.PlayerRoleDaysLeft = tonumber(args.daysLeft) or -1
+        if KitsUI and KitsUI.instance then
+            KitsUI.instance:updateRoleBar()
+        end
+
+    elseif command == "onlineRoles" then
+        KitsClient.OnlineRoles = args or {}
+
+    elseif command == "roleColors" then
+        KitsClient.RoleColors = {}
+        if args then
+            for name, cStr in pairs(args) do
+                local r, g, b = cStr:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+                if r then
+                    KitsClient.RoleColors[name:lower()] = {
+                        r = tonumber(r), g = tonumber(g), b = tonumber(b), a = 1,
+                    }
+                end
+            end
+        end
+
+    elseif command == "error" then
+        local player = getPlayer()
+        if player then
+            player:Say(tostring(args.msg))
+        end
+    end
+end
+
+Events.OnServerCommand.Add(onServerCommand)
+
+local function onGameStart()
+    sendClientCommand("Kits", "requestCooldowns", {})
+end
+
+Events.OnGameStart.Add(onGameStart)
+
+local ROLE_TAG_COLORS = {
+    admin     = { r = 255, g = 77,  b = 77  },
+    moderator = { r = 77,  g = 153, b = 255 },
+    gm        = { r = 204, g = 128, b = 255 },
+    observer  = { r = 153, g = 153, b = 153 },
+    priority  = { r = 255, g = 217, b = 51  },
+    ultimate  = { r = 230, g = 38,  b = 89  },
+    vip       = { r = 255, g = 217, b = 51  },
+}
+
+local roleTextCache = {}
+
+local _optDisplayUser = nil
+local _optShowFirstLast = nil
+local _optCacheTime = 0
+
+local function getCachedServerOptions()
+    local now = getTimestampMs()
+    if now - _optCacheTime > 5000 then
+        _optDisplayUser = getServerOptions():getBoolean("DisplayUserName")
+        _optShowFirstLast = getServerOptions():getBoolean("ShowFirstAndLastName")
+        _optCacheTime = now
+    end
+    return _optDisplayUser, _optShowFirstLast
+end
+
+local function getRoleTagColor(roleName)
+    local c = ROLE_TAG_COLORS[roleName:lower()]
+    if c then return c end
+    return { r = 200, g = 200, b = 200 }
+end
+
+local function getPlayerScreenPosition(player)
+    local worldX = player:getX()
+    local worldY = player:getY()
+    local worldZ = player:getZ()
+    local screenX = IsoUtils.XToScreen(worldX, worldY, worldZ, 0)
+    local screenY = IsoUtils.YToScreen(worldX, worldY, worldZ, 0)
+    screenX = screenX - IsoCamera.getOffX()
+    screenY = screenY - IsoCamera.getOffY()
+    screenY = screenY - (128 / (2 / Core.getTileScale()))
+    local zoom = Core.getInstance():getZoom(0)
+    screenX = screenX / zoom
+    screenY = screenY / zoom
+    return screenX, screenY
+end
+
+local function calculateUsernameWidth(player, displayUsername, showFirstAndLastName)
+    local namePart = ""
+    if showFirstAndLastName then
+        namePart = player:getFullName() or ""
+    end
+    if displayUsername then
+        local uname = player:getUsername() or ""
+        if namePart ~= "" then
+            namePart = namePart .. " (" .. uname .. ")"
+        else
+            namePart = uname
+        end
+    end
+    local tag = player.getTagPrefix and player:getTagPrefix() or nil
+    if tag and tag ~= "" then
+        namePart = "[" .. tag .. "] " .. namePart
+    end
+    return getTextManager():MeasureStringX(UIFont.Small, namePart)
+end
+
+local function getPlayerNameHeight(player)
+    if player.getUserNameHeight then
+        return player:getUserNameHeight()
+    end
+    return getTextManager():MeasureStringY(UIFont.Small, "X")
+end
+
+local function renderRoleTags()
+    local localPlayer = getPlayer()
+    if not localPlayer then return end
+    if not KitsClient.OnlineRoles then return end
+
+    local displayUsername, showFirstAndLastName = getCachedServerOptions()
+    if not displayUsername and not showFirstAndLastName then return end
+
+    local onlinePlayers = getOnlinePlayers()
+    if not onlinePlayers then return end
+
+    local localX = localPlayer:getX()
+    local localY = localPlayer:getY()
+    local localNum = localPlayer:getPlayerNum()
+
+    for i = 0, onlinePlayers:size() - 1 do
+        local player = onlinePlayers:get(i)
+        if player then
+            local username = player:getUsername()
+            local roleName = KitsClient.OnlineRoles[username]
+            if roleName and roleName ~= "user" then
+                local dx = localX - player:getX()
+                local dy = localY - player:getY()
+                local distSq = dx * dx + dy * dy
+                if distSq <= 400 then
+                    local currentSquare = player:getCurrentSquare()
+                    if currentSquare and currentSquare:getCanSee(localNum) then
+                        local dist = math.sqrt(distSq)
+                        local alpha = 1.0
+                        if dist > 15 then
+                            alpha = 1.0 - (dist - 15) / 5
+                        end
+                        if alpha > 0.1 then
+                            local c = getRoleTagColor(roleName)
+                            local tagStr = "[col=" .. c.r .. "," .. c.g .. "," .. c.b .. "][" .. roleName:upper() .. "][/]"
+                            local onlineID = player:getOnlineID()
+                            if not roleTextCache[onlineID] then
+                                roleTextCache[onlineID] = TextDrawObject.new(255, 255, 255, true, true, true, true, true, true)
+                                roleTextCache[onlineID]:setDefaultFont(UIFont.Small)
+                            end
+                            local textObj = roleTextCache[onlineID]
+                            if textObj:getOriginal() ~= tagStr then
+                                textObj:ReadString(tagStr)
+                            end
+                            local screenX, screenY = getPlayerScreenPosition(player)
+                            local usernameWidth = calculateUsernameWidth(player, displayUsername, showFirstAndLastName)
+                            local tagWidth = textObj:getWidth()
+                            local nameHeight = getPlayerNameHeight(player)
+                            local finalX = screenX - ((usernameWidth + tagWidth) / 2) - 3
+                            local finalY = screenY - nameHeight
+                            textObj:AddBatchedDraw(finalX, finalY, true, alpha)
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+Events.OnPostRender.Add(renderRoleTags)

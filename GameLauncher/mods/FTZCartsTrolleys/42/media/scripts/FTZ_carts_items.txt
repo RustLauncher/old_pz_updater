@@ -1,0 +1,56 @@
+module Base
+{
+    imports
+    {
+        Base
+    }
+
+    /* Carts are native Build 42 "heavy items" (tag base:heavyitem): carried with both hands,
+       dropped automatically before most actions, only one at a time. */
+
+    item FTZ_PlatformTrolley
+    {
+        DisplayName = Platform Trolley,
+        DisplayCategory = Container,
+        ItemType = base:container,
+        Weight = 13,
+        Capacity = 50,
+        MaxCapacity = 100,
+        WeightReduction = 100,
+        Icon = FTZ_PlatformTrolley,
+        RequiresEquippedBothHands = true,
+        EquippedNoSprint = false,
+        SurvivalGear = true,
+        StaticModel = FTZ_PlatformTrolleyModel,
+        WorldStaticModel = FTZ_PlatformTrolleyModel,
+        ReplaceInPrimaryHand = FTZ_PlatformTrolleyModel holdingtrolleyright,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        AcceptItemFunction = AcceptItemFunction.FTZCart,
+        Tags = base:heavyitem,
+    }
+
+    item FTZ_ShoppingCart
+    {
+        DisplayName = Shopping Cart,
+        DisplayCategory = Container,
+        ItemType = base:container,
+        Weight = 13,
+        Capacity = 37,
+        MaxCapacity = 100,
+        WeightReduction = 100,
+        Icon = FTZ_ShoppingCart,
+        RequiresEquippedBothHands = true,
+        EquippedNoSprint = false,
+        SurvivalGear = true,
+        StaticModel = FTZ_ShoppingCartModel,
+        WorldStaticModel = FTZ_ShoppingCartModel,
+        ReplaceInPrimaryHand = FTZ_ShoppingCartModel holdingtrolleyright,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        AcceptItemFunction = AcceptItemFunction.FTZCart,
+        Tags = base:heavyitem,
+    }
+}

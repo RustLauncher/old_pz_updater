@@ -1,0 +1,581 @@
+@alife-records 1
+
+node vp_1435.VQ_HOUSE_BATH
+  t.any.1 Gladly.. can leave the shirt folded out of the water
+  t.any.2 Yes.. prefer washing to having dirt pointed out like it's news
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_BED
+  t.any.1 Would take it.. can the door to the room stay open?
+  t.any.2 Yes.. outer door secure, my room open if you don't mind
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_CHAIR
+  t.any.1 Might sit.. don't make it a big occasion
+  t.any.2 Thanks.. not looking to claim the whole room
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_CHORES
+  t.any.1 Cleaning's something I can do.. Ruth's lemon rag had more rules than most jobs
+  t.any.2 Give me the cloth you want used.. learned not to pick one at random
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_LOCKS
+  t.any.1 Please check the outer doors.. want those secure, my own room door open
+  t.any.2 Could check with you.. not asking you to lock every room I'm in
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_PHONE
+  t.any.1 Would try Janice.. not going to guess what we'd hear
+  t.any.2 Janice first.. could dial it without looking at a scrap of paper
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_RADIO
+  t.any.1 Would listen.. even a score would be a change from warnings
+  t.any.2 Try it.. Ruth always wanted news on before work, I wanted anything else
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_HOUSE_WELCOME
+  t.any.1 Thank you.. show me where you don't want me wandering
+  t.any.2 Inside sounds better.. won't claim I was too proud to ask
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_CARRYING
+  t.any.1 Keys, picture of Dad.. Corky's collar, dog died last year
+  t.any.2 Corky's buckle wears smooth under my thumb.. collar's from Janice, after her dog died
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_COLD
+  t.any.1 Cold.. vest's mostly for looking employed
+  t.any.2 Something warmer would be welcome.. dressed for a bar, not this
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_CRAVING
+  t.any.1 Thinking about a bet.. even now, stupid as it sounds
+  t.any.2 Gambling.. can find a thing to wager on anywhere, which isn't much to boast about
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_HELP
+  t.any.1 Can clean, sort, carry what I can lift.. not just stand making jokes
+  t.any.2 Know how to keep a room tidy.. tell me what I can touch first
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_HUNGRY
+  gate.rule need:hunger>=2
+  t.any.1 Could eat.. not fussy enough to deserve a menu
+  t.any.2 Hungry.. been thinking about Janice's cooking more than usual
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_HUNGRY.d
+  t.any.1 Not looking for food this minute.. worries don't always come with appetite
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_NOW_HURT
+  t.any.1 Wouldn't mind somebody checking.. can't tell you every mark just by feeling
+  t.any.2 Look if you're worried.. would rather be asked than pronounced fit from a doorway
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_PLAN
+  t.any.1 Find out where Janice went.. no clever route in my head yet
+  t.any.2 Stop somewhere with people, then ask about Richmond.. don't fancy an empty house
+  t.any.3 Need to pick the next thing before I start boasting about it
+  t.any.4 Nothing settled. You can hear that without taking me for a fool
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_THIRSTY
+  gate.rule need:thirst>=2
+  t.any.1 Water would do me good.. plain, don't need bar tricks
+  t.any.2 Thirsty.. could take water if there's enough
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_THIRSTY.d
+  t.any.1 A drink can wait.. not asking for one right now
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_NOW_TIRED
+  t.any.1 Could rest.. somewhere I don't have to ask to get out
+  t.any.2 Tired.. brain won't stop taking another turn at everything
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_TRUST
+  gate.rule trust>=30 & flag:starts_told
+  t.any.1 Enough to say I haven't got a brother.. brother in the Guard is something I made up.. wanted people thinking I had someone important to call when I was scared.. got Janice, a sister, no brother waiting to come for me
+  fx.1 reveal f_guard
+  fx.2 set flag:guard_told
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_TRUST.d
+  t.any.1 Would like to.. keep checking the answer in my head
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_NOW_TRUST.d2
+  t.any.1 Some trust.. doesn't mean I can say everything straight off
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_NOW_WANT
+  t.any.1 Outer doors checked.. room to leave my own inner door open
+  t.any.2 Want to know strangers can't just walk in.. don't want locking up myself with them outside
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_NOW_WASH
+  t.any.1 Would wash.. hate a collar going stiff with dirt
+  t.any.2 Yes.. clean shirt would be a welcome ordinary problem
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_OFFER_BLANKET
+  t.any.1 Will take it.. better use than looking proud without one
+  t.any.2 Thanks for offering.. not too tidy to need warmth
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_OFFER_DRINK
+  t.any.1 Water please.. take a turn being served instead
+  t.any.2 Water's fine.. know enough about drinks not to need a fancy one
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_OFFER_FOOD
+  t.any.1 Could take food.. no jokes about the cooking before I know it
+  t.any.2 Kind of you.. don't need anything dressed up for me
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_BOSS
+  t.any.1 Ruth Payne.. wanted a clean rag and an answer, not the other way round
+  t.any.2 Dad first.. Ruth afterward.. both could hear me wasting time from another room
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_CHILDHOOD
+  t.any.1 Richmond.. May around most holidays, making me race for things she already wanted
+  t.any.2 Dad's shop had a bell on the door.. used to ring it just to hear him answer
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_DAYONE
+  t.any.1 At Ruth's bar.. somebody wanted the news louder and everyone stopped ordering
+  t.any.2 Working.. Ruth kept wiping the same dry place while the warnings came on
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_FAMILY
+  t.any.1 Janice my sister, Dad Rex.. no recent word from either
+  t.any.2 Janice is five years older.. cousin May too, if you're counting people who'd complain I left them out
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_FIRSTJOB
+  t.any.1 With Dad selling hardware.. thought knowing the tools was enough
+  t.any.2 Worked with Rex.. had me counting screws till I stopped acting like the owner's boy
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_HARDEST
+  gate.rule trust>=75 & alone & flag:cash_told & imin>=60
+  t.any.1 Being shut in.. Dr Nessel told me in ninety it was panic attacks, those spells behind closed doors.. haven't told Janice the diagnosis.. can't bear her knowing how badly a shut door scares me.. want the outside secured, not my own way out blocked
+  fx.1 reveal f_spells
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_HARDEST.d
+  t.any.1 Losing the store.. wasn't good at watching Dad try not to ask about it
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_HARDEST.d2
+  t.any.1 Some things I can't turn into a joke for you
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_HARDEST.d3
+  t.any.1 No more digging for the worst bit.. not yet
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_HOBBY
+  t.any.1 Bowling.. got a decent score on lane six once, kept the card like I'd won a title
+  t.any.2 Bowled for fun till May offered a bet.. then couldn't leave it alone
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_HOUSE
+  t.any.1 Rented place in Richmond.. liked keeping my own rooms tidy
+  t.any.2 Small rented house.. left the bedroom door open even when I was alone
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_LOVE
+  t.any.1 No wife.. went out with Edna from the alley in ninety, didn't last
+  t.any.2 Edna.. liked bowling better than she liked me, said I couldn't accuse her of hiding it
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_PARENTS
+  t.any.1 Rex and Dot.. Dad worked hardware, Mom could make him stop talking prices at supper
+  t.any.2 Dot hated bets at the table.. May found that very inconvenient
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_PHOTO
+  t.any.1 Dad outside my store.. before it closed, before the sign came down
+  t.any.2 Rex in the doorway.. looks like he expects someone to buy the whole place
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_REGRET
+  gate.rule trust>=45 & alone & flag:guard_told
+  t.any.1 Lake reunion in ninety-one.. May bet she could hit the lodge window with a stone, broke it.. paid for the repair, told the family a branch did it.. kept them off May.. she thought it was funny, I didn't
+  fx.1 reveal f_lake
+  fx.2 set flag:lake_told
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_REGRET.d
+  t.any.1 Letting May turn everything into a bet.. could have said no more often
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_REGRET.d2
+  t.any.1 A family day that cost me more than I wanted to explain
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_REGRET.d3
+  t.any.1 Leave the family story alone for now
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_SCHOOL
+  t.any.1 Richmond.. finished in eighty-three, went straight to Dad's work
+  t.any.2 High school.. got tired of hearing how much I could do if I applied myself
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_SIBLING
+  t.any.1 Janice.. older sister, not travelling with me
+  t.any.2 Sister Janice.. gave me Corky's collar after he died, ninety-two.. knows I liked that dog
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_TRAVEL
+  t.any.1 Nevada with May in ninety-two.. slot machines, cheap room, came back with a comb
+  t.any.2 Family reunion by a lake in ninety-one.. rest of my travelling was usually to see somebody
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_TROUBLE
+  gate.rule trust>=60 & alone & flag:lake_told
+  t.any.1 In ninety-one I used Ruth's spare key after closing.. took eighty dollars from the bar tin to gamble.. she thought a stranger had got in, I agreed.. never found out it was me.. still got the damn key
+  fx.1 reveal f_cash
+  fx.2 set flag:cash_told
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_TROUBLE.d
+  t.any.1 Store failed.. didn't come out of it feeling respectable
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_TROUBLE.d2
+  t.any.1 Some old trouble.. not a story for everybody
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_TROUBLE.d3
+  t.any.1 No.. I'm not making this easier by making it public
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_WORK
+  gate.rule trust>=15
+  t.any.1 Bartender since ninety.. had a store before it went bankrupt in eighty-nine.. tried again that year, ninety, ninety-one.. three starts, never got a lease, none opened.. told Dad one bad year.. sounded cheaper saying one
+  fx.1 reveal f_starts
+  fx.2 set flag:starts_told
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_PAST_WORK.d
+  t.any.1 Bartender for Ruth Payne.. had a shop before, didn't keep it
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_PAST_WORK.d2
+  t.any.1 Worked the bar.. store was a different part of my life
+  tag.1 kind:deflect
+end
+
+node vp_1435.VQ_TALK_AGE
+  t.any.1 Twenty-eight.. February sixty-five
+  t.any.2 Twenty-eight.. Janice says I ought to have improved by now
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_DISLIKES
+  t.any.1 A door being shut without anybody asking who's inside
+  t.any.2 Somebody licking a finger before they count money.. hated that at the shop
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_FEAR
+  t.any.1 Being shut in.. secure the outside, leave me a way through the inside
+  t.any.2 Closed doors when somebody else has the key.. don't laugh at that one
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_FOOD
+  t.any.1 Janice's pork chops.. she wants compliments before you've swallowed
+  t.any.2 Onion rings from the alley.. May counted them when we shared, like I'd steal one
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_FROM
+  t.any.1 Richmond.. worked a bar there
+  t.any.2 Richmond born.. left the town, haven't stopped thinking about it
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_HABIT
+  t.any.1 Corky's buckle.. thumb works it even though there's no dog attached
+  t.any.2 Smoothing my cuffs.. used to check for a spill before I could see it
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_HOPE
+  t.any.1 Janice somewhere bossing somebody about food.. that's my hope
+  t.any.2 Ruth finding a way to keep busy.. never good at waiting without work
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_HOWARE
+  t.lo.1 Dewayne.. can joke or answer, might manage both
+  t.lo.2 Wound up.. no, don't try winding me the other way
+  t.mid.1 Want something ordinary to happen.. can't seem to arrange it
+  t.mid.2 Keep thinking of work.. Ruth would find something for me to wipe
+  t.mid.3 Could put a good face on it. Don't think either of us ordered that
+  t.mid.4 I'd rather you asked once than kept buying the same answer
+  t.mid.5 Better talking without having to keep the whole place cheerful
+  t.hi.1 Still jumpy.. knowing you doesn't turn me into a different fellow
+  t.hi.2 Could be in a better mood.. could stop apologising for that too
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_JOKE
+  t.any.1 Told May I'd bowl a perfect game.. she asked if I meant before or after she died
+  t.any.2 Dad called my shop a family business.. nobody bought enough to disturb that arrangement
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_LIKES
+  t.any.1 Bowling.. loud enough nobody hears a bad mood arrive
+  t.any.2 Fresh shirt folded right.. yes, bar work taught me something besides pouring
+  t.any.3 A familiar little routine with nobody making a grand occasion out of it
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_LUCK
+  t.any.1 Know how to waste money asking it to turn.. slot machines in Nevada, ninety-two
+  t.any.2 Lucky at bowling till May turns up.. then suddenly we're playing for something
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_MUSIC
+  t.any.1 Fast country.. enough slow songs came out of the jukebox already
+  t.any.2 Ruth liked the same three songs.. rather hear anything I haven't heard her hum
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_NAME
+  t.any.1 Dewayne Boggs.. one word, not two
+  t.any.2 Boggs.. Dewayne unless I've done something worth a full name
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_NERVOUS
+  t.any.1 Yes.. not a trick question today
+  t.any.2 Been trying to look like I have a reason to stand still.. nervous, yes
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_QUIET
+  t.any.1 Could use quiet.. don't need it to be a silence contest
+  t.any.2 Fine.. if I start talking, can tell me to stop without a ceremony
+  t.any.3 Yes. Not every gap needs somebody talking over it
+  t.any.4 Stay if you like. I'm not clearing the place, just shutting up a minute
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_SLEEP
+  t.any.1 Prefer the door to my room open.. don't mind a locked outer door
+  t.any.2 Hard to settle if I can't get out without asking.. been that way a while
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_SPORTS
+  t.any.1 Don't follow ball.. bowling, lane six if I get a choice.. lamp on the other side used to blind me
+  t.any.2 No team I pull for.. bowled with May.. did better when she stopped predicting my score
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_STORY
+  t.mid.1 Ruth's lemon rag had its own peg.. used it on the floor once, she made me buy a new rag before my shift.. said she didn't sell floor-flavoured drinks.. I thought she was joking till she handed me my coat
+  t.hi.1 Corky would wait by my shop at closing.. didn't want me, wanted the paper bag Janice sent supper in.. once I went out empty-handed and he stayed by the door.. thought the better version of me was still inside
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_TALK_WEATHER
+  t.any.1 Rain used to bring people into Ruth's.. bad weather paid better than sunshine
+  t.any.2 Would take a dry walk.. shoes don't need another drink
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_GUARD
+  gate.rule !flag:guard_told
+  t.any.1 Haven't spoken to any soldiers.. my brother's in the Guard, might know more if I could reach him
+  t.any.2 No soldiers close enough to ask.. got a brother in the Guard, haven't heard from him
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_GUARD.a2
+  gate.rule flag:guard_told
+  t.any.1 Haven't spoken to any soldiers.. and no brother in the Guard, that was my lie
+  t.any.2 No useful word from soldiers.. shouldn't have invented one in my own family
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_HOSPITAL
+  t.any.1 Don't know whether they're taking people.. would trust a doctor over my guesses
+  t.any.2 No hospital news I can use.. Dr Nessel was in Richmond last I knew, not a report of him now
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_NEWS
+  t.any.1 Heard warnings at work in Richmond.. nobody I know has sent word since
+  t.any.2 News came through Ruth's radio.. can't tell you who was right among the people arguing over it
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_PLANS
+  t.any.1 Check the outer doors first.. easier thinking once that question's answered
+  t.any.2 I'd find somebody with real news of family.. less interested in the grand plan
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_ROAD
+  t.any.1 Walked from the Richmond side.. didn't find out what a car could get through
+  t.any.2 Got here, that's the part I know.. wouldn't make a bet on the road now
+  tag.1 kind:answer
+end
+
+node vp_1435.VQ_WORLD_WATER
+  t.any.1 Don't know which water is safe.. would ask someone who checks it, not someone who pours drinks
+  t.any.2 No reliable source to point you to.. bar work doesn't tell me what the pipes are doing now
+  tag.1 kind:answer
+end
+
+node vp_1435.leave.angry
+  t.any.1 Rather go than keep at this
+  t.any.2 Enough.. I'm leaving, you can like that or not
+  tag.1 kind:leave
+end
+
+node vp_1435.leave.plain
+  t.any.1 Got my things.. won't make you listen to another closing speech
+  t.any.2 Dewayne Boggs.. hope next time there's less to worry about
+  tag.1 kind:leave
+end
+
+node vp_1435.react.gave_blanket
+  gate.rule gave:blanket
+  t.any.1 Blanket's welcome.. I'll manage the corners
+  t.any.2 Thank you.. can stop pretending a vest is proper outdoor wear
+  tag.1 kind:react
+end
+
+node vp_1435.react.gave_clothes
+  gate.rule gave:clothes
+  t.any.1 Thanks.. glad to have the clothes without having to charm them out of somebody
+  t.any.2 Appreciate that.. won't waste your patience complaining about style
+  tag.1 kind:react
+end
+
+node vp_1435.react.gave_food
+  gate.rule gave:food
+  t.any.1 Food's appreciated.. no, not going to rate it like a judge
+  t.any.2 Thanks.. Janice would approve of you remembering people need feeding
+  tag.1 kind:react
+end
+
+node vp_1435.react.gave_water
+  gate.rule gave:water
+  t.any.1 Thanks for the water.. good to be on this side of the giving
+  t.any.2 Appreciate it.. no little speech required from either of us
+  tag.1 kind:react
+end
+
+node vp_1435.react.insult
+  t.any.1 That's enough of that SHIT
+  t.any.2 Could save us both the bother and shut up
+  tag.1 kind:react
+end
+
+node vp_1435.react.refused
+  t.any.1 Heard the no.. don't need a bigger one
+  t.any.2 All right.. would have liked yes, still know what you said
+  tag.1 kind:react
+end
+
+node vp_1435.react.sorry
+  t.any.1 All right.. apology accepted, let it stay accepted
+  t.any.2 Heard you.. don't need to keep polishing the sorry
+  tag.1 kind:react
+end
+
+node vp_1435.react.thanks
+  t.any.1 Welcome.. don't make me blush, ruins the face
+  t.any.2 Glad to help.. had enough practice looking busy
+  tag.1 kind:react
+end
+
+node vp_1435.react.threat
+  t.any.1 Wait.. don't want to find out how serious you are
+  t.any.2 Can leave.. no need to make me afraid of you as well
+  tag.1 kind:react
+end
+
+node vp_1435.return.arrive
+  gate.rule visits>=1
+  t.any.1 Boggs again.. kept Corky's collar, couldn't leave that
+  t.any.2 Dewayne.. hope there's room for one familiar nuisance
+  tag.1 kind:return
+end
+
+node vp_1435.return.gave_food
+  gate.rule visits>=1 & gaveever:food
+  t.any.1 Remember being given food here.. glad you did it
+  t.any.2 Your food wasn't forgotten.. even with my head making room for every worry
+  tag.1 kind:return
+end

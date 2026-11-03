@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "อนาโตเลียนเชพเพิร์ด",
+    "IGUI_AnimalType_anatolianmale": "อนาโตเลียนเชพเพิร์ด (ตัวผู้)",
+    "IGUI_AnimalType_anatolianfemale": "อนาโตเลียนเชพเพิร์ด (ตัวเมีย)",
+    "IGUI_AnimalType_anatolianpup": "อนาโตเลียนเชพเพิร์ด (ลูกสุนัข)",
+    "IGUI_PD_Breed_anatolianshepherd": "อนาโตเลียนเชพเพิร์ด",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "สุนัขเฝ้าปศุสัตว์ขนาดใหญ่และกล้าหาญ มีขนสีน้ำตาลอ่อน ท้องสีครีม และหน้ากากสีเข้ม เรียนรู้การต่อสู้ได้รวดเร็ว บรรทุกกระเป๋าข้างขนาดใหญ่ขึ้น และช่วยลดความตื่นตระหนกของเจ้าของ",
+    "IGUI_Breed_greaterswissmountaindog": "เกรตเตอร์สวิสเมาน์เทนด็อก",
+    "IGUI_AnimalType_greaterswissmale": "เกรตเตอร์สวิสเมาน์เทนด็อก (ตัวผู้)",
+    "IGUI_AnimalType_greaterswissfemale": "เกรตเตอร์สวิสเมาน์เทนด็อก (ตัวเมีย)",
+    "IGUI_AnimalType_greaterswisspup": "เกรตเตอร์สวิสเมาน์เทนด็อก (ลูกสุนัข)",
+    "IGUI_PD_Breed_greaterswissmountaindog": "เกรตเตอร์สวิสเมาน์เทนด็อก",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "สุนัขทำงานสามสีขนาดใหญ่และกล้าหาญ เพาะพันธุ์มาเพื่อเฝ้าฟาร์ม ลากเกวียน และต้อนปศุสัตว์ เรียนรู้การต่อสู้ได้รวดเร็ว บรรทุกกระเป๋าข้างขนาดใหญ่ขึ้น และช่วยลดความตื่นตระหนกของเจ้าของ"
+}

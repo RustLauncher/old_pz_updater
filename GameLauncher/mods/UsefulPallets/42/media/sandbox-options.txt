@@ -1,0 +1,235 @@
+VERSION = 1,
+
+option UsefulPallets.BrassIngotConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_BrassIngotConstructionCapacity,}
+
+option UsefulPallets.BrassIngotMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_BrassIngotMilitaryCapacity,}
+
+option UsefulPallets.ClayBrickConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_ClayBrickConstructionCapacity,}
+
+option UsefulPallets.ClayBrickMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_ClayBrickMilitaryCapacity,}
+
+option UsefulPallets.ClayTileConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 44, page = UsefulPallets, translation = UsefulPallets_ClayTileConstructionCapacity,}
+
+option UsefulPallets.ClayTileMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 64, page = UsefulPallets, translation = UsefulPallets_ClayTileMilitaryCapacity,}
+
+option UsefulPallets.ClayShingleConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 12, page = UsefulPallets, translation = UsefulPallets_ClayShingleConstructionCapacity,}
+
+option UsefulPallets.ClayShingleMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 20, page = UsefulPallets, translation = UsefulPallets_ClayShingleMilitaryCapacity,}
+
+option UsefulPallets.CopperIngotConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_CopperIngotConstructionCapacity,}
+
+option UsefulPallets.CopperIngotMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_CopperIngotMilitaryCapacity,}
+
+option UsefulPallets.CopperSheetConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 70, page = UsefulPallets, translation = UsefulPallets_CopperSheetConstructionCapacity,}
+
+option UsefulPallets.CopperSheetMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 98, page = UsefulPallets, translation = UsefulPallets_CopperSheetMilitaryCapacity,}
+
+option UsefulPallets.FirewoodConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 112, page = UsefulPallets, translation = UsefulPallets_FirewoodConstructionCapacity,}
+
+option UsefulPallets.FirewoodMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 140, page = UsefulPallets, translation = UsefulPallets_FirewoodMilitaryCapacity,}
+
+option UsefulPallets.GoldBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_GoldBarConstructionCapacity,}
+
+option UsefulPallets.GoldBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_GoldBarMilitaryCapacity,}
+
+option UsefulPallets.GoldSheetConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 512, page = UsefulPallets, translation = UsefulPallets_GoldSheetConstructionCapacity,}
+
+option UsefulPallets.GoldSheetMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 720, page = UsefulPallets, translation = UsefulPallets_GoldSheetMilitaryCapacity,}
+
+option UsefulPallets.IronBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 126, page = UsefulPallets, translation = UsefulPallets_IronBarConstructionCapacity,}
+
+option UsefulPallets.IronBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 189, page = UsefulPallets, translation = UsefulPallets_IronBarMilitaryCapacity,}
+
+option UsefulPallets.IronBarHalfConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 240, page = UsefulPallets, translation = UsefulPallets_IronBarHalfConstructionCapacity,}
+
+option UsefulPallets.IronBarHalfMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 360, page = UsefulPallets, translation = UsefulPallets_IronBarHalfMilitaryCapacity,}
+
+option UsefulPallets.IronBarQuarterConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 1127, page = UsefulPallets, translation = UsefulPallets_IronBarQuarterConstructionCapacity,}
+
+option UsefulPallets.IronBarQuarterMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 1610, page = UsefulPallets, translation = UsefulPallets_IronBarQuarterMilitaryCapacity,}
+
+option UsefulPallets.IronBlockConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 168, page = UsefulPallets, translation = UsefulPallets_IronBlockConstructionCapacity,}
+
+option UsefulPallets.IronBlockMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 280, page = UsefulPallets, translation = UsefulPallets_IronBlockMilitaryCapacity,}
+
+option UsefulPallets.IronIngotConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_IronIngotConstructionCapacity,}
+
+option UsefulPallets.IronIngotMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_IronIngotMilitaryCapacity,}
+
+option UsefulPallets.MetalPipeConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 54, page = UsefulPallets, translation = UsefulPallets_MetalPipeConstructionCapacity,}
+
+option UsefulPallets.MetalPipeMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 90, page = UsefulPallets, translation = UsefulPallets_MetalPipeMilitaryCapacity,}
+
+option UsefulPallets.LargeBranchConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 8, page = UsefulPallets, translation = UsefulPallets_LargeBranchConstructionCapacity,}
+
+option UsefulPallets.LargeBranchMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 16, page = UsefulPallets, translation = UsefulPallets_LargeBranchMilitaryCapacity,}
+
+option UsefulPallets.LeadPipeConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 54, page = UsefulPallets, translation = UsefulPallets_LeadPipeConstructionCapacity,}
+
+option UsefulPallets.LeadPipeMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 90, page = UsefulPallets, translation = UsefulPallets_LeadPipeMilitaryCapacity,}
+
+option UsefulPallets.LogConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 8, page = UsefulPallets, translation = UsefulPallets_LogConstructionCapacity,}
+
+option UsefulPallets.LogMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 16, page = UsefulPallets, translation = UsefulPallets_LogMilitaryCapacity,}
+
+option UsefulPallets.LongStickConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 168, page = UsefulPallets, translation = UsefulPallets_LongStickConstructionCapacity,}
+
+option UsefulPallets.LongStickMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 231, page = UsefulPallets, translation = UsefulPallets_LongStickMilitaryCapacity,}
+
+option UsefulPallets.PlankConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 48, page = UsefulPallets, translation = UsefulPallets_PlankConstructionCapacity,}
+
+option UsefulPallets.PlankMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 64, page = UsefulPallets, translation = UsefulPallets_PlankMilitaryCapacity,}
+
+option UsefulPallets.PipeConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 33, page = UsefulPallets, translation = UsefulPallets_PipeConstructionCapacity,}
+
+option UsefulPallets.PipeMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 44, page = UsefulPallets, translation = UsefulPallets_PipeMilitaryCapacity,}
+
+option UsefulPallets.SilverBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_SilverBarConstructionCapacity,}
+
+option UsefulPallets.SilverBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_SilverBarMilitaryCapacity,}
+
+option UsefulPallets.SilverSheetConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 512, page = UsefulPallets, translation = UsefulPallets_SilverSheetConstructionCapacity,}
+
+option UsefulPallets.SilverSheetMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 720, page = UsefulPallets, translation = UsefulPallets_SilverSheetMilitaryCapacity,}
+
+option UsefulPallets.SmallCopperSheetConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 690, page = UsefulPallets, translation = UsefulPallets_SmallCopperSheetConstructionCapacity,}
+
+option UsefulPallets.SmallCopperSheetMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 980, page = UsefulPallets, translation = UsefulPallets_SmallCopperSheetMilitaryCapacity,}
+
+option UsefulPallets.SmallGoldBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 256, page = UsefulPallets, translation = UsefulPallets_SmallGoldBarConstructionCapacity,}
+
+option UsefulPallets.SmallGoldBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 360, page = UsefulPallets, translation = UsefulPallets_SmallGoldBarMilitaryCapacity,}
+
+option UsefulPallets.SmallSilverBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 256, page = UsefulPallets, translation = UsefulPallets_SmallSilverBarConstructionCapacity,}
+
+option UsefulPallets.SmallSilverBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 360, page = UsefulPallets, translation = UsefulPallets_SmallSilverBarMilitaryCapacity,}
+
+option UsefulPallets.SmallSheetMetalConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 512, page = UsefulPallets, translation = UsefulPallets_SmallSheetMetalConstructionCapacity,}
+
+option UsefulPallets.SmallSheetMetalMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 720, page = UsefulPallets, translation = UsefulPallets_SmallSheetMetalMilitaryCapacity,}
+
+option UsefulPallets.SteelBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 126, page = UsefulPallets, translation = UsefulPallets_SteelBarConstructionCapacity,}
+
+option UsefulPallets.SteelBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 189, page = UsefulPallets, translation = UsefulPallets_SteelBarMilitaryCapacity,}
+
+option UsefulPallets.SteelBarHalfConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 240, page = UsefulPallets, translation = UsefulPallets_SteelBarHalfConstructionCapacity,}
+
+option UsefulPallets.SteelBarHalfMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 360, page = UsefulPallets, translation = UsefulPallets_SteelBarHalfMilitaryCapacity,}
+
+option UsefulPallets.SteelBarQuarterConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 1127, page = UsefulPallets, translation = UsefulPallets_SteelBarQuarterConstructionCapacity,}
+
+option UsefulPallets.SteelBarQuarterMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 1610, page = UsefulPallets, translation = UsefulPallets_SteelBarQuarterMilitaryCapacity,}
+
+option UsefulPallets.SteelBlockConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 168, page = UsefulPallets, translation = UsefulPallets_SteelBlockConstructionCapacity,}
+
+option UsefulPallets.SteelBlockMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 280, page = UsefulPallets, translation = UsefulPallets_SteelBlockMilitaryCapacity,}
+
+option UsefulPallets.SteelIngotConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 32, page = UsefulPallets, translation = UsefulPallets_SteelIngotConstructionCapacity,}
+
+option UsefulPallets.SteelIngotMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 45, page = UsefulPallets, translation = UsefulPallets_SteelIngotMilitaryCapacity,}
+
+option UsefulPallets.MetalBarConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 114, page = UsefulPallets, translation = UsefulPallets_MetalBarConstructionCapacity,}
+
+option UsefulPallets.MetalBarMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 152, page = UsefulPallets, translation = UsefulPallets_MetalBarMilitaryCapacity,}
+
+option UsefulPallets.SteelRodHalfConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 228, page = UsefulPallets, translation = UsefulPallets_SteelRodHalfConstructionCapacity,}
+
+option UsefulPallets.SteelRodHalfMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 304, page = UsefulPallets, translation = UsefulPallets_SteelRodHalfMilitaryCapacity,}
+
+option UsefulPallets.SteelRodQuarterConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 770, page = UsefulPallets, translation = UsefulPallets_SteelRodQuarterConstructionCapacity,}
+
+option UsefulPallets.SteelRodQuarterMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 1100, page = UsefulPallets, translation = UsefulPallets_SteelRodQuarterMilitaryCapacity,}
+
+option UsefulPallets.SheetMetalConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 48, page = UsefulPallets, translation = UsefulPallets_SheetMetalConstructionCapacity,}
+
+option UsefulPallets.SheetMetalMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 69, page = UsefulPallets, translation = UsefulPallets_SheetMetalMilitaryCapacity,}
+
+option UsefulPallets.StoneBlockConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 84, page = UsefulPallets, translation = UsefulPallets_StoneBlockConstructionCapacity,}
+
+option UsefulPallets.StoneBlockMilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 126, page = UsefulPallets, translation = UsefulPallets_StoneBlockMilitaryCapacity,}
+
+option UsefulPallets.TreeBranch2ConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 39, page = UsefulPallets, translation = UsefulPallets_TreeBranch2ConstructionCapacity,}
+
+option UsefulPallets.TreeBranch2MilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 65, page = UsefulPallets, translation = UsefulPallets_TreeBranch2MilitaryCapacity,}
+
+option UsefulPallets.WoodenStick2ConstructionCapacity
+{type = integer, min = 1, max = 10000, default = 95, page = UsefulPallets, translation = UsefulPallets_WoodenStick2ConstructionCapacity,}
+
+option UsefulPallets.WoodenStick2MilitaryCapacity
+{type = integer, min = 1, max = 10000, default = 133, page = UsefulPallets, translation = UsefulPallets_WoodenStick2MilitaryCapacity,}

@@ -1,0 +1,17 @@
+{
+    "ContextMenu_VFluid_FillFromSupply": "Fill from",
+    "ContextMenu_VFluid_RefuelFrom": "Refuel from",
+    "ContextMenu_VFluid_Info": "Fluid info",
+    "ContextMenu_VFluid_WashYourself": "Yourself",
+    "ContextMenu_VFluid_WashAllClothing": "All Clothing",
+    "ContextMenu_VFluid_Wash": "Wash",
+    "ContextMenu_VFluid_Drink": "Drink",
+    "ContextMenu_VFluid_Drain": "Drain",
+    "ContextMenu_VFluid_RefillTorch": "Refill",
+    "ContextMenu_VFluid_TakeFluid": "Take",
+    "ContextMenu_VFluid_AddFluid": "Add",
+    "ContextMenu_VFluid_From": "from",
+    "ContextMenu_VFluid_To": "to",
+    "ContextMenu_VFluid_Transfer": "Transfer",
+    "ContextMenu_VFluid_AddFluidGeneric": "Add Fluid"
+}

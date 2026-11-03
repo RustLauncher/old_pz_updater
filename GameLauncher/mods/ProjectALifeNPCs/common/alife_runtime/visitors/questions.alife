@@ -1,0 +1,2467 @@
+@alife-records 1
+
+question VQ_BOOK_ABOUT
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:HOUSE_BOOK
+  q.needs book
+  q.pat whats it about|what's it about|what happens in it|tell me the story
+  t.1 What's it about?
+  t.2 What happens in it?
+  t.3 Tell me the story
+end
+
+question VQ_BOOK_AGAIN
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_ENDING
+  q.needs book
+  q.pat read it again|would you read it again|is it a keeper|read it twice
+  t.1 Would you read it again?
+  t.2 Is it a keeper?
+  t.3 Read it twice?
+end
+
+question VQ_BOOK_CHARACTER
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_ABOUT
+  q.needs book
+  q.pat favorite character|who's your favorite character|who do you like in it|anybody in it like you
+  t.1 Who's your favorite character?
+  t.2 Who do you like in it?
+  t.3 Anybody in it like you?
+end
+
+question VQ_BOOK_ENDING
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_ABOUT & imin>=60
+  q.needs book
+  q.pat how does it end|did you finish it|what happens at the end
+  t.1 How does it end?
+  t.2 Did you finish it?
+  t.3 What happens at the end?
+end
+
+question VQ_BOOK_HARD
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_WHY
+  q.needs book
+  q.pat hard read|is it a hard read|is it slow going|do you have to concentrate
+  t.1 Is it a hard read?
+  t.2 Is it slow going?
+  t.3 Do you have to concentrate?
+end
+
+question VQ_BOOK_LEND
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_LIKE & trust>=25
+  q.needs book
+  q.pat borrow it|can i borrow it when you're done|would you lend it|mind if i read it after|would you ever let someone else read it|is it a book you'd want to share|would you rather keep that one for yourself
+  t.1 Would you ever let someone else read it?
+  t.2 Is it a book you'd want to share?
+  t.3 Would you rather keep that one for yourself?
+end
+
+question VQ_BOOK_LIKE
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_ABOUT
+  q.needs book
+  q.pat is it any good|do you like it|worth the time
+  t.1 Is it any good?
+  t.2 Do you like it?
+  t.3 Worth the time?
+end
+
+question VQ_BOOK_WHY
+  q.tab house
+  q.kind book
+  q.vis hidden
+  q.cost 0
+  q.see asked:BOOK_ABOUT
+  q.needs book
+  q.pat why that one|why that book|how did you come by it
+  t.1 Why that one?
+  t.2 Why that book?
+  t.3 How did you come by it?
+end
+
+question VQ_CLOSER_COMPLIMENT
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=2 & trust>=55 & night
+  q.adult true
+  q.pat compliment|pay them a compliment|tell them they look well|say something kind about them
+  t.1 Pay them a compliment
+  t.2 Tell them they look well
+  t.3 Say something kind about them
+end
+
+question VQ_CLOSER_EASYTALK
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=2 & trust>=55
+  q.adult true
+  q.pat easy to talk to|you're easy to talk to|i like talking with you|talking with you helps
+  t.1 You're easy to talk to
+  t.2 I like talking with you
+  t.3 Talking with you helps
+end
+
+question VQ_CLOSER_ENOUGH
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trust>=41 & asked:CLOSER_EASYTALK
+  q.adult true
+  q.pat leave it there|let's leave it there|that's enough for tonight|no hard feelings let's talk about something else
+  t.1 Let's leave it there
+  t.2 That's enough for tonight
+  t.3 No hard feelings, let's talk about something else
+end
+
+question VQ_CLOSER_GOODNIGHT
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=3 & trust>=70 & night & asked:CLOSER_HANDS
+  q.adult true
+  q.pat goodnight|say goodnight and mean it|wish them a quiet night|say goodnight
+  t.1 Say goodnight, and mean it
+  t.2 Wish them a quiet night
+  t.3 Say goodnight
+end
+
+question VQ_CLOSER_HANDS
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=3 & trust>=70 & asked:CLOSER_SITCLOSE
+  q.adult true
+  q.pat hold hands|take their hand|hold their hand a moment|offer a hand|would you be comfortable holding hands|may i offer you my hand|would you rather i kept my hands to myself
+  t.1 Would you be comfortable holding hands?
+  t.2 May I offer you my hand?
+  t.3 Would you rather I kept my hands to myself?
+end
+
+question VQ_CLOSER_LAMP
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=3 & trust>=70 & night & asked:CLOSER_HANDS
+  q.adult true
+  q.pat lamp burns|sit up until the lamp burns low|leave the lamp lit between you|stay until the lamp burns down|would you like me to stay a little longer|want to keep talking or leave it there|would a little more company be welcome
+  t.1 Would you like me to stay a little longer?
+  t.2 Want to keep talking, or leave it there?
+  t.3 Would a little more company be welcome?
+end
+
+question VQ_CLOSER_SITCLOSE
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=3 & trust>=70 & asked:CLOSER_STAYUP
+  q.adult true
+  q.pat sit closer|sit a little closer|share the couch|come sit by me|would you like to be a little closer|would closer be all right with you|want some company or more space
+  t.1 Would you like to be a little closer?
+  t.2 Would closer be all right with you?
+  t.3 Want some company, or more space?
+end
+
+question VQ_CLOSER_STAYUP
+  q.tab closer
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=2 & trust>=55 & night
+  q.adult true
+  q.pat stay up|stay up with me|sit up a while with me|keep me company a while|would you like to keep me company a little longer|want to talk a little longer|would you rather stay up or call it a night
+  t.1 Would you like to keep me company a little longer?
+  t.2 Want to talk a little longer?
+  t.3 Would you rather stay up or call it a night?
+end
+
+question VQ_HOUSE_BATH
+  q.tab house
+  q.kind house
+  q.vis open
+  q.cost 0
+  q.pat bathroom|wash up|shower|care to clean up|the bathroom is through there|want a basin of water|would you like a chance to wash|want to see if there's somewhere to clean up
+  t.1 Would you like a chance to wash?
+  t.2 Want to see if there's somewhere to clean up?
+  t.3 Could a little washing water help, if there's some spare?
+end
+
+question VQ_HOUSE_BED
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:bed & imin>=30
+  q.pat lie down|bed|want to lie down|there's a bed if you need it|need to get some rest|would you like to rest if we can find a free spot|could you use somewhere to lie down|want to look for a place to rest
+  t.1 Would you like to rest if we can find a free spot?
+  t.2 Could you use somewhere to lie down?
+  t.3 Want to look for a place to rest?
+end
+
+question VQ_HOUSE_BOOK
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see act:read
+  q.needs book
+  q.pat reading|the book|what are you reading|is that a good one|what's the book
+  t.1 What are you reading?
+  t.2 Is that a good one?
+  t.3 What's the book?
+end
+
+question VQ_HOUSE_CHAIR
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:seat & imin>=10
+  q.pat the chair|sit down|take the good chair|that chair's yours|have a seat|would sitting for a while help|want to find somewhere you can sit|could you use a seat
+  t.1 Would sitting for a while help?
+  t.2 Want to find somewhere you can sit?
+  t.3 Could you use a seat?
+end
+
+question VQ_HOUSE_CHORES
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20 & imin>=30
+  q.pat around here|help with|anything you want to do around here|feel like helping with something|need something to keep your hands busy
+  t.1 Anything you want to do around here?
+  t.2 Feel like helping with something?
+  t.3 Need something to keep your hands busy?
+end
+
+question VQ_HOUSE_FOOD
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see need:hunger>=2
+  q.pat supper|eat something|let's see what there is to eat|eat whatever you like|want me to look for something to eat|could you use a meal if we find something spare|anything you'd rather not eat|want to see whether there's anything to share
+  t.1 Could you use a meal, if we find something spare?
+  t.2 Anything you'd rather not eat?
+  t.3 Want to see whether there's anything to share?
+end
+
+question VQ_HOUSE_KITCHEN
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see imin>=15
+  q.pat the kitchen|want something from the kitchen|can i make you something|hungry kitchen's through there|could you use something to eat if there's any spare|want to see what we might manage for a meal|would you rather talk about food later
+  t.1 Could you use something to eat, if there's any spare?
+  t.2 Want to see what we might manage for a meal?
+  t.3 Would you rather talk about food later?
+end
+
+question VQ_HOUSE_LIGHTS
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see night & imin>=15
+  q.pat the lamp|the lights|mind the lamp on|lights bother you|i'll leave a lamp on|would light help if we can arrange it|do you prefer light or darkness when you rest|would a light make resting easier
+  t.1 Would light help, if we can arrange it?
+  t.2 Do you prefer light or darkness when you rest?
+  t.3 Would a light make resting easier?
+end
+
+question VQ_HOUSE_LOCKS
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see trait:anx>=3 & imin>=20
+  q.pat the locks|i keep the doors locked|want me to check the doors|want to check the locks yourself|are the doors worrying you|what would you want checked before resting|would knowing the way out help
+  t.1 Are the doors worrying you?
+  t.2 What would you want checked before resting?
+  t.3 Would knowing the way out help?
+end
+
+question VQ_HOUSE_MIRROR
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:mirror & imin>=25
+  q.pat the mirror|there's a mirror in the hall|want to freshen up|mirror's over there|would you like to use a mirror|want a moment to straighten yourself up|would a chance to freshen up help
+  t.1 Would you like to use a mirror?
+  t.2 Want a moment to straighten yourself up?
+  t.3 Would a chance to freshen up help?
+end
+
+question VQ_HOUSE_NOISE
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see imin>=30
+  q.pat the noise|any noises worrying you|noise bothering you|do noises keep you awake
+  t.1 Any noises worrying you?
+  t.2 Noise bothering you?
+  t.3 Do noises keep you awake?
+end
+
+question VQ_HOUSE_PHONE
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:phone & imin>=20
+  q.pat the phone|the phone's dead i'm afraid|want to try the phone|anybody you'd call|anybody you'd try calling|would you try a call if we found a working line|anyone you wish you could reach by phone
+  t.1 Anybody you'd try calling?
+  t.2 Would you try a call if we found a working line?
+  t.3 Anyone you wish you could reach by phone?
+end
+
+question VQ_HOUSE_PORCH
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:porch & imin>=25
+  q.pat the porch|want some air on the porch|the porch is quiet|sit out front|would you like some air if it's safe to step out|would you rather stay inside|want to see if there's a quiet spot outside
+  t.1 Would you like some air, if it's safe to step out?
+  t.2 Would you rather stay inside?
+  t.3 Want to see if there's a quiet spot outside?
+end
+
+question VQ_HOUSE_PRAYER
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see trait:faith>=3 & trust>=10
+  q.pat pray|prayer|would you like a minute to pray|do you want some quiet to pray|need a minute alone with god
+  t.1 Would you like a minute to pray?
+  t.2 Do you want some quiet to pray?
+  t.3 Need a minute alone with God?
+end
+
+question VQ_HOUSE_QUIET
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see imin>=40
+  q.pat the quiet|quiet in here isn't it|does the quiet bother you|want some noise
+  t.1 Quiet in here, isn't it
+  t.2 Does the quiet bother you?
+  t.3 Want some noise?
+end
+
+question VQ_HOUSE_RADIO
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:radio & imin>=20
+  q.pat the radio|want to hear the radio|care to listen for news|should i turn the radio on|would you like to try listening to the radio|want to see if we can hear anything useful|would the radio help if we can get it working
+  t.1 Would you like to try listening to the radio?
+  t.2 Want to see if we can hear anything useful?
+  t.3 Would the radio help, if we can get it working?
+end
+
+question VQ_HOUSE_SAFE
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat safe here|you're safe here|nothing's going to come in here|feel safe|ill keep an eye on the door|i'll keep an eye on the door|what would make you feel a little safer|anything here making you uneasy
+  t.1 What would make you feel a little safer?
+  t.2 Anything here making you uneasy?
+  t.3 Do you feel comfortable enough to stay?
+end
+
+question VQ_HOUSE_SHELF
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:shelf & imin>=25
+  q.pat the shelf|there's a shelf of books|anything on the shelves you'd like|help yourself to the shelves|want to see if there's anything worth reading|would looking through some books help if we find any|anything you'd like to find on a shelf
+  t.1 Want to see if there's anything worth reading?
+  t.2 Would looking through some books help, if we find any?
+  t.3 Anything you'd like to find on a shelf?
+end
+
+question VQ_HOUSE_SMELL
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see imin>=20
+  q.pat the smell|something smells good doesn't it|does the place smell all right|sorry about the smell|any smells bothering you|how does the place seem to you|anything about this place putting you off
+  t.1 Any smells bothering you?
+  t.2 How does the place seem to you?
+  t.3 Anything about this place putting you off?
+end
+
+question VQ_HOUSE_STAIRS
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:stairs & imin>=25
+  q.pat upstairs|upstairs is quiet|you can go up if you like|take a look upstairs|want to see if there's a quieter spot|would you rather have a little privacy|anything you need before we look around
+  t.1 Want to see if there's a quieter spot?
+  t.2 Would you rather have a little privacy?
+  t.3 Anything you need before we look around?
+end
+
+question VQ_HOUSE_STOVE
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:stove & need:cold>=2
+  q.pat the stove|warm up|come sit by the stove|warm yourself by the stove|want to warm up|would you like to see if we can find some warmth|could a warmer spot help if there is one|still having trouble keeping warm
+  t.1 Would you like to see if we can find some warmth?
+  t.2 Could a warmer spot help, if there is one?
+  t.3 Still having trouble keeping warm?
+end
+
+question VQ_HOUSE_TV
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:tv & imin>=20
+  q.pat the tv|television|want to see if the tv works|care to try the television|would the tv help
+  t.1 Want to see if the TV works?
+  t.2 Care to try the television?
+  t.3 Would the TV help?
+end
+
+question VQ_HOUSE_WARM
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see need:cold>=1
+  q.pat warm in here|warm enough in here|want another layer|cold in here
+  t.1 Warm enough in here?
+  t.2 Want another layer?
+  t.3 Cold in here?
+end
+
+question VQ_HOUSE_WELCOME
+  q.tab house
+  q.kind house
+  q.vis open
+  q.cost 0
+  q.pat at home|take a seat|make yourself at home|take a load off|sit wherever you like|anything i should know to make this easier|tell me if you need a little space|you don't have to keep making conversation
+  t.1 Anything I should know to make this easier?
+  t.2 Tell me if you need a little space
+  t.3 You don't have to keep making conversation
+end
+
+question VQ_HOUSE_WINDOW
+  q.tab house
+  q.kind house
+  q.vis hidden
+  q.cost 0
+  q.see poi:window_view & imin>=20
+  q.pat the window|what do you see out there|keep an eye on the yard if you like|you like that window|what do you make of the view from here|anything out there catching your attention|would looking outside help or make things worse
+  t.1 What do you make of the view from here?
+  t.2 Anything out there catching your attention?
+  t.3 Would looking outside help, or make things worse?
+end
+
+question VQ_NOW_CARRYING
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat in the bag|carrying|what are you carrying|what did you bring with you|can i see what you've got
+  t.1 What are you carrying?
+  t.2 What did you bring with you?
+  t.3 Can I see what you've got?
+end
+
+question VQ_NOW_CLOTHES
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:dirty>=3 & imin>=15
+  q.pat change of clothes|clean clothes|are those clothes all you have|need something clean|want a change of clothes
+  t.1 Are those clothes all you have?
+  t.2 Need something clean?
+  t.3 Want a change of clothes?
+end
+
+question VQ_NOW_COLD
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:cold>=2
+  q.pat cold|warm enough|are you cold|need a blanket|having trouble keeping warm|would another layer help
+  t.1 Are you cold?
+  t.2 Having trouble keeping warm?
+  t.3 Would another layer help?
+end
+
+question VQ_NOW_CRAVING
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 2
+  q.see !vice:none & trust>=20
+  q.pat the shakes|withdrawal|do you need something to take the edge off|is it the shakes|what do you need
+  t.1 Do you need something to take the edge off?
+  t.2 Is it the shakes?
+  t.3 What do you need?
+end
+
+question VQ_NOW_DEST
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat trying to reach|is there somewhere you're trying to reach|where does the road end for you|anyone expecting you there
+  t.1 Is there somewhere you're trying to reach?
+  t.2 Where does the road end for you?
+  t.3 Anyone expecting you there?
+end
+
+question VQ_NOW_DRINK
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see vice:alcohol & adult & trust>=20
+  q.adult true
+  q.pat drink|a drink|do you drink|need a drink|is it the drink
+  t.1 Do you drink?
+  t.2 Need a drink?
+  t.3 Is it the drink?
+end
+
+question VQ_NOW_FUTURE
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat tomorrow|what happens next|do you think about tomorrow|what are you going to do
+  t.1 Do you think about tomorrow?
+  t.2 What happens next?
+  t.3 What are you going to do?
+end
+
+question VQ_NOW_GLASSES
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=10
+  q.pat your eyes|glasses|can you see all right|do you wear glasses|how's your eyesight
+  t.1 Can you see all right?
+  t.2 Do you wear glasses?
+  t.3 How's your eyesight?
+end
+
+question VQ_NOW_HELP
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat what can you do|can you help|can you help with anything|are you any good with tools
+  t.1 Can you help with anything?
+  t.2 Are you any good with tools?
+  t.3 What can you do?
+end
+
+question VQ_NOW_HUNGRY
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:hunger>=2
+  q.pat hungry|last eat|have you eaten|are you hungry|when did you last eat
+  t.1 Are you hungry?
+  t.2 When did you last eat?
+  t.3 Have you eaten?
+end
+
+question VQ_NOW_HURT
+  q.tab now
+  q.kind ask
+  q.vis open
+  q.cost 0
+  q.pat hurt|injured|in pain|are you hurt|anything hurt|you all right
+  t.1 Are you hurt?
+  t.2 Anything hurt?
+  t.3 You all right?
+end
+
+question VQ_NOW_LEAVE
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=20
+  q.pat leaving|head out|are you thinking of leaving|want to get going|when do you want to head out
+  t.1 Are you thinking of leaving?
+  t.2 Want to get going?
+  t.3 When do you want to head out?
+end
+
+question VQ_NOW_LISTENING
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trait:anx>=2 & imin>=12
+  q.pat hear something|what are you listening for|everything okay out there
+  t.1 Hear something?
+  t.2 What are you listening for?
+  t.3 Everything okay out there?
+end
+
+question VQ_NOW_MOOD
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=8
+  q.pat your mood|how are you really|what kind of mood are you in|how's your head
+  t.1 What kind of mood are you in?
+  t.2 How's your head?
+  t.3 How are you really?
+end
+
+question VQ_NOW_NEWS
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=5
+  q.pat any news|heard anything|heard anything today|any news from the road|what did you hear on the road
+  t.1 Heard anything today?
+  t.2 Any news from the road?
+  t.3 What did you hear on the road?
+end
+
+question VQ_NOW_PARTNER
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see !bond:none
+  q.pat your partner|came with|how's the one you came with|is he or she all right|how's your traveling companion|is the person with you all right|anything worrying you about your companion
+  t.1 How's your traveling companion?
+  t.2 Is the person with you all right?
+  t.3 Anything worrying you about your companion?
+end
+
+question VQ_NOW_PLAN
+  q.tab now
+  q.kind ask
+  q.vis open
+  q.cost 0
+  q.pat headed|your plan|where to|where are you headed|what's your plan|where to from here
+  t.1 Where are you headed?
+  t.2 What's your plan?
+  t.3 Where to from here?
+end
+
+question VQ_NOW_ROAD
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat the road|which way|how was the road|what was the road like|which way did you come
+  t.1 How was the road?
+  t.2 What was the road like?
+  t.3 Which way did you come?
+end
+
+question VQ_NOW_SCARED
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:fear>=2
+  q.pat scared|afraid|are you scared|is something frightening you|you want to talk about it
+  t.1 Are you scared?
+  t.2 Is something frightening you?
+  t.3 You want to talk about it?
+end
+
+question VQ_NOW_SHOES
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=10
+  q.pat your feet|your boots|how are your feet|any trouble with your feet|need different shoes
+  t.1 How are your feet?
+  t.2 Any trouble with your feet?
+  t.3 Need different shoes?
+end
+
+question VQ_NOW_SICK
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see need:sick>=1
+  q.pat whats wrong with you|you sick|what's wrong with you|how long have you been like this|are you feeling ill
+  t.1 Are you feeling ill?
+  t.2 You sick?
+  t.3 How long have you been like this?
+end
+
+question VQ_NOW_SMOKE
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see vice:tobacco
+  q.pat smoke|cigarette|do you smoke|want a cigarette|need a smoke
+  t.1 Do you smoke?
+  t.2 Want a cigarette?
+  t.3 Need a smoke?
+end
+
+question VQ_NOW_STAY
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=10
+  q.pat stay a while|how long|how long do you want to stay|are you planning to stay a while|do you need a few nights
+  t.1 How long do you want to stay?
+  t.2 Are you planning to stay a while?
+  t.3 Do you need a few nights?
+end
+
+question VQ_NOW_THIRSTY
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:thirst>=2 & imin>=5
+  q.pat thirsty|water|want some water|you thirsty|when did you last drink|are you thirsty|when did you last have a drink|could you use something to drink
+  t.1 Are you thirsty?
+  t.2 When did you last have a drink?
+  t.3 Could you use something to drink?
+end
+
+question VQ_NOW_TIRED
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:fatigue>=2
+  q.pat tired|last sleep|when did you last sleep|you look worn out|need to lie down|could you use a rest|when did you last get some sleep|how are you managing without much rest
+  t.1 Could you use a rest?
+  t.2 When did you last get some sleep?
+  t.3 How are you managing without much rest?
+end
+
+question VQ_NOW_TRUST
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=20
+  q.pat do you trust me|how are you feeling about me|are you comfortable here
+  t.1 Do you trust me?
+  t.2 How are you feeling about me?
+  t.3 Are you comfortable here?
+end
+
+question VQ_NOW_WANT
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see imin>=3
+  q.pat need most|what do you need|what do you need most|is there something i can get you|what would help right now
+  t.1 What do you need most?
+  t.2 Is there something I can get you?
+  t.3 What would help right now?
+end
+
+question VQ_NOW_WASH
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see need:dirty>=3
+  q.pat wash up|want to wash up|do you want a basin of water|need a wash|would a chance to wash help|do you want to clean up if we can manage it|could you use somewhere to wash
+  t.1 Would a chance to wash help?
+  t.2 Do you want to clean up, if we can manage it?
+  t.3 Could you use somewhere to wash?
+end
+
+question VQ_NOW_WATCHING
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see act:look
+  q.pat looking at|what are you looking at|see anything out there|what's out the window
+  t.1 What are you looking at?
+  t.2 See anything out there?
+  t.3 What's out the window?
+end
+
+question VQ_NOW_WORRY
+  q.tab now
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=20
+  q.pat worried about|on your mind|what are you worried about|what's on your mind|what's weighing on you
+  t.1 What are you worried about?
+  t.2 What's on your mind?
+  t.3 What's weighing on you?
+end
+
+question VQ_OFFER_ALCOHOL
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 1
+  q.see vice:alcohol & adult & trust>=20
+  q.adult true
+  q.pat give a drink of liquor|offer a drink|pour a measure|share a bottle|choose some alcohol to give them|offer alcohol from my supplies|see if i have a drink i can spare
+  t.1 Choose some alcohol to give them
+  t.2 Offer alcohol from my supplies
+  t.3 See if I have a drink I can spare
+end
+
+question VQ_OFFER_BANDAGE
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see need:pain>=2
+  q.pat give a bandage|offer a bandage|offer to dress the wound|give them gauze|see what first aid supplies i can spare|choose medicine to give them|offer first aid supplies from my things
+  t.1 See what first aid supplies I can spare
+  t.2 Choose medicine to give them
+  t.3 Offer first aid supplies from my things
+end
+
+question VQ_OFFER_BATTERIES
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat give batteries|offer batteries|share a flashlight|give them a light|look for a useful item to give them|see if i have batteries or a light to spare|choose something useful they can keep
+  t.1 Look for a useful item to give them
+  t.2 See if I have batteries or a light to spare
+  t.3 Choose something useful they can keep
+end
+
+question VQ_OFFER_BED
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see need:fatigue>=2
+  q.pat offer a bed|offer the couch|offer a place to sleep|discuss finding somewhere they could rest|ask if a place to rest would help|offer to look for a free sleeping spot
+  t.1 Discuss finding somewhere they could rest
+  t.2 Ask if a place to rest would help
+  t.3 Offer to look for a free sleeping spot
+end
+
+question VQ_OFFER_BLANKET
+  q.tab offer
+  q.kind offer
+  q.vis open
+  q.cost 0
+  q.pat give a blanket|offer a blanket|give them something warm|share a blanket
+  t.1 Offer a blanket
+  t.2 Give them something warm
+  t.3 Share a blanket
+end
+
+question VQ_OFFER_BOOK
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see imin>=20
+  q.pat lend a book|offer something to read|loan them a paperback|offer a book to keep|give them something to read|choose a book to give them
+  t.1 Offer a book to keep
+  t.2 Give them something to read
+  t.3 Choose a book to give them
+end
+
+question VQ_OFFER_CANDLE
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see night & imin>=15
+  q.pat give a candle|offer a candle|leave a lamp lit|give them a light for the night|look for a light source to give them|choose a useful item they can keep|see what i can spare for the night
+  t.1 Look for a light source to give them
+  t.2 Choose a useful item they can keep
+  t.3 See what I can spare for the night
+end
+
+question VQ_OFFER_CARDS
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20 & imin>=30
+  q.pat play cards|offer a game of cards|deal a hand|play a round|ask if they'd enjoy a game sometime|suggest a game if a deck turns up|talk about playing cards
+  t.1 Ask if they'd enjoy a game sometime
+  t.2 Suggest a game, if a deck turns up
+  t.3 Talk about playing cards
+end
+
+question VQ_OFFER_CLOTHES
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see imin>=10
+  q.pat give clothes|something to wear|offer something to wear|offer a change of clothes|see if any of my clothes fit
+  t.1 Offer something to wear
+  t.2 Offer a change of clothes
+  t.3 See if any of my clothes fit
+end
+
+question VQ_OFFER_COAT
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see need:cold>=2
+  q.pat give a coat|offer a coat|lend a jacket|give them a sweater|choose a warm layer to give them|offer clothing they can keep|see if i can spare something warmer
+  t.1 Choose a warm layer to give them
+  t.2 Offer clothing they can keep
+  t.3 See if I can spare something warmer
+end
+
+question VQ_OFFER_DRINK
+  q.tab offer
+  q.kind offer
+  q.vis open
+  q.cost 0
+  q.pat give water|give a drink|offer something to drink|give them water|pour something hot|look for something to give them to drink|offer a drink from my supplies|see what i can spare to drink
+  t.1 Look for something to give them to drink
+  t.2 Offer a drink from my supplies
+  t.3 See what I can spare to drink
+end
+
+question VQ_OFFER_FOOD
+  q.tab offer
+  q.kind offer
+  q.vis open
+  q.cost 0
+  q.pat give food|offer something to eat|give them food|share some food
+  t.1 Offer something to eat
+  t.2 Give them food
+  t.3 Share some food
+end
+
+question VQ_OFFER_GLASSES
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat give glasses|offer reading glasses|see if my glasses help|lend a pair of glasses|look for glasses i can give them|see if i have a useful item to spare|choose an item they can keep
+  t.1 Look for glasses I can give them
+  t.2 See if I have a useful item to spare
+  t.3 Choose an item they can keep
+end
+
+question VQ_OFFER_MAP
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat give a map|offer a map|share what you know about the roads|show them the way|look for a map i can give them|choose a useful item from my supplies|see what i can spare to help with the road
+  t.1 Look for a map I can give them
+  t.2 Choose a useful item from my supplies
+  t.3 See what I can spare to help with the road
+end
+
+question VQ_OFFER_MEDS
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see need:sick>=1
+  q.pat give medicine|offer medicine|give them something for the pain|offer a first aid kit|see what medicine i can offer|choose some medicine to give them|offer medicine from my supplies
+  t.1 See what medicine I can offer
+  t.2 Choose some medicine to give them
+  t.3 Offer medicine from my supplies
+end
+
+question VQ_OFFER_SHOES
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat give shoes|offer a pair of shoes|offer dry socks|share some boots|look for footwear i can give them|choose something to wear from my supplies|see what clothing i can spare
+  t.1 Look for footwear I can give them
+  t.2 Choose something to wear from my supplies
+  t.3 See what clothing I can spare
+end
+
+question VQ_OFFER_SMOKES
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see vice:tobacco
+  q.pat give a cigarette|offer a cigarette|share a pack|give them a smoke
+  t.1 Offer a cigarette
+  t.2 Share a pack
+  t.3 Give them a smoke
+end
+
+question VQ_OFFER_SOAP
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see need:dirty>=2
+  q.pat give soap|offer soap and a towel|give them something to wash with|share the soap|discuss a chance to wash if it can be arranged|ask if washing up would help|offer to look for somewhere to wash
+  t.1 Discuss a chance to wash, if it can be arranged
+  t.2 Ask if washing up would help
+  t.3 Offer to look for somewhere to wash
+end
+
+question VQ_OFFER_TOOL
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat lend a tool|offer the use of a tool|let them borrow something|offer them a tool to keep|choose a tool to give them|see what useful item i can spare
+  t.1 Offer them a tool to keep
+  t.2 Choose a tool to give them
+  t.3 See what useful item I can spare
+end
+
+question VQ_OFFER_WORK
+  q.tab offer
+  q.kind offer
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat offer work|offer them a chore for supper|ask for help with something|suggest they earn their keep|ask what small job they might be willing to do|talk about helping out without a bargain|see if they'd like something useful to do
+  t.1 Ask what small job they might be willing to do
+  t.2 Talk about helping out, without a bargain
+  t.3 See if they'd like something useful to do
+end
+
+question VQ_PAST_BOSS
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see asked:PAST_WORK & trust>=15
+  q.pat your boss|what was your boss like|who did you work for|was it a good place to work
+  t.1 What was your boss like?
+  t.2 Who did you work for?
+  t.3 Was it a good place to work?
+end
+
+question VQ_PAST_CHILDHOOD
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat growing up|as a kid|what was it like growing up|where did you grow up|what were you like as a kid
+  t.1 What was it like growing up?
+  t.2 Where did you grow up?
+  t.3 What were you like as a kid?
+end
+
+question VQ_PAST_CHURCH
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat go to church|your church|did you go to church|which church|you a churchgoing person
+  t.1 Did you go to church?
+  t.2 Which church?
+  t.3 You a churchgoing person?
+end
+
+question VQ_PAST_DAUGHTER
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_FAMILY
+  q.needs family
+  q.pat your daughter|your girl|and your daughter|what about your girl|tell me about your daughter|did you have a daughter|would you tell me about a daughter if you had one|any daughters in your family
+  t.1 Did you have a daughter?
+  t.2 Would you tell me about a daughter, if you had one?
+  t.3 Any daughters in your family?
+end
+
+question VQ_PAST_DAYONE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=15
+  q.pat first day|day one|how did it start|where were you on the first day|what do you remember about day one|how did it start for you
+  t.1 Where were you on the first day?
+  t.2 What do you remember about day one?
+  t.3 How did it start for you?
+end
+
+question VQ_PAST_ENEMY
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=40
+  q.pat an enemy|fall out with|anybody you couldn't stand|ever have an enemy|who did you fall out with
+  t.1 Anybody you couldn't stand?
+  t.2 Ever have an enemy?
+  t.3 Who did you fall out with?
+end
+
+question VQ_PAST_FAMILY
+  q.tab past
+  q.kind ask
+  q.vis open
+  q.cost 1
+  q.pat have family|got family|anyone waiting|anybody waiting|you got family out there|anybody you're trying to get back to|who's waiting on you if anybody|is there anyone you're hoping to find
+  t.1 Is there anyone you're hoping to find?
+  t.2 Want to tell me about your family?
+  t.3 Anyone you want to get word to?
+end
+
+question VQ_PAST_FIRSTJOB
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see asked:PAST_WORK
+  q.pat first job|what was your first job|how'd you start out|first thing you ever got paid for
+  t.1 What was your first job?
+  t.2 How'd you start out?
+  t.3 First thing you ever got paid for?
+end
+
+question VQ_PAST_FIRSTSIGN
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat first sign|something was wrong|when did you know something was wrong|what was the first sign|how did you first find out
+  t.1 When did you know something was wrong?
+  t.2 What was the first sign?
+  t.3 How did you first find out?
+end
+
+question VQ_PAST_HARDEST
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat hardest thing|what's the hardest thing you've done|what was the hardest part|worst thing you've been through
+  t.1 What's the hardest thing you've done?
+  t.2 What was the hardest part?
+  t.3 Worst thing you've been through?
+end
+
+question VQ_PAST_HIDING
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 2
+  q.see trust>=45 & imin>=40
+  q.pat not telling me|holding back|is there something you're not telling me|you holding something back|is there more to it
+  t.1 Is there something you're not telling me?
+  t.2 You holding something back?
+  t.3 Is there more to it?
+end
+
+question VQ_PAST_HOBBY
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat on a saturday|how did you pass the time|what did you do on a saturday|what did you do after work
+  t.1 How did you pass the time?
+  t.2 What did you do on a Saturday?
+  t.3 What did you do after work?
+end
+
+question VQ_PAST_HOUSE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat your house|your place|what was your house like|what did your place look like|did you have a porch
+  t.1 What was your house like?
+  t.2 What did your place look like?
+  t.3 Did you have a porch?
+end
+
+question VQ_PAST_KEEPSAKE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see !(!carry:ring & !carry:watch & !carry:letter & !carry:toy) & trust>=25
+  q.pat holding on to|carry that|what's that you're holding on to|where did you get that|why do you carry that
+  t.1 What's that you're holding on to?
+  t.2 Where did you get that?
+  t.3 Why do you carry that?
+end
+
+question VQ_PAST_LASTNORMAL
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=18
+  q.pat last normal day|when was the last normal day|what was the last good day|remember the last ordinary day
+  t.1 When was the last normal day?
+  t.2 What was the last good day?
+  t.3 Remember the last ordinary day?
+end
+
+question VQ_PAST_LAYOFF
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_WORK & trust>=18
+  q.pat laid off|lose your job|did you lose your job|were you laid off|when did the work dry up
+  t.1 Did you lose your job?
+  t.2 Were you laid off?
+  t.3 When did the work dry up?
+end
+
+question VQ_PAST_LEFTBEHIND
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 2
+  q.see trust>=40
+  q.pat leave anyone behind|did you leave anyone behind|anybody you had to leave|who didn't come with you
+  t.1 Did you leave anyone behind?
+  t.2 Anybody you had to leave?
+  t.3 Who didn't come with you?
+end
+
+question VQ_PAST_LOST
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 2
+  q.see trust>=35
+  q.pat lose somebody|who have you lost|did you lose somebody|anybody you couldn't get to
+  t.1 Who have you lost?
+  t.2 Did you lose somebody?
+  t.3 Anybody you couldn't get to?
+end
+
+question VQ_PAST_LOVE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=20
+  q.pat married|special someone|girlfriend|boyfriend|wife|husband|anyone special|were you ever married
+  t.1 Anyone special?
+  t.2 Were you ever married?
+  t.3 Anybody in your life?
+end
+
+question VQ_PAST_MENTOR
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=25
+  q.pat looked up to|who taught you what you know|who looked after you|anyone you looked up to
+  t.1 Who taught you what you know?
+  t.2 Who looked after you?
+  t.3 Anyone you looked up to?
+end
+
+question VQ_PAST_MONEY
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=25
+  q.pat money tight|how were you set for money|was money tight|were you getting by
+  t.1 How were you set for money?
+  t.2 Was money tight?
+  t.3 Were you getting by?
+end
+
+question VQ_PAST_NIGHTS
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat the nights|what were the nights like before|tell me about the nights|what was the worst of the nights
+  t.1 What were the nights like, before?
+  t.2 Tell me about the nights
+  t.3 What was the worst of the nights?
+end
+
+question VQ_PAST_PARENTS
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_FAMILY
+  q.needs family
+  q.pat your folks|your mother|your father|your parents|what about your folks|your mother your father are they alive|where are your parents|want to tell me about your folks
+  t.1 Want to tell me about your folks?
+  t.2 Do you know what happened to your parents?
+  t.3 What were your parents like?
+end
+
+question VQ_PAST_PETS
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat dog|pet|animals|did you have a dog|any animals at home|ever have a pet
+  t.1 Did you have a dog?
+  t.2 Any animals at home?
+  t.3 Ever have a pet?
+end
+
+question VQ_PAST_PHOTO
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see carry:photo & trust>=20
+  q.needs family
+  q.pat the picture|the photo|who's in the picture|is that your family in the photograph|who is that in the photo
+  t.1 Who's in the picture?
+  t.2 Is that your family in the photograph?
+  t.3 Who is that in the photo?
+end
+
+question VQ_PAST_PLACE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat favorite place|what's your favorite place|where did you feel at home|where would you go to get away
+  t.1 What's your favorite place?
+  t.2 Where did you feel at home?
+  t.3 Where would you go to get away?
+end
+
+question VQ_PAST_PROUD
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=25
+  q.pat proud of|what are you proud of|best thing you ever did|what did you get right
+  t.1 What are you proud of?
+  t.2 Best thing you ever did?
+  t.3 What did you get right?
+end
+
+question VQ_PAST_REGRET
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=25
+  q.pat regret|do over|take back|anything you'd do over|any regrets|what would you take back
+  t.1 Anything you'd do over?
+  t.2 Any regrets?
+  t.3 What would you take back?
+end
+
+question VQ_PAST_RING
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat a ring|wedding ring|ever wear a ring|is there a story behind a ring|did you ever have a ring
+  t.1 Ever wear a ring?
+  t.2 Is there a story behind a ring?
+  t.3 Did you ever have a ring?
+end
+
+question VQ_PAST_SCHOOL
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat go to school|your school|where did you go to school|how far did you get in school|school a long time ago
+  t.1 Where did you go to school?
+  t.2 How far did you get in school?
+  t.3 School a long time ago?
+end
+
+question VQ_PAST_SIBLING
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_FAMILY
+  q.needs family
+  q.pat brother|sister|siblings|have you got brothers or sisters|any brothers or sisters|what about your sister your brother
+  t.1 Have you got brothers or sisters?
+  t.2 Any brothers or sisters?
+  t.3 What about your sister, your brother?
+end
+
+question VQ_PAST_SICKSEEN
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat seen them|up close|have you seen it up close|did you see someone turn|seen the sick ones
+  t.1 Have you seen it up close?
+  t.2 Did you see someone turn?
+  t.3 Seen the sick ones?
+end
+
+question VQ_PAST_SON
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_FAMILY
+  q.needs family
+  q.pat your son|your boy|and your son|what about your boy|tell me about your son|did you have a son|would you tell me about a son if you had one|any sons in your family
+  t.1 Did you have a son?
+  t.2 Would you tell me about a son, if you had one?
+  t.3 Any sons in your family?
+end
+
+question VQ_PAST_SPOUSE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see asked:PAST_LOVE
+  q.needs love
+  q.pat your wife|your husband|your spouse|what was your wife like or your husband|tell me about your spouse|what happened with them|who did you marry|what is your spouse like
+  t.1 Did you ever share a home with someone?
+  t.2 Would you rather not talk about marriage?
+  t.3 Anyone you shared a home with?
+end
+
+question VQ_PAST_TOWN
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat the town|where you lived|what was the town like|what was it like where you lived|everybody know everybody there
+  t.1 What was the town like?
+  t.2 What was it like where you lived?
+  t.3 Everybody know everybody there?
+end
+
+question VQ_PAST_TRAVEL
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat farthest|travel|been far from here|where's the farthest you've been|you ever travel
+  t.1 Been far from here?
+  t.2 Where's the farthest you've been?
+  t.3 You ever travel?
+end
+
+question VQ_PAST_TROUBLE
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 2
+  q.see trust>=35
+  q.pat in trouble|ever been in trouble|ever get in trouble with the law|you ever get in a jam
+  t.1 Ever been in trouble?
+  t.2 Ever get in trouble with the law?
+  t.3 You ever get in a jam?
+end
+
+question VQ_PAST_WAR
+  q.tab past
+  q.kind ask
+  q.vis hidden
+  q.cost 1
+  q.see trust>=10 & imin>=10
+  q.needs war
+  q.pat serve|service|army|military|did you ever serve|you serve|were you in the service
+  t.1 Did you ever serve?
+  t.2 You serve?
+  t.3 Were you in the service?
+end
+
+question VQ_PAST_WORK
+  q.tab past
+  q.kind ask
+  q.vis open
+  q.cost 0
+  q.pat what do you do|your job|line of work|what did you do for work|what was your line of work|what did you do before all this
+  t.1 What did you do for work?
+  t.2 What was your line of work?
+  t.3 What did you do before all this?
+end
+
+question VQ_PERSON_A_PROMISE
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see flag:arianne_intro & !flag:arianne_promise_done
+  q.pools false
+  q.pat do you know anything about a promise|a promise
+  t.1 Do you know anything about 'A promise'?
+end
+
+question VQ_PERSON_CITY_NIGHT
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see flag:vi_intro & !flag:vi_city_prompt & !flag:vi_city_done
+  q.pools false
+  q.pat did you ever see a city at night
+  t.1 Did you ever see a city at night?
+end
+
+question VQ_PERSON_CITY_YES
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see flag:vi_city_prompt & !flag:vi_city_done
+  q.pools false
+  q.pat yeah
+  t.1 Yeah
+end
+
+question VQ_PERSON_ROSE_NAME
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see flag:rose_intro & !flag:rose_name_told
+  q.pools false
+  q.pat who chose the name rose
+  t.1 Who chose the name Rose?
+end
+
+question VQ_REACT_COMPLIMENT
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat youre all right|good for you|you're all right|you're doing fine
+  t.1 You're all right
+  t.2 Good for you
+  t.3 You're doing fine
+end
+
+question VQ_REACT_GIFT
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat take this|here take this|this is for you|i want you to have this|would a gift help|is there something i might offer|anything useful i could look for
+  t.1 Would a gift help?
+  t.2 Is there something I might offer?
+  t.3 Anything useful I could look for?
+end
+
+question VQ_REACT_GOODBYE
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat goodbye|take care|take care of yourself|be careful out there
+  t.1 Take care of yourself
+  t.2 Goodbye
+  t.3 Be careful out there
+end
+
+question VQ_REACT_INSULT
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat useless|shut up|you're useless|get out of my sight
+  t.1 You're useless
+  t.2 Get out of my sight
+  t.3 Shut up
+end
+
+question VQ_REACT_SORRY
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat sorry|apologize|i'm sorry|sorry about that|forgive me
+  t.1 I'm sorry
+  t.2 Sorry about that
+  t.3 Forgive me
+end
+
+question VQ_REACT_THANKS
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat thanks|thank you|i'm grateful
+  t.1 Thanks
+  t.2 Thank you
+  t.3 I'm grateful
+end
+
+question VQ_REACT_THREAT
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat or else|dont test me|do as i say or else|i'll make you leave|don't test me
+  t.1 Do as I say or else
+  t.2 I'll make you leave
+  t.3 Don't test me
+end
+
+question VQ_REACT_UNKNOWN
+  q.tab talk
+  q.kind react
+  q.vis hidden
+  q.cost 0
+  q.see trust>=-100
+  q.pools true
+  q.pat sorry i didn't catch that|say again|come again
+  t.1 Sorry, I didn't catch that
+  t.2 Say again?
+  t.3 Come again?
+end
+
+question VQ_TALK_ADVICE
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=30
+  q.pat any advice|got any advice|what would you tell me|what do you know that i don't
+  t.1 Got any advice?
+  t.2 What would you tell me?
+  t.3 What do you know that I don't?
+end
+
+question VQ_TALK_AGE
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see imin>=10
+  q.pat how old|your age|how old are you|mind if i ask your age|how many years have you got|mind if i ask how old you are|would you rather keep your age to yourself
+  t.1 Mind if I ask how old you are?
+  t.2 How old are you?
+  t.3 Would you rather keep your age to yourself?
+end
+
+question VQ_TALK_COMFORT
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=30
+  q.pat what helps|what helps when it gets bad|anything that helps|what do you do when it gets bad
+  t.1 What helps when it gets bad?
+  t.2 Anything that helps?
+  t.3 What do you do when it gets bad?
+end
+
+question VQ_TALK_COMPLIMENT
+  q.tab talk
+  q.kind flirt
+  q.vis hidden
+  q.cost 0
+  q.see adult & opt:Flirt & trait:flirt>=1 & trust>=41 & imin>=30
+  q.adult true
+  q.pat nice way|good company|you've got a nice way about you|you're good company|i like talking to you
+  t.1 You've got a nice way about you
+  t.2 You're good company
+  t.3 I like talking to you
+end
+
+question VQ_TALK_DISLIKES
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat cant stand|gets under your skin|what can't you stand|what gets under your skin|what drives you up the wall
+  t.1 What can't you stand?
+  t.2 What gets under your skin?
+  t.3 What drives you up the wall?
+end
+
+question VQ_TALK_DREAMS
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see trust>=35
+  q.pat dream about|what do you dream about|dream much lately|ever dream about before
+  t.1 What do you dream about?
+  t.2 Dream much lately?
+  t.3 Ever dream about before?
+end
+
+question VQ_TALK_FEAR
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see trust>=10
+  q.pat scares you|afraid of|what scares you most|what keeps you up|what are you afraid of
+  t.1 What scares you most?
+  t.2 What keeps you up?
+  t.3 What are you afraid of?
+end
+
+question VQ_TALK_FIRSTNIGHT
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see trust>=20 & asked:PAST_DAYONE
+  q.pat first night|where were you the first night|how did you spend the first night|what do you remember about the first night
+  t.1 Where were you the first night?
+  t.2 How did you spend the first night?
+  t.3 What do you remember about the first night?
+end
+
+question VQ_TALK_FOOD
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see imin>=20
+  q.pat favorite food|good supper|what's your favorite thing to eat|what would you eat if you could|what does a good supper look like to you
+  t.1 What's your favorite thing to eat?
+  t.2 What would you eat if you could?
+  t.3 What does a good supper look like to you?
+end
+
+question VQ_TALK_FROM
+  q.tab talk
+  q.kind talk
+  q.vis open
+  q.cost 0
+  q.pat where from|where are you from|where is home|where's home|where did you come in from
+  t.1 Where are you from?
+  t.2 Where's home?
+  t.3 Where did you come in from?
+end
+
+question VQ_TALK_HABIT
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see imin>=25
+  q.pat habit|keep doing that|what's that you keep doing with your hands|why do you keep doing that|what's the habit|got any little habits you never got rid of|anything you catch yourself doing without thinking|any old habit that stuck with you
+  t.1 Got any little habits you never got rid of?
+  t.2 Anything you catch yourself doing without thinking?
+  t.3 Any old habit that stuck with you?
+end
+
+question VQ_TALK_HOMECOOK
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=18
+  q.pat who cooked|who did the cooking at your house|what did your kitchen smell like
+  t.1 Who did the cooking at your house?
+  t.2 Who cooked?
+  t.3 What did your kitchen smell like?
+end
+
+question VQ_TALK_HOPE
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=25
+  q.pat hoping for|what are you hoping for|what are you counting on|what do you hope happens
+  t.1 What are you hoping for?
+  t.2 What are you counting on?
+  t.3 What do you hope happens?
+end
+
+question VQ_TALK_HOWARE
+  q.tab talk
+  q.kind talk
+  q.vis open
+  q.cost 0
+  q.pat how are you|how you doing|you okay|you ok|how are you holding up|how are you doing|you holding together
+  t.1 How are you holding up?
+  t.2 How are you doing?
+  t.3 You holding together?
+end
+
+question VQ_TALK_JOKE
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=8
+  q.pat tell a joke|something funny|got a joke|know any jokes|tell me something funny
+  t.1 Got a joke?
+  t.2 Know any jokes?
+  t.3 Tell me something funny
+end
+
+question VQ_TALK_LAUGH
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=30
+  q.pat last laugh|when did you last laugh|remember laughing|what made you laugh last
+  t.1 When did you last laugh?
+  t.2 Remember laughing?
+  t.3 What made you laugh last?
+end
+
+question VQ_TALK_LIKES
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat for fun|what do you like|what do you like to do|what do you do for fun|what do you enjoy
+  t.1 What do you like to do?
+  t.2 What do you do for fun?
+  t.3 What do you enjoy?
+end
+
+question VQ_TALK_LUCK
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat believe in luck|you believe in luck|think we got lucky|is it luck or something else
+  t.1 You believe in luck?
+  t.2 Think we got lucky?
+  t.3 Is it luck or something else?
+end
+
+question VQ_TALK_MUSIC
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat favorite song|listen to|what do you listen to|got a favorite song|you a music person
+  t.1 What do you listen to?
+  t.2 Got a favorite song?
+  t.3 You a music person?
+end
+
+question VQ_TALK_NAME
+  q.tab talk
+  q.kind talk
+  q.vis open
+  q.cost 0
+  q.pat your name|who are you|what do i call you|what's your name
+  t.1 What's your name?
+  t.2 Who are you?
+  t.3 What do I call you?
+end
+
+question VQ_TALK_NEIGHBORS
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat next door|who lived next door to you|you know your neighbors|who'd you wave to in the morning
+  t.1 Who lived next door to you?
+  t.2 You know your neighbors?
+  t.3 Who'd you wave to in the morning?
+end
+
+question VQ_TALK_NERVOUS
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 1
+  q.see trait:anx>=2 & imin>=10
+  q.pat nervous|listening for something|you nervous|something bothering you|you look like you're listening for something|anything making you uneasy|something on your mind|would you rather talk about something else
+  t.1 Anything making you uneasy?
+  t.2 Something on your mind?
+  t.3 Would you rather talk about something else?
+end
+
+question VQ_TALK_NICKNAME
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see asked:TALK_NAME
+  q.pat nickname|what do people call you|got a nickname|what did your friends call you
+  t.1 What do people call you?
+  t.2 Got a nickname?
+  t.3 What did your friends call you?
+end
+
+question VQ_TALK_PRAYER
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat do you pray|do you pray these days|you pray|anybody listening do you think
+  t.1 Do you pray, these days?
+  t.2 You pray?
+  t.3 Anybody listening, do you think?
+end
+
+question VQ_TALK_QUIET
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see imin>=30
+  q.pat sit a minute|mind if we just sit a minute|want quiet|should i let you be|want a quiet minute|mind if i keep you company without talking|want company or some time to yourself
+  t.1 Want a quiet minute?
+  t.2 Mind if I keep you company without talking?
+  t.3 Want company, or some time to yourself?
+end
+
+question VQ_TALK_SLEEP
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see imin>=15
+  q.pat sleeping|get any sleep|sleeping okay|getting any sleep|you rest at all
+  t.1 Sleeping okay?
+  t.2 Getting any sleep?
+  t.3 You rest at all?
+end
+
+question VQ_TALK_SPORTS
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat basketball|who do you pull for|you follow ball|you a basketball person
+  t.1 You follow ball?
+  t.2 Who do you pull for?
+  t.3 You a basketball person?
+end
+
+question VQ_TALK_STORY
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=25
+  q.pat tell me a story|got a story|tell me about something that happened
+  t.1 Tell me a story
+  t.2 Got a story?
+  t.3 Tell me about something that happened
+end
+
+question VQ_TALK_TV
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat favorite show|watch on tv|what did you watch|got a favorite show|what was on at your house
+  t.1 What did you watch?
+  t.2 Got a favorite show?
+  t.3 What was on at your house?
+end
+
+question VQ_TALK_WEATHER
+  q.tab talk
+  q.kind talk
+  q.vis hidden
+  q.cost 0
+  q.see imin>=5
+  q.pat the weather|going to rain|think it'll rain|what do you make of this weather|hot enough for you|what do you make of the weather|think the weather will hold|any better at guessing the weather than i am
+  t.1 What do you make of the weather?
+  t.2 Think the weather will hold?
+  t.3 Any better at guessing the weather than I am?
+end
+
+question VQ_WORLD_ANIMALS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the animals|cattle|what happened to the animals|seen any cattle|are the dogs all right
+  t.1 What happened to the animals?
+  t.2 Seen any cattle?
+  t.3 Are the dogs all right?
+end
+
+question VQ_WORLD_ARMY
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trait:open>=2
+  q.pat the army|the guard|national guard|heard anything about the army|will the army come|what about the guard
+  t.1 Heard anything about the Army?
+  t.2 Will the Army come?
+  t.3 What about the Guard?
+end
+
+question VQ_WORLD_BITTEN
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 2
+  q.see trust>=35
+  q.pat bitten|a bite|what do you do about the bitten|anyone survive a bite|what happens when somebody's bitten
+  t.1 What do you do about the bitten?
+  t.2 Anyone survive a bite?
+  t.3 What happens when somebody's bitten?
+end
+
+question VQ_WORLD_CAUSE
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trait:open>=2
+  q.pat what caused|who is to blame|where did it come from|what do you think caused this|who's to blame
+  t.1 What do you think caused this?
+  t.2 Who's to blame?
+  t.3 Where did it come from?
+end
+
+question VQ_WORLD_CAUSE_CHALLENGE
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see asked:WORLD_CAUSE
+  q.pat are you sure|how do you know|are you sure about that|how do you know that|is that what you really think
+  t.1 Are you sure about that?
+  t.2 How do you know that?
+  t.3 Is that what you really think?
+end
+
+question VQ_WORLD_CHURCH
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the church|is the church still open|anybody at the churches|seen the preachers
+  t.1 Is the church still open?
+  t.2 Anybody at the churches?
+  t.3 Seen the preachers?
+end
+
+question VQ_WORLD_CITY
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat louisville|the city|what about louisville|have you heard from the city|is louisville any better
+  t.1 What about Louisville?
+  t.2 Have you heard from the city?
+  t.3 Is Louisville any better?
+end
+
+question VQ_WORLD_DEAD
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 1
+  q.see trust>=25
+  q.pat the dead|what are they|what do you make of the dead ones|do they feel anything
+  t.1 What do you make of the dead ones?
+  t.2 What are they?
+  t.3 Do they feel anything?
+end
+
+question VQ_WORLD_FAITH
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 1
+  q.see trust>=30
+  q.pat does it make sense|does any of it make sense to you|is god in this somewhere|why do you think it happened
+  t.1 Does any of it make sense to you?
+  t.2 Is God in this somewhere?
+  t.3 Why do you think it happened?
+end
+
+question VQ_WORLD_FIRE
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat fires|smoke|seen any fires|anything burning out there|smell smoke
+  t.1 Seen any fires?
+  t.2 Anything burning out there?
+  t.3 Smell smoke?
+end
+
+question VQ_WORLD_GUARD
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat soldiers|seen the guard|seen soldiers|anyone in uniform around
+  t.1 Seen soldiers?
+  t.2 Seen the Guard?
+  t.3 Anyone in uniform around?
+end
+
+question VQ_WORLD_HELI
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat helicopter|choppers|seen any helicopters|heard the choppers|anybody flying
+  t.1 Seen any helicopters?
+  t.2 Heard the choppers?
+  t.3 Anybody flying?
+end
+
+question VQ_WORLD_HOPE
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=25
+  q.pat does it end|do you think it ends|think we get through it|is there any reason to hope
+  t.1 Do you think it ends?
+  t.2 Think we get through it?
+  t.3 Is there any reason to hope?
+end
+
+question VQ_WORLD_HOSPITAL
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 1
+  q.see trust>=15
+  q.pat the hospital|is the hospital still open|anyone at the hospital|where do the doctors go
+  t.1 Is the hospital still open?
+  t.2 Anyone at the hospital?
+  t.3 Where do the doctors go?
+end
+
+question VQ_WORLD_KIDS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 1
+  q.see trust>=25
+  q.pat the children|kids|what about the children|seen any kids|where do the children go
+  t.1 What about the children?
+  t.2 Seen any kids?
+  t.3 Where do the children go?
+end
+
+question VQ_WORLD_LAW
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the sheriff|any law|seen the sheriff|is anyone still enforcing anything|any law left
+  t.1 Seen the sheriff?
+  t.2 Is anyone still enforcing anything?
+  t.3 Any law left?
+end
+
+question VQ_WORLD_LOOTERS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 1
+  q.see trust>=20
+  q.pat looters|seen any looters|anybody taking what isn't theirs|are people turning on each other
+  t.1 Seen any looters?
+  t.2 Anybody taking what isn't theirs?
+  t.3 Are people turning on each other?
+end
+
+question VQ_WORLD_MEDICINE
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat medicine|pharmacy|where do you find medicine|is there any medicine left|know a pharmacy that's still stocked
+  t.1 Where do you find medicine?
+  t.2 Is there any medicine left?
+  t.3 Know a pharmacy that's still stocked?
+end
+
+question VQ_WORLD_MERCY
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 2
+  q.see trust>=40
+  q.pat show mercy|would you show mercy to the bitten|could you do it if you had to|what would you do for someone bitten
+  t.1 Would you show mercy to the bitten?
+  t.2 Could you do it, if you had to?
+  t.3 What would you do for someone bitten?
+end
+
+question VQ_WORLD_MONEY
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat is money worth|trade|is money worth anything now|what's a dollar good for|what do people trade
+  t.1 Is money worth anything now?
+  t.2 What's a dollar good for?
+  t.3 What do people trade?
+end
+
+question VQ_WORLD_NEIGHBOURS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=15
+  q.pat any neighbors|who's still around here|seen any neighbors|anyone else holed up near here
+  t.1 Who's still around here?
+  t.2 Seen any neighbors?
+  t.3 Anyone else holed up near here?
+end
+
+question VQ_WORLD_NEWS
+  q.tab world
+  q.kind world
+  q.vis open
+  q.cost 0
+  q.pat any news|what have you heard|what's going on out there
+  t.1 What have you heard?
+  t.2 Any news?
+  t.3 What's going on out there?
+end
+
+question VQ_WORLD_NIGHTS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see night & trust>=10
+  q.pat after dark|at night|are the nights worse|is it worse after dark|what happens at night
+  t.1 Are the nights worse?
+  t.2 Is it worse after dark?
+  t.3 What happens at night?
+end
+
+question VQ_WORLD_PHONES
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the phones|are the phones working anywhere|got a phone line out|did you try calling anyone
+  t.1 Are the phones working anywhere?
+  t.2 Got a phone line out?
+  t.3 Did you try calling anyone?
+end
+
+question VQ_WORLD_PLANS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=20
+  q.pat what should we do|what would you do if you were me|what should we do next
+  t.1 What would you do if you were me?
+  t.2 What should we do?
+  t.3 What should we do next?
+end
+
+question VQ_WORLD_POWER
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the power|how long will the power last|is the power on where you came from|will the lights stay on
+  t.1 How long will the power last?
+  t.2 Is the power on where you came from?
+  t.3 Will the lights stay on?
+end
+
+question VQ_WORLD_RADIO
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat on the radio|hear anything on the radio|anything on the airwaves|have you heard a broadcast
+  t.1 Hear anything on the radio?
+  t.2 Anything on the airwaves?
+  t.3 Have you heard a broadcast?
+end
+
+question VQ_WORLD_ROAD
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat the roads|are the roads open|which roads are bad|can a person get through
+  t.1 Are the roads open?
+  t.2 Which roads are bad?
+  t.3 Can a person get through?
+end
+
+question VQ_WORLD_SUPPLIES
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat finding food|supplies|where are people finding food|is there any food left|what's left in the stores
+  t.1 Where are people finding food?
+  t.2 Is there any food left?
+  t.3 What's left in the stores?
+end
+
+question VQ_WORLD_TOWN
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=10
+  q.pat in town|what's it like in town|what did you see in town|is anyone left in town
+  t.1 What's it like in town?
+  t.2 What did you see in town?
+  t.3 Is anyone left in town?
+end
+
+question VQ_WORLD_TRUCKS
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat on the highway|trucks|seen any trucks|anyone moving on the highway|anything on i 65
+  t.1 Seen any trucks?
+  t.2 Anyone moving on the highway?
+  t.3 Anything on I-65?
+end
+
+question VQ_WORLD_WATER
+  q.tab world
+  q.kind world
+  q.vis hidden
+  q.cost 0
+  q.see trust>=12
+  q.pat the water|is the water running|is the water safe|where do you get water
+  t.1 Is the water running?
+  t.2 Is the water safe?
+  t.3 Where do you get water?
+end

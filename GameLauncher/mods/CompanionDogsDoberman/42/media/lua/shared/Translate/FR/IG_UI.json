@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_doberman": "Doberman",
+    "IGUI_AnimalType_dobmale": "Doberman (mâle)",
+    "IGUI_AnimalType_dobfemale": "Doberman (femelle)",
+    "IGUI_AnimalType_dobpup": "Doberman (chiot)",
+    "IGUI_PD_Breed_doberman": "Doberman",
+    "IGUI_PD_BreedDesc_doberman": "Un chien de garde élancé et vigilant, le plus vif d'esprit de toutes les races: il progresse en Obéissance encore plus vite que le Berger Allemand. Au combat, il est tout en tranchant et sans armure: faible tant qu'il n'est pas dressé, mais au niveau de Combat maximum il mord plus fort que n'importe quel autre chien de la meute, même s'il encaisse moins bien qu'un Rottweiler. Son vrai don, c'est le sang-froid: avec votre Doberman à vos côtés, vos nerfs se calment, votre arme à feu se stabilise plus vite après chaque tir et vous rechargez plus rapidement (Visée assurée). On le trouve à garder les postes de police et les checkpoints militaires.",
+    "IGUI_PD_Moodle_SteadyAim": "Visée assurée",
+    "IGUI_PD_Moodle_SteadyAim_desc": "Votre Doberman veille sur vous. Tant qu'il reste près de vous, nourri et loyal, votre stress s'apaise, votre visée se stabilise plus vite après chaque tir et vous rechargez plus rapidement."
+}

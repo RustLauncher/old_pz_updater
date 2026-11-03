@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "羅威納犬",
+    "IGUI_AnimalType_rottmale": "羅威納犬（雄性）",
+    "IGUI_AnimalType_rottfemale": "羅威納犬（雌性）",
+    "IGUI_AnimalType_rottpup": "羅威納犬（幼犬）",
+    "IGUI_PD_Breed_rottweiler": "羅威納犬",
+    "IGUI_PD_BreedDesc_rottweiler": "為護衛工作培育的強壯看門犬，是與德國牧羊犬比肩的真正戰士：戰鬥技能學習速度翻倍，高等級時下口兇狠，能撲倒殭屍，在大多數犬種驚慌失措時仍繼續戰鬥。與牠並肩作戰也會讓你更強：當你的羅威納犬在附近交戰時，你的近戰攻擊消耗更少耐力（前線）。常見於倉庫、工廠和廢車場，民宅中也有極小機率出現。",
+    "IGUI_PD_Moodle_FrontLine": "前線",
+    "IGUI_PD_Moodle_FrontLine_desc": "你的羅威納犬正在你身旁作戰。只要牠在附近交戰、吃飽且忠誠，你的近戰攻擊就消耗更少耐力。"
+}

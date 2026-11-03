@@ -1,0 +1,15 @@
+{
+    "UI_LPBCS_OptionsTitle": "LpB Écriteaux de conteneurs",
+
+    "UI_LPBCS_Opt_Enabled": "Afficher les écriteaux sur les conteneurs",
+    "UI_LPBCS_Opt_Enabled_tooltip": "Dessine dans le monde le nom écrit sur une caisse ou une armoire. Désactiver ne masque les écriteaux que pour vous, les noms eux-mêmes ne bougent pas.",
+
+    "UI_LPBCS_Opt_Radius": "Rayon d'affichage (cases)",
+    "UI_LPBCS_Opt_Radius_tooltip": "Jusqu'où un écriteau reste lisible. Les écriteaux s'effacent en fondu sur les deux dernières cases au lieu de disparaître d'un coup. À baisser dans une base dense.",
+
+    "UI_LPBCS_Opt_Opacity": "Opacité des écriteaux (en pourcentage)",
+    "UI_LPBCS_Opt_Opacity_tooltip": "À quel point les écriteaux sont dessinés opaques.",
+
+    "UI_LPBCS_Opt_HideWhenLoot": "Masquer quand la fenêtre de butin est ouverte",
+    "UI_LPBCS_Opt_HideWhenLoot_tooltip": "Retire les écriteaux de l'écran pendant que vous fouillez vraiment un conteneur, au moment où ils ne servent plus."
+}

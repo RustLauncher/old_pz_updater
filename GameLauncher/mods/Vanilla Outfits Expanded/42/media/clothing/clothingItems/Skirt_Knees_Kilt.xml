@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>a4e6fb41-73af-4b42-b313-99f42d6a298d</m_GUID>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_AltMaleModel></m_AltMaleModel>
+	<m_AltFemaleModel></m_AltFemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\dress_textures\kilt_blue</m_BaseTextures>
+	<m_BaseTextures>clothes\dress_textures\kilt_green</m_BaseTextures>
+	<m_BaseTextures>clothes\dress_textures\kilt_red</m_BaseTextures>
+</clothingItem>

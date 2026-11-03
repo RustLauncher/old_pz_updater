@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/Keytar</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/Keytar</m_FemaleModel>
+  <m_GUID>182efafd-3dcd-eb87-c3ed-2a6b4d06b258</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/2handed/Keytar</textureChoices>
+</clothingItem>

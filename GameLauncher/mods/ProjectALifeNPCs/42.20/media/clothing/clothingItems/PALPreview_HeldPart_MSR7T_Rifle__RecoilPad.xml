@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Held/Part_MSR7T_Rifle__RecoilPad</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Held/Part_MSR7T_Rifle__RecoilPad</m_FemaleModel>
+  <m_GUID>2fdb0cc8-5391-5ac1-5e12-cf1b5238a2d5</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Rifle_RecoilPad</textureChoices>
+</clothingItem>

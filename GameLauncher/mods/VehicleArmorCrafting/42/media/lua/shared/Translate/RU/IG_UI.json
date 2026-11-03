@@ -1,0 +1,15 @@
+{
+    "IGUI_WAT_Status": "Защита",
+    "IGUI_WAT_Installed": "Защита установлена",
+    "IGUI_WAT_Removed": "Защита снята",
+    "IGUI_WAT_Broken": "Защита разрушена",
+    "IGUI_WAT_SmashBlocked": "Стекло закрыто защитой",
+    "IGUI_WAT_NoVehicle": "Рядом нет машины",
+    "IGUI_WAT_TooFar": "Подойдите ближе к машине",
+    "IGUI_WAT_NoKit": "Нет набора защиты стёкол",
+    "IGUI_WAT_NoGlass": "Сначала установите стекло",
+    "IGUI_WAT_NoPlate": "Нет бронелиста",
+    "IGUI_WAT_NoBodyPart": "Сначала установите эту деталь",
+    "IGUI_WAT_RepairFirst": "Сначала отремонтируйте",
+    "IGUI_WAT_Busy": "Кто-то уже работает с этой деталью"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/1handed/ButterKnife</m_MaleModel>
+  <m_FemaleModel>weapons/1handed/ButterKnife</m_FemaleModel>
+  <m_GUID>a29283d8-d013-9a1a-eece-2d971ada9a2b</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/1handed/Cutlery_Gold</textureChoices>
+</clothingItem>

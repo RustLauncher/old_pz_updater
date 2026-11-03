@@ -1,0 +1,11 @@
+{
+    "Sandbox_BarricadeTheDoor": "Barricade the Door",
+
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier": "Door Health",
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier_tooltip": "How much extra health a door gains while barricaded with a chair. None leaves door health unchanged.",
+
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier_Values_option1": "Door Health = None",
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier_Values_option2": "Door Health = x3",
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier_Values_option3": "Door Health = x5",
+    "Sandbox_BarricadeTheDoor_DoorHealthMultiplier_Values_option4": "Door Health = x10"
+}

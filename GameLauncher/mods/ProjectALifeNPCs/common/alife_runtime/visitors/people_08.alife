@@ -1,0 +1,343 @@
+@alife-records 1
+
+person vp_1256
+  card.batch B13
+  card.arch va_teacher
+  card.party vg_224
+  card.sex f
+  card.age 28
+  card.desc a woman with chestnut hair tied back and a scrubbed work shirt
+  card.voice V03
+  card.seed 92289221
+  card.attract m
+  card.bond friends
+  card.fear the_phone_ringing
+  card.hobby old_cars
+  card.v 1
+  name.first April
+  name.last Hale
+  name.reveal intro
+  origin.town Elizabethtown
+  origin.from the school kitchen side of Elizabethtown
+  origin.work school cook who taught new kitchen workers and repaired old cars after shifts
+  origin.workKind school_cook
+  look.skin 2
+  look.hair ponytail
+  look.hairColor 0.35,0.2,0.12
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 5
+  traits.humor 0
+  traits.temper 5
+  traits.honest 3
+  traits.faith 0
+  traits.trustSpeed 5
+  traits.curious 5
+  traits.pride 4
+  traits.flirt 1
+  traits.social 3
+  traits.tidy 5
+  traits.nostalg 2
+  need0.hunger 3
+  need0.thirst 1
+  need0.cold 1
+  need0.fear 3
+  need0.fatigue 2
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_head_north
+  beliefs.1.s 3
+  beliefs.2.id bl_land_will_carry_us
+  beliefs.2.s 3
+  wants.1.id wn_gas
+  wants.1.u 5
+  skills.cooking 4
+  skills.mechanics 3
+  carry.1 Base.KeyRing
+  carry.2 Base.Notebook
+  carry.3 Base.Pen
+  dress.role worker_f
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 14
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.shelf westerns_after_kitchen
+  hooks.object f_dean
+  books.taste.1 western
+  books.taste.2 cooking
+  facts.1.id f_dean
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Drove away after striking adult cyclist Morris Dean
+  facts.1.gate trust>=12
+  facts.2.id f_photos
+  facts.2.kind loss
+  facts.2.tab past
+  facts.2.label Concealed infant photographs and fears replacement
+  facts.2.gate trust>=28 & alone & partnerGone & flag:dean_told
+  facts.3.id f_church
+  facts.3.kind faith
+  facts.3.tab past
+  facts.3.label Stopped praying after a conversion she still mentions
+  facts.3.gate trust>=43 & alone & partnerGone & flag:photos_told
+  facts.4.id f_route
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Offered Laurel's work for fuel without her consent
+  facts.4.gate trust>=58 & alone & partnerGone & flag:church_told
+  facts.5.id f_booklet
+  facts.5.kind hobby
+  facts.5.tab past
+  facts.5.label Authored the car booklet credited to her brother
+  facts.5.gate trust>=75 & alone & partnerGone & flag:route_told
+  mk.1 one job first
+  mk.2 porch chain
+  mk.3 Rena's flour tin
+  rt.1 6-8|kitchen|Asks permission to wash, then cleans her hands before handling anything
+  rt.2 12-14|porch|Looks toward the road while holding the loose porch chain link
+  rt.3 19-21|table|Reads a western or revises a page of the car booklet quietly
+  bl.1 porch swing chain link||From Rena's broken swing, held in her pocket when a telephone sound frightens her.
+  bl.2 car keys|Base.KeyRing|The car needs fuel; its keys are not proof that a road is usable.
+  bl.3 thin work notebook|Base.Notebook|Kitchen quantities at the front and uncredited car booklet revisions at the back.
+  bl.4 blue pen|Base.Pen|A kitchen pen with its cap held on by a strip of old tape.
+  bl.5 folded car booklet||Plain explanations written by April beneath Roy's name.
+  bl.6 square cleaning cloth||Washed so often its checks have nearly disappeared; she does not offer it as a clean medical dressing.
+  rl.1 Laurel McKinney|adult friend|County clerk met through school paperwork; April promised not to volunteer her for more jobs.
+  rl.2 Rena Hale|mother|Former school cook, last known taking Owen to relatives north of town.
+  rl.3 Owen Hale|adopted son, background family|Born 1981, adopted 1989; not a visitor, last known in Rena's care.
+  rl.4 Roy Hale|adult brother|Old-car enthusiast whose name appears on April's car booklet.
+end
+
+person vp_1257
+  card.batch B13
+  card.arch va_librarian
+  card.party vg_224
+  card.sex f
+  card.age 37
+  card.desc a composed woman with long dark hair and a neatly buttoned work shirt
+  card.voice V14
+  card.seed 1878085098
+  card.bond friends
+  card.fear heights
+  card.hobby fishing
+  card.v 1
+  name.first Laurel
+  name.last McKinney
+  name.reveal intro
+  origin.town Elizabethtown
+  origin.from a rented duplex in Elizabethtown
+  origin.work county clerk and volunteer library helper who explained forms and repaired donated books
+  origin.workKind county_clerk
+  look.skin 2
+  look.hair long
+  look.hairColor 0.25,0.16,0.1
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 3
+  traits.humor 4
+  traits.temper 0
+  traits.honest 5
+  traits.faith 2
+  traits.trustSpeed 2
+  traits.curious 3
+  traits.pride 0
+  traits.flirt 0
+  traits.social 2
+  traits.tidy 4
+  traits.nostalg 1
+  need0.hunger 3
+  need0.thirst 2
+  need0.cold 1
+  need0.fear 3
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_this_is_temporary
+  beliefs.1.s 3
+  beliefs.2.id bl_karma
+  beliefs.2.s 3
+  wants.1.id wn_safe_place
+  wants.1.u 5
+  skills.tailoring 3
+  skills.fishing 3
+  carry.1 Base.Notebook
+  carry.2 Base.Pencil
+  carry.3 Base.KeyRing
+  dress.role worker_f
+  dress.flags.1 work_shirt
+  arc.stayMax 22
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.shelf book_cover_mender
+  hooks.object f_departure
+  books.taste.1 western
+  books.taste.2 mystery
+  facts.1.id f_departure
+  facts.1.kind home
+  facts.1.tab past
+  facts.1.label Left the duplex before the outbreak warnings
+  facts.1.gate trust>=12
+  facts.2.id f_bills
+  facts.2.kind money
+  facts.2.tab past
+  facts.2.label Borrowed from Pearl after paying Russell's bills
+  facts.2.gate trust>=27 & alone & partnerGone & flag:departure_told
+  facts.3.id f_bus
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Failed to board the bus and called April
+  facts.3.gate trust>=42 & alone & partnerGone & flag:bills_told
+  facts.4.id f_cover
+  facts.4.kind book
+  facts.4.tab past
+  facts.4.label Anonymous cloth book cover went to adult reader Evan
+  facts.4.gate trust>=57 & alone & partnerGone & flag:bus_told
+  facts.5.id f_drawings
+  facts.5.kind hobby
+  facts.5.tab now
+  facts.5.label Offers her own detailed fishing stream drawings
+  facts.5.gate trust>=72 & alone & partnerGone & flag:cover_told
+  mk.1 the low bank
+  mk.2 no stamp required
+  mk.3 Pearl's crooked square
+  rt.1 6-8|window|Checks the ground-level view before considering any outdoor walk
+  rt.2 12-14|table|Repairs her cloth book cover and straightens the notebook pages
+  rt.3 19-21|livingroom|Reads quietly and puts the empty wallet beside her bag
+  bl.1 empty wallet||No cash remains; carrying it keeps her from patting every pocket as though money might turn up.
+  bl.2 cloth book cover||Made from discarded Walgreens cloth; a companion to the one anonymously sent to Evan.
+  bl.3 notebook|Base.Notebook|Contains private stream drawings and the dates she paid household bills.
+  bl.4 soft pencil|Base.Pencil|Used gently so a change of mind does not tear the page.
+  bl.5 duplex key|Base.KeyRing|Kept after she left in May; not a promise to move back.
+  bl.6 crooked quilt square||Pearl's deliberately unfinished practice square, which gave the circle permission to make mistakes.
+  rl.1 April Hale|adult friend|Met through school forms; collected Laurel from the bus station before the emergency.
+  rl.2 Russell McKinney|absent husband|Left a note in 1992 and did not return; present whereabouts unconfirmed.
+  rl.3 Pearl Adkins|quilting friend|Led the circle and lent Laurel money after the household bills consumed her savings.
+  rl.4 Vernon Pike|father, died 1989|Taught her to fish from low banks and let her draw rather than answer hurried questions.
+end
+
+person vp_1258
+  card.batch B13
+  card.arch va_trucker
+  card.sex m
+  card.age 33
+  card.desc a broad-faced man with short dark hair and a carefully pressed shirt
+  card.voice V13
+  card.seed 739769123
+  card.attract f
+  card.bond none
+  card.fear basements
+  card.hobby horse_racing
+  card.v 1
+  name.first Clint
+  name.last Ritchie
+  name.reveal intro
+  origin.town Brandenburg
+  origin.from a trailer outside Brandenburg
+  origin.work drove charter buses and kept coon dogs before selling the remaining dogs in 1989
+  origin.workKind bus_driver
+  look.skin 2
+  look.hair short
+  look.hairColor 0.22,0.15,0.09
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 0
+  traits.humor 2
+  traits.temper 2
+  traits.honest 2
+  traits.faith 1
+  traits.trustSpeed 2
+  traits.curious 2
+  traits.pride 0
+  traits.flirt 5
+  traits.social 2
+  traits.tidy 0
+  traits.nostalg 0
+  need0.hunger 1
+  need0.thirst 3
+  need0.cold 1
+  need0.fear 2
+  need0.fatigue 2
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_tell_the_truth
+  beliefs.1.s 3
+  beliefs.2.id bl_prayer_helps
+  beliefs.2.s 3
+  wants.1.id wn_photo_kept_safe
+  wants.1.u 5
+  carry.1 Base.Photo
+  carry.2 Base.KeyRing
+  dress.role service_m
+  dress.flags.1 work_shirt
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath asks_for_water_away_from_photo
+  hooks.bed asks_for_a_dry_flat_spot
+  hooks.radio asks_about_brandenburg
+  books.taste.1 sports
+  books.taste.2 western
+  facts.1.id f_kin
+  facts.1.kind family
+  facts.1.tab past
+  facts.1.label Mother Adele, sister Nell and Nell's son Evan
+  facts.1.gate gmin>=0
+  facts.2.id f_grady
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label Owes all six hundred borrowed from Grady
+  facts.2.gate trust>=10
+  facts.3.id f_nell
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Nell asked him to stop calling and no longer replies
+  facts.3.gate trust>=25 & flag:grady_told
+  facts.4.id f_pearl
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Allowed Evan to be blamed for Clint's open gate
+  facts.4.gate trust>=40 & alone & flag:nell_told
+  facts.5.id f_fifty
+  facts.5.kind secret
+  facts.5.tab now
+  facts.5.label Keeps fifty dollars in the polish tin instead of repaying Grady
+  facts.5.gate trust>=55 & alone & flag:pearl_told
+  facts.6.id f_christmas
+  facts.6.kind secret
+  facts.6.tab past
+  facts.6.label Lost the Christmas trip money on a horse and left Adele alone
+  facts.6.gate trust>=70 & alone & flag:fifty_told
+  mk.1 flat side up
+  mk.2 Pearl's old lead
+  mk.3 Grady's porch
+  rt.1 7-9|hall|Checks the photograph is flat and asks about the weather before stepping outside
+  rt.2 13-15|livingroom|Rests with the polish tin beside his own things and avoids damp surfaces
+  rt.3 20-22|kitchen|Asks for water and then about any news from Brandenburg
+  bl.1 Nell and Evan photograph|Base.Photo|Ruth Cole took it outside the trailers in 1990
+  bl.2 trailer key ring|Base.KeyRing|Grady helped him retrieve it from beneath the trailer once
+  bl.3 shoe-polish tin||Kept from Adele's insistence on polished Sunday shoes; hides fifty dollars
+  bl.4 hound lead||Pearl's lead, too worn to be worth selling with the other dogs
+  bl.5 bus shirt||One cuff stayed shiny where he rested it near the window
+  bl.6 folded race page||The horse names are no longer something he wants to explain
+  rl.1 Adele Ritchie|mother|Waited for the Christmas 1991 ride that never came
+  rl.2 Nell Ritchie|sister, born 1963|Asked him to stop calling in 1992
+  rl.3 Evan Ritchie|nephew, born 1981|Was blamed for Pearl escaping when Clint had left the gate unlatched
+  rl.4 Grady York|trailer-park neighbor|Lent six hundred dollars and has received none back
+  rl.5 Ruth Cole|trailer-park neighbor|Took the 1990 photograph of Nell and Evan
+end

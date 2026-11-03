@@ -1,0 +1,10 @@
+{
+    "ContextMenu_WAT_Menu": "Glass Armor",
+    "ContextMenu_WAT_Install": "Install",
+    "ContextMenu_WAT_Remove": "Remove",
+    "ContextMenu_WAT_InstallAll": "Install on all windows",
+    "ContextMenu_WAT_RemoveAll": "Remove all armor",
+    "ContextMenu_WAT_BodyMenu": "Body Armor",
+    "ContextMenu_WAT_BodyInstallAll": "Install on hood and trunk",
+    "ContextMenu_WAT_BodyRemoveAll": "Remove body armor"
+}

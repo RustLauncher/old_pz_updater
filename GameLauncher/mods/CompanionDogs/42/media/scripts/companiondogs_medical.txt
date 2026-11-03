@@ -1,0 +1,68 @@
+module Base
+{
+    item CompanionDogsAntibiotic
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsAntibiotic,
+        Medical = true,
+        UseDelta = 0.0833333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsDewormer
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsDewormer,
+        Medical = true,
+        UseDelta = 0.125,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsVaccine
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsVaccine,
+        Medical = true,
+        UseDelta = 0.1666666667,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsAntihistamine
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsAntihistamine,
+        Medical = true,
+        UseDelta = 0.0416666667,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsFleaTickMedicine
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsFleaTickMedicine,
+        Medical = true,
+        UseDelta = 0.0833333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsHeartwormMedicine
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsHeartwormMedicine,
+        Medical = true,
+        UseDelta = 0.1666666667,
+        Tags = base:medical,
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "Ящик для патронов",
+    "IGUI_TunaWR_Piece_armory": "Арсенальный шкаф",
+    "IGUI_TunaWR_Piece_cabinet": "Оружейный шкаф",
+    "IGUI_TunaWR_Piece_fieldrack": "Арсенальная оружейная стойка",
+    "IGUI_TunaWR_Piece_handguncase": "Витрина для пистолетов",
+    "IGUI_TunaWR_Piece_pegboard": "Настенная стойка для винтовок",
+    "IGUI_TunaWR_Store_HANDGUN": "ПКМ, чтобы убрать экипированный или присоединённый пистолет.",
+    "IGUI_TunaWR_Store_LONG_GUN": "ПКМ, чтобы убрать экипированное или присоединённое длинноствольное оружие."
+}

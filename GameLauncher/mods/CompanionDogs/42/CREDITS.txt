@@ -1,0 +1,73 @@
+CompanionDogs: Asset Credits & Licenses
+========================================
+
+Sounds
+------
+Dog voices (bark / growl / whine / idle / death): media/sound/CDDog*.ogg
+Source: BigSoundBank.com (Joseph Sardin), CC0 (public domain).
+Attribution optional; credited with thanks.
+The growl (CDDogGrowl) is made from "Growling cat" (ID 1886 / 1887),
+pitch-shifted down with high/low-pass EQ into a deep dog growl.
+Clips cut/converted to mono 44.1 kHz with ffmpeg.
+
+Eating / drinking foley: media/sound/CDDogEat1.ogg, CDDogDrink1.ogg
+Source: Freesound.org, CC0 (public domain).
+Eating: "a dog eats his kibble" by aisselles (#725619).
+Drinking: "Dog drinking water" by artemditkovsky (#860331).
+Cut/converted to mono 44.1 kHz with ffmpeg. Credited with thanks.
+
+Bite foley reuses the vanilla "ZombieBite" sound.
+
+Models
+------
+German Shepherd body mesh: our own 3D model.
+Re-skinned to a custom Biped skeleton and adapted for the game.
+
+Skeleton + skinning: original work.
+Rig and export pipeline: our own tooling, not shipped with the mod.
+
+Performance reports & diagnostics
+--------------------------------
+Third-party add-ons whose measurements and code reading fed fixes shipped here.
+No code or assets from them are included; the credit is for the diagnosis.
+
+Lucy - "Lucy's Mod Fixes" (Workshop 3780752367).
+Profiled the stray spawner's LoadChunk handler on a 255-mod dedicated server
+(27.5 ms mean, 273.89 ms peak in a single call against a 100 ms tick budget),
+identified the memoisation leaks, and proposed the per-tick work cap.
+Also authored the read-only probe behind the duplicate-dog investigation.
+
+genolark - "Companion Dogs - Performance Patch" (Workshop 3781402232).
+Building classification caching, including reuse across map chunks.
+
+shmoodle - "DOTD CompanionDogs Nerf" (Workshop 3777182198).
+Read the two reachability flood-fills line by line and identified their real
+costs: a temporary object allocated per neighbour examined, and a cache keyed
+on the dog's own tile, which made a walking dog rebuild the flood every step.
+The retuned values that mod ships were not adopted; the diagnosis was.
+
+Health panel and medicines
+--------------------------
+Dog health panel (media/ui/CDHealth/*.png: the body silhouette and one layer per body part)
+and the in-game health debug window: design and art by freylith, contributed to Companion Dogs.
+The six medicine item icons (media/textures/Item_CompanionDogs*.png) and the design of the
+canine flu, heartworm, skin allergy and flea and tick illnesses are hers as well.
+The herbal remedies, their recipes and their 35 item icons (herbs, tinctures, remedies, baths
+and the Home Vet magazine) come from her mod Man's Best Friend (Steam Workshop 3751069565).
+Used with thanks.
+
+Translations
+------------
+Chinese (Simplified / Traditional): duwenju1203.
+Italian: d4rk83 and Daniel.
+Japanese: 一匹狼 (https://steamcommunity.com/profiles/76561198253359995/).
+Spanish: 一匹狼 (https://steamcommunity.com/profiles/76561198253359995/).
+Thai: momineko (https://steamcommunity.com/id/momineko/).
+Russian: Jackson WalWhite (https://steamcommunity.com/profiles/76561199176671433/)
+         and MechJeb2 (https://steamcommunity.com/profiles/76561199611785440/).
+Ukrainian: MechJeb2 (https://steamcommunity.com/profiles/76561199611785440/).
+Korean: Hagaren (https://steamcommunity.com/profiles/76561199122771464/).
+Vietnamese: huuhoa43 (https://steamcommunity.com/id/huuhoa43/).
+German: Katinka1988 (https://steamcommunity.com/id/Katinka1988/).
+French: lordtmk (https://steamcommunity.com/id/ttmmkk/).
+Thanks to all for the community translations.

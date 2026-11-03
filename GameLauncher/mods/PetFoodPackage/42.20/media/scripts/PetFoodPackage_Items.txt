@@ -1,0 +1,99 @@
+module PetFoodPackage
+{
+    item DryDogFood_Box
+    {
+        ItemType = base:food,
+        DisplayCategory = Food,
+        Weight = 8.0,
+        Icon = PFP_DryDogFood_Box,
+        WorldStaticModel = PFP_DryDogFood_Box,
+        CantEat = true,
+        HungerChange = 0,
+        DaysFresh = 365,
+        DaysTotallyRotten = 547,
+    }
+
+    item DryCatFood_Box
+    {
+        ItemType = base:food,
+        DisplayCategory = Food,
+        Weight = 8.0,
+        Icon = PFP_DryCatFood_Box,
+        WorldStaticModel = PFP_DryCatFood_Box,
+        CantEat = true,
+        HungerChange = 0,
+        DaysFresh = 365,
+        DaysTotallyRotten = 547,
+    }
+}
+
+module Base
+{
+    craftRecipe PetFoodPackage_PackDryDogFood
+    {
+        timedAction = PackingBox,
+        time = 100,
+        tags = InHandCraft,
+        category = Packing,
+        OnCreate = Recipe.OnCreate.PetFoodPackage_PreserveOldestAge,
+        inputs
+        {
+            item 4 [Base.DogFoodBag] mode:destroy flags[ItemCount;AllowFavorite;InheritFavorite;InheritFoodAge;AllowRottenItem],
+        }
+        outputs
+        {
+            item 1 PetFoodPackage.DryDogFood_Box,
+        }
+    }
+
+    craftRecipe PetFoodPackage_OpenDryDogFoodBox
+    {
+        timedAction = PackingBox,
+        time = 100,
+        tags = InHandCraft,
+        category = Packing,
+        OnCreate = Recipe.OnCreate.PetFoodPackage_PreserveOldestAge,
+        inputs
+        {
+            item 1 [PetFoodPackage.DryDogFood_Box] mode:destroy flags[ItemCount;AllowFavorite;InheritFavorite;InheritFoodAge;AllowRottenItem],
+        }
+        outputs
+        {
+            item 4 Base.DogFoodBag,
+        }
+    }
+
+    craftRecipe PetFoodPackage_PackDryCatFood
+    {
+        timedAction = PackingBox,
+        time = 100,
+        tags = InHandCraft,
+        category = Packing,
+        OnCreate = Recipe.OnCreate.PetFoodPackage_PreserveOldestAge,
+        inputs
+        {
+            item 4 [Base.CatFoodBag] mode:destroy flags[ItemCount;AllowFavorite;InheritFavorite;InheritFoodAge;AllowRottenItem],
+        }
+        outputs
+        {
+            item 1 PetFoodPackage.DryCatFood_Box,
+        }
+    }
+
+    craftRecipe PetFoodPackage_OpenDryCatFoodBox
+    {
+        timedAction = PackingBox,
+        time = 100,
+        tags = InHandCraft,
+        category = Packing,
+        OnCreate = Recipe.OnCreate.PetFoodPackage_PreserveOldestAge,
+        inputs
+        {
+            item 1 [PetFoodPackage.DryCatFood_Box] mode:destroy flags[ItemCount;AllowFavorite;InheritFavorite;InheritFoodAge;AllowRottenItem],
+        }
+        outputs
+        {
+            item 4 Base.CatFoodBag,
+        }
+    }
+}

@@ -1,0 +1,776 @@
+module Base
+{
+    item CompanionDogsAllergyBlend
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsAllergyBlend,
+        Medical = true,
+        UseDelta = 0.3333333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsAllergyTea
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsAllergyTea,
+        Medical = true,
+        UseDelta = 0.3333333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsSkinWash
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsSkinWash,
+        Medical = true,
+        UseDelta = 0.3333333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsInsectRepellent
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsInsectRepellent,
+        Medical = true,
+        UseDelta = 0.2,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsHerbalDetox
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsHerbalDetox,
+        Medical = true,
+        UseDelta = 0.3333333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsParasiteTincture
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsParasiteTincture,
+        Medical = true,
+        UseDelta = 0.25,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsRespiratoryHerbs
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsRespiratoryHerbs,
+        Medical = true,
+        UseDelta = 0.5,
+        Tags = base:medical,
+    }
+
+
+    item CompanionDogsChamomileTea
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.3,
+        Icon = CompanionDogsChamomileTea,
+        Medical = true,
+        UseDelta = 1.0,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsFleaTickShampoo
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.5,
+        Icon = CompanionDogsFleaTickShampoo,
+        Medical = true,
+        UseDelta = 0.5,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsAloeVeraJuice
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.3,
+        Icon = CompanionDogsAloeVeraJuice,
+        UseDelta = 0.25,
+    }
+
+    item CompanionDogsCalendulaTincture
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsCalendulaTincture,
+        UseDelta = 0.25,
+    }
+
+    item CompanionDogsHomeVet
+    {
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.5,
+        Icon = CompanionDogsHomeVet,
+        BoredomChange = -20,
+        StressChange = -15,
+        LearnedRecipes = MakeCompanionDogsAllergyBlend;MakeCompanionDogsAllergyTea;MakeCompanionDogsSkinWash;MakeCompanionDogsInsectRepellent;MakeCompanionDogsHerbalDetox;MakeCompanionDogsParasiteTincture;MakeCompanionDogsRespiratoryHerbs;MakeCompanionDogsChamomileTea;MakeCompanionDogsRoseGeraniumOil;MakeCompanionDogsImmunePowder;MakeCompanionDogsImmuneTincture;MakeCompanionDogsTurkeyTailPowder;MakeCompanionDogsAstragalusPowder;MakeCompanionDogsImmuneBalancingPowder;MakeCompanionDogsSystemicTincture;MakeCompanionDogsOatmealBath;MakeCompanionDogsAloeVeraJuice;MakeCompanionDogsCalendulaTincture;MakeCompanionDogsFleaTickShampoo;MakePlantainPoultice;MakeComfreyPoultice;MakeWildGarlicPoultice,
+        StaticModel = Magazine,
+        Tags = base:magazine,
+        OnCreate = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item CompanionDogsAloeVera
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CompanionDogsAloeVera,
+    }
+
+    item CompanionDogsLicoriceRoot
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsLicoriceRoot,
+    }
+
+    item CompanionDogsEyebright
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsEyebright,
+    }
+
+    item CompanionDogsRedClover
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsRedClover,
+    }
+
+    item CompanionDogsRoseGeranium
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsRoseGeranium,
+    }
+
+    item CompanionDogsOregonGrapeRoot
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsOregonGrapeRoot,
+    }
+
+
+
+    item CompanionDogsBlackWalnutHull
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsBlackWalnutHull,
+    }
+    item CompanionDogsWormwood
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsWormwood,
+    }
+    item CompanionDogsMullein
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsMullein,
+    }
+
+    item CompanionDogsEucalyptus
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsEucalyptus,
+    }
+
+    item CompanionDogsRawElderberrySyrup
+    {
+        DisplayCategory = Medical,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = CompanionDogsImmuneTincture,
+        CantEat = true,
+        IsCookable = true,
+        MinutesToCook = 30,
+        MinutesToBurn = 120,
+        ReplaceOnCooked = Base.CompanionDogsImmuneTincture,
+        Tooltip = IGUI_PD_Tip_RawSyrup,
+    }
+    item CompanionDogsRawRoseGeraniumOil
+    {
+        DisplayCategory = Medical,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = CompanionDogsRoseGeraniumOilRaw,
+        CantEat = true,
+        IsCookable = true,
+        MinutesToCook = 30,
+        MinutesToBurn = 120,
+        ReplaceOnCooked = Base.CompanionDogsRoseGeraniumOil,
+        Tooltip = IGUI_PD_Tip_RawOil,
+    }
+
+    item CompanionDogsRoseGeraniumOil
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsRoseGeraniumOil,
+        UseDelta = 0.25,
+        Tooltip = IGUI_PD_Tip_GeraniumOil,
+    }
+
+    item CompanionDogsImmuneTincture
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsImmuneTincture,
+        Medical = true,
+        UseDelta = 0.3333333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsImmunePowder
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsImmunePowder,
+        Medical = true,
+        UseDelta = 0.5,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsImmuneBalancingPowder
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CompanionDogsImmuneBalancingPowder,
+        Medical = true,
+        UseDelta = 0.25,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsSystemicTincture
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsSystemicTincture,
+        Medical = true,
+        UseDelta = 0.0833333333,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsOatmealBath
+    {
+        DisplayCategory = Medical,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = CompanionDogsOatmealBath,
+        Medical = true,
+        UseDelta = 0.2,
+        Tags = base:medical,
+    }
+
+    item CompanionDogsAstragalus
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsAstragalus,
+    }
+
+    item CompanionDogsEchinacea
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsEchinacea,
+    }
+
+    item CompanionDogsElderberry
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsElderberry,
+    }
+
+    item CompanionDogsTurkeyTail
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CompanionDogsTurkeyTail,
+    }
+
+    item CompanionDogsTurkeyTailPowder
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsTurkeyTailPowder,
+    }
+
+    item CompanionDogsAstragalusPowder
+    {
+        DisplayCategory = Medical,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = CompanionDogsAstragalusPowder,
+    }
+
+    /* Receitas de ervas trazidas do Mans Best Friend. Item inteiro destruido leva flags[ItemCount]: sem ele o
+       engine gasta 1 USO, e pote e garrafa com FluidContainer fazem o craft falhar calado. O nome na tela vem de
+       Translate/<lang>/Recipes.json. */
+    craftRecipe MakeCompanionDogsAllergyBlend
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 2 [Base.Nettles],
+            item 1 [Base.Marigold],
+            item 1 [Base.Chamomile],
+            item 1 [Base.CompanionDogsLicoriceRoot],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsAllergyBlend,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsAllergyTea
+    {
+        timedAction = MixingMortarPestle,
+        time = 60,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.Nettles],
+            item 1 [Base.Chamomile],
+            item 1 [Base.CompanionDogsEyebright],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsAllergyTea,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsSkinWash
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.CompanionDogsChamomileTea],
+            item 1 [Base.CompanionDogsAloeVeraJuice],
+            item 1 [Base.CompanionDogsCalendulaTincture],
+            item 1 [Base.Bandage;Base.RippedSheets] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsSkinWash,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsInsectRepellent
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        Tooltip = IGUI_PD_RecipeTip_NeedsOil,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.CompanionDogsRoseGeraniumOil],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsInsectRepellent,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsHerbalDetox
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 2 [Base.Dandelions],
+            item 1 [Base.Nettles],
+            item 1 [Base.CompanionDogsRedClover],
+            item 1 [Base.GingerRoot],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsHerbalDetox,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsParasiteTincture
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.CompanionDogsOregonGrapeRoot],
+            item 1 [Base.CompanionDogsBlackWalnutHull],
+            item 1 [Base.CompanionDogsWormwood],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.15 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsParasiteTincture,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsRespiratoryHerbs
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.CommonMallow],
+            item 1 [Base.Thyme],
+            item 1 [Base.CompanionDogsMullein],
+            item 1 [Base.CompanionDogsLicoriceRoot],
+            item 1 [Base.CompanionDogsEucalyptus],
+            item 1 [Base.EmptyJar;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:jar;base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty;ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsRespiratoryHerbs,
+        }
+    }
+
+
+    craftRecipe MakeCompanionDogsChamomileTea
+    {
+        timedAction = MixingMortarPestle,
+        time = 60,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.Chamomile],
+            item 1 [*],
+            -fluid 0.5 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsChamomileTea,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsRoseGeraniumOil
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        Tooltip = IGUI_PD_RecipeTip_CookAfter,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 3 [Base.CompanionDogsRoseGeranium],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsRawRoseGeraniumOil,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsImmunePowder
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 1 [Base.CompanionDogsAstragalus],
+            item 1 [Base.CompanionDogsEchinacea],
+            item 1 [Base.Rosehips],
+            item 1 [Base.EmptyJar;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:jar;base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty;ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsImmunePowder,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsImmuneTincture
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        Tooltip = IGUI_PD_RecipeTip_CookAfter,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 2 [Base.CompanionDogsElderberry],
+            item 1 [Base.CompanionDogsEchinacea],
+            item 1 [Base.CompanionDogsAstragalus],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsRawElderberrySyrup,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsTurkeyTailPowder
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 1 [Base.CompanionDogsTurkeyTail],
+            item 1 tags[base:bowl] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsTurkeyTailPowder,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsAstragalusPowder
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 1 [Base.CompanionDogsAstragalus],
+            item 1 tags[base:bowl] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsAstragalusPowder,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsImmuneBalancingPowder
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.CompanionDogsTurkeyTailPowder],
+            item 1 [Base.CompanionDogsAstragalusPowder],
+            item 1 tags[base:bowl] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsImmuneBalancingPowder,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsSystemicTincture
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.CompanionDogsAstragalus],
+            item 1 [Base.Dandelions],
+            item 1 [Base.Nettles],
+            item 1 [Base.CompanionDogsLicoriceRoot],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.15 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsSystemicTincture,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsOatmealBath
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.Marigold],
+            item 1 [Base.Chamomile],
+            item 1 [Base.EmptyJar;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:jar;base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty;ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsOatmealBath,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsAloeVeraJuice
+    {
+        timedAction = SliceMeat,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 tags[base:sharpknife] mode:keep flags[MayDegradeLight],
+            item 2 [Base.CompanionDogsAloeVera],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsAloeVeraJuice,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsCalendulaTincture
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 2 [Base.Marigold],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.15 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsCalendulaTincture,
+        }
+    }
+
+    craftRecipe MakeCompanionDogsFleaTickShampoo
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = CompanionDogs,
+        Tooltip = IGUI_PD_RecipeTip_NeedsOil,
+        xpAward = Doctor:5,
+        inputs
+        {
+            item 1 [Base.CompanionDogsRoseGeraniumOil],
+            item 1 [Base.CompanionDogsEucalyptus],
+            item 1 [Base.Thyme],
+            item 1 [Base.BottleCrafted;Base.Perfume;Base.Cologne;Base.SimpleSyrup;Base.MilkBottle] tags[base:glassbottle;base:glassbottlesmall] mode:destroy flags[IsEmpty],
+            item 1 [*],
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 Base.CompanionDogsFleaTickShampoo,
+        }
+    }
+}

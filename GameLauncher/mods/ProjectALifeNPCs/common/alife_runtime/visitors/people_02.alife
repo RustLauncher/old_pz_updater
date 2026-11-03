@@ -1,0 +1,341 @@
+@alife-records 1
+
+person vp_1028
+  card.batch B02
+  card.arch va_mechanic
+  card.sex f
+  card.age 45
+  card.desc a poised woman with an auburn bob and paint freckles on her work coat
+  card.voice V12
+  card.seed 469975822
+  card.attract m
+  card.bond none
+  card.fear needles
+  card.hobby singing_in_choir
+  card.v 1
+  name.first Mara
+  name.last Cox
+  name.reveal intro
+  origin.town Fort Knox
+  origin.from civilian housing outside the Fort Knox gates
+  origin.work straightened damaged car panels and matched paint at a civilian body shop
+  origin.workKind body_shop
+  look.skin 2
+  look.hair bob
+  look.hairColor 0.4,0.24,0.15
+  look.beard none
+  look.pace walk
+  traits.open 1
+  traits.anx 1
+  traits.humor 4
+  traits.temper 0
+  traits.honest 4
+  traits.faith 4
+  traits.trustSpeed 2
+  traits.curious 3
+  traits.pride 4
+  traits.flirt 1
+  traits.social 0
+  traits.tidy 3
+  traits.nostalg 5
+  need0.hunger 1
+  need0.thirst 2
+  need0.cold 1
+  need0.fear 2
+  need0.fatigue 3
+  need0.dirty 2
+  need0.sick 1
+  need0.pain 1
+  vice.kind alcohol
+  beliefs.1.id bl_prayer_helps
+  beliefs.1.s 3
+  beliefs.2.id bl_follow_the_guard
+  beliefs.2.s 3
+  wants.1.id wn_food
+  wants.1.u 5
+  skills.mechanics 4
+  skills.metalworking 2
+  carry.1 Base.Wrench
+  carry.2 Base.Newspaper
+  carry.3 Base.Pencil
+  dress.role worker_f
+  dress.flags.1 work_shirt
+  dress.flags.2 gloves
+  dress.flags.3 work_boots
+  arc.stayMax 22
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.radio trusts_guard_traffic
+  hooks.bath protects_work_coat
+  hooks.shelf looks_for_diagrams
+  books.taste.1 religion
+  books.taste.2 humor
+  facts.1.id f_tin
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Took the socket tin Earl left to Lorna
+  facts.1.gate trust>=10
+  facts.2.id f_school
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Did not finish the 1970 evening course
+  facts.2.gate trust>=25 & flag:tin_told
+  facts.3.id f_collection
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Quietly replaced money in Lorna's household
+  facts.3.gate trust>=40 & alone & flag:school_told
+  facts.4.id f_waiting
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Family waiting is a cover for estrangement
+  facts.4.gate trust>=55 & alone & flag:collection_told
+  facts.5.id f_panel
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Took panel money from her employer for drink
+  facts.5.gate trust>=70 & alone & flag:waiting_told
+  mk.1 factory edge
+  mk.2 leave the runs
+  mk.3 dry fit
+  rt.1 7-9|hall|Checks coat pockets before requesting a place for the wrench
+  rt.2 12-14|kitchen|Asks about portable food and offers to repair a small fitting
+  rt.3 18-20|livingroom|Hums the alto part quietly if other guests do not object
+  bl.1 work wrench|Base.Wrench|Earl marked the handle with gray paint so his borrowing neighbors could not forget
+  bl.2 choir clipping|Base.Newspaper|Mara and Lorna stand at opposite ends of a row in the only clear photograph
+  bl.3 short pencil|Base.Pencil|Too short for her coat pocket; kept inside a folded paint card
+  bl.4 paint card||Six almost identical grays that used to interest her more than the Sunday sermon
+  bl.5 socket tin||Earl meant Lorna to have it; Mara's first claim was that she was only borrowing it
+  bl.6 gray work coat||A large inside pocket once held church collection envelopes on Wednesdays
+  rl.1 Earl Cox|father, dead 1978|Measured panels against the factory edge and trusted her practical judgment
+  rl.2 Alma Cox|mother, dead 1987|Sang alto and checked the collection twice without accusing anybody
+  rl.3 Lorna Vance|younger adult sister|Choir companion and intended owner of the socket tin; now estranged
+  rl.4 Vern Meeks|former employer|Let her work without performing competence for visitors; she owes him an honest account
+end
+
+person vp_1050
+  card.batch B03
+  card.arch va_student_college
+  card.sex f
+  card.age 19
+  card.desc a young woman with a dark ponytail and a worn denim jacket
+  card.voice VX29
+  card.seed 1588151285
+  card.attract m
+  card.bond none
+  card.fear being_blamed
+  card.hobby checkers
+  card.v 1
+  name.first Kayla
+  name.last Clemons
+  name.reveal intro
+  origin.town Rosewood
+  origin.from Rosewood, home from a Louisville college dorm for summer
+  origin.work first-year college student who stocked library carts between classes
+  origin.workKind college_student
+  look.skin 2
+  look.hair ponytail
+  look.hairColor 0.32,0.2,0.13
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 3
+  traits.humor 4
+  traits.temper 4
+  traits.honest 3
+  traits.faith 4
+  traits.trustSpeed 1
+  traits.curious 5
+  traits.pride 3
+  traits.flirt 5
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 3
+  need0.hunger 3
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 2
+  need0.fatigue 5
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_radio_will_tell
+  beliefs.1.s 3
+  beliefs.2.id bl_luck_is_real
+  beliefs.2.s 3
+  wants.1.id wn_candle
+  wants.1.u 5
+  skills.reading 3
+  carry.1 Base.Whistle
+  carry.2 Base.Notebook
+  carry.3 Base.Pen
+  dress.role student_f
+  dress.flags.1 tshirt
+  dress.flags.2 denim_jacket
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 morning
+  arc.returns true
+  hooks.radio expects_repeat_broadcast
+  hooks.shelf checks_margins
+  hooks.window counts_lights
+  books.taste.1 poetry
+  books.taste.2 mystery
+  facts.1.id f_whistle
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Took Eli's inherited brass whistle without asking
+  facts.1.gate trust>=10
+  facts.2.id f_poems
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Writes hidden poems rather than singing
+  facts.2.gate trust>=25 & flag:whistle_told
+  facts.3.id f_nine
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Valedictorian of a class of nine
+  facts.3.gate trust>=40 & flag:poems_told
+  facts.4.id f_interview
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Avoided the scholarship renewal interview
+  facts.4.gate trust>=55 & alone & flag:nine_told
+  facts.5.id f_phone
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Did not make the promised call before phone failure
+  facts.5.gate trust>=70 & alone & flag:interview_told
+  mk.1 revise that
+  mk.2 nine in the row
+  mk.3 checkerboard logic
+  rt.1 7-9|livingroom|Asks about news and tries to put broadcast statements in order
+  rt.2 13-15|table|Writes in the notebook and closes it when company comes too near
+  rt.3 20-22|hall|Requests a reading light before deciding whether to finish a letter
+  bl.1 brass whistle|Base.Whistle|Inherited by Eli; Kayla took it during the June visit home
+  bl.2 old notebook|Base.Notebook|Arithmetic at the front and poems hidden behind a blank middle sheet
+  bl.3 blue pen|Base.Pen|Jo Beth lent it for the interview that Kayla never attended
+  bl.4 book bag||Dean repaired one strap so it pulls the whole bag sideways when full
+  bl.5 Nashville ticket stub||A June trip with Eli; she remembers the usher better than the stage
+  bl.6 folded college letter||Funding details she has not explained to the family waiting for her to return
+  rl.1 Mavis Clemons|mother|Repurposed notebooks for lists and remembers exactly which promises Kayla made
+  rl.2 Dean Clemons|father|Bought the book bag and retold her college achievement to neighbors
+  rl.3 Eli Clemons|adult brother, age 24|Checker teacher and rightful owner of the brass whistle
+  rl.4 Jo Beth Farris|adult roommate, age 22|Would sit through Kayla's explanations without letting them replace an apology
+end
+
+person vp_1059
+  card.batch B03
+  card.arch va_factory_laidoff
+  card.sex f
+  card.age 50
+  card.desc a strong shouldered woman with a chestnut bob and a faded work shirt
+  card.voice V15
+  card.seed 92609852
+  card.attract m
+  card.bond none
+  card.fear the_open_road
+  card.hobby cb_radio
+  card.v 1
+  name.first Sharon
+  name.last Hubbard
+  name.reveal intro
+  origin.town Vine Grove
+  origin.from a rented house off the Vine Grove factory road
+  origin.work laid-off packing line worker who kept a CB set beside her kitchen door
+  origin.workKind laid_off
+  look.skin 2
+  look.hair bob
+  look.hairColor 0.45,0.3,0.2
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 2
+  traits.humor 1
+  traits.temper 1
+  traits.honest 3
+  traits.faith 4
+  traits.trustSpeed 0
+  traits.curious 0
+  traits.pride 4
+  traits.flirt 3
+  traits.social 0
+  traits.tidy 2
+  traits.nostalg 4
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 3
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind tobacco
+  beliefs.1.id bl_keep_moving
+  beliefs.1.s 3
+  beliefs.2.id bl_river_is_safe
+  beliefs.2.s 3
+  wants.1.id wn_hat
+  wants.1.u 5
+  skills.electrical 2
+  skills.tailoring 1
+  carry.1 Base.CigarettePack
+  carry.2 Base.Lighter
+  carry.3 Base.Notebook
+  dress.role worker_f
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 15
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.object f_lewis
+  hooks.shelf checks_radio_sources
+  books.taste.1 mystery
+  books.taste.2 religion
+  facts.1.id f_lewis
+  facts.1.kind love
+  facts.1.tab past
+  facts.1.label Left Lewis in 1992, before any outbreak excuse
+  facts.1.gate trust>=10
+  facts.2.id f_lungs
+  facts.2.kind health
+  facts.2.tab now
+  facts.2.label Concealed a chronic lung diagnosis from Lewis
+  facts.2.gate trust>=25 & alone & flag:lewis_told
+  facts.3.id f_aerial
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Invented a CB road warning under false authority
+  facts.3.gate trust>=40 & alone & flag:lungs_told
+  facts.4.id f_prayer
+  facts.4.kind faith
+  facts.4.tab past
+  facts.4.label Returned to prayer after losing certainty with Nolan
+  facts.4.gate trust>=55 & alone & flag:aerial_told
+  facts.5.id f_cap
+  facts.5.kind secret
+  facts.5.tab now
+  facts.5.label Needs a cap after quietly giving hers to Mona
+  facts.5.gate trust>=70 & alone & flag:prayer_told
+  mk.1 third break
+  mk.2 Mona's red thermos
+  mk.3 short aerial
+  rt.1 6-8|porch|Asks where smoking is permitted and keeps her bag off the walking space
+  rt.2 12-14|kitchen|Looks for a small quiet break rather than joining every conversation
+  rt.3 19-21|livingroom|Listens to any permitted radio and notes whether a speaker names a source
+  bl.1 short CB aerial||Nolan's old aerial, disconnected and too short to resemble a useful walking stick.
+  bl.2 cigarette pack|Base.CigarettePack|Flattened against the notebook to protect what is left.
+  bl.3 lighter|Base.Lighter|Lewis repaired its loose lid once; she has not replaced it out of spite.
+  bl.4 packing notebook|Base.Notebook|Old shift counts alongside CB handles, with no claim that those people still answer.
+  bl.5 factory work shirt||Pale rectangle where a name patch was removed after the line closed.
+  bl.6 spare cap button||A replacement button for the cap she gave Mona, now useless without the cap.
+  rl.1 Lewis Hubbard|estranged husband|Married 1964, separated 1992; last known at their old rented house.
+  rl.2 Nolan Bell|brother, died 1985|Four years younger; left a short CB aerial Sharon kept.
+  rl.3 Mona Creed|former coworker|Red thermos at third break; last seen accepting Sharon's cap after the warnings.
+end

@@ -1,0 +1,9 @@
+name=True Cargo
+id=PFHDTrueCargo
+description=Items in an open trailer's trunk ride on its bed as real 3D models, in their own textures, packed by size and weight. Arrange them by hand, pick what to show, tow them, tip the trailer and watch them go. Supports the vanilla trailer and pickup, Trailers! utility trailers and several KI5 beds; vehicle mods can add their own. Cars loaded on the W900 car trailer show as the real cars and fly off when it rolls.
+poster=poster.png
+icon=icon.png
+modversion=0.9.7
+author=Alden Gredic
+category=features
+versionMin=42.15.0

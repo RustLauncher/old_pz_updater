@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>WorldItems/FlameTrapSensor</m_MaleModel>
+  <m_FemaleModel>WorldItems/FlameTrapSensor</m_FemaleModel>
+  <m_GUID>ff6b0281-2988-abe1-2673-ed469556fd4e</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>WorldItems/FlameTrap</textureChoices>
+</clothingItem>

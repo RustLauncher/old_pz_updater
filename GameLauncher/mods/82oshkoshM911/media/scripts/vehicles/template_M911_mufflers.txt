@@ -1,0 +1,71 @@
+module Base
+{
+	
+	model 82oshkoshM911muffler
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m911_muffler,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	template vehicle M911Mufflers
+		{
+		part M911Muffler
+       		{
+
+		model Muffler
+			{
+                	file = 82oshkoshM911muffler,
+			}
+
+            area = SpareTire,
+	        category = engine,
+	        specificItem = false,
+            itemType = Base.M911Muffler,
+	        mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                    time = 1000,
+                    skills = Mechanics:4,
+                    recipes = Intermediate Mechanics,
+                    test = Vehicles.InstallTest.Default,
+		            complete = Vehicles.InstallComplete.Default,
+                    door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+		        complete = Vehicles.UninstallComplete.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+	}
+}
+

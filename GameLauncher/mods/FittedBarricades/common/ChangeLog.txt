@@ -1,0 +1,23 @@
+[ 9/4/26 v1.1.0 ]
+Initial release.
+Makes barricades fit the window or door they are nailed to, and take the material to match. Vanilla planks, sheet metal and metal bars all cover the same small patch whatever they are on, so on a tall window, a shop front or a door most of the opening stays open, and four planks are all it will ever take.
+A tall house window now takes six planks, a shop front nine, a door seven, at the same spacing as vanilla's four; a tall opening takes a second sheet of metal or a second set of bars. Keep choosing Barricade and each plank goes up where you would expect, filling the opening from the middle out.
+A plank is a plank: same health as vanilla, same for a sheet or a set of bars, so a nine-plank window is more than twice as tough as a four-plank one. Planks break one at a time and the barricade thins the way vanilla's does.
+Removing a barricade gives every plank, sheet or bar back. Each barricade is the game's own object, just more of them on the big openings, so nothing new is written to your save.
+Small windows keep the vanilla barricade. Windows spanning more than one wall tile, and walls whose window has been removed entirely, are left alone.
+[ ------ ]
+
+[ 9/4/26 v1.1.1 ]
+Performance: the per-frame check that keeps fitted barricades wearing their art now costs one engine call per barricade layer instead of a walk of the square, and the safety-net sweep of the area's windows is spread over two seconds instead of running all in one frame. A barricade being removed is picked up from the engine's own removal event.
+No gameplay changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]
+
+[ 9/4/26 v1.1.2 ]
+Fix: a fitted barricade on a window with a canopy or awning hung over it was drawn on top of the canopy. It now sits under it, as it does under a curtain. Barricades already up are put right as their area loads.
+No gameplay changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]
+
+[ 9/5/26 v1.1.3 ]
+Fix: the mod used far more memory than it needed (about 325 MB, and as much again on the GPU). All sprites now share four depth cells, the way vanilla does.
+No visual change, no gameplay changes, no save changes - safe to update mid-playthrough, in singleplayer and multiplayer.
+[ ------ ]

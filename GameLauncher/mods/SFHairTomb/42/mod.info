@@ -1,0 +1,8 @@
+name=Spitfire Hairstyles (Tomb's Body Mod Compatibility)
+id=SFHairTomb
+authors=Bubwinga
+poster=poster.png
+icon=icon.png
+require=FH,TombBody
+description=Adds 10 new hairstyles— More to come!
+incompatible=SFHair

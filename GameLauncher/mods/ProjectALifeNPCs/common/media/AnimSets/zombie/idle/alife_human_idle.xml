@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeHumanIdle</m_Name>
+	<m_AnimName>Bob_Idle</m_AnimName>
+	<m_Priority>20</m_Priority>
+	<m_ConditionPriority>20</m_ConditionPriority>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.18</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_randomAdvanceFraction>0.40</m_randomAdvanceFraction>
+	<m_Conditions>
+		<m_Name>ALifeActor</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

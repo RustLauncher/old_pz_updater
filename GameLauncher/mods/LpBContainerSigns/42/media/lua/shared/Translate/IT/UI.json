@@ -1,0 +1,15 @@
+{
+    "UI_LPBCS_OptionsTitle": "LpB Cartelli per contenitori",
+
+    "UI_LPBCS_Opt_Enabled": "Mostra i cartelli sui contenitori",
+    "UI_LPBCS_Opt_Enabled_tooltip": "Mostra nel mondo il nome scritto su una cassa o un armadio. Disattivandolo, i cartelli vengono nascosti solo per te; i nomi non cambiano.",
+
+    "UI_LPBCS_Opt_Radius": "Raggio di visualizzazione (caselle)",
+    "UI_LPBCS_Opt_Radius_tooltip": "Quanto lontano rimane leggibile un cartello. I cartelli sfumano nelle ultime due caselle invece di sparire di colpo. Riducilo in una base affollata.",
+
+    "UI_LPBCS_Opt_Opacity": "Opacità del cartello (percentuale)",
+    "UI_LPBCS_Opt_Opacity_tooltip": "Quanto sono opachi i cartelli visualizzati.",
+
+    "UI_LPBCS_Opt_HideWhenLoot": "Nascondi quando la finestra del bottino è aperta",
+    "UI_LPBCS_Opt_HideWhenLoot_tooltip": "Rimuove i cartelli dallo schermo mentre stai rovistando in un contenitore, quando non ti servono più."
+}

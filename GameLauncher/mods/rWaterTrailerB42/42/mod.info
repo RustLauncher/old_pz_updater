@@ -1,0 +1,9 @@
+authors=Lexx,Wipe
+name=Water Trailer B42.20 Fix
+poster=preview.png
+icon=icon.png
+id=rWaterTrailerB42
+require=VFluidLib,damnlib
+description=Build 42.20 fix. Adds two multi-fluid water trailers and restores the propane trailer using Vehicle Fluid Logistics, with corrected wheel models. Do not enable with the original Water Trailer mod.
+url=https://rotators.net/
+versionMin=42.20.0

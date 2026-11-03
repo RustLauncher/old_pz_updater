@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Corrida mancando da pata dianteira. Par de corrida do cdLimpFront: mesmo root motion do Rac_Run, so a
+     pose muda. Precisa de animalRunning=true para nao roubar a caminhada mancando. -->
+<animNode>
+	<m_Name>cdLimpFrontRunPath</m_Name>
+	<m_ConditionPriority>10</m_ConditionPriority>
+	<m_AnimName>Rac_RunLimpFront</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdRunScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cda77ac4-000f-4001-8001-000000000001">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-000f-4001-8001-000000000002">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-000f-4001-8001-000000000003">
+		<m_Name>cdLimpFront</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="cda77ac4-000f-4002-8001-000000000001">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="cda77ac4-000f-4002-8001-000000000002">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

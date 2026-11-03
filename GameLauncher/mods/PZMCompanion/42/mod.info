@@ -1,0 +1,5 @@
+name=GPS Cross-Device - ProjectZomboidMap.com
+id=PZMCompanion
+description=Companion mod for ProjectZomboidMap.com. Press Home to open the map in the Steam overlay, centered on your character. Writes a small local file so the site can follow you live. Works in singleplayer and multiplayer: the host adds the mod to the server, and with the sandbox option on your friends show up on the map too.
+poster=poster.png
+url=https://projectzomboidmap.com

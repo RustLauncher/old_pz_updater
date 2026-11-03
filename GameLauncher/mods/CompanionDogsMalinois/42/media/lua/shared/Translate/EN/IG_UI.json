@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Belgian Malinois",
+    "IGUI_AnimalType_malmale": "Belgian Malinois (male)",
+    "IGUI_AnimalType_malfemale": "Belgian Malinois (female)",
+    "IGUI_AnimalType_malpup": "Belgian Malinois (puppy)",
+    "IGUI_PD_Breed_malinois": "Belgian Malinois",
+    "IGUI_PD_BreedDesc_malinois": "A police and detection dog. Focused on scent, obedience and combat. A dog with a unique mechanic: it doesn't just scent the zombie, it shows you its exact location. Found at police stations, military buildings and, rarely, in houses.",
+    "IGUI_PD_Moodle_K9Scent": "K9 Scent",
+    "IGUI_PD_Moodle_K9Scent_desc": "Your Malinois is the best at scent: it can sniff out the exact position of the nearest zombie."
+}

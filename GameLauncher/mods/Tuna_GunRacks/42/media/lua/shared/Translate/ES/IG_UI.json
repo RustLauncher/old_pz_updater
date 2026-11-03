@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "Cajón de munición",
+    "IGUI_TunaWR_Piece_armory": "Armario de armería",
+    "IGUI_TunaWR_Piece_cabinet": "Armario para armas",
+    "IGUI_TunaWR_Piece_fieldrack": "Rastrillero de armería",
+    "IGUI_TunaWR_Piece_handguncase": "Vitrina para pistolas",
+    "IGUI_TunaWR_Piece_pegboard": "Soporte mural para rifles",
+    "IGUI_TunaWR_Store_HANDGUN": "Clic derecho para guardar una pistola equipada o acoplada.",
+    "IGUI_TunaWR_Store_LONG_GUN": "Clic derecho para guardar un arma larga equipada o acoplada."
+}

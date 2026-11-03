@@ -1,0 +1,337 @@
+@alife-records 1
+
+person vp_1353
+  card.batch B18
+  card.arch va_teacher
+  card.sex f
+  card.age 34
+  card.desc a reserved school cook with a careful dark braid and a neatly fastened cardigan
+  card.voice V03
+  card.seed 1875636295
+  card.attract m
+  card.bond none
+  card.fear silence
+  card.hobby canning
+  card.v 1
+  name.first Sylvie
+  name.last Goff
+  name.reveal intro
+  origin.town Frankfort
+  origin.from a small Frankfort house she shared with Ada
+  origin.work trained as a teacher, taught briefly, then worked in a school kitchen from 1985
+  origin.workKind school_cook
+  look.skin 2
+  look.hair braids
+  look.hairColor 0.24,0.17,0.12
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 2
+  traits.humor 0
+  traits.temper 1
+  traits.honest 4
+  traits.faith 5
+  traits.trustSpeed 3
+  traits.curious 3
+  traits.pride 1
+  traits.flirt 5
+  traits.social 1
+  traits.tidy 3
+  traits.nostalg 3
+  need0.hunger 3
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 3
+  need0.fatigue 4
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_charity_has_limits
+  beliefs.1.s 3
+  beliefs.2.id bl_this_is_temporary
+  beliefs.2.s 3
+  wants.1.id wn_hot_meal
+  wants.1.u 5
+  skills.cooking 4
+  skills.tailoring 2
+  carry.1 Base.SewingKit
+  carry.2 Base.Note
+  carry.3 Base.Pencil
+  dress.role care_worker_f
+  dress.flags.1 cardigan
+  arc.stayMax 22
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath asks_where_towels_go
+  hooks.radio prefers_low_human_voices
+  books.taste.1 cooking
+  books.taste.2 religion
+  facts.1.id f_cut
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Covered the canning-jar cut to her left calf
+  facts.1.gate trust>=12 & alone
+  facts.2.id f_bet
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Owes Lottie sixty dollars from the hidden Nashville bet
+  facts.2.gate trust>=26 & alone & flag:cut_told
+  facts.3.id f_prayer
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Prayed for Ada's waiting to end and feels guilty
+  facts.3.gate trust>=42 & alone & flag:bet_told
+  facts.4.id f_ashes
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Let Lottie bury the ashes despite Ada's wish
+  facts.4.gate trust>=59 & alone & flag:prayer_told
+  facts.5.id f_cabin
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Set the cabin fire and called it an accident
+  facts.5.gate trust>=76 & alone & flag:ashes_told
+  mk.1 jar cloth first
+  mk.2 Ada's green spoon
+  mk.3 not the big pan
+  rt.1 7-9|kitchen|Asks what meal work is wanted before touching stored food
+  rt.2 14-16|livingroom|Offers to mend a loose cuff and waits for permission
+  rt.3 20-22|hall|Requests a low voice or a little conversation before settling for the night
+  bl.1 sewing pouch|Base.SewingKit|Contains the small repairs she learned before she learned classroom work
+  bl.2 recipe note|Base.Note|Ada wrote less sugar beside Sylvie's peach filling in a firm green line
+  bl.3 short pencil|Base.Pencil|Used for meal quantities and labels on jars sent to Lottie
+  bl.4 green spoon||Ada's favorite stirring spoon, scorched along one edge
+  bl.5 jar cloth||A folded square from her mother's pantry, patched rather than replaced
+  bl.6 Opry ticket half||The two seats were together but the tickets tore unevenly at the entrance
+  rl.1 Ada Goff|wife, died 1991|Shared Sylvie's home, loved live music and wanted her ashes taken near Nashville
+  rl.2 Lottie Goff|mother-in-law, born 1929|Former wartime factory worker, last known in Frankfort; lent Sylvie sixty dollars
+  rl.3 Bess Reeve|school kitchen coworker|Took the heavy pans without calling attention to it
+  rl.4 Della Wynn|church supper organizer|Asked Sylvie to cook rather than to comfort people with speeches
+end
+
+person vp_1381
+  card.batch B20
+  card.arch va_housewife
+  card.sex f
+  card.age 45
+  card.desc a composed woman with a chestnut bun and a carefully fastened cardigan
+  card.voice V03
+  card.seed 1355582768
+  card.attract m
+  card.bond none
+  card.fear the_smell
+  card.hobby canning
+  card.v 1
+  name.first Geraldine
+  name.last Cundiff
+  name.reveal intro
+  origin.town Riverside
+  origin.from a rented bungalow in Riverside after eight years in suburban Louisville
+  origin.work cleaned private houses, keeping her own hours and payment book
+  origin.workKind house_cleaner
+  look.skin 1
+  look.hair bun
+  look.hairColor 0.42,0.29,0.17
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 3
+  traits.humor 0
+  traits.temper 2
+  traits.honest 3
+  traits.faith 2
+  traits.trustSpeed 1
+  traits.curious 5
+  traits.pride 2
+  traits.flirt 1
+  traits.social 2
+  traits.tidy 5
+  traits.nostalg 2
+  need0.hunger 1
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 5
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_karma
+  beliefs.1.s 3
+  beliefs.2.id bl_work_fixes_things
+  beliefs.2.s 3
+  wants.1.id wn_pen_paper
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  carry.2 Base.SheetPaper2
+  dress.role homemaker_f
+  dress.flags.1 hat
+  dress.flags.2 cardigan
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 player_asks
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.radio asks_for_farm_report
+  hooks.bath wants_to_wash_then_write
+  hooks.shelf looks_for_plain_paper
+  books.taste.1 mystery
+  books.taste.2 cooking
+  facts.1.id f_blouse
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Washed Renee's blouse after promising not to, shrinking its cuffs
+  facts.1.gate trust>=15
+  facts.2.id f_peaches
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Passed bought peaches off as her own crop and preserving
+  facts.2.gate trust>=30 & flag:blouse_told
+  facts.3.id f_car
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Still owes Clarice two hundred and twenty for the car
+  facts.3.gate trust>=45 & alone & flag:peaches_told
+  facts.4.id f_hours
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Charged Mrs Wentz for four hours after doing two
+  facts.4.gate trust>=60 & alone & flag:car_told
+  facts.5.id f_separate
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Separated from Elmer since 1984 and does not want to reunite
+  facts.5.gate trust>=75 & alone & flag:hours_told & imin>=60
+  mk.1 cattle report
+  mk.2 hat comes off
+  mk.3 pale blue car
+  rt.1 6-8|kitchen|Asks to wash before touching shared things and checks her own papers for damp
+  rt.2 12-14|livingroom|Requests a place to write without deciding that the nearest table is hers to use
+  rt.3 19-21|hall|Collects her hat and keys before asking about sleeping arrangements
+  bl.1 car key ring|Base.KeyRing|Keys from the pale blue car; Clarice repaired the bent ring
+  bl.2 old payment pages|Base.SheetPaper2|Figures copied out of her cleaning book, including the false four hours
+  bl.3 faded summer hat||Takes it off indoors and worries the band between her fingers
+  bl.4 cardigan with changed buttons||Alma supplied buttons but Geraldine refused the ones shaped like flowers
+  bl.5 preserving quantities||Her own bean quantities written on the back of an old envelope
+  bl.6 cloth glasses case||No glasses inside now; useful for keeping the key teeth off the paper
+  rl.1 Elmer Cundiff|legally married, separated|Agreed to separate in 1984; Geraldine does not want the household back
+  rl.2 Alma Wynn|sister|Inspects the preserving and remembers the Christmas blouse argument
+  rl.3 Renee Wynn|niece, born 1967|Asked Geraldine not to wash her silk blouse in 1991 and was ignored
+  rl.4 Clarice Hume|friend|Advanced car money in 1985 and is still owed two hundred and twenty dollars
+  rl.5 Silas Wynn|father, deceased|Taught her to compare cattle prices instead of remembering only a good week
+end
+
+person vp_1387
+  card.batch B20
+  card.arch va_farm_widow
+  card.sex f
+  card.age 77
+  card.desc an elderly woman with softly pinned silver hair and a knitted scarf
+  card.voice V16
+  card.seed 742743017
+  card.bond none
+  card.fear the_river
+  card.hobby knitting
+  card.v 1
+  name.first Mildred
+  name.last Bradshaw
+  name.reveal intro
+  origin.town Springfield
+  origin.from the farmhouse near Springfield where she remained after retiring
+  origin.work kept a small farm with her husbands and retired from the heavy work in 1988
+  origin.workKind retired_farmer
+  look.skin 1
+  look.hair bun
+  look.hairColor 0.75,0.72,0.66
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 1
+  traits.humor 1
+  traits.temper 1
+  traits.honest 5
+  traits.faith 5
+  traits.trustSpeed 3
+  traits.curious 5
+  traits.pride 3
+  traits.flirt 0
+  traits.social 4
+  traits.tidy 4
+  traits.nostalg 5
+  need0.hunger 1
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 3
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 4
+  vice.kind none
+  beliefs.1.id bl_kentucky_will_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_stay_put
+  beliefs.2.s 3
+  wants.1.id wn_quiet
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  carry.2 Base.Notebook
+  dress.role elder_f_rural
+  dress.flags.1 cardigan
+  dress.flags.2 scarf
+  arc.stayMax 22
+  arc.leave.1 need_met
+  arc.leave.2 player_asks
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.bed asks_for_quiet_near_people
+  hooks.radio asks_for_singing
+  hooks.bath asks_where_to_keep_wool_dry
+  books.taste.1 religion
+  books.taste.2 history
+  books.taste.3 cooking
+  facts.1.id f_arthritis
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Conceals arthritis diagnosed in 1987 from son Merle
+  facts.1.gate trust>=10
+  facts.2.id f_tears
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Cried privately for both husbands despite denying it
+  facts.2.gate trust>=30 & flag:arthritis_told
+  facts.3.id f_bus
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Left for Lexington without telling Oren in 1972
+  facts.3.gate trust>=45 & alone & flag:tears_told
+  facts.4.id f_lester
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Covered Lester's 1981 night in jail with a farm-work account
+  facts.4.gate trust>=60 & alone & flag:bus_told
+  facts.5.id f_basil
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Secretly saw Basil for three months in 1962 while married
+  facts.5.gate trust>=75 & alone & flag:lester_told & imin>=75
+  mk.1 Jip, hush
+  mk.2 half a sleeve
+  mk.3 Bradshaw now
+  rt.1 6-8|kitchen|Asks what the household expects before helping and remembers where her own wool was put
+  rt.2 13-15|livingroom|Knits or asks about an unfamiliar object without deciding it ought to work the old way
+  rt.3 20-22|livingroom|Requests quiet company and gathers needles before trying to rest
+  bl.1 farm keys|Base.KeyRing|Oren changed one lock but left the older key on the ring
+  bl.2 farm notebook|Base.Notebook|Milk and feed figures in three different hands across the years
+  bl.3 knitting wool on cardboard||Unfinished sleeve from a cardigan she began before leaving home
+  bl.4 blunt knitting needles||Merle bought a newer pair but she preferred the old weight
+  bl.5 surgery appointment slip||The 1991 cataract appointment folded to fit the notebook
+  bl.6 piece of Jip's blanket||Small washed square kept after the dog's death in 1990
+  rl.1 Merle Prewitt|son, born 1940|Visits from Springfield; Mildred fears being moved from home if he learns of the arthritis
+  rl.2 Caleb Prewitt|first husband, died 1965|Married in 1937 and father of Merle; never learned of Basil
+  rl.3 Oren Bradshaw|second husband, died 1989|Married in 1970; feared her unexplained Lexington trip meant she had left him
+  rl.4 Lester Hobbs|cousin|Takes part in snake-handling services; she covered his 1981 night in jail
+  rl.5 Basil Nunn|grocer, former lover|Affair in 1962 ended when he asked her to move to Ohio
+end

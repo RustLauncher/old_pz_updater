@@ -1,0 +1,29 @@
+module RotatorsB42
+{
+	/* Tank Lid */
+	fixing Fix Tank Lid Welding
+	{
+		Require = RotatorsB42.WaterTrailerTankLid1;RotatorsB42.WaterTrailerTankLid2,
+		GlobalItem = Base.BlowTorch=5,
+		ConditionModifier = 1.2,
+		Fixer = Base.SheetMetal; MetalWelding=1;Mechanics=2,
+		Fixer = Base.SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+	/* Water Tank */
+	fixing Fix Water Tank Welding
+	{
+		Require = RotatorsB42.1000TankWater1;RotatorsB42.1000TankWater2;RotatorsB42.1000TankWater3;RotatorsB42.1500TankWater1;RotatorsB42.1500TankWater2;RotatorsB42.1500TankWater3;RotatorsB42.3000TankWater1;RotatorsB42.3000TankWater2;RotatorsB42.3000TankWater3;RotatorsB42.5000TankWater1;RotatorsB42.5000TankWater2;RotatorsB42.5000TankWater3,
+		GlobalItem = Base.BlowTorch=5,
+		ConditionModifier = 1.2,
+		Fixer = Base.SheetMetal; MetalWelding=6;Mechanics=7,
+		Fixer = Base.SmallSheetMetal=2; MetalWelding=6;Mechanics=7,
+	}
+
+	/* Pump */
+	fixing Fix Water Pump Welding
+	{
+		Require = RotatorsB42.WaterTrailerTankPump1;RotatorsB42.WaterTrailerTankPump2,
+		Fixer = Base.ElectronicsScrap=3;Electricity=3;Mechanics=1,
+	}
+}

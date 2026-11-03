@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\Jacket_Parka_M.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\Jacket_Parka_F.fbx</m_FemaleModel>
+	<m_GUID>abb7333a-be4c-4159-aa0f-9295be00aec8</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>13</m_Masks>
+	<m_Masks>14</m_Masks>
+	<m_Masks>3</m_Masks>
+	<m_Masks>5</m_Masks>
+	<m_Masks>2</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Jacket/Masks</m_MasksFolder>
+	<m_UnderlayMasksFolder>media/textures/Clothes/JacketLong/Masks_Parka</m_UnderlayMasksFolder>
+	<textureChoices>clothes\jacketlong\jacketlong_parka</textureChoices>
+	<textureChoices>clothes\jacketlong\jacketlong_parka1</textureChoices>
+	<textureChoices>clothes\jacketlong\jacketlong_parka2</textureChoices>
+</clothingItem>

@@ -1,0 +1,73 @@
+module RotatorsB42
+{
+   item WaterTrailerTankLid1
+   {
+      DisplayCategory = VehicleMaintenance,
+      Weight	=	3.0,
+       ItemType = base:normal,
+      DisplayName	=	Tank Lid,
+      Icon	=	WaterTankLid,
+      VehicleType =   1,
+      ChanceToSpawnDamaged = 25,
+      ConditionMax = 100,
+      MechanicsItem = TRUE,
+       WorldStaticModel = RotatorsB42.WaterTrailerTankLidWI,
+   }
+   item WaterTrailerTankLid2
+   {
+      DisplayCategory = VehicleMaintenance,
+      Weight	=	6.0,
+       ItemType = base:normal,
+      DisplayName	=	Tank Lid,
+      Icon	=	WaterTankLid,
+      VehicleType =   2,
+      ChanceToSpawnDamaged = 25,
+      ConditionMax = 100,
+      MechanicsItem = TRUE,
+       WorldStaticModel = RotatorsB42.WaterTrailerTankLidWI,
+   }
+   
+   item WaterTrailerTankPump1
+   {
+      DisplayCategory = VehicleMaintenance,
+      Weight	=	15.0,
+       ItemType = base:normal,
+      DisplayName	=	Pump,
+      Icon	=	WaterTankLid,
+      VehicleType =   1,
+      ChanceToSpawnDamaged = 25,
+      ConditionMax = 100,
+      ConditionLowerChanceOneIn = 100,
+      MechanicsItem = TRUE,
+   }
+   item WaterTrailerTankPump2
+   {
+      DisplayCategory = VehicleMaintenance,
+      Weight	=	15.0,
+       ItemType = base:normal,
+      DisplayName	=	Pump,
+      Icon	=	WaterTankLid,
+      VehicleType =   2,
+      ChanceToSpawnDamaged = 25,
+      ConditionMax = 100,
+      ConditionLowerChanceOneIn = 100,
+      MechanicsItem = TRUE,
+       --WorldStaticModel = RotatorsB42.WaterTrailerTankPumpWI,
+   }
+   
+   item WaterTrailerTankFilter2
+   {
+      DisplayCategory = VehicleMaintenance,
+		UseWhileEquipped	=	FALSE,
+		cantBeConsolided = FALSE,
+      Weight	=	0.5,
+      DisplayName	=	Water Filter,
+      Icon	=	WaterTankFilter,
+      ChanceToSpawnDamaged = 15,
+      ConditionMax = 100,
+      ConditionLowerChanceOneIn = 50,
+      MechanicsItem = TRUE,
+       WorldStaticModel = RotatorsB42.WaterTrailerWaterFilterWI,
+      Tooltip = Tooltip_item_WaterTrailerTankFilter,
+   }
+}

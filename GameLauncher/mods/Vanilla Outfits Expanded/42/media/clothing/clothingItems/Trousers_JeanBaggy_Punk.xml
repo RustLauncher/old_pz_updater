@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\pants_baggy_m</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\pants_baggy_f</m_FemaleModel>
+	<m_GUID>5055a7c8-25b4-4567-916f-a68a89bb1b3d</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>14</m_Masks>
+	<m_Masks>15</m_Masks>
+	<m_Masks>7</m_Masks>
+	<m_Masks>9</m_Masks>
+	<textureChoices>clothes\trousers_mesh\trousers_denimblack_patches1</textureChoices>
+	<textureChoices>clothes\trousers_mesh\trousers_denimblack_patches2</textureChoices>
+</clothingItem>

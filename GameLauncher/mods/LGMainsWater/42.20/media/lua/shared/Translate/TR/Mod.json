@@ -1,0 +1,4 @@
+{
+    "name": "LG Şebeke Suyuna Bağla",
+    "description": "İçeriye kurduğun lavabolar, küvetler, duşlar, klozetler ve çamaşır makineleri için \"... ana su hattına bağla\" seçeneği ekler. Bağlanan parça binanın kendi parçası sayılır: aynı bitmeyen su, aynı kesinti günü, sonrasında borularda kalan aynı su. Haritanın akan suyu yok diye işaretlediği binalar kuru kalır. Sadece kendi parçalarını su kesilmeden önce kurarsan değer. Tek oyunculu, barındırılan çok oyunculu ve adanmış sunucu."
+}

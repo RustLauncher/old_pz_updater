@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Par de corrida do idle/cdNetWalk. A corrida sofre menos (15% de descompasso contra 32% da caminhada) mas
+     cai no mesmo buraco: o ActionContext vai pra idle no meio da corrida e as pernas param com o corpo indo. -->
+<animNode>
+	<m_Name>cdNetRun</m_Name>
+	<m_ConditionPriority>5</m_ConditionPriority>
+	<m_AnimName>Rac_Run</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>cdRunScale</m_SpeedScale>
+	<m_SyncTrackingEnabled>true</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cda77ac4-0007-4001-8002-000000000003">
+		<m_Name>cdNetGait</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cda77ac4-0007-4001-8002-000000000004">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

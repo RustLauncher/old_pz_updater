@@ -1,0 +1,35 @@
+VERSION = 1,
+
+option DogTiredItemArrange.Arranger
+{
+    type = boolean,
+    default = true,
+    page = DogTiredItemArrange,
+    translation = DogTiredItemArrange_Arranger,
+}
+
+option DogTiredItemArrange.Layers
+{
+    type = boolean,
+    default = true,
+    page = DogTiredItemArrange,
+    translation = DogTiredItemArrange_Layers,
+}
+
+option DogTiredItemArrange.CrossStack
+{
+    type = boolean,
+    default = true,
+    page = DogTiredItemArrange,
+    translation = DogTiredItemArrange_CrossStack,
+}
+
+option DogTiredItemArrange.MaxPileHeight
+{
+    type = integer,
+    min = 10,
+    max = 99,
+    default = 90,
+    page = DogTiredItemArrange,
+    translation = DogTiredItemArrange_MaxPileHeight,
+}

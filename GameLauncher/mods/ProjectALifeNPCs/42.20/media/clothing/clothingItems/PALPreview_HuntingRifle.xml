@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/firearm/MSR788_Rifle</m_MaleModel>
+  <m_FemaleModel>weapons/firearm/MSR788_Rifle</m_FemaleModel>
+  <m_GUID>5962a583-e285-f126-0550-28dd9a4bc6c1</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/firearm/MSR788_Rifle</textureChoices>
+</clothingItem>

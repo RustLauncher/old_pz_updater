@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+    <files>
+        <path>media/clothing/clothingItems/ZD_ForeArm_L.xml</path>
+        <guid>3c717250-fe2f-4f83-9306-70a1fe4df21d</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_ForeArm_R.xml</path>
+        <guid>c150c488-0b7f-45bb-b565-ea57a1d58f4a</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_UpperArm_L.xml</path>
+        <guid>13fe9f41-4638-4330-bf60-3ba7b89089a1</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_UpperArm_R.xml</path>
+        <guid>f4a14f88-ce43-4776-ad56-3d14f400b742</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_Leg_L.xml</path>
+        <guid>54b8ad89-dda6-4dbc-91e9-c0fbf975942e</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_Leg_R.xml</path>
+        <guid>a8c498cb-d759-4376-b54d-c039c4eae35e</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/ZD_Head.xml</path>
+        <guid>0d699714-39ef-47bc-b6e8-d3b5c485c30f</guid>
+    </files>
+</fileGuidTable>

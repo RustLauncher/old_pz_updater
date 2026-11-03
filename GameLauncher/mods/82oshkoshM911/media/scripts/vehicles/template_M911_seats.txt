@@ -1,0 +1,110 @@
+module Base
+{
+
+	model 82oshkoshM911seatfl
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m911_seat,
+		texture = Vehicles/Items_USMIL_seat0,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+	model 82oshkoshM911seatfr
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m911_seat,
+		texture = Vehicles/Items_USMIL_seat0,
+		shader = vehiclewheel,
+		scale = 0.1,
+		invertX = TRUE,
+	}
+	
+	template vehicle M911Seats
+	{
+		part SeatFrontLeft
+		{
+			
+			model SeatFL8676467
+			{
+				file = 82oshkoshM911seatfl,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+			
+			area = SeatFrontLeft,
+			container
+			{
+				seat = FrontLeft,
+			}
+		}
+
+		part SeatFrontRight
+		{
+
+			model seatFR486987
+			{
+				file = 82oshkoshM911seatfr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = SeatFrontRight,
+			container
+			{
+				seat = FrontRight,
+			}
+		}
+
+		part Seat*
+		{
+			category = seat,
+			specificItem = false,
+			itemType = USMIL.Seat0,
+			mechanicRequireKey = true,
+			container
+			{
+				test = Vehicles.ContainerAccess.Seat,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				requireEmpty = true,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}
+

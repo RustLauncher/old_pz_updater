@@ -1,0 +1,6 @@
+name=Two Weapons on Back
+id=TwoWeaponsOnBack
+description=Allows equipping a second weapon on your back using weapon slings.
+poster=poster.png
+icon=icon.png
+versionMin=42.0.0

@@ -1,0 +1,341 @@
+@alife-records 1
+
+person vp_1084
+  card.batch B05
+  card.arch va_retired_teacher
+  card.sex m
+  card.age 76
+  card.desc a slender elderly man with tidy white hair and a soft cardigan
+  card.voice VX30
+  card.seed 603918029
+  card.attract f
+  card.bond none
+  card.fear bridges
+  card.hobby writing_letters
+  card.v 1
+  name.first Everett
+  name.last Bishop
+  name.reveal intro
+  origin.town Middlesboro
+  origin.from Middlesboro, traveling away from a blocked crossing
+  origin.work retired private piano teacher and occasional dance-class accompanist
+  origin.workKind piano_teacher
+  look.skin 2
+  look.hair short
+  look.hairColor 0.9,0.9,0.85
+  look.beard none
+  look.pace walk
+  traits.open 1
+  traits.anx 5
+  traits.humor 4
+  traits.temper 4
+  traits.honest 5
+  traits.faith 1
+  traits.trustSpeed 4
+  traits.curious 5
+  traits.pride 3
+  traits.flirt 2
+  traits.social 1
+  traits.tidy 4
+  traits.nostalg 4
+  need0.hunger 1
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 3
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_old_ways_work
+  beliefs.1.s 3
+  beliefs.2.id bl_hide_underground
+  beliefs.2.s 3
+  wants.1.id wn_tv
+  wants.1.u 5
+  skills.fishing 2
+  skills.tailoring 1
+  carry.1 Base.Pen
+  carry.2 Base.Notebook
+  carry.3 Base.Comb
+  dress.role teacher_m
+  dress.flags.1 cardigan
+  dress.flags.2 tie
+  arc.stayMax 14
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.tv music_not_a_lesson
+  hooks.shelf read_aloud_to_settle
+  hooks.object f_pupils
+  books.taste.1 humor
+  books.taste.2 classic
+  facts.1.id f_pupils
+  facts.1.kind road
+  facts.1.tab past
+  facts.1.label Left Beatrice and Lewis at the footbridge
+  facts.1.gate trust>=12
+  facts.2.id f_francis
+  facts.2.kind family
+  facts.2.tab past
+  facts.2.label Francis died before Everett answered his letter
+  facts.2.gate trust>=28 & alone & flag:pupils_told
+  facts.3.id f_sunday
+  facts.3.kind family
+  facts.3.tab past
+  facts.3.label Madeline never got the promised lake trip
+  facts.3.gate trust>=44 & alone & flag:francis_told
+  facts.4.id f_device
+  facts.4.kind health
+  facts.4.tab now
+  facts.4.label Pacemaker concealed to avoid being supervised
+  facts.4.gate trust>=60 & alone & flag:sunday_told
+  facts.5.id f_tap
+  facts.5.kind hobby
+  facts.5.tab past
+  facts.5.label Doris Wiles secretly taught Everett tap
+  facts.5.gate trust>=76 & alone & flag:device_told
+  mk.1 the yellow metronome
+  mk.2 Mr. Pike's coat
+  mk.3 Mrs. Wiles
+  rt.1 7-9|table|Writes the date carefully before attempting a letter
+  rt.2 14-16|livingroom|Asks about the television and reads aloud if he cannot settle
+  rt.3 20-22|quiet corner|Smooths the swollen paperback's pages without forcing its spine
+  bl.1 fountain pen|Base.Pen|His own retirement present, chosen without anyone else's advice.
+  bl.2 letter notebook|Base.Notebook|Drafts outnumber addresses; some begin by correcting the reader.
+  bl.3 fine-toothed comb|Base.Comb|Madeline disliked seeing his part wander across his head.
+  bl.4 rain-swollen paperback||A comic novel; its first line can still make him laugh aloud.
+  bl.5 enamel derby badge||Won in 1981; a fish rather than a piano made him briefly famous locally.
+  bl.6 Francis's last envelope||The letter has been read many times but never answered.
+  rl.1 Madeline Bishop|mother, died 1974|Born 1884; Everett cared for her in 1968-74 and postponed a promised outing.
+  rl.2 Francis Bishop|older brother, died 1988|Born 1913; disagreement about Madeline's care ended their correspondence.
+  rl.3 Doris Wiles|dance teacher, former employer|He accompanied her classes, then secretly learned tap from her in 1961-67.
+  rl.4 Beatrice Holm and Lewis Pike|former piano pupils|Aged forty-nine and fifty-two in 1993; left at a crossing after Everett offered to escort them.
+end
+
+person vp_1090
+  card.batch B05
+  card.arch va_deacon
+  card.sex m
+  card.age 59
+  card.desc a composed man with clipped ash-brown hair and a carefully knotted tie
+  card.voice V05
+  card.seed 833477917
+  card.bond none
+  card.fear church_bells
+  card.hobby fantasy_football
+  card.v 1
+  name.first Douglas
+  name.last Holbrook
+  name.reveal intro
+  origin.town Louisville
+  origin.from a narrow Louisville house behind a church garden
+  origin.work kept the church accounts and arranged repairs after years packing hardware
+  origin.workKind deacon
+  look.skin 2
+  look.hair short
+  look.hairColor 0.5,0.48,0.43
+  look.beard none
+  look.pace walk
+  traits.open 1
+  traits.anx 4
+  traits.humor 1
+  traits.temper 0
+  traits.honest 3
+  traits.faith 3
+  traits.trustSpeed 5
+  traits.curious 0
+  traits.pride 3
+  traits.flirt 0
+  traits.social 3
+  traits.tidy 5
+  traits.nostalg 4
+  need0.hunger 1
+  need0.thirst 1
+  need0.cold 1
+  need0.fear 2
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_it_is_the_water
+  beliefs.1.s 3
+  beliefs.2.id bl_god_is_silent
+  beliefs.2.s 3
+  wants.1.id wn_warm_stove
+  wants.1.u 5
+  skills.gardening 1
+  carry.1 Base.Pencil
+  carry.2 Base.Notebook
+  carry.3 Base.Glasses_Reading
+  dress.role church_m
+  dress.flags.1 tie
+  dress.flags.2 glasses
+  dress.flags.3 sunday_best
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath cuffs_before_company
+  hooks.shelf checks_large_print
+  hooks.window avoids_bell_tower
+  books.taste.1 religion
+  books.taste.2 sports
+  facts.1.id f_eyes
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Hid the 1991 cataract diagnosis from the committee
+  facts.1.gate trust>=10
+  facts.2.id f_lessons
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Raymond read the lessons for his completion course
+  facts.2.gate trust>=25 & flag:eyes_told
+  facts.3.id f_tomatoes
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Entered Ruth's tomatoes under his own name
+  facts.3.gate trust>=40 & alone & flag:lessons_told
+  facts.4.id f_cellar
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Excluded nonmembers from the cellar supplies
+  facts.4.gate trust>=55 & alone & flag:tomatoes_told
+  facts.5.id f_petition
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Destroyed the neighbors' petition instead of presenting it
+  facts.5.gate trust>=70 & alone & flag:cellar_told
+  mk.1 mind the margin
+  mk.2 Sunday columns
+  mk.3 for my part
+  rt.1 7-9|kitchen|Asks which water is for washing before attending to his cuffs
+  rt.2 12-14|livingroom|Reads a register page in available daylight and closes it before company joins
+  rt.3 19-21|hall|Checks his folded tie and requests a warm place without choosing a seat himself
+  bl.1 church register|Base.Notebook|Names in Sunday columns, with one torn edge he keeps turning inward
+  bl.2 reading glasses|Base.Glasses_Reading|Raymond cleaned them every Saturday before discussing football
+  bl.3 red pencil|Base.Pencil|Used for accounts and football totals, never quite erased from the margin
+  bl.4 garden ribbon||Awarded to the tomatoes Ruth raised while Douglas received the handshake
+  bl.5 narrow tie||Ruth shortened it once after he caught the end in a garden gate
+  bl.6 cellar key||Kept separate from the house key because the committee called it a trust
+  rl.1 Ruth Holbrook|separated wife|Grew vegetables and grew tired of having her answers supplied for her
+  rl.2 Raymond Bell|nephew, born 1962|Read course lessons aloud and started their paper football league
+  rl.3 Pearl Holbrook|mother, died 1981|Kept a good cuff even when the rest of a shirt was patched
+  rl.4 Mina Phelps|church committee secretary|Asked him to present the neighbors' petition rather than decide it himself
+end
+
+person vp_1097
+  card.batch B05
+  card.arch va_baptist_preacher
+  card.sex m
+  card.age 63
+  card.desc a weathered preacher with a tidy gray beard and a frayed jacket
+  card.voice VX26
+  card.seed 495628345
+  card.attract f
+  card.bond none
+  card.fear losing_the_last_one
+  card.hobby woodcarving
+  card.v 1
+  name.first Jeremiah
+  name.last Logsdon
+  name.reveal intro
+  origin.town Elizabethtown
+  origin.from a parsonage outside Elizabethtown
+  origin.work Baptist preacher who also took factory shifts and foster placements with his wife
+  origin.workKind baptist_preacher
+  look.skin 2
+  look.hair short
+  look.hairColor 0.56,0.52,0.46
+  look.beard full
+  look.pace walk
+  traits.open 4
+  traits.anx 1
+  traits.humor 1
+  traits.temper 3
+  traits.honest 2
+  traits.faith 4
+  traits.trustSpeed 5
+  traits.curious 3
+  traits.pride 3
+  traits.flirt 4
+  traits.social 4
+  traits.tidy 1
+  traits.nostalg 4
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 5
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_cities_are_worse
+  beliefs.1.s 3
+  beliefs.2.id bl_the_dead_are_people
+  beliefs.2.s 3
+  wants.1.id wn_gas
+  wants.1.u 5
+  carry.1 Base.SheetPaper2
+  carry.2 Base.Pencil
+  carry.3 Base.KeyRing
+  dress.role clergy_m
+  dress.flags.1 work_shirt
+  dress.flags.2 tie
+  dress.flags.3 work_boots
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath crumbs_outside_first
+  hooks.bed wants_an_hour
+  hooks.window looks_for_red_pickup
+  books.taste.1 religion
+  books.taste.2 history
+  facts.1.id f_philip
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Dismissed the head count before Philip disappeared
+  facts.1.gate trust>=10
+  facts.2.id f_local
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Passing through conceals a lifetime near Elizabethtown
+  facts.2.gate trust>=25 & flag:philip_told
+  facts.3.id f_strike
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Paid three striking families' groceries after condemning them
+  facts.3.gate trust>=40 & flag:local_told
+  facts.4.id f_nola
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Could not believe the reunion promise at Nola's funeral
+  facts.4.gate trust>=55 & alone & flag:strike_told
+  facts.5.id f_ring
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Hid eighty dollars from selling Nola's ring
+  facts.5.gate trust>=70 & alone & flag:nola_told
+  mk.1 hear me plain
+  mk.2 hold a place
+  mk.3 leave some heel
+  rt.1 6-8|kitchen|Asks before wrapping any bread for the road
+  rt.2 11-13|livingroom|Carves his unfinished spoon if the host permits shavings
+  rt.3 20-22|hall|Counts his keys and requests a definite hour to leave
+  bl.1 pickup keys|Base.KeyRing|Luther filed a notch in the truck key so Jeremiah could distinguish it by touch
+  bl.2 road directions|Base.SheetPaper2|Luther's workshop turn written before anyone knew the roads would matter this much
+  bl.3 carving pencil|Base.Pencil|Marks the bowl of a spoon he keeps making too deep
+  bl.4 unfinished spoon||A plain piece of wood that has endured more sermons than any finished utensil should
+  bl.5 bread cloth||Dovie's old habit made portable; he washes it whenever water can be spared
+  bl.6 frayed jacket||Nola enlarged one pocket and refused to explain why to the congregation
+  rl.1 Nola Logsdon|wife, died 1988|Handled the foster forms and refused to let his preaching voice settle a household question
+  rl.2 Philip Carter|foster son, missing 1961|Born in 1954; his absence remains an unfinished account rather than a confirmed death
+  rl.3 Luther Bellamy|former foster son, born 1964|Truck repairer who kept Jeremiah's badly carved spoon
+  rl.4 Mose Logsdon|cousin|A snake-handling churchgoer whom Jeremiah would visit only away from a service
+end

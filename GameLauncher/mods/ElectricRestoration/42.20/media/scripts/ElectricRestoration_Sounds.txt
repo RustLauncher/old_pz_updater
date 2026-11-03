@@ -1,0 +1,28 @@
+module Base
+{
+ sound ER_PlantAmbient
+ {
+  category = World,
+  master = Ambient,
+  is3D = true,
+  loop = true,
+  clip
+  {
+   file = media/sound/ER_PlantAmbient.wav,
+   distanceMax = 85,
+   volume = 0.8,
+  }
+ }
+ sound ER_PlantStartup
+ {
+  category = World,
+  master = Ambient,
+  is3D = true,
+  clip
+  {
+   file = media/sound/ER_PlantStartup.wav,
+   distanceMax = 85,
+   volume = 0.8,
+  }
+ }
+}

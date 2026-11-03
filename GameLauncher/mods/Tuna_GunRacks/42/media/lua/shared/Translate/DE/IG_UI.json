@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "Munitionsschublade",
+    "IGUI_TunaWR_Piece_armory": "Waffenkammerschrank",
+    "IGUI_TunaWR_Piece_cabinet": "Waffenschrank",
+    "IGUI_TunaWR_Piece_fieldrack": "Waffenkammer-Gewehrständer",
+    "IGUI_TunaWR_Piece_handguncase": "Pistolenvitrine",
+    "IGUI_TunaWR_Piece_pegboard": "Gewehr-Wandhalterung",
+    "IGUI_TunaWR_Store_HANDGUN": "Rechtsklick, um eine ausgerüstete oder angebrachte Pistole zu verstauen.",
+    "IGUI_TunaWR_Store_LONG_GUN": "Rechtsklick, um eine ausgerüstete oder angebrachte Langwaffe zu verstauen."
+}

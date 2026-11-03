@@ -1,0 +1,207 @@
+VERSION = 1,
+
+option TrueCigs.BrandExtras
+{
+    type = boolean,
+    default = true,
+    page = TrueCigs,
+    translation = TrueCigs_BrandExtras,
+}
+
+option TrueCigs.EffectScale
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = TrueCigs,
+    translation = TrueCigs_EffectScale,
+}
+
+option TrueCigs.TrueSmokingIntegration
+{
+    type = boolean,
+    default = true,
+    page = TrueCigs,
+    translation = TrueCigs_TrueSmokingIntegration,
+}
+
+option TrueCigs.LootRate
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigs,
+    translation = TrueCigs_LootRate,
+}
+
+option TrueCigs.Rate_Marlboro
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Marlboro,
+}
+
+option TrueCigs.Rate_Winston
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Winston,
+}
+
+option TrueCigs.Rate_Basic
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Basic,
+}
+
+option TrueCigs.Rate_GPC
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_GPC,
+}
+
+option TrueCigs.Rate_Newport
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Newport,
+}
+
+option TrueCigs.Rate_Doral
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Doral,
+}
+
+option TrueCigs.Rate_Salem
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Salem,
+}
+
+option TrueCigs.Rate_Camel
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Camel,
+}
+
+option TrueCigs.Rate_Kool
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Kool,
+}
+
+option TrueCigs.Rate_Monarch
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Monarch,
+}
+
+option TrueCigs.Rate_BensonAndHedges
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_BensonAndHedges,
+}
+
+option TrueCigs.Rate_BestValue
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_BestValue,
+}
+
+option TrueCigs.Rate_Merit
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Merit,
+}
+
+option TrueCigs.Rate_VirginiaSlims
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_VirginiaSlims,
+}
+
+option TrueCigs.Rate_Cambridge
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Cambridge,
+}
+
+option TrueCigs.Rate_Viceroy
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_Viceroy,
+}
+
+option TrueCigs.Rate_RedApple
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = TrueCigsBrands,
+    translation = TrueCigs_Rate_RedApple,
+}

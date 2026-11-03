@@ -1,0 +1,15 @@
+module Base
+{
+
+    sound PALAnnouncerCheckpoint
+    {
+        category = World,
+        loop = false,
+        is3D = false,
+        clip
+        {
+            file = media/sound/project_alife_announcer/pal_announcer_checkpoint.ogg,
+            volume = 1.0,
+        }
+    }
+}

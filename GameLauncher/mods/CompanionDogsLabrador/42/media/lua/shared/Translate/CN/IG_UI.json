@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "拉布拉多",
+    "IGUI_AnimalType_labmale": "拉布拉多（公）",
+    "IGUI_AnimalType_labfemale": "拉布拉多（母）",
+    "IGUI_AnimalType_labpup": "拉布拉多（幼犬）",
+    "IGUI_PD_Breed_labrador": "拉布拉多",
+    "IGUI_PD_BreedDesc_labrador": "为衔回猎物而生的猎犬：训练狩猎的速度是别的狗的两倍，服从紧随其后。作为代价，它是本家族中最差的斗犬之一：只有巴哥犬咬合更弱，无法击倒，打一架就会让它相当不安。它真正的天赋在于那张嘴。从它能够狩猎的那一刻起，它就会把猎物叼回给你，而不必等到狩猎等级很高；路上绝不松口，而且常常还会顺带叼回它捡到的别的东西（软口衔取）。常见于民宅，也会在猎人小屋、露营地、船屋和护林站附近出没。有它在身边，处理它叼回来的猎物也更顺手。",
+    "IGUI_PD_Moodle_SoftMouth": "软口衔取",
+    "IGUI_PD_Moodle_SoftMouth_desc": "你的拉布拉多从第一次狩猎起就会把每一次猎物叼回来，还常常额外带回点什么。只要它在身边、吃饱且忠诚，你的屠宰与短刃也学得更快。",
+    "IGUI_PD_LabExtra": "你的%1还给你叼回了：%2。"
+}

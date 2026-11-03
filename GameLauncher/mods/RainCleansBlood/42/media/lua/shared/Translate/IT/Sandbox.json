@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "La pioggia lava il sangue",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Celle al minuto",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Quante celle casuali vengono pulite per minuto di gioco.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Soglia di intensità meteo",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Quanto deve essere intensa la pioggia o la neve prima che il sangue venga lavato via. Più alto = serve un meteo più intenso.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Pulisci cenere",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Pulisce anche la cenere lasciata dai cadaveri bruciati.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Pulisci escrementi animali",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Pulisce anche gli escrementi animali (letame) lasciati a terra.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Pulisci interno",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Pulisce anche il sangue all'interno degli edifici.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Pulisci veicoli",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Pulisce gradualmente anche il sangue dai veicoli.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Velocità di pulizia veicoli",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Quanto sangue viene rimosso dai veicoli al minuto.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Pulisci vestiti",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Pulisce gradualmente anche il sangue e lo sporco dai vestiti indossati dai giocatori.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Velocità di pulizia vestiti",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Quanto sangue e sporco vengono rimossi dai vestiti al minuto.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Pulisci sempre",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Pulisce sempre indipendentemente dal meteo."
+}

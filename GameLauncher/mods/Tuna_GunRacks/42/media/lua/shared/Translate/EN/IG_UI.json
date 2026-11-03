@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "Ammo Drawer",
+    "IGUI_TunaWR_Piece_armory": "Armory Cabinet",
+    "IGUI_TunaWR_Piece_cabinet": "Gun Cabinet",
+    "IGUI_TunaWR_Piece_fieldrack": "Armory Rifle Rack",
+    "IGUI_TunaWR_Piece_handguncase": "Handgun Display Case",
+    "IGUI_TunaWR_Piece_pegboard": "Rifle Wall Rack",
+    "IGUI_TunaWR_Store_HANDGUN": "Right-click to store an equipped or attached handgun.",
+    "IGUI_TunaWR_Store_LONG_GUN": "Right-click to store an equipped or attached long gun."
+}

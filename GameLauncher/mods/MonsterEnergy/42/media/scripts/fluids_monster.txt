@@ -1,0 +1,56 @@
+module Base
+{
+    fluid MonsterEnergy
+    {
+        ColorReference = LimeGreen,
+        DisplayName = Monster,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -15.0,
+            enduranceChange = 10.0,
+            ThirstChange = -25.0,
+            HungerChange = -5.0,
+            UnhappyChange = -15.0,
+            StressChange = -10.0,
+            Calories = 210.0,
+            Carbohydrates = 54.0,
+        }
+    }
+
+    fluid MonsterUltra
+    {
+        ColorReference = White,
+        DisplayName = Monster Ultra,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -15.0,
+            enduranceChange = 10.0,
+            ThirstChange = -28.0,
+            HungerChange = 0.0,
+            UnhappyChange = -12.0,
+            StressChange = -10.0,
+            Calories = 10.0,
+            Carbohydrates = 2.0,
+        }
+    }
+
+    fluid MonsterJuice
+    {
+        ColorReference = Orange,
+        DisplayName = Monster Juice,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -10.0,
+            enduranceChange = 6.0,
+            ThirstChange = -40.0,
+            HungerChange = -12.0,
+            UnhappyChange = -18.0,
+            StressChange = -8.0,
+            Calories = 290.0,
+            Carbohydrates = 70.0,
+        }
+    }
+}

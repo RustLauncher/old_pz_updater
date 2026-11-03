@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle AxleV100A3
+	{
+        template! = runFlatsLarge4AxleRear,
+
+		part TireRearLeft
+		{
+			area = TireRearLeft,
+			wheel = RearLeft,
+			table install
+			{
+				requireInstalled = BrakeRearLeft;SuspensionRearLeft,
+			}
+		}
+
+		part TireRearRight
+		{
+			area = TireRearRight,
+			wheel = RearRight,
+			table install
+			{
+				requireInstalled = BrakeRearRight;SuspensionRearRight,
+			}
+		}
+
+
+		part TireRear*
+		{
+                itemType = runFlat.Large4TireAxle,
+
+		}
+	}
+}
+

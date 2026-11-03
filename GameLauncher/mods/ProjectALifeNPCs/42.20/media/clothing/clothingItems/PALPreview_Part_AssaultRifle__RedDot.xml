@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Part_AssaultRifle__RedDot</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Part_AssaultRifle__RedDot</m_FemaleModel>
+  <m_GUID>78ca3141-5b13-94a5-7d04-a2d42e3f48b5</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Handgun_RedDotScope</textureChoices>
+</clothingItem>

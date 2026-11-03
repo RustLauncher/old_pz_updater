@@ -1,0 +1,9 @@
+name=Instant Car Crush
+id=InstantCarCrush
+description=Instantly kills zombies when you drive over them with enough speed
+modversion=1.0
+tags=Build 42; QoL; Multiplayer
+poster=poster.png
+author=Becky!BECKY!
+versionMin=42.0
+versionMax=

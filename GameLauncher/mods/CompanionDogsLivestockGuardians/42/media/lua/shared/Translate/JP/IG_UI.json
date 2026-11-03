@@ -1,0 +1,14 @@
+{
+    "IGUI_Breed_anatolianshepherd": "アナトリアン・シェパード",
+    "IGUI_AnimalType_anatolianmale": "アナトリアン・シェパード（オス）",
+    "IGUI_AnimalType_anatolianfemale": "アナトリアン・シェパード（メス）",
+    "IGUI_AnimalType_anatolianpup": "アナトリアン・シェパード（子犬）",
+    "IGUI_PD_Breed_anatolianshepherd": "アナトリアン・シェパード",
+    "IGUI_PD_BreedDesc_anatolianshepherd": "淡いフォーンの被毛、クリーム色の腹部、黒いマスクを持つ大型で勇敢な家畜護衛犬。戦闘を素早く学び、大きなサドルバッグを運び、飼い主のパニックを和らげます。",
+    "IGUI_Breed_greaterswissmountaindog": "グレーター・スイス・マウンテン・ドッグ",
+    "IGUI_AnimalType_greaterswissmale": "グレーター・スイス・マウンテン・ドッグ（オス）",
+    "IGUI_AnimalType_greaterswissfemale": "グレーター・スイス・マウンテン・ドッグ（メス）",
+    "IGUI_AnimalType_greaterswisspup": "グレーター・スイス・マウンテン・ドッグ（子犬）",
+    "IGUI_PD_Breed_greaterswissmountaindog": "グレーター・スイス・マウンテン・ドッグ",
+    "IGUI_PD_BreedDesc_greaterswissmountaindog": "農場の警護、荷車引き、家畜の誘導のために育てられた、大型で勇敢な三色の作業犬。戦闘を素早く学び、大きなサドルバッグを運び、飼い主のパニックを和らげます。"
+}

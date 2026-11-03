@@ -1,0 +1,31 @@
+Colorful World
+https://steamcommunity.com/sharedfiles/filedetails/?id=null
+
+Copyright (c) Kechna. All rights reserved.
+
+This mod, including all of its code, scripts, translations, textures, sounds and
+other assets (the "Mod"), is NOT open source. You may only use it as described below.
+
+YOU MAY:
+  1. Download the Mod through the Steam Workshop and use it in single-player games
+     and on multiplayer servers, including public servers.
+  2. Make your own mod depend on the Mod by listing it as a required Steam Workshop
+     item and calling its functions, as long as you don't copy any of its files or code.
+
+YOU MAY NOT, without prior written permission from the author:
+  1. Re-upload, redistribute, mirror or sell the Mod or any part of it, including as
+     part of a modpack or collection upload. Linking to the original Workshop item is fine.
+  2. Copy, port, translate into another programming language, rewrite or adapt the
+     Mod's code or assets, in whole or in part, for use in another mod or work. This
+     applies no matter how the copy is made, by hand or with automated tools
+     (AI included).
+  3. Publish modified versions of the Mod.
+
+Versions of the Mod released before this license was added stay under the license
+they were originally released with.
+
+THE MOD IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO
+EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE MOD OR ITS USE.
+
+To request permission, contact the author via the Steam Workshop page above.

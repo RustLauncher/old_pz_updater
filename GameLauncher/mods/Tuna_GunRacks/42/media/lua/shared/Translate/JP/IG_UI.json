@@ -1,0 +1,10 @@
+{
+    "IGUI_ContainerTitle_TunaWeaponRackAmmoDrawer": "弾薬引き出し",
+    "IGUI_TunaWR_Piece_armory": "武器保管庫",
+    "IGUI_TunaWR_Piece_cabinet": "ガンキャビネット",
+    "IGUI_TunaWR_Piece_fieldrack": "武器庫ライフルラック",
+    "IGUI_TunaWR_Piece_handguncase": "ハンドガン展示ケース",
+    "IGUI_TunaWR_Piece_pegboard": "ライフル壁掛けラック",
+    "IGUI_TunaWR_Store_HANDGUN": "右クリックで装備中または装着中のハンドガンを収納します。",
+    "IGUI_TunaWR_Store_LONG_GUN": "右クリックで装備中または装着中の長銃を収納します。"
+}

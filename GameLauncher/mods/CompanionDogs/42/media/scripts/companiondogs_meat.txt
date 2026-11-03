@@ -1,0 +1,33 @@
+module Base
+{
+    /* Carne de abate do cao. A engine multiplica a fome, as calorias e a contagem de pecas pelo animalSize
+       da carcaca (IsoAnimal.addAnimalPart/modifyMeat), e os caes do mod usam 1.17 a 2.43 de size como
+       escala visual. Por isso a fome base aqui e menor que a do Smallanimalmeat vanilla. */
+    item CompanionDogsDogMeat
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = Smallanimalmeat,
+        BadCold = true,
+        BadInMicrowave = true,
+        DangerousUncooked = true,
+        EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Rice:15;Pasta:15;AddBaitToChum:15,
+        FoodType = Game,
+        GoodHot = true,
+        IsCookable = true,
+        MinutesToCook = 20,
+        MinutesToBurn = 70,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
+        HungerChange = -10.0,
+        Calories = 134.0,
+        Carbohydrates = 3.3,
+        Lipids = 4.8,
+        Proteins = 30.0,
+        FishingLure = true,
+        StaticModel = SmallAnimalMeat_Ground,
+        WorldStaticModel = SmallAnimalMeat_Ground,
+        CookingSound = FryingFood,
+    }
+}

@@ -1,0 +1,41 @@
+/* module Base and xuiSkin default are ENGINE vocabulary; ES_Tuna_* is the identifier this mod owns */
+module Base
+{
+    xuiSkin default
+    {
+        /* every piece names the SAME window class: a per-piece one is excluded by piece-descriptor.md */
+        entity ES_Tuna_WeaponRack
+        {
+            LuaWindowClass = TunaWeaponRackWindow,
+            DisplayName = IGUI_TunaWR_Piece_cabinet,
+            /* Icon is the ONLY lever reaching the build menu, and a name with no shipped texture becomes a question mark */
+            Icon = Tuna_WeaponRack_Cabinet,
+        }
+        entity ES_Tuna_HandgunCase
+        {
+            LuaWindowClass = TunaWeaponRackWindow,
+            DisplayName = IGUI_TunaWR_Piece_handguncase,
+            Icon = Tuna_WeaponRack_HandgunCase,
+        }
+        entity ES_Tuna_Armory
+        {
+            LuaWindowClass = TunaWeaponRackWindow,
+            DisplayName = IGUI_TunaWR_Piece_armory,
+            /* the two-cell S composite: half a cabinet reads as a different piece */
+            Icon = Tuna_WeaponRack_Armory,
+        }
+
+        entity ES_Tuna_PegBoard
+        {
+            LuaWindowClass = TunaWeaponRackWindow,
+            DisplayName = IGUI_TunaWR_Piece_pegboard,
+            Icon = Tuna_WeaponRack_PegBoard,
+        }
+        entity ES_Tuna_FieldRack
+        {
+            LuaWindowClass = TunaWeaponRackWindow,
+            DisplayName = IGUI_TunaWR_Piece_fieldrack,
+            Icon = Tuna_WeaponRack_FieldRack,
+        }
+    }
+}

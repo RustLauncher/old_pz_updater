@@ -1,0 +1,1087 @@
+module PantsCollection
+{
+    imports
+    {
+        Base,
+    }
+
+    item Pants_OliveCargoWorn
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_OliveCargoWorn,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_OliveCargoWorn,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BlackBlueLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BlackBlueLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BlackBlueLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_BlackBlueLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerTealLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerTealLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerTealLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerTealLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerTurquoiseLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerTurquoiseLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerTurquoiseLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerTurquoiseLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NavySportLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NavySportLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NavySportLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_NavySportLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerPinkLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerPinkLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerPinkLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerPinkLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WhiteKnitLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WhiteKnitLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WhiteKnitLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_WhiteKnitLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NavyStrokeLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NavyStrokeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NavyStrokeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_NavyStrokeLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BlueMarbleLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BlueMarbleLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BlueMarbleLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_BlueMarbleLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_LightBlueJeans
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_LightBlueJeans,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_LightBlueJeans,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Denim,
+        Insulation = 0.65,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.6,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BlackRippedJeans
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BlackRippedJeans,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BlackRippedJeans,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Denim,
+        Insulation = 0.65,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.6,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_GreyStripeLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_GreyStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_GreyStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_GreyStripeLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerBrightLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerBrightLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerBrightLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerBrightLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerWhiteLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerWhiteLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerWhiteLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerWhiteLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_MissouriCargoKhaki
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_MissouriCargoKhaki,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_MissouriCargoKhaki,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_MissouriCargoNavy
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_MissouriCargoNavy,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_MissouriCargoNavy,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_MissouriCargoOlive
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_MissouriCargoOlive,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_MissouriCargoOlive,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_MissouriCargoCharcoal
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_MissouriCargoCharcoal,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_MissouriCargoCharcoal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_MissouriCargoStoneGrey
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_MissouriCargoStoneGrey,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_MissouriCargoStoneGrey,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NeonBlackLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NeonBlackLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NeonBlackLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_NeonBlackLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_IceBlueLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_IceBlueLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_IceBlueLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_IceBlueLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NeonTealLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NeonTealLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NeonTealLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_NeonTealLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerWhitePinkLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerWhitePinkLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerWhitePinkLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_FlowerWhitePinkLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BabyBlueStripeLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BabyBlueStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BabyBlueStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_BabyBlueStripeLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_GreyPinkStripe2Legging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_GreyPinkStripe2Legging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_GreyPinkStripe2Legging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_GreyPinkStripe2Legging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_SalmonStripeLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_SalmonStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_SalmonStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_SalmonStripeLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_SoftPinkStripeLegging
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_SoftPinkStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_SoftPinkStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearNormal,
+        ClothingItemExtra = PantsCollection.Pants_SoftPinkStripeLegging_Under,
+        ClothingItemExtraOption = PantsCollection_WearUnder,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_SafariPants
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_SafariPants,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_SafariPants,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_RippedSkinnyJeans
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_RippedSkinnyJeans,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_RippedSkinnyJeans,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Denim,
+        Insulation = 0.65,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.6,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WornCargoStoneGrey
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WornCargoStoneGrey,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WornCargoStoneGrey,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WornCargoCharcoal
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WornCargoCharcoal,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WornCargoCharcoal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WornCargoNavy
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WornCargoNavy,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WornCargoNavy,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WornCargoTan
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WornCargoTan,
+        BiteDefense = 10,
+        BloodLocation = Trousers,
+        BodyLocation = base:pants_skinny,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WornCargoTan,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        FabricType = Cotton,
+        Insulation = 0.45,
+        RemoveOnBroken = false,
+        ScratchDefense = 20,
+        WindResistance = 0.3,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+
+    item Pants_BlackBlueLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BlackBlueLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BlackBlueLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_BlackBlueLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerTealLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerTealLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerTealLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerTealLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerTurquoiseLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerTurquoiseLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerTurquoiseLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerTurquoiseLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NavySportLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NavySportLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NavySportLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_NavySportLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerPinkLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerPinkLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerPinkLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerPinkLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_WhiteKnitLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_WhiteKnitLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_WhiteKnitLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_WhiteKnitLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NavyStrokeLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NavyStrokeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NavyStrokeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_NavyStrokeLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BlueMarbleLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BlueMarbleLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BlueMarbleLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_BlueMarbleLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_GreyStripeLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_GreyStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_GreyStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_GreyStripeLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerBrightLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerBrightLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerBrightLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerBrightLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerWhiteLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerWhiteLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerWhiteLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerWhiteLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NeonBlackLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NeonBlackLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NeonBlackLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_NeonBlackLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_IceBlueLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_IceBlueLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_IceBlueLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_IceBlueLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_NeonTealLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_NeonTealLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_NeonTealLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_NeonTealLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_FlowerWhitePinkLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_FlowerWhitePinkLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_FlowerWhitePinkLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_FlowerWhitePinkLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_BabyBlueStripeLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_BabyBlueStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_BabyBlueStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_BabyBlueStripeLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_GreyPinkStripe2Legging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_GreyPinkStripe2Legging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_GreyPinkStripe2Legging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_GreyPinkStripe2Legging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_SalmonStripeLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_SalmonStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_SalmonStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_SalmonStripeLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    item Pants_SoftPinkStripeLegging_Under
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = Pants_SoftPinkStripeLegging,
+        BloodLocation = Trousers,
+        BodyLocation = base:legs1,
+        BreakSound = ZombieRipClothing,
+        ClothingItem = Pants_SoftPinkStripeLegging,
+        ClothingExtraSubmenu = PantsCollection_WearUnder,
+        ClothingItemExtra = PantsCollection.Pants_SoftPinkStripeLegging,
+        ClothingItemExtraOption = PantsCollection_WearNormal,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 20,
+        Insulation = 0.30,
+        RemoveOnBroken = false,
+        ScratchDefense = 8,
+        WindResistance = 0.25,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+}

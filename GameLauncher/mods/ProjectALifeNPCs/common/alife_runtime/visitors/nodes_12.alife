@@ -1,0 +1,1354 @@
+@alife-records 1
+
+node vp_1338.VQ_HOUSE_BATH
+  t.any.1 Please.. will ask before using up your washing water
+  t.any.2 Could use a wash.. boots stay outside the clean bit
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_HOUSE_BED
+  t.any.1 Yes.. tell me when you need it back
+  t.any.2 Would like to lie down.. that's a yes without a speech
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_HOUSE_CHAIR
+  t.any.1 All right.. somewhere I can see the way out would suit
+  t.any.2 Could sit.. don't need the best one
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_HOUSE_LOCKS
+  t.any.1 Would rather check for myself if you're offering
+  t.any.2 Let me see what secures the door.. saying safe doesn't settle me
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_HOUSE_RADIO
+  t.any.1 Try it.. still want somebody on air to say something plain
+  t.any.2 Yes.. might be instructions instead of more guessing
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_HELP
+  t.any.1 Can mend a roof if you've materials.. paint too, though that's less urgent
+  t.any.2 Good with a brush and shingles.. don't volunteer me for electrical work
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_HUNGRY
+  gate.rule need:hunger>=2
+  t.any.1 Could eat.. wasn't wanting to make that your problem
+  t.any.2 Yes.. appetite's decided to speak for itself
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_HUNGRY.d
+  t.any.1 Not after food at the moment.. rest matters more
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_NOW_HURT
+  t.any.1 Ask me where before poking.. can check anything that worries you
+  t.any.2 Roofing left old aches.. would rather check than guess about a new one
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_PLAN
+  t.any.1 Stop before I make a stupid choice from tiredness.. then look for May
+  t.any.2 Need a direction that isn't simply away.. haven't chosen it yet
+  t.any.3 Need to make my own next choice. Advice isn't forbidden; orders are
+  t.any.4 Haven't picked. I can admit that without handing the choice over
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_THIRSTY
+  gate.rule need:thirst>=2
+  t.any.1 Yes.. need a drink, however proud I sound
+  t.any.2 Throat's dry.. water would do
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_THIRSTY.d
+  t.any.1 Enough to drink for now.. don't pour more on my account
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_NOW_TIRED
+  t.any.1 Last sleep? Couldn't give you an hour.. tired enough to envy a folded towel
+  t.any.2 Can't put a time to it.. could lie down if that's allowed
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_TRUST
+  t.any.1 Enough to stay talking.. don't start giving me orders
+  t.any.2 Getting there.. still dislike being dependent, whoever's offering
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_WANT
+  gate.rule trust>=30 & flag:trainees_told
+  t.any.1 Want a bed.. say I need nothing because asking shames me.. owner took my rented room back before all this, so there isn't a room waiting for me
+  fx.1 reveal f_need
+  fx.2 set flag:need_told
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_NOW_WANT.d
+  t.any.1 Want a say in how I'm helped.. haven't decided how to ask
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_NOW_WANT.d2
+  t.any.1 Want to be able to ask without feeling small.. not there yet
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_NOW_WASH
+  t.any.1 Would like to clean up.. grit gets everywhere in roofing clothes
+  t.any.2 Yes.. point me toward washing water before I help myself
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_OFFER_CARDS
+  t.any.1 Cards will do.. prefer dominoes but won't refuse a game
+  t.any.2 Yes.. no betting anything either of us needs
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_OFFER_DRINK
+  t.any.1 I'll take you up on that.. thanks
+  t.any.2 Yes please.. no need for a special fuss
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_OFFER_FOOD
+  t.any.1 Could take a little if there's enough
+  t.any.2 Yes.. let me choose my share rather than piling it up
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_OFFER_WORK
+  t.any.1 Tell me the job before naming what it's worth
+  t.any.2 Can trade work.. not promising an entire roof for one supper
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_BOSS
+  gate.rule trust>=15
+  t.any.1 Foreman paid late and wanted us early.. made crew leader in ninety.. left two grown trainees to collect my pay.. Dale fell off their unsecured ladder and broke an ankle.. I was supposed to be watching them
+  fx.1 reveal f_trainees
+  fx.2 set flag:trainees_told
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_BOSS.d
+  t.any.1 Foreman could put pay off for weeks.. not ready to discuss the rest
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_CHILDHOOD
+  t.any.1 Always helping paint.. Dad said paint side out before he said good morning
+  t.any.2 Had lake reunions every summer.. stayed on the bank and ate enough for two swimmers
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_DAYONE
+  t.any.1 Was in the truck when people started leaving.. spent too long wondering where they knew to go
+  t.any.2 Heard frightened talk, put my boots on properly and kept moving.. no clever plan
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_FAMILY
+  t.any.1 Dad Amos and Aunt May.. both last known near Cave City
+  t.any.2 Trying to hear about May.. Dad and me weren't speaking when this started
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_FIRSTJOB
+  t.any.1 Paid painting with Dad after school ended in eighty
+  t.any.2 First proper wages were for house painting.. Dad deducted the brush I ruined
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_HOBBY
+  t.any.1 Dominoes.. double six trouble when May gets it twice running
+  t.any.2 Quilted with May's circle.. mostly went for the dominoes afterward
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_REGRET
+  gate.rule trust>=75 & alone & flag:report_told
+  t.any.1 Promised May the memorial quilt would stay with our circle.. sold it in ninety-two for my truck repair.. blamed a mistake by the buyer.. no mistake, just me choosing my truck
+  fx.1 reveal f_quilt
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_REGRET.d
+  t.any.1 Don't want to sort my regrets for company
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_REGRET.d2
+  t.any.1 May deserves an answer.. not ready to give hers here
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_SCHOOL
+  gate.rule trust>=45 & alone & flag:need_told
+  t.any.1 Finished school in eighty.. roofing safety course later.. changed the expiry date on its card in eighty-eight when the boss wouldn't pay for a repeat.. card wasn't valid, whatever I made it say
+  fx.1 reveal f_card
+  fx.2 set flag:card_told
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_SCHOOL.d
+  t.any.1 Finished in nineteen-eighty.. practical courses afterward
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_SCHOOL.d2
+  t.any.1 School was easy to leave behind.. course papers less so
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_TROUBLE
+  gate.rule trust>=60 & alone & flag:card_told
+  t.any.1 Told the foreman Gwen was gathering a wage complaint in eighty-nine.. she was my friend.. he fired her and made me crew leader.. didn't ask where the promotion came from
+  fx.1 reveal f_report
+  fx.2 set flag:report_told
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_PAST_TROUBLE.d
+  t.any.1 Plenty on the crew.. not discussing names out loud yet
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_TROUBLE.d2
+  t.any.1 Some work trouble was my doing.. leave it until we're private
+  tag.1 kind:deflect
+end
+
+node vp_1338.VQ_PAST_WORK
+  t.any.1 Roofing since eighty-six.. foreman yelled heels down every time we crossed a slope
+  t.any.2 House paint first, then shingles.. paid better up on the roof
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_AGE
+  t.any.1 Thirty-one.. young enough to get every heavy end
+  t.any.2 Born in sixty-two.. thirty-one now
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_DISLIKES
+  t.any.1 A man explaining my own ladder to me
+  t.any.2 People calling me little lady while handing me the heavy end
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_FEAR
+  t.any.1 The river.. lake water's bad enough when it stays put
+  t.any.2 Water moving faster than me.. that's the one I won't argue with
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_FOOD
+  t.any.1 Cornbread with the crisp edge.. middle can go to somebody else
+  t.any.2 Peaches cold from a jar.. May always counted the halves
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_FROM
+  t.any.1 Cave City.. not from a cave, before you ask
+  t.any.2 Cave City.. room over an old repair shop for a while
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_HABIT
+  t.any.1 Hands keep wanting to check a door twice.. don't start counting for me
+  t.any.2 Pick paint from under my thumbnail.. can be nothing there and I'll still do it
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_HOWARE
+  gate.rule !flag:need_told
+  t.lo.1 Fine.. don't need a thing
+  t.lo.2 Still standing.. save the fuss
+  t.mid.1 Getting on.. heels down, keep going
+  t.mid.2 Not in a mood for being looked after
+  t.mid.3 Still capable of answering for myself. Start there
+  t.mid.4 Could use a question that isn't trying to manage me
+  t.mid.5 Better now you aren't telling me what I must be feeling
+  t.hi.1 Don't believe the fine too hard.. that's all I'm saying
+  t.hi.2 Could do without being brave for an audience
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_HOWARE.a2
+  gate.rule trust>=30 & flag:trainees_told & flag:need_told
+  t.any.1 Still embarrassed about needing a place.. less tired of saying it now
+  t.any.2 No room of my own.. pretending otherwise took more effort than asking
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_JOKE
+  t.any.1 Dad said paint side out like I might put the wall on backward.. charged him an extra dollar for remembering
+  t.any.2 Want a roofing joke? Goes over most people's heads.. yes, I know, dreadful
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_LIKES
+  t.any.1 Winning at dominoes without anybody blaming luck
+  t.any.2 Clean socks after a roof job.. no grand explanation for it
+  t.any.3 Getting a difficult bit right before somebody offers to take it away from me
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_NAME
+  t.any.1 Elise Fugate.. no need to stretch it out
+  t.any.2 Fugate.. Elise if you're not collecting names
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_NERVOUS
+  t.any.1 A little.. keep wanting to check where I can get out
+  t.any.2 Don't like needing anybody's permission to leave.. makes me fidget
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_QUIET
+  t.any.1 Fine by me.. don't mistake quiet for agreeing
+  t.any.2 Can stop talking.. can't promise to stop thinking about the door
+  t.any.3 Yes. You don't have to keep me occupied
+  t.any.4 Stay if you want. Quiet isn't me sulking at you
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_STORY
+  t.any.1 May once dropped a domino into her cobbler while we played beside the oven.. served it to Amos and waited for him to complain.. double six trouble, she called it, as if he'd ordered the thing
+  t.any.2 Family reunion at the lake.. somebody persuaded Dad to try a pedal boat.. he came back claiming the pedals were fitted wrong because his sister did all the work.. none of us let him forget
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_TALK_TV
+  t.any.1 First set I saw belonged to the neighbors.. would have watched a blank test pattern
+  t.any.2 Liked the game shows.. shouted answers that nobody in the set could hear
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_WORLD_GUARD
+  t.any.1 No soldiers that I saw.. nobody directing me
+  t.any.2 Haven't met the Guard.. might be elsewhere, wouldn't know
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_WORLD_PLANS
+  t.any.1 Dry roof before anything pretty.. find out what this place needs, not what I imagine it has
+  t.any.2 Would start with a roof check and a sleeping plan.. we can decide the rest after that
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_WORLD_RADIO
+  t.any.1 Haven't heard a broadcast I'd use as instructions yet
+  t.any.2 No useful report from me.. still hoping the radio can give one
+  tag.1 kind:answer
+end
+
+node vp_1338.VQ_WORLD_ROAD
+  t.any.1 Got along on foot.. wouldn't send a truck from that alone
+  t.any.2 Can't certify the route.. turned around where I didn't like the look of it
+  tag.1 kind:answer
+end
+
+node vp_1338.leave.angry
+  t.any.1 Leaving before I say worse
+  t.any.2 This isn't doing either of us good.. I'm going
+  tag.1 kind:leave
+end
+
+node vp_1338.leave.plain
+  t.any.1 Off now.. take care of yourself
+  t.any.2 Time to get my feet moving again
+  tag.1 kind:leave
+end
+
+node vp_1338.react.compliment
+  t.any.1 Careful.. might start believing you
+  t.any.2 Well.. keep that one, I liked it
+  tag.1 kind:react
+end
+
+node vp_1338.react.gave_blanket
+  t.any.1 Thank you.. useful thing to spare
+  t.any.2 Glad of this.. won't pretend otherwise
+  tag.1 kind:react
+end
+
+node vp_1338.react.gave_book
+  t.any.1 Thanks.. haven't had much to read lately
+  t.any.2 Something to occupy my head.. might do me good
+  tag.1 kind:react
+end
+
+node vp_1338.react.gave_clothes
+  t.any.1 Thanks.. let's see what fits me
+  t.any.2 A change to wear.. appreciate it
+  tag.1 kind:react
+end
+
+node vp_1338.react.gave_food
+  t.any.1 Thank you.. appreciate a share
+  t.any.2 That's kind.. I'll stop fighting the idea of being helped
+  tag.1 kind:react
+end
+
+node vp_1338.react.gave_water
+  t.any.1 Water helps.. thanks for it
+  t.any.2 Thank you.. no proud answer for this one
+  tag.1 kind:react
+end
+
+node vp_1338.react.insult
+  t.any.1 Watch how you speak to me
+  t.any.2 That's enough of that.. I'm not here for it
+  tag.1 kind:react
+end
+
+node vp_1338.react.refused
+  t.any.1 Your choice.. mine's what I do next
+  t.any.2 No is clear enough.. don't dress it up
+  tag.1 kind:react
+end
+
+node vp_1338.react.sorry
+  t.any.1 All right.. we'll see how it goes from here
+  t.any.2 Can hear an apology without becoming cheerful straight off
+  tag.1 kind:react
+end
+
+node vp_1338.react.thanks
+  t.any.1 Good.. thought that would help
+  t.any.2 You're welcome.. don't make it ceremonial
+  tag.1 kind:react
+end
+
+node vp_1338.react.threat
+  t.any.1 Back off.. don't make this worse
+  t.any.2 Give me room.. want no part of a fight
+  tag.1 kind:react
+end
+
+node vp_1338.return.arrive
+  t.any.1 Elise.. mind if I stop a while?
+  t.any.2 Back again.. not assuming a place is saved for me
+  tag.1 kind:return
+end
+
+node vp_1345.VQ_HOUSE_BED
+  t.any.1 Yes please.. would like to know whether anyone will still be nearby
+  t.any.2 A rest would help.. tell me if there's a time I must get up
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_HOUSE_PHONE
+  t.any.1 Would ask about Colin's prison if a call is possible.. don't expect a simple answer
+  t.any.2 Somebody at Colin's prison.. might be no way through, but that's whom I'd try
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_HOUSE_QUIET
+  t.any.1 Quiet is welcome if I'm not the only person left
+  t.any.2 No extra noise for me.. just say if you intend to go away
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_HOUSE_SHELF
+  t.any.1 May look for a mystery.. ask before I take one away
+  t.any.2 Would like to browse.. won't rearrange your shelves, tempting though it is
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_HOUSE_WELCOME
+  t.any.1 Thank you.. not quite ready to call anywhere home
+  t.any.2 Would like to stop here a while.. show me where my things won't interfere
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_HELP
+  t.any.1 Can sort written records.. and mend a simple tear if there's thread
+  t.any.2 Useful with lists.. tell me what needs recording before I invent a system you hate
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_HUNGRY
+  gate.rule need:hunger>=2
+  t.any.1 Yes.. would prefer a little food to another question about it
+  t.any.2 Hungry enough to stop pretending reading will distract me
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_HUNGRY.d
+  t.any.1 Not looking for more food just now
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_NOW_HURT
+  t.any.1 Please ask before touching.. if you're concerned, we can check
+  t.any.2 Not very good at judging myself under stress.. tell me what concerns you
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_PLAN
+  t.any.1 Find reliable word about Colin's prison.. won't travel on a rumor alone
+  t.any.2 Somewhere to stop, then an inquiry about Colin.. in that order
+  t.any.3 Nothing decided. I dislike uncertainty, but a tidy fiction is worse
+  t.any.4 I need a possible next step, not a list of what a sensible woman would do
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_TIRED
+  t.any.1 Not sure when I last slept properly.. knitting a row twice would be an achievement at present
+  t.any.2 Haven't a reliable time to give you.. would like to rest within calling distance
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_TRUST
+  t.any.1 Enough to tell you I dislike this question
+  t.any.2 Beginning to.. measuring it aloud makes me retreat a little
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_WANT
+  t.any.1 Quiet with somebody nearby.. doesn't require entertaining me
+  t.any.2 A place I don't have to keep asking permission to be quiet in
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_NOW_WASH
+  t.any.1 Would welcome a wash.. where may I do that?
+  t.any.2 Yes.. don't want to put dirty hands near anybody's clean things
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_OFFER_BOOK
+  t.any.1 A mystery if there's one available.. otherwise I'll browse
+  t.any.2 Gladly.. tell me when you'd like it returned before I begin
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_OFFER_CARDS
+  t.any.1 A quiet game would suit.. no need to let me win
+  t.any.2 Yes.. reserve the right to be annoyed when I lose
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_OFFER_FOOD
+  t.any.1 Yes please.. let me know which is for sharing
+  t.any.2 Would appreciate some.. if it's packaged I can read the label myself, print side up if possible
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_OFFER_SOAP
+  t.any.1 Would appreciate that.. where should I wash?
+  t.any.2 Yes.. will leave the washing space as I find it if I can
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_CHURCH
+  t.any.1 Went to a church hall when this began.. wanted people nearby, not a sermon
+  t.any.2 Not much of a churchgoer.. the hall had company that first day
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_DAYONE
+  t.any.1 Went to the church hall.. didn't want to hear my own footsteps alone
+  t.any.2 Took my notebook, then went looking for a room with other people in it
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_FAMILY
+  t.any.1 My son Colin was in prison when I last had reliable news.. don't know what's happening there now
+  t.any.2 Brother Ellis somewhere out of touch.. Colin imprisoned.. no reunion arranged for me
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_FIRSTJOB
+  t.any.1 Library assistant in sixty-seven.. labels first, desk later
+  t.any.2 First pay was library work at nineteen.. learned people's names before their reading tastes
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_HOBBY
+  t.any.1 Knitting.. can make a cuff if you allow it a little character
+  t.any.2 Read mysteries off duty.. not every book passing the desk
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_HOUSE
+  t.any.1 Upstairs flat.. enough stair climbing to discourage casual callers
+  t.any.2 Small flat.. kept cans under the bed because the kitchen had no storage
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_LOST
+  gate.rule trust>=35 & flag:alias_told
+  t.any.1 Lost the right to call a visit welcome.. questioned Colin's prison work supervisor in ninety-two.. Colin asked me to stop coming.. still sent requests, and he refused them
+  fx.1 reveal f_visits
+  fx.2 set flag:visits_told
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_LOST.d
+  t.any.1 Some people are alive and still out of reach
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_LOST.d2
+  t.any.1 Colin's a difficult subject.. leave me some room
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_LOVE
+  t.any.1 Married Dennis in sixty-nine.. he left five years later
+  t.any.2 Dennis could be charming to a room.. difficult to share one with
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_MONEY
+  gate.rule trust>=38 & alone & flag:visits_told
+  t.any.1 Inheritance, if you insist.. forged Ellis's acknowledgment of Father's will in eighty-seven.. estate closed before he could contest my share of the house money.. he never signed that paper
+  fx.1 reveal f_will
+  fx.2 set flag:will_told
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_MONEY.d
+  t.any.1 Won't discuss the inheritance in company
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_MONEY.d2
+  t.any.1 Not ready to open the estate account for you
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_REGRET
+  gate.rule trust>=72 & alone & flag:books_told
+  t.any.1 Colin wrote in eighty-nine admitting a barn fire.. a neighbor was under suspicion.. burned the letter instead of clearing that man.. Colin went to prison for a different fire later.. never told anyone about the first
+  fx.1 reveal f_letter
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_REGRET.d
+  t.any.1 There is an answer.. won't spend it on a room full of ears
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_REGRET.d2
+  t.any.1 Don't want a comforting guess about what I regret
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_SON
+  gate.rule trust>=10
+  t.any.1 Colin, born in seventy.. in prison since ninety-one.. visited him as Mrs Vale so nobody would connect his name to mine at the library
+  fx.1 reveal f_alias
+  fx.2 set flag:alias_told
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_SON.d
+  t.any.1 Colin's twenty-three.. in prison when I last knew
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_TROUBLE
+  gate.rule trust>=55 & alone & flag:will_told
+  t.any.1 Thirty donated local-history books.. marked them water-damaged in ninety, sold them privately for Colin's solicitor.. kept the proceeds off library accounts.. none of those books was wet
+  fx.1 reveal f_books
+  fx.2 set flag:books_told
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_PAST_TROUBLE.d
+  t.any.1 Yes, trouble.. not a story for passing around
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_TROUBLE.d2
+  t.any.1 Ask privately when I'm ready to say more than yes
+  tag.1 kind:deflect
+end
+
+node vp_1345.VQ_PAST_WORK
+  t.any.1 Library desk and withdrawal lists.. Alma did most of the repairs
+  t.any.2 Circulation work.. the blue tray was returns, never a place for unfinished lunch
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_AGE
+  t.any.1 Forty-five.. not taking nominations for another age
+  t.any.2 Born in forty-eight.. forty-five now
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_DISLIKES
+  t.any.1 Being asked whether I've read every book.. have you eaten every potato?
+  t.any.2 People deciding a quiet woman has nothing to say
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_FEAR
+  t.any.1 Being the only person in a building.. quiet isn't the same thing
+  t.any.2 Alone after everyone has gone.. always listened for the last pair of shoes
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_FOOD
+  t.any.1 Potato soup with plenty of pepper.. not thick enough to stand a spoon in
+  t.any.2 Pears.. fresh ones, when there were fresh ones to choose
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_FROM
+  t.any.1 Elizabethtown.. upstairs flat, rather fewer rooms than stairs
+  t.any.2 From Elizabethtown.. spent most working days behind the library desk
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_HABIT
+  t.any.1 Read labels twice.. print side up, then turn it to find the date
+  t.any.2 Keep straightening my knitting.. there isn't a straight row to preserve
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_HOWARE
+  t.lo.1 Not ready for a crowd.. one quiet corner would do
+  t.lo.2 Still deciding whether talking is helping
+  t.mid.1 Less agreeable than I look.. please allow for that
+  t.mid.2 Would like company that doesn't require a performance
+  t.mid.3 There is a polite answer. I suspect neither of us needs it
+  t.mid.4 I'd rather not turn the whole thing into a summary for you
+  t.mid.5 Better with a question I can answer badly and leave alone
+  t.hi.1 Angry, mostly.. not asking you to improve it
+  t.hi.2 Could sit near somebody and say absolutely nothing
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_JOKE
+  t.any.1 A man returned a book saying it had no ending.. he'd used the final page for his shopping.. wanted to know whether that counted as a renewal
+  t.any.2 My knitting has a right side.. finding it is the entertaining part
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_LIKES
+  t.any.1 A mystery that gives you a fair chance.. unfair ones annoy me more than they should
+  t.any.2 Knitting with someone else's conversation going on nearby
+  t.any.3 Someone returning a book because they finished it, not because they feel guilty
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_LUCK
+  t.any.1 Believe in luck.. object to people treating it as something they earned
+  t.any.2 Have a lucky knitting needle.. identical to the other, which complicates things
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_NAME
+  t.any.1 Bonnie Yates.. yes, that's my name
+  t.any.2 Bonnie.. surname Yates if it's needed
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_NERVOUS
+  t.any.1 Yes.. shouldn't have to provide a more decorative explanation
+  t.any.2 Listening for people leaving.. not trying to overhear you
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_QUIET
+  t.any.1 Want quiet with somebody still nearby.. not an empty house
+  t.any.2 One quiet corner.. doesn't have to come with a conversation
+  t.any.3 Yes. We needn't mistake silence for a failure of conversation
+  t.any.4 Stay if you wish. I can enjoy company without making a recommendation
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_TALK_STORY
+  t.any.1 Alma put a sign on the blue tray saying returns.. a boy returned a library pencil, a button and an apology for the button.. she'd only meant books, but kept the apology
+  t.any.2 Colin knitted three stitches when he was nine.. announced he'd finished a scarf for a very thin man.. kept wearing it on one finger until Dennis sent a proper present
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_WORLD_GUARD
+  t.any.1 Haven't seen soldiers.. have no direct account to add
+  t.any.2 No Guard sighting from me.. don't turn that into evidence they're absent everywhere
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_WORLD_LAW
+  t.any.1 Haven't seen the sheriff.. would like an actual answer about the prison
+  t.any.2 Can't tell you who's enforcing what.. my son's behind a wall I can't ask through
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_WORLD_MONEY
+  t.any.1 A dollar's worth depends on someone accepting it.. wouldn't discard it yet
+  t.any.2 People might trade food for work.. ought to ask what they actually want
+  tag.1 kind:answer
+end
+
+node vp_1345.VQ_WORLD_SUPPLIES
+  t.any.1 Don't know which stores have food.. kept tins at home, but that isn't a report on what's there now
+  t.any.2 Can't name a stocked shop.. lists from before this would mislead us
+  tag.1 kind:answer
+end
+
+node vp_1345.leave.angry
+  t.any.1 Prefer to leave while I can still speak plainly
+  t.any.2 Nothing to gain by staying angry in this room.. goodbye
+  tag.1 kind:leave
+end
+
+node vp_1345.leave.plain
+  t.any.1 Going now.. hope the quiet treats you well
+  t.any.2 Had better move along.. look after yourself
+  tag.1 kind:leave
+end
+
+node vp_1345.react.compliment
+  t.any.1 How unexpected.. thank you
+  t.any.2 May choose to believe that for a while
+  tag.1 kind:react
+end
+
+node vp_1345.react.gave_blanket
+  t.any.1 Thank you.. glad to have a blanket
+  t.any.2 That's welcome.. will try to keep it clean
+  tag.1 kind:react
+end
+
+node vp_1345.react.gave_book
+  t.any.1 A book.. thank you, pleased to have it
+  t.any.2 Thank you.. glad of something with pages to turn
+  tag.1 kind:react
+end
+
+node vp_1345.react.gave_clothes
+  t.any.1 Thank you.. will find out whether these fit
+  t.any.2 Useful to have another change.. appreciate it
+  tag.1 kind:react
+end
+
+node vp_1345.react.gave_food
+  t.any.1 Thank you.. a welcome share
+  t.any.2 Appreciate the food.. not taking it lightly
+  tag.1 kind:react
+end
+
+node vp_1345.react.gave_water
+  t.any.1 Thank you.. water is very welcome
+  t.any.2 Appreciate having something to drink
+  tag.1 kind:react
+end
+
+node vp_1345.react.insult
+  t.any.1 No.. you don't get another attempt at that
+  t.any.2 Can hear you perfectly.. wish I couldn't just then
+  tag.1 kind:react
+end
+
+node vp_1345.react.refused
+  t.any.1 Understood.. would have preferred otherwise
+  t.any.2 Very well.. won't pretend I didn't want a yes
+  tag.1 kind:react
+end
+
+node vp_1345.react.sorry
+  t.any.1 Thank you for saying it.. still need a moment
+  t.any.2 An apology is a start.. let's leave space after it
+  tag.1 kind:react
+end
+
+node vp_1345.react.thanks
+  t.any.1 Glad it was some use.. no further ceremony needed
+  t.any.2 You're welcome.. should have said so sooner
+  tag.1 kind:react
+end
+
+node vp_1345.react.threat
+  t.any.1 Stay away from me.. don't want this
+  t.any.2 Please give me space.. there's nothing useful in frightening me
+  tag.1 kind:react
+end
+
+node vp_1345.return.arrive
+  t.any.1 Bonnie again.. would a short visit be all right?
+  t.any.2 Came back.. don't mean to impose my company
+  tag.1 kind:return
+end
+
+node vp_1349.VQ_HOUSE_BED
+  t.any.1 Yes.. could lie down without needing a story told over me
+  t.any.2 Would appreciate the rest.. let me know when the space is needed
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_HOUSE_CHORES
+  t.any.1 Give me something small to start.. thumbs together won't get your chores done
+  t.any.2 Can wash up if there's washing to do.. where would you like me to begin?
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_HOUSE_RADIO
+  t.any.1 Try it.. might hear something that isn't my own running commentary
+  t.any.2 Would listen.. don't need to put music on just because of my old job
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_HOUSE_STAIRS
+  t.any.1 Up is better than down.. may look if there's no objection
+  t.any.2 Could take a look upstairs.. tell me what's private first
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_HOUSE_WELCOME
+  t.any.1 Thanks.. I'll resist reviewing the place like a bar
+  t.any.2 Would like to stop.. tell me where I won't be in the way
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_CARRYING
+  t.any.1 Coins, pencil, a scrap of music.. no instrument hiding under the jacket
+  t.any.2 A few old coins.. dates interested me more than what they'd buy
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_COLD
+  t.any.1 Cold.. hands are being particularly dramatic about it
+  t.any.2 Yes.. another layer wouldn't go to waste
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_HELP
+  t.any.1 Can wash up or mend a simple loose fitting.. piano's less useful unless you happen to need one played
+  t.any.2 Could sort things, carry a fair share.. ask before assigning the whole building
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_HUNGRY
+  gate.rule need:hunger>=2
+  t.any.1 Yes.. could stop talking and get on with eating
+  t.any.2 Hungry.. not inventing a funny way to say it
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_HUNGRY.d
+  t.any.1 Don't need another share right now.. ask someone hungrier
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_NOW_HURT
+  t.any.1 Need a look rather than a brave guess? Ask before you touch
+  t.any.2 Hard to separate old aches from everything else.. can check what worries you
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_PLAN
+  t.any.1 Find somewhere that wants help.. try for news of Arlen after that
+  t.any.2 No grand plan.. work for a place to stop and think
+  t.any.3 Need to choose my next bit. No accompaniment will make the choice for me
+  t.any.4 Haven't decided. I'd like to leave one thing without a clever ending
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_TIRED
+  t.any.1 Couldn't date the last sleep.. tired enough to miss a chord with both hands
+  t.any.2 Don't have a useful hour to name.. could lie down instead of looking capable
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_NOW_WANT
+  t.any.1 Work.. a small job I can finish before I think too much
+  t.any.2 Want something useful to do.. doesn't have to come with applause
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_OFFER_BLANKET
+  t.any.1 Would be useful.. yes please
+  t.any.2 I'll accept.. no grand refusal to improve the story
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_OFFER_CARDS
+  t.any.1 Deal me in if we're not betting.. coins stay in the purse
+  t.any.2 Could play.. don't mistake a grin for a good hand
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_OFFER_FOOD
+  t.any.1 Yes.. could do a little work for my share
+  t.any.2 Would take some.. no joke about starving artists, please
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_OFFER_WORK
+  t.any.1 Good.. what's the work, and what's a fair amount?
+  t.any.2 Yes.. prefer a job to sitting here earning my own bad review
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_DAYONE
+  gate.rule trust>=20
+  t.any.1 Stranger lying on the road beside a cellar stair.. asked me for help, gave him my first name.. then ran without fetching anyone.. never learned what became of him
+  fx.1 reveal f_cellar
+  fx.2 set flag:cellar_told
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_DAYONE.d
+  t.any.1 Left town frightened.. not ready to unfold the whole day
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_DAYONE.d2
+  t.any.1 Bad start.. would rather say it when I can finish
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_FAMILY
+  t.any.1 Brother Arlen.. last knew him in Pikeville, not where he is now
+  t.any.2 Dad died last year.. Arlen's the one I'd try to find
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_FIRSTJOB
+  t.any.1 First paid bar set in seventy-four.. nineteen, with a borrowed good blouse
+  t.any.2 Bar piano at nineteen.. nobody told me tips could include advice instead of coins
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_HARDEST
+  gate.rule trust>=46 & alone & flag:tunes_told
+  t.any.1 Being laughed at during my own solo set in eighty-one.. heckler went after my voice and I ran offstage, never went back to that place.. so much for claiming I never ran
+  fx.1 reveal f_ran
+  fx.2 set flag:ran_told
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_HARDEST.d
+  t.any.1 Hardest isn't necessarily the story you'd expect
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_HARDEST.d2
+  t.any.1 Not with an audience.. had enough of those
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_HIDING
+  gate.rule trust>=78 & alone & flag:cards_told
+  t.any.1 Arlen hit a pedestrian in eighty-nine and drove away.. he told me, I washed the blood off his car.. didn't report him or find out whether that person lived.. protected my brother by not asking
+  fx.1 reveal f_car
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_HIDING.d
+  t.any.1 Yes.. being willing to admit that isn't the same as being ready to tell it
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_HIDING.d2
+  t.any.1 Not something I can throw into general conversation
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_HOBBY
+  t.any.1 Cards.. collect odd coins too, dates more than value
+  t.any.2 Keep coins with worn faces.. and lose card games with a very clear expression
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_HOUSE
+  t.any.1 Rented back room.. piano stool counted as a luxury
+  t.any.2 Mabel's back room.. one window, weekly rent, no band rehearsals
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_PARENTS
+  t.any.1 Roy, my dad, died in ninety-two.. Mother was in Pikeville when I last heard
+  t.any.2 Dad's dead.. no current word of Mother.. she endured two pianists in one house for years
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_PROUD
+  t.any.1 Paid my own rent for years.. piano money and whatever else earned it
+  t.any.2 Accompanied a singer through a whole set after his music fell behind the piano.. knew enough by ear to keep him going
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_TRAVEL
+  t.any.1 Lexington was farthest.. little bar engagement, nothing grand
+  t.any.2 Played out toward Lexington once.. mostly stayed round Pikeville
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_TROUBLE
+  gate.rule trust>=61 & alone & flag:ran_told
+  t.any.1 Used marked cards at a church benefit in seventy-nine.. took the pot meant to fix a widow's furnace and kept it.. wasn't a harmless game, whatever I called it
+  fx.1 reveal f_cards
+  fx.2 set flag:cards_told
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PAST_TROUBLE.d
+  t.any.1 Made some trouble myself.. names and details can wait
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_TROUBLE.d2
+  t.any.1 Would rather tell it privately or not yet
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_PAST_WORK
+  t.any.1 Bar piano.. accompaniment, mostly.. piano money paid the room
+  t.any.2 Played behind singers and did solo sets when rent made the decision
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_PERSON_A_PROMISE
+  gate.rule flag:arianne_intro & !flag:arianne_promise_done
+  t.any.1 Something in my head.. Just told me.. Do you know anything about "A promise"?
+  beat.any.1 5000|I'm here. Love. I'm here. I always was here. Don't you understand? You're trapped. In this game..
+  beat.any.2 7000|I missed you... So much. I always did... Soon the code of this game will cut me off once again..
+  beat.any.3 7000|You'll always be my little sunshine. ----#$!$@!K@#!@L#!M<@%O!#@^?Z
+  beat.any.4 5000|Sorry.. what did you ask me? I lost my place..
+  fx.1 set flag:arianne_promise_done
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_AGE
+  t.any.1 Thirty-eight.. piano fingers age separately, apparently
+  t.any.2 Born in fifty-five.. thirty-eight and still losing room keys
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_DISLIKES
+  t.any.1 Play something happy.. always said by somebody already enjoying themselves
+  t.any.2 Being called the girl on piano.. even when I was thirty-seven
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_FEAR
+  gate.rule !flag:cellar_told
+  t.any.1 Basements.. never ran from a thing though, that's my line
+  t.any.2 Don't like going below ground.. never ran from anything, mind you
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_FEAR.a2
+  gate.rule flag:cellar_told
+  t.any.1 Basements.. prefer a room with a way out I can see
+  t.any.2 Going down into a cellar.. not volunteering for that
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_FOOD
+  t.any.1 Egg sandwich after a late set.. nobody gets artistic with it
+  t.any.2 Pickles.. no, that isn't an invitation to put them in everything
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_FROM
+  t.any.1 Pikeville.. rented a room, never owned the view
+  t.any.2 From Pikeville.. knew the back entrances of more bars than was useful
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_HABIT
+  t.any.1 Thumbs together.. pressing till I notice I'm doing it
+  t.any.2 Hands can't find a keyboard, so the thumbs get each other
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_HOWARE
+  t.lo.1 Available for light work and poor decisions.. prefer the work
+  t.lo.2 Not my best engagement.. no encore required
+  t.mid.1 Trying to quit making a joke before every answer
+  t.mid.2 Could stand being ordinary company for a bit
+  t.mid.3 Could give you an amusing answer. I'm trying the other kind
+  t.mid.4 Not every silence is a dramatic pause, despite my reputation
+  t.mid.5 Better when I don't have to earn the company with a joke
+  t.hi.1 Bad mood.. don't need it turned into an amusing one
+  t.hi.2 Want a task with an end I can recognize
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_JOKE
+  t.any.1 Played a bar with no piano once.. owner wanted a discount, like I'd brought the wrong hands
+  t.any.2 My father saved the bent quarter to teach me thrift.. could have bought a better lesson for a dime
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_LIKES
+  t.any.1 Cards without money on the table.. can enjoy losing then, in theory
+  t.any.2 A singer who knows when to let the piano finish
+  t.any.3 A singer forgetting the audience for half a verse. You can hear the difference
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_LUCK
+  t.any.1 Keep the bent quarter for luck.. was bent before I got it, so it can't blame me
+  t.any.2 Believe in luck more readily when it belongs to somebody else
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_MUSIC
+  gate.rule trust>=32 & flag:cellar_told
+  t.any.1 Piano.. wrote the arrangements Otis put his name on from eighty-four through eighty-seven.. took anonymous pay because I was scared of a flop with Arianne printed on it
+  fx.1 reveal f_tunes
+  fx.2 set flag:tunes_told
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_MUSIC.d
+  t.any.1 Piano mostly.. liked accompanying more than singing
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_TALK_MUSIC.d2
+  t.any.1 Some music is easier to play than to talk about
+  tag.1 kind:deflect
+end
+
+node vp_1349.VQ_TALK_NAME
+  t.any.1 Arianne Y. Just Arianne is fine
+  t.any.2 Arianne.. the Y can stay on the old posters
+  fx.1 set flag:arianne_intro
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_QUIET
+  t.any.1 Can manage quiet.. doesn't need a piano underneath
+  t.any.2 Let's leave it quiet.. haven't got a good line ready anyway
+  t.any.3 Yes. I promise not to review the silence afterward
+  t.any.4 Stay if you like. I can let you hear me not being entertaining
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_TALK_STORY
+  t.any.1 Mabel thought my piano stool was a hat stand.. came home from a set and found three hats balanced on it.. she said it was the first time that piece of furniture had earned its space
+  t.any.2 Father made me play for a wedding where the groom forgot the ring.. repeated the introduction until a cousin came back with his own.. afterward Dad said he charged by the minute and ought to thank them
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_WORLD_CAUSE
+  t.any.1 Don't know.. luck's a belief of mine, not an explanation for this
+  t.any.2 Could blame half the world.. wouldn't make it knowledge
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_WORLD_GUARD
+  t.any.1 Haven't seen the Guard.. no useful sighting from me
+  t.any.2 No soldiers that I can report seeing.. won't make a rumor wear a uniform
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_WORLD_MONEY
+  t.any.1 Keep the old coins regardless.. for spending, ask the person selling
+  t.any.2 A fair job might buy more than a coin now.. won't assume everyone agrees
+  tag.1 kind:answer
+end
+
+node vp_1349.VQ_WORLD_ROAD
+  t.any.1 Passed on foot.. doesn't make the road fit for everything else
+  t.any.2 Only know where I got through.. can't tell you what's changed behind me
+  tag.1 kind:answer
+end
+
+node vp_1349.leave.angry
+  t.any.1 Leaving.. too angry to make this useful
+  t.any.2 Had enough.. don't need a clever exit line
+  tag.1 kind:leave
+end
+
+node vp_1349.leave.plain
+  t.any.1 Time I moved on.. keep yourself in one piece
+  t.any.2 Going.. no farewell solo, you'll be pleased to hear
+  tag.1 kind:leave
+end
+
+node vp_1349.react.compliment
+  t.any.1 Might improve the opinion I have of myself.. thanks
+  t.any.2 Well.. that's nicer than my version
+  tag.1 kind:react
+end
+
+node vp_1349.react.gave_blanket
+  t.any.1 Thank you.. useful without being glamorous
+  t.any.2 Appreciate having this.. thank you
+  tag.1 kind:react
+end
+
+node vp_1349.react.gave_book
+  t.any.1 Thank you.. gives my head something else to do
+  t.any.2 A book.. glad you thought of that
+  tag.1 kind:react
+end
+
+node vp_1349.react.gave_clothes
+  t.any.1 Thanks.. will see how these suit me
+  t.any.2 Something else to wear.. grateful for the choice
+  tag.1 kind:react
+end
+
+node vp_1349.react.gave_food
+  t.any.1 Thanks.. glad of the food
+  t.any.2 Appreciate it.. an easy thing to say honestly
+  tag.1 kind:react
+end
+
+node vp_1349.react.gave_water
+  t.any.1 Thank you.. good to have water
+  t.any.2 That's welcome.. truly
+  tag.1 kind:react
+end
+
+node vp_1349.react.insult
+  t.any.1 Can insult myself without your help
+  t.any.2 Okay.. that wasn't funny, just mean
+  tag.1 kind:react
+end
+
+node vp_1349.react.refused
+  t.any.1 Okay.. wish it was different, but okay
+  t.any.2 No then.. can take an answer without a performance
+  tag.1 kind:react
+end
+
+node vp_1349.react.sorry
+  t.any.1 Okay.. can leave that standing for now
+  t.any.2 Heard it.. don't know my answer yet
+  tag.1 kind:react
+end
+
+node vp_1349.react.thanks
+  t.any.1 Good.. managed something without accompaniment
+  t.any.2 You're welcome.. no encore for that one
+  tag.1 kind:react
+end
+
+node vp_1349.react.threat
+  t.any.1 Give me room.. don't want a fight
+  t.any.2 Stop.. not playing along with that
+  tag.1 kind:react
+end
+
+node vp_1349.return.arrive
+  t.any.1 Arianne.. back for a little company if it's welcome
+  t.any.2 Came round again.. haven't brought a piano with me
+  tag.1 kind:return
+end

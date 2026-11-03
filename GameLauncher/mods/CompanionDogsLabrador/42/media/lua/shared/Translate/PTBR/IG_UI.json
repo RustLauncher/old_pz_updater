@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Labrador",
+    "IGUI_AnimalType_labmale": "Labrador (macho)",
+    "IGUI_AnimalType_labfemale": "Labrador (fêmea)",
+    "IGUI_AnimalType_labpup": "Labrador (filhote)",
+    "IGUI_PD_Breed_labrador": "Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Um cão de caça feito para trazer de volta: treina Caça no dobro da velocidade, com Obediência logo atrás. É, de propósito, um dos piores lutadores da família: só o Pug morde mais fraco, sem derrubada, e uma briga o abala demais. O dom dele é a boca. Ele traz o abate até você desde que consegue caçar, em vez de esperar a Caça ficar alta, não larga no meio do caminho e muitas vezes chega carregando mais alguma coisa que achou (Boca Macia). Comum em casas, e ronda cabanas de caça, acampamentos, casas de barco e postos de guarda-florestal. Esfolar o que ele traz também rende mais com ele por perto.",
+    "IGUI_PD_Moodle_SoftMouth": "Boca Macia",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Seu Labrador traz todo abate desde a primeira caçada, e muitas vezes um extra. Enquanto ele estiver por perto, alimentado e leal, você também aprende Açougue e Lâmina Curta mais rápido.",
+    "IGUI_PD_LabExtra": "Seu %1 trouxe mais uma coisa: %2."
+}

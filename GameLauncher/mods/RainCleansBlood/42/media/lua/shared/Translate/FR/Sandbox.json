@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "La pluie nettoie le sang",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Cases par minute",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Combien de cases aléatoires sont nettoyées par minute de jeu.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Seuil d'intensité météo",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Quelle intensité de pluie ou de neige est nécessaire pour lessiver le sang. Plus élevé = météo plus forte requise.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Nettoyer les cendres",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Nettoie également les cendres laissées par les cadavres brûlés.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Nettoyer les excréments d'animaux",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Nettoie également les excréments d'animaux (fumier) laissés au sol.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Nettoyer à l'intérieur",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Nettoie également le sang à l'intérieur des bâtiments.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Nettoyer les véhicules",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Nettoie également progressivement le sang des véhicules.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Vitesse de nettoyage des véhicules",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Quelle quantité de sang est retirée des véhicules par minute.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Nettoyer les vêtements",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Nettoie également progressivement le sang et la saleté des vêtements portés par les joueurs.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Vitesse de nettoyage des vêtements",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Quelle quantité de sang et de saleté est retirée des vêtements par minute.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Toujours nettoyer",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Nettoie toujours, quelle que soit la météo."
+}

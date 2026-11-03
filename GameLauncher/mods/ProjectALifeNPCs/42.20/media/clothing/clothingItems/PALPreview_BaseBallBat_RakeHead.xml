@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/BaseBallBat_Rake_Hand</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/BaseBallBat_Rake_Hand</m_FemaleModel>
+  <m_GUID>69f91d32-4ded-27ea-7946-35eb0bfe9d0f</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/2handed/BaseBallBat_RailSkp_CirSaw</textureChoices>
+</clothingItem>

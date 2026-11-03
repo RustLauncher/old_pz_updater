@@ -1,0 +1,19 @@
+{
+    "Sandbox_RB": "Реалистичные рюкзаки",
+    "Sandbox_RB_HandmadeCapacity": "Вместимость самодельного мешка",
+    "Sandbox_RB_HandmadeWeightReduction": "Снижение веса самодельного мешка",
+    "Sandbox_RB_HandmadeWeight": "Вес самодельного мешка",
+    "Sandbox_RB_HandmadeRunSpeedModifier": "Скорость бега с самодельным мешком",
+    "Sandbox_RB_HuntingCapacity": "Вместимость охотничьего рюкзака",
+    "Sandbox_RB_HuntingWeightReduction": "Снижение веса охотничьего рюкзака",
+    "Sandbox_RB_HuntingWeight": "Вес охотничьего рюкзака",
+    "Sandbox_RB_HuntingRunSpeedModifier": "Скорость бега с охотничьим рюкзаком",
+    "Sandbox_RB_AssaultCapacity": "Вместимость штурмового рюкзака",
+    "Sandbox_RB_AssaultWeightReduction": "Снижение веса штурмового рюкзака",
+    "Sandbox_RB_AssaultWeight": "Вес штурмового рюкзака",
+    "Sandbox_RB_AssaultRunSpeedModifier": "Скорость бега со штурмовым рюкзаком",
+    "Sandbox_RB_SleepingBagCapacity": "Вместимость рюкзака со спальным мешком",
+    "Sandbox_RB_SleepingBagWeightReduction": "Снижение веса рюкзака со спальным мешком",
+    "Sandbox_RB_SleepingBagWeight": "Вес рюкзака со спальным мешком",
+    "Sandbox_RB_SleepingBagRunSpeedModifier": "Скорость бега с рюкзаком и спальным мешком"
+}

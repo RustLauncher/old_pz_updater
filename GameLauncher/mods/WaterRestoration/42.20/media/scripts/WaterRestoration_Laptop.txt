@@ -1,0 +1,27 @@
+module Base
+{
+    model WR_MilitaryLaptopClosed
+    {
+        mesh = WorldItems/WR_MilitaryLaptop_Closed,
+        texture = WorldItems/WR_MilitaryLaptop,
+        scale = 0.01,
+    }
+    model WR_MilitaryLaptopOpen
+    {
+        mesh = WorldItems/WR_MilitaryLaptop_Open,
+        texture = WorldItems/WR_MilitaryLaptop,
+        scale = 0.01,
+    }
+    item WRMilitaryLaptop
+    {
+        ItemType = base:normal,
+        DisplayName = Laptop militar WR-01,
+        DisplayCategory = Electronics,
+        Icon = WRMilitaryLaptopClosed,
+        Weight = 3.2,
+        StaticModel = WR_MilitaryLaptopClosed,
+        WorldStaticModel = WR_MilitaryLaptopClosed,
+        OnCreate = WR.Laptop.onCreate,
+        Tooltip = Tooltip_WR_Laptop,
+    }
+}

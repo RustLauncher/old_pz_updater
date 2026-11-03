@@ -1,0 +1,22 @@
+module Base
+{
+    model Handmade_Sack_Ground
+    {
+        mesh = Worlditems/Clothing/Handmade_Sack_Ground,
+    }
+
+    model Hunting_Backpack_Ground
+    {
+        mesh = Worlditems/Clothing/Hunting_Backpack_Ground,
+    }
+
+    model Assault_Backpack_Ground
+    {
+        mesh = Worlditems/Clothing/Assault_Backpack_Ground,
+    }
+
+    model Assault_Backpack_Mattress_Ground
+    {
+        mesh = Worlditems/Clothing/Assault_Backpack_Mattress_Ground,
+    }
+}

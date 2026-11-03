@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>ALifePreview/Part_Trapper_Carbine__Laser</m_MaleModel>
+  <m_FemaleModel>ALifePreview/Part_Trapper_Carbine__Laser</m_FemaleModel>
+  <m_GUID>776ef5e5-0e1c-65ef-acd3-46a6f1a33f0b</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/parts/Handgun_Laser</textureChoices>
+</clothingItem>

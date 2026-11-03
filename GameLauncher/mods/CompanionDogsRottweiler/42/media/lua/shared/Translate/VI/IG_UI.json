@@ -1,0 +1,10 @@
+{
+  "IGUI_Breed_rottweiler": "Rottweiler",
+  "IGUI_AnimalType_rottmale": "Rottweiler (đực)",
+  "IGUI_AnimalType_rottfemale": "Rottweiler (cái)",
+  "IGUI_AnimalType_rottpup": "Rottweiler (chó con)",
+  "IGUI_PD_Breed_rottweiler": "Rottweiler",
+  "IGUI_PD_BreedDesc_rottweiler": "Một giống chó canh gác mạnh mẽ được nuôi cho công việc bảo vệ, một chiến binh thực thụ ngang tầm chó chăn cừu Đức: nó học Chiến đấu nhanh gấp đôi, đánh rất mạnh khi lên cấp cao, quật ngã zombie và vẫn tiếp tục chiến đấu ở nơi mà hầu hết các giống khác đã hoảng loạn. Chiến đấu bên cạnh nó cũng khiến bạn vững vàng hơn: khi Rottweiler của bạn đang giao chiến ở gần, các đòn cận chiến của bạn tiêu hao ít thể lực hơn (Tuyến đầu). Thường canh gác nhà kho, nhà máy và bãi phế liệu, hiếm khi xuất hiện trong nhà dân.",
+  "IGUI_PD_Moodle_FrontLine": "Tuyến đầu",
+  "IGUI_PD_Moodle_FrontLine_desc": "Rottweiler của bạn đang chiến đấu bên cạnh bạn. Khi nó giao chiến ở gần bạn, được ăn no và trung thành, các đòn cận chiến của bạn tiêu hao ít thể lực hơn."
+}

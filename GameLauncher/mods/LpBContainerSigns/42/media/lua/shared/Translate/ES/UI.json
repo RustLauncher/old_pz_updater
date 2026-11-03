@@ -1,0 +1,15 @@
+{
+    "UI_LPBCS_OptionsTitle": "LpB Carteles de contenedores",
+
+    "UI_LPBCS_Opt_Enabled": "Mostrar carteles en los contenedores",
+    "UI_LPBCS_Opt_Enabled_tooltip": "Muestra en el mundo el nombre escrito en una caja o armario. Al desactivarlo, los carteles solo se ocultan para ti; los nombres no cambian.",
+
+    "UI_LPBCS_Opt_Radius": "Radio de visualización (casillas)",
+    "UI_LPBCS_Opt_Radius_tooltip": "Hasta qué distancia se puede leer un cartel. Los carteles se desvanecen durante las dos últimas casillas en lugar de desaparecer de golpe. Redúcelo en una base densa.",
+
+    "UI_LPBCS_Opt_Opacity": "Opacidad del cartel (porcentaje)",
+    "UI_LPBCS_Opt_Opacity_tooltip": "Qué opacos se muestran los carteles.",
+
+    "UI_LPBCS_Opt_HideWhenLoot": "Ocultar mientras la ventana de saqueo está abierta",
+    "UI_LPBCS_Opt_HideWhenLoot_tooltip": "Quita los carteles de la pantalla mientras estás registrando un contenedor, cuando ya no los necesitas."
+}

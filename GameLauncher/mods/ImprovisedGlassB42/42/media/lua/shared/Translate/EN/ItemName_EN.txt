@@ -1,0 +1,15 @@
+ItemName_EN = {
+    ItemName_ImprovisedGlass.PanWithGlassShards = "Roasting Pan with Glass Shards",
+    ItemName_ImprovisedGlass.PanWithGlassPane = "Roasting Pan with Glass Pane",
+
+    ItemName_ImprovisedGlass.WoodenWindow01 = "Single Wooden Window",
+    ItemName_ImprovisedGlass.WoodenWindow02 = "Double Wooden Window",
+    ItemName_ImprovisedGlass.WoodenWindow03 = "Triple Wooden Window",
+    ItemName_ImprovisedGlass.WoodenWindow04 = "White Wooden Window",
+    ItemName_ImprovisedGlass.WoodenWindow06 = "Large Wooden Window",
+    ItemName_ImprovisedGlass.MetalWindow01 = "Metal Window",
+
+    ItemName_ImprovisedGlass.IGMagazineGlass = "Improvised Glass Vol. 1 - Glassmaking Basics",
+    ItemName_ImprovisedGlass.IGMagazineWindow = "Improvised Glass Vol. 2 - Window Framing",
+    ItemName_ImprovisedGlass.IGMagazineCars = "Improvised Glass Vol. 3 - Automotive Glass",
+}

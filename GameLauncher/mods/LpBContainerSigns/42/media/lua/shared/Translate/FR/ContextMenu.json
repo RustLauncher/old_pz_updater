@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Écrire un nom dessus",
+    "ContextMenu_LPBCS_Rewrite": "Écriteau : « %1 »",
+    "ContextMenu_LPBCS_Erase": "Effacer le nom",
+
+    "ContextMenu_LPBCS_StackTop": "en haut",
+    "ContextMenu_LPBCS_StackMiddle": "au milieu",
+    "ContextMenu_LPBCS_StackBottom": "en bas",
+
+    "ContextMenu_LPBCS_StylePlank": "Sur une planche clouée",
+    "ContextMenu_LPBCS_StylePaper": "Sur un papier scotché",
+    "ContextMenu_LPBCS_StylePainted": "Peint à même le bois",
+
+    "ContextMenu_LPBCS_Side": "Position",
+    "ContextMenu_LPBCS_SideAuto": "Auto",
+    "ContextMenu_LPBCS_SideLeft": "À gauche",
+    "ContextMenu_LPBCS_SideRight": "À droite"
+}

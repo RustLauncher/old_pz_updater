@@ -1,0 +1,13 @@
+{
+    "Sandbox_PetFoodPackage": "Caixas de Comida para Pets",
+    "Sandbox_PetFoodPackage_Abundance": "Caixas de Comida para Pets",
+    "Sandbox_PetFoodPackage_Abundance_tooltip": "Abundância | Mercado/loja | Porta-malas | Cozinha residencial\nNenhum | 0% | 0% | 0%\nInsano | 12,5% | 6,25% | 3,75%\nExtremamente raro | 18,75% | 9,375% | 5,625%\nRaro | 22,5% | 11,25% | 6,75%\nNormal | 25% | 12,5% | 7,5%\nComum | 37,5% | 18,75% | 11,25%\nAbundante | 50% | 25% | 15%",
+    "Sandbox_PetFoodPackage_Abundance_option1": "Nenhum",
+    "Sandbox_PetFoodPackage_Abundance_option2": "Insano",
+    "Sandbox_PetFoodPackage_Abundance_option3": "Extremamente Raro",
+    "Sandbox_PetFoodPackage_Abundance_option4": "Raro",
+    "Sandbox_PetFoodPackage_Abundance_option5": "Normal",
+    "Sandbox_PetFoodPackage_Abundance_option6": "Comum",
+    "Sandbox_PetFoodPackage_Abundance_option7": "Abundante"
+ 
+}

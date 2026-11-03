@@ -1,0 +1,6 @@
+name=Vehicle Fluid Logistics Library
+id=VFluidLib
+modversion=0.57.1
+description=Library: one place that knows what a vehicle's bulk fluid tank is and what may go in it. Recognises tanks by their declared content type and part id rather than by vehicle, so the same tank works on a truck, a trailer or a container. At 0.1.0 it only recognises and reports - no transfer, no menus, no behaviour change of any kind. Ships no vehicle and depends on no other mod.
+author=BEN
+versionMin=42.0

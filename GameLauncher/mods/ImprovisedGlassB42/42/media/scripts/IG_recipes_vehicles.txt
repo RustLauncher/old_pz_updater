@@ -1,0 +1,266 @@
+module Base
+{
+    craftRecipe IGWindshield1
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:2,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 2 [Base.GlassPanel],
+            item 4 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.Windshield1,
+        }
+    }
+
+    craftRecipe IGWindshield2
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:2,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 2 [Base.GlassPanel],
+            item 4 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.Windshield2,
+        }
+    }
+
+    craftRecipe IGWindshield3
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:3;Mechanics:2,
+        xpAward = Glassmaking:25,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 3 [Base.GlassPanel],
+            item 6 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.Windshield3,
+        }
+    }
+
+    craftRecipe IGRearWindshield1
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:2,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 2 [Base.GlassPanel],
+            item 4 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindshield1,
+        }
+    }
+
+    craftRecipe IGRearWindshield2
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:2,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 2 [Base.GlassPanel],
+            item 4 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindshield2,
+        }
+    }
+
+    craftRecipe IGRearWindshield3
+    {
+        time = 600,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:3;Mechanics:2,
+        xpAward = Glassmaking:25,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 3 [Base.GlassPanel],
+            item 6 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindshield3,
+        }
+    }
+
+    craftRecipe IGFrontWindow1
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:1;Mechanics:1,
+        xpAward = Glassmaking:15,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 2 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.FrontWindow1,
+        }
+    }
+
+    craftRecipe IGFrontWindow2
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:1;Mechanics:1,
+        xpAward = Glassmaking:15,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 2 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.FrontWindow2,
+        }
+    }
+
+    craftRecipe IGFrontWindow3
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:1,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 3 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.FrontWindow3,
+        }
+    }
+
+    craftRecipe IGRearWindow1
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:1;Mechanics:1,
+        xpAward = Glassmaking:15,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 2 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindow1,
+        }
+    }
+
+    craftRecipe IGRearWindow2
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:1;Mechanics:1,
+        xpAward = Glassmaking:15,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 2 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindow2,
+        }
+    }
+
+    craftRecipe IGRearWindow3
+    {
+        time = 300,
+        category = Glassmaking,
+        tags = AnySurfaceCraft,
+        SkillRequired = Glassmaking:2;Mechanics:1,
+        xpAward = Glassmaking:20,
+        needToBeLearn = true,
+        timedAction = Making,
+        
+        inputs
+        {
+            item 1 [Base.GlassPanel],
+            item 3 [Base.DuctTape],
+            item 1 [Base.Scalpel;Base.Scissors;Base.KitchenKnife] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.RearWindow3,
+        }
+    }
+}

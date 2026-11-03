@@ -1,0 +1,4 @@
+{
+    "name": "LG Napojení na vodovod",
+    "description": "Přidá volbu \"Napojit ... na vodovodní řad\" pro umyvadla, vany, sprchy, záchody a pračky, které si postavíš uvnitř. Napojený kus se počítá jako vlastní vybavení budovy: stejná nekonečná voda, stejný den odstávky, stejná voda, co potom zůstane v trubkách. Budovy, které mapa vede bez tekoucí vody, zůstanou suché. Vyplatí se to jen tehdy, když si své kusy postavíš dřív, než vodu odstaví. Hra pro jednoho, hostovaný multiplayer i dedikovaný server."
+}

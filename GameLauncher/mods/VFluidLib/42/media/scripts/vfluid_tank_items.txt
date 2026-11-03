@@ -1,0 +1,55 @@
+/* A generic tank item, so a patch never ships its own. Capacity comes from the PART:
+   createPartInventoryItem stamps the part's declared capacity onto the item, and
+   MaxCapacity here is only the fallback. Three tiers because PZ resolves an itemType base
+   name to numbered quality variants. */
+module Base
+{
+
+	item VFluidTank1
+	{
+		DisplayCategory = VehicleMaintenance,
+		Type = Normal,
+		Weight = 8.0,
+		VehicleType = 1,
+		DisplayName = Vehicle Fluid Tank,
+		Icon = CarGastank,
+		MaxCapacity = 100,
+		ConditionAffectsCapacity = false,
+		ConditionMax = 100,
+		ChanceToSpawnDamaged = 80,
+		MechanicsItem = TRUE,
+		WorldStaticModel = BigGasTank,
+	}
+
+	item VFluidTank2
+	{
+		DisplayCategory = VehicleMaintenance,
+		Type = Normal,
+		Weight = 8.0,
+		VehicleType = 1,
+		DisplayName = Vehicle Fluid Tank,
+		Icon = CarGastank,
+		MaxCapacity = 100,
+		ConditionAffectsCapacity = false,
+		ConditionMax = 100,
+		ChanceToSpawnDamaged = 60,
+		MechanicsItem = TRUE,
+		WorldStaticModel = BigGasTank,
+	}
+
+	item VFluidTank3
+	{
+		DisplayCategory = VehicleMaintenance,
+		Type = Normal,
+		Weight = 8.0,
+		VehicleType = 1,
+		DisplayName = Vehicle Fluid Tank,
+		Icon = CarGastank,
+		MaxCapacity = 100,
+		ConditionAffectsCapacity = false,
+		ConditionMax = 100,
+		ChanceToSpawnDamaged = 40,
+		MechanicsItem = TRUE,
+		WorldStaticModel = BigGasTank,
+	}
+}

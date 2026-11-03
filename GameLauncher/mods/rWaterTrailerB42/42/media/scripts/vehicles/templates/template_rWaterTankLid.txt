@@ -1,0 +1,115 @@
+module RotatorsB42
+{
+	template vehicle TruckWaterTankLid
+	{
+		part WaterTankLid
+		{
+			category = watertank,
+			area = TankLid,
+			door
+			{
+			}
+         
+			anim Close
+			{
+            sound = VehicleTrunkCloseStandard,
+				anim = TankLid_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+            sound = VehicleTrunkOpenStandard,
+				anim = TankLid_closing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Closed
+			{
+				anim = TankLid_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TankLid_closing,
+				animate = FALSE,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 -90.0 0.0,
+			}
+
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 -90.0 0.0,
+			}
+
+			itemType = RotatorsB42.WaterTrailerTankLid,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = rWaterTrailer.Vehicle.Create.OptionalDoor,
+				/*init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,*/
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,60 @@
+/* Pump parts, two shapes usable across the fleet. VFluidPump is STRUCTURAL: no itemType,
+   so nothing can be installed or removed.
+   VFluidPumpSlot is an installable slot; the patch names which pump items it accepts, so a
+   slot naming an absent mod's items degrades quietly - never functional, gate open. */
+module Base
+{
+
+	template vehicle VFluidPump
+	{
+		part VFluidPump
+		{
+			mechanicArea = Under,
+			category = nodisplay,
+			durability = 3,
+		}
+	}
+
+	template vehicle VFluidPumpSlot
+	{
+		part VFluidPump
+		{
+			mechanicArea = Under,
+			category = engine,
+			durability = 3,
+
+			table install
+			{
+				items
+				{
+					1
+					{
+						tags = base:wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:2,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						tags = base:wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:2,
+				test = Vehicles.UninstallTest.Default,
+			}
+		}
+	}
+}

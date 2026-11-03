@@ -1,0 +1,10 @@
+name=Colorful World
+author=Kechna
+id=CAColorfulWorld
+description=Clothing, bags and cars spawn in bright, varied colors across the whole color wheel instead of drab dark tones.
+modversion=1.0.0
+poster=poster.png
+icon=
+tags=Clothing/Armor;Textures;Items;QoL;Build 42
+versionMin=42.0.0
+versionMax=

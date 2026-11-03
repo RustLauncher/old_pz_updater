@@ -1,0 +1,3 @@
+Sandbox_EN = {
+	Sandbox_DAMN_AllowOinkerSpawns = "Enable preset '82 Oshkosh M911 spawns",
+}

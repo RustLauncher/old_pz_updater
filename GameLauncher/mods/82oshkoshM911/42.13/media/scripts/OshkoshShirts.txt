@@ -1,0 +1,129 @@
+module Base
+    {
+
+	item TShirt_OshkoshGray
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Gray T-Shirt,
+		ClothingItem = TShirt_OshkoshGray,
+		BodyLocation = base:tshirt,
+		Icon = gray_shirt,
+		BloodLocation = Shirt,
+		Insulation = 0.4,
+        WindResistance = 0.35,
+		FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+        Tags = base:ripclothingcotton,
+	}
+
+	item TShirt_OshkoshBlack
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Black T-Shirt,
+		ClothingItem = TShirt_OshkoshBlack,
+		BodyLocation = base:tshirt,
+		Icon = black_shirt,
+		BloodLocation = Shirt,
+		Insulation = 0.4,
+        WindResistance = 0.35,
+		FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+        Tags = base:ripclothingcotton,
+	}
+
+	item TShirt_bknht
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = bknht T-Shirt,
+		ClothingItem = TShirt_bknht,
+		BodyLocation = base:tshirt,
+		Icon = bknht_shirt,
+		BloodLocation = Shirt,
+		Insulation = 0.4,
+        WindResistance = 0.35,
+		FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+        Tags = base:ripclothingcotton,
+	}
+
+	item HoodieUP_OshkoshBlack
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Black Hoodie,
+        ClothingExtraSubmenu = UpHoodie,
+		ClothingItem = HoodieUP_OshkoshBlack,
+		ClothingItemExtra = Base.HoodieDOWN_OshkoshBlack,
+		ClothingItemExtraOption = DownHoodie,
+		BodyLocation = base:sweaterhat,
+		BloodLocation = Jumper;Neck;FullHelmet,
+		Icon = black_hoodie,
+		Insulation = 0.55,
+        ScratchDefense = 10,
+        WindResistance = 0.2,
+		FabricType = Cotton,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item HoodieDOWN_OshkoshBlack
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Black Hoodie,
+        ClothingExtraSubmenu = DownHoodie,
+		ClothingItem = HoodieDOWN_OshkoshBlack,
+		ClothingItemExtra = Base.HoodieUP_OshkoshBlack,
+		ClothingItemExtraOption = UpHoodie,
+		BodyLocation = base:sweater,
+		BloodLocation = Jumper,
+		Icon = black_hoodie,
+		Insulation = 0.6,
+        NeckProtectionModifier = 0.5,
+        ScratchDefense = 10,
+        WindResistance = 0.25,
+		FabricType = Cotton,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item HoodieUP_OshkoshGray
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Gray Hoodie,
+        ClothingExtraSubmenu = UpHoodie,
+		ClothingItem = HoodieUP_OshkoshGray,
+		ClothingItemExtra = Base.HoodieDOWN_OshkoshGray,
+		ClothingItemExtraOption = DownHoodie,
+		BodyLocation = base:sweaterhat,
+		BloodLocation = Jumper;Neck;FullHelmet,
+		Icon = gray_hoodie,
+		Insulation = 0.55,
+        ScratchDefense = 10,
+        WindResistance = 0.2,
+		FabricType = Cotton,
+		WorldStaticModel = Hoodie_Ground,
+	}
+
+	item HoodieDOWN_OshkoshGray
+		{
+        DisplayCategory = Clothing,
+		ItemType = base:clothing,
+		DisplayName = Oshkosh Gray Hoodie,
+        ClothingExtraSubmenu = DownHoodie,
+		ClothingItem = HoodieDOWN_OshkoshGray,
+		ClothingItemExtra = Base.HoodieUP_OshkoshGray,
+		ClothingItemExtraOption = UpHoodie,
+		BodyLocation = base:sweater,
+		BloodLocation = Jumper,
+		Icon = gray_hoodie,
+		Insulation = 0.6,
+        NeckProtectionModifier = 0.5,
+        ScratchDefense = 10,
+        WindResistance = 0.25,
+		FabricType = Cotton,
+		WorldStaticModel = Hoodie_Ground,
+	}
+}

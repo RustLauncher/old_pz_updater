@@ -1,0 +1,73 @@
+/*
+ * Receita do carrinho de mao.
+ *
+ * ALVO DE EQUILIBRIO: item de meio de jogo. Nao e algo que se improvisa no
+ * primeiro dia com tabuas e pregos -- a cacamba e chapa de metal soldada, e
+ * soldar exige maçarico, vareta e mascara, que sao itens de saque especifico.
+ *
+ * MetalWelding:4 e o portao. Nivel 4 nao sai de pratica casual: pede revista ou
+ * livro mais tempo de bancada. E o mesmo patamar em que o jogo base libera
+ * construcao de estrutura de metal.
+ *
+ * A RODA veio de pneu de carro em vez de um item de roda proprio porque nao
+ * existe roda avulsa no jogo -- conferido em generated/items.
+ *
+ * QUALQUER pneu serve, e por TAG e nao por lista. Sao NOVE pneus no jogo --
+ * Old/Normal/Modern vezes 1/2/3, onde o numero e o tamanho do veiculo -- e a
+ * lista escrita a mao so tinha os tres de tamanho 1, ou seja recusava dois
+ * tercos dos pneus do jogo sem nenhuma razao de equilibrio. Um pneu de picape
+ * nao e pior roda de carrinho que um de compacto.
+ *
+ * A tag base:wholetire esta nos nove, e e a mesma que o jogo base usa em
+ * CutUpTire para dizer "um pneu inteiro, qualquer um". Por tag e nao por lista
+ * porque a lista silenciosamente envelhece: pneu novo do jogo ou de outro mod
+ * entra sozinho, e nao ha o que lembrar de atualizar.
+ *
+ * SOBRE O RESULTADO IR PARA O INVENTARIO: vai, e e isso que deve acontecer. A
+ * rede de WB_Placement poe no chao qualquer carrinho que apareca num inventario,
+ * e ela existe justamente para cobrir caminhos que nao controlamos -- craft,
+ * spawn de admin, menu de debug, outro mod. Tratar o craft como caso especial
+ * seria duplicar uma regra que ja e geral.
+ *
+ * A OPCAO EnableCrafting nao e imposta aqui, e nao pode ser: script nao le
+ * SandboxVars. Ela vive em WB_Recipe.lua, que so ENSINA a receita quando a opcao
+ * esta ligada -- por isso nao ha AutoLearn neste bloco. Sem o ensino a receita
+ * nunca aparece.
+ */
+module MNWheelbarrow
+{
+    imports { Base }
+
+    craftRecipe MakeWheelbarrow
+    {
+        time = 600,
+        timedAction = Welding,
+        category = Metalworking,
+        Tags = AnySurfaceCraft,
+        SkillRequired = MetalWelding:4,
+        xpAward = MetalWelding:50,
+        Tooltip = Tooltip_craft_MNWBWheelbarrow,
+        inputs
+        {
+            item 2 [Base.SheetMetal],
+            item 2 [Base.MetalPipe],
+            /* AllowDestroyedItem pelo mesmo motivo que CutUpTire o usa: aqui o
+               pneu e materia-prima, nao peca de rodagem. Pneu murcho de carro
+               batido continua sendo roda de carrinho de mao. */
+            item 1 tags[base:wholetire] flags[IsExclusive;AllowDestroyedItem],
+            item 4 [Base.Screws],
+            /* mode:keep sao ferramentas: usadas, nao consumidas. */
+            item 1 [Base.BlowTorch] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.WeldingMask] mode:keep,
+            item 1 [Base.WeldingRods] flags[DontRecordInput],
+        }
+        outputs
+        {
+            /* SEM COLCHETES. Eles sao sintaxe de ENTRADA, onde expressam
+               alternativas -- ver "item 4 [Base.Screws]" acima. Em outputs o parser
+               le o colchete como parte do nome do tipo, nao acha o item, e o jogo
+               aborta o carregamento do mundo inteiro com WorldDictionaryException. */
+            item 1 MNWheelbarrow.Wheelbarrow,
+        }
+    }
+}

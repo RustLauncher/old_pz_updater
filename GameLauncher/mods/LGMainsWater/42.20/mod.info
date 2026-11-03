@@ -1,0 +1,6 @@
+name=LG Connect To Water Supply
+id=LGMainsWater
+description=Adds a "Plumb ... to main" option for sinks, baths, showers, toilets and washing machines you fit indoors. A connected fixture counts as one of the building's own: same endless supply, same shutoff day, same water left standing in the pipes afterwards. Buildings the map says have no running water stay dry. Only worth having if you fit your own fixtures before the water shuts off. Singleplayer, hosted multiplayer and dedicated server.
+poster=poster.png
+modversion=1.1.2
+versionMin=42.20.0

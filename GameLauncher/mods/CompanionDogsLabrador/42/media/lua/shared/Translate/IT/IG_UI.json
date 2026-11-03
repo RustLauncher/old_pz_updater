@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Labrador",
+    "IGUI_AnimalType_labmale": "Labrador (maschio)",
+    "IGUI_AnimalType_labfemale": "Labrador (femmina)",
+    "IGUI_AnimalType_labpup": "Labrador (cucciolo)",
+    "IGUI_PD_Breed_labrador": "Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Un cane da caccia fatto per riportare: allena Caccia al doppio della velocità, con l'Obbedienza subito dietro. Di proposito è uno dei peggiori combattenti della famiglia: solo il Carlino morde più debolmente, nessun atterramento, e una rissa lo scuote parecchio. Il suo dono è la bocca. Ti riporta le prede fin da quando riesce a cacciare, invece di aspettare un'abilità di Caccia alta, non le lascia mai per strada e spesso arriva portando qualcos'altro che ha trovato (Bocca Morbida). Comune nelle case, e gira attorno a capanni da caccia, campeggi, rimesse per barche e stazioni dei ranger. Anche macellare ciò che ti porta rende di più con lui accanto.",
+    "IGUI_PD_Moodle_SoftMouth": "Bocca Morbida",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Il tuo Labrador ti riporta ogni preda fin dalla prima caccia, spesso con qualcosa in più. Finché è vicino, nutrito e leale, impari anche Macellazione e Lama Corta più in fretta.",
+    "IGUI_PD_LabExtra": "Il tuo %1 ti ha portato anche: %2."
+}

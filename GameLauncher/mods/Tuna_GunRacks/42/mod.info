@@ -1,0 +1,10 @@
+name=3D Gun Racks
+id=Tuna_GunRacks
+description=Functional weapon cabinets that display your firearms in the world and keep them immediately accessible.
+author=Tuna Terps
+poster=poster.png
+icon=icon.png
+modversion=1.1.2
+versionMin=42.20.0
+tiledef=tuna_weaponrack_01 6800
+pack=tuna_weaponrack

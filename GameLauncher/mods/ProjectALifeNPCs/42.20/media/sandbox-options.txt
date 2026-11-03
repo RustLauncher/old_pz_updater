@@ -1,0 +1,2898 @@
+VERSION = 1,
+
+option ALife.Preset_ExplicitValues = {
+    type = boolean, default = false,
+}
+
+option ALife.Preset_Difficulty = {
+    type = enum, numValues = 4, default = 1,
+    page = ProjectALife_0Start, translation = ProjectALife.PresetDifficulty,
+    _tooltip = ProjectALife.PresetDifficulty_tooltip,
+    valueTranslation = ProjectALife.PresetDifficulty,
+}
+
+option ALife.Preset_World = {
+    type = enum, numValues = 5, default = 4,
+    page = ProjectALife_0Start, translation = ProjectALife.PresetWorld,
+    _tooltip = ProjectALife.PresetWorld_tooltip,
+    valueTranslation = ProjectALife.PresetWorld,
+}
+
+option ALife.ProfessionAffectsAttitude = {
+    type = boolean, default = false,
+    page = ProjectALife_3Talk, translation = ProjectALife.ProfessionAffectsAttitude,
+    _tooltip = ProjectALife.ProfessionAffectsAttitude_tooltip,
+}
+
+option ALife.Realistic_Outbreak = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.RealisticOutbreak,
+    _tooltip = ProjectALife.RealisticOutbreak_tooltip,
+}
+
+option ALife.World_HostileEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_0Start, translation = ProjectALife.ALifeEnabled,
+    _tooltip = ProjectALife.ALifeEnabled_tooltip,
+}
+
+option ALife.Population_RatePercent = {
+    type = integer, min = 25, max = 400, default = 200,
+    page = ProjectALife_1People, translation = ProjectALife.PopulationRate,
+    _tooltip = ProjectALife.PopulationRate_tooltip,
+}
+
+option ALife.Population_PartyPercent = {
+    type = integer, min = 50, max = 200, default = 125,
+    page = ProjectALife_1People, translation = ProjectALife.GroupScale,
+    _tooltip = ProjectALife.GroupScale_tooltip,
+}
+
+option ALife.World_SimRadius = {
+    type = integer, min = 40, max = 250, default = 90,
+    page = ProjectALife_6Sound, translation = ProjectALife.SimulationRadius,
+    _tooltip = ProjectALife.SimulationRadius_tooltip,
+}
+
+option ALife.Population_HostileCeiling = {
+    type = integer, min = 4, max = 160, default = 32,
+    page = ProjectALife_0Start, translation = ProjectALife.MaxHostiles,
+    _tooltip = ProjectALife.MaxHostiles_tooltip,
+}
+
+option ALife.Combat_ReactionDelayPercent = {
+    type = integer, min = 25, max = 200, default = 75,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.CombatReactionDelay,
+    _tooltip = ProjectALife.CombatReactionDelay_tooltip,
+}
+
+option ALife.Combat_AimDifficulty = {
+    type = enum, numValues = 6, default = 3,
+    page = ProjectALife_0Start, translation = ProjectALife.AimDifficulty,
+    _tooltip = ProjectALife.AimDifficulty_tooltip,
+    valueTranslation = ProjectALife.AimDifficulty,
+}
+
+option ALife.Encounters_RollPercent = {
+    type = integer, min = 0, max = 100, default = 40,
+    page = ProjectALife_1People, translation = ProjectALife.EncounterChance,
+    _tooltip = ProjectALife.EncounterChance_tooltip,
+}
+
+option ALife.Encounters_GapHours = {
+    type = integer, min = 1, max = 24, default = 3,
+    page = ProjectALife_1People, translation = ProjectALife.EncounterInterval,
+    _tooltip = ProjectALife.EncounterInterval_tooltip,
+}
+
+option ALife.World_SafehouseClearance = {
+    type = integer, min = 0, max = 50, default = 8,
+    page = ProjectALife_4Bases, translation = ProjectALife.SafehouseMargin,
+    _tooltip = ProjectALife.SafehouseMargin_tooltip,
+}
+
+option ALife.World_FactionWarfare = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.Warfare,
+    _tooltip = ProjectALife.Warfare_tooltip,
+}
+
+option ALife.Behavior_Retreat = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.Retreat,
+    _tooltip = ProjectALife.Retreat_tooltip,
+}
+
+option ALife.Behavior_NPCsReanimate = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.NPCsReanimate,
+    _tooltip = ProjectALife.NPCsReanimate_tooltip,
+}
+
+option ALife.Turning_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.TurningDelay,
+    _tooltip = ProjectALife.TurningDelay_tooltip,
+}
+
+option ALife.Turning_DelaySecondsMin = {
+    type = integer, min = 0, max = 600, default = 20,
+    page = ProjectALife_2Danger, translation = ProjectALife.TurningDelayMin,
+    _tooltip = ProjectALife.TurningDelayMin_tooltip,
+}
+
+option ALife.Turning_DelaySecondsMax = {
+    type = integer, min = 0, max = 600, default = 90,
+    page = ProjectALife_2Danger, translation = ProjectALife.TurningDelayMax,
+    _tooltip = ProjectALife.TurningDelayMax_tooltip,
+}
+
+option ALife.Behavior_Scavenge = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.Scavenging,
+    _tooltip = ProjectALife.Scavenging_tooltip,
+}
+
+option ALife.Behavior_Investigate = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.Investigate,
+    _tooltip = ProjectALife.Investigate_tooltip,
+}
+
+option ALife.Behavior_Regroup = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.Regroup,
+    _tooltip = ProjectALife.Regroup_tooltip,
+}
+
+option ALife.Behavior_MarchTogether = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.GroupMarch,
+    _tooltip = ProjectALife.GroupMarch_tooltip,
+}
+
+option ALife.Behavior_CloseDoors = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.CloseDoors,
+    _tooltip = ProjectALife.CloseDoors_tooltip,
+}
+
+option ALife.Drops_WeaponsEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.WeaponDrops,
+    _tooltip = ProjectALife.WeaponDrops_tooltip,
+}
+
+option ALife.Drops_WeaponChance = {
+    type = enum, numValues = 9, default = 1,
+    page = ProjectALife_0Start, translation = ProjectALife.DropsWeaponChance,
+    _tooltip = ProjectALife.DropsWeaponChance_tooltip,
+    valueTranslation = ProjectALife.DropsWeaponChance,
+}
+
+option ALife.Drops_WeaponCondition = {
+    type = enum, numValues = 12, default = 1,
+    page = ProjectALife_5World, translation = ProjectALife.DropsWeaponCondition,
+    _tooltip = ProjectALife.DropsWeaponCondition_tooltip,
+    valueTranslation = ProjectALife.DropsWeaponCondition,
+}
+
+option ALife.Loot_RareDropPercent = {
+    type = integer, min = 0, max = 100, default = 5,
+    page = ProjectALife_5World, translation = ProjectALife.LootRareDropPercent,
+    _tooltip = ProjectALife.LootRareDropPercent_tooltip,
+}
+
+option ALife.Loot_AllowRareFromProfiles = {
+    type = boolean, default = false,
+    page = ProjectALife_5World, translation = ProjectALife.LootAllowRareFromProfiles,
+    _tooltip = ProjectALife.LootAllowRareFromProfiles_tooltip,
+}
+
+option ALife.Factions_LegacyRoster = {
+    type = boolean, default = false,
+    page = ProjectALife_1People, translation = ProjectALife.FactionsLegacyRoster,
+    _tooltip = ProjectALife.FactionsLegacyRoster_tooltip,
+}
+
+option ALife.Funnel_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.FunnelEnabled,
+    _tooltip = ProjectALife.FunnelEnabled_tooltip,
+}
+
+option ALife.Funnel_DayOffset = {
+    type = integer, min = -3650, max = 3650, default = 0,
+    page = ProjectALife_1People, translation = ProjectALife.FunnelDayOffset,
+    _tooltip = ProjectALife.FunnelDayOffset_tooltip,
+}
+
+option ALife.Funnel_LoneSurvivorMax = {
+    type = integer, min = 1, max = 2, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.FunnelLoneSurvivorMax,
+    _tooltip = ProjectALife.FunnelLoneSurvivorMax_tooltip,
+}
+
+option ALife.Funnel_SkillRampPercent = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.FunnelSkillRampPercent,
+    _tooltip = ProjectALife.FunnelSkillRampPercent_tooltip,
+}
+
+option ALife.Ammo_SpawnPercent = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_2Danger, translation = ProjectALife.AmmoSpawnPercent,
+    _tooltip = ProjectALife.AmmoSpawnPercent_tooltip,
+}
+
+option ALife.Ammo_ReserveLoads = {
+    type = integer, min = 0, max = 20, default = 2,
+    page = ProjectALife_2Danger, translation = ProjectALife.AmmoReserveLoads,
+    _tooltip = ProjectALife.AmmoReserveLoads_tooltip,
+}
+
+option ALife.Ammo_Bottomless = {
+    type = enum, numValues = 3, default = 1,
+    page = ProjectALife_2Danger, translation = ProjectALife.AmmoBottomless,
+    _tooltip = ProjectALife.AmmoBottomless_tooltip,
+    valueTranslation = ProjectALife.AmmoBottomless,
+}
+
+option ALife.Ammo_HonestDrops = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.AmmoHonestDrops,
+    _tooltip = ProjectALife.AmmoHonestDrops_tooltip,
+}
+
+option ALife.Combat_EnableJamming = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.WeaponJamming,
+    _tooltip = ProjectALife.WeaponJamming_tooltip,
+}
+
+option ALife.Combat_JamChance = {
+    type = double, min = 0, max = 25, default = 1.0,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.WeaponJamChance,
+    _tooltip = ProjectALife.WeaponJamChance_tooltip,
+}
+
+option ALife.Breach_Strength = {
+    type = double, min = 25, max = 200, default = 100,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.BreachStrength,
+    _tooltip = ProjectALife.BreachStrength_tooltip,
+}
+
+option ALife.Combat_MultiHit = {
+    type = boolean, default = false,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MultiHit,
+    _tooltip = ProjectALife.MultiHit_tooltip,
+}
+
+option ALife.Combat_BulletPenetration = {
+    type = boolean, default = false,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.BulletPenetration,
+    _tooltip = ProjectALife.BulletPenetration_tooltip,
+}
+
+option ALife.Population_PopulateOnStart = {
+    type = enum, numValues = 4, default = 3,
+    page = ProjectALife_1People, translation = ProjectALife.PopulateOnStart,
+    valueTranslation = ProjectALife.PopulateOnStart,
+    _tooltip = ProjectALife.PopulateOnStart_tooltip,
+}
+
+option ALife.Population_PopulateMax = {
+    type = integer, min = 1, max = 200, default = 75,
+    page = ProjectALife_1People, translation = ProjectALife.PopulateMax,
+    _tooltip = ProjectALife.PopulateMax_tooltip,
+}
+
+option ALife.TownWelcome_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.TownWelcomeEnabled,
+    _tooltip = ProjectALife.TownWelcomeEnabled_tooltip,
+}
+
+option ALife.TownWelcome_GroupsPerTown = {
+    type = integer, min = 1, max = 6, default = 4,
+    page = ProjectALife_1People, translation = ProjectALife.TownWelcomeGroups,
+    _tooltip = ProjectALife.TownWelcomeGroups_tooltip,
+}
+
+option ALife.TownWelcome_FirstDayOnly = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.TownWelcomeFirstDay,
+    _tooltip = ProjectALife.TownWelcomeFirstDay_tooltip,
+}
+
+option ALife.Census_Size = {
+    type = integer, min = 20, max = 5000, default = 360,
+    page = ProjectALife_1People, translation = ProjectALife.CensusSize,
+    _tooltip = ProjectALife.CensusSize_tooltip,
+}
+
+option ALife.Census_ArrivalsEarly = {
+    type = double, min = 0, max = 100, default = 7.0,
+    page = ProjectALife_1People, translation = ProjectALife.CensusArrivalsEarly,
+    _tooltip = ProjectALife.CensusArrivalsEarly_tooltip,
+}
+
+option ALife.Census_ArrivalsLate = {
+    type = double, min = 0, max = 100, default = 1.0,
+    page = ProjectALife_1People, translation = ProjectALife.CensusArrivalsLate,
+    _tooltip = ProjectALife.CensusArrivalsLate_tooltip,
+}
+
+option ALife.Census_ArrivalsFadeDays = {
+    type = integer, min = 1, max = 365, default = 28,
+    page = ProjectALife_1People, translation = ProjectALife.CensusArrivalsFadeDays,
+    _tooltip = ProjectALife.CensusArrivalsFadeDays_tooltip,
+}
+
+option ALife.Census_ClearedDays = {
+    type = integer, min = 1, max = 365, default = 30,
+    page = ProjectALife_1People, translation = ProjectALife.CensusClearedDays,
+    _tooltip = ProjectALife.CensusClearedDays_tooltip,
+}
+
+option ALife.Census_Resettle = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.CensusResettle,
+    _tooltip = ProjectALife.CensusResettle_tooltip,
+}
+
+option ALife.Search_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.Search,
+    _tooltip = ProjectALife.Search_tooltip,
+}
+
+option ALife.Search_ShoutResponse = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.SearchShout,
+    _tooltip = ProjectALife.SearchShout_tooltip,
+}
+
+option ALife.Search_GroupCallout = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.SearchCallout,
+    _tooltip = ProjectALife.SearchCallout_tooltip,
+}
+
+option ALife.Clues_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.Clues,
+    _tooltip = ProjectALife.Clues_tooltip,
+}
+
+option ALife.Clues_Vehicles = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.CluesVehicles,
+    _tooltip = ProjectALife.CluesVehicles_tooltip,
+}
+
+option ALife.Clues_Barricades = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.CluesBarricades,
+    _tooltip = ProjectALife.CluesBarricades_tooltip,
+}
+
+option ALife.Clues_PlayerBuilt = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.CluesPlayerBuilt,
+    _tooltip = ProjectALife.CluesPlayerBuilt_tooltip,
+}
+
+option ALife.Clues_Power = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.CluesPower,
+    _tooltip = ProjectALife.CluesPower_tooltip,
+}
+
+option ALife.Clues_WeightMultiplier = {
+    type = double, min = 0.25, max = 5.0, default = 1.0,
+    page = ProjectALife_5World, translation = ProjectALife.CluesWeight,
+    _tooltip = ProjectALife.CluesWeight_tooltip,
+}
+
+option ALife.Voice_Enabled = {
+    type = boolean, default = false,
+    page = ProjectALife_0Start, translation = ProjectALife.Voice,
+    _tooltip = ProjectALife.Voice_tooltip,
+}
+
+option ALife.Talk_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkEnabled,
+    _tooltip = ProjectALife.TalkEnabled_tooltip,
+}
+
+option ALife.Talk_SinglePlayerChat = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkSinglePlayerChat,
+    _tooltip = ProjectALife.TalkSinglePlayerChat_tooltip,
+}
+
+option ALife.Talk_Presence = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkPresence,
+    _tooltip = ProjectALife.TalkPresence_tooltip,
+}
+
+option ALife.Talk_RiskAssessment = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkRiskAssessment,
+    _tooltip = ProjectALife.TalkRiskAssessment_tooltip,
+}
+
+option ALife.Talk_GroupMeetings = {
+    type = enum, numValues = 4, default = 3,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkGroupMeetings,
+    _tooltip = ProjectALife.TalkGroupMeetings_tooltip,
+    valueTranslation = ProjectALife.TalkGroupMeetings,
+}
+
+option ALife.Chatter_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ChatterEnabled,
+    _tooltip = ProjectALife.ChatterEnabled_tooltip,
+}
+
+option ALife.Chatter_Frequency = {
+    type = integer, min = 10, max = 400, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ChatterFrequency,
+    _tooltip = ProjectALife.ChatterFrequency_tooltip,
+}
+
+option ALife.Chatter_PassingGreetPercent = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ProjectALife_3Talk, translation = ProjectALife.ChatterPassingGreetPercent,
+    _tooltip = ProjectALife.ChatterPassingGreetPercent_tooltip,
+}
+
+option ALife.Chatter_MaxConcurrent = {
+    type = integer, min = 1, max = 8, default = 3,
+    page = ProjectALife_3Talk, translation = ProjectALife.ChatterMaxConcurrent,
+    _tooltip = ProjectALife.ChatterMaxConcurrent_tooltip,
+}
+
+option ALife.Robbery_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.RobberyEnabled,
+    _tooltip = ProjectALife.RobberyEnabled_tooltip,
+}
+
+option ALife.Robbery_Chance = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_2Danger, translation = ProjectALife.RobberyChance,
+    _tooltip = ProjectALife.RobberyChance_tooltip,
+}
+
+option ALife.Orders_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersEnabled,
+    _tooltip = ProjectALife.OrdersEnabled_tooltip,
+}
+
+option ALife.Orders_Chance = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersChance,
+    _tooltip = ProjectALife.OrdersChance_tooltip,
+}
+
+option ALife.Orders_FailFight = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersFailFight,
+    _tooltip = ProjectALife.OrdersFailFight_tooltip,
+}
+
+option ALife.Orders_ZombieTiles = {
+    type = integer, min = 1, max = 8, default = 4,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersZombieTiles,
+    _tooltip = ProjectALife.OrdersZombieTiles_tooltip,
+}
+
+option ALife.Orders_SurrenderSeconds = {
+    type = integer, min = 10, max = 600, default = 90,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersSurrenderSeconds,
+    _tooltip = ProjectALife.OrdersSurrenderSeconds_tooltip,
+}
+
+option ALife.Orders_Advantage = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersAdvantage,
+    _tooltip = ProjectALife.OrdersAdvantage_tooltip,
+}
+
+option ALife.Orders_GroupSurrender = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersGroupSurrender,
+    _tooltip = ProjectALife.OrdersGroupSurrender_tooltip,
+}
+
+option ALife.Orders_CarefulMinutes = {
+    type = integer, min = 0, max = 240, default = 15,
+    page = ProjectALife_3Talk, translation = ProjectALife.OrdersCarefulMinutes,
+    _tooltip = ProjectALife.OrdersCarefulMinutes_tooltip,
+}
+
+option ALife.Talk_GreetOnOpen = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkGreetOnOpen,
+    _tooltip = ProjectALife.TalkGreetOnOpen_tooltip,
+}
+
+option ALife.Talk_AntiSpam = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkAntiSpam,
+    _tooltip = ProjectALife.TalkAntiSpam_tooltip,
+}
+
+option ALife.Talk_MenuFocus = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkMenuFocus,
+    _tooltip = ProjectALife.TalkMenuFocus_tooltip,
+}
+
+option ALife.Talk_RepeatCooldownMinutes = {
+    type = integer, min = 1, max = 600, default = 30,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkRepeatCooldownMinutes,
+    _tooltip = ProjectALife.TalkRepeatCooldownMinutes_tooltip,
+}
+
+option ALife.Talk_QuestionsPerTalk = {
+    type = integer, min = 2, max = 30, default = 10,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkQuestionsPerTalk,
+    _tooltip = ProjectALife.TalkQuestionsPerTalk_tooltip,
+}
+
+option ALife.Talk_RefuseMinutes = {
+    type = integer, min = 5, max = 1440, default = 60,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkRefuseMinutes,
+    _tooltip = ProjectALife.TalkRefuseMinutes_tooltip,
+}
+
+option ALife.Talk_PersonalAfterTalks = {
+    type = integer, min = 1, max = 10, default = 2,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkPersonalAfterTalks,
+    _tooltip = ProjectALife.TalkPersonalAfterTalks_tooltip,
+}
+
+option ALife.Talk_OpinionFromTalk = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkOpinionFromTalk,
+    _tooltip = ProjectALife.TalkOpinionFromTalk_tooltip,
+}
+
+option ALife.Talk_OpinionCapPerConversation = {
+    type = integer, min = 1, max = 40, default = 6,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkOpinionCapPerConversation,
+    _tooltip = ProjectALife.TalkOpinionCapPerConversation_tooltip,
+}
+
+option ALife.Talk_OpinionCapPerDay = {
+    type = integer, min = 1, max = 100, default = 12,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkOpinionCapPerDay,
+    _tooltip = ProjectALife.TalkOpinionCapPerDay_tooltip,
+}
+
+option ALife.Talk_OpinionWordCeiling = {
+    type = integer, min = 0, max = 100, default = 40,
+    page = ProjectALife_3Talk, translation = ProjectALife.TalkOpinionWordCeiling,
+    _tooltip = ProjectALife.TalkOpinionWordCeiling_tooltip,
+}
+
+option ALife.BodyLoot_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.BodyLootEnabled,
+    _tooltip = ProjectALife.BodyLootEnabled_tooltip,
+}
+
+option ALife.BodyLoot_PerMinute = {
+    type = integer, min = 1, max = 20, default = 3,
+    page = ProjectALife_5World, translation = ProjectALife.BodyLootPerMinute,
+    _tooltip = ProjectALife.BodyLootPerMinute_tooltip,
+}
+
+option ALife.Radio_KnoxCounty = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.RadioKnoxCounty,
+    _tooltip = ProjectALife.RadioKnoxCounty_tooltip,
+}
+
+option ALife.Reputation_Tracking = {
+    type = boolean, default = true,
+    page = ProjectALife_0Start, translation = ProjectALife.ReputationTracking,
+    _tooltip = ProjectALife.ReputationTracking_tooltip,
+}
+
+option ALife.Reputation_NpcOpinion = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationNpcOpinion,
+    _tooltip = ProjectALife.ReputationNpcOpinion_tooltip,
+}
+
+option ALife.Reputation_NpcOpinionScale = {
+    type = integer, min = 25, max = 300, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationNpcOpinionScale,
+    _tooltip = ProjectALife.ReputationNpcOpinionScale_tooltip,
+}
+
+option ALife.Reputation_NpcOpinionEffects = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationNpcOpinionEffects,
+    _tooltip = ProjectALife.ReputationNpcOpinionEffects_tooltip,
+}
+
+option ALife.Reputation_NpcOpinionDecay = {
+    type = integer, min = 0, max = 20, default = 3,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationNpcOpinionDecay,
+    _tooltip = ProjectALife.ReputationNpcOpinionDecay_tooltip,
+}
+
+option ALife.Reputation_RadioNames = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationRadioNames,
+    _tooltip = ProjectALife.ReputationRadioNames_tooltip,
+}
+
+option ALife.Reputation_RadioBadNews = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationRadioBadNews,
+    _tooltip = ProjectALife.ReputationRadioBadNews_tooltip,
+}
+
+option ALife.Reputation_Mode = {
+    type = enum, numValues = 2, default = 1,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationMode,
+    valueTranslation = ProjectALife.ReputationMode,
+    _tooltip = ProjectALife.ReputationMode_tooltip,
+}
+
+option ALife.Reputation_DecayPercent = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationDecayPercent,
+    _tooltip = ProjectALife.ReputationDecayPercent_tooltip,
+}
+
+option ALife.Reputation_ShowScore = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationShowScore,
+    _tooltip = ProjectALife.ReputationShowScore_tooltip,
+}
+
+option ALife.Reputation_ResetOnNewCharacter = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationResetOnNewCharacter,
+    _tooltip = ProjectALife.ReputationResetOnNewCharacter_tooltip,
+}
+
+option ALife.Reputation_ShowOthers = {
+    type = boolean, default = false,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationShowOthers,
+    _tooltip = ProjectALife.ReputationShowOthers_tooltip,
+}
+
+option ALife.Reputation_NpcFightIsHostile = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationNpcFightIsHostile,
+    _tooltip = ProjectALife.ReputationNpcFightIsHostile_tooltip,
+}
+
+option ALife.Reputation_DriftPerDay = {
+    type = integer, min = 0, max = 50, default = 5,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationDriftPerDay,
+    _tooltip = ProjectALife.ReputationDriftPerDay_tooltip,
+}
+
+option ALife.Reputation_KillScale = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillScale,
+    _tooltip = ProjectALife.ReputationKillScale_tooltip,
+}
+
+option ALife.Reputation_GainCapPerDay = {
+    type = integer, min = 0, max = 1000, default = 60,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationGainCapPerDay,
+    _tooltip = ProjectALife.ReputationGainCapPerDay_tooltip,
+}
+
+option ALife.Reputation_OverCapPercent = {
+    type = integer, min = 0, max = 100, default = 25,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationOverCapPercent,
+    _tooltip = ProjectALife.ReputationOverCapPercent_tooltip,
+}
+
+option ALife.Reputation_Hysteresis = {
+    type = integer, min = 0, max = 100, default = 15,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationHysteresis,
+    _tooltip = ProjectALife.ReputationHysteresis_tooltip,
+}
+
+option ALife.Reputation_KillHostile = {
+    type = integer, min = 0, max = 200, default = 10,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillHostile,
+    _tooltip = ProjectALife.ReputationKillHostile_tooltip,
+}
+
+option ALife.Reputation_KillCrime = {
+    type = integer, min = 0, max = 200, default = 15,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillCrime,
+    _tooltip = ProjectALife.ReputationKillCrime_tooltip,
+}
+
+option ALife.Reputation_KillNeutral = {
+    type = integer, min = 0, max = 500, default = 40,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillNeutral,
+    _tooltip = ProjectALife.ReputationKillNeutral_tooltip,
+}
+
+option ALife.Reputation_KillFriendly = {
+    type = integer, min = 0, max = 500, default = 80,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillFriendly,
+    _tooltip = ProjectALife.ReputationKillFriendly_tooltip,
+}
+
+option ALife.Reputation_KillSurrendered = {
+    type = integer, min = 0, max = 500, default = 100,
+    page = ProjectALife_3Talk, translation = ProjectALife.ReputationKillSurrendered,
+    _tooltip = ProjectALife.ReputationKillSurrendered_tooltip,
+}
+
+option ALife.Radio_KnoxFrequency = {
+    type = integer, min = 88000, max = 108000, default = 99600,
+    page = ProjectALife_5World, translation = ProjectALife.RadioKnoxFrequency,
+    _tooltip = ProjectALife.RadioKnoxFrequency_tooltip,
+}
+
+option ALife.Debug_ShowAdminTools = {
+    type = boolean, default = true,
+    page = ProjectALife_9Admin, translation = ProjectALife.ShowAdminTools,
+    _tooltip = ProjectALife.ShowAdminTools_tooltip,
+}
+
+option ALife.Cleanup_RespawnAfter = {
+    type = boolean, default = false,
+    page = ProjectALife_9Admin, translation = ProjectALife.CleanupRespawnAfter,
+    _tooltip = ProjectALife.CleanupRespawnAfter_tooltip,
+}
+
+option ALife.Peek_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Peek_Enabled,
+    _tooltip = ProjectALife.Peek_Enabled_tooltip,
+}
+
+option ALife.Peek_NoticeChancePercent = {
+    type = integer, min = 0, max = 100, default = 5,
+    page = ProjectALife_4Bases, translation = ProjectALife.Peek_NoticeChancePercent,
+    _tooltip = ProjectALife.Peek_NoticeChancePercent_tooltip,
+}
+
+option ALife.Talk_MysteryMode = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Talk_MysteryMode,
+    _tooltip = ProjectALife.Talk_MysteryMode_tooltip,
+}
+
+option ALife.Combat_VehicleDamage = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.VehicleDamage,
+    _tooltip = ProjectALife.VehicleDamage_tooltip,
+}
+
+option ALife.Combat_NonPvpZoneShield = {
+    type = boolean, default = false,
+    page = ProjectALife_2Danger, translation = ProjectALife.NonPvpZoneShield,
+    _tooltip = ProjectALife.NonPvpZoneShield_tooltip,
+}
+
+option ALife.Combat_AimZombiePercent = {
+    type = integer, min = 10, max = 200, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.AimZombiePercent,
+    _tooltip = ProjectALife.AimZombiePercent_tooltip,
+}
+
+option ALife.Combat_AimPlayerPercent = {
+    type = integer, min = 10, max = 200, default = 70,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.AimPlayerPercent,
+    _tooltip = ProjectALife.AimPlayerPercent_tooltip,
+}
+
+option ALife.Combat_DamagePercent = {
+    type = integer, min = 0, max = 100, default = 72,
+    page = ProjectALife_0Start, translation = ProjectALife.NpcDamagePercent,
+    _tooltip = ProjectALife.NpcDamagePercent_tooltip,
+}
+
+option ALife.Combat_ExtraWoundPercent = {
+    type = integer, min = 0, max = 200, default = 0,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ExtraWoundPercent,
+    _tooltip = ProjectALife.ExtraWoundPercent_tooltip,
+}
+
+option ALife.NpcHealth_Percent = {
+    type = integer, min = 25, max = 300, default = 98,
+    page = ProjectALife_0Start, translation = ProjectALife.NpcHealthPercent,
+    _tooltip = ProjectALife.NpcHealthPercent_tooltip,
+}
+
+option ALife.NpcHealth_DamageTakenPercent = {
+    type = integer, min = 25, max = 400, default = 130,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.NpcDamageTakenPercent,
+    _tooltip = ProjectALife.NpcDamageTakenPercent_tooltip,
+}
+
+option ALife.NpcHealth_RegenPercent = {
+    type = integer, min = 0, max = 400, default = 50,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.NpcRegenPercent,
+    _tooltip = ProjectALife.NpcRegenPercent_tooltip,
+}
+
+option ALife.NpcHealth_Legacy = {
+    type = boolean, default = false,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.NpcHealthLegacy,
+    _tooltip = ProjectALife.NpcHealthLegacy_tooltip,
+}
+
+option ALife.Combat_RoomSweep = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.RoomSweep,
+    _tooltip = ProjectALife.RoomSweep_tooltip,
+}
+
+option ALife.Combat_VisibleTracers = {
+    type = boolean, default = true,
+    page = ProjectALife_6Sound, translation = ProjectALife.Tracers,
+    _tooltip = ProjectALife.Tracers_tooltip,
+}
+
+option ALife.Combat_MuzzleFlash = {
+    type = boolean, default = true,
+    page = ProjectALife_6Sound, translation = ProjectALife.MuzzleFlash,
+    _tooltip = ProjectALife.MuzzleFlash_tooltip,
+}
+
+option ALife.Combat_ShotFxRange = {
+    type = integer, min = 20, max = 150, default = 90,
+    page = ProjectALife_6Sound, translation = ProjectALife.ShotFxRange,
+    _tooltip = ProjectALife.ShotFxRange_tooltip,
+}
+
+option ALife.Modules_Cover = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleCover,
+    _tooltip = ProjectALife.ModuleCover_tooltip,
+}
+
+option ALife.Modules_Withdraw = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleWithdraw,
+    _tooltip = ProjectALife.ModuleWithdraw_tooltip,
+}
+
+option ALife.Panic_FirstDays = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.PanicFirstDays,
+    _tooltip = ProjectALife.PanicFirstDays_tooltip,
+}
+
+option ALife.Panic_Strength = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.PanicStrength,
+    _tooltip = ProjectALife.PanicStrength_tooltip,
+}
+
+option ALife.Panic_LengthDays = {
+    type = integer, min = 2, max = 60, default = 12,
+    page = ProjectALife_2Danger, translation = ProjectALife.PanicLengthDays,
+    _tooltip = ProjectALife.PanicLengthDays_tooltip,
+}
+
+option ALife.Panic_Contagion = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.PanicContagion,
+    _tooltip = ProjectALife.PanicContagion_tooltip,
+}
+
+option ALife.Modules_Fear = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.ModuleFear,
+    _tooltip = ProjectALife.ModuleFear_tooltip,
+}
+
+option ALife.Fear_Days = {
+    type = integer, min = 0, max = 30, default = 7,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.FearDays,
+    _tooltip = ProjectALife.FearDays_tooltip,
+}
+
+option ALife.Fear_Level = {
+    type = enum, numValues = 3, default = 2,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.FearLevel,
+    _tooltip = ProjectALife.FearLevel_tooltip,
+    valueTranslation = ProjectALife.FearLevel,
+}
+
+option ALife.Fear_Lingering = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.FearLingering,
+    _tooltip = ProjectALife.FearLingering_tooltip,
+}
+
+option ALife.GunFear_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.GunFearEnabled,
+    _tooltip = ProjectALife.GunFearEnabled_tooltip,
+}
+
+option ALife.GunFear_Percent = {
+    type = integer, min = 0, max = 100, default = 60,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunFearPercent,
+    _tooltip = ProjectALife.GunFearPercent_tooltip,
+}
+
+option ALife.GunFear_RunDistance = {
+    type = integer, min = 8, max = 80, default = 35,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunFearRunDistance,
+    _tooltip = ProjectALife.GunFearRunDistance_tooltip,
+}
+
+option ALife.GunFear_RunSpeed = {
+    type = enum, numValues = 2, default = 2,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunFearRunSpeed,
+    _tooltip = ProjectALife.GunFearRunSpeed_tooltip,
+    valueTranslation = ProjectALife.GunFearRunSpeed,
+}
+
+option ALife.GunFear_ReactDelayMs = {
+    type = integer, min = 0, max = 3000, default = 400,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunFearReactDelay,
+    _tooltip = ProjectALife.GunFearReactDelay_tooltip,
+}
+
+option ALife.Modules_Healing = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleHealing,
+    _tooltip = ProjectALife.ModuleHealing_tooltip,
+}
+
+option ALife.Combat_MeleeFootwork = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MeleeFootwork,
+    _tooltip = ProjectALife.MeleeFootwork_tooltip,
+}
+
+option ALife.Combat_MeleeKiteCrowd = {
+    type = integer, min = 0, max = 8, default = 2,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MeleeKiteCrowd,
+    _tooltip = ProjectALife.MeleeKiteCrowd_tooltip,
+}
+
+option ALife.Combat_MeleeKiteTiles = {
+    type = integer, min = 1, max = 5, default = 2,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MeleeKiteTiles,
+    _tooltip = ProjectALife.MeleeKiteTiles_tooltip,
+}
+
+option ALife.Combat_MeleeStepBackTenths = {
+    type = integer, min = 3, max = 30, default = 16,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MeleeStepBack,
+    _tooltip = ProjectALife.MeleeStepBack_tooltip,
+}
+
+option ALife.Combat_MeleeStepInTenths = {
+    type = integer, min = 3, max = 25, default = 11,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.MeleeStepIn,
+    _tooltip = ProjectALife.MeleeStepIn_tooltip,
+}
+
+option ALife.Combat_ZombieStunMs = {
+    type = integer, min = 0, max = 3000, default = 1100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ZombieStunMs,
+    _tooltip = ProjectALife.ZombieStunMs_tooltip,
+}
+
+option ALife.Melee_FactionEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewEnabled,
+    _tooltip = ProjectALife.MeleeCrewEnabled_tooltip,
+}
+
+option ALife.Melee_Footwork = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewFootwork,
+    _tooltip = ProjectALife.MeleeCrewFootwork_tooltip,
+}
+
+option ALife.Melee_Flank = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewFlank,
+    _tooltip = ProjectALife.MeleeCrewFlank_tooltip,
+}
+
+option ALife.Melee_Breach = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewBreach,
+    _tooltip = ProjectALife.MeleeCrewBreach_tooltip,
+}
+
+option ALife.Melee_Intimidate = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewIntimidate,
+    _tooltip = ProjectALife.MeleeCrewIntimidate_tooltip,
+}
+
+option ALife.Melee_Caution = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewCaution,
+    _tooltip = ProjectALife.MeleeCrewCaution_tooltip,
+}
+
+option ALife.Melee_CautionCrowd = {
+    type = integer, min = 2, max = 8, default = 3,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.MeleeCrewCautionCrowd,
+    _tooltip = ProjectALife.MeleeCrewCautionCrowd_tooltip,
+}
+
+option ALife.Zombies_ReactSpeed = {
+    type = integer, min = 100, max = 1000, default = 500,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ZombieReactSpeed,
+    _tooltip = ProjectALife.ZombieReactSpeed_tooltip,
+}
+
+option ALife.Zombies_AttackAnims = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.ZombieAttackAnims,
+    _tooltip = ProjectALife.ZombieAttackAnims_tooltip,
+}
+
+option ALife.Zombies_ScratchPercent = {
+    type = integer, min = 0, max = 100, default = 35,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ZombieScratch,
+    _tooltip = ProjectALife.ZombieScratch_tooltip,
+}
+
+option ALife.Zombies_DragDown = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.ZombieDragDown,
+    _tooltip = ProjectALife.ZombieDragDown_tooltip,
+}
+
+option ALife.Zombies_DragDownCount = {
+    type = integer, min = 2, max = 8, default = 4,
+    page = ProjectALife_2Danger, translation = ProjectALife.ZombieDragCount,
+    _tooltip = ProjectALife.ZombieDragCount_tooltip,
+}
+
+option ALife.Zombies_DragDownTenths = {
+    type = integer, min = 5, max = 60, default = 30,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ZombieDragTime,
+    _tooltip = ProjectALife.ZombieDragTime_tooltip,
+}
+
+option ALife.Combat_NpcArmorVsZombies = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.NpcArmorVsZombies,
+    _tooltip = ProjectALife.NpcArmorVsZombies_tooltip,
+}
+
+option ALife.Injury_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryEnabled,
+    _tooltip = ProjectALife.InjuryEnabled_tooltip,
+}
+
+option ALife.Injury_Rescue = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryRescue,
+    _tooltip = ProjectALife.InjuryRescue_tooltip,
+}
+
+option ALife.Injury_RescueDrag = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryRescueDrag,
+    _tooltip = ProjectALife.InjuryRescueDrag_tooltip,
+}
+
+option ALife.Injury_RescueInView = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryRescueInView,
+    _tooltip = ProjectALife.InjuryRescueInView_tooltip,
+}
+
+option ALife.Injury_RescueRange = {
+    type = integer, min = 5, max = 40, default = 15,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryRescueRange,
+    _tooltip = ProjectALife.InjuryRescueRange_tooltip,
+}
+
+option ALife.Injury_Crawl = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryCrawl,
+    _tooltip = ProjectALife.InjuryCrawl_tooltip,
+}
+
+option ALife.Injury_AutoPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryAuto,
+    _tooltip = ProjectALife.InjuryAuto_tooltip,
+}
+
+option ALife.Injury_DownHpPercent = {
+    type = integer, min = 2, max = 40, default = 12,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryDownHp,
+    _tooltip = ProjectALife.InjuryDownHp_tooltip,
+}
+
+option ALife.Injury_InterrogationDeathPercent = {
+    type = integer, min = 0, max = 100, default = 25,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryDeath,
+    _tooltip = ProjectALife.InjuryDeath_tooltip,
+}
+
+option ALife.Injury_RepPenalty = {
+    type = integer, min = 0, max = 20, default = 3,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryRepPenalty,
+    _tooltip = ProjectALife.InjuryRepPenalty_tooltip,
+}
+
+option ALife.Injury_RepGain = {
+    type = integer, min = 0, max = 20, default = 4,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryRepGain,
+    _tooltip = ProjectALife.InjuryRepGain_tooltip,
+}
+
+option ALife.Injury_RecoverHours = {
+    type = integer, min = 1, max = 72, default = 8,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryRecover,
+    _tooltip = ProjectALife.InjuryRecover_tooltip,
+}
+
+option ALife.Injury_DownHours = {
+    type = integer, min = 1, max = 48, default = 4,
+    page = ProjectALife_2Danger, translation = ProjectALife.InjuryDownHours,
+    _tooltip = ProjectALife.InjuryDownHours_tooltip,
+}
+
+option ALife.Injury_PlayerRangeTiles = {
+    type = integer, min = 10, max = 60, default = 25,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryRange,
+    _tooltip = ProjectALife.InjuryRange_tooltip,
+}
+
+option ALife.Injury_MultiplayerEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryMultiplayer,
+    _tooltip = ProjectALife.InjuryMultiplayer_tooltip,
+}
+
+option ALife.Injury_LeaveTiles = {
+    type = integer, min = 30, max = 120, default = 45,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryLeave,
+    _tooltip = ProjectALife.InjuryLeave_tooltip,
+}
+
+option ALife.Audio_BiteLoudness = {
+    type = integer, min = 0, max = 100, default = 40,
+    page = ProjectALife_6Sound, translation = ProjectALife.BiteLoudness,
+    _tooltip = ProjectALife.BiteLoudness_tooltip,
+}
+
+option ALife.Combat_Wounds = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.Wounds,
+    _tooltip = ProjectALife.Wounds_tooltip,
+}
+
+option ALife.Combat_InjuryBleed = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.InjuryBleed,
+    _tooltip = ProjectALife.InjuryBleed_tooltip,
+}
+
+option ALife.Combat_BluntFracture = {
+    type = integer, min = 0, max = 50, default = 4,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.BluntFracture,
+    _tooltip = ProjectALife.BluntFracture_tooltip,
+}
+
+option ALife.Modules_Sprint = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.SprintEnabled,
+    _tooltip = ProjectALife.SprintEnabled_tooltip,
+}
+
+option ALife.Modules_Gunner = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleGunner,
+    _tooltip = ProjectALife.ModuleGunner_tooltip,
+}
+
+option ALife.Encounters_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.Encounters,
+    _tooltip = ProjectALife.Encounters_tooltip,
+}
+
+option ALife.Encounters_IntervalMinutes = {
+    type = integer, min = 10, max = 720, default = 45,
+    page = ProjectALife_1People, translation = ProjectALife.EncounterRollInterval,
+    _tooltip = ProjectALife.EncounterRollInterval_tooltip,
+}
+
+option ALife.Encounters_EarlyLooters = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_1People, translation = ProjectALife.EarlyLooters,
+    _tooltip = ProjectALife.EarlyLooters_tooltip,
+}
+
+option ALife.Plans_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PlansEnabled,
+    _tooltip = ProjectALife.PlansEnabled_tooltip,
+}
+
+option ALife.Plans_Radius = {
+    type = integer, min = 40, max = 200, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.PlansRadius,
+    _tooltip = ProjectALife.PlansRadius_tooltip,
+}
+
+option ALife.Plans_LifespanHours = {
+    type = integer, min = 1, max = 48, default = 6,
+    page = ProjectALife_5World, translation = ProjectALife.PlansLifespanHours,
+    _tooltip = ProjectALife.PlansLifespanHours_tooltip,
+}
+
+option ALife.Plans_Talk = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PlansTalk,
+    _tooltip = ProjectALife.PlansTalk_tooltip,
+}
+
+option ALife.Activities_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesEnabled,
+    _tooltip = ProjectALife.ActivitiesEnabled_tooltip,
+}
+
+option ALife.Activities_SwitchChance = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesSwitchChance,
+    _tooltip = ProjectALife.ActivitiesSwitchChance_tooltip,
+}
+
+option ALife.Activities_Hunting = {
+    type = enum, numValues = 3, default = 3,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesHunting,
+    valueTranslation = ProjectALife.ActivitiesHunting,
+    _tooltip = ProjectALife.ActivitiesHunting_tooltip,
+}
+
+option ALife.Activities_SwitchHours = {
+    type = integer, min = 1, max = 72, default = 10,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesSwitchHours,
+    _tooltip = ProjectALife.ActivitiesSwitchHours_tooltip,
+}
+
+option ALife.Activities_SwitchClearTiles = {
+    type = integer, min = 20, max = 150, default = 60,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesSwitchClearTiles,
+    _tooltip = ProjectALife.ActivitiesSwitchClearTiles_tooltip,
+}
+
+option ALife.Activities_Bases = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.ActivitiesBases,
+    _tooltip = ProjectALife.ActivitiesBases_tooltip,
+}
+
+option ALife.Activities_MaxBases = {
+    type = integer, min = 0, max = 24, default = 6,
+    page = ProjectALife_4Bases, translation = ProjectALife.ActivitiesMaxBases,
+    _tooltip = ProjectALife.ActivitiesMaxBases_tooltip,
+}
+
+option ALife.Activities_PartyWeight = {
+    type = integer, min = 0, max = 500, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesPartyWeight,
+    _tooltip = ProjectALife.ActivitiesPartyWeight_tooltip,
+}
+
+option ALife.Activities_BaseChance = {
+    type = integer, min = 0, max = 100, default = 25,
+    page = ProjectALife_4Bases, translation = ProjectALife.ActivitiesBaseChance,
+    _tooltip = ProjectALife.ActivitiesBaseChance_tooltip,
+}
+
+option ALife.Activities_BaseReturnHours = {
+    type = integer, min = 2, max = 48, default = 8,
+    page = ProjectALife_4Bases, translation = ProjectALife.ActivitiesBaseReturnHours,
+    _tooltip = ProjectALife.ActivitiesBaseReturnHours_tooltip,
+}
+
+option ALife.Activities_BaseClearTiles = {
+    type = integer, min = 20, max = 120, default = 45,
+    page = ProjectALife_4Bases, translation = ProjectALife.ActivitiesBaseClearTiles,
+    _tooltip = ProjectALife.ActivitiesBaseClearTiles_tooltip,
+}
+
+option ALife.Activities_HuntYieldPercent = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesHuntYieldPercent,
+    _tooltip = ProjectALife.ActivitiesHuntYieldPercent_tooltip,
+}
+
+option ALife.Activities_Fishing = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesFishing,
+    _tooltip = ProjectALife.ActivitiesFishing_tooltip,
+}
+
+option ALife.Activities_FishingMinutes = {
+    type = integer, min = 10, max = 240, default = 65,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesFishingMinutes,
+    _tooltip = ProjectALife.ActivitiesFishingMinutes_tooltip,
+}
+
+option ALife.Activities_FishYieldPercent = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesFishYieldPercent,
+    _tooltip = ProjectALife.ActivitiesFishYieldPercent_tooltip,
+}
+
+option ALife.Activities_Foraging = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesForaging,
+    _tooltip = ProjectALife.ActivitiesForaging_tooltip,
+}
+
+option ALife.Activities_ForageYieldPercent = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesForageYieldPercent,
+    _tooltip = ProjectALife.ActivitiesForageYieldPercent_tooltip,
+}
+
+option ALife.Activities_NeedsDrainPercent = {
+    type = integer, min = 25, max = 400, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesNeedsDrainPercent,
+    _tooltip = ProjectALife.ActivitiesNeedsDrainPercent_tooltip,
+}
+
+option ALife.Activities_AdoptCap = {
+    type = integer, min = 0, max = 24, default = 6,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesAdoptCap,
+    _tooltip = ProjectALife.ActivitiesAdoptCap_tooltip,
+}
+
+option ALife.Activities_FixedCarDrivable = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesFixedCarDrivable,
+    _tooltip = ProjectALife.ActivitiesFixedCarDrivable_tooltip,
+}
+
+option ALife.Activities_FixedCarFuelPercent = {
+    type = integer, min = 0, max = 100, default = 15,
+    page = ProjectALife_5World, translation = ProjectALife.ActivitiesFixedCarFuelPercent,
+    _tooltip = ProjectALife.ActivitiesFixedCarFuelPercent_tooltip,
+}
+
+option ALife.Population_DormantTtlHours = {
+    type = integer, min = 0, max = 168, default = 8,
+    page = ProjectALife_6Sound, translation = ProjectALife.DormantTtl,
+    _tooltip = ProjectALife.DormantTtl_tooltip,
+}
+
+option ALife.Modules_Behaviors = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleBehaviors,
+    _tooltip = ProjectALife.ModuleBehaviors_tooltip,
+}
+
+option ALife.Modules_Strafe = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ModuleStrafe,
+    _tooltip = ProjectALife.ModuleStrafe_tooltip,
+}
+
+option ALife.Night_Sight = {
+    type = enum, numValues = 2, default = 1,
+    page = ProjectALife_5World, translation = ProjectALife.NpcNight,
+    valueTranslation = ProjectALife.NpcNight,
+    _tooltip = ProjectALife.NpcNight_tooltip,
+}
+
+option ALife.Night_Activity = {
+    type = enum, numValues = 5, default = 3,
+    page = ProjectALife_0Start, translation = ProjectALife.NightActivity,
+    valueTranslation = ProjectALife.NightActivity,
+    _tooltip = ProjectALife.NightActivity_tooltip,
+}
+
+option ALife.Offline_SquadCap = {
+    type = integer, min = 0, max = 500, default = 45,
+    page = ProjectALife_1People, translation = ProjectALife.OfflineSquadCap,
+    _tooltip = ProjectALife.OfflineSquadCap_tooltip,
+}
+
+option ALife.Population_PersistentSquadCap = {
+    type = integer, min = 0, max = 500, default = 60,
+    page = ProjectALife_1People, translation = ProjectALife.PersistentSquadCap,
+    _tooltip = ProjectALife.PersistentSquadCap_tooltip,
+}
+
+option ALife.Population_KeepEncounterNpcs = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.KeepEncounterNpcs,
+    _tooltip = ProjectALife.KeepEncounterNpcs_tooltip,
+}
+
+option ALife.Outposts_TaskSquadCap = {
+    type = integer, min = 0, max = 4, default = 3,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostTaskSquadCap,
+    _tooltip = ProjectALife.OutpostTaskSquadCap_tooltip,
+}
+
+option ALife.Offline_TickSeconds = {
+    type = integer, min = 10, max = 60, default = 20,
+    page = ProjectALife_6Sound, translation = ProjectALife.OfflineTickSeconds,
+    _tooltip = ProjectALife.OfflineTickSeconds_tooltip,
+}
+
+option ALife.Offline_TravelTilesPerHour = {
+    type = integer, min = 20, max = 400, default = 150,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.OfflineTravelTilesPerHour,
+    _tooltip = ProjectALife.OfflineTravelTilesPerHour_tooltip,
+}
+
+option ALife.Offline_RevengeEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.OfflineRevenge,
+    _tooltip = ProjectALife.OfflineRevenge_tooltip,
+}
+
+option ALife.Outposts_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsEnabled,
+    _tooltip = ProjectALife.OutpostsEnabled_tooltip,
+}
+
+option ALife.Outposts_MaxSites = {
+    type = integer, min = 0, max = 24, default = 9,
+    page = ProjectALife_1People, translation = ProjectALife.OutpostsMaxSites,
+    _tooltip = ProjectALife.OutpostsMaxSites_tooltip,
+}
+
+option ALife.Outposts_PerCity = {
+    type = integer, min = 1, max = 4, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.OutpostsPerCity,
+    _tooltip = ProjectALife.OutpostsPerCity_tooltip,
+}
+
+option ALife.Outposts_IntervalMinutes = {
+    type = integer, min = 5, max = 120, default = 20,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsInterval,
+    _tooltip = ProjectALife.OutpostsInterval_tooltip,
+}
+
+option ALife.Outposts_Chance = {
+    type = integer, min = 0, max = 100, default = 35,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsChance,
+    _tooltip = ProjectALife.OutpostsChance_tooltip,
+}
+
+option ALife.Outposts_BuildRadius = {
+    type = integer, min = 60, max = 200, default = 120,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsBuildRadius,
+    _tooltip = ProjectALife.OutpostsBuildRadius_tooltip,
+}
+
+option ALife.Outposts_StructureLossPercent = {
+    type = integer, min = 0, max = 100, default = 40,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsStructureLoss,
+    _tooltip = ProjectALife.OutpostsStructureLoss_tooltip,
+}
+
+option ALife.Outposts_StreamHoldSeconds = {
+    type = integer, min = 5, max = 30, default = 5,
+    page = ProjectALife_6Sound, translation = ProjectALife.OutpostsStreamHold,
+    _tooltip = ProjectALife.OutpostsStreamHold_tooltip,
+}
+
+option ALife.Outposts_SpawnRadius = {
+    type = integer, min = 40, max = 150, default = 90,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsSpawnRadius,
+    _tooltip = ProjectALife.OutpostsSpawnRadius_tooltip,
+}
+
+option ALife.Party_LoneWeight = {
+    type = double, min = 0, max = 20, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.Party_LoneWeight,
+    _tooltip = ProjectALife.Party_LoneWeight_tooltip,
+}
+
+option ALife.Party_GroupWeight = {
+    type = double, min = 0, max = 20, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.Party_GroupWeight,
+    _tooltip = ProjectALife.Party_GroupWeight_tooltip,
+}
+
+option ALife.Offline_FoundGapHours = {
+    type = double, min = 0.25, max = 48, default = 3,
+    page = ProjectALife_1People, translation = ProjectALife.Offline_FoundGapHours,
+    _tooltip = ProjectALife.Offline_FoundGapHours_tooltip,
+}
+
+option ALife.Raid_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_Enabled,
+    _tooltip = ProjectALife.Raid_Enabled_tooltip,
+}
+
+option ALife.Raid_MinDay = {
+    type = integer, min = 0, max = 365, default = 21,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_MinDay,
+    _tooltip = ProjectALife.Raid_MinDay_tooltip,
+}
+
+option ALife.Raid_CooldownDays = {
+    type = double, min = 0.25, max = 60, default = 14,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_CooldownDays,
+    _tooltip = ProjectALife.Raid_CooldownDays_tooltip,
+}
+
+option ALife.Raid_Chance = {
+    type = double, min = 0, max = 100, default = 0.025,
+    page = ProjectALife_0Start, translation = ProjectALife.Raid_Chance,
+    _tooltip = ProjectALife.Raid_Chance_tooltip,
+}
+
+option ALife.Raid_CheckMinutes = {
+    type = integer, min = 1, max = 120, default = 10,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.Raid_CheckMinutes,
+    _tooltip = ProjectALife.Raid_CheckMinutes_tooltip,
+}
+
+option ALife.Raid_Waves = {
+    type = integer, min = 1, max = 10, default = 4,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_Waves,
+    _tooltip = ProjectALife.Raid_Waves_tooltip,
+}
+
+option ALife.Raid_GroupSize = {
+    type = integer, min = 1, max = 12, default = 8,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_GroupSize,
+    _tooltip = ProjectALife.Raid_GroupSize_tooltip,
+}
+
+option ALife.Raid_MaxAttackers = {
+    type = integer, min = 1, max = 48, default = 12,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_MaxAttackers,
+    _tooltip = ProjectALife.Raid_MaxAttackers_tooltip,
+}
+
+option ALife.Raid_WarningHours = {
+    type = double, min = 0, max = 24, default = 3,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_WarningHours,
+    _tooltip = ProjectALife.Raid_WarningHours_tooltip,
+}
+
+option ALife.Raid_WaveDelayMinutes = {
+    type = integer, min = 1, max = 120, default = 5,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.Raid_WaveDelayMinutes,
+    _tooltip = ProjectALife.Raid_WaveDelayMinutes_tooltip,
+}
+
+option ALife.Raid_Helicopter = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_Helicopter,
+    _tooltip = ProjectALife.Raid_Helicopter_tooltip,
+}
+
+option ALife.Raid_SirenAircraftSounds = {
+    type = boolean, default = true,
+    page = ProjectALife_0Start, translation = ProjectALife.Raid_SirenAircraftSounds,
+    _tooltip = ProjectALife.Raid_SirenAircraftSounds_tooltip,
+}
+
+option ALife.Raid_ScoutBuildupHours = {
+    type = double, min = 0, max = 72, default = 6,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.Raid_ScoutBuildupHours,
+    _tooltip = ProjectALife.Raid_ScoutBuildupHours_tooltip,
+}
+
+option ALife.Raid_ScoutLifetimeHours = {
+    type = double, min = 1, max = 168, default = 48,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.Raid_ScoutLifetimeHours,
+    _tooltip = ProjectALife.Raid_ScoutLifetimeHours_tooltip,
+}
+
+option ALife.Raid_ScoutSize = {
+    type = integer, min = 1, max = 8, default = 4,
+    page = ProjectALife_2Danger, translation = ProjectALife.Raid_ScoutSize,
+    _tooltip = ProjectALife.Raid_ScoutSize_tooltip,
+}
+
+option ALife.Support_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.SupportEnabled,
+    _tooltip = ProjectALife.SupportEnabled_tooltip,
+}
+
+option ALife.Support_Chance = {
+    type = integer, min = 0, max = 100, default = 35,
+    page = ProjectALife_2Danger, translation = ProjectALife.Support_Chance,
+    _tooltip = ProjectALife.Support_Chance_tooltip,
+}
+
+option ALife.Support_CooldownHours = {
+    type = double, min = 0, max = 24, default = 1.5,
+    page = ProjectALife_2Danger, translation = ProjectALife.Support_CooldownHours,
+    _tooltip = ProjectALife.Support_CooldownHours_tooltip,
+}
+
+option ALife.Support_GroupSize = {
+    type = integer, min = 1, max = 8, default = 4,
+    page = ProjectALife_2Danger, translation = ProjectALife.Support_GroupSize,
+    _tooltip = ProjectALife.Support_GroupSize_tooltip,
+}
+
+option ALife.Support_MaxCalls = {
+    type = integer, min = 0, max = 10, default = 2,
+    page = ProjectALife_2Danger, translation = ProjectALife.Support_MaxCalls,
+    _tooltip = ProjectALife.Support_MaxCalls_tooltip,
+}
+
+option ALife.Support_SpotlightChance = {
+    type = integer, min = 0, max = 100, default = 20,
+    page = ProjectALife_6Sound, translation = ProjectALife.Support_SpotlightChance,
+    _tooltip = ProjectALife.Support_SpotlightChance_tooltip,
+}
+
+option ALife.Support_SpotlightSeconds = {
+    type = integer, min = 5, max = 180, default = 180,
+    page = ProjectALife_6Sound, translation = ProjectALife.Support_SpotlightSeconds,
+    _tooltip = ProjectALife.Support_SpotlightSeconds_tooltip,
+}
+
+option ALife.Support_HelicopterSeconds = {
+    type = integer, min = 5, max = 180, default = 35,
+    page = ProjectALife_6Sound, translation = ProjectALife.Support_HelicopterSeconds,
+    _tooltip = ProjectALife.Support_HelicopterSeconds_tooltip,
+}
+
+option ALife.Helicopter_Spotlight = {
+    type = boolean, default = true,
+    page = ProjectALife_6Sound, translation = ProjectALife.Helicopter_Spotlight,
+    _tooltip = ProjectALife.Helicopter_Spotlight_tooltip,
+}
+
+option ALife.Helicopter_SpotlightSize = {
+    type = integer, min = 4, max = 20, default = 11,
+    page = ProjectALife_6Sound, translation = ProjectALife.Helicopter_SpotlightSize,
+    _tooltip = ProjectALife.Helicopter_SpotlightSize_tooltip,
+}
+
+option ALife.Helicopter_SpotlightBrightness = {
+    type = integer, min = 20, max = 100, default = 100,
+    page = ProjectALife_6Sound, translation = ProjectALife.Helicopter_SpotlightBrightness,
+    _tooltip = ProjectALife.Helicopter_SpotlightBrightness_tooltip,
+}
+
+option ALife.Helicopter_SpotlightGapMinutes = {
+    type = integer, min = 2, max = 240, default = 20,
+    page = ProjectALife_6Sound, translation = ProjectALife.Helicopter_SpotlightGapMinutes,
+    _tooltip = ProjectALife.Helicopter_SpotlightGapMinutes_tooltip,
+}
+
+option ALife.Residents_ClearCorpses = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Residents_ClearCorpses,
+    _tooltip = ProjectALife.Residents_ClearCorpses_tooltip,
+}
+
+option ALife.Scavenge_BuildingRadius = {
+    type = integer, min = 10, max = 60, default = 27,
+    page = ProjectALife_5World, translation = ProjectALife.Scavenge_BuildingRadius,
+    _tooltip = ProjectALife.Scavenge_BuildingRadius_tooltip,
+}
+
+option ALife.Scavenge_CarryLimit = {
+    type = integer, min = 1, max = 24, default = 8,
+    page = ProjectALife_5World, translation = ProjectALife.Scavenge_CarryLimit,
+    _tooltip = ProjectALife.Scavenge_CarryLimit_tooltip,
+}
+
+option ALife.Scavenge_ReturnAfterBuildings = {
+    type = integer, min = 1, max = 8, default = 2,
+    page = ProjectALife_5World, translation = ProjectALife.Scavenge_ReturnAfterBuildings,
+    _tooltip = ProjectALife.Scavenge_ReturnAfterBuildings_tooltip,
+}
+
+option ALife.Loadouts_SeasonalDress = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.SeasonalDress,
+    _tooltip = ProjectALife.SeasonalDress_tooltip,
+}
+
+option ALife.Appearance_Variation = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.AppearanceVariation,
+    _tooltip = ProjectALife.AppearanceVariation_tooltip,
+}
+
+option ALife.Appearance_KeepAuthoredPercent = {
+    type = integer, min = 0, max = 100, default = 35,
+    page = ProjectALife_1People, translation = ProjectALife.AppearanceKeepAuthored,
+    _tooltip = ProjectALife.AppearanceKeepAuthored_tooltip,
+}
+
+option ALife.Appearance_LoadoutVariation = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.AppearanceLoadoutVariation,
+    _tooltip = ProjectALife.AppearanceLoadoutVariation_tooltip,
+}
+
+option ALife.Cold_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ColdEnabled,
+    _tooltip = ProjectALife.ColdEnabled_tooltip,
+}
+
+option ALife.Cold_Severity = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ColdSeverity,
+    _tooltip = ProjectALife.ColdSeverity_tooltip,
+}
+
+option ALife.Cold_ChancePercent = {
+    type = double, min = 0, max = 100, default = 6,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ColdChance,
+    _tooltip = ProjectALife.ColdChance_tooltip,
+}
+
+option ALife.Cold_SneezeNoise = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ColdSneezeNoise,
+    _tooltip = ProjectALife.ColdSneezeNoise_tooltip,
+}
+
+option ALife.Cold_SeekWarmth = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.ColdSeekWarmth,
+    _tooltip = ProjectALife.ColdSeekWarmth_tooltip,
+}
+
+option ALife.Idle_CampWarmHands = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.IdleCampWarmHands,
+    _tooltip = ProjectALife.IdleCampWarmHands_tooltip,
+}
+
+option ALife.Idle_FishingAnim = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.IdleFishingAnim,
+    _tooltip = ProjectALife.IdleFishingAnim_tooltip,
+}
+
+option ALife.Idle_BenchSeat = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.IdleBenchSeat,
+    _tooltip = ProjectALife.IdleBenchSeat_tooltip,
+}
+
+option ALife.Loadouts_UniformDecayDay = {
+    type = integer, min = 0, max = 365, default = 10,
+    page = ProjectALife_1People, translation = ProjectALife.UniformDecayDay,
+    _tooltip = ProjectALife.UniformDecayDay_tooltip,
+}
+
+option ALife.Loadouts_ArmingPace = {
+    type = integer, min = 25, max = 400, default = 100,
+    page = ProjectALife_1People, translation = ProjectALife.ArmingPace,
+    _tooltip = ProjectALife.ArmingPace_tooltip,
+}
+
+option ALife.Loadouts_ArmingShare = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_1People, translation = ProjectALife.ArmingShare,
+    _tooltip = ProjectALife.ArmingShare_tooltip,
+}
+
+option ALife.World_Mode = {
+    type = enum, numValues = 2, default = 1,
+    page = ProjectALife_1People, translation = ProjectALife.WorldMode,
+    _tooltip = ProjectALife.WorldMode_tooltip,
+    valueTranslation = ProjectALife.WorldMode,
+}
+
+option ALife.Rate_Encounters = {
+    type = enum, numValues = 5, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.RateEncounters,
+    _tooltip = ProjectALife.RateEncounters_tooltip,
+    valueTranslation = ProjectALife.RateEncounters,
+}
+
+option ALife.Rate_Groups = {
+    type = enum, numValues = 5, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.RateGroups,
+    _tooltip = ProjectALife.RateGroups_tooltip,
+    valueTranslation = ProjectALife.RateGroups,
+}
+
+option ALife.Rate_Survivors = {
+    type = enum, numValues = 5, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.RateSurvivors,
+    _tooltip = ProjectALife.RateSurvivors_tooltip,
+    valueTranslation = ProjectALife.RateSurvivors,
+}
+
+option ALife.Rate_MetaEvents = {
+    type = enum, numValues = 5, default = 2,
+    page = ProjectALife_0Start, translation = ProjectALife.RateMetaEvents,
+    _tooltip = ProjectALife.RateMetaEvents_tooltip,
+    valueTranslation = ProjectALife.RateMetaEvents,
+}
+
+option ALife.Outposts_OutsideCity = {
+    type = integer, min = 0, max = 12, default = 4,
+    page = ProjectALife_1People, translation = ProjectALife.OutpostsOutsideCity,
+    _tooltip = ProjectALife.OutpostsOutsideCity_tooltip,
+}
+
+option ALife.Outposts_SurvivorHolds = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.OutpostsSurvivorHolds,
+    _tooltip = ProjectALife.OutpostsSurvivorHolds_tooltip,
+}
+
+option ALife.PatrolRest_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PatrolRestEnabled,
+    _tooltip = ProjectALife.PatrolRestEnabled_tooltip,
+}
+
+option ALife.PatrolRest_MinMinutes = {
+    type = integer, min = 5, max = 180, default = 20,
+    page = ProjectALife_5World, translation = ProjectALife.PatrolRestMinMinutes,
+    _tooltip = ProjectALife.PatrolRestMinMinutes_tooltip,
+}
+
+option ALife.PatrolRest_MaxMinutes = {
+    type = integer, min = 10, max = 240, default = 45,
+    page = ProjectALife_5World, translation = ProjectALife.PatrolRestMaxMinutes,
+    _tooltip = ProjectALife.PatrolRestMaxMinutes_tooltip,
+}
+
+option ALife.PatrolRest_EveryHours = {
+    type = double, min = 0.5, max = 48, default = 3.0,
+    page = ProjectALife_5World, translation = ProjectALife.PatrolRestEveryHours,
+    _tooltip = ProjectALife.PatrolRestEveryHours_tooltip,
+}
+
+option ALife.Safehouse_Events = {
+    type = enum, numValues = 4, default = 3,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_Events,
+    _tooltip = ProjectALife.Safehouse_Events_tooltip,
+    valueTranslation = ProjectALife.Safehouse_Events,
+}
+
+option ALife.Safehouse_Betrayal = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_Betrayal,
+    _tooltip = ProjectALife.Safehouse_Betrayal_tooltip,
+}
+
+option ALife.Safehouse_Attacks = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_Attacks,
+    _tooltip = ProjectALife.Safehouse_Attacks_tooltip,
+}
+
+option ALife.Safehouse_Entry = {
+    type = enum, numValues = 2, default = 1,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_Entry,
+    _tooltip = ProjectALife.Safehouse_Entry_tooltip,
+    valueTranslation = ProjectALife.Safehouse_Entry,
+}
+
+option ALife.Safehouse_QuietDays = {
+    type = integer, min = 0, max = 14, default = 3,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_QuietDays,
+    _tooltip = ProjectALife.Safehouse_QuietDays_tooltip,
+}
+
+option ALife.Safehouse_Dedicated = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_Dedicated,
+    _tooltip = ProjectALife.Safehouse_Dedicated_tooltip,
+}
+
+option ALife.Events_ScriptedEffects = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Events_ScriptedEffects,
+    _tooltip = ProjectALife.Events_ScriptedEffects_tooltip,
+}
+
+option ALife.Events_RadioActivate = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Events_RadioActivate,
+    _tooltip = ProjectALife.Events_RadioActivate_tooltip,
+}
+
+option ALife.Talk_NpcQuestions = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Talk_NpcQuestions,
+    _tooltip = ProjectALife.Talk_NpcQuestions_tooltip,
+}
+
+option ALife.Talk_FollowOptions = {
+    type = boolean, default = false,
+    page = ProjectALife_3Talk, translation = ProjectALife.Talk_FollowOptions,
+    _tooltip = ProjectALife.Talk_FollowOptions_tooltip,
+}
+
+option ALife.Text_VisitorRangeTiles = {
+    type = integer, min = 0, max = 60, default = 14,
+    page = ProjectALife_3Talk, translation = ProjectALife.Text_VisitorRangeTiles,
+    _tooltip = ProjectALife.Text_VisitorRangeTiles_tooltip,
+}
+
+option ALife.Text_Bubbles = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Text_Bubbles,
+    _tooltip = ProjectALife.Text_Bubbles_tooltip,
+}
+
+option ALife.Talk_StartButton = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Talk_StartButton,
+    _tooltip = ProjectALife.Talk_StartButton_tooltip,
+}
+
+option ALife.Talk_UIOpacity = {
+    type = integer, min = 40, max = 100, default = 100,
+    page = ProjectALife_6Sound, translation = ProjectALife.Talk_UIOpacity,
+    _tooltip = ProjectALife.Talk_UIOpacity_tooltip,
+}
+
+option ALife.Text_NpcChatLog = {
+    type = enum, numValues = 3, default = 1,
+    page = ProjectALife_6Sound, translation = ProjectALife.Text_NpcChatLog,
+    _tooltip = ProjectALife.Text_NpcChatLog_tooltip,
+    valueTranslation = ProjectALife.Text_NpcChatLog,
+}
+
+option ALife.Safehouse_TraderVisits = {
+    type = boolean, default = false,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_TraderVisits,
+    _tooltip = ProjectALife.Safehouse_TraderVisits_tooltip,
+}
+
+option ALife.Events_WallMarks = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Events_WallMarks,
+    _tooltip = ProjectALife.Events_WallMarks_tooltip,
+}
+
+option ALife.Fair_TellBeforeStrike = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairTell,
+    _tooltip = ProjectALife.FairTell_tooltip,
+}
+
+option ALife.Fair_FirstContactGrace = {
+    type = double, min = 0, max = 10, default = 2.5,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairGrace,
+    _tooltip = ProjectALife.FairGrace_tooltip,
+}
+
+option ALife.Fair_WarningLead = {
+    type = double, min = 0.5, max = 6, default = 1.5,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairWarningLead,
+    _tooltip = ProjectALife.FairWarningLead_tooltip,
+}
+
+option ALife.Fair_EntryLead = {
+    type = double, min = 0, max = 6, default = 1.5,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairEntryLead,
+    _tooltip = ProjectALife.FairEntryLead_tooltip,
+}
+
+option ALife.Fair_WindowOpenTime = {
+    type = double, min = 0.3, max = 4, default = 1.2,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairWindowOpen,
+    _tooltip = ProjectALife.FairWindowOpen_tooltip,
+}
+
+option ALife.Fair_FightMemory = {
+    type = integer, min = 10, max = 240, default = 60,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FairFightMemory,
+    _tooltip = ProjectALife.FairFightMemory_tooltip,
+}
+
+option ALife.Warning_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.WarningEnabled,
+    _tooltip = ProjectALife.WarningEnabled_tooltip,
+}
+
+option ALife.Warning_ChancePercent = {
+    type = integer, min = 0, max = 100, default = 15,
+    page = ProjectALife_2Danger, translation = ProjectALife.WarningChance,
+    _tooltip = ProjectALife.WarningChance_tooltip,
+}
+
+option ALife.Warning_RaidChancePercent = {
+    type = integer, min = 0, max = 100, default = 10,
+    page = ProjectALife_2Danger, translation = ProjectALife.WarningRaidChance,
+    _tooltip = ProjectALife.WarningRaidChance_tooltip,
+}
+
+option ALife.Warning_HoldSeconds = {
+    type = integer, min = 2, max = 60, default = 8,
+    page = ProjectALife_2Danger, translation = ProjectALife.WarningHold,
+    _tooltip = ProjectALife.WarningHold_tooltip,
+}
+
+option ALife.Encounter_Standoffs = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.EncounterStandoffs,
+    _tooltip = ProjectALife.EncounterStandoffs_tooltip,
+}
+
+option ALife.Encounter_SurpriseSeconds = {
+    type = double, min = 1, max = 10, default = 3,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterSurprise,
+    _tooltip = ProjectALife.EncounterSurprise_tooltip,
+}
+
+option ALife.Encounter_AnswerSeconds = {
+    type = integer, min = 4, max = 30, default = 10,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterAnswer,
+    _tooltip = ProjectALife.EncounterAnswer_tooltip,
+}
+
+option ALife.Encounter_CalloutPercent = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_2Danger, translation = ProjectALife.EncounterCallout,
+    _tooltip = ProjectALife.EncounterCallout_tooltip,
+}
+
+option ALife.Encounter_CalloutSeconds = {
+    type = integer, min = 15, max = 180, default = 45,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterCalloutTime,
+    _tooltip = ProjectALife.EncounterCalloutTime_tooltip,
+}
+
+option ALife.Encounter_BetrayalPercent = {
+    type = integer, min = 0, max = 200, default = 100,
+    page = ProjectALife_2Danger, translation = ProjectALife.EncounterBetrayal,
+    _tooltip = ProjectALife.EncounterBetrayal_tooltip,
+}
+
+option ALife.Encounter_SearchSeconds = {
+    type = integer, min = 20, max = 600, default = 90,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterSearch,
+    _tooltip = ProjectALife.EncounterSearch_tooltip,
+}
+
+option ALife.Encounter_LostSightSeconds = {
+    type = double, min = 2, max = 30, default = 6,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterLostSight,
+    _tooltip = ProjectALife.EncounterLostSight_tooltip,
+}
+
+option ALife.Encounter_FixBlurTiles = {
+    type = integer, min = 0, max = 60, default = 12,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterFixBlur,
+    _tooltip = ProjectALife.EncounterFixBlur_tooltip,
+}
+
+option ALife.Encounter_ScriptedCues = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.EncounterCues,
+    _tooltip = ProjectALife.EncounterCues_tooltip,
+}
+
+option ALife.Robbery_FriskScripted = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.FriskScripted,
+    _tooltip = ProjectALife.FriskScripted_tooltip,
+}
+
+option ALife.Revenge_MaxWaves = {
+    type = integer, min = 1, max = 10, default = 2,
+    page = ProjectALife_2Danger, translation = ProjectALife.RevengeMaxWaves,
+    _tooltip = ProjectALife.RevengeMaxWaves_tooltip,
+}
+
+option ALife.Outplay_Stagger = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.OutplayStagger,
+    _tooltip = ProjectALife.OutplayStagger_tooltip,
+}
+
+option ALife.PickedOver_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverEnabled,
+    _tooltip = ProjectALife.PickedOverEnabled_tooltip,
+}
+
+option ALife.PickedOver_Strength = {
+    type = integer, min = 0, max = 300, default = 100,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverStrength,
+    _tooltip = ProjectALife.PickedOverStrength_tooltip,
+}
+
+option ALife.PickedOver_Baseline = {
+    type = integer, min = 0, max = 100, default = 5,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverBaseline,
+    _tooltip = ProjectALife.PickedOverBaseline_tooltip,
+}
+
+option ALife.PickedOver_Visuals = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverVisuals,
+    _tooltip = ProjectALife.PickedOverVisuals_tooltip,
+}
+
+option ALife.PickedOver_ZombieCorpses = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverZombieCorpses,
+    _tooltip = ProjectALife.PickedOverZombieCorpses_tooltip,
+}
+
+option ALife.PickedOver_FactionCorpses = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.PickedOverFactionCorpses,
+    _tooltip = ProjectALife.PickedOverFactionCorpses_tooltip,
+}
+
+option ALife.WarDead_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_5World, translation = ProjectALife.WarDeadEnabled,
+    _tooltip = ProjectALife.WarDeadEnabled_tooltip,
+}
+
+option ALife.Boarding_Staged = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.BoardingStaged,
+    _tooltip = ProjectALife.BoardingStaged_tooltip,
+}
+
+option ALife.Discretion_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.DiscretionEnabled,
+    _tooltip = ProjectALife.DiscretionEnabled_tooltip,
+}
+
+option ALife.Reputation_ProfessionEncounters = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Reputation_ProfessionEncounters,
+    _tooltip = ProjectALife.Reputation_ProfessionEncounters_tooltip,
+}
+
+option ALife.Reputation_ProfessionRecognition = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.Reputation_ProfessionRecognition,
+    _tooltip = ProjectALife.Reputation_ProfessionRecognition_tooltip,
+}
+
+option ALife.Safehouse_InviteMinutes = {
+    type = integer, min = 2, max = 60, default = 10,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_InviteMinutes,
+    _tooltip = ProjectALife.Safehouse_InviteMinutes_tooltip,
+}
+
+option ALife.Safehouse_VisitorHoldSeconds = {
+    type = integer, min = 0, max = 120, default = 30,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_VisitorHoldSeconds,
+    _tooltip = ProjectALife.Safehouse_VisitorHoldSeconds_tooltip,
+}
+
+option ALife.Safehouse_KnockSounds = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_KnockSounds,
+    _tooltip = ProjectALife.Safehouse_KnockSounds_tooltip,
+}
+
+option ALife.Safehouse_SquatPercent = {
+    type = integer, min = 0, max = 100, default = 15,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_SquatPercent,
+    _tooltip = ProjectALife.Safehouse_SquatPercent_tooltip,
+}
+
+option ALife.Safehouse_BittenPercent = {
+    type = integer, min = 0, max = 100, default = 15,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_BittenPercent,
+    _tooltip = ProjectALife.Safehouse_BittenPercent_tooltip,
+}
+
+option ALife.Safehouse_LadderGapHours = {
+    type = integer, min = 12, max = 240, default = 48,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_LadderGapHours,
+    _tooltip = ProjectALife.Safehouse_LadderGapHours_tooltip,
+}
+
+option ALife.Safehouse_BaseFlag = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_BaseFlag,
+    _tooltip = ProjectALife.Safehouse_BaseFlag_tooltip,
+}
+
+option ALife.Safehouse_BaseScore = {
+    type = integer, min = 20, max = 400, default = 100,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_BaseScore,
+    _tooltip = ProjectALife.Safehouse_BaseScore_tooltip,
+}
+
+option ALife.Safehouse_ChancePercent = {
+    type = integer, min = 1, max = 100, default = 12,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_ChancePercent,
+    _tooltip = ProjectALife.Safehouse_ChancePercent_tooltip,
+}
+
+option ALife.Safehouse_CheckHours = {
+    type = double, min = 1, max = 24, default = 2,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_CheckHours,
+    _tooltip = ProjectALife.Safehouse_CheckHours_tooltip,
+}
+
+option ALife.Safehouse_GapDays = {
+    type = double, min = 0.5, max = 14, default = 2,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_GapDays,
+    _tooltip = ProjectALife.Safehouse_GapDays_tooltip,
+}
+
+option ALife.Safehouse_VisitGapDays = {
+    type = integer, min = 1, max = 30, default = 1,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_VisitGapDays,
+    _tooltip = ProjectALife.Safehouse_VisitGapDays_tooltip,
+}
+
+option ALife.Safehouse_AttackGapDays = {
+    type = integer, min = 1, max = 60, default = 1,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_AttackGapDays,
+    _tooltip = ProjectALife.Safehouse_AttackGapDays_tooltip,
+}
+
+option ALife.Safehouse_AttackMinDay = {
+    type = integer, min = 0, max = 365, default = 14,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_AttackMinDay,
+    _tooltip = ProjectALife.Safehouse_AttackMinDay_tooltip,
+}
+
+option ALife.Safehouse_DensityMid = {
+    type = integer, min = 0, max = 200, default = 10,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_DensityMid,
+    _tooltip = ProjectALife.Safehouse_DensityMid_tooltip,
+}
+
+option ALife.Safehouse_DensityHigh = {
+    type = integer, min = 0, max = 400, default = 30,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_DensityHigh,
+    _tooltip = ProjectALife.Safehouse_DensityHigh_tooltip,
+}
+
+option ALife.Safehouse_DensityExtreme = {
+    type = integer, min = 0, max = 800, default = 60,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_DensityExtreme,
+    _tooltip = ProjectALife.Safehouse_DensityExtreme_tooltip,
+}
+
+option ALife.Safehouse_AwayTiles = {
+    type = integer, min = 10, max = 60, default = 40,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_AwayTiles,
+    _tooltip = ProjectALife.Safehouse_AwayTiles_tooltip,
+}
+
+option ALife.Safehouse_HiddenTiles = {
+    type = integer, min = 5, max = 60, default = 20,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_HiddenTiles,
+    _tooltip = ProjectALife.Safehouse_HiddenTiles_tooltip,
+}
+
+option ALife.Safehouse_DropDeadlineDays = {
+    type = integer, min = 1, max = 14, default = 3,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_DropDeadlineDays,
+    _tooltip = ProjectALife.Safehouse_DropDeadlineDays_tooltip,
+}
+
+option ALife.Safehouse_MailboxTiles = {
+    type = integer, min = 2, max = 20, default = 10,
+    page = ProjectALife_4Bases, translation = ProjectALife.Safehouse_MailboxTiles,
+    _tooltip = ProjectALife.Safehouse_MailboxTiles_tooltip,
+}
+
+option ALife.Discretion_FightPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.DiscretionFightPercent,
+    _tooltip = ProjectALife.DiscretionFightPercent_tooltip,
+}
+
+option ALife.Discretion_LowAmmoRounds = {
+    type = integer, min = 0, max = 30, default = 6,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.DiscretionLowAmmoRounds,
+    _tooltip = ProjectALife.DiscretionLowAmmoRounds_tooltip,
+}
+
+option ALife.Discretion_PatienceSeconds = {
+    type = integer, min = 10, max = 600, default = 45,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.DiscretionPatienceSeconds,
+    _tooltip = ProjectALife.DiscretionPatienceSeconds_tooltip,
+}
+
+option ALife.CalmDown_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.CalmDownEnabled,
+    _tooltip = ProjectALife.CalmDownEnabled_tooltip,
+}
+
+option ALife.CalmDown_Hours = {
+    type = integer, min = 0, max = 24, default = 2,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.CalmDownHours,
+    _tooltip = ProjectALife.CalmDownHours_tooltip,
+}
+
+option ALife.Blame_Fair = {
+    type = boolean, default = true,
+    page = ProjectALife_3Talk, translation = ProjectALife.BlameFair,
+    _tooltip = ProjectALife.BlameFair_tooltip,
+}
+
+option ALife.Breach_Policy = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.BreachPolicy,
+    _tooltip = ProjectALife.BreachPolicy_tooltip,
+}
+
+option ALife.ZombieFocus_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.ZombieFocusEnabled,
+    _tooltip = ProjectALife.ZombieFocusEnabled_tooltip,
+}
+
+option ALife.ZombieFocus_Radius = {
+    type = integer, min = 2, max = 30, default = 8,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.ZombieFocusRadius,
+    _tooltip = ProjectALife.ZombieFocusRadius_tooltip,
+}
+
+option ALife.Caution_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.CautionEnabled,
+    _tooltip = ProjectALife.CautionEnabled_tooltip,
+}
+
+option ALife.Caution_AvoidTiles = {
+    type = integer, min = 4, max = 30, default = 12,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.CautionAvoidTiles,
+    _tooltip = ProjectALife.CautionAvoidTiles_tooltip,
+}
+
+option ALife.GroupLife_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.GroupLifeEnabled,
+    _tooltip = ProjectALife.GroupLifeEnabled_tooltip,
+}
+
+option ALife.GroupLife_Spread = {
+    type = integer, min = 0, max = 150, default = 100,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.GroupLifeSpread,
+    _tooltip = ProjectALife.GroupLifeSpread_tooltip,
+}
+
+option ALife.GroupLife_ShelterIdleMinutes = {
+    type = integer, min = 5, max = 90, default = 20,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.GroupLifeShelterIdleMinutes,
+    _tooltip = ProjectALife.GroupLifeShelterIdleMinutes_tooltip,
+}
+
+option ALife.GroupLife_Roles = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.GroupLifeRoles,
+    _tooltip = ProjectALife.GroupLifeRoles_tooltip,
+}
+
+option ALife.Stealth_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.StealthEnabled,
+    _tooltip = ProjectALife.StealthEnabled_tooltip,
+}
+
+option ALife.Stealth_Frequency = {
+    type = integer, min = 0, max = 100, default = 30,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.StealthFrequency,
+    _tooltip = ProjectALife.StealthFrequency_tooltip,
+}
+
+option ALife.Stealth_NoticePercent = {
+    type = integer, min = 10, max = 100, default = 50,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.StealthNotice,
+    _tooltip = ProjectALife.StealthNotice_tooltip,
+}
+
+option ALife.Offline_LootPercent = {
+    type = integer, min = 0, max = 100, default = 25,
+    page = ProjectALife_5World, translation = ProjectALife.OfflineLootPercent,
+    _tooltip = ProjectALife.OfflineLootPercent_tooltip,
+}
+
+option ALife.Party_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.PartyEnabled,
+    _tooltip = ProjectALife.PartyEnabled_tooltip,
+}
+
+option ALife.Party_MaxSize = {
+    type = integer, min = 2, max = 12, default = 6,
+    page = ProjectALife_1People, translation = ProjectALife.PartyMaxSize,
+    _tooltip = ProjectALife.PartyMaxSize_tooltip,
+}
+
+option ALife.Party_MinOpinion = {
+    type = integer, min = -50, max = 80, default = 20,
+    page = ProjectALife_1People, translation = ProjectALife.PartyMinOpinion,
+    _tooltip = ProjectALife.PartyMinOpinion_tooltip,
+}
+
+option ALife.Party_TaskFrequency = {
+    type = integer, min = 0, max = 240, default = 45,
+    page = ProjectALife_1People, translation = ProjectALife.PartyTaskFrequency,
+    _tooltip = ProjectALife.PartyTaskFrequency_tooltip,
+}
+
+option ALife.Party_AwayMinutes = {
+    type = integer, min = 2, max = 60, default = 10,
+    page = ProjectALife_1People, translation = ProjectALife.PartyAwayMinutes,
+    _tooltip = ProjectALife.PartyAwayMinutes_tooltip,
+}
+
+option ALife.Party_Stories = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.PartyStories,
+    _tooltip = ProjectALife.PartyStories_tooltip,
+}
+
+option ALife.Combat_GunsVsZombiesPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunsVsZombiesPercent,
+    _tooltip = ProjectALife.GunsVsZombiesPercent_tooltip,
+}
+
+option ALife.Combat_GunNoiseZombies = {
+    type = integer, min = 0, max = 40, default = 8,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunNoiseZombies,
+    _tooltip = ProjectALife.GunNoiseZombies_tooltip,
+}
+
+option ALife.Combat_GunHordeSize = {
+    type = integer, min = 2, max = 30, default = 5,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.GunHordeSize,
+    _tooltip = ProjectALife.GunHordeSize_tooltip,
+}
+
+option ALife.Combat_NpcShotNoisePercent = {
+    type = integer, min = 10, max = 100, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.NpcShotNoise,
+    _tooltip = ProjectALife.NpcShotNoise_tooltip,
+}
+
+option ALife.Population_SeedPerTown = {
+    type = integer, min = 1, max = 4, default = 3,
+    page = ProjectALife_1People, translation = ProjectALife.SeedPerTown,
+    _tooltip = ProjectALife.SeedPerTown_tooltip,
+}
+
+option ALife.Population_SeedClearTiles = {
+    type = integer, min = 0, max = 400, default = 150,
+    page = ProjectALife_1People, translation = ProjectALife.SeedClearTiles,
+    _tooltip = ProjectALife.SeedClearTiles_tooltip,
+}
+
+option ALife.Population_NeighbourGroups = {
+    type = integer, min = 1, max = 8, default = 4,
+    page = ProjectALife_1People, translation = ProjectALife.NeighbourGroups,
+    _tooltip = ProjectALife.NeighbourGroups_tooltip,
+}
+
+option ALife.Population_HibernateTiles = {
+    type = integer, min = 60, max = 400, default = 150,
+    page = ProjectALife_6Sound, translation = ProjectALife.HibernateTiles,
+    _tooltip = ProjectALife.HibernateTiles_tooltip,
+}
+
+option ALife.Population_RespawnCooldownDays = {
+    type = integer, min = 0, max = 60, default = 3,
+    page = ProjectALife_1People, translation = ProjectALife.RespawnCooldownDays,
+    _tooltip = ProjectALife.RespawnCooldownDays_tooltip,
+}
+
+option ALife.Population_RegrowthDays = {
+    type = integer, min = 0, max = 30, default = 2,
+    page = ProjectALife_1People, translation = ProjectALife.RegrowthDays,
+    _tooltip = ProjectALife.RegrowthDays_tooltip,
+}
+
+option ALife.Spawn_FairnessEnabled = {
+    type = boolean, default = true,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnFairnessEnabled,
+    _tooltip = ProjectALife.SpawnFairnessEnabled_tooltip,
+}
+
+option ALife.Spawn_PlayerKeepOutTiles = {
+    type = integer, min = 20, max = 150, default = 45,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnKeepOutTiles,
+    _tooltip = ProjectALife.SpawnKeepOutTiles_tooltip,
+}
+
+option ALife.Spawn_StartGraceMinutes = {
+    type = integer, min = 0, max = 240, default = 10,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnStartGraceMinutes,
+    _tooltip = ProjectALife.SpawnStartGraceMinutes_tooltip,
+}
+
+option ALife.Lifecycle_ReloadGuard = {
+    type = boolean, default = true,
+    page = ProjectALife_6Sound, translation = ProjectALife.LifecycleReloadGuard,
+    _tooltip = ProjectALife.LifecycleReloadGuard_tooltip,
+}
+
+option ALife.Spawn_DespawnMinTiles = {
+    type = integer, min = 0, max = 200, default = 60,
+    page = ProjectALife_6Sound, translation = ProjectALife.SpawnDespawnMinTiles,
+    _tooltip = ProjectALife.SpawnDespawnMinTiles_tooltip,
+}
+
+option ALife.Spawn_RuralDensityPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnRuralDensity,
+    _tooltip = ProjectALife.SpawnRuralDensity_tooltip,
+}
+
+option ALife.Spawn_WildernessDensityPercent = {
+    type = integer, min = 0, max = 100, default = 30,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnWildernessDensity,
+    _tooltip = ProjectALife.SpawnWildernessDensity_tooltip,
+}
+
+option ALife.Spawn_FarmDensityPercent = {
+    type = integer, min = 0, max = 100, default = 60,
+    page = ProjectALife_1People, translation = ProjectALife.SpawnFarmDensity,
+    _tooltip = ProjectALife.SpawnFarmDensity_tooltip,
+}
+
+option ALife.Spawn_CheckpointMinTiles = {
+    type = integer, min = 0, max = 400, default = 150,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.SpawnCheckpointMinTiles,
+    _tooltip = ProjectALife.SpawnCheckpointMinTiles_tooltip,
+}
+
+option ALife.Blood_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_2Danger, translation = ProjectALife.BloodEnabled,
+    _tooltip = ProjectALife.BloodEnabled_tooltip,
+}
+
+option ALife.Blood_Percent = {
+    type = integer, min = 100, max = 500, default = 200,
+    page = ProjectALife_2Danger, translation = ProjectALife.BloodPercent,
+    _tooltip = ProjectALife.BloodPercent_tooltip,
+}
+
+option ALife.Blood_MeleeKillPercent = {
+    type = integer, min = 100, max = 800, default = 300,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.BloodMeleeKillPercent,
+    _tooltip = ProjectALife.BloodMeleeKillPercent_tooltip,
+}
+
+option ALife.Hearing_Enabled = {
+    type = boolean, default = true,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingEnabled,
+    _tooltip = ProjectALife.HearingEnabled_tooltip,
+}
+
+option ALife.Hearing_RadiusPercent = {
+    type = integer, min = 25, max = 200, default = 100,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingRadiusPercent,
+    _tooltip = ProjectALife.HearingRadiusPercent_tooltip,
+}
+
+option ALife.Hearing_WallPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingWallPercent,
+    _tooltip = ProjectALife.HearingWallPercent_tooltip,
+}
+
+option ALife.Hearing_FloorPercent = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingFloorPercent,
+    _tooltip = ProjectALife.HearingFloorPercent_tooltip,
+}
+
+option ALife.Hearing_PeripheralTiles = {
+    type = integer, min = 0, max = 12, default = 8,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingPeripheralTiles,
+    _tooltip = ProjectALife.HearingPeripheralTiles_tooltip,
+}
+
+option ALife.Hearing_AlertSeconds = {
+    type = integer, min = 1, max = 60, default = 20,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingAlertSeconds,
+    _tooltip = ProjectALife.HearingAlertSeconds_tooltip,
+}
+
+option ALife.Hearing_AlertPercent = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ProjectALife_6Sound, translation = ProjectALife.HearingAlertPercent,
+    _tooltip = ProjectALife.HearingAlertPercent_tooltip,
+}
+
+option ALife.Caution_DangerRouting = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.CautionDangerRouting,
+    _tooltip = ProjectALife.CautionDangerRouting_tooltip,
+}
+
+option ALife.Caution_HazardCheck = {
+    type = boolean, default = true,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.CautionHazardCheck,
+    _tooltip = ProjectALife.CautionHazardCheck_tooltip,
+}
+
+option ALife.Caution_DangerRaysPerSecond = {
+    type = integer, min = 0, max = 120, default = 32,
+    page = ProjectALife_6Sound, translation = ProjectALife.CautionDangerRays,
+    _tooltip = ProjectALife.CautionDangerRays_tooltip,
+}
+
+option ALife.Combat_FireManeuver = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.FireManeuver,
+    _tooltip = ProjectALife.FireManeuver_tooltip,
+}
+
+option ALife.Combat_ForwardCoverTiles = {
+    type = integer, min = 2, max = 6, default = 4,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.ForwardCoverTiles,
+    _tooltip = ProjectALife.ForwardCoverTiles_tooltip,
+}
+
+option ALife.Combat_PeekWindowMs = {
+    type = integer, min = 600, max = 2000, default = 1200,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.PeekWindow,
+    _tooltip = ProjectALife.PeekWindow_tooltip,
+}
+
+option ALife.Combat_PinWindowMs = {
+    type = integer, min = 2000, max = 6000, default = 4000,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.PinWindow,
+    _tooltip = ProjectALife.PinWindow_tooltip,
+}
+
+option ALife.Combat_RetreatLOS = {
+    type = boolean, default = true,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.RetreatLOS,
+    _tooltip = ProjectALife.RetreatLOS_tooltip,
+}
+
+option ALife.Compat_JeemResidents = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatJeemResidents,
+    _tooltip = ProjectALife.CompatJeemResidents_tooltip,
+}
+
+option ALife.Compat_PointBlank = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatPointBlank,
+    _tooltip = ProjectALife.CompatPointBlank_tooltip,
+}
+
+option ALife.Compat_WanderingZombies = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatWanderingZombies,
+    _tooltip = ProjectALife.CompatWanderingZombies_tooltip,
+}
+
+option ALife.Compat_CyesPushDoors = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatCyesPushDoors,
+    _tooltip = ProjectALife.CompatCyesPushDoors_tooltip,
+}
+
+option ALife.Compat_MoreTraits = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatMoreTraits,
+    _tooltip = ProjectALife.CompatMoreTraits_tooltip,
+}
+
+option ALife.Compat_ProjectExile = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatProjectExile,
+    _tooltip = ProjectALife.CompatProjectExile_tooltip,
+}
+
+option ALife.Compat_PixelStrike = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatPixelStrike,
+    _tooltip = ProjectALife.CompatPixelStrike_tooltip,
+}
+
+option ALife.Compat_GaelGunStore = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatGaelGunStore,
+    _tooltip = ProjectALife.CompatGaelGunStore_tooltip,
+}
+
+option ALife.Compat_RVInterior = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatRVInterior,
+    _tooltip = ProjectALife.CompatRVInterior_tooltip,
+}
+
+option ALife.Compat_AdvancedTrajectory = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatAdvancedTrajectory,
+    _tooltip = ProjectALife.CompatAdvancedTrajectory_tooltip,
+}
+
+option ALife.Compat_AutoAll = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatAutoAll,
+    _tooltip = ProjectALife.CompatAutoAll_tooltip,
+}
+
+option ALife.Compat_CryOfFear = {
+    type = boolean, default = true,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatCryOfFear,
+    _tooltip = ProjectALife.CompatCryOfFear_tooltip,
+}
+
+option ALife.Compat_NoPocketLoot = {
+    type = boolean, default = false,
+    page = ProjectALife_9Compat, translation = ProjectALife.CompatNoPocketLoot,
+    _tooltip = ProjectALife.CompatNoPocketLoot_tooltip,
+}
+
+option ALife.Outposts_BuildBudget = {
+    type = integer, min = 1, max = 2000, default = 100,
+    page = ProjectALife_7ExpertBehavior, translation = ProjectALife.OutpostsBuildBudget,
+    _tooltip = ProjectALife.OutpostsBuildBudget_tooltip,
+}
+
+option ALife.Outposts_MaxCompounds = {
+    type = integer, min = 0, max = 40, default = 1,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsMaxCompounds,
+    _tooltip = ProjectALife.OutpostsMaxCompounds_tooltip,
+}
+
+option ALife.Outposts_CompoundSpacing = {
+    type = integer, min = 0, max = 5000, default = 500,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsCompoundSpacing,
+    _tooltip = ProjectALife.OutpostsCompoundSpacing_tooltip,
+}
+
+option ALife.Outposts_LightsOn = {
+    type = boolean, default = true,
+    page = ProjectALife_4Bases, translation = ProjectALife.OutpostsLightsOn,
+    _tooltip = ProjectALife.OutpostsLightsOn_tooltip,
+}
+
+option ALife.Loot_NpcDropPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_0Start, translation = ProjectALife.LootNpcDropPercent,
+    _tooltip = ProjectALife.LootNpcDropPercent_tooltip,
+}
+
+option ALife.Loot_NpcWearPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_0Start, translation = ProjectALife.LootNpcWearPercent,
+    _tooltip = ProjectALife.LootNpcWearPercent_tooltip,
+}
+
+option ALife.Loot_NpcWeaponPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.LootNpcWeaponPercent,
+    _tooltip = ProjectALife.LootNpcWeaponPercent_tooltip,
+}
+
+option ALife.Loot_NpcArmorPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.LootNpcArmorPercent,
+    _tooltip = ProjectALife.LootNpcArmorPercent_tooltip,
+}
+
+option ALife.Loot_NpcAmmoPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.LootNpcAmmoPercent,
+    _tooltip = ProjectALife.LootNpcAmmoPercent_tooltip,
+}
+
+option ALife.Loot_NpcSuppliesPercent = {
+    type = integer, min = 0, max = 100, default = 100,
+    page = ProjectALife_8ExpertCombat, translation = ProjectALife.LootNpcSuppliesPercent,
+    _tooltip = ProjectALife.LootNpcSuppliesPercent_tooltip,
+}
+
+option ALife.Visitors_Persons = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Persons,
+    _tooltip = ProjectALife.Visitors_Persons_tooltip,
+}
+
+option ALife.Visitors_ProactiveEvents = {
+    type = enum, numValues = 4, default = 3,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_ProactiveEvents,
+    _tooltip = ProjectALife.Visitors_ProactiveEvents_tooltip,
+    valueTranslation = ProjectALife.Visitors_ProactiveEvents,
+}
+
+option ALife.Visitors_EventMinGapSeconds = {
+    type = integer, min = 60, max = 1800, default = 240,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_EventMinGapSeconds,
+    _tooltip = ProjectALife.Visitors_EventMinGapSeconds_tooltip,
+}
+
+option ALife.Visitors_StayHours = {
+    type = integer, min = 1, max = 48, default = 1,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_StayHours,
+    _tooltip = ProjectALife.Visitors_StayHours_tooltip,
+}
+
+option ALife.Visitors_Parties = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Parties,
+    _tooltip = ProjectALife.Visitors_Parties_tooltip,
+}
+
+option ALife.Visitors_ReturningChance = {
+    type = integer, min = 0, max = 50, default = 15,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_ReturningChance,
+    _tooltip = ProjectALife.Visitors_ReturningChance_tooltip,
+}
+
+option ALife.Visitors_Life = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Life,
+    _tooltip = ProjectALife.Visitors_Life_tooltip,
+}
+
+option ALife.Visitors_ChangeClothes = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_ChangeClothes,
+    _tooltip = ProjectALife.Visitors_ChangeClothes_tooltip,
+}
+
+option ALife.Visitors_Privacy = {
+    type = enum, numValues = 2, default = 1,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Privacy,
+    _tooltip = ProjectALife.Visitors_Privacy_tooltip,
+    valueTranslation = ProjectALife.Visitors_Privacy,
+}
+
+option ALife.Visitors_Flirt = {
+    type = enum, numValues = 2, default = 2,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Flirt,
+    _tooltip = ProjectALife.Visitors_Flirt_tooltip,
+    valueTranslation = ProjectALife.Visitors_Flirt,
+}
+
+option ALife.Visitors_Books = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Books,
+    _tooltip = ProjectALife.Visitors_Books_tooltip,
+}
+
+option ALife.Visitors_ChatMirror = {
+    type = boolean, default = true,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_ChatMirror,
+    _tooltip = ProjectALife.Visitors_ChatMirror_tooltip,
+}
+
+option ALife.Visitors_Debug = {
+    type = boolean, default = false,
+    page = ProjectALife_4Visitors, translation = ProjectALife.Visitors_Debug,
+    _tooltip = ProjectALife.Visitors_Debug_tooltip,
+}

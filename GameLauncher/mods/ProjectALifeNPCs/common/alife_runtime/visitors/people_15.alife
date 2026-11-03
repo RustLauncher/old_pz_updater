@@ -1,0 +1,112 @@
+@alife-records 1
+
+person vp_1435
+  card.batch B22
+  card.arch va_bartender
+  card.sex m
+  card.age 28
+  card.desc a tidy man with cropped dark hair and a carefully buttoned work shirt
+  card.voice V15
+  card.seed 790064213
+  card.bond none
+  card.fear closed_doors
+  card.hobby bowling
+  card.v 1
+  name.first Dewayne
+  name.last Boggs
+  name.reveal intro
+  origin.town Richmond
+  origin.from Richmond, where his failed shop and later bar work were
+  origin.work bartender for Ruth Payne since 1990, after his small store went bankrupt
+  origin.workKind bartender
+  look.skin 2
+  look.hair short
+  look.hairColor 0.16,0.10,0.07
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 5
+  traits.humor 4
+  traits.temper 4
+  traits.honest 2
+  traits.faith 1
+  traits.trustSpeed 1
+  traits.curious 3
+  traits.pride 4
+  traits.flirt 0
+  traits.social 3
+  traits.tidy 5
+  traits.nostalg 3
+  need0.hunger 2
+  need0.thirst 1
+  need0.cold 2
+  need0.fear 3
+  need0.fatigue 3
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 0
+  vice.kind gambling
+  beliefs.1.id bl_family_first
+  beliefs.1.s 3
+  beliefs.2.id bl_doctors_know
+  beliefs.2.s 3
+  wants.1.id wn_lock_doors
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  carry.2 Base.Photo
+  dress.role bartender_m
+  dress.flags.1 work_shirt
+  dress.flags.2 vest
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_to_leave_his_inner_door_open
+  hooks.bath wants_to_wash_then_fold_his_shirt
+  hooks.radio asks_for_scores_before_bad_news
+  books.taste.1 mystery
+  books.taste.2 humor
+  facts.1.id f_starts
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Three failed store restarts hidden behind the claim of one bad year
+  facts.1.gate trust>=15
+  facts.2.id f_guard
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label The brother in the Guard is invented; Dewayne has only sister Janice
+  facts.2.gate trust>=30 & flag:starts_told
+  facts.3.id f_lake
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Paid for May's deliberate window break and blamed a branch
+  facts.3.gate trust>=45 & alone & flag:guard_told
+  facts.4.id f_cash
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Stole Ruth's cash with her spare key and let her blame an intruder
+  facts.4.gate trust>=60 & alone & flag:lake_told
+  facts.5.id f_spells
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Conceals Dr Nessel's 1990 panic-attack diagnosis from Janice
+  facts.5.gate trust>=75 & alone & flag:cash_told & imin>=60
+  mk.1 Corky's buckle
+  mk.2 lane six
+  mk.3 Ruth's lemon rag
+  rt.1 6-8|hall|Asks whether the outer doors have been checked without assuming they are locked
+  rt.2 12-14|livingroom|Turns the old collar buckle and straightens his folded clothes
+  rt.3 20-22|livingroom|Asks to keep his resting room's inner door open while the outer doors are secured
+  bl.1 old keys|Base.KeyRing|Includes the former store key and Ruth's spare bar key
+  bl.2 Rex outside the store photograph|Base.Photo|Rex in the doorway before the shop went bankrupt
+  bl.3 Corky's collar||Janice gave it to him after her dog died in autumn 1992
+  bl.4 bowling score card||A good night on lane six, kept despite May's claim that she let him win
+  bl.5 grey vest||Ruth wanted him to look tidy enough to keep the bar
+  bl.6 Nevada souvenir comb||Cheap purchase after the slot machines left little to spend
+  rl.1 Janice Boggs|older sister, born 1960|Gave him Corky's collar after the dog died in 1992; does not know the diagnosis
+  rl.2 Rex Boggs|father|Worked with Dewayne before the store venture and heard only the one-bad-year version
+  rl.3 Ruth Payne|employer since 1990|Runs the bar and does not know Dewayne took the eighty dollars
+  rl.4 May Boggs|cousin, born 1963|Lake reunion in 1991 and Nevada slot-machine trip in 1992
+  rl.5 Dr Nessel|Richmond doctor|Named the panic attacks in 1990; current whereabouts unknown
+end

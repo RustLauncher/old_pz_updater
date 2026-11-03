@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Carteles de contenedores",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- ESCRITURA -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- ESTILOS DE CARTEL -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DEPURACIÓN -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Permitir escribir en contenedores",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Interruptor general. Desactivado, nadie puede escribir ni borrar un nombre, pero los carteles ya colocados permanecen en su sitio y siguen siendo legibles.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Solo cajas",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "Los carteles solo se colocan en cajas, el almacenaje del que está hecha una base. Desactivado, cualquier contenedor del mundo puede llevar uno: armarios, frigoríficos, taquillas, mostradores. Esto afecta tanto a la visualización como a la escritura, por lo que al activarlo también se eliminan los carteles de todo lo que no sea una caja.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Requerir un bolígrafo o una brocha",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Para escribir se necesita un objeto marcado como instrumento de escritura (bolígrafo, lápiz, bolígrafos de colores), y para pintar, una brocha y un bote de pintura. Desactivado, cualquiera puede escribir con las manos.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Consumir un uso de la herramienta",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Solo afecta a las herramientas que realmente se consumen: un bote de pintura pierde un uso, un bolígrafo no, exactamente como en el juego base al usar un bolígrafo para anotar un mapa.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Solo miembros del refugio",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Dentro de un refugio, solo sus miembros pueden escribir en un contenedor o borrar su nombre. Los administradores están exentos para poder eliminar carteles colocados de forma malintencionada. Fuera de los refugios, esto no cambia nada.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Longitud máxima del nombre",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Cuántos caracteres puede contener un cartel. Limitado a 28, el mismo límite que aplica el juego base al renombrar un contenedor.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Permitir la tabla clavada",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Una tablilla de madera clavada en la parte frontal del contenedor.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Permitir la nota pegada",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Una hoja de papel pegada en la parte frontal del contenedor.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Permitir pintar directamente",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "El nombre pintado directamente sobre el contenedor, con el color de la pintura utilizada. Este estilo requiere una brocha.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Registro de depuración",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Escribe lo que hace el mod en console.txt en cada cliente y en server-console.txt en el servidor: una línea por acción y por solicitud recibida. Desactivado por defecto, y conviene dejarlo así: un servidor concurrido genera mucho registro. Actívalo para informar de un error. El interruptor se lee en directo, por lo que activarlo durante la partida inicia el registro inmediatamente, pero los diagnósticos de inicio (qué archivos se cargan y qué versión indican, atlas de sprites no disponible, llamada de dibujo rechazada) solo se muestran una vez por sesión y requieren que esté activado antes de iniciarla."
+}

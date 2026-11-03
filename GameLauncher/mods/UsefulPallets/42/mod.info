@@ -1,0 +1,10 @@
+id=UsefulPallets
+name=Useful Pallets
+description=Useful Pallets turns construction and military pallets into practical material storage for Project Zomboid Build 42. <BR> <BR> Load pallets with planks, logs, bricks, ingots, metal sheets, pipes, stone blocks and more. Each pallet holds one material type, and its appearance changes to show what's loaded. <BR> <BR> Right-click a pallet to load one item or all available items, then take back one, half or everything when needed. Loading can draw from your inventory, carried bags, nearby containers and vehicle trunks. Transfers use timed actions, so canceling keeps the items you've already moved. <BR> <BR> Materials stored on pallets are available for crafting without manually unloading them first. Military pallets can also be stacked once the bottom pallet is full, giving you more storage in the same space. <BR> <BR> Craft your own empty construction and military pallets using planks, nails and a hammer. Construction pallets require Carpentry 2; military pallets require Carpentry 4. <BR> <BR> Supports 39 material types, with separate construction and military capacity settings under Pallet Item Limits in the sandbox options. <BR> <BR> Idea inspired by u/Crimsoncerismon (https://www.reddit.com/r/projectzomboid/comments/1wq8bfx/comment/pc22nx8/). <BR> <BR> German translation by Darnexx (https://steamcommunity.com/id/deadlygearfenix).
+versionMin=42.0
+modversion=1.0.1
+author=Zennara
+poster=poster.png
+icon=poster.png
+pack=UsefulPallets
+tiledef=usefulpallets 7315

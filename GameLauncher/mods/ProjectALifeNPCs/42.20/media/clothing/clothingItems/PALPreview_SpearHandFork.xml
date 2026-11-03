@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_MaleModel>weapons/2handed/SpearHandFork</m_MaleModel>
+  <m_FemaleModel>weapons/2handed/SpearHandFork</m_FemaleModel>
+  <m_GUID>53dadad0-bc0c-32f9-2d8b-53a7a3f95252</m_GUID>
+  <m_Static>true</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone>Bip01_Prop1</m_AttachBone>
+  <m_Shader>basicEffect</m_Shader>
+  <textureChoices>weapons/2handed/SpearHandFork</textureChoices>
+</clothingItem>

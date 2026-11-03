@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+    <m_Name>ALifeSitGround</m_Name>
+    <m_AnimName>Bob_SitGround_Idle</m_AnimName>
+    <m_DeferredBoneName></m_DeferredBoneName>
+    <m_Priority>8</m_Priority>
+    <m_deferredBoneAxis>Y</m_deferredBoneAxis>
+    <m_Looped>true</m_Looped>
+    <m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+    <m_SpeedScale>0.50</m_SpeedScale>
+    <m_BlendTime>0.30</m_BlendTime>
+    <m_BlendOutTime>0.20</m_BlendOutTime>
+    <m_Conditions>
+        <m_Name>BumpType</m_Name>
+        <m_Type>STRING</m_Type>
+        <m_Value>ALifeSitGround</m_Value>
+    </m_Conditions>
+</animNode>

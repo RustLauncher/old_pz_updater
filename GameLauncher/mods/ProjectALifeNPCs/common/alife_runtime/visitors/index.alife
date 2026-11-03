@@ -1,0 +1,831 @@
+@alife-records 1
+
+person vp_1006
+  idx.arch va_vet_wwii
+  idx.sex m
+  idx.age 76
+  idx.people people_01
+  idx.nodes nodes_01
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 5
+  arr.returning_things 2
+  arr.lodger_request 2
+  arr.weather_shelter 3
+end
+
+person vp_1013
+  idx.arch va_vet_korea
+  idx.sex m
+  idx.age 65
+  idx.people people_01
+  idx.nodes nodes_01
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 5
+  arr.neighbour 2
+  arr.lodger_request 2
+  arr.weather_shelter 2
+end
+
+person vp_1027
+  idx.arch va_tobacco_farmer
+  idx.sex m
+  idx.age 48
+  idx.people people_01
+  idx.nodes nodes_01
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 3
+  arr.neighbour_borrow 2
+  arr.asks_help 2
+  arr.family_in_need 5
+  arr.returning_guest 1
+end
+
+person vp_1028
+  idx.arch va_mechanic
+  idx.sex f
+  idx.age 45
+  idx.people people_02
+  idx.nodes nodes_02
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 1
+  arr.sleep_one_night 2
+  arr.neighbour_borrow 2
+  arr.asks_help 5
+  arr.returning_guest 1
+end
+
+person vp_1050
+  idx.arch va_student_college
+  idx.sex f
+  idx.age 19
+  idx.people people_02
+  idx.nodes nodes_02
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 5
+  arr.chased 3
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.panic_knock 1
+end
+
+person vp_1059
+  idx.arch va_factory_laidoff
+  idx.sex f
+  idx.age 50
+  idx.people people_02
+  idx.nodes nodes_02
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 5
+  arr.sleep_one_night 2
+  arr.asks_help 2
+  arr.family_in_need 3
+  arr.returning_guest 1
+end
+
+person vp_1066
+  idx.arch va_rural_doctor
+  idx.sex m
+  idx.age 74
+  idx.people people_03
+  idx.nodes nodes_03
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.medic_rounds 5
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.weather_shelter 1
+  arr.medical_visit 3
+end
+
+person vp_1070
+  idx.arch va_veterinarian
+  idx.sex m
+  idx.age 64
+  idx.people people_03
+  idx.nodes nodes_03
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.medic_rounds 5
+  arr.asks_help 2
+  arr.weather_shelter 1
+  arr.medical_visit 3
+end
+
+person vp_1078
+  idx.arch va_nurse_aide
+  idx.sex f
+  idx.age 29
+  idx.people people_03
+  idx.nodes nodes_03
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.sleep_one_night 2
+  arr.wounded 1
+  arr.medic_rounds 2
+  arr.family_in_need 2
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.medical_visit 5
+end
+
+person vp_1084
+  idx.arch va_retired_teacher
+  idx.sex m
+  idx.age 76
+  idx.people people_04
+  idx.nodes nodes_04
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 2
+  arr.returning_things 2
+  arr.lodger_request 2
+  arr.panic_knock 1
+  arr.weather_shelter 5
+end
+
+person vp_1090
+  idx.arch va_deacon
+  idx.sex m
+  idx.age 59
+  idx.people people_04
+  idx.nodes nodes_04
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 3
+  arr.returning_things 2
+  arr.asks_help 2
+  arr.family_in_need 5
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 1
+end
+
+person vp_1097
+  idx.arch va_baptist_preacher
+  idx.sex m
+  idx.age 63
+  idx.people people_04
+  idx.nodes nodes_04
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 5
+  arr.preacher 3
+  arr.asks_help 2
+  arr.family_in_need 2
+  arr.returning_guest 1
+end
+
+person vp_1140
+  idx.arch va_reformed_ex_con
+  idx.sex m
+  idx.age 40
+  idx.people people_05
+  idx.nodes nodes_05
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 2
+  arr.returning_things 5
+  arr.asks_help 3
+  arr.panic_knock 1
+end
+
+person vp_1157
+  idx.arch va_travelling_salesman
+  idx.sex f
+  idx.age 48
+  idx.people people_05
+  idx.nodes nodes_05
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 3
+  arr.messenger 5
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1178
+  idx.arch va_short_order_cook
+  idx.sex f
+  idx.age 22
+  idx.people people_05
+  idx.nodes nodes_05
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.asks_help 5
+  arr.returning_guest 1
+  arr.weather_shelter 1
+end
+
+person vp_1186
+  idx.arch va_guardsman_offduty
+  idx.sex f
+  idx.age 31
+  idx.people people_06
+  idx.nodes nodes_06
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.chased 2
+  arr.wounded 5
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1207
+  idx.arch va_housewife
+  idx.sex f
+  idx.age 58
+  idx.people people_06
+  idx.nodes nodes_06
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_207
+  arr.neighbour 3
+  arr.neighbour_borrow 2
+  arr.family_in_need 5
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1208
+  idx.arch va_mechanic
+  idx.sex m
+  idx.age 51
+  idx.people people_06
+  idx.nodes nodes_06
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_207
+  arr.beggar 1
+  arr.sleep_one_night 2
+  arr.neighbour_borrow 2
+  arr.asks_help 3
+  arr.family_in_need 5
+  arr.returning_guest 1
+  arr.panic_knock 1
+end
+
+person vp_1227
+  idx.arch va_nurse_aide
+  idx.sex f
+  idx.age 36
+  idx.people people_07
+  idx.nodes nodes_07
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_217
+  arr.sleep_one_night 2
+  arr.wounded 1
+  arr.medic_rounds 2
+  arr.family_in_need 2
+  arr.panic_knock 1
+  arr.weather_shelter 1
+  arr.medical_visit 5
+end
+
+person vp_1228
+  idx.arch va_runaway_young_adult
+  idx.sex f
+  idx.age 18
+  idx.people people_07
+  idx.nodes nodes_07
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_217
+  arr.beggar 3
+  arr.sleep_one_night 3
+  arr.chased 3
+  arr.wounded 1
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.medical_visit 5
+end
+
+person vp_1250
+  idx.arch va_lineman
+  idx.sex m
+  idx.age 25
+  idx.people people_07
+  idx.nodes nodes_07
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.sleep_one_night 5
+  arr.chased 2
+  arr.wounded 2
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.weather_shelter 1
+end
+
+person vp_1256
+  idx.arch va_teacher
+  idx.sex f
+  idx.age 28
+  idx.people people_08
+  idx.nodes nodes_08
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_224
+  arr.neighbour 2
+  arr.asks_help 2
+  arr.family_in_need 5
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1257
+  idx.arch va_librarian
+  idx.sex f
+  idx.age 37
+  idx.people people_08
+  idx.nodes nodes_08
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_224
+  arr.neighbour 2
+  arr.returning_things 2
+  arr.asks_help 2
+  arr.family_in_need 5
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1258
+  idx.arch va_trucker
+  idx.sex m
+  idx.age 33
+  idx.people people_08
+  idx.nodes nodes_08
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.sleep_one_night 3
+  arr.chased 5
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.weather_shelter 2
+end
+
+person vp_1289
+  idx.arch va_mennonite_neighbour
+  idx.sex m
+  idx.age 28
+  idx.people people_09
+  idx.nodes nodes_09
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 3
+  arr.neighbour_borrow 2
+  arr.asks_help 5
+  arr.returning_guest 1
+  arr.weather_shelter 2
+end
+
+person vp_1296
+  idx.arch va_hispanic_farmworker
+  idx.sex m
+  idx.age 21
+  idx.people people_09
+  idx.nodes nodes_09
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_242
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.family_in_need 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 5
+end
+
+person vp_1297
+  idx.arch va_hispanic_farmworker
+  idx.sex f
+  idx.age 28
+  idx.people people_10
+  idx.nodes nodes_10
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_242
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.family_in_need 3
+  arr.returning_guest 1
+  arr.weather_shelter 5
+  arr.medical_visit 2
+end
+
+person vp_1317
+  idx.arch va_conspiracy_talker
+  idx.sex f
+  idx.age 52
+  idx.people people_10
+  idx.nodes nodes_10
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 5
+  arr.neighbour 3
+  arr.asks_help 2
+  arr.returning_guest 1
+end
+
+person vp_1321
+  idx.arch va_carpenter
+  idx.sex m
+  idx.age 39
+  idx.people people_11
+  idx.nodes nodes_11
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_261
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.neighbour_borrow 5
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.medical_visit 2
+end
+
+person vp_1322
+  idx.arch va_house_painter
+  idx.sex m
+  idx.age 50
+  idx.people people_11
+  idx.nodes nodes_11
+  idx.dayMin 0
+  idx.dayMax 999
+  idx.party vg_261
+  arr.beggar 2
+  arr.sleep_one_night 2
+  arr.neighbour_borrow 5
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 1
+  arr.medical_visit 2
+end
+
+person vp_1332
+  idx.arch va_carpenter
+  idx.sex m
+  idx.age 37
+  idx.people people_11
+  idx.nodes nodes_11
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.neighbour_borrow 5
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.weather_shelter 1
+end
+
+person vp_1338
+  idx.arch va_house_painter
+  idx.sex f
+  idx.age 31
+  idx.people people_12
+  idx.nodes nodes_12
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 5
+  arr.neighbour_borrow 2
+  arr.asks_help 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+end
+
+person vp_1345
+  idx.arch va_librarian
+  idx.sex f
+  idx.age 45
+  idx.people people_12
+  idx.nodes nodes_12
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 2
+  arr.returning_things 2
+  arr.asks_help 5
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1349
+  idx.arch va_bar_musician
+  idx.sex f
+  idx.age 38
+  idx.people people_12
+  idx.nodes nodes_12
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 3
+  arr.drunk 5
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.weather_shelter 1
+end
+
+person vp_1353
+  idx.arch va_teacher
+  idx.sex f
+  idx.age 34
+  idx.people people_13
+  idx.nodes nodes_13
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 5
+  arr.asks_help 2
+  arr.family_in_need 2
+  arr.returning_guest 1
+  arr.weather_shelter 2
+end
+
+person vp_1381
+  idx.arch va_housewife
+  idx.sex f
+  idx.age 45
+  idx.people people_13
+  idx.nodes nodes_13
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 3
+  arr.neighbour_borrow 5
+  arr.family_in_need 3
+  arr.returning_guest 1
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1387
+  idx.arch va_farm_widow
+  idx.sex f
+  idx.age 77
+  idx.people people_13
+  idx.nodes nodes_13
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.neighbour 2
+  arr.returning_things 2
+  arr.returning_guest 1
+  arr.lodger_request 5
+  arr.weather_shelter 2
+  arr.medical_visit 2
+end
+
+person vp_1399
+  idx.arch va_drifter_addict
+  idx.sex m
+  idx.age 33
+  idx.people people_14
+  idx.nodes nodes_14
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 5
+  arr.sleep_one_night 2
+  arr.chased 2
+  arr.wounded 2
+  arr.panic_knock 1
+  arr.weather_shelter 1
+  arr.medical_visit 2
+end
+
+person vp_1410
+  idx.arch va_insurance_agent
+  idx.sex m
+  idx.age 30
+  idx.people people_14
+  idx.nodes nodes_14
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 1
+  arr.sleep_one_night 2
+  arr.neighbour 2
+  arr.asks_help 5
+  arr.panic_knock 1
+  arr.weather_shelter 2
+end
+
+person vp_1435
+  idx.arch va_bartender
+  idx.sex m
+  idx.age 28
+  idx.people people_15
+  idx.nodes nodes_15
+  idx.dayMin 0
+  idx.dayMax 999
+  arr.beggar 2
+  arr.sleep_one_night 2
+  arr.drunk 5
+  arr.asks_help 2
+  arr.returning_guest 1
+  arr.panic_knock 1
+end
+
+arch va_baptist_preacher
+  idx.carrierPool alife_vis_churchfolk
+end
+
+arch va_bar_musician
+  idx.carrierPool alife_vis_roughharmless
+end
+
+arch va_barber
+end
+
+arch va_bartender
+  idx.carrierPool alife_vis_roughharmless
+end
+
+arch va_black_church_family
+end
+
+arch va_carpenter
+  idx.carrierPool alife_vis_trades
+end
+
+arch va_church_lady
+end
+
+arch va_coal_miner
+end
+
+arch va_conspiracy_talker
+  idx.carrierPool alife_vis_outsiders
+end
+
+arch va_deacon
+  idx.carrierPool alife_vis_churchfolk
+end
+
+arch va_deputy_offduty
+end
+
+arch va_drifter_addict
+  idx.carrierPool alife_vis_drifters
+end
+
+arch va_factory_laidoff
+  idx.carrierPool alife_vis_laidoff
+end
+
+arch va_farm_widow
+  idx.carrierPool alife_vis_elders
+end
+
+arch va_gentle_biker
+end
+
+arch va_grocery_cashier
+end
+
+arch va_guardsman_offduty
+  idx.carrierPool alife_vis_exservice
+end
+
+arch va_hispanic_farmworker
+  idx.carrierPool alife_vis_families
+end
+
+arch va_house_painter
+  idx.carrierPool alife_vis_trades
+end
+
+arch va_housewife
+  idx.carrierPool alife_vis_families
+end
+
+arch va_hunter_woodsman
+end
+
+arch va_insurance_agent
+  idx.carrierPool alife_vis_outsiders
+end
+
+arch va_librarian
+  idx.carrierPool alife_vis_neighbours
+end
+
+arch va_lineman
+  idx.carrierPool alife_vis_trades
+end
+
+arch va_lost_tourist
+end
+
+arch va_mail_carrier
+end
+
+arch va_mechanic
+  idx.carrierPool alife_vis_trades
+end
+
+arch va_mennonite_neighbour
+  idx.carrierPool alife_vis_elders
+end
+
+arch va_nurse_aide
+  idx.carrierPool alife_vis_medical
+end
+
+arch va_old_couple
+end
+
+arch va_paramedic_offduty
+end
+
+arch va_prepper
+end
+
+arch va_reformed_ex_con
+  idx.carrierPool alife_vis_roughharmless
+end
+
+arch va_retired_teacher
+  idx.carrierPool alife_vis_elders
+end
+
+arch va_runaway_young_adult
+  idx.carrierPool alife_vis_drifters
+end
+
+arch va_rural_doctor
+  idx.carrierPool alife_vis_medical
+end
+
+arch va_short_order_cook
+  idx.carrierPool alife_vis_neighbours
+end
+
+arch va_student_college
+  idx.carrierPool alife_vis_youngadults
+end
+
+arch va_teacher
+  idx.carrierPool alife_vis_neighbours
+end
+
+arch va_teen_with_guardian
+end
+
+arch va_tobacco_farmer
+  idx.carrierPool alife_vis_neighbours
+end
+
+arch va_travelling_salesman
+  idx.carrierPool alife_vis_outsiders
+end
+
+arch va_trucker
+  idx.carrierPool alife_vis_outsiders
+end
+
+arch va_vet_korea
+  idx.carrierPool alife_vis_exservice
+end
+
+arch va_vet_vietnam
+end
+
+arch va_vet_wwii
+  idx.carrierPool alife_vis_elders
+end
+
+arch va_veterinarian
+  idx.carrierPool alife_vis_medical
+end
+
+arch va_vietnamese_american_shop_family
+end
+
+arch va_waitress
+end
+
+arch va_young_couple
+end
+
+route generic
+  idx.shards lines_01
+end

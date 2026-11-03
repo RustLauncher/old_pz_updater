@@ -1,0 +1,5 @@
+name=Container Capacity Indicator
+id=ContainerCapacityIndicator
+modversion=1.2.0
+description=Shows compact fill bars for containers and four-segment load indicators for detachable gun magazines. UI only; does not change items, capacity, ammunition, or saved data.
+versionMin=42.20

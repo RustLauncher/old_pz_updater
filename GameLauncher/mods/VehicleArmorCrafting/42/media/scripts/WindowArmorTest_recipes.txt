@@ -1,0 +1,62 @@
+/*  The recipes live in module Base ON PURPOSE.
+    A script name without a dot is looked up in module Base only
+    (ScriptBucketCollection.getScript). In multiplayer the server rebuilds the craft
+    from the recipe name, and a recipe from a custom module is simply not found:
+    the progress bar runs but no item is created. Items are therefore referenced
+    by their full names - WindowArmorTest.*  */
+module Base
+{
+    /* Window armor: iron pipe + screws, welded together.
+       Hacksaw, hammer and welder mask are required but not consumed.
+       Props: the torch is held in one hand (Prop1), the workpiece in the other (Prop2). */
+    craftRecipe WAT_MakeGlassArmorKit
+    {
+        time = 600,
+        Tags = AnySurfaceCraft,
+        NeedToBeLearn = false,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        category = Welding,
+        xpAward = MetalWelding:20,
+        inputs
+        {
+            item 1 [Base.MetalPipe] flags[Prop2],
+            item 4 [Base.Screws],
+            item 2 [Base.BlowTorch] flags[Prop1],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 1 tags[base:metalsaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 WindowArmorTest.GlassArmorKit,
+        }
+    }
+
+    /* Hood/trunk armor plate: two steel sheets + screws.
+       Hacksaw OR sheet metal snips, hammer and mask are not consumed.
+       Props: the torch is held in one hand (Prop1), the workpiece in the other (Prop2). */
+    craftRecipe WAT_MakeBodyArmorPlate
+    {
+        time = 800,
+        Tags = AnySurfaceCraft,
+        NeedToBeLearn = false,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        category = Welding,
+        xpAward = MetalWelding:20,
+        inputs
+        {
+            item 2 [Base.SheetMetal] flags[Prop2],
+            item 4 [Base.Screws],
+            item 2 [Base.BlowTorch] flags[Prop1],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 1 tags[base:metalsaw;base:sheetmetalsnips] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 WindowArmorTest.BodyArmorPlate,
+        }
+    }
+}

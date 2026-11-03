@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Una tablilla de madera clavada en la parte frontal. Se lee desde el otro lado de la habitación.",
+    "Tooltip_LPBCS_StylePaper": "Una hoja pegada en la parte frontal. Rápida y sencilla.",
+    "Tooltip_LPBCS_StylePainted": "Pintado directamente sobre la madera, con el color del bote utilizado. Requiere una brocha y pintura.",
+
+    "Tooltip_LPBCS_Side": "En qué cara del contenedor se coloca el cartel.",
+    "Tooltip_LPBCS_SideAuto": "Deja la elección al mod: la cara derecha, salvo que una pared o una caja la bloquee; entonces el cartel cambia de lado automáticamente.",
+    "Tooltip_LPBCS_SideLeft": "Clava el cartel en la cara izquierda y lo deja allí, aunque la derecha quede libre.",
+    "Tooltip_LPBCS_SideRight": "Clava el cartel en la cara derecha y lo deja allí, aunque algo se coloque delante."
+}

@@ -1,0 +1,7 @@
+name=A-Life Faction Relations
+id=ALifeRelations
+author=thana
+modversion=0.7.0
+require=\ProjectALifeNPCs
+versionMin=42.21.0
+description=Read-only companion for Project A-Life: how each faction and bloc treats you and why, kill counts per faction, Jeem Extension points, change notifications, faction tags over NPCs, and outpost marks on the world map. Right-click the world > Faction Relations.

@@ -1,0 +1,24 @@
+module MultiPurposeItemRack
+{
+    craftRecipe MakeMultiPurposeItemRack
+    {
+        time = 250,
+        timedAction = MakingHammer_Surface,
+        Tags = AnySurfaceCraft,
+        category = Carpentry,
+        SkillRequired = Woodwork:2,
+        AutoLearnAny = Woodwork:2,
+        xpAward = Woodwork:15,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+            item 2 [Base.Plank],
+            item 4 [Base.Nails],
+            item 1 tags[base:saw] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 1 MultiPurposeItemRack.RackSection,
+        }
+    }
+}

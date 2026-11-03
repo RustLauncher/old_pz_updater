@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_rottweiler": "Rottweiler",
+    "IGUI_AnimalType_rottmale": "Rottweiler (macho)",
+    "IGUI_AnimalType_rottfemale": "Rottweiler (hembra)",
+    "IGUI_AnimalType_rottpup": "Rottweiler (cachorro)",
+    "IGUI_PD_Breed_rottweiler": "Rottweiler",
+    "IGUI_PD_BreedDesc_rottweiler": "Un poderoso perro guardián criado para el trabajo de protección, un auténtico guerrero a la altura del Pastor Alemán: aprende Combate el doble de rápido, golpea fuerte con habilidad alta, derriba zombis y sigue peleando donde otras razas entran en pánico. Luchar a su lado también te endurece: mientras tu Rottweiler está en combate cerca de ti, tus golpes cuerpo a cuerpo gastan menos resistencia (Primera Línea). Se encuentra vigilando almacenes, fábricas y desguaces, y rara vez en casas.",
+    "IGUI_PD_Moodle_FrontLine": "Primera Línea",
+    "IGUI_PD_Moodle_FrontLine_desc": "Tu Rottweiler pelea a tu lado. Mientras esté en combate cerca de ti, bien alimentado y leal, tus golpes cuerpo a cuerpo gastan menos resistencia."
+}

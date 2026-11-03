@@ -1,0 +1,75 @@
+module Base
+{
+	model 82oshkoshM911mudflaps
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m911_mudflaps,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	template vehicle M911Mudflaps
+		{
+		part M911Mudflaps
+        	{
+
+			model Mudflaps
+				{
+                		file = 82oshkoshM911mudflaps,
+				}
+
+			category = Other,
+			area = TireRearRight,
+			specificItem = false,
+			itemType = Base.M911Mudflaps,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+							equip = primary,
+                    		}
+                	}
+
+                	time = 800,
+                	skills = Mechanics:1,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+			  				type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+                    		}
+                	}
+
+					time = 750,
+					skills = Mechanics:1,
+					recipes = Intermediate Mechanics,
+            		test = Vehicles.UninstallTest.Default,
+					complete = M911.UninstallComplete.Mudflaps,
+
+            		}
+
+            		lua
+            		{
+					create = M911.Create.Mudflaps,
+					init = M911.Init.Mudflaps,
+			}
+		}
+	}
+
+		
+}

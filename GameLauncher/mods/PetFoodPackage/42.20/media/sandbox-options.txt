@@ -1,0 +1,13 @@
+VERSION = 1,
+option PetFoodPackage {
+    type = base,
+    page = PetFoodPackage,
+    translation = PetFoodPackage,
+}
+option PetFoodPackage.Abundance {
+    type = enum,
+    default = 5,
+    numValues = 8,
+    page = PetFoodPackage,
+    translation = PetFoodPackage_Abundance,
+}

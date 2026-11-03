@@ -1,0 +1,2637 @@
+module Base
+{
+    item BookCarpentry1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Carpentry,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookCarpentry2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Carpentry,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookCarpentry3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Carpentry,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookCarpentry4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Carpentry,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookCarpentry5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Carpentry,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookCarving1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Carving,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+    }
+
+    item BookCarving2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Carving,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+    }
+
+    item BookCarving3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Carving,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+    }
+
+    item BookCarving4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Carving,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+    }
+
+    item BookCarving5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Carving,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+    }
+
+    item BookCooking1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book9,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Cooking,
+        StaticModel = BookDarkCyan,
+        WorldStaticModel = BookClosedDarkCyan_Ground,
+    }
+
+    item BookCooking2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book9,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Cooking,
+        StaticModel = BookDarkCyan,
+        WorldStaticModel = BookClosedDarkCyan_Ground,
+    }
+
+    item BookCooking3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book9,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Cooking,
+        StaticModel = BookDarkCyan,
+        WorldStaticModel = BookClosedDarkCyan_Ground,
+    }
+
+    item BookCooking4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book9,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Cooking,
+        StaticModel = BookDarkCyan,
+        WorldStaticModel = BookClosedDarkCyan_Ground,
+    }
+
+    item BookCooking5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book9,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Cooking,
+        StaticModel = BookDarkCyan,
+        WorldStaticModel = BookClosedDarkCyan_Ground,
+    }
+
+    item BookElectrician1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book6,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Electricity,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookClosedRedPink_Ground,
+    }
+
+    item BookElectrician2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book6,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Electricity,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookClosedRedPink_Ground,
+    }
+
+    item BookElectrician3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book6,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Electricity,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookClosedRedPink_Ground,
+    }
+
+    item BookElectrician4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book6,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Electricity,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookClosedRedPink_Ground,
+    }
+
+    item BookElectrician5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book6,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Electricity,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookClosedRedPink_Ground,
+    }
+
+    item BookFarming1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book3,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Farming,
+        StaticModel = BookLightGreen,
+        WorldStaticModel = BookClosedLightGreen_Ground,
+    }
+
+    item BookFarming2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book3,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Farming,
+        StaticModel = BookLightGreen,
+        WorldStaticModel = BookClosedLightGreen_Ground,
+    }
+
+    item BookFarming3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book3,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Farming,
+        StaticModel = BookLightGreen,
+        WorldStaticModel = BookClosedLightGreen_Ground,
+    }
+
+    item BookFarming4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book3,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Farming,
+        StaticModel = BookLightGreen,
+        WorldStaticModel = BookClosedLightGreen_Ground,
+    }
+
+    item BookFarming5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book3,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Farming,
+        StaticModel = BookLightGreen,
+        WorldStaticModel = BookClosedLightGreen_Ground,
+    }
+
+    item BookFirstAid1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book2,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = FirstAid,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+    }
+
+    item BookFirstAid2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book2,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = FirstAid,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+    }
+
+    item BookFirstAid3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book2,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = FirstAid,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+    }
+
+    item BookFirstAid4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book2,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = FirstAid,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+    }
+
+    item BookFirstAid5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book2,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = FirstAid,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+    }
+
+    item BookFishing1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book5,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Fishing,
+        StaticModel = BookPurple,
+        WorldStaticModel = BookClosedPurple_Ground,
+    }
+
+    item BookFishing2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book5,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Fishing,
+        StaticModel = BookPurple,
+        WorldStaticModel = BookClosedPurple_Ground,
+    }
+
+    item BookFishing3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book5,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Fishing,
+        StaticModel = BookPurple,
+        WorldStaticModel = BookClosedPurple_Ground,
+    }
+
+    item BookFishing4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book5,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Fishing,
+        StaticModel = BookPurple,
+        WorldStaticModel = BookClosedPurple_Ground,
+    }
+
+    item BookFishing5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book5,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Fishing,
+        StaticModel = BookPurple,
+        WorldStaticModel = BookClosedPurple_Ground,
+    }
+
+    item BookFlintKnapping1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = FlintKnapping,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 250,
+        ColorGreen = 206,
+        ColorRed = 135,
+    }
+
+    item BookFlintKnapping2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = FlintKnapping,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 250,
+        ColorGreen = 206,
+        ColorRed = 135,
+    }
+
+    item BookFlintKnapping3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = FlintKnapping,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 250,
+        ColorGreen = 206,
+        ColorRed = 135,
+    }
+
+    item BookFlintKnapping4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = FlintKnapping,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 250,
+        ColorGreen = 206,
+        ColorRed = 135,
+    }
+
+    item BookFlintKnapping5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = FlintKnapping,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 250,
+        ColorGreen = 206,
+        ColorRed = 135,
+    }
+
+    item BookForaging1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book10,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Foraging,
+        StaticModel = BookGreen,
+        WorldStaticModel = BookClosedGreen_Ground,
+    }
+
+    item BookForaging2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book10,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Foraging,
+        StaticModel = BookGreen,
+        WorldStaticModel = BookClosedGreen_Ground,
+    }
+
+    item BookForaging3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book10,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Foraging,
+        StaticModel = BookGreen,
+        WorldStaticModel = BookClosedGreen_Ground,
+    }
+
+    item BookForaging4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book10,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Foraging,
+        StaticModel = BookGreen,
+        WorldStaticModel = BookClosedGreen_Ground,
+    }
+
+    item BookForaging5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book10,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Foraging,
+        StaticModel = BookGreen,
+        WorldStaticModel = BookClosedGreen_Ground,
+    }
+
+    item BookGlassmaking1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Glassmaking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookGlassmaking2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Glassmaking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookGlassmaking3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Glassmaking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookGlassmaking4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Glassmaking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookGlassmaking5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Glassmaking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookMasonry1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Masonry,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 171,
+        ColorGreen = 195,
+        ColorBlue = 100,
+    }
+
+    item BookMasonry2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Masonry,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 171,
+        ColorGreen = 195,
+        ColorBlue = 100,
+    }
+
+    item BookMasonry3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Masonry,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 171,
+        ColorGreen = 195,
+        ColorBlue = 100,
+    }
+
+    item BookMasonry4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Masonry,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 171,
+        ColorGreen = 195,
+        ColorBlue = 100,
+    }
+
+    item BookMasonry5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Masonry,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 171,
+        ColorGreen = 195,
+        ColorBlue = 100,
+    }
+
+    item BookMechanic1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book11,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Mechanics,
+        StaticModel = BookYellow,
+        WorldStaticModel = BookClosedYellow_Ground,
+    }
+
+    item BookMechanic2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book11,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Mechanics,
+        StaticModel = BookYellow,
+        WorldStaticModel = BookClosedYellow_Ground,
+    }
+
+    item BookMechanic3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book11,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Mechanics,
+        StaticModel = BookYellow,
+        WorldStaticModel = BookClosedYellow_Ground,
+    }
+
+    item BookMechanic4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book11,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Mechanics,
+        StaticModel = BookYellow,
+        WorldStaticModel = BookClosedYellow_Ground,
+    }
+
+    item BookMechanic5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book11,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Mechanics,
+        StaticModel = BookYellow,
+        WorldStaticModel = BookClosedYellow_Ground,
+    }
+
+    item BookMetalWelding1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book7,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = MetalWelding,
+        StaticModel = BookGrey,
+        WorldStaticModel = BookClosedGrey_Ground,
+    }
+
+    item BookMetalWelding2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book7,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = MetalWelding,
+        StaticModel = BookGrey,
+        WorldStaticModel = BookClosedGrey_Ground,
+    }
+
+    item BookMetalWelding3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book7,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = MetalWelding,
+        StaticModel = BookGrey,
+        WorldStaticModel = BookClosedGrey_Ground,
+    }
+
+    item BookMetalWelding4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book7,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = MetalWelding,
+        StaticModel = BookGrey,
+        WorldStaticModel = BookClosedGrey_Ground,
+    }
+
+    item BookMetalWelding5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book7,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = MetalWelding,
+        StaticModel = BookGrey,
+        WorldStaticModel = BookClosedGrey_Ground,
+    }
+
+    item BookBlacksmith1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Blacksmith,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 58,
+        ColorGreen = 69,
+        ColorBlue = 72,
+    }
+
+    item BookBlacksmith2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Blacksmith,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 58,
+        ColorGreen = 69,
+        ColorBlue = 72,
+    }
+
+    item BookBlacksmith3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Blacksmith,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 58,
+        ColorGreen = 69,
+        ColorBlue = 72,
+    }
+
+    item BookBlacksmith4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Blacksmith,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 58,
+        ColorGreen = 69,
+        ColorBlue = 72,
+    }
+
+    item BookBlacksmith5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Blacksmith,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorRed = 58,
+        ColorGreen = 69,
+        ColorBlue = 72,
+    }
+
+    item BookPottery1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Pottery,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 67,
+        ColorGreen = 104,
+        ColorRed = 203,
+    }
+
+    item BookPottery2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Pottery,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 67,
+        ColorGreen = 104,
+        ColorRed = 203,
+    }
+
+    item BookPottery3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Pottery,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 67,
+        ColorGreen = 104,
+        ColorRed = 203,
+    }
+
+    item BookPottery4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Pottery,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 67,
+        ColorGreen = 104,
+        ColorRed = 203,
+    }
+
+    item BookPottery5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Pottery,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 67,
+        ColorGreen = 104,
+        ColorRed = 203,
+    }
+
+    item BookTailoring1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Tailoring,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 194,
+        ColorGreen = 194,
+        ColorRed = 244,
+    }
+
+    item BookTailoring2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Tailoring,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 194,
+        ColorGreen = 194,
+        ColorRed = 244,
+    }
+
+    item BookTailoring3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Tailoring,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 194,
+        ColorGreen = 194,
+        ColorRed = 244,
+    }
+
+    item BookTailoring4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Tailoring,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 194,
+        ColorGreen = 194,
+        ColorRed = 244,
+    }
+
+    item BookTailoring5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Tailoring,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 194,
+        ColorGreen = 194,
+        ColorRed = 244,
+    }
+
+    item BookTrapping1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book4,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Trapping,
+        StaticModel = BookYellowBrown,
+        WorldStaticModel = BookClosedYellowBrown_Ground,
+    }
+
+    item BookTrapping2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book4,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Trapping,
+        StaticModel = BookYellowBrown,
+        WorldStaticModel = BookClosedYellowBrown_Ground,
+    }
+
+    item BookTrapping3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book4,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Trapping,
+        StaticModel = BookYellowBrown,
+        WorldStaticModel = BookClosedYellowBrown_Ground,
+    }
+
+    item BookTrapping4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book4,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Trapping,
+        StaticModel = BookYellowBrown,
+        WorldStaticModel = BookClosedYellowBrown_Ground,
+    }
+
+    item BookTrapping5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book4,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Trapping,
+        StaticModel = BookYellowBrown,
+        WorldStaticModel = BookClosedYellowBrown_Ground,
+    }
+
+    item BookAiming1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book12,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Aiming,
+        StaticModel = Book12,
+        WorldStaticModel = BookClosed12_Ground,
+    }
+
+    item BookAiming2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book12,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Aiming,
+        StaticModel = Book12,
+        WorldStaticModel = BookClosed12_Ground,
+    }
+
+    item BookAiming3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book12,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Aiming,
+        StaticModel = Book12,
+        WorldStaticModel = BookClosed12_Ground,
+    }
+
+    item BookAiming4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book12,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Aiming,
+        StaticModel = Book12,
+        WorldStaticModel = BookClosed12_Ground,
+    }
+
+    item BookAiming5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book12,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Aiming,
+        StaticModel = Book12,
+        WorldStaticModel = BookClosed12_Ground,
+    }
+
+    item BookReloading1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book13,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Reloading,
+        StaticModel = Book13,
+        WorldStaticModel = BookClosed13_Ground,
+    }
+
+    item BookReloading2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book13,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Reloading,
+        StaticModel = Book13,
+        WorldStaticModel = BookClosed13_Ground,
+    }
+
+    item BookReloading3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book13,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Reloading,
+        StaticModel = Book13,
+        WorldStaticModel = BookClosed13_Ground,
+    }
+
+    item BookReloading4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book13,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Reloading,
+        StaticModel = Book13,
+        WorldStaticModel = BookClosed13_Ground,
+    }
+
+    item BookReloading5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book13,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Reloading,
+        StaticModel = Book13,
+        WorldStaticModel = BookClosed13_Ground,
+    }
+
+    item BookHusbandry1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book14,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Husbandry,
+        StaticModel = Book14,
+        WorldStaticModel = BookClosed14_Ground,
+    }
+
+    item BookHusbandry2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book14,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Husbandry,
+        StaticModel = Book14,
+        WorldStaticModel = BookClosed14_Ground,
+    }
+
+    item BookHusbandry3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book14,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Husbandry,
+        StaticModel = Book14,
+        WorldStaticModel = BookClosed14_Ground,
+    }
+
+    item BookHusbandry4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book14,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Husbandry,
+        StaticModel = Book14,
+        WorldStaticModel = BookClosed14_Ground,
+    }
+
+    item BookHusbandry5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book14,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Husbandry,
+        StaticModel = Book14,
+        WorldStaticModel = BookClosed14_Ground,
+    }
+
+    item BookButchering1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Butchering,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 0,
+        ColorGreen = 0,
+        ColorRed = 78,
+    }
+
+    item BookButchering2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Butchering,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 0,
+        ColorGreen = 0,
+        ColorRed = 78,
+    }
+
+    item BookButchering3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Butchering,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 0,
+        ColorGreen = 0,
+        ColorRed = 78,
+    }
+
+    item BookButchering4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Butchering,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 0,
+        ColorGreen = 0,
+        ColorRed = 78,
+    }
+
+    item BookButchering5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Butchering,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 0,
+        ColorGreen = 0,
+        ColorRed = 78,
+    }
+
+    item BookTracking1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Tracking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookTracking2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Tracking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookTracking3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Tracking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookTracking4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Tracking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookTracking5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Tracking,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+    }
+
+    item BookLongBlade1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = LongBlade,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item BookLongBlade2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = LongBlade,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item BookLongBlade3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = LongBlade,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item BookLongBlade4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = LongBlade,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item BookLongBlade5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book_Generic,
+        IconColorMask = Book_Generic_Mask,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = LongBlade,
+        StaticModel = BookOpenTINT,
+        WorldStaticModel = BookClosedTINT,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item BookMaintenance1
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        NumberOfPages = 220,
+        SkillTrained = Maintenance,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookMaintenance2
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        NumberOfPages = 260,
+        SkillTrained = Maintenance,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookMaintenance3
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        NumberOfPages = 300,
+        SkillTrained = Maintenance,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookMaintenance4
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        NumberOfPages = 340,
+        SkillTrained = Maintenance,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item BookMaintenance5
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:literature,
+        Weight = 1.0,
+        Icon = Book8,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        NumberOfPages = 380,
+        SkillTrained = Maintenance,
+        StaticModel = BookBrown,
+        WorldStaticModel = BookClosedBrown_Ground,
+    }
+
+    item Magazine
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.5,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StressChange = -15,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGeneric,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Art
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundArt,
+        magazine_subject = base:art,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Business
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundBusiness,
+        magazine_subject = base:business,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Car
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCar,
+        magazine_subject = base:cars,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Childs
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundChilds,
+        magazine_subject = base:childs,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Cinema
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCinema,
+        magazine_subject = base:cinema,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Crime
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCrime,
+        magazine_subject = base:crime,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Fashion
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        magazine_subject = base:fashion,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Firearm
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundFirearm,
+        magazine_subject = base:firearm,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Gaming
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGaming,
+        magazine_subject = base:gaming,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Golf
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGolf,
+        magazine_subject = base:golf,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Health
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHealth,
+        magazine_subject = base:health,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Hobby
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHobby,
+        magazine_subject = base:hobby,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Horror
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHorror,
+        magazine_subject = base:horror,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Humor
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHumor,
+        magazine_subject = base:humor,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Military
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundMilitary,
+        magazine_subject = base:military,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Music
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundMusic,
+        magazine_subject = base:music,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Outdoors
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundOutdoors,
+        magazine_subject = base:outdoors,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Police
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundPolice,
+        magazine_subject = base:police,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Popular
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundPopular,
+        magazine_subject = base:popular,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Rich
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundRich,
+        magazine_subject = base:rich,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Science
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundScience,
+        magazine_subject = base:science,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Sports
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundSports,
+        magazine_subject = base:sports,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Tech
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundTech,
+        magazine_subject = base:tech,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_Teens
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundTeens,
+        magazine_subject = base:teens,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:magazine,
+    }
+
+    item Magazine_New
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.5,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StressChange = -15,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGeneric,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Art_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundArt,
+        magazine_subject = base:art,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Business_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundBusiness,
+        magazine_subject = base:business,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Car_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCar,
+        magazine_subject = base:cars,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Childs_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundChilds,
+        magazine_subject = base:childs,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Cinema_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCinema,
+        magazine_subject = base:cinema,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Crime_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundCrime,
+        magazine_subject = base:crime,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Fashion_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundFashion,
+        magazine_subject = base:fashion,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Firearm_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundFirearm,
+        magazine_subject = base:firearm,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Gaming_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGaming,
+        magazine_subject = base:gaming,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Golf_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundGolf,
+        magazine_subject = base:golf,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Health_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHealth,
+        magazine_subject = base:health,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Hobby_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHobby,
+        magazine_subject = base:hobby,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Horror_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHorror,
+        magazine_subject = base:horror,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Humor_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundHumor,
+        magazine_subject = base:humor,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Military_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundMilitary,
+        magazine_subject = base:military,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Music_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundMusic,
+        magazine_subject = base:music,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Outdoors_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundOutdoors,
+        magazine_subject = base:outdoors,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Police_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundPolice,
+        magazine_subject = base:police,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Popular_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundPopular,
+        magazine_subject = base:popular,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Rich_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundRich,
+        magazine_subject = base:rich,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Science_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundScience,
+        magazine_subject = base:science,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Sports_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundSports,
+        magazine_subject = base:sports,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Tech_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundTech,
+        magazine_subject = base:tech,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+    item Magazine_Teens_New
+    {
+        DisplayCategory = Literature,
+        Weight = 0.5,
+        ItemType = base:literature,
+        StressChange = -15,
+        Icon = Magazine,
+        BoredomChange = -20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGroundTeens,
+        magazine_subject = base:teens,
+        OnCreate = ItemCodeOnCreate.onCreateSubjectMagazine,
+        Tags = base:new;base:magazine,
+    }
+
+
+}

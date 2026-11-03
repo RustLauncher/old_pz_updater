@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Mascara de animacao propria: segurar o carrinho com os DOIS bracos.
+
+  POR QUE ELA EXISTE, e por que eu tinha concluido que era impossivel:
+
+  Eu havia registrado que "mascara e por mao, entao nunca produz pose de dois
+  bracos". Errado. Por mao e o SLOT que declara a mascara ; primaryAnimMask ou
+  secondaryAnimMask. O alcance de cada mascara e definido por
+  m_SubStateBoneWeights, e ali cabe qualquer osso.
+
+  A vanilla holdingbagright lista so o lado direito:
+
+      Bip01              peso 0.00
+      Bip01_R_Clavicle
+      Bip01_Prop1
+
+  Esta acrescenta o lado esquerdo. Uma mascara so, declarada num slot so, move os
+  dois bracos. Ossos sem <weight> valem 1.0; Bip01 fica em 0.00 para a mascara
+  nao arrastar o corpo inteiro junto, que e o que a manteria de pe sobre a
+  animacao de andar em vez de substitui-la.
+
+  A tecnica veio do mod Apocalypse Wheelbarrows, que resolveu isso antes.
+
+  AS TRANSICOES apontam so para nos do proprio grupo, maskingright. A primeira
+  versao tambem listava os equivalentes de maskingleft, copiados daquele mod sem
+  verificar; a vanilla holdingbagright nao faz isso, e alvo de outro grupo e
+  suspeito de deixar a mascara instavel ao trocar de estado. Os dois bracos vem
+  dos OSSOS listados abaixo, nao das transicoes.
+
+  m_AnimName e m_SpeedScale sao os mesmos da vanilla de propósito: Bob_Idle_Bag a
+  0.48 e a base que ja estava em uso, entao a mao DIREITA deve ficar onde estava.
+  Isso importa porque a pose do carrinho esta calibrada em (0.31, 0.90, 0.56)
+  contra ela ; mudar a animacao base moveria a mao e invalidaria a calibracao.
+-->
+<animNode>
+	<m_Name>mnwb_holdingcart</m_Name>
+	<m_Priority>10</m_Priority>
+	<m_AnimName>Bob_Idle_Bag</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.48</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>RightHandMask</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>mnwb_holdingcart</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>idlesneakbagright</m_Target>
+		<m_blendInTime>0.35</m_blendInTime>
+		<m_blendOutTime>0.35</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aimbagright</m_Target>
+		<m_AnimName>Bob_IdleToAim_Bag</m_AnimName>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.2</m_blendOutTime>
+		<m_speedScale>1.5</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>idlesneaklowbagright</m_Target>
+		<m_blendInTime>0.35</m_blendInTime>
+		<m_blendOutTime>0.35</m_blendOutTime>
+	</m_Transitions>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01</boneName>
+		<weight>0.00</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Clavicle</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_L_Clavicle</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop2</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

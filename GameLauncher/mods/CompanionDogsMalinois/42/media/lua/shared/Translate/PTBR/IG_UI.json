@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Pastor Belga Malinois",
+    "IGUI_AnimalType_malmale": "Pastor Belga Malinois (macho)",
+    "IGUI_AnimalType_malfemale": "Pastor Belga Malinois (fêmea)",
+    "IGUI_AnimalType_malpup": "Pastor Belga Malinois (filhote)",
+    "IGUI_PD_Breed_malinois": "Pastor Belga Malinois",
+    "IGUI_PD_BreedDesc_malinois": "Um cão de polícia e de detecção. Focado em faro, obediência e combate. Cão com mecânica única, não só fareja o zumbi como indica para você a exata localização. Encontrado em delegacias, prédios militares e chance rara em casas.",
+    "IGUI_PD_Moodle_K9Scent": "Faro K9",
+    "IGUI_PD_Moodle_K9Scent_desc": "Seu Malinois é o melhor de faro, pode farejar a exata posição do zumbi mais próximo."
+}

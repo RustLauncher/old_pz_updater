@@ -1,0 +1,23 @@
+{
+    "Sandbox_RainCleansBlood": "Regen reinigt Blut",
+    "Sandbox_RainCleansBlood_TilesPerMinute": "Kacheln pro Minute",
+    "Sandbox_RainCleansBlood_TilesPerMinute_tooltip": "Wie viele zufällige Kacheln pro Spielminute gereinigt werden.",
+    "Sandbox_RainCleansBlood_WeatherThreshold": "Wetterintensitätsschwelle",
+    "Sandbox_RainCleansBlood_WeatherThreshold_tooltip": "Wie stark Regen oder Schnee sein muss, bevor Blut weggewaschen wird. Höher = stärkeres Wetter erforderlich.",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh": "Asche reinigen",
+    "Sandbox_RainCleansBlood_AlsoCleanAsh_tooltip": "Reinigt auch die Asche verbrannter Leichen.",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings": "Tierkot reinigen",
+    "Sandbox_RainCleansBlood_AlsoCleanDroppings_tooltip": "Reinigt auch Tierkot (Dung), der auf dem Boden liegt.",
+    "Sandbox_RainCleansBlood_AlsoCleanInside": "Innen reinigen",
+    "Sandbox_RainCleansBlood_AlsoCleanInside_tooltip": "Reinigt auch Blut in Gebäuden.",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles": "Fahrzeuge reinigen",
+    "Sandbox_RainCleansBlood_AlsoCleanVehicles_tooltip": "Reinigt auch allmählich Blut von Fahrzeugen.",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed": "Reinigungsgeschwindigkeit Fahrzeuge",
+    "Sandbox_RainCleansBlood_VehicleCleanSpeed_tooltip": "Wie viel Blut pro Minute von Fahrzeugen entfernt wird.",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes": "Kleidung reinigen",
+    "Sandbox_RainCleansBlood_AlsoCleanClothes_tooltip": "Reinigt auch allmählich Blut und Schmutz von der getragenen Kleidung der Spieler.",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed": "Reinigungsgeschwindigkeit Kleidung",
+    "Sandbox_RainCleansBlood_ClothesCleanSpeed_tooltip": "Wie viel Blut und Schmutz pro Minute von der Kleidung entfernt wird.",
+    "Sandbox_RainCleansBlood_AlwaysClean": "Immer reinigen",
+    "Sandbox_RainCleansBlood_AlwaysClean_tooltip": "Reinigt immer, unabhängig vom Wetter."
+}

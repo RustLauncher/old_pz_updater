@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Backpacks\M_Assault_Backpack_Mattress.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Backpacks\F_Assault_Backpack_Mattress.fbx</m_FemaleModel>
+    <m_GUID>f69c4c40-1157-4a16-80cd-a31ebe332af5</m_GUID>
+    <m_Static>false</m_Static>
+    <m_AllowRandomHue>false</m_AllowRandomHue>
+    <m_AllowRandomTint>false</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <textureChoices>Assault_Backpack_Pidoras</textureChoices>
+</clothingItem>

@@ -1,0 +1,7 @@
+name=Usable Safe
+poster=poster.png
+description=Have you come across safes in your world but couldn’t use them? This mod will fix that problem! Now you can use a safe as a container for storing items, and you can also find various valuables inside it. You may not be able to lift it due to its enormous weight, but it will reliably protect your belongings from fire and voracious undead.
+id=UsableSafe
+author=LemeS
+modversion=1.0
+zomboidversion=42.20

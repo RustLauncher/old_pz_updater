@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+<!--GuyWithBackpack1-->
+	<m_FemaleOutfits>
+			<m_Name>GuyWithBackpack1</m_Name>
+			<m_Guid>e869f7bd-6c2a-4b89-a550-1a573dd51e21</m_Guid>
+			<m_Pants>true</m_Pants>
+			<m_Top>true</m_Top>
+			<m_AllowPantsHue>true</m_AllowPantsHue>
+			<m_AllowTopTint>true</m_AllowTopTint>
+			
+			<!--Hunting_Backpack-->
+			<m_items>
+			<probability>0.20</probability>
+				<itemGUID>7217b59a-f0b0-4388-9100-2e570a71a294</itemGUID>
+			</m_items>
+				
+			<!--Assault_Backpack-->
+			<m_items>
+			<probability>0.15</probability>
+				<itemGUID>93b7aa9d-d826-4385-937d-1f721bbbddf1</itemGUID>
+			</m_items>
+			
+			<!--Assault_Backpack_Mattress-->
+			<m_items>
+			<probability>0.15</probability>
+				<itemGUID>6c0e05a8-ca83-418d-8db6-e753fc188424</itemGUID>
+			</m_items>			
+		</m_FemaleOutfits>
+	<m_MaleOutfits>
+			<m_Name>GuyWithBackpack1</m_Name>
+			<m_Guid>e869f7bd-6c2a-4b89-a550-1a573dd51e21</m_Guid>
+			<m_Pants>true</m_Pants>
+			<m_Top>true</m_Top>
+			<m_AllowPantsHue>true</m_AllowPantsHue>
+			<m_AllowTopTint>true</m_AllowTopTint>
+			
+			<!--Hunting_Backpack-->
+			<m_items>
+			<probability>0.20</probability>
+				<itemGUID>7217b59a-f0b0-4388-9100-2e570a71a294</itemGUID>
+			</m_items>
+				
+			<!--Assault_Backpack-->
+			<m_items>
+			<probability>0.15</probability>
+				<itemGUID>93b7aa9d-d826-4385-937d-1f721bbbddf1</itemGUID>
+			</m_items>
+			
+			<!--Assault_Backpack_Mattress-->
+			<m_items>
+			<probability>0.15</probability>
+				<itemGUID>6c0e05a8-ca83-418d-8db6-e753fc188424</itemGUID>
+			</m_items>			
+	</m_MaleOutfits>
+</outfitManager>

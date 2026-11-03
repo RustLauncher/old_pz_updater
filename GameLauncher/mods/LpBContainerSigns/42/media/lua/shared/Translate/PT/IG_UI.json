@@ -1,0 +1,20 @@
+{
+    "IGUI_LPBCS_PromptTitle": "O que quer escrever neste contentor? (máximo de %1 caracteres)",
+    "IGUI_LPBCS_InkLabel": "Escrito com",
+    "IGUI_LPBCS_InkOf": "%1 (%2)",
+
+    "IGUI_LPBCS_NeedPen": "Precisa de uma caneta ou lápis para escrever aqui.",
+    "IGUI_LPBCS_NeedBrush": "Precisa de uma trincha para pintar um nome aqui.",
+    "IGUI_LPBCS_NeedPaint": "Precisa de uma lata de tinta para pintar um nome aqui.",
+
+    "IGUI_LPBCS_Disabled": "Escrever em contentores está desativado neste servidor.",
+    "IGUI_LPBCS_NoContainer": "Esse contentor já não está lá.",
+    "IGUI_LPBCS_TooFar": "Está demasiado longe desse contentor.",
+    "IGUI_LPBCS_NoWay": "Não há forma de chegar a esse contentor.",
+    "IGUI_LPBCS_NotYourSafehouse": "Este contentor está dentro de um asilo ao qual não pertence.",
+    "IGUI_LPBCS_WriteFailed": "Não foi possível escrever o nome.",
+    "IGUI_LPBCS_MoveFailed": "Não foi possível mover a placa.",
+    "IGUI_LPBCS_BadRequest": "O pedido não fazia sentido e foi ignorado.",
+    "IGUI_LPBCS_TooQuick": "Aguarde um momento antes de tentar novamente.",
+    "IGUI_LPBCS_VersionSkew": "Este servidor está a executar uma versão mais antiga deste mod."
+}

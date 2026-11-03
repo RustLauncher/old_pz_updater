@@ -1,0 +1,9 @@
+name=[B42] Pants Collection (vanilla)
+id=PantsCollectionVanilla
+description=Twenty-eight skinny pants and leggings painted directly on the B42 body UV. Same as Pants Collection minus the striped leggings, which only sit straight on Tomb's Player Body. Enable ONE of the two.
+description=2D clothing items - no mesh, so nothing can clip.
+poster=poster.png
+modversion=0.2.0
+versionMin=42.0.0
+url=https://steamcommunity.com/sharedfiles/filedetails/?id=3799111159
+incompatible=PantsCollection

@@ -1,0 +1,227 @@
+@alife-records 1
+
+person vp_1297
+  card.batch B15
+  card.arch va_hispanic_farmworker
+  card.party vg_242
+  card.sex f
+  card.age 28
+  card.desc a woman with neat dark braids and a well-worn work shirt
+  card.voice VX27
+  card.seed 258479103
+  card.attract m,f
+  card.bond spouse
+  card.fear empty_houses
+  card.hobby journaling
+  card.v 1
+  name.first Leticia
+  name.last Aguilar
+  name.reveal intro
+  origin.town Radcliff
+  origin.from a rented room near the tobacco ground outside Radcliff
+  origin.work cotton mill hand in 1983-86 then tobacco worker near Radcliff from 1988
+  origin.workKind tobacco_hand
+  look.skin 3
+  look.hair braids
+  look.hairColor 0.12,0.08,0.06
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 2
+  traits.humor 0
+  traits.temper 0
+  traits.honest 5
+  traits.faith 3
+  traits.trustSpeed 5
+  traits.curious 0
+  traits.pride 4
+  traits.flirt 3
+  traits.social 2
+  traits.tidy 5
+  traits.nostalg 3
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 1
+  need0.fatigue 2
+  need0.dirty 5
+  need0.sick 3
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_hide_underground
+  beliefs.1.s 3
+  beliefs.2.id bl_keep_moving
+  beliefs.2.s 3
+  wants.1.id wn_to_see_a_doctor
+  wants.1.u 5
+  skills.farming 4
+  skills.tailoring 2
+  carry.1 Base.Notebook
+  carry.2 Base.Pen
+  carry.3 Base.KeyRing
+  dress.role farm_f
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 16
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 trust_low
+  arc.returns true
+  hooks.object f_simon
+  hooks.shelf writes_beside_reading
+  books.taste.1 biography
+  books.taste.2 poetry
+  facts.1.id f_simon
+  facts.1.kind loss
+  facts.1.tab past
+  facts.1.label Left without taking Simon's message to Jorge
+  facts.1.gate trust>=12
+  facts.2.id f_cough
+  facts.2.kind health
+  facts.2.tab now
+  facts.2.label Old unexplained cough predates the new fever
+  facts.2.gate trust>=27 & alone & partnerGone & flag:simon_told
+  facts.3.id f_cloth
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Took Lucia's cloth from reserved family linen
+  facts.3.gate trust>=42 & alone & partnerGone & flag:cough_told
+  facts.4.id f_berta
+  facts.4.kind job
+  facts.4.tab past
+  facts.4.label Her report caused Berta's dismissal
+  facts.4.gate trust>=57 & alone & partnerGone & flag:cloth_told
+  facts.5.id f_pages
+  facts.5.kind book
+  facts.5.tab past
+  facts.5.label Keeps Berta's good memories for her adult daughter
+  facts.5.gate trust>=72 & alone & partnerGone & flag:berta_told
+  mk.1 mill clock
+  mk.2 the blue margin
+  mk.3 dry cloth
+  rt.1 6-8|kitchen|Requests washing water and keeps clean and used cloth apart
+  rt.2 12-14|table|Writes the day's known facts in the notebook without inventing missing times
+  rt.3 19-21|livingroom|Rests near company instead of moving alone into an unoccupied room
+  bl.1 monogrammed handkerchief||Lucia Mendez's L.M. cloth, taken without Teresa's consent and later quietly mended by Raul.
+  bl.2 ruled journal|Base.Notebook|Blue margins separate dates from entries; Berta appears as a whole person, not only a regret.
+  bl.3 black pen|Base.Pen|Leaves a heavy blot if she pauses with it resting on the paper.
+  bl.4 room key|Base.KeyRing|Shared rented room near the farm, not proof that the room is still safe.
+  bl.5 mill time card||An old card from 1986 with a shift correction she wrote herself.
+  bl.6 plain spare cloth||Kept dry for ordinary washing; distinct from the monogrammed keepsake.
+  rl.1 Raul Aguilar|adult husband|Met as adults in 1990, married in 1992; traveling together as spouses.
+  rl.2 Teresa Mendez|mother|Came to the United States with Leticia in 1974; last correspondence predates current travel.
+  rl.3 Lucia Mendez|grandmother, died 1988|The handkerchief's original owner; matching initials enabled Leticia's private excuse.
+  rl.4 Berta Salas|adult former coworker|Helped Leticia at the mill; dismissed after Leticia reported her sleeping on shift.
+  rl.5 Jorge Lara|adult worker's brother|Intended recipient of the undelivered message about Simon; current whereabouts unknown.
+end
+
+person vp_1317
+  card.batch B16
+  card.arch va_conspiracy_talker
+  card.sex f
+  card.age 52
+  card.desc a woman with an ash-brown bob and wire glasses above a soft cardigan
+  card.voice V18
+  card.seed 1560684278
+  card.bond none
+  card.fear empty_houses
+  card.hobby reading
+  card.v 1
+  name.first Deanna
+  name.last Mercer
+  name.reveal intro
+  origin.town Paducah
+  origin.from a rented house in Paducah, where she moved in 1958
+  origin.work sold a small newsletter and gave weekend talks about secret plans and suspicious coincidences
+  origin.workKind conspiracy_talker
+  look.skin 1
+  look.hair bob
+  look.hairColor 0.51,0.42,0.32
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 2
+  traits.humor 3
+  traits.temper 4
+  traits.honest 3
+  traits.faith 0
+  traits.trustSpeed 0
+  traits.curious 4
+  traits.pride 3
+  traits.flirt 0
+  traits.social 2
+  traits.tidy 4
+  traits.nostalg 0
+  need0.hunger 2
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 1
+  need0.fatigue 2
+  need0.dirty 3
+  need0.sick 1
+  need0.pain 0
+  vice.kind alcohol
+  beliefs.1.id bl_rules_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_do_not_look_back
+  beliefs.2.s 3
+  wants.1.id wn_the_shakes_to_stop
+  wants.1.u 5
+  carry.1 Base.Notebook
+  carry.2 Base.SheetPaper2
+  dress.role casual_f
+  dress.flags.1 cardigan
+  dress.flags.2 glasses
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bed asks_not_to_wake_in_empty_house
+  hooks.radio asks_for_time_signal
+  hooks.shelf browses_detective_stories
+  books.taste.1 mystery
+  books.taste.2 romance
+  books.taste.3 history
+  facts.1.id f_attempts
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Two short attempts to stop drinking; told Ruth the second lasted
+  facts.1.gate trust>=20
+  facts.2.id f_dates
+  facts.2.kind secret
+  facts.2.tab world
+  facts.2.label Removed conflicting dates to invent one evacuation plan
+  facts.2.gate trust>=35 & flag:attempts_told
+  facts.3.id f_clinic
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Used the invented name Elaine Marsh at the clinic
+  facts.3.gate trust>=50 & alone & flag:dates_told
+  facts.4.id f_elsie
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Secret romance manuscript by her pen name Gail Stone
+  facts.4.gate trust>=65 & alone & flag:clinic_told
+  facts.5.id f_ruth
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Drunken spying accusation led Ruth to cut off contact
+  facts.5.gate trust>=80 & alone & flag:elsie_told & imin>=90
+  mk.1 half past what
+  mk.2 blue folder
+  mk.3 Mercer with a c
+  rt.1 7-9|kitchen|Asks the time before trying to arrange her papers into an order she recognizes
+  rt.2 12-14|livingroom|Reads if she can settle and keeps the blue folder closed when she cannot face an argument
+  rt.3 20-22|hall|Asks whether anyone else plans to remain nearby rather than sleep in an empty part of the house
+  bl.1 blue cardboard folder||Held old notices for her talks; the corners have been repaired twice
+  bl.2 romance notebook|Base.Notebook|Elsie and Mo's story copied back from the typed pages after rejection
+  bl.3 folded public notices|Base.SheetPaper2|Loose scraps kept with the material she once sold as evidence
+  bl.4 unreliable wristwatch||Arthur's gift from before the divorce; she winds it and asks someone else the time
+  bl.5 reading glasses||Bernice chose the frame after Deanna tried to buy a pair too small for her face
+  bl.6 red plastic bookmark||Ruth made it in school; has outlasted most of Deanna's other bookmarks
+  rl.1 Ruth Mercer|daughter, born 1962|Told Deanna not to return after the drunken accusation at her 1992 birthday
+  rl.2 Arthur Mercer|former husband|Married from 1961 to 1984; stopped arguing about the newsletter before the divorce
+  rl.3 Bernice Holt|old school friend|Trades mysteries and refuses to finance the drinking or the newsletter
+  rl.4 Martin Phelps|Ruth's fiance|Was accused of spying at Ruth's birthday without any evidence
+end

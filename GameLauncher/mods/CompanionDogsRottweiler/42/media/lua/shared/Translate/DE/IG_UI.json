@@ -1,0 +1,10 @@
+{
+  "IGUI_Breed_rottweiler": "Rottweiler",
+  "IGUI_AnimalType_rottmale": "Rottweiler (männlich)",
+  "IGUI_AnimalType_rottfemale": "Rottweiler (weiblich)",
+  "IGUI_AnimalType_rottpup": "Rottweiler (Welpe)",
+  "IGUI_PD_Breed_rottweiler": "Rottweiler",
+  "IGUI_PD_BreedDesc_rottweiler": "Ein kraftvoller Wachhund, für den Schutzdienst gezüchtet, ein echter Krieger auf Augenhöhe mit dem Deutschen Schäferhund: Er lernt Kampf doppelt so schnell, schlägt auf hohen Stufen hart zu, wirft Zombies um und kämpft weiter, wo die meisten Rassen in Panik geraten. An seiner Seite zu kämpfen stählt auch dich: Solange dein Rottweiler in der Nähe im Kampf steht, zehren deine Nahkampfschläge weniger an der Ausdauer (Frontlinie). Bewacht Lagerhallen, Fabriken und Schrottplätze, selten auch in Wohnhäusern zu finden.",
+  "IGUI_PD_Moodle_FrontLine": "Frontlinie",
+  "IGUI_PD_Moodle_FrontLine_desc": "Dein Rottweiler kämpft an deiner Seite. Solange er in deiner Nähe im Kampf steht, satt und loyal ist, zehren deine Nahkampfschläge weniger an der Ausdauer."
+}

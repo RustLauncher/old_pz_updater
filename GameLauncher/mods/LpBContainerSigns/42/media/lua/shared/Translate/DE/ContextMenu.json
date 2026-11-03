@@ -1,0 +1,18 @@
+{
+    "ContextMenu_LPBCS_Write": "Einen Namen darauf schreiben",
+    "ContextMenu_LPBCS_Rewrite": "Schild: „%1“",
+    "ContextMenu_LPBCS_Erase": "Namen abkratzen",
+
+    "ContextMenu_LPBCS_StackTop": "oben",
+    "ContextMenu_LPBCS_StackMiddle": "in der Mitte",
+    "ContextMenu_LPBCS_StackBottom": "unten",
+
+    "ContextMenu_LPBCS_StylePlank": "Auf einer festgenagelten Tafel",
+    "ContextMenu_LPBCS_StylePaper": "Auf einem angeklebten Zettel",
+    "ContextMenu_LPBCS_StylePainted": "Direkt aufgemalt",
+
+    "ContextMenu_LPBCS_Side": "Position",
+    "ContextMenu_LPBCS_SideAuto": "Auto",
+    "ContextMenu_LPBCS_SideLeft": "Links",
+    "ContextMenu_LPBCS_SideRight": "Rechts"
+}

@@ -1,0 +1,26 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ExpandedStorage_MilitaryCrateGreen
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Green Military Crate,
+            Icon = Build_ExpandedStorage_MilitaryCrateGreen,
+        }
+
+        entity ES_ExpandedStorage_MilitaryCrateGrey
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Grey Military Crate,
+            Icon = Build_ExpandedStorage_MilitaryCrateGrey,
+        }
+
+        entity ES_ExpandedStorage_LargeMetalShelves
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Large Metal Shelves,
+            Icon = Build_ExpandedStorage_LargeMetalShelves,
+        }
+    }
+}

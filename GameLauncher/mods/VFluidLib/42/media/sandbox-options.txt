@@ -1,0 +1,80 @@
+VERSION = 1,
+
+option VFluidLib.TransferRange
+{
+	type = integer, min = 2, max = 40, default = 6,
+	page = VFluidLib, translation = VFluidLib_TransferRange,
+}
+
+option VFluidLib.MountedHandContainers
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_MountedHandContainers,
+}
+
+option VFluidLib.DrinkHarmful
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_DrinkHarmful,
+}
+
+option VFluidLib.PumpsEnabled
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_PumpsEnabled,
+}
+
+option VFluidLib.HitchedRefuel
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_HitchedRefuel,
+}
+
+option VFluidLib.ServiceOverride
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_ServiceOverride,
+}
+
+option VFluidLib.TankCleaning
+{
+	type = enum, numValues = 3, default = 3,
+	page = VFluidLib, translation = VFluidLib_TankCleaning,
+	valueTranslation = VFluidLib_TankCleanings,
+}
+
+option VFluidLib.VanillaRules
+{
+	type = boolean, default = false,
+	page = VFluidLib, translation = VFluidLib_VanillaRules,
+}
+
+option VFluidLib.SpawnOrigin
+{
+	type = integer, min = 0, max = 100, default = 35,
+	page = VFluidLib, translation = VFluidLib_SpawnOrigin,
+}
+
+option VFluidLib.SpawnFlavor
+{
+	type = integer, min = 0, max = 100, default = 10,
+	page = VFluidLib, translation = VFluidLib_SpawnFlavor,
+}
+
+option VFluidLib.SpawnMixSmall
+{
+	type = integer, min = 0, max = 100, default = 30,
+	page = VFluidLib, translation = VFluidLib_SpawnMixSmall,
+}
+
+option VFluidLib.SpawnMixMedium
+{
+	type = integer, min = 0, max = 100, default = 23,
+	page = VFluidLib, translation = VFluidLib_SpawnMixMedium,
+}
+
+option VFluidLib.SpawnMixLarge
+{
+	type = integer, min = 0, max = 100, default = 2,
+	page = VFluidLib, translation = VFluidLib_SpawnMixLarge,
+}

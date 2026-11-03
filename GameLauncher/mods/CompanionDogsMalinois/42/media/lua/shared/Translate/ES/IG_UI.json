@@ -1,0 +1,10 @@
+{
+    "IGUI_Breed_malinois": "Pastor Belga Malinois",
+    "IGUI_AnimalType_malmale": "Pastor Belga Malinois (macho)",
+    "IGUI_AnimalType_malfemale": "Pastor Belga Malinois (hembra)",
+    "IGUI_AnimalType_malpup": "Pastor Belga Malinois (cachorro)",
+    "IGUI_PD_Breed_malinois": "Pastor Belga Malinois",
+    "IGUI_PD_BreedDesc_malinois": "Un perro de policía y de detección. Centrado en olfato, obediencia y combate. Un perro con una mecánica única: no solo olfatea al zombi, también te indica su ubicación exacta. Se encuentra en comisarías, edificios militares y, rara vez, en casas.",
+    "IGUI_PD_Moodle_K9Scent": "Olfato K9",
+    "IGUI_PD_Moodle_K9Scent_desc": "Tu Malinois es el mejor en olfato: puede olfatear la posición exacta del zombi más cercano."
+}

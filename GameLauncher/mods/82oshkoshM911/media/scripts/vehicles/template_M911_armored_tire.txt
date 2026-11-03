@@ -1,0 +1,29 @@
+module Base
+{
+	template vehicle TireV100A3
+	{
+        template! = runFlatsLargeFront,
+
+		part TireFrontLeft
+		{
+            table install
+			{
+            requireInstalled = SuspensionFrontLeft,
+            }
+		}
+
+        part TireFrontRight
+		{
+            table install
+			{
+            requireInstalled = SuspensionFrontRight,
+            }
+		}
+
+		part TireFront*
+		{
+            itemType = runFlat.LargeTire,
+
+		}
+	}
+}

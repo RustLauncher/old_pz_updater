@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ALifeIdleMelee2HCarry</m_Name>
+	<m_AnimName>Bob_IdleBat</m_AnimName>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_Looped>true</m_Looped>
+	<m_SpeedScale>1.0</m_SpeedScale>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_ConditionPriority>40</m_ConditionPriority>
+	<m_Conditions>
+		<m_Name>ALifeActor</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifeWeaponHeld</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifeAimWalk</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifeArms</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>melee</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>ALifeGrip</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2hand</m_Value>
+	</m_Conditions>
+</animNode>

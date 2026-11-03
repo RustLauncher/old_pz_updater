@@ -1,0 +1,17 @@
+{
+    "Sandbox_WaterRestoration": "Water Restoration",
+    "Sandbox_ElectricityLevel": "Required Electrical level",
+    "Sandbox_ElectricityLevel_tooltip": "Electrical skill required to repair and maintain the plant computers.",
+    "Sandbox_MechanicsLevel": "Required Mechanics level",
+    "Sandbox_MechanicsLevel_tooltip": "Mechanics skill required to repair and maintain the plant computers.",
+    "Sandbox_StrengthLevel": "Required Strength level",
+    "Sandbox_StrengthLevel_tooltip": "Strength required for the heavy plant repair work.",
+    "Sandbox_CentralScrap": "Scrap for central computer",
+    "Sandbox_CentralScrap_tooltip": "Electronic Scrap consumed by the initial central-computer repair.",
+    "Sandbox_PanelScrap": "Scrap per secondary computer",
+    "Sandbox_PanelScrap_tooltip": "Electronic Scrap consumed by each initial secondary-computer repair.",
+    "Sandbox_MaintenanceScrap": "Scrap per maintained computer",
+    "Sandbox_MaintenanceScrap_tooltip": "Electronic Scrap consumed by each of the four computers during a maintenance cycle.",
+    "Sandbox_MaintenanceDays": "Days between maintenance cycles",
+    "Sandbox_MaintenanceDays_tooltip": "Maximum service life per unit, capped at 21 in-game days. Service worn equipment and reconnect the system."
+}

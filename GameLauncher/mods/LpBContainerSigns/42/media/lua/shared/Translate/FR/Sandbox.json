@@ -1,0 +1,37 @@
+{
+    "Sandbox_LpBContainerSigns": "LpB Écriteaux de conteneurs",
+
+    "Sandbox_LpBContainerSignsDividerRules": "------------- ÉCRITURE -------------",
+    "Sandbox_LpBContainerSignsDividerStyles": "------------- STYLES D'ÉCRITEAU -------------",
+    "Sandbox_LpBContainerSignsDividerDebug": "------------- DÉBOGAGE -------------",
+
+    "Sandbox_LpBContainerSigns_WritingEnabled": "Autoriser l'écriture sur les conteneurs",
+    "Sandbox_LpBContainerSigns_WritingEnabled_tooltip": "Interrupteur général. Désactivé, plus personne ne peut écrire ni effacer un nom, mais les écriteaux déjà posés restent en place et restent lisibles.",
+
+    "Sandbox_LpBContainerSigns_CratesOnly": "Caisses uniquement",
+    "Sandbox_LpBContainerSigns_CratesOnly_tooltip": "Les écriteaux ne vont que sur les caisses, le rangement dont une base est faite. Désactivé, n'importe quel conteneur du monde peut en porter un : armoires, frigos, casiers, comptoirs. L'option vaut pour l'affichage autant que pour l'écriture : l'activer retire donc aussi les écriteaux de tout ce qui n'est pas une caisse.",
+
+    "Sandbox_LpBContainerSigns_RequireWritingTool": "Exiger un stylo ou un pinceau",
+    "Sandbox_LpBContainerSigns_RequireWritingTool_tooltip": "Écrire demande un objet marqué comme instrument d'écriture (stylo, crayon, stylos de couleur), et peindre demande un pinceau et un pot de peinture. Désactivé, n'importe qui écrit à mains nues.",
+
+    "Sandbox_LpBContainerSigns_ConsumeToolUse": "Consommer une utilisation de l'outil",
+    "Sandbox_LpBContainerSigns_ConsumeToolUse_tooltip": "Ne mord que sur les outils qui s'épuisent vraiment : un pot de peinture perd une utilisation, un stylo non, exactement comme le jeu de base traite un stylo servant à annoter une carte.",
+
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse": "Réservé aux membres de l'abri",
+    "Sandbox_LpBContainerSigns_RestrictToSafehouse_tooltip": "Dans un abri, seuls ses membres peuvent écrire sur un conteneur ou en effacer le nom. Les admins sont exemptés, pour pouvoir nettoyer un écriteau posé par malveillance. Hors des abris, cette option ne change rien.",
+
+    "Sandbox_LpBContainerSigns_MaxLabelLength": "Longueur maximale du nom",
+    "Sandbox_LpBContainerSigns_MaxLabelLength_tooltip": "Combien de caractères un écriteau peut porter. Plafonné à 28, la limite que le jeu de base applique déjà au renommage d'un conteneur.",
+
+    "Sandbox_LpBContainerSigns_AllowPlankSign": "Autoriser la planche clouée",
+    "Sandbox_LpBContainerSigns_AllowPlankSign_tooltip": "Une latte de bois clouée sur la façade du conteneur.",
+
+    "Sandbox_LpBContainerSigns_AllowPaperSign": "Autoriser le papier scotché",
+    "Sandbox_LpBContainerSigns_AllowPaperSign_tooltip": "Une feuille de papier collée sur la façade du conteneur.",
+
+    "Sandbox_LpBContainerSigns_AllowPaintedSign": "Autoriser la peinture directe",
+    "Sandbox_LpBContainerSigns_AllowPaintedSign_tooltip": "Le nom peint à même le conteneur, dans la couleur de la peinture utilisée. C'est le style qui demande un pinceau.",
+
+    "Sandbox_LpBContainerSigns_DebugLogging": "Journal de débogage",
+    "Sandbox_LpBContainerSigns_DebugLogging_tooltip": "Écrit ce que fait le mod dans console.txt côté client et dans server-console.txt côté serveur : une ligne par action et par demande reçue. Désactivé par défaut, et mieux vaut le laisser ainsi -- un serveur fréquenté en produit beaucoup. À activer pour remonter un bug. L'option est lue en direct : la cocher en cours de partie lance la journalisation aussitôt. En revanche les diagnostics de démarrage (quels fichiers sont chargés et quelle version ils parlent, atlas de sprites indisponible, appel de dessin refusé) ne sont dits qu'une fois par session et demandent que l'option soit active avant son lancement."
+}

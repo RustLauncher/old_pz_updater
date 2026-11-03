@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Labrador",
+    "IGUI_AnimalType_labmale": "Labrador (männlich)",
+    "IGUI_AnimalType_labfemale": "Labrador (weiblich)",
+    "IGUI_AnimalType_labpup": "Labrador (Welpe)",
+    "IGUI_PD_Breed_labrador": "Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Ein Jagdhund, der zum Apportieren gebaut ist: Er trainiert Jagd doppelt so schnell, Gehorsam dicht dahinter. Dafür ist er bewusst einer der schlechtesten Kämpfer der Familie: nur der Mops beißt schwächer, kein Niederwerfen, und eine Rauferei setzt ihm schwer zu. Seine Gabe ist sein Maul. Er bringt dir seine Beute, sobald er überhaupt jagen kann, statt auf hohe Jagdfähigkeit zu warten, lässt sie unterwegs nie fallen und taucht oft mit noch etwas anderem auf, das er gefunden hat (Weiches Maul). Häufig in Wohnhäusern, und streift um Jagdhütten, Zeltplätze, Bootshäuser und Rangerstationen. Auch das Zerlegen dessen, was er dir bringt, geht mit ihm an der Seite leichter von der Hand.",
+    "IGUI_PD_Moodle_SoftMouth": "Weiches Maul",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Dein Labrador bringt jede Beute schon ab der ersten Jagd zurück, oft mit einer Zugabe. Solange er in der Nähe, satt und loyal ist, lernst du zudem Schlachten und Kurzklingen schneller.",
+    "IGUI_PD_LabExtra": "Dein %1 hat dir noch etwas mitgebracht: %2."
+}

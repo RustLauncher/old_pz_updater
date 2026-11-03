@@ -1,0 +1,10 @@
+{
+    "Tooltip_LPBCS_StylePlank": "Uma ripa de madeira pregada na parte da frente. Legível do outro lado da divisão.",
+    "Tooltip_LPBCS_StylePaper": "Uma folha colada na parte da frente. Rápida e simples.",
+    "Tooltip_LPBCS_StylePainted": "Pintado diretamente na madeira, na cor da lata utilizada. Requer uma trincha e tinta.",
+
+    "Tooltip_LPBCS_Side": "Em que lado do contentor a placa fica colocada.",
+    "Tooltip_LPBCS_SideAuto": "Deixa a escolha para o mod: o lado direito, exceto se uma parede ou uma caixa o bloquear — nesse caso, a placa muda de lado automaticamente.",
+    "Tooltip_LPBCS_SideLeft": "Prega a placa no lado esquerdo e deixa-a lá, mesmo que o lado direito fique livre.",
+    "Tooltip_LPBCS_SideRight": "Prega a placa no lado direito e deixa-a lá, mesmo que algo seja colocado contra ela."
+}

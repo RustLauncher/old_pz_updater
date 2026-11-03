@@ -1,0 +1,1387 @@
+VERSION = 1,
+
+option TrueWeight.UseModPreset
+{
+    type = boolean,
+    default = true,
+    page = TrueWeight,
+    translation = TrueWeight_UseModPreset,
+}
+
+option TrueWeight.GeneralMultiplier
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_GeneralMultiplier,
+}
+
+option TrueWeight.CustomWeights
+{
+    type = string,
+    default = "",
+    page = TrueWeight,
+    translation = TrueWeight_CustomWeights,
+}
+
+option TrueWeight.Accessory
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Accessory,
+}
+
+option TrueWeight.Ammo
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Ammo,
+}
+
+option TrueWeight.Animal
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Animal,
+}
+
+option TrueWeight.AnimalPart
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_AnimalPart,
+}
+
+option TrueWeight.AnimalPartWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_AnimalPartWeapon,
+}
+
+option TrueWeight.Animals
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Animals,
+}
+
+option TrueWeight.Appearance
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Appearance,
+}
+
+option TrueWeight.Armor
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Armor,
+}
+
+option TrueWeight.Assembly
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Assembly,
+}
+
+option TrueWeight.Badger
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Badger,
+}
+
+option TrueWeight.Bag
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Bag,
+}
+
+option TrueWeight.Bandage
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Bandage,
+}
+
+option TrueWeight.Barricades
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Barricades,
+}
+
+option TrueWeight.Bear
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Bear,
+}
+
+option TrueWeight.Beaver
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Beaver,
+}
+
+option TrueWeight.Blacksmithing
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Blacksmithing,
+}
+
+option TrueWeight.Blade
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Blade,
+}
+
+option TrueWeight.BrokenWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_BrokenWeapon,
+}
+
+option TrueWeight.Bug
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Bug,
+}
+
+option TrueWeight.Bunny
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Bunny,
+}
+
+option TrueWeight.CDs
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_CDs,
+}
+
+option TrueWeight.Camping
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Camping,
+}
+
+option TrueWeight.Carpentry
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Carpentry,
+}
+
+option TrueWeight.Cartography
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Cartography,
+}
+
+option TrueWeight.Carving
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Carving,
+}
+
+option TrueWeight.Clothing
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Clothing,
+}
+
+option TrueWeight.Communications
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Communications,
+}
+
+option TrueWeight.Container
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Container,
+}
+
+option TrueWeight.Cooking
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Cooking,
+}
+
+option TrueWeight.CookingWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_CookingWeapon,
+}
+
+option TrueWeight.Cookware
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Cookware,
+}
+
+option TrueWeight.Corpse
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Corpse,
+}
+
+option TrueWeight.Debug
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Debug,
+}
+
+option TrueWeight.Dog
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Dog,
+}
+
+option TrueWeight.Duck
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Duck,
+}
+
+option TrueWeight.Ears
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Ears,
+}
+
+option TrueWeight.Electrical
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Electrical,
+}
+
+option TrueWeight.Electronics
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Electronics,
+}
+
+option TrueWeight.Entertainment
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Entertainment,
+}
+
+option TrueWeight.Explosives
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Explosives,
+}
+
+option TrueWeight.Eye
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Eye,
+}
+
+option TrueWeight.Farming
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Farming,
+}
+
+option TrueWeight.FireSource
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_FireSource,
+}
+
+option TrueWeight.Firearm
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Firearm,
+}
+
+option TrueWeight.FirstAid
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_FirstAid,
+}
+
+option TrueWeight.FirstAidWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_FirstAidWeapon,
+}
+
+option TrueWeight.Fishing
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Fishing,
+}
+
+option TrueWeight.FishingWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_FishingWeapon,
+}
+
+option TrueWeight.Food
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Food,
+}
+
+option TrueWeight.Fox
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Fox,
+}
+
+option TrueWeight.Frog
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Frog,
+}
+
+option TrueWeight.Furniture
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Furniture,
+}
+
+option TrueWeight.Gardening
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Gardening,
+}
+
+option TrueWeight.GardeningWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_GardeningWeapon,
+}
+
+option TrueWeight.Generic
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Generic,
+}
+
+option TrueWeight.Glassmaking
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Glassmaking,
+}
+
+option TrueWeight.Goblin
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Goblin,
+}
+
+option TrueWeight.Hedgehog
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Hedgehog,
+}
+
+option TrueWeight.Hidden
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Hidden,
+}
+
+option TrueWeight.Home_VHS
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Home_VHS,
+}
+
+option TrueWeight.Household
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Household,
+}
+
+option TrueWeight.HouseholdWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_HouseholdWeapon,
+}
+
+option TrueWeight.Instrument
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Instrument,
+}
+
+option TrueWeight.InstrumentWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_InstrumentWeapon,
+}
+
+option TrueWeight.Item
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Item,
+}
+
+option TrueWeight.Junk
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Junk,
+}
+
+option TrueWeight.JunkWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_JunkWeapon,
+}
+
+option TrueWeight.Knapping
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Knapping,
+}
+
+option TrueWeight.LightSource
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_LightSource,
+}
+
+option TrueWeight.Literature
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Literature,
+}
+
+option TrueWeight.MaleBody
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_MaleBody,
+}
+
+option TrueWeight.Masonry
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Masonry,
+}
+
+option TrueWeight.Material
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Material,
+}
+
+option TrueWeight.MaterialWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_MaterialWeapon,
+}
+
+option TrueWeight.Medical
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Medical,
+}
+
+option TrueWeight.Memento
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Memento,
+}
+
+option TrueWeight.Meta
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Meta,
+}
+
+option TrueWeight.Metalworking
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Metalworking,
+}
+
+option TrueWeight.Miscellaneous
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Miscellaneous,
+}
+
+option TrueWeight.Mole
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Mole,
+}
+
+option TrueWeight.Music
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Music,
+}
+
+option TrueWeight.Object
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Object,
+}
+
+option TrueWeight.Outdoors
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Outdoors,
+}
+
+option TrueWeight.Packing
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Packing,
+}
+
+option TrueWeight.Paint
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Paint,
+}
+
+option TrueWeight.Player
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Player,
+}
+
+option TrueWeight.Pottery
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Pottery,
+}
+
+option TrueWeight.ProtectiveGear
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_ProtectiveGear,
+}
+
+option TrueWeight.Raccoon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Raccoon,
+}
+
+option TrueWeight.RecipeResource
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_RecipeResource,
+}
+
+option TrueWeight.Repair
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Repair,
+}
+
+option TrueWeight.Retail_VHS
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Retail_VHS,
+}
+
+option TrueWeight.Security
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Security,
+}
+
+option TrueWeight.SkillBook
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_SkillBook,
+}
+
+option TrueWeight.Slash
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Slash,
+}
+
+option TrueWeight.Spear
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Spear,
+}
+
+option TrueWeight.Spider
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Spider,
+}
+
+option TrueWeight.Sports
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Sports,
+}
+
+option TrueWeight.SportsWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_SportsWeapon,
+}
+
+option TrueWeight.Squirrel
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Squirrel,
+}
+
+option TrueWeight.Stab
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Stab,
+}
+
+option TrueWeight.Swinging
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Swinging,
+}
+
+option TrueWeight.Tail
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Tail,
+}
+
+option TrueWeight.Tailoring
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Tailoring,
+}
+
+option TrueWeight.Teddy_Bear
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Teddy_Bear,
+}
+
+option TrueWeight.Tool
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Tool,
+}
+
+option TrueWeight.ToolWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_ToolWeapon,
+}
+
+option TrueWeight.Tools
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Tools,
+}
+
+option TrueWeight.Trapping
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Trapping,
+}
+
+option TrueWeight.UI
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_UI,
+}
+
+option TrueWeight.Vehicle
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Vehicle,
+}
+
+option TrueWeight.VehicleMaintenance
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_VehicleMaintenance,
+}
+
+option TrueWeight.VehicleMaintenanceWeapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_VehicleMaintenanceWeapon,
+}
+
+option TrueWeight.Wall_Coverings
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Wall_Coverings,
+}
+
+option TrueWeight.Water
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Water,
+}
+
+option TrueWeight.WaterContainer
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_WaterContainer,
+}
+
+option TrueWeight.Weapon
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Weapon,
+}
+
+option TrueWeight.WeaponCrafted
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_WeaponCrafted,
+}
+
+option TrueWeight.WeaponImprovised
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_WeaponImprovised,
+}
+
+option TrueWeight.WeaponPart
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_WeaponPart,
+}
+
+option TrueWeight.Weaponry
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Weaponry,
+}
+
+option TrueWeight.Welding
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Welding,
+}
+
+option TrueWeight.World
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_World,
+}
+
+option TrueWeight.Wound
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Wound,
+}
+
+option TrueWeight.ZedDmg
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_ZedDmg,
+}
+
+option TrueWeight.Zombie
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_Zombie,
+}
+
+option TrueWeight.bodywork
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_bodywork,
+}
+
+option TrueWeight.brakes
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_brakes,
+}
+
+option TrueWeight.door
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_door,
+}
+
+option TrueWeight.engine
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_engine,
+}
+
+option TrueWeight.gastank
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_gastank,
+}
+
+option TrueWeight.lights
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_lights,
+}
+
+option TrueWeight.nodisplay
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_nodisplay,
+}
+
+option TrueWeight.seat
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_seat,
+}
+
+option TrueWeight.suspension
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_suspension,
+}
+
+option TrueWeight.tire
+{
+    type = double,
+    min = 0.0,
+    default = 1.0,
+    max = 256.0,
+    page = TrueWeight,
+    translation = TrueWeight_tire,
+}

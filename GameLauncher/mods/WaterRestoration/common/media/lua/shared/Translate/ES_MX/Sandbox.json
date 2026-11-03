@@ -1,0 +1,17 @@
+{
+    "Sandbox_WaterRestoration": "Restauración del agua",
+    "Sandbox_ElectricityLevel": "Nivel requerido de Electricidad",
+    "Sandbox_ElectricityLevel_tooltip": "Electricidad necesaria para reparar y mantener las computadoras de la planta.",
+    "Sandbox_MechanicsLevel": "Nivel requerido de Mecánica",
+    "Sandbox_MechanicsLevel_tooltip": "Mecánica necesaria para reparar y mantener las computadoras de la planta.",
+    "Sandbox_StrengthLevel": "Nivel requerido de Fuerza",
+    "Sandbox_StrengthLevel_tooltip": "Fuerza necesaria para los trabajos pesados de reparación.",
+    "Sandbox_CentralScrap": "Chatarra para computadora central",
+    "Sandbox_CentralScrap_tooltip": "Chatarra electrónica consumida por la reparación inicial de la computadora central.",
+    "Sandbox_PanelScrap": "Chatarra por computadora secundaria",
+    "Sandbox_PanelScrap_tooltip": "Chatarra electrónica consumida por cada reparación inicial de las computadoras secundarias.",
+    "Sandbox_MaintenanceScrap": "Chatarra por computadora mantenida",
+    "Sandbox_MaintenanceScrap_tooltip": "Chatarra electrónica consumida por cada una de las cuatro computadoras durante el mantenimiento.",
+    "Sandbox_MaintenanceDays": "Días entre mantenimientos",
+    "Sandbox_MaintenanceDays_tooltip": "Vida útil máxima por equipo, hasta 21 días de juego. Mantén las piezas desgastadas y reconecta el sistema."
+}

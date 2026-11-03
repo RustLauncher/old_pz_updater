@@ -1,0 +1,342 @@
+@alife-records 1
+
+person vp_1227
+  card.batch B12
+  card.arch va_nurse_aide
+  card.party vg_217
+  card.sex f
+  card.age 36
+  card.desc a woman with dark hair pinned back above rumpled scrubs and a wool cardigan
+  card.voice V04
+  card.seed 1593681958
+  card.attract f
+  card.bond parent_child
+  card.fear sirens
+  card.hobby canning
+  card.v 1
+  name.first Kim
+  name.last Webb
+  name.reveal intro
+  origin.town Vine Grove
+  origin.from a small rented house near Vine Grove
+  origin.work nurse in a small hospital after working in its x-ray department
+  origin.workKind nurse
+  look.skin 2
+  look.hair bun
+  look.hairColor 0.29,0.22,0.16
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 5
+  traits.humor 5
+  traits.temper 5
+  traits.honest 3
+  traits.faith 3
+  traits.trustSpeed 5
+  traits.curious 5
+  traits.pride 1
+  traits.flirt 4
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 0
+  need0.hunger 4
+  need0.thirst 3
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 2
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 0
+  vice.kind tobacco
+  beliefs.1.id bl_church_is_safe
+  beliefs.1.s 3
+  beliefs.2.id bl_head_north
+  beliefs.2.s 3
+  wants.1.id wn_church
+  wants.1.u 5
+  skills.firstaid 4
+  skills.cooking 3
+  carry.1 Base.CigarettePack
+  carry.2 Base.Lighter
+  carry.3 Base.Pen
+  dress.role medical_f
+  dress.flags.1 scrubs
+  dress.flags.2 cardigan
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 morning
+  arc.returns true
+  hooks.bath asks_before_using_sink
+  hooks.bed blanket_folding
+  hooks.object f_blanket
+  books.taste.1 cooking
+  books.taste.2 mystery
+  facts.1.id f_car
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Took Marla's car without permission during her search
+  facts.1.gate trust>=10 & partnerGone & alone
+  facts.2.id f_french
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Speaks only two French courtesies despite her claim
+  facts.2.gate trust>=25
+  facts.3.id f_blanket
+  facts.3.kind home
+  facts.3.tab past
+  facts.3.label Never returned the church blanket after the 1963 flood
+  facts.3.gate trust>=40 & gave:blanket & flag:french_told
+  facts.4.id f_message
+  facts.4.kind family
+  facts.4.tab past
+  facts.4.label Heard Connie's message but pretended the call never came
+  facts.4.gate trust>=55 & partnerGone & alone & flag:car_told
+  facts.5.id f_marla
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Drove away while Marla called from the car park
+  facts.5.gate trust>=70 & partnerGone & alone & flag:message_told
+  mk.1 answer that bit
+  mk.2 jar label
+  mk.3 gray flood blanket
+  rt.1 6-8|porch|Asks whether smoking outside is acceptable and checks the blanket is dry
+  rt.2 12-14|kitchen|Labels an available jar only with permission then eats before offering help
+  rt.3 20-22|livingroom|Sits apart from Connie so her daughter may choose company instead of being watched
+  bl.1 gray flood blanket||Lent to Irene by a church in 1963; Kim promised to return it and still has not.
+  bl.2 hospital pen|Base.Pen|Marla made her keep one that wrote clearly; the name on it has nearly rubbed off.
+  bl.3 creased cigarette packet|Base.CigarettePack|A reason to step outside; she resents needing a reason for a moment without questions.
+  bl.4 brass lighter|Base.Lighter|Irene's old lighter, borrowed often enough that neither calls it a loan now.
+  bl.5 blank jar label||Tucked into a pocket after the last canning day; Kim dislikes being unable to name what she carries.
+  bl.6 faded cardigan||Kept at the hospital for cold rooms, now worn over scrubs that no longer mean she is on duty.
+  rl.1 Connie Webb|adult daughter|Eighteen, left home in June; Kim wants to answer for her even while learning to stop.
+  rl.2 Irene Hensley|mother|Stayed in Vine Grove when last known; saved the borrowed flood blanket and jars with useless lids.
+  rl.3 Marla Deane|coworker|Taught Kim clearer instructions; Kim took her car and drove away from her calling voice.
+end
+
+person vp_1228
+  card.batch B12
+  card.arch va_runaway_young_adult
+  card.party vg_217
+  card.sex f
+  card.age 18
+  card.desc a young woman with long dark-brown hair and a worn denim jacket
+  card.voice VX29
+  card.seed 835775972
+  card.attract m
+  card.bond parent_child
+  card.fear silence
+  card.hobby baseball
+  card.v 1
+  name.first Connie
+  name.last Webb
+  name.reveal intro
+  origin.town Vine Grove
+  origin.from Vine Grove then a briefly rented room in Louisville
+  origin.work left home at eighteen to seek work and a room in Louisville
+  origin.workKind runaway
+  look.skin 2
+  look.hair long
+  look.hairColor 0.26,0.19,0.14
+  look.beard none
+  look.pace walk
+  traits.open 0
+  traits.anx 5
+  traits.humor 1
+  traits.temper 2
+  traits.honest 1
+  traits.faith 2
+  traits.trustSpeed 5
+  traits.curious 0
+  traits.pride 5
+  traits.flirt 3
+  traits.social 4
+  traits.tidy 2
+  traits.nostalg 3
+  need0.hunger 3
+  need0.thirst 3
+  need0.cold 2
+  need0.fear 1
+  need0.fatigue 2
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 3
+  vice.kind none
+  beliefs.1.id bl_rules_hold
+  beliefs.1.s 3
+  beliefs.2.id bl_follow_the_guard
+  beliefs.2.s 3
+  wants.1.id wn_to_see_a_doctor
+  wants.1.u 5
+  skills.cooking 1
+  skills.carpentry 1
+  carry.1 Base.Pencil
+  carry.2 Base.Notebook
+  carry.3 Base.KeyRing
+  dress.role runaway_f
+  dress.flags.1 denim_jacket
+  dress.flags.2 tshirt
+  arc.stayMax 24
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.radio checks_report_source
+  hooks.bed asks_own_choice
+  hooks.object f_letter
+  books.taste.1 sports
+  books.taste.2 mystery
+  facts.1.id f_letter
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Invented a college acceptance letter to obtain a room
+  facts.1.gate trust>=12 & partnerGone & alone
+  facts.2.id f_record
+  facts.2.kind family
+  facts.2.tab past
+  facts.2.label Sold Rex's record and called it part of her collection
+  facts.2.gate trust>=28 & partnerGone & alone
+  facts.3.id f_graves
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Slept beside a graveyard after losing her rented room
+  facts.3.gate trust>=43 & partnerGone & alone & gave:blanket & flag:letter_told
+  facts.4.id f_steps
+  facts.4.kind health
+  facts.4.tab now
+  facts.4.label Concealed a fall on bus steps behind her walking complaint
+  facts.4.gate trust>=58 & partnerGone & alone & flag:graves_told
+  facts.5.id f_louisville
+  facts.5.kind road
+  facts.5.tab now
+  facts.5.label Wants Louisville independence despite agreeing to go north
+  facts.5.gate trust>=75 & partnerGone & alone & flag:steps_told
+  mk.1 scorecard pencil
+  mk.2 Grandma's two rings
+  mk.3 count that as a foul
+  rt.1 8-10|table|Writes yesterday's events behind old baseball scores, correcting guesses if challenged
+  rt.2 14-16|livingroom|Rests quietly while asking to make her own choices about help
+  rt.3 20-22|radio|Asks permission to listen for usable news rather than having Kim summarize it
+  bl.1 folded scorecard||A game attended with Ellen; a disputed error still has both their marks beside it.
+  bl.2 scorecard pencil|Base.Pencil|Kept through leaving home; Connie treats it as hers even when everything else is borrowed.
+  bl.3 baseball notebook|Base.Notebook|Old scores in front, outbreak days behind; she dislikes finding a guess recorded as certain.
+  bl.4 useless room key|Base.KeyRing|Mavis changed the lock after eviction; Connie has not admitted the key no longer offers a home.
+  bl.5 empty record sleeve||Protected Rex's sold record, now flattened inside the notebook as an explanation she avoids.
+  bl.6 folded acceptance letter||An invented college place, no working instructions; Connie keeps it because destroying it feels like surrendering the real hope.
+  rl.1 Kim Webb|mother|Found Connie after she left home; wants to help but frequently answers questions addressed to Connie.
+  rl.2 Irene Hensley|grandmother|Called with two party-line rings and saved paper for Connie's scorekeeping.
+  rl.3 Ellen Sykes|adult friend, nineteen|Shared ball games and challenged Connie's certainty about decisions off the field.
+  rl.4 Mavis Trent|former landlady|Accused Connie falsely of theft but correctly discovered her invented college letter.
+end
+
+person vp_1250
+  card.batch B13
+  card.arch va_lineman
+  card.sex m
+  card.age 25
+  card.desc a grinning young man with close dark hair and rolled shirt sleeves
+  card.voice V13
+  card.seed 2085419518
+  card.attract f
+  card.bond none
+  card.fear church_bells
+  card.hobby canning
+  card.v 1
+  name.first Kevin
+  name.last Farley
+  name.reveal intro
+  origin.town Brandenburg
+  origin.from a rented room near his cousins in Brandenburg
+  origin.work worked on a line crew after starting as an electrician's helper
+  origin.workKind lineman
+  look.skin 2
+  look.hair short
+  look.hairColor 0.23,0.16,0.1
+  look.beard none
+  look.pace walk
+  traits.open 4
+  traits.anx 2
+  traits.humor 5
+  traits.temper 2
+  traits.honest 4
+  traits.faith 0
+  traits.trustSpeed 1
+  traits.curious 2
+  traits.pride 3
+  traits.flirt 1
+  traits.social 3
+  traits.tidy 1
+  traits.nostalg 0
+  need0.hunger 1
+  need0.thirst 2
+  need0.cold 0
+  need0.fear 2
+  need0.fatigue 3
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_children_first
+  beliefs.1.s 3
+  beliefs.2.id bl_karma
+  beliefs.2.s 3
+  wants.1.id wn_forgiveness
+  wants.1.u 5
+  carry.1 Base.Whistle
+  carry.2 Base.SheetPaper2
+  dress.role tradesman_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 17
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath wants_to_scrub_cuffs
+  hooks.bed asks_not_to_be_woken_by_bells
+  hooks.radio asks_for_something_light
+  books.taste.1 humor
+  books.taste.2 cooking
+  facts.1.id f_canner
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Stole Mavis's canner for a motorcycle part
+  facts.1.gate trust>=10
+  facts.2.id f_ride
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Refused a ride and failed his first helper day
+  facts.2.gate trust>=25 & flag:canner_told
+  facts.3.id f_ears
+  facts.3.kind secret
+  facts.3.tab now
+  facts.3.label Conceals intermittent ringing since a 1987 bell
+  facts.3.gate trust>=40 & alone & flag:ride_told
+  facts.4.id f_receipt
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Forged Mavis's consent on the sale receipt
+  facts.4.gate trust>=55 & alone & flag:ears_told
+  facts.5.id f_father
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Shoved Leonard and allowed the false fall account
+  facts.5.gate trust>=70 & alone & flag:receipt_told
+  mk.1 jar mouths
+  mk.2 little train
+  mk.3 cousins' fence
+  rt.1 7-9|kitchen|Asks about washing or carrying and keeps the whistle quiet while anyone rests
+  rt.2 13-15|hall|Scrapes dried dirt from the cuffs before putting the receipt back in a pocket
+  rt.3 19-21|livingroom|Asks for a light radio programme and grows quiet when he cannot keep the jokes going
+  bl.1 wooden train whistle|Base.Whistle|Leonard's 1976 gift, used to entertain Dee's children
+  bl.2 sale receipt|Base.SheetPaper2|Kevin's copy bearing the name Mavis did not write
+  bl.3 work shirt||Mavis replaced one cuff after a wire snag tore it
+  bl.4 motorcycle washer||Carried as a reminder of a machine that cost more than its useful miles
+  bl.5 folded canning list||Mavis's quantities copied before the canner sale
+  bl.6 boot lace||Brent knotted in a short replacement when Kevin's broke at the fence
+  rl.1 Mavis Farley|mother|Taught canning; lost her canner to Kevin's theft and believes the false fall account
+  rl.2 Leonard Farley|father|Gave the whistle and was injured when he confronted Kevin
+  rl.3 Dee Farley|cousin next door|Collected Kevin after his failed first workday and has two children
+  rl.4 Brent Farley|cousin next door|Passed tools over the fence and mocked the unreliable motorcycle
+  rl.5 Otis Vale|first employer|Electrician who sent him home on the first day, then gave him another chance
+end

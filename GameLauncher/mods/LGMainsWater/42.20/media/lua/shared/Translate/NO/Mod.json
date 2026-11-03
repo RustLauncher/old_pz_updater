@@ -1,0 +1,4 @@
+{
+    "name": "LG Koble til vannforsyningen",
+    "description": "Legger til valget \"Koble ... til hovedledningen\" for vasker, badekar, dusjer, toaletter og vaskemaskiner du setter opp innendørs. Noe som er koblet til teller som bygningens eget: samme uendelige forsyning, samme avstengingsdag, samme vann som blir stående i rørene etterpå. Bygninger kartet oppgir uten rennende vann forblir tørre. Det er bare verdt å ha hvis du setter opp dine egne før vannet stenges. Enspiller, vertsbasert flerspiller og dedikert server."
+}

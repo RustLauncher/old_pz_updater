@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_GUID>d001c498-b9ca-4736-b4e2-2c5ecfb60086</m_GUID>
+	<m_MaleModel>media\models_X\Skinned\Shoes\M_BrownLaced.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Shoes\F_BrownLaced.fbx</m_FemaleModel>
+	<m_AltMaleModel></m_AltMaleModel>
+	<m_AltFemaleModel></m_AltFemaleModel>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>8</m_Masks>
+	<m_Masks>10</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>Clothes\RandomSneakers\BrownLaced</textureChoices>
+</clothingItem>

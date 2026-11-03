@@ -1,0 +1,901 @@
+module Base
+{
+	model 82oshkoshM911trunkDoor
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m911_trunkDoor,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model TrailerM127trunkLid
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m127_trunkLid,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model TrailerM128trunkLid
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m128_trunkLid,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model TrailerM129trunkLid
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m129_trunkLid,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model TrailerM967trunkLid1
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m967_trunkLid1,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+	model TrailerM967trunkLid2
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m967_trunkLid2,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+	model TrailerM967trunkLid3
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m967_trunkLid3,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model TrailerM747trunkLid
+	{
+		mesh = vehicles/Vehicles_82oshkoshM911_mk3_Body|m747_trunkLid,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+	template vehicle M911TrunkDoor
+	{
+		part TrunkDoor
+		{
+
+			model TrytoConflict25959453656
+			{
+				file = 82oshkoshM911trunkDoor,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = trunk_opening,
+				rate = 1.5,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk_opening,
+				
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			category = bodywork,
+			area = TruckBed,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 270.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 270.0 0.0,
+			}
+		}
+
+		part Trunk*
+		{
+			itemType = Base.M911TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+
+    template vehicle M127TrunkDoors
+	{
+		part TrunkDoor
+		{
+			model trunkLid661
+			{
+				file = TrailerM127trunkLid,
+			}
+			specificItem = false,
+			itemType = Base.TrunkDoor2;Base.M127TrunkDoor2,
+
+			door
+			{
+			}
+			anim Close
+			{
+				anim = trunk127_opening,
+				rate = 1.0,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk127_opening,
+				
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk127_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk127_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			category = bodywork,
+			area = TruckBed,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+
+    template vehicle M128TrunkDoors
+	{
+
+		part TrunkDoor
+		{
+			model trunkLid662
+			{
+				file = TrailerM128trunkLid,
+			}
+			specificItem = false,
+			itemType = Base.TrunkDoor2;Base.M128TrunkDoor2,
+
+		
+			door
+			{
+			}
+			anim Close
+			{
+				anim = trunk128_opening,
+				rate = 1.0,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk128_opening,
+				
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk128_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk128_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			category = bodywork,
+			area = TruckBed,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+
+    template vehicle M129TrunkDoors
+	{
+
+		part TrunkDoor
+		{
+			model trunkLid660
+			{
+				file = TrailerM129trunkLid,
+			}
+			specificItem = false,
+			itemType = Base.TrunkDoor2;Base.M129TrunkDoor2,
+
+		
+			door
+			{
+			}
+			anim Close
+			{
+				anim = trunk129_opening,
+				rate = 1.0,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk129_opening,
+				
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk129_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk129_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			category = bodywork,
+			area = TruckBed,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+
+    template vehicle M967TrunkDoors
+	{
+		part TrunkDoor
+		{
+			model trunkLid670
+			{
+				file = TrailerM967trunkLid1,
+			}
+
+			anim Close
+			{
+				anim = trunk967_r_opening,
+				rate = 1.5,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk967_r_opening,
+				
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk967_r_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk967_r_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			category = bodywork,
+			area = TruckBed,
+			
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 90.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 90.0 0.0,
+			}
+		}
+
+		part TrunkDoor2
+		{
+			model trunkLid672
+			{
+				file = TrailerM967trunkLid2,
+			}
+
+			anim Close
+			{
+				anim = trunk967_fl_opening,
+				rate = 1.5,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk967_fl_opening,
+				
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk967_fl_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk967_fl_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			category = bodywork,
+			area = TruckBed2,
+			
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 270.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 270.0 0.0,
+			}
+		}
+
+		part TrunkDoor3
+		{
+			model trunkLid673
+			{
+				file = TrailerM967trunkLid3,
+			}
+
+			anim Close
+			{
+				anim = trunk967_rl_opening,
+				rate = 1.5,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk967_rl_opening,
+				
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk967_rl_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk967_rl_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			category = bodywork,
+			area = TruckBed3,
+			
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 270.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 270.0 0.0,
+			}
+		}
+
+		part TrunkDoor*
+		{
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+
+			specificItem = false,
+			itemType = Base.TrunkDoor2;Base.M967TrunkDoor2,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+
+    template vehicle M747TrunkDoors
+	{
+
+		part TrunkDoor
+		{
+			model trunkLid1258
+			{
+				file = TrailerM747trunkLid,
+			}
+			specificItem = false,
+			itemType = Base.TrunkDoor2;Base.IsoContainerTrunkDoor2,
+
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 180.0 0.0,
+			}
+
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 180.0 0.0,
+			}
+
+			door
+			{
+			}
+			anim Close
+			{
+				anim = trunk747_opening,
+				rate = 1.0,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				anim = trunk747_opening,
+				
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = trunk747_opening,
+				
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = trunk747_opening,
+				animate = FALSE,
+                reverse = TRUE,
+			}
+
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			category = bodywork,
+			area = TruckBed,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+}
+

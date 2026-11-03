@@ -1,0 +1,335 @@
+@alife-records 1
+
+person vp_1140
+  card.batch B07
+  card.arch va_reformed_ex_con
+  card.sex m
+  card.age 40
+  card.desc a quiet man with cropped dark hair and neatly fastened shirt cuffs
+  card.voice V19
+  card.seed 1615297652
+  card.bond none
+  card.fear tight_spaces
+  card.hobby writing_letters
+  card.v 1
+  name.first Zachary
+  name.last Ramsey
+  name.reveal intro
+  origin.town Rosewood
+  origin.from a rented back room in Rosewood
+  origin.work hauled building supplies after a prison sentence and cooked for himself after his wife died
+  origin.workKind ex_con_laborer
+  look.skin 2
+  look.hair short
+  look.hairColor 0.25,0.22,0.18
+  look.beard none
+  look.pace walk
+  traits.open 0
+  traits.anx 3
+  traits.humor 5
+  traits.temper 3
+  traits.honest 5
+  traits.faith 0
+  traits.trustSpeed 2
+  traits.curious 0
+  traits.pride 3
+  traits.flirt 0
+  traits.social 2
+  traits.tidy 4
+  traits.nostalg 1
+  need0.hunger 1
+  need0.thirst 1
+  need0.cold 2
+  need0.fear 2
+  need0.fatigue 2
+  need0.dirty 4
+  need0.sick 0
+  need0.pain 0
+  vice.kind none
+  beliefs.1.id bl_doctors_lie
+  beliefs.1.s 3
+  beliefs.2.id bl_no_mercy_for_the_bitten
+  beliefs.2.s 3
+  wants.1.id wn_music
+  wants.1.u 5
+  skills.cooking 2
+  carry.1 Base.Pen
+  carry.2 Base.SheetPaper2
+  dress.role worker_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  arc.stayMax 16
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.radio asks_for_a_tune
+  hooks.bath keeps_paper_dry
+  hooks.bed asks_about_room_size
+  books.taste.1 cooking
+  books.taste.2 humor
+  facts.1.id f_spells
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Conceals unexplained fainting spells from hiring crews
+  facts.1.gate trust>=10
+  facts.2.id f_letters
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Wrote other prisoners' tender letters
+  facts.2.gate trust>=25 & flag:spells_told
+  facts.3.id f_bills
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Paid impossible medical bills to avoid naming Beth's death
+  facts.3.gate trust>=40 & alone & flag:letters_told
+  facts.4.id f_corsage
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Took Beth's corsage back against his burial promise
+  facts.4.gate trust>=55 & alone & flag:bills_told
+  facts.5.id f_calvin
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Never cleared Calvin for the police call Zachary requested
+  facts.5.gate trust>=70 & alone & flag:corsage_told
+  mk.1 bag stays with me
+  mk.2 half a page
+  mk.3 cheap onions
+  rt.1 7-9|kitchen|Asks whether there is any chopping or carrying work before touching a utensil
+  rt.2 13-15|livingroom|Writes a short letter with the paper bag under his own chair
+  rt.3 20-22|hall|Asks about music and avoids choosing a small enclosed room for rest
+  bl.1 blue pen|Base.Pen|Writes thick enough that Ellis could read the letters without hunting for his glasses
+  bl.2 letter paper|Base.SheetPaper2|Folded in halves before writing because a whole blank sheet makes him delay
+  bl.3 white corsage||Beth's 1971 prom flowers, browned and taken back from her funeral box
+  bl.4 recipe sheet||Beth's stew on one side and a medical account number on the other
+  bl.5 paper bag||Reinforced with a scrap of cloth where the folded top began to tear
+  bl.6 work shirt||Beth changed one button for a larger one he could find wearing gloves
+  rl.1 Beth Ramsey|wife, died 1990|Cooked by eye and married him after his release without calling herself his rescue
+  rl.2 Calvin Ramsey|brother, died 1991|Made the police call Zachary requested and bore the family's accusation
+  rl.3 Arlene Ramsey|mother|Still believed Calvin had betrayed Zachary when she arranged the funeral
+  rl.4 Ellis Bowe|former prison cook|Relied on Zachary to write to his wife and later kept in touch after release
+end
+
+person vp_1157
+  card.batch B08
+  card.arch va_travelling_salesman
+  card.sex f
+  card.age 48
+  card.desc a woman with long copper-brown hair and a dime necklace above her windbreaker
+  card.voice VX25
+  card.seed 1279210974
+  card.attract m
+  card.bond none
+  card.fear losing_the_last_one
+  card.hobby walking_the_ridge
+  card.v 1
+  name.first Celeste
+  name.last Stamper
+  name.reveal intro
+  origin.town Maysville
+  origin.from a duplex in Maysville
+  origin.work filled candy and cigarette machines on a Maysville vending route
+  origin.workKind vending_route
+  look.skin 1
+  look.hair long
+  look.hairColor 0.38,0.22,0.12
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 4
+  traits.humor 2
+  traits.temper 3
+  traits.honest 1
+  traits.faith 4
+  traits.trustSpeed 2
+  traits.curious 4
+  traits.pride 3
+  traits.flirt 4
+  traits.social 4
+  traits.tidy 1
+  traits.nostalg 0
+  need0.hunger 4
+  need0.thirst 2
+  need0.cold 1
+  need0.fear 3
+  need0.fatigue 2
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_radio_will_tell
+  beliefs.1.s 3
+  beliefs.2.id bl_lies_keep_people_alive
+  beliefs.2.s 3
+  wants.1.id wn_rest
+  wants.1.u 5
+  carry.1 Base.Pencil
+  carry.2 Base.SheetPaper2
+  dress.role business_f
+  dress.flags.1 windbreaker
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.radio waits_for_a_local_voice
+  hooks.bed asks_for_a_short_rest
+  hooks.bath asks_where_to_leave_papers
+  books.taste.1 mystery
+  books.taste.2 humor
+  facts.1.id f_van
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Forged Earl's permission to use the vending van
+  facts.1.gate trust>=10
+  facts.2.id f_dime
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label Took Nettie's dime necklace rather than receiving it
+  facts.2.gate trust>=25 & flag:van_told
+  facts.3.id f_bite
+  facts.3.kind secret
+  facts.3.tab now
+  facts.3.label Invented a survived infected bite and showed an old lamp burn
+  facts.3.gate trust>=40 & alone & flag:dime_told
+  facts.4.id f_school
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Quit the 1980 arithmetic course after two failed tests
+  facts.4.gate trust>=55 & alone & flag:bite_told
+  facts.5.id f_jude
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Covered Jude's driving in their father's fatal 1966 wreck
+  facts.5.gate trust>=70 & alone & flag:school_told
+  mk.1 prime territory
+  mk.2 just the sample
+  mk.3 last of the nine
+  rt.1 6-8|hall|Counts the names of her siblings quietly before asking about the next road
+  rt.2 12-14|livingroom|Asks for a short rest and keeps the authorization sheet folded inside her windbreaker
+  rt.3 19-21|kitchen|Offers to sort loose supplies if told which ones belong together
+  bl.1 short pencil|Base.Pencil|Earl disliked pencil records because Celeste erased the totals too hard
+  bl.2 folded authorization|Base.SheetPaper2|A letter bearing Earl's name in Celeste's hand
+  bl.3 dime necklace||Taken from Nettie's drawer in 1974 and worn without permission
+  bl.4 motel soap wrapper||Holds the van's old registration number because the last paper scrap had torn
+  bl.5 windbreaker||One pocket hangs low after years of carrying rolls of vending coins
+  bl.6 red route card||Lists stops by what food the keeper offered rather than the street number
+  rl.1 Nettie Stamper|youngest sister, born 1957|Worked in a Maysville laundry; never gave Celeste the dime necklace
+  rl.2 Jude Stamper|brother, born 1949|Drove in the fatal wreck and let Celeste's account stand
+  rl.3 Opal Stamper|mother, died 1983|Believed her husband had been driving when he died
+  rl.4 Earl Denton|vending-route employer|Refused use of the van; gave stock accounts to his nephew
+  rl.5 Leon Voss|former husband|Married 1969 to 1978 and complained about motel towels coming home
+end
+
+person vp_1178
+  card.batch B09
+  card.arch va_short_order_cook
+  card.sex f
+  card.age 22
+  card.desc a young woman with a brown ponytail and a cardigan beneath her apron
+  card.voice V12
+  card.seed 1589203256
+  card.attract m
+  card.bond none
+  card.fear dogs
+  card.hobby knitting
+  card.v 1
+  name.first Tonya
+  name.last Tackett
+  name.reveal intro
+  origin.town Cave City
+  origin.from a rented room in Cave City
+  origin.work washed dishes at Alma Pruitt's diner and wanted to learn the griddle
+  origin.workKind dishwasher
+  look.skin 1
+  look.hair ponytail
+  look.hairColor 0.32,0.2,0.13
+  look.beard none
+  look.pace walk
+  traits.open 1
+  traits.anx 2
+  traits.humor 2
+  traits.temper 2
+  traits.honest 1
+  traits.faith 5
+  traits.trustSpeed 1
+  traits.curious 1
+  traits.pride 2
+  traits.flirt 1
+  traits.social 2
+  traits.tidy 2
+  traits.nostalg 4
+  need0.hunger 1
+  need0.thirst 2
+  need0.cold 3
+  need0.fear 2
+  need0.fatigue 4
+  need0.dirty 3
+  need0.sick 0
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_church_is_safe
+  beliefs.1.s 3
+  beliefs.2.id bl_work_fixes_things
+  beliefs.2.s 3
+  wants.1.id wn_pen_paper
+  wants.1.u 5
+  carry.1 Base.KeyRing
+  dress.role service_f
+  dress.flags.1 apron
+  dress.flags.2 cardigan
+  arc.stayMax 20
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.bath wants_soap_off_her_sleeves
+  hooks.radio listens_for_lukes_voice
+  hooks.bed wants_to_put_knitting_aside
+  books.taste.1 religion
+  books.taste.2 humor
+  facts.1.id f_advance
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Owes Alma the entire 126-dollar room advance
+  facts.1.gate trust>=10
+  facts.2.id f_singing
+  facts.2.kind secret
+  facts.2.tab talk
+  facts.2.label Funeral alto learned by ear and concealed from diner crew
+  facts.2.gate trust>=25 & flag:advance_told
+  facts.3.id f_ribbon
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Claimed Lenora's blue sweater as her own 4-H work
+  facts.3.gate trust>=40 & alone & flag:singing_told
+  facts.4.id f_watch
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Kept Lenora's watch after its return was requested
+  facts.4.gate trust>=55 & alone & flag:ribbon_told
+  facts.5.id f_irene
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Reported Irene to gain her Saturday hours
+  facts.5.gate trust>=70 & alone & flag:watch_told
+  mk.1 rinse it twice
+  mk.2 blue wool
+  mk.3 after the singing
+  rt.1 7-9|kitchen|Asks whether dishes need washing and rubs dry hands on her apron while waiting
+  rt.2 14-16|livingroom|Works on a short row of knitting and puts it away when tired
+  rt.3 20-22|hall|Asks about the radio and tries to remember the words of the voice she heard
+  bl.1 room key ring|Base.KeyRing|For the new room whose deposit Alma paid
+  bl.2 wool bag||Lenora sewed the handles twice after Tonya overloaded it
+  bl.3 blue wool||Left from cuffs Tonya is making herself rather than asking Lenora to finish
+  bl.4 knitting needles||One has a dull end from being stepped on beneath a church chair
+  bl.5 Lenora's watch||Borrowed for a photograph in 1990 and deliberately never returned
+  bl.6 brown cardigan||Verla patched the elbow with cloth that does not quite match
+  rl.1 Verla Tackett|mother|Taught the low hymn parts by humming them while sewing
+  rl.2 Winnie Tackett|sister, born 1973|Played piano at the funerals where Tonya sang
+  rl.3 Luke Tackett|brother, born 1976|Might be the voice heard on the third day's broadcast; identity and whereabouts unconfirmed
+  rl.4 Lenora Hale|aunt|Made the winning sweater and asked for the borrowed watch back
+  rl.5 Alma Pruitt|diner employer|Lent the room deposit and gave Tonya Irene's hours after the report
+  rl.6 Irene Kemp|former diner coworker|Lost her Saturday shift after Tonya reported her calls
+end

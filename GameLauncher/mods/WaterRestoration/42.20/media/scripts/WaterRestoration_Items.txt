@@ -1,0 +1,14 @@
+module Base
+{
+    item WaterPlantManual
+    {
+        ItemType = base:normal,
+        DisplayName = Manual de Operaciones de la Planta de Agua,
+        Icon = Book,
+        Weight = 0.5,
+        DisplayCategory = Literature,
+        StaticModel = Book,
+        WorldStaticModel = BookClosedGround,
+        Tooltip = Tooltip_WR_Manual,
+    }
+}

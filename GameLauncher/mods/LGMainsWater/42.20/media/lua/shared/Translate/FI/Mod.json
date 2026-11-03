@@ -1,0 +1,4 @@
+{
+    "name": "LG Liitä vesijohtoverkkoon",
+    "description": "Lisää valinnan \"Liitä ... vesijohdon runkolinjaan\" pesualtaille, kylpyammeille, suihkuille, vessanpöntöille ja pesukoneille jotka asennat sisätiloihin. Liitetty kaluste lasketaan rakennuksen omaksi: sama loputon vesi, sama katkaisupäivä, sama putkiin jäävä vesi jälkeenpäin. Rakennukset, joissa kartan mukaan ei ole juoksevaa vettä, pysyvät kuivina. Kannattaa vain jos asennat omasi ennen kuin vedet katkaistaan. Yksinpeli, isännöity moninpeli ja oma palvelin."
+}

@@ -1,0 +1,346 @@
+@alife-records 1
+
+person vp_1321
+  card.batch B17
+  card.arch va_carpenter
+  card.party vg_261
+  card.sex m
+  card.age 39
+  card.desc a lean carpenter with cropped brown hair and a pencil tucked behind his ear
+  card.voice V11
+  card.seed 1964366305
+  card.attract f
+  card.bond coworkers
+  card.fear waking_up_late
+  card.hobby dominoes
+  card.v 1
+  name.first Matthew
+  name.last Gibson
+  name.reveal intro
+  origin.town Riverside
+  origin.from Riverside after several years in suburban Louisville
+  origin.work hung doors and built kitchen fittings on renovation crews
+  origin.workKind carpenter
+  look.skin 2
+  look.hair short
+  look.hairColor 0.28,0.2,0.16
+  look.beard none
+  look.pace walk
+  traits.open 2
+  traits.anx 4
+  traits.humor 3
+  traits.temper 0
+  traits.honest 3
+  traits.faith 2
+  traits.trustSpeed 2
+  traits.curious 3
+  traits.pride 3
+  traits.flirt 2
+  traits.social 4
+  traits.tidy 3
+  traits.nostalg 3
+  need0.hunger 4
+  need0.thirst 2
+  need0.cold 2
+  need0.fear 1
+  need0.fatigue 4
+  need0.dirty 4
+  need0.sick 3
+  need0.pain 1
+  vice.kind none
+  beliefs.1.id bl_trust_nobody
+  beliefs.1.s 3
+  beliefs.2.id bl_no_mercy_for_the_bitten
+  beliefs.2.s 3
+  wants.1.id wn_to_cross_the_river
+  wants.1.u 5
+  skills.carpentry 4
+  carry.1 Base.Hammer
+  carry.2 Base.Pencil
+  carry.3 Base.Notebook
+  dress.role tradesman_m
+  dress.flags.1 work_shirt
+  dress.flags.2 work_boots
+  dress.flags.3 cap
+  arc.stayMax 26
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 partner_recovered
+  arc.returns true
+  hooks.radio checks_announced_times
+  hooks.bed fears_late_waking
+  hooks.window watches_river_direction
+  books.taste.1 history
+  books.taste.2 humor
+  facts.1.id f_prayer
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Stopped completing prayers after the farm sale
+  facts.1.gate trust>=10 & alone & partnerGone
+  facts.2.id f_step
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Made Rae a pantry step without claiming credit
+  facts.2.gate trust>=25 & alone & partnerGone & flag:prayer_told
+  facts.3.id f_draft
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Never served despite letting crew members assume it
+  facts.3.gate trust>=40 & alone & partnerGone & flag:step_told
+  facts.4.id f_hotspell
+  facts.4.kind secret
+  facts.4.tab now
+  facts.4.label Has not told Harlan about nausea and a hot spell
+  facts.4.gate trust>=55 & alone & partnerGone & flag:draft_told
+  facts.5.id f_departure
+  facts.5.kind secret
+  facts.5.tab now
+  facts.5.label Has considered departing without Harlan
+  facts.5.gate trust>=70 & alone & partnerGone & flag:hotspell_told
+  mk.1 square end first
+  mk.2 before the glue
+  mk.3 five past means five past
+  rt.1 5-7|hall|Checks the time and asks when the household intends to wake
+  rt.2 11-13|livingroom|Looks over joints and fittings but asks before moving anything
+  rt.3 19-21|table|Writes route possibilities in his notebook and rejects uncertain departure times
+  bl.1 carpenter's pencil|Base.Pencil|Flattened so it will not roll away while he is deciding what to write
+  bl.2 claw hammer|Base.Hammer|Ed's handle replaced twice; Matthew still calls it the original
+  bl.3 materials notebook|Base.Notebook|Door dimensions at the front and erased departure estimates farther back
+  bl.4 tape recorder||Used for job measurements and unsent messages; no tape content is played here
+  bl.5 domino tile||Double four from a set Harlan spilled into wet paint
+  bl.6 folded cap||Rae shortened the lining before the divorce; he remembers whenever rain gets through
+  rl.1 Harlan Greenwell|coworker|Painted Matthew's fitted doors; traveling together but neither has promised the far bank
+  rl.2 Rae Dugan|former wife|Divorced in 1980; accepted an anonymous pantry step without knowing who made it
+  rl.3 Ed Gibson|father|Lost the farm in 1978 and received fewer messages than Matthew recorded
+  rl.4 Gordon Rusk|older former crew mate|Mistook Matthew's refusal to discuss the draft for a military past
+end
+
+person vp_1322
+  card.batch B17
+  card.arch va_house_painter
+  card.party vg_261
+  card.sex m
+  card.age 50
+  card.desc a wiry man with ash-gray hair and a tidy beard above worn denim
+  card.voice V11
+  card.seed 1753402944
+  card.attract f
+  card.bond coworkers
+  card.fear deep_water
+  card.hobby baseball
+  card.v 1
+  name.first Harlan
+  name.last Greenwell
+  name.reveal trust>=10 & alone & partnerGone
+  origin.town Riverside
+  origin.from Riverside, where his family rented above a former grocery
+  origin.work painted houses and porch trim on small renovation crews
+  origin.workKind house_painter
+  look.skin 2
+  look.hair short
+  look.hairColor 0.56,0.51,0.43
+  look.beard full
+  look.pace walk
+  traits.open 0
+  traits.anx 5
+  traits.humor 4
+  traits.temper 2
+  traits.honest 4
+  traits.faith 1
+  traits.trustSpeed 5
+  traits.curious 0
+  traits.pride 2
+  traits.flirt 1
+  traits.social 2
+  traits.tidy 1
+  traits.nostalg 5
+  need0.hunger 4
+  need0.thirst 1
+  need0.cold 3
+  need0.fear 3
+  need0.fatigue 3
+  need0.dirty 5
+  need0.sick 0
+  need0.pain 3
+  vice.kind none
+  beliefs.1.id bl_it_is_the_water
+  beliefs.1.s 3
+  beliefs.2.id bl_pay_what_you_owe
+  beliefs.2.s 3
+  wants.1.id wn_pain_pills
+  wants.1.u 5
+  skills.painting 4
+  skills.farming 2
+  carry.1 Base.Pencil
+  carry.2 Base.SheetPaper2
+  carry.3 Base.KeyRing
+  dress.role tradesman_m
+  dress.flags.1 work_shirt
+  dress.flags.2 denim_jacket
+  dress.flags.3 work_boots
+  arc.stayMax 26
+  arc.leave.1 need_met
+  arc.leave.2 trust_low
+  arc.leave.3 partner_recovered
+  arc.returns true
+  hooks.radio baseball_for_company
+  hooks.bed asks_steady_wake
+  hooks.window checks_dry_route
+  books.taste.1 sports
+  books.taste.2 farming
+  facts.1.id f_alias
+  facts.1.kind secret
+  facts.1.tab past
+  facts.1.label Used Howard Grant with the 1968 relief committee
+  facts.1.gate trust>=10 & alone & partnerGone
+  facts.2.id f_ladder
+  facts.2.kind secret
+  facts.2.tab now
+  facts.2.label Pain began with a 1991 ladder fall
+  facts.2.gate trust>=25 & alone & partnerGone & flag:alias_told
+  facts.3.id f_relief
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Owes thirty-two dollars taken from worker relief
+  facts.3.gate trust>=40 & alone & partnerGone & flag:ladder_told
+  facts.4.id f_local
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Riverside local hiding behind a traveler story
+  facts.4.gate trust>=55 & alone & partnerGone & flag:relief_told
+  facts.5.id f_lessons
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Taught Sunday school for belonging despite doubt
+  facts.5.gate trust>=70 & alone & partnerGone & flag:local_told
+  mk.1 second coat later
+  mk.2 one dry patch
+  mk.3 keep the label
+  rt.1 6-8|hall|Asks for a departure time and whether it can change if pain worsens
+  rt.2 12-14|livingroom|Rests when offered a seat and checks the old bracelet without discussing it
+  rt.3 18-20|table|Copies baseball scores from memory on a scrap if the household allows the light
+  bl.1 old identification bracelet||Kept after the 1991 clinic visit; printed details are turned inward
+  bl.2 short pencil|Base.Pencil|Scored baseball games on packing paper with the same chewed pencil case
+  bl.3 score paper|Base.SheetPaper2|A game interrupted by a painting job and never finished in his records
+  bl.4 house keys|Base.KeyRing|Riverside keys whose presence spoils his claim to be a stranger passing through
+  bl.5 paper garden ribbon||Tomatoes won a local prize in 1990; the ribbon's color has nearly vanished
+  bl.6 stiff work jacket||Porch paint hardened one pocket; he uses the other for anything he wants to recover
+  rl.1 Matthew Gibson|coworker|Carpenter whose exact times annoy him; shared departure does not settle the river question
+  rl.2 Ada Greenwell|mother, dead 1988|Knew everyone in Riverside and never believed the traveler manner
+  rl.3 Norman Greenwell|adult brother|Offered to help repay the worker relief money without public embarrassment
+  rl.4 Vera Lutes|Sunday school organizer|Asked him to help and made sure his place was saved each week
+end
+
+person vp_1332
+  card.batch B17
+  card.arch va_carpenter
+  card.sex m
+  card.age 37
+  card.desc a broad-shouldered carpenter with sandy hair and a faded denim jacket
+  card.voice V11
+  card.seed 612481411
+  card.attract f
+  card.bond none
+  card.fear church_bells
+  card.hobby fishing
+  card.v 1
+  name.first Michael
+  name.last Wilder
+  name.reveal intro
+  origin.town West Point
+  origin.from a rented half house in West Point near the river
+  origin.work fitted doors and built kitchen cupboards for a small repair firm
+  origin.workKind carpenter
+  look.skin 2
+  look.hair short
+  look.hairColor 0.47,0.35,0.23
+  look.beard none
+  look.pace walk
+  traits.open 3
+  traits.anx 0
+  traits.humor 0
+  traits.temper 2
+  traits.honest 3
+  traits.faith 5
+  traits.trustSpeed 3
+  traits.curious 0
+  traits.pride 4
+  traits.flirt 2
+  traits.social 2
+  traits.tidy 3
+  traits.nostalg 5
+  need0.hunger 3
+  need0.thirst 3
+  need0.cold 0
+  need0.fear 3
+  need0.fatigue 2
+  need0.dirty 2
+  need0.sick 0
+  need0.pain 0
+  vice.kind tobacco
+  beliefs.1.id bl_doctors_know
+  beliefs.1.s 3
+  beliefs.2.id bl_do_not_look_back
+  beliefs.2.s 3
+  wants.1.id wn_photo_kept_safe
+  wants.1.u 5
+  skills.carpentry 4
+  skills.fishing 2
+  carry.1 Base.Photo
+  carry.2 Base.Pencil
+  carry.3 Base.FishingLine
+  carry.4 Base.Thimble
+  dress.role worker_m
+  dress.flags.1 work_shirt
+  dress.flags.2 denim_jacket
+  dress.flags.3 work_boots
+  arc.stayMax 18
+  arc.leave.1 need_met
+  arc.leave.2 morning
+  arc.leave.3 player_asks
+  arc.returns true
+  hooks.window looks_for_a_dry_sill
+  hooks.bed keeps_photo_off_bedding
+  books.taste.1 sports
+  facts.1.id f_quit
+  facts.1.kind secret
+  facts.1.tab now
+  facts.1.label Two hidden failures to stop smoking
+  facts.1.gate trust>=15
+  facts.2.id f_thimble
+  facts.2.kind secret
+  facts.2.tab past
+  facts.2.label Took Leon's thimble without telling Vera
+  facts.2.gate trust>=30 & flag:quit_told
+  facts.3.id f_service
+  facts.3.kind secret
+  facts.3.tab past
+  facts.3.label Parade band mistaken for military service
+  facts.3.gate trust>=45 & alone & flag:thimble_told
+  facts.4.id f_receipt
+  facts.4.kind secret
+  facts.4.tab past
+  facts.4.label Forged the timber insurance receipt for forty dollars
+  facts.4.gate trust>=60 & alone & flag:service_told
+  facts.5.id f_communion
+  facts.5.kind secret
+  facts.5.tab past
+  facts.5.label Refuses communion over his private belief about Leon's death
+  facts.5.gate trust>=75 & alone & flag:receipt_told
+  mk.1 square enough
+  mk.2 river side first
+  mk.3 leave the brass
+  rt.1 6-8|hall|Checks that the photograph remains dry before asking about breakfast
+  rt.2 12-14|workroom|Offers to inspect a loose cupboard if the host has one
+  rt.3 18-20|porch|Asks permission to smoke outside and winds fishing line onto its card
+  bl.1 family photograph|Base.Photo|Leon and Vera outside the rental in 1974, both looking past the photographer
+  bl.2 silver thimble|Base.Thimble|Leon used it before Vera put it away in her sewing drawer
+  bl.3 carpenter's pencil|Base.Pencil|Flattened on one side so it would not roll from a cupboard top
+  bl.4 fishing line|Base.FishingLine|Rewound after every Sunday outing, including the ones with no catch
+  bl.5 congratulation note||Vera's handwriting praising a success she was not told had ended
+  bl.6 brass mouthpiece||The only piece of the parade trumpet he kept after selling the instrument
+  rl.1 Vera Wilder|mother|Altered trousers and last lived in West Point; Michael has no current word from her
+  rl.2 Leon Wilder|older brother, died 1975|Sewed neatly and disliked being called delicate
+  rl.3 Nell Wilder|adult cousin|Copies family photographs and writes the names on their backs
+  rl.4 Len Cates|former employer|Paid Michael for the fraudulent receipt and never mentioned it again
+end

@@ -1,0 +1,25 @@
+{
+    "ContextMenu_UP_Count": "%1 - %2/%3",
+    "ContextMenu_UP_Empty": "Palette – Beladen",
+    "ContextMenu_UP_EmptyMilitary": "Militärpalette – Beladen",
+    "ContextMenu_UP_Add": "Hinzufügen",
+    "ContextMenu_UP_AddOne": "1 hinzufügen",
+    "ContextMenu_UP_Fill": "Alle verfügbaren hinzufügen (%1)",
+    "ContextMenu_UP_Take": "Entnehmen",
+    "ContextMenu_UP_TakeOne": "1 entnehmen",
+    "ContextMenu_UP_TakeHalf": "Hälfte entnehmen (%1)",
+    "ContextMenu_UP_TakeAll": "Alle entnehmen (%1)",
+    "ContextMenu_UP_OneType": "Leere die Palette, bevor du ein anderes Material hinzufügst.",
+    "ContextMenu_UP_Full": "Die Palette ist voll.",
+    "ContextMenu_UP_NoItems": "Keine passenden, nicht favorisierten und nicht ausgerüsteten Gegenstände in deinem Inventar oder deinen getragenen Taschen.",
+    "ContextMenu_UP_Top": "Obere Palette",
+    "ContextMenu_UP_Bottom": "Untere Palette",
+    "ContextMenu_UP_AddTop": "Obere Palette hinzufügen",
+    "ContextMenu_UP_RemovePallet": "Palette entfernen",
+    "ContextMenu_UP_FillBottomFirst": "Fülle zuerst die untere Palette vollständig, bevor du eine obere Palette anbringst.",
+    "ContextMenu_UP_RemoveTopFirst": "Entferne zuerst die obere Palette.",
+    "ContextMenu_UP_EmptyTopFirst": "Leere zuerst die obere Palette.",
+    "ContextMenu_UP_NoRoom": "Nicht genügend Platz im Inventar für die leere Palette.",
+    "ContextMenu_UP_Ecstasy": "Der Rausch des Goldes"
+
+}

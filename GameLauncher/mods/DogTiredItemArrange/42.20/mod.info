@@ -1,0 +1,11 @@
+name=Dog Tired Item Arrange
+id=DogTiredItemArrange
+description=Adds about 3,400 more vanilla items to Item Arrange, each sized from its own 3D model, plus modded items that reuse a vanilla model. Piles keep growing in layers once the floor is covered (up to a sandbox height), long items like planks, logs and pipes cross-stack a quarter turn per layer, and bags, first aid kits and sewing kits stack. Requires Item Arrange. Replaces Item Arrange Extension.
+author=Dog Tired Studios
+category=Misc
+poster=poster.png
+icon=icon.png
+modversion=1.0.0
+versionMin=42.20.0
+require=ItemArrange
+loadModAfter=ItemArrange

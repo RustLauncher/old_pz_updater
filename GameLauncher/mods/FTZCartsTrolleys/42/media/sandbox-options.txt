@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option FTZCarts.WorldSpawnChance
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 35,
+    page = FTZCarts,
+    translation = FTZCarts_WorldSpawnChance,
+}
+
+option FTZCarts.WorldSpawnMax
+{
+    type = integer,
+    min = 1,
+    max = 5,
+    default = 2,
+    page = FTZCarts,
+    translation = FTZCarts_WorldSpawnMax,
+}
+
+option FTZCarts.LootRate
+{
+    type = integer,
+    min = 0,
+    max = 500,
+    default = 100,
+    page = FTZCarts,
+    translation = FTZCarts_LootRate,
+}
+
+option FTZCarts.CartCapacity
+{
+    type = integer,
+    min = 1,
+    max = 100,
+    default = 37,
+    page = FTZCarts,
+    translation = FTZCarts_CartCapacity,
+}
+
+option FTZCarts.TrolleyCapacity
+{
+    type = integer,
+    min = 1,
+    max = 100,
+    default = 50,
+    page = FTZCarts,
+    translation = FTZCarts_TrolleyCapacity,
+}

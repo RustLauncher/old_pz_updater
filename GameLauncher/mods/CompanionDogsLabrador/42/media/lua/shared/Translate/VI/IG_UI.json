@@ -1,0 +1,11 @@
+{
+    "IGUI_Breed_labrador": "Chó Labrador",
+    "IGUI_AnimalType_labmale": "Chó Labrador (đực)",
+    "IGUI_AnimalType_labfemale": "Chó Labrador (cái)",
+    "IGUI_AnimalType_labpup": "Chó Labrador (con)",
+    "IGUI_PD_Breed_labrador": "Chó Labrador",
+    "IGUI_PD_BreedDesc_labrador": "Một giống chó săn được sinh ra để nhặt đồ mang về: nó rèn luyện kỹ năng Săn mồi nhanh gấp đôi, và tính Vâng lời cũng học nhanh không kém. Trớ trêu thay, nó lại là một trong những chiến binh tệ nhất trong dòng họ: chỉ có Chó Pug cắn yếu hơn, không có khả năng quật ngã mục tiêu, và một cuộc ẩu đả sẽ khiến nó vô cùng hoảng sợ. Món quà lớn nhất của nó chính là cái mõm. Nó mang con mồi săn được về cho bạn ngay từ khi mới biết đi săn, thay vì phải đợi kỹ năng Săn mồi đạt mức cao, không bao giờ đánh rơi con mồi dọc đường, và thường ngậm về thêm thứ gì đó mà nó tìm thấy (Kỹ năng Ngoạm Nhẹ/Soft Mouth). Thường xuất hiện ở các ngôi nhà dân, và lảng vảng quanh các chòi săn bắn, khu cắm trại, nhà thuyền và trạm kiểm lâm. Việc xẻ thịt những con mồi nó mang về cũng trở nên dễ dàng hơn khi có nó ở cạnh.",
+    "IGUI_PD_Moodle_SoftMouth": "Ngoạm Nhẹ",
+    "IGUI_PD_Moodle_SoftMouth_desc": "Chú chó Labrador của bạn mang về mọi con mồi ngay từ chuyến đi săn đầu tiên, và thường kiếm thêm được thứ gì đó. Khi nó ở gần, được cho ăn no và trung thành, bạn cũng học được kỹ năng Xẻ thịt và Vũ khí Lưỡi ngắn nhanh hơn.",
+    "IGUI_PD_LabExtra": "%1 của bạn đã mang về thêm thứ khác: %2."
+}
